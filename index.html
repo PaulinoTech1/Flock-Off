@@ -5,7 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Flock-Off: follow the money. A public tracker of Flock Safety ALPR contracts, costs, renewals, and cancellations. No install, no account, no tracking.">
   <meta name="theme-color" content="#0f1115">
+  <link rel="canonical" href="https://flock-off.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Flock-Off">
+  <meta property="og:title" content="Flock-Off: follow the money behind ALPR cameras">
+  <meta property="og:description" content="A public tracker of Flock Safety ALPR contracts, costs, renewals, rejections, and cancellations across the US East Coast. Every record sourced.">
+  <meta property="og:url" content="https://flock-off.vercel.app/">
+  <meta name="twitter:card" content="summary">
   <title>Flock-Off: follow the money behind ALPR cameras</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Flock-Off contract tracker",
+    "description": "Public tracker of Flock Safety automated license plate reader (ALPR) contracts: agency, status, camera counts, costs, renewal dates, and per-record sources.",
+    "url": "https://flock-off.vercel.app/",
+    "keywords": "Flock Safety, ALPR, license plate reader, public contracts, surveillance",
+    "creator": { "@type": "Organization", "name": "Flock-Off", "url": "https://github.com/PaulinoTech1/Flock-Off" },
+    "license": "https://github.com/PaulinoTech1/Flock-Off",
+    "distribution": [
+      { "@type": "DataDownload", "contentUrl": "https://flock-off.vercel.app/data/agencies.json", "encodingFormat": "application/json" },
+      { "@type": "DataDownload", "contentUrl": "https://flock-off.vercel.app/data/source_classification.json", "encodingFormat": "application/json" }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -68,6 +91,8 @@
           <label for="filter-sort">Sort</label>
           <select id="filter-sort">
             <option value="renewal">Renewal date</option>
+            <option value="state">State</option>
+            <option value="city">City</option>
             <option value="cameras">Cameras</option>
             <option value="cost">Annual cost</option>
             <option value="agency">Agency name</option>
@@ -89,7 +114,7 @@
               <th scope="col">Renewal / decision</th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody><!--PRE_RENDER_ROWS--></tbody>
         </table>
       </div>
 

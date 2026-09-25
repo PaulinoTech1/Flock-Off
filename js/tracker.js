@@ -134,6 +134,8 @@ const TrackerTab = (() => {
       return da < db ? -1 : da > db ? 1 : 0;
     };
     if (sort === "renewal") rows.sort(byRenewal);
+    else if (sort === "state") rows.sort((a, b) => a.state.localeCompare(b.state) || a.agency.localeCompare(b.agency));
+    else if (sort === "city") rows.sort((a, b) => (a.city || "").localeCompare(b.city || "") || a.agency.localeCompare(b.agency));
     else if (sort === "cameras") rows.sort((a, b) => (b.cameras || 0) - (a.cameras || 0));
     else if (sort === "cost") rows.sort((a, b) => (b.annual_cost_usd || 0) - (a.annual_cost_usd || 0));
     else rows.sort((a, b) => a.agency.localeCompare(b.agency));
@@ -272,10 +274,33 @@ const TrackerTab = (() => {
       `<p class="muted">✓ verified citation · ○ unverified lead (not counted toward the evidence bar). ` +
       `Classification: <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/scripts/classify_sources.py" target="_blank" rel="noopener noreferrer">scripts/classify_sources.py</a>.</p>` +
       `<p class="status">Confidence: <strong>${esc(a.confidence || "unrated")}</strong> · last verified ${esc(a.last_verified || "unknown" )}. ` +
-      `Wrong or stale? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>`;
+      `Wrong or stale? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>` +
+      `<details id="drawer-history"><summary>Report history</summary><div id="drawer-history-body"><p class="muted">Loading…</p></div></details>`;
     el("drawer").hidden = false;
     setBackgroundInert(true);
     el("drawer-close").focus();
+    loadHistory(a.id);
+  }
+
+  // Historical reports live in the Vercel Blob store (append-only, JSON).
+  // Degrades silently: the section simply reports unavailability.
+  async function loadHistory(agencyId) {
+    const box = el("drawer-history-body");
+    if (!box) return;
+    try {
+      const res = await fetch(`/api/history?agency_id=${encodeURIComponent(agencyId)}&limit=20`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const reps = data.reports || [];
+      box.innerHTML = reps.length === 0
+        ? `<p class="muted">No historical reports filed yet for this agency.</p>`
+        : `<ul>${reps.map((r) =>
+            `<li><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(new Date(r.uploadedAt).toISOString().slice(0, 10))}</a> ` +
+            `<span class="muted">(${(r.size / 1024).toFixed(1)} KB JSON)</span></li>`).join("")}</ul>` +
+          `<p class="muted">Append-only archive. Each report is tied to its source and download date; see the raw JSON.</p>`;
+    } catch (e) {
+      box.innerHTML = `<p class="muted">Report history unavailable.</p>`;
+    }
   }
 
   function renderPriorities() {
