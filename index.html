@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Flock-Off: the accessible way to see, avoid, and push back on ALPR surveillance cameras. No install, no account, no tracking.">
+  <meta name="theme-color" content="#0f1115">
+  <title>Flock-Off: see and avoid ALPR cameras</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <noscript>
+    <p style="padding:1rem">Flock-Off needs JavaScript for the interactive map. The curated tool directory is listed in <a href="https://github.com/PaulinoTech1/Flock-Off">the repo README</a>.</p>
+  </noscript>
+
+  <header class="top">
+    <h1>Flock<span class="off">-Off</span></h1>
+    <p class="tagline">See, avoid, and push back on ALPR surveillance. No install, no account, no tracking.</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Flock-Off sections">
+    <button id="nav-map" role="tab" aria-selected="true" aria-controls="tab-map" class="active">Map</button>
+    <button id="nav-radar" role="tab" aria-selected="false" aria-controls="tab-radar">Radar</button>
+    <button id="nav-route" role="tab" aria-selected="false" aria-controls="tab-route">Route</button>
+    <button id="nav-tools" role="tab" aria-selected="false" aria-controls="tab-tools">Tools</button>
+    <button id="nav-learn" role="tab" aria-selected="false" aria-controls="tab-learn">Learn</button>
+  </nav>
+
+  <main>
+    <section id="tab-map" class="tab" role="tabpanel" aria-labelledby="nav-map">
+      <h2>Camera map</h2>
+      <p>Crowdsourced ALPR camera locations near the map center, from OpenStreetMap. Pan to your area, or use your location.</p>
+      <div class="map-wrap">
+        <div id="map" role="application" aria-label="Map of reported ALPR cameras"></div>
+      </div>
+      <div class="map-controls">
+        <button id="locate-btn" class="secondary" type="button">Use my location</button>
+        <button id="refresh-btn" class="secondary" type="button">Refresh cameras</button>
+      </div>
+      <p id="map-status" class="status" role="status" aria-live="polite">Loading…</p>
+      <div class="legend" aria-label="Map legend">
+        <span><span class="dot flock"></span>Flock Safety</span>
+        <span><span class="dot other"></span>Other vendor</span>
+        <span><span class="dot unknown"></span>Unidentified ALPR</span>
+        <span><span class="dot you"></span>You</span>
+      </div>
+    </section>
+
+    <section id="tab-radar" class="tab" role="tabpanel" aria-labelledby="nav-radar" hidden>
+      <h2>Radar</h2>
+      <p>Get an alert when a known ALPR camera is near you, radar-detector style. Works with your phone's GPS. Nothing leaves your device except the camera-data download.</p>
+      <div id="radar-banner" class="banner" role="alert" hidden></div>
+      <div class="panel">
+        <button id="radar-toggle" type="button" aria-pressed="false">Start radar</button>
+        <label class="checkbox-row">
+          <input type="checkbox" id="radar-sound" checked>
+          Audible alerts
+        </label>
+        <p id="radar-count" class="status" role="status"></p>
+        <p id="radar-status" class="status" role="status" aria-live="polite">Radar off.</p>
+      </div>
+      <p class="status">Coverage depends on crowdsourced data. No alert is a clearance; cameras get installed faster than volunteers map them.</p>
+    </section>
+
+    <section id="tab-route" class="tab" role="tabpanel" aria-labelledby="nav-route" hidden>
+      <h2>Route exposure check</h2>
+      <p>See how many known ALPR cameras sit along a trip. This is exposure <em>analysis</em>; for turn-by-turn avoidance routing, use DeFlock or FlockHopper (Tools tab).</p>
+      <div class="route-form">
+        <div>
+          <label for="route-from">From</label>
+          <input type="text" id="route-from" placeholder="Address, place, or ZIP" autocomplete="off">
+        </div>
+        <div>
+          <label for="route-to">To</label>
+          <input type="text" id="route-to" placeholder="Address, place, or ZIP" autocomplete="off">
+        </div>
+        <div>
+          <button id="route-go" type="button">Check route</button>
+        </div>
+      </div>
+      <p id="route-status" class="status" role="status" aria-live="polite"></p>
+      <div id="route-summary" hidden></div>
+      <div id="route-map" role="application" aria-label="Route and nearby cameras" style="margin-top:.8rem"></div>
+      <ul id="route-list"></ul>
+    </section>
+
+    <section id="tab-tools" class="tab" role="tabpanel" aria-labelledby="nav-tools" hidden>
+      <h2>Anti-Flock tool directory</h2>
+      <p>The existing ecosystem, in one place. Flock-Off aggregates rather than duplicates: each tool below does something this page doesn't.</p>
+      <div id="tools-grid" class="tools-grid"></div>
+    </section>
+
+    <section id="tab-learn" class="tab learn" role="tabpanel" aria-labelledby="nav-learn" hidden>
+      <h2>Learn</h2>
+
+      <h3>Spotting the cameras</h3>
+      <ul>
+        <li><strong>Flock Falcon</strong> (ALPR): small bullet camera on a pole, usually with a solar panel and a boxy housing. Photographs every passing plate.</li>
+        <li><strong>Flock Raven</strong>: audio gunshot-detection sensor, often co-located with Falcons.</li>
+        <li><strong>Flock Condor</strong>: pan-tilt-zoom live video camera for intersections and lots.</li>
+        <li>Other vendors (Motorola/Vigilant, Leonardo ELSAG) look similar; check DeFlock's identification guides before reporting.</li>
+      </ul>
+
+      <h3>Contribute sightings</h3>
+      <ul>
+        <li>Report cameras on <a href="https://deflock.org" target="_blank" rel="noopener noreferrer">DeFlock</a>; they flow into OpenStreetMap, which feeds this page.</li>
+        <li>Experienced mappers can tag nodes directly in OSM as <code>surveillance:type=ALPR</code>.</li>
+        <li>A wrong pin is worse than a missing one: only report cameras you have positively identified.</li>
+      </ul>
+
+      <h3>Push back locally</h3>
+      <ul>
+        <li>File a public-records request with your police department for their Flock contract, camera locations, and search audit logs. DeFlock publishes request templates.</li>
+        <li>Check <a href="https://haveibeenflocked.com" target="_blank" rel="noopener noreferrer">Have I Been Flocked</a> to see if your plate appears in released audit logs.</li>
+        <li>Abuse reports are tracked by the Institute for Justice's ALPR abuse database; misused systems get contracts cancelled (23+ jurisdictions in 2026).</li>
+      </ul>
+
+      <h3>Safety and scope</h3>
+      <ul>
+        <li>Flock-Off is for <strong>awareness and lawful civic action</strong>: mapping, routing, records requests, and public pressure.</li>
+        <li>Do not touch, disable, or vandalize cameras. That carries criminal liability and shifts the debate from privacy policy to property damage.</li>
+        <li>Detection here is passive and informational. It does not interfere with any system.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Camera data: © OpenStreetMap contributors (ODbL) via the DeFlock community.
+      Flock-Off stores nothing, tracks nothing, and requires no account.
+      Geolocation, when you opt in, stays on your device.
+      <span id="year"></span> · <a href="https://github.com/PaulinoTech1/Flock-Off">Source on GitHub</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/radar.js"></script>
+  <script src="js/route.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
