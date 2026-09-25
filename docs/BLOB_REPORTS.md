@@ -1,36 +1,40 @@
-# Historical reports (Vercel Blob)
+# Historical reports (Vercel Blob) — quarantine model
 
-Append-only archive of historical Flock contract reports. Each report is a
-small JSON text blob tied to its **source** and the **date the source was
-downloaded**. The curated dataset in `data/agencies.json` remains the source
-of truth; this store is the audit trail underneath it.
+Text-only, heavily regulated archive of historical Flock contract reports,
+stored as canonical JSON blobs. **Nothing untrusted reaches the public
+archive directly**: submissions land in a quarantine prefix and are published
+only after human review.
 
-## Setup
+## Flow
 
-The site expects one env var on the Vercel project (Dashboard → Project →
-Settings → Environment Variables, all environments):
+```
+submitter ──POST /api/report (REPORT_WRITE_KEY)──> reports-pending/<agency>/<stamp>-<rand>.json
+reviewer  ──GET  /api/pending (REPORT_ADMIN_KEY)──> queue of submissions with full records
+reviewer  ──POST /api/promote (REPORT_ADMIN_KEY)──> reports/<agency>/<file>.json  (status: approved)
+                                                         + pending blob deleted
+public    ──GET  /api/history ──> lists reports/ only (approved records)
+```
 
-- `BLOB_READ_WRITE_TOKEN` — read/write token for the Blob store. Without it,
-  both endpoints answer `503 history store not configured` and the drawer
-  history section shows "unavailable".
+- `REPORT_WRITE_KEY` gates **submission**. Share only with trusted submitters.
+- `REPORT_ADMIN_KEY` gates **review and promotion**. Keep it to yourself; it
+  must differ from the write key so submitters cannot approve their own reports.
+- Both keys are mandatory. If either is unset, its endpoint fails closed
+  (503/401).
 
-Optional hardening:
+## POST /api/report
 
-- `REPORT_WRITE_KEY` — if set, `POST /api/report` requires the same value in
-  the `x-report-key` header (compared in constant time). Recommended once more
-  than one person submits reports.
-
-The serverless functions call the Blob control plane directly
-(`PUT https://vercel.com/api/blob/?pathname=…`,
-`GET https://vercel.com/api/blob/?prefix=…`) using the protocol pinned from
-`@vercel/blob` (api-version 12, verified 2026-09-25). No SDK is bundled.
-
-## Write path: POST /api/report
-
-Text only. Rejects anything that is not `application/json`, anything over
-32 KB, and anything that fails schema validation. The stored blob is
-re-serialized server-side from the validated fields; there is no raw
-passthrough.
+- `Content-Type: application/json` only; max body 32 KB.
+- Rate limit: 10 writes / IP / hour, 500 writes / day globally (in-memory per
+  function instance: best-effort on serverless, a spam speed bump, not a
+  guarantee).
+- Strict schema validation: allowlisted fields, correct types, `agency_id`
+  must be a known tracker record (list injected at deploy time).
+- `source_url` (http/https) and `downloaded_at` (ISO date, not in the future)
+  are mandatory.
+- The stored blob is re-serialized server-side from validated fields only
+  (`status`, `agency_id`, `source_url`, `downloaded_at`, `received_at`,
+  `report`). No raw request bytes are ever persisted.
+- Response: `201 { ok, status: "pending_review", pathname, url, received_at }`.
 
 Required JSON body:
 
@@ -49,46 +53,45 @@ Required JSON body:
 }
 ```
 
-Rules:
+## GET /api/pending
 
-- `agency_id` must be a known tracker record id (the valid list is injected
-  into the function at deploy time from `data/agencies.json`).
-- `source_url` must be http(s), ≤ 500 chars.
-- `downloaded_at` must be an ISO date not in the future: when the source was
-  fetched.
-- `report` fields are all optional but strictly typed; unknown fields are
-  rejected at every level.
-- Blob path: `reports/<agency_id>/<received_at>-<rand>.json`. Immutable:
-  there is no update or delete endpoint.
+Admin-key protected reviewer queue. Returns up to 50 pending submissions with
+their full records (`pathname`, `url`, `size`, `uploadedAt`, `record`).
 
-Rate limits: 10 writes per IP per hour, 500 per day globally. These are
-enforced with in-memory buckets per function instance, which is best-effort
-on serverless (instances do not share state). Treat it as a spam-speed-bump,
-not a security boundary; set `REPORT_WRITE_KEY` for a real gate.
+## POST /api/promote
 
-Success: `201 { ok, pathname, url, received_at }`.
+Admin-key protected. Body: `{ "url": "<pending blob public URL>" }`.
 
-## Read path: GET /api/history
+1. Validates the URL is an https `reports-pending/` blob on
+   `*.blob.vercel-storage.com` (rejects anything else: this is the anti-SSRF
+   boundary).
+2. Fetches the blob and confirms `status === "pending"` with the required
+   report fields.
+3. Writes an approved copy to `reports/<agency>/<same filename>` with
+   `status: "approved"`, `approved_at`, `approved_by`.
+4. Deletes the pending blob.
 
-`GET /api/history?agency_id=<id>&limit=<1..200>&cursor=<opaque>`
+If step 4 fails after step 3 succeeded, the endpoint returns 200 with a
+`warning`: the public archive is correct; delete the orphaned pending blob
+from the Vercel dashboard.
 
-Returns metadata only:
+## GET /api/history
 
-```json
-{
-  "agency_id": "staunton-va-police",
-  "reports": [{ "pathname": "…", "url": "…", "size": 412, "uploadedAt": "…" }],
-  "cursor": null,
-  "hasMore": false
-}
-```
+Unchanged public read path: lists `reports/` metadata (up to 20, newest
+first). The drawer renders these; it never sees the quarantine prefix.
 
-Report payloads are public JSON at their blob URLs. The tracker drawer shows
-the 20 most recent per agency.
+## Environment (Vercel dashboard, Production)
 
-## Costs and limits
+| Variable              | Purpose                                  |
+|-----------------------|------------------------------------------|
+| `BLOB_READ_WRITE_TOKEN` | Blob store access (read/write/delete)  |
+| `REPORT_WRITE_KEY`    | Shared submitter secret                  |
+| `REPORT_ADMIN_KEY`    | Reviewer secret (promotion + queue)       |
 
-Blob storage and bandwidth bill to the Vercel project. Reports are capped at
-32 KB each and rate-limited; expected volume is a handful per week. If the
-store ever needs pruning, do it from the Vercel dashboard (there is
-deliberately no API delete).
+## Invariants
+
+- Append-only archive: no update endpoint; approved copies are never mutated.
+- Text only: JSON in, canonical JSON out.
+- Untrusted input never lands in `reports/` except via `POST /api/promote`
+  with the admin key.
+- Blobs are public JSON by store design; do not submit non-public material.

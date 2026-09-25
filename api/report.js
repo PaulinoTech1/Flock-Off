@@ -1,20 +1,27 @@
 "use strict";
 /* POST /api/report — regulated write path for historical Flock contract reports.
  *
+ * QUARANTINE MODEL: submissions land in reports-pending/, never directly in
+ * the public archive. A reviewer promotes them with POST /api/promote after
+ * human review. GET /api/history only ever lists the approved reports/ tree.
+ *
  * Design constraints (per operator policy):
  *  - TEXT ONLY: accepts application/json bodies only, max 32 KB; the stored
  *    blob is canonical JSON re-serialized server-side (no raw passthrough).
  *  - REGULATED ENTRY: strict schema validation; agency_id must be a known
  *    tracker record (list injected at deploy time); source_url and
  *    downloaded_at are mandatory on every report.
+ *  - AUTHENTICATED: REPORT_WRITE_KEY is mandatory. Requests without a
+ *    matching x-report-key are rejected (constant-time compare).
  *  - RATE LIMITED: 10 writes / IP / hour, 500 writes / day globally
  *    (in-memory per function instance: best-effort on serverless, documented
- *    in docs/BLOB_REPORTS.md). Optional shared write key via REPORT_WRITE_KEY.
- *  - APPEND-ONLY: pathnames embed the server receive timestamp; no update or
- *    delete endpoint exists.
+ *    in docs/BLOB_REPORTS.md).
+ *  - APPEND-ONLY: pathnames embed the server receive timestamp; no update
+ *    endpoint exists. Promotion copies to reports/ and deletes the pending
+ *    blob; the approved copy is never mutated.
  *
- * Requires BLOB_READ_WRITE_TOKEN env (set in the Vercel dashboard; the
- * function never logs it).
+ * Requires BLOB_READ_WRITE_TOKEN and REPORT_WRITE_KEY env (set in the Vercel
+ * dashboard; the function never logs them).
  */
 
 const BLOB_API = "https://vercel.com/api/blob";
@@ -176,7 +183,8 @@ module.exports = async (req, res) => {
   if (!token) return send(res, 503, { error: "history store not configured" });
 
   const writeKey = process.env.REPORT_WRITE_KEY;
-  if (writeKey && !timingSafeEqual(req.headers["x-report-key"], writeKey)) {
+  if (!writeKey) return send(res, 503, { error: "report submission not configured" });
+  if (!timingSafeEqual(req.headers["x-report-key"], writeKey)) {
     return send(res, 401, { error: "missing or invalid write key" });
   }
 
@@ -209,10 +217,12 @@ module.exports = async (req, res) => {
   const receivedAt = new Date().toISOString();
   const stamp = receivedAt.replace(/[^0-9A-Za-z]/g, "-");
   const rand = Math.random().toString(36).slice(2, 8);
-  const pathname = `reports/${body.agency_id}/${stamp}-${rand}.json`;
+  const pathname = `reports-pending/${body.agency_id}/${stamp}-${rand}.json`;
 
   // Canonical record: re-serialized server-side; tied to source + download time.
+  // status "pending": invisible to GET /api/history until promoted.
   const record = {
+    status: "pending",
     agency_id: body.agency_id,
     source_url: body.source_url,
     downloaded_at: body.downloaded_at,
@@ -224,6 +234,7 @@ module.exports = async (req, res) => {
     const stored = await blobPut(pathname, JSON.stringify(record), token);
     return send(res, 201, {
       ok: true,
+      status: "pending_review",
       pathname: stored.pathname || pathname,
       url: stored.url,
       received_at: receivedAt,
