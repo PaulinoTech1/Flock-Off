@@ -132,12 +132,26 @@ def main() -> None:
 
     # Stats.
     from collections import Counter
+    import urllib.parse
     status = Counter(a.get("status") for a in agencies)
     conf = Counter(a.get("confidence") for a in agencies)
+    terminal = [a for a in agencies if a.get("status") in ("cancelled", "rejected", "expired")]
+
+    def independent_citations(a: dict) -> int:
+        return len({
+            urllib.parse.urlparse(s["url"]).netloc.replace("www.", "")
+            for s in a.get("sources", []) if s.get("verified")
+        })
+
+    bar_met = sum(1 for a in terminal if independent_citations(a) >= 3)
     lines.append("## Dataset stats")
     lines.append(
         f"- {len(agencies)} records across {len(set(a.get('state') for a in agencies))} states. "
         f"Status: {dict(status)}. Confidence: {dict(conf)}."
+    )
+    lines.append(
+        f"- Evidence bar: {bar_met} of {len(terminal)} terminal claims meet the "
+        f"3-independent-verified-citation bar."
     )
 
     print("\n".join(lines))

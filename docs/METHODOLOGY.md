@@ -21,6 +21,52 @@ How contract records get in, what the confidence ratings mean, and what we refus
 - **medium**: reputable news reporting (named outlet, dated).
 - **low**: single blog, social post, or activist claim without corroboration. Low-confidence records are included only when marked, and never drive the headline stats without a second source.
 
+Displayed confidence is capped at **low** for any terminal-status record that does not meet the evidence bar below, regardless of its stored rating.
+
+## Evidence bar
+
+A terminal claim (**cancelled**, **rejected**, **expired**) is treated as **verified**
+only when backed by **3 or more independent citations from verified sources**.
+Records below the bar stay on the tracker but are flagged "needs corroboration"
+and are excluded from the verified-cancellations headline stat.
+
+**Verified sources** are:
+
+- Primary records: signed contracts, council minutes, procurement documents,
+  official agency or vendor statements, court records, Flock transparency
+  portal data.
+- Established news outlets with an editorial process: named reporters,
+  a masthead, published corrections.
+
+**Not verified** (usable as leads, never as citations toward the bar):
+
+- Advocacy organizations and campaign sites, including ones we agree with.
+- Social media, video platforms, self-publishing platforms.
+- News aggregators and AI-generated summaries.
+- Personal blogs and outlets with no verifiable editorial process.
+
+**Independent** means distinct publishers. Three outlets quoting the same press
+release, or syndicated copies of one wire story, count once. Automation
+approximates independence by distinct domains; a human judges the rest.
+
+Verification is stamped per citation (`sources[].verified`) by
+`scripts/classify_sources.py`, an explicit domain map reviewed in git.
+Unknown domains fail closed to unverified, and the weekly monitor flags
+newly added sources until they are classified.
+
+## Research priorities
+
+Ranked by what most improves the tracker's trustworthiness:
+
+1. **Corroborate terminal claims.** Most cancelled/rejected records sit below
+   the evidence bar (a single local article, or advocacy-only sourcing).
+   Each needs 3 independent verified citations.
+2. **Fill Maryland.** Zero sourced records, and the East Coast rollout claims
+   ME-to-FL coverage. Then deepen the single-record states.
+3. **Renewal dates for active contracts.** Nearly all active records lack an
+   exact renewal date; without dates there are no pressure windows, which is
+   the tracker's core civic value.
+
 ## Rules
 
 1. Every non-null factual field must trace to a `sources[]` entry. No source, no field: use `null`.
@@ -28,7 +74,8 @@ How contract records get in, what the confidence ratings mean, and what we refus
 3. Costs are reported figures only. The ~$3,000/camera/year figure is context, not a substitute; never multiply a camera count by it and present the result as a fact.
 4. Dates are ISO `YYYY-MM-DD`. If only a month is known, leave the field `null` and put the precision in `notes`.
 5. `last_verified` is the date a human last checked the record against its sources. Stale records (over 180 days) get flagged for re-verification.
-6. Corrections win over pride. A wrong record is worse than a missing one; fix upstream facts first, then the JSON.
+6. Terminal statuses (cancelled, rejected, expired) require the evidence bar: 3+ independent verified citations, or the claim is flagged "needs corroboration."
+7. Corrections win over pride. A wrong record is worse than a missing one; fix upstream facts first, then the JSON.
 
 ## What we don't track
 

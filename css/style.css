@@ -324,6 +324,29 @@ tbody tr:hover, tbody tr:focus { background: #1b2029; }
 .badge-cancelled, .badge-rejected { background: #1d3a2a; border-color: var(--accent); color: #bfe0ff; }
 .badge-expired { background: #26262b; color: var(--muted); }
 .badge-warn { background: #3a2f0d; border-color: var(--warn); color: #ffe1a1; }
+.badge-ok { background: #12351f; border-color: var(--ok); color: #b8f0c6; }
+.badge-unverified { background: #3a2f0d; border-color: var(--warn); color: #ffe1a1; }
+
+.src-ver { color: var(--ok); font-weight: 700; }
+.src-unver { color: var(--muted); font-weight: 700; }
+
+.priorities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.8rem;
+  margin: 0.8rem 0;
+}
+
+.priority-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+}
+
+.priority-card h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+.priority-card p { margin: 0.3rem 0; color: var(--muted); font-size: 0.92rem; }
+.priority-card p strong { color: var(--text); }
 
 .muted { color: var(--muted); font-size: 0.88rem; }
 
