@@ -10,6 +10,11 @@ How contract records get in, what the confidence ratings mean, and what we refus
 - **rejected**: a proposal was killed before signing (council vote, dropped plan).
 - **expired**: a contract lapsed with no public record of renewal or cancellation.
 
+## Record fields
+
+`agency_type` is one of: `municipal_police`, `sheriff`, `state_police`, `county`,
+`municipal_government`, `university`, `private`.
+
 ## Confidence
 
 - **high**: primary source. Signed contract, council minutes, Flock transparency portal figures, official press release.

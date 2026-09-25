@@ -1,1 +1,2004 @@
-{"agencies":[{"agency":"Newport News Police Department","agency_type":"municipal_police","annual_cost_usd":null,"cameras":null,"city":"Newport News","confidence":"medium","contract_end":null,"contract_start":null,"decision_date":null,"decision_summary":null,"id":"va-newport-news-pd","last_verified":"2026-09-25","notes":"Active Flock deployment documented via Virginia FOIA procurement records (Flock DFR consolidated contract 26-1342-00; multiple Falcon purchase orders). Camera count and cost not yet extracted; portal figures scraped by Eyes on Flock.","renewal_date":null,"sources":[{"date":"2026-09-19","title":"DeFlock Newport News: procurement records and portal figures","url":"https://deflocknewportnews.org/"}],"state":"VA","status":"active","transparency_portal":"https://transparency.flocksafety.com/newport-news-va-pd"},{"agency":"City of Brevard","agency_type":"municipal_government","annual_cost_usd":null,"cameras":null,"city":"Brevard","confidence":"medium","contract_end":null,"contract_start":null,"decision_date":null,"decision_summary":"City dropped its plate-reader camera plan amid regional Flock controversy","id":"nc-brevard-city","last_verified":"2026-09-25","notes":"Reported September 2026. Exact vote/meeting record not yet pulled; decision date to be pinned to council minutes.","renewal_date":null,"sources":[{"date":"2026-09-14","title":"Brevard drops plate-reader camera plan as Flock controversy roils WNC","url":"https://www.blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007/"}],"state":"NC","status":"rejected","transparency_portal":null},{"agency":"Henderson County","agency_type":"county","annual_cost_usd":null,"cameras":null,"city":"Hendersonville","confidence":"medium","contract_end":null,"contract_start":null,"decision_date":null,"decision_summary":null,"id":"nc-henderson-county","last_verified":"2026-09-25","notes":"Under active pressure as of Sept 2026: progressive group PERSIST of Henderson County joined conservative-founded Deflock Henderson County; 2,600+ signature petition submitted to city and county; residents spoke at Sept 8 county board meeting calling to defund cameras and delete data.","renewal_date":null,"sources":[{"date":"2026-09-14","title":"Brevard drops plate-reader camera plan as Flock controversy roils WNC","url":"https://www.blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007/"}],"state":"NC","status":"pending","transparency_portal":null}],"meta":{"coverage_note":"Rolling research, north to south. v1 carries seed records only; the full East Coast dataset is being compiled now. A missing agency means not yet researched, not confirmed absent.","focus":"US East Coast, rolling north to south","last_updated":"2026-09-25","methodology":"docs/METHODOLOGY.md","project":"Flock-Off contract tracker","states_planned":["ME","NH","VT","MA","RI","CT","NY","NJ","PA","DE","MD","DC","VA","NC","SC","GA","FL"]}}
+{
+  "meta": {
+    "project": "Flock-Off contract tracker",
+    "focus": "US East Coast, rolling north to south",
+    "states_planned": [
+      "ME",
+      "NH",
+      "VT",
+      "MA",
+      "RI",
+      "CT",
+      "NY",
+      "NJ",
+      "PA",
+      "DE",
+      "MD",
+      "DC",
+      "VA",
+      "NC",
+      "SC",
+      "GA",
+      "FL"
+    ],
+    "last_updated": "2026-09-25",
+    "methodology": "docs/METHODOLOGY.md",
+    "coverage_note": "69 sourced records across 14 states plus DC. A missing agency means not yet researched, not confirmed absent. 21 records are low-confidence single-source leads flagged for verification. Exact renewal dates are still thin and are the top research priority."
+  },
+  "agencies": [
+    {
+      "id": "ma-acushnet-pd",
+      "agency": "Acushnet Police Department",
+      "agency_type": "municipal_police",
+      "city": "Acushnet",
+      "state": "MA",
+      "status": "pending",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-02",
+      "decision_summary": "Board of Selectmen voted unanimously to discontinue the PD's use of Flock readers pending a review for contract termination; PD had been using Flock's nationwide data-sharing feature.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Use discontinued but termination review still pending, hence status pending. Single advocacy source citing newbedfordlight.org."
+    },
+    {
+      "id": "ma-ayer-pd",
+      "agency": "Ayer Police Department",
+      "agency_type": "municipal_police",
+      "city": "Ayer",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-08-31",
+      "decision_summary": "Select Board voted unanimously (3-0) to immediately disable and remove all Flock cameras and technology from the town and terminate the town's contract with Flock, citing concerns expressed by residents.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "By Vote of Select Board, Town of Ayer Terminates Contract with Flock Safety",
+          "url": "https://www.ayer.ma.us/m/newsflash/Home/Detail/73",
+          "date": "2026-09-01"
+        }
+      ],
+      "confidence": "high",
+      "last_verified": "2026-09-25",
+      "notes": "Primary source: official town website news release."
+    },
+    {
+      "id": "ma-barnstable-pd",
+      "agency": "Barnstable Police Department",
+      "agency_type": "municipal_police",
+      "city": "Barnstable",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": 4,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-03",
+      "decision_summary": "Town Council voted 7-3 to end the town's contract with Flock Safety and discontinue use of ALPRs, despite a police presentation arguing safeguards (7-day retention, dual sign-off, audits, transparency portal). Reasons cited: privacy, oversight, concerns about the vendor.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Barnstable votes to remove Flock cameras despite police objections",
+          "url": "https://www.capecodtimes.com/story/news/public-safety/2026/09/05/barnstable-flock-cameras-removed/91611060007/",
+          "date": "2026-09-05"
+        }
+      ],
+      "confidence": "high",
+      "last_verified": "2026-09-25",
+      "notes": "Four cameras: Route 28 near Santuit/Newton Road, Route 28 near Strawberry Hill Road, Main Street Hyannis, Yarmouth Road. Article also notes Dennis MA ended its Flock contract in 2025 and Nantucket was debating its program."
+    },
+    {
+      "id": "ma-bellingham-pd",
+      "agency": "Bellingham Police Department",
+      "agency_type": "municipal_police",
+      "city": "Bellingham",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": "2026-09-04",
+      "renewal_date": null,
+      "decision_date": "2026-08-28",
+      "decision_summary": "Chief Kenneth Fitzgerald announced the department would not renew its Flock contract on expiry. Stated Flock tried to modify service/access terms mid-contract, and he learned cameras included an AI 'Free Form' plain-language video search feature.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Single advocacy source citing masslive.com. Expiry and announcement dates from that summary; verify."
+    },
+    {
+      "id": "ma-boylston-pd",
+      "agency": "Boylston Police Department",
+      "agency_type": "municipal_police",
+      "city": "Boylston",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-11",
+      "decision_summary": "Town and police leaders announced immediate suspension of the Flock system while the contract is formally terminated; the Flock contract did not comply with the state's Uniform Procurement Act.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Single advocacy source citing WCVB. Procurement-law defect matches Hopkinton pattern."
+    },
+    {
+      "id": "ma-dartmouth-pd",
+      "agency": "Dartmouth Police Department",
+      "agency_type": "municipal_police",
+      "city": "Dartmouth",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": "2026-09-29",
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": "Police department will not renew its Flock contract when it expires; decision attributed to privacy concerns and cost. Chief planned a pause to evaluate.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Single advocacy source citing dartmouth.theweektoday.com. Expiry 2026-09-29 taken from that summary; verify before treating as a hard pressure window."
+    },
+    {
+      "id": "ma-east-bridgewater-pd",
+      "agency": "East Bridgewater Police Department",
+      "agency_type": "municipal_police",
+      "city": "East Bridgewater",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": 1,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-08-21",
+      "decision_summary": "Chief Michael Jenkins announced the department will terminate its Flock Safety contract after community review. Four cameras were planned, one installed; the system never became fully operational.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "East Bridgewater Police Department to Terminate Contract with Flock Safety",
+          "url": "https://ebpd.org/east-bridgewater-police-department-to-terminate-contract-with-flock-safety/",
+          "date": "2026-08-21"
+        }
+      ],
+      "confidence": "high",
+      "last_verified": "2026-09-25",
+      "notes": "Primary source: official PD website announcement. No misuse by officers identified; decision driven by community trust concerns."
+    },
+    {
+      "id": "ma-easton-pd",
+      "agency": "Easton Police Department",
+      "agency_type": "municipal_police",
+      "city": "Easton",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-08-30",
+      "decision_summary": "Police decided to terminate the Flock contract effective at the end of the contract year (October 2026).",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Single advocacy source citing boston25news.com. Contract year ends October 2026; exact date not captured."
+    },
+    {
+      "id": "ma-groton-pd",
+      "agency": "Groton Police Department",
+      "agency_type": "municipal_police",
+      "city": "Groton",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-08-31",
+      "decision_summary": "Town Manager and Police Chief announced the town will terminate its Flock Safety contract effective immediately after weeks of internal review; a Police Camera Working Group will bring a permanent recommendation to the Spring 2027 Town Meeting.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Town of Groton to Terminate Flock Safety Camera Contract",
+          "url": "https://www.grotonma.gov/2026/08/31/town-of-groton-to-terminate-flock-safety-camera-contract-commit-to-developing-permanent-solution-for-spring-2027-town-meeting/",
+          "date": "2026-08-31"
+        }
+      ],
+      "confidence": "high",
+      "last_verified": "2026-09-25",
+      "notes": "Primary source: town press release. Release also names other MA communities that ended Flock contracts: Easton, Littleton, Cambridge, Watertown, Framingham, Natick, Brookline, Salem, Hopkinton, Wellesley, Bellingham, Douglas, Grafton, East Bridgewater."
+    },
+    {
+      "id": "ma-hopkinton-pd",
+      "agency": "Hopkinton Police Department",
+      "agency_type": "municipal_police",
+      "city": "Hopkinton",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-08-20",
+      "decision_summary": "Select Board voted to cancel the town's Flock contract after public pushback; legal review concluded the contract violated state procurement law.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Single advocacy source citing hopkintonindependent.com. Procurement-law defect is a pattern also seen in Boylston."
+    },
+    {
+      "id": "ma-lowell-pd",
+      "agency": "Lowell Police Department",
+      "agency_type": "municipal_police",
+      "city": "Lowell",
+      "state": "MA",
+      "status": "pending",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-23",
+      "decision_summary": "City Council voted to indefinitely suspend the city's use of the Flock Safety system while completing a policy review of usage, data use, and audit processes; a separate motion for a list of non-data-sharing alternatives passed unanimously.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Suspension pending review, not a termination; hence pending. Single advocacy source citing lowellsun.com."
+    },
+    {
+      "id": "ma-nantucket-pd",
+      "agency": "Nantucket Police Department",
+      "agency_type": "municipal_police",
+      "city": "Nantucket",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-16",
+      "decision_summary": "Select Board voted unanimously to stop use of the Flock ALPRs at Easy Street and Broad Street and take the cameras down; left the door open for PD to propose an alternative technology through a public feedback process.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Single advocacy source (Eyes Off MA) citing Nantucket Current; underlying article not directly opened. Treat as a lead needing direct verification."
+    },
+    {
+      "id": "ma-new-bedford-pd",
+      "agency": "New Bedford Police Department",
+      "agency_type": "municipal_police",
+      "city": "New Bedford",
+      "state": "MA",
+      "status": "pending",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": "Police temporarily suspended use of Flock after public opposition and allegations that an officer used the readers to stalk her ex-girlfriend; city councilors planned a Sept 24 vote on an ordinance restricting ALPR use.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Whether cameras remain suspended and whether the ordinance passed are unconfirmed. Single advocacy source citing newbedfordlight.org."
+    },
+    {
+      "id": "ma-stoughton-pd",
+      "agency": "Stoughton Police Department",
+      "agency_type": "municipal_police",
+      "city": "Stoughton",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-04",
+      "decision_summary": "Acting police chief announced all Flock cameras will be removed by October 1; town workers began bagging cameras September 9. Town Meeting warrant material (Feb/Apr 2026) had already moved to cancel Flock contracts.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        },
+        {
+          "title": "Amended Motion for STM Article 15 - Police Department Capital (Stoughton)",
+          "url": "https://stoughton.org/DocumentCenter/View/6337/Amended-Motion-for-STM-Article-15---Police-Department-Capital-submitted-by-Noah-Beit-Aharon-Precinct-6-on-April-28-2026",
+          "date": "2026-04-28"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Cancellation reporting is single advocacy source citing newslinklive.com. The stoughton.org warrant document is primary: it shows a $60,000 Flock Safety Software capital item being struck and a directive to cancel Flock contracts irrespective of funding source. Do not confuse with Stoughton, WI."
+    },
+    {
+      "id": "ma-waltham-pd",
+      "agency": "Waltham Police Department",
+      "agency_type": "municipal_police",
+      "city": "Waltham",
+      "state": "MA",
+      "status": "pending",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-10",
+      "decision_summary": "Flock cameras were covered with trash bags; mayor ordered the bagging while the city council was reportedly left in the dark. No council termination vote reported.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Bagging is a suspension, not a cancellation; contract status unknown. Single advocacy source citing CBS Boston."
+    },
+    {
+      "id": "ma-wellesley-pd",
+      "agency": "Wellesley Police Department",
+      "agency_type": "municipal_police",
+      "city": "Wellesley",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": 1,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-08-19",
+      "decision_summary": "Town terminated a two-year pilot program early; the single camera (Rte. 9 East and Rte. 16 near Elm Park) was removed August 18.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Single advocacy source citing The Swellesley Report (article returned HTTP 500). Verify."
+    },
+    {
+      "id": "ma-wilmington-pd",
+      "agency": "Wilmington Police Department",
+      "agency_type": "municipal_police",
+      "city": "Wilmington",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": 2,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": "2027-02-27",
+      "renewal_date": null,
+      "decision_date": "2026-09-15",
+      "decision_summary": "PD announced it will end its Flock contract and remove the town's two cameras (Middlesex Ave/Federal St, Main St/Bridge Lane); expects a $2,500 refund for early termination of a contract that ran through Feb 27, 2027.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
+          "url": "https://eyesoffma.com/wins/",
+          "date": "2026-09"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Single advocacy source citing hoodline.com. Refund figure and camera locations from that summary; verify."
+    },
+    {
+      "id": "ct-putnam-pd",
+      "agency": "Putnam Police Department",
+      "agency_type": "municipal_police",
+      "city": "Putnam",
+      "state": "CT",
+      "status": "pending",
+      "cameras": 5,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2025-10-20",
+      "decision_summary": "Board of Selectmen voted unanimously to place bags over the Flock license-plate readers and security cameras until the mayor, selectmen, and Special Services District board discuss the program with the police chief; the pilot's three-year Flock lease is fully covered by a $70,000 state auto-theft/violence grant.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Connecticut Police Discuss Use of License Plate Readers (GovTech / The Day)",
+          "url": "https://www.govtech.com/public-safety/connecticut-police-discuss-use-of-license-plate-readers",
+          "date": "2025-11-03"
+        },
+        {
+          "title": "Mayor and Board of Selectmen's Meeting Minutes, October 20, 2025 (Town of Putnam)",
+          "url": "https://resources.finalsite.net/images/v1761753101/putnamctus/uv0v8sucfql7nza6eqp5/MayorandBoardofSelectmensMinutesOctober202025.pdf",
+          "date": "2025-10-20"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Five LPRs (Grove St, Kennedy Dr, Route 44, Woodstock Ave) plus two Flock security cameras under a three-year lease; installed since August 2025. Flock maintains a transparency portal for Putnam PD (URL not captured). Gov. Lamont urged a statewide pause on new Flock installations on 2026-09-25 pending POST Council guidance under Public Act 26-14."
+    },
+    {
+      "id": "ri-cumberland-pd",
+      "agency": "Cumberland Police Department",
+      "agency_type": "municipal_police",
+      "city": "Cumberland",
+      "state": "RI",
+      "status": "pending",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": "ACLU of Rhode Island called on the Town Council to cancel its Flock contract after a false-arrest lawsuit (Pizzarelli v. Town of Cumberland, filed June 2026) revealed Flock cameras were used to photograph drivers/passengers, not just plates. No council cancellation vote reported.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "After Flock Safety Image Led to False Arrest, ACLU Urges Cumberland Town Council to Cancel Contract - ACLU of Rhode Island",
+          "url": "https://www.riaclu.org/news/flock-safety-image-led-to-false-arrest-aclu-urges-cumberland-cancel-contract/",
+          "date": "2026-08-07"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Cameras approved for purchase in 2024. ACLU letter also asks council to disclose when occupant photos began being captured and how often."
+    },
+    {
+      "id": "ri-glocester-pd",
+      "agency": "Glocester Police Department",
+      "agency_type": "municipal_police",
+      "city": "Glocester",
+      "state": "RI",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": 5000,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-08-06",
+      "decision_summary": "Town Council voted 4-1 to remove the town's Flock cameras after nearly two hours of resident criticism and a 400-signature petition. Police chief said the town remains on the hook for a 60-month agreement (~$5,000/year, roughly two years left), implying up to $15,000 in exit costs.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Glocester Town Council votes to remove Flock license plate cameras amid privacy concerns (WJAR)",
+          "url": "https://coastalabc.com/newsletter-daily/glocesters-town-council-to-discuss-flock-cameras-as-opposition-rises-privacy-concerns-aug-6-2026",
+          "date": "2026-08-07"
+        },
+        {
+          "title": "After Rhode Island residents push back on surveillance cameras, town faces up to $15,000 bill",
+          "url": "https://www.thecooldown.com/green-tech/glocester-rhode-island-vote-remove-flock-plate-reader-cameras/",
+          "date": "2026-08-14"
+        },
+        {
+          "title": "ACLU of Rhode Island - Glocester vote announcement",
+          "url": "https://www.findglocal.com/US/Unknown/89921252335/ACLU-of-Rhode-Island",
+          "date": "2026-08-07"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Cameras operating since 2023; chief said system aided ~50 cases. Vice President Walter Steere cast the lone keep vote."
+    },
+    {
+      "id": "ri-narragansett-pd",
+      "agency": "Narragansett Police Department",
+      "agency_type": "municipal_police",
+      "city": "Narragansett",
+      "state": "RI",
+      "status": "cancelled",
+      "cameras": 4,
+      "annual_cost_usd": 12600,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-08-03",
+      "decision_summary": "Town Council voted 5-0 to terminate the Flock contract after hours of public testimony; contract had auto-renewed for two more years. ACLU of RI and residents urged cancellation over data-sharing concerns.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Narragansett to stop using automated license plate readers (WPRI 12)",
+          "url": "https://www.youtube.com/watch?v=vTZA2DP1MNI",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "Narragansett To Stop Using Flock Cameras (94HJY)",
+          "url": "https://94hjy.iheart.com/content/2026-08-04-narragansett-to-stop-using-flock-cameras/",
+          "date": "2026-08-04"
+        },
+        {
+          "title": "Second Rhode Island town scraps Flock cameras after privacy concerns mount",
+          "url": "https://www.thecooldown.com/green-tech/narragansett-flock-cameras-privacy-concerns/",
+          "date": "2026-08-09"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Used since 2024; $12,600 first year and roughly $12,000 annually after, per the police chief as reported via a low-confidence aggregator; four camera units to be removed. The cancelled agreement was set to run through September 2027 (94HJY); no exact day captured, so no exact contract_end."
+    },
+    {
+      "id": "ri-north-kingstown-pd",
+      "agency": "North Kingstown Police Department",
+      "agency_type": "municipal_police",
+      "city": "North Kingstown",
+      "state": "RI",
+      "status": "cancelled",
+      "cameras": 6,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": "Town Council voted 3-2 to terminate the Flock contract and remove six cameras from town roads, days after South Kingstown and Narragansett ended theirs.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Under ACLU pressure, NK officials kill contract with Flock cameras (East Greenwich Pendulum)",
+          "url": "https://www.ricentral.com/east_greenwich_pendulum/under-aclu-pressure-nk-officials-kill-contract-with-flock-cameras/article_465d83b3-57cf-4b22-b956-071471c3db6c.html",
+          "date": "2026-08-21"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Vote described as a Monday-night vote in an article updated 2026-08-21 (so around Aug 17); exact vote date not stated in the opened article, so decision_date is null."
+    },
+    {
+      "id": "ri-providence-pd",
+      "agency": "Providence Police Department",
+      "agency_type": "municipal_police",
+      "city": "Providence",
+      "state": "RI",
+      "status": "pending",
+      "cameras": 25,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": "City announced it will move ahead on deploying 25 license plate cameras, despite ACLU criticism and objections from city councilors.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Flock Safety - Providence Business News (tag page)",
+          "url": "https://pbn.com/tag/flock-safety/",
+          "date": "2026-09-20"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Thin one-line sourcing from a PBN tag-page summary; verify deployment status, contract, and cost. Cranston, Pawtucket and Woonsocket PDs also recently partnered with Flock per the same source."
+    },
+    {
+      "id": "ri-state-police",
+      "agency": "Rhode Island State Police",
+      "agency_type": "state_police",
+      "city": null,
+      "state": "RI",
+      "status": "active",
+      "cameras": 39,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "RISP To Install 39 Plate Readers Under Flock Contract (B101)",
+          "url": "https://b101.iheart.com/content/2026-07-31-risp-to-install-39-plate-readers-under-flock-contract/",
+          "date": "2026-07-31"
+        },
+        {
+          "title": "State police launch Flock cameras across RI. Here's where. (Providence Journal)",
+          "url": "https://www.providencejournal.com/story/news/crime/2026/07/31/license-plate-reading-flock-cameras-already-in-use-by-rhode-island-state-police/91088862007/",
+          "date": "2026-07-31"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "agency_type 'sheriff' is a placeholder: schema lacks a state_police value. $597,000 three-year contract; term begins when all cameras installed. RISP policy: data not shared with other states or federal agencies incl. ICE for administrative immigration enforcement. 39 cameras across 22 municipalities. Gov. McKee paused new State Police ALPR installations/activations on 2026-08-18 and ordered uniform-standards recommendations within 60 days (due mid-October 2026). [agency_type corrected from placeholder]"
+    },
+    {
+      "id": "ri-bristol-risp",
+      "agency": "Rhode Island State Police (Bristol camera request)",
+      "agency_type": "state_police",
+      "city": "Bristol",
+      "state": "RI",
+      "status": "pending",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2025-11-12",
+      "decision_summary": "RISP sought Bristol Town Council approval on Nov 12, 2025 to install a Flock camera (Metacom Ave/Old Ferry Road area) at no cost to the town via an RISP grant; the matter was tabled pending RISP providing a formal written directive on its moratorium on sharing data with ICE.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Bristol Police Dept Flock Safety / RISP Presentation (ACLU of RI)",
+          "url": "https://www.riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf",
+          "date": "2026-02"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "agency_type placeholder as with ri-state-police. Tabled, not rejected; ProJo (2026-07-31) later listed Bristol among municipalities that gave RISP approval, so this may have been resolved - verify current status. [agency_type corrected from placeholder]"
+    },
+    {
+      "id": "ri-south-kingstown-pd",
+      "agency": "South Kingstown Police Department",
+      "agency_type": "municipal_police",
+      "city": "South Kingstown",
+      "state": "RI",
+      "status": "cancelled",
+      "cameras": 8,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-07-27",
+      "decision_summary": "Town Council voted unanimously to terminate the Flock Safety contract after a public work session with the police chief and Flock's public-affairs director. Councilors cited federal overreach concerns and fear of losing control of the system/data.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "As Flock cameras spread across RI, opposition is growing (Providence Journal)",
+          "url": "https://www.providencejournal.com/story/news/crime/2026/08/03/vandals-target-cranston-camera-as-resistance-to-flock-grows-in-ri/91116402007/",
+          "date": "2026-08-03"
+        },
+        {
+          "title": "Town ends partnership with Flock cameras (NBC 10 WJAR)",
+          "url": "https://www.youtube.com/watch?v=9RRqBtry1CU",
+          "date": "2026-07-28"
+        },
+        {
+          "title": "Rhode Island town unanimously removes Flock license plate readers after privacy clash",
+          "url": "https://www.thecooldown.com/green-tech/south-kingstown-removes-flock-license-plate-readers/",
+          "date": "2026-08-08"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Camera count discrepancy across sources (8 proposed, 7 operating, one report of 6). Timeline per Uprise RI: award approved 2025-06-23, agreement signed 2025-07-16/17, one-year trial began after first camera validated 2026-02-19. Council president said town sought cameras' removal ASAP and a rebate."
+    },
+    {
+      "id": "ri-tiverton-pd",
+      "agency": "Tiverton Police Department",
+      "agency_type": "municipal_police",
+      "city": "Tiverton",
+      "state": "RI",
+      "status": "active",
+      "cameras": 4,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-07-29",
+      "decision_summary": "Town council approved the purchase of more Flock cameras after a contentious meeting; department had not yet decided where the four new cameras would go.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Tiverton to buy more Flock cameras after contentious council meeting (Herald News)",
+          "url": "https://www.heraldnews.com/story/news/2026/07/29/tiverton-town-council-oks-purchase-of-more-flock-surveillance-cameras/91081209007/",
+          "date": "2026-07-29"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Four new town cameras; RISP separately operates two Flock cameras in Tiverton."
+    },
+    {
+      "id": "ri-portsmouth-risp",
+      "agency": "Town of Portsmouth (RISP camera request)",
+      "agency_type": "municipal_police",
+      "city": "Portsmouth",
+      "state": "RI",
+      "status": "rejected",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": "Portsmouth rejected a Rhode Island State Police request to install a Flock camera (reported January 2026); residents' concerns about data safety and citizen privacy applied whether the town or the state police installed the readers.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "These 2 towns rejected state police request to install Flock cameras (WJAR)",
+          "url": "https://coastalabc.com/news/local/these-2-towns-rejected-rhode-island-state-police-request-install-flock-cameras-automatic-license-plate-readers-portsmouth-warren-july-31-2026",
+          "date": "2026-07-31"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Do not confuse with Portsmouth, NH. Rejection reported January 2026; no exact day captured so decision_date is null. A separate draft MOU between RISP and the Town of Portsmouth on Flock data access was published on the town site."
+    },
+    {
+      "id": "ri-warren-risp",
+      "agency": "Town of Warren (RISP camera request)",
+      "agency_type": "municipal_police",
+      "city": "Warren",
+      "state": "RI",
+      "status": "rejected",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": "Warren declined to give the Rhode Island State Police approval to install Flock cameras as part of RISP's 39-camera statewide rollout.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "State police launch Flock cameras across RI. Here's where. (Providence Journal)",
+          "url": "https://www.providencejournal.com/story/news/crime/2026/07/31/license-plate-reading-flock-cameras-already-in-use-by-rhode-island-state-police/91088862007/",
+          "date": "2026-07-31"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Rejection of a state-police installation request (no town-owned contract). Little Compton also declined a proposed installation per ACLU reporting."
+    },
+    {
+      "id": "nh-manchester-pd",
+      "agency": "Manchester Police Department",
+      "agency_type": "municipal_police",
+      "city": "Manchester",
+      "state": "NH",
+      "status": "active",
+      "cameras": 0,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "As states seek to rein in Flock license plate cameras, New Hampshire is considered a model (Boston Globe)",
+          "url": "https://newspub.live/northeast/new-hampshire/as-states-seek-to-rein-in-flock-license-plate-cameras-new-hampshire-is-considered-a-model-the-boston-globe/",
+          "date": "2026-09-24"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "NH law (3-minute retention rule) prevents NH law enforcement from installing their own cameras; Manchester PD instead holds a contract allowing its database to be queried and to access other states' databases (per Union Leader via Globe). cameras: 0 owned; this is an access/query arrangement. Source is a Globe article via a third-party mirror; seek the original Union Leader reporting."
+    },
+    {
+      "id": "nh-portsmouth-pd",
+      "agency": "Portsmouth Police Department",
+      "agency_type": "municipal_police",
+      "city": "Portsmouth",
+      "state": "NH",
+      "status": "pending",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": "City councilor Andrew Bagley wants an ordinance requiring council approval before fixed license-plate readers go up on city streets.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Protesters Target Flock Safety Cameras as Florida Bans License Plate Readers From State Highways (NewsCord)",
+          "url": "https://newscord.org/article/protesters-target-flock-cameras-fro--Story_20260901_FloridaandTexasmovetf84d0564",
+          "date": "2026-09-01"
+        }
+      ],
+      "confidence": "low",
+      "last_verified": "2026-09-25",
+      "notes": "Do not confuse with Portsmouth, RI. No cameras confirmed; regulatory proposal only."
+    },
+    {
+      "id": "vt-manchester-pd",
+      "agency": "Manchester Police Department",
+      "agency_type": "municipal_police",
+      "city": "Manchester",
+      "state": "VT",
+      "status": "active",
+      "cameras": 5,
+      "annual_cost_usd": 15000,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Vermont Towns Face a July 2027 Ban on License Plate Cameras, State Says (Compass Vermont)",
+          "url": "https://www.compassvermont.com/p/vermont-towns-face-a-july-2027-ban",
+          "date": "2026-09-23"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Five cameras installed 2023; paused in 2025 over state records-handling rules, resumed after state said use complied. Current contract year runs through March 2027 at $15,000 per the Bennington Banner (August 2026). Selectboard took up the cameras' future Aug 18, 2026 and tabled it; decision expected in fall budget season. Vermont 23 V.S.A. section 1609 bars state agencies and political subdivisions from using ALPR systems starting 2027-07-01 unless the legislature acts. VTDigger reported VT departments also search Flock's national network via NESPIN."
+    },
+    {
+      "id": "me-south-portland-pd",
+      "agency": "South Portland Police Department",
+      "agency_type": "municipal_police",
+      "city": "South Portland",
+      "state": "ME",
+      "status": "active",
+      "cameras": 7,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "South Portland Reconsiders AI License Plate Cameras (B98.5, via WGME)",
+          "url": "https://b985.fm/ixp/490/p/south-portland-flock-camera-privacy-concerns/",
+          "date": "2026-05-20"
+        },
+        {
+          "title": "City of South Portland Releases Audit Summary of Flock Safety ALPR Usage and Provides Update on Safeguards",
+          "url": "http://southportland-gov.community.diligentoneplatform.com/document/9d70cca1-180d-4a47-a702-52af619d2310/",
+          "date": "2026-05-31"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-09-25",
+      "notes": "Seven cameras operational since June 2025; city has spent about $22,000 so far. A proposal to extend the contract beyond its 2027 expiration was removed; unclear whether the city will renew next year; councilors plan continued public meetings. City completed a review of network audit records Feb 2025-May 2026. renewal_date null: only '2027' known, no exact date."
+    },
+    {
+      "agency": "Beacon Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Beacon",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "ny-beacon-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Chief defended the system Sept 21, 2026 amid resident opposition. Contract approved Jan 2023, initial two-year term $21,400, later extended and reported as running through 2028 (exact end date not reported; not inferred). Beacon withdrew from Flock's nationwide database in early 2026 over outside-agency access concerns. Camera count not stated exactly: 2 on Route 9D, others on Route 52/Washington Ave/Main St, plus one mobile. 30-day retention.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-25",
+          "title": "Beacon Police Chief Explains Camera System",
+          "url": "https://highlandscurrent.org/2026/09/25/beacon-police-chief-explains-camera-system/"
+        }
+      ],
+      "state": "NY",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Dutchess County (District Attorney and Sheriff)",
+      "agency_type": "county",
+      "annual_cost_usd": null,
+      "cameras": 65,
+      "city": "Poughkeepsie",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-09-25",
+      "decision_summary": "DA Anthony Parisi and Sheriff Kirk Imperati withdrew support; Parisi instructed Flock to terminate service and physically remove all 65 county cameras (removal up to 30 days) after public forums drew heavy opposition over privacy, data sharing, and local control.",
+      "id": "ny-dutchess-county",
+      "last_verified": "2026-09-25",
+      "notes": "Breaking Sept 25, 2026. DA and Sheriff withdrew support; Flock instructed to terminate service and remove all 65 county cameras (up to 30 days). A $94,500 figure appeared as the 2026 county budget line for Flock, not a confirmed annual contract value, so cost is null. Does not apply to municipal agencies' own cameras. County legislators pushed a resolution to cover cameras pending removal.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-25",
+          "title": "Dutchess Orders Removal of Flock Cameras After Officials Abandon Program",
+          "url": "https://www.newpineplainsherald.org/dutchess-orders-removal-of-flock-cameras-after-officials-abandon-program/"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "Dutchess County to Remove Flock Cameras After Top Officials Withdraw Support",
+          "url": "https://www.thedailycatch.org/articles/dutchess-county-district-attorney-and-sheriff-withdraw-support-for-continued-use-of-flock-cameras/"
+        }
+      ],
+      "state": "NY",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Niagara Falls Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 24,
+      "city": "Niagara Falls",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "ny-niagara-falls-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Council approved unanimously: $12,100 install for 24 solar-powered cameras plus a $288,000 four-year Flock cloud software/storage package via reseller SHI International Corp (implies ~$72k/yr, but the source states only the four-year total, so annual cost is null). Funded by a NY State Law Enforcement Tech Grant; project could extend beyond four years with additional funding. Exact approval date not pinned down; proposal was on the Jan 7, 2026 council agenda.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-01-15",
+          "title": "N.Y. city seeks $300,100 grant for license plate reader cameras",
+          "url": "https://www.gov1.com/products/technology/n-y-city-seeks-300-100-grant-for-license-plate-reader-cameras"
+        },
+        {
+          "date": "2025-03-01",
+          "title": "Niagara Falls, N.Y., Approves License Plate Reader Deployment",
+          "url": "https://www.govtech.com/public-safety/niagara-falls-n-y-approves-license-plate-reader-deployment"
+        }
+      ],
+      "state": "NY",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Scarsdale Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Scarsdale",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2025-08-07",
+      "decision_summary": "Village board of trustees rescinded the $2.1 million Flock contract (approved in closed session in April 2025) after community opposition; cameras were never installed. NYCLU is separately suing the village over FOIL-denied camera-location records.",
+      "id": "ny-scarsdale-village-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Board rescinded the $2.1M Flock contract approved in closed session April 2025; cameras were never installed. Status rejected, not cancelled. $2.1M was total contract value; exact approval/execution date not in opened sources.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-04-30",
+          "title": "New Lawsuit: Do We Have a Right to Know We're Being Surveilled?",
+          "url": "https://www.dropsitenews.com/p/nyclu-lawsuit-surveillance-camera-location-public-record-flock"
+        },
+        {
+          "date": "2025-08-04",
+          "title": "In a village without a newspaper, a small digital outlet is keeping tabs and asking questions",
+          "url": "http://dankennedy.net/2025/08/04/in-a-village-without-a-newspaper-a-small-digital-outlet-was-keeping-tabs-and-asking-questions/"
+        },
+        {
+          "date": "2025-10-27",
+          "title": "Committee on Open Government FOIL AO 19882 (confirms contract rescinded, cameras never installed)",
+          "url": "https://opengovernment.ny.gov/system/files/documents/2025/10/f19882.pdf"
+        }
+      ],
+      "state": "NY",
+      "status": "rejected",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Syracuse Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 131,
+      "city": "Syracuse",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-02-09",
+      "decision_summary": "Syracuse Common Council voted to end the Flock partnership (reported 7-1 vote approving a replacement Axon ALPR contract) after revelations Flock data had been shared with outside clients including ICE. Flock permissions revoked in March 2026; hardware removal ordered by May 26; cameras unplugged June 19.",
+      "id": "ny-syracuse-syracuse-pd",
+      "last_verified": "2026-09-25",
+      "notes": "City switched vendors rather than abandoning ALPR: approved a five-year Axon deal reported at over $422,000. Decision date is the February 9, 2026 council meeting reported by WSYR; the exact vote date of the 7-1 approval is not pinned down in opened sources. Camera count (131) and timeline (permissions revoked March, removal deadline May 26 missed by weeks, cameras unplugged June 19 after a local outlet asked) come from the nexfinitynews piece. NYCLU's Daniel Schwarz notes the city's Surveillance Technology Working Group has not met since early 2026.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-07-27",
+          "title": "Cities Ditch Flock Cameras for Axon ALPRs — Who Owns Axon?",
+          "url": "https://nexfinitynews.com/cities-drop-flock-cameras-replace-axon-alpr-who-owns-axon/"
+        },
+        {
+          "date": "2026-02-09",
+          "title": "Syracuse Council To Vote On License Plate Reader Switch After Data Leak",
+          "url": "https://wsyr.iheart.com/content/2026-02-09-syracuse-council-to-vote-on-license-plate-reader-switch-after-data-leak/"
+        },
+        {
+          "date": "2026-08-07",
+          "title": "Cities Are Ditching Flock, Immediately Replacing It With Axon License Plate Readers",
+          "url": "http://thefreethoughtproject.com/government-surveillance/cities-are-ditching-flock-immediately-replacing-it-with-axon-license-plate-readers"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "Flock Safety Cameras Face Grassroots Backlash Across the US as 50 Cities Cut Contracts",
+          "url": "https://www.karmactive.com/flock-safety-cameras-grassroots-backlash-50-cities/"
+        }
+      ],
+      "state": "NY",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Troy Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 78000,
+      "cameras": 26,
+      "city": "Troy",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "ny-troy-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Pilot began 2021, expanded to 26 cameras on a two-year $156,000 contract; $78,000 is the reported annual payment the mayor declared a public emergency to keep paying after the council tabled the April 1, 2026 renewal vote. Council passed Local Law 3 regulating LPR data (72-hour retention) and a law limiting mayoral emergency powers (7-0, Sept 2026). Council is suing the mayor. Cameras operational as of Sept 2026.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-05-19",
+          "title": "Flock License Plate Readers Drive Small Town Into A State Of Emergency",
+          "url": "https://www.jalopnik.com/2177234/troy-new-york-town-torn-apart-police-using-flock-cameras-safety-concerns/"
+        },
+        {
+          "date": "2026-09-06",
+          "title": "Troy City Council limits mayor's emergency powers after Flock dispute",
+          "url": "https://www.wamc.org/news/2026-09-06/troy-flock-cameras-city-council-limits-mayors-emergency-powers"
+        },
+        {
+          "date": "2026-09-18",
+          "title": "Troy passes changes to law regulating automatic license plate readers cameras",
+          "url": "https://www.wamc.org/new-york-news/2026-09-18/troy-council-flock-camera-regulations-law"
+        }
+      ],
+      "state": "NY",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "North Brunswick Township Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 35000,
+      "cameras": null,
+      "city": "North Brunswick",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2025-09-01",
+      "decision_summary": "Township council resolution 302-9.25 (Sept 2025) awarded Flock a proprietary 1-year ALPR contract at $35,000 (police forfeiture funds), with up to two 1-year renewal options at $35,000 each (max 3 years, $105,000).",
+      "id": "nj-north-brunswick-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Township council resolution 302-9.25 (Sept 2025) awarded Flock a proprietary 1-year ALPR contract at $35,000 from police forfeiture funds, with up to two 1-year renewal options (max 3 years, $105,000). Primary source is the resolution document itself, but the vote outcome and contract execution were not confirmed, so status is pending. Camera count and exact start date not stated.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2025-09-01",
+          "title": "Township of North Brunswick Resolution 302-9.25 (authorizing proprietary Flock ALPR contract)",
+          "url": "https://live-township-of-north-brunswick.pantheonsite.io/wp-content/uploads/2025/09/302-9.25-Authorizing-A-Proprietary-Contract-with-Flock-Safety-for-Automated-License-Plate-Reader-1.pdf"
+        }
+      ],
+      "state": "NJ",
+      "status": "pending",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Abington Township Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 3,
+      "city": "Abington",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-08-27",
+      "decision_summary": "Board of Commissioners voted to replace the 3-camera Flock system with two Axon cameras over data-security and sharing concerns; one Flock contract ($9,225/yr) expired Sept 2026, a second ($10,500/yr) runs to Feb 2028 with early exit being negotiated.",
+      "id": "pa-abington-twp-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Board voted to replace the 3-camera Flock system with two Axon cameras over data-security and sharing concerns. One Flock contract ($9,225/yr) expired Sept 2026; a second ($10,500/yr) runs to Feb 2028 with early exit being negotiated. Two overlapping contracts, so annual cost left null. Thousands of Abington search records surfaced in public data dumps; department stopped approving outside-agency camera requests.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-08-28",
+          "title": "Abington Township votes to ditch Flock cameras over privacy concerns",
+          "url": "https://fox29.com/news/abington-township-votes-ditch-flock-cameras-over-privacy-concerns"
+        },
+        {
+          "date": "2026-08-26",
+          "title": "Abington Police Drop Flock Cameras Over Data Security Concerns",
+          "url": "http://montco.today/2026/08/abington-police-drop-flock-cameras-data-security/"
+        }
+      ],
+      "state": "PA",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Franklin County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Chambersburg",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-08-26",
+      "decision_summary": "County commissioners voted unanimously to not renew the Flock contract ~30 days early; Sheriff's office loses access to Flock cameras and the database. Commissioners called for state/federal HIPAA-style rules before ever re-engaging.",
+      "id": "pa-franklin-county-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "County commissioners voted unanimously to not renew ~30 days early; Sheriff's office loses access to Flock cameras and database. Original contract approved Oct 2025; $4,500 launch spend reported. Commissioners called for state/federal HIPAA-style rules before re-engaging. Gov. Shapiro publicly backed limits/ban on Flock in PA in Aug 2026. Chambersburg borough police separately use Motorola cameras, not Flock.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-08-31",
+          "title": "Shapiro backs Flock ban in PA. What's happening in Franklin County?",
+          "url": "https://www.publicopiniononline.com/story/news/local/2026/08/31/shapiro-supports-flock-ban-in-pa-whats-happening-in-franklin-county/91545178007/"
+        },
+        {
+          "date": "2026-08-24",
+          "title": "Franklin County officials, citizens clash over Flock cameras",
+          "url": "https://www.publicopiniononline.com/story/news/local/2026/08/24/residents-law-enforcement-clash-over-flock-in-franklin-county/91387192007/"
+        }
+      ],
+      "state": "PA",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Penn State University Police and Public Safety",
+      "agency_type": "university",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "State College",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "pa-penn-state-upps",
+      "last_verified": "2026-09-25",
+      "notes": "Described by the department as a 'limited, time-bound pilot' at University Park perimeter, 'no contract or cost during the testing period.' DeFlock lists ~24 reported campus locations; the Collegian attempted to verify all of them, but the count is crowdsourced and unconfirmed. Access restricted to trained UPPS personnel; audit logs showed only testing-level access in late 2025.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-04-09",
+          "title": "Flock cameras raise privacy, transparency concerns at Penn State",
+          "url": "https://www.psucollegian.com/features/features_investigation/its-like-youve-had-a-tail-the-entire-time-flock-cameras-on-campus-raise-privacy/article_d29a3790-5fd0-45d6-ace2-40d38d3f37a7.html"
+        }
+      ],
+      "state": "PA",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Temple University Police Department",
+      "agency_type": "university",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Philadelphia",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "pa-temple-university-pd",
+      "last_verified": "2026-09-25",
+      "notes": "First university PD in PA to deploy Flock (2024), funded by a $250,000 grant secured by Rep. Brendan Boyle; system integrated with ~1,500 campus cameras. Camera count and contract terms not reported. Contrast: Philadelphia PD confirmed it does NOT operate Flock cameras (uses other ALPR brands).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-23",
+          "title": "Pa. lawmakers are considering limits on Flock cameras. But how many are already in Philly?",
+          "url": "https://www.phillyvoice.com/flock-cameras-philadelphia-pennsylvania-lawmakers/"
+        },
+        {
+          "date": "2025-05-30",
+          "title": "Temple University Leads State with Flock License Plate Tech, Arrests Notorious Burglar",
+          "url": "https://www.brief.news/tech/2025/05/30/temple-university-tackles-burglar?briefFormat=TopStories&categories=Science&categories=World&categories=US&categories=Financial+Market+Space&source=%2Ftech&utm_source=category-page&utm_medium=web"
+        }
+      ],
+      "state": "PA",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Wilmington Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 4,
+      "city": "Wilmington",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-08-05",
+      "decision_summary": "City decommissioned its four Flock cameras (decommissioning began March 2026, complete by week of July 27) because the city could not control the collected data; the city never held a contract with Flock — the cameras had been donated in 2023.",
+      "id": "de-wilmington-pd",
+      "last_verified": "2026-09-25",
+      "notes": "No contract ever existed (donation), so cost fields are null; status 'cancelled' here means the deployment was discontinued. Council member Yolanda McCoy announced discontinuance Aug 5, 2026. WHYY reported 20 Delaware police agencies use ALPRs; Wilmington used to be one.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-08-06",
+          "title": "Does Wilmington use Flock cameras? Not anymore",
+          "url": "https://www.delawareonline.com/story/news/local/2026/08/06/wilmington-discontinues-use-of-flock-cameras/91187957007/"
+        }
+      ],
+      "state": "DE",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Metropolitan Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 336000,
+      "cameras": 67,
+      "city": "Washington",
+      "confidence": "medium",
+      "contract_end": "2026-12-31",
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "dc-mpd",
+      "last_verified": "2026-09-25",
+      "notes": "Strongest renewal-date signal: $336,000 one-year contract for 67 cameras (Dec 2024), extended through end of 2026 for another $201,000; end/renewal date 2026-12-31 per NOTUS reporting. Deployed 2025. Under scrutiny: D.C. Police Union grievance over Internal Affairs use of Flock data (July 2026), two misuse investigations under Councilmember Pinto's questions, internal audit expected late 2026; MPD has cut outside-agency data access.",
+      "renewal_date": "2026-12-31",
+      "sources": [
+        {
+          "date": "2026-08-28",
+          "title": "D.C. Won't Say How It's Using Its Flock Cameras - The Washington Sun",
+          "url": "https://www.washingtonsun.com/metro/dc-flock-cameras?redirected=notus_org"
+        },
+        {
+          "date": "2026-09-22",
+          "title": "DC Police investigate 2 potential cases of Flock camera misuse amid councilmember's concerns",
+          "url": "https://fox5dc.com/news/dc-police-investigate-2-potential-cases-flock-camera-misuse-amid-privacy-concerns"
+        }
+      ],
+      "state": "DC",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Augusta County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 2,
+      "city": "Augusta County",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "va-augusta-county-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "2 Flock cameras on Jefferson Highway near the county fire department. Board of Supervisors to place the contract on an upcoming agenda for review after Sept 6 vandalism of unrelated private Flock cameras in Staunton. Active but under review; a renewal date would be a pressure window if published in minutes.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-10",
+          "title": "Augusta County to revisit Flock camera contract following recent vandalism",
+          "url": "https://www.newsleader.com/story/politics/2026/09/10/flock-camera-vandalism-prompts-augusta-county-to-revisit-lpr-contract/91689439007/"
+        }
+      ],
+      "state": "VA",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Bridgewater Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Bridgewater",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-09-08",
+      "decision_summary": "Town Council canceled the Flock Safety contract after a VCIJ report found Bridgewater Flock data was searched nearly 7 million times in 12 months by agencies nationwide. Police Chief Steven Cason (hired Aug 2026) recommended removal, citing community trust. Council also resolved not to replace Flock with another ALPR system. Cameras were bagged within hours of the vote.",
+      "id": "va-bridgewater-town-pd",
+      "last_verified": "2026-09-25",
+      "notes": "No camera count or cost reported in the article. Vote margin not published.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-10",
+          "title": "A small Virginia town de-Flocks",
+          "url": "https://www.whro.org/virginia-center-for-investigative-journalism/2026-09-10/small-virginia-town-de-flocks"
+        }
+      ],
+      "state": "VA",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Charlottesville Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Charlottesville",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2025-12-15",
+      "decision_summary": "City manager announced at the Dec 15, 2025 council session that the city was ending its Flock Safety pilot program; community and council decided not to continue. Same wave as Staunton; Langley also sent the activist-blaming email referencing Charlottesville.",
+      "id": "va-charlottesville-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Single local-outlet source; described as a pilot program, so a full contract may never have existed. Low confidence until corroborated.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2025-12-19",
+          "title": "Flock CEO includes Charlottesville, Staunton in email blaming activists",
+          "url": "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services/"
+        }
+      ],
+      "state": "VA",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "City of Lynchburg",
+      "agency_type": "municipal_government",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Lynchburg",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-09-03",
+      "decision_summary": "City Council voted 6-0 on Sept 3, 2026 to end the city's Flock Safety contract (license plate readers plus gunshot detectors) over privacy concerns. Plan: devices stay turned off and covered until removed by April 6, 2027; early removal risked a $35,000 termination fee. On Sept 8 council voted 4-2 against a proposal for faster removal.",
+      "id": "va-lynchburg-city",
+      "last_verified": "2026-09-25",
+      "notes": "City Council voted 6-0 Sept 3, 2026 to end the city's Flock contract (readers plus gunshot detectors) over privacy. Plan: devices stay off and covered until removed by April 6, 2027; early removal risked a $35,000 termination fee. On Sept 8 council voted 4-2 against faster removal. April 2027 is the removal deadline, not a verified contract end date.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-04",
+          "title": "Lynchburg City Council votes to end Flock Safety contract amid surveillance concerns (WSLS)",
+          "url": "https://gmg-wsls-prod.cdn.arcpublishing.com/topic/Flock_Safety/"
+        },
+        {
+          "date": "2026-09-11",
+          "title": "Council rejects Misjuns' bid for more rapid removal of Flock cameras (The News & Advance via Medium)",
+          "url": "https://medium.com/@iwan.steinmann/week-3-cna-4cb0e2f95099"
+        }
+      ],
+      "state": "VA",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Newport News Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 222000,
+      "cameras": 74,
+      "city": "Newport News",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "va-newport-news-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Consolidated Flock contract 26-1342-00 (RFP 26-1342-1403). Latest FY2025 Falcon PO (20251698-04, mod 1): 74 cameras at $3,000/yr = $222,000/yr. Earlier POs: 30 (FY22), 44 (FY23), 30 (FY24 renewal), 15 (FY25) at $2,500/unit. NNPD ALPR SOP effective April 2026. Portal verified live, last updated 2026-07-24. Also a $2.64M 36-month Flock drone/Aerodome contract under the same consolidated contract.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-25",
+          "title": "DeFlock Newport News VA - Follow the Money (FOIA purchase orders)",
+          "url": "https://deflocknewportnews.org/"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "Newport News VA PD Transparency Portal",
+          "url": "https://transparency.flocksafety.com/newport-news-va-pd"
+        }
+      ],
+      "state": "VA",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/newport-news-va-pd"
+    },
+    {
+      "agency": "Staunton Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 6,
+      "city": "Staunton",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2025-12-19",
+      "decision_summary": "City announced termination of the Flock contract and removal of the 6 cameras (installed Nov 2024). Trigger was an unsolicited Dec 8, 2025 email from Flock CEO Garrett Langley framing critics as a 'coordinated attack' linked to defund-the-police groups; Chief Jim Williams and council said the narrative did not reflect city values. Community pressure also a factor. City coordinating removal; physical removal complicated by Flock unresponsiveness.",
+      "id": "va-staunton-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Decision announced Dec 19, 2025 per Carscoops; city manager announced at Dec 15 council session per Cville Right Now. Privately owned Flock cameras (e.g., outside Walmart/Lowe's) remain in Staunton and are unaffected. Activist page notes removal began Feb 11, 2026 and was slow.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-10",
+          "title": "Flock camera records stay hidden but surveillance remains in region",
+          "url": "https://www.newsleader.com/story/news/local/2026/09/10/augusta-county-flock-searches-database-camera-records-hidden/91506798007/"
+        },
+        {
+          "date": "2026-02-01",
+          "title": "Why More Cities Are Suddenly Pulling The Plug On Flock Safety Cameras",
+          "url": "https://www.carscoops.com/2026/02/flock-safety-alpr-contract-termination/"
+        },
+        {
+          "date": "2025-12-19",
+          "title": "Flock CEO includes Charlottesville, Staunton in email blaming activists",
+          "url": "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services/"
+        }
+      ],
+      "state": "VA",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "City of Asheville",
+      "agency_type": "municipal_government",
+      "annual_cost_usd": null,
+      "cameras": 11,
+      "city": "Asheville",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-08-25",
+      "decision_summary": "City Council voted 5-2 to terminate the Flock Safety contract 'immediately' after 2+ hours of public comment. City employees suspended all access/search/sharing; city manager directed to terminate the agreement and remove all 11 city-operated Flock cameras. A broader ALPR moratorium motion failed for lack of a second; the city expanded its Axon ALPR contract instead.",
+      "id": "nc-asheville-city",
+      "last_verified": "2026-09-25",
+      "notes": "Termination does not touch ~86 private/HOA/school Flock cameras inside city limits or 137 police vehicle-mounted Axon ALPRs. Council paired the vote with a surveillance-technology policy review.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-08-26",
+          "title": "Asheville Council votes to end Flock contract 'immediately'",
+          "url": "https://www.citizen-times.com/story/news/local/2026/08/26/asheville-city-council-votes-to-end-flock-camera-contract/91405585007/"
+        },
+        {
+          "date": "2026-08-28",
+          "title": "Asheville voted to tear out its Flock cameras. Here's the pushback that got it there.",
+          "url": "https://www.wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there"
+        }
+      ],
+      "state": "NC",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Dare County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 14,
+      "city": "Dare County",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": "Board of Commissioners voted unanimously (voice vote) to remove all 14 county-operated Flock ALPR cameras from unincorporated areas and directed the sheriff to stand down use and arrange removal as soon as practicable (~2 weeks notice to vendor). Followed hours of public comment organized in part by Deflock Dare. Nags Head separately kept its 12 cameras pending further resident feedback.",
+      "id": "nc-dare-county-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "Board of Commissioners voted unanimously (voice vote, reported Sept 3, 2026) to remove all 14 county-operated Flock ALPR cameras from unincorporated areas and directed the sheriff to stand down and arrange removal (~2 weeks notice to vendor). Followed hours of public comment organized by Deflock Dare. Sheriff said 30-day retention, shares with state/municipal agencies but not federal. Cameras leased via Flock contract. Nags Head kept its 12 cameras pending feedback.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-03",
+          "title": "Dare County to remove all automated license plate recognition cameras from unincorporated areas",
+          "url": "https://www.publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-reading-cameras-from-unincorporated-areas"
+        },
+        {
+          "date": "2026-09-03",
+          "title": "Nags Head leaves Flock cameras in place for now, delays e-bike restrictions",
+          "url": "https://www.patreon.com/SamWalkerOBXNews/posts/nags-head-leaves-168428390"
+        }
+      ],
+      "state": "NC",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Greenville Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 10,
+      "city": "Greenville",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-09-10",
+      "decision_summary": "City decided not to move forward with plans to purchase and install 10 Flock Safety cameras announced in July. Decision followed community protest at a council meeting and feedback from residents, council, and the city manager's office. Department says it owns/operates no Flock cameras; the 10 were never installed.",
+      "id": "nc-greenville-city-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Greenville, NC (East Carolina University student paper The East Carolinian), not Greenville, SC. Single-source outlet; medium-low confidence. Announcement made via the department's Facebook account; exact decision date approximate.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-10",
+          "title": "Greenville to reject Flock cameras",
+          "url": "https://www.piratemedia1.com/theeastcarolinian/article_4caa430a-e61d-4369-af40-86e56b59d4ac.html"
+        }
+      ],
+      "state": "NC",
+      "status": "rejected",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Henderson County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 13,
+      "city": "Henderson County",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "nc-henderson-county-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "13 cameras per Times-News. Active-under-pressure: bipartisan Deflock Henderson County (Change.org petition, 2,000+ signatures as of Aug 17) and PERSIST targeted the Sept 8 board meeting to defund. Board took no action to cancel as of 2026-09-25. Times-News reports ~$3,000/yr per camera paid from non-earmarked funds, but no per-agency contract total was reported, so annual_cost_usd left null.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-14",
+          "title": "Brevard drops plate-reader camera plan as Flock controversy roils WNC",
+          "url": "https://www.blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007/"
+        },
+        {
+          "date": "2026-08-18",
+          "title": "In rural NC county, opposition to Flock cameras unites conservatives and liberals",
+          "url": "https://cardinalpine.com/news/in-rural-nc-county-opposition-to-flock-cameras-unites-conservatives-and-liberals/"
+        }
+      ],
+      "state": "NC",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Hendersonville Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 15,
+      "city": "Hendersonville",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "nc-hendersonville-pd",
+      "last_verified": "2026-09-25",
+      "notes": "15 cameras per Times-News reporting. Active-under-pressure: Deflock Henderson County + PERSIST called on council Sept 3 to defund; Chief Blair Myhand defended the system at that meeting. No cancellation vote has occurred as of 2026-09-25.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-14",
+          "title": "Brevard drops plate-reader camera plan as Flock controversy roils WNC",
+          "url": "https://www.blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007/"
+        },
+        {
+          "date": "2026-09-03",
+          "title": "Residents press council to cancel Flock cameras as police chief defends license-plate readers",
+          "url": "https://citizenportal.ai/articles/9830765/north-carolina/henderson-county/hendersonville/residents-press-council-to-cancel-flock-cameras-as-police-chief-defends-license-plate-readers"
+        }
+      ],
+      "state": "NC",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Nags Head Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 12,
+      "city": "Nags Head",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "nc-nags-head-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Board of Commissioners took no formal action after a ~2-hour discussion; Chief Perry Hale defended the 12 Flock cameras. Commissioners want more resident feedback before deciding to continue, add controls, or remove. Single-source (Sam Walker OBX News) so confidence low; status pending (under debate).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-03",
+          "title": "Nags Head leaves Flock cameras in place for now, delays e-bike restrictions",
+          "url": "https://www.patreon.com/SamWalkerOBXNews/posts/nags-head-leaves-168428390"
+        }
+      ],
+      "state": "NC",
+      "status": "pending",
+      "transparency_portal": null
+    },
+    {
+      "agency": "New Hanover County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "New Hanover County",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-09-08",
+      "decision_summary": "Board of Commissioners voted 4-0 at a Sept 8 special meeting (one member absent) to cancel the Sheriff's Office $219,000 Flock stationary-ALPR contract outright, rejecting a pause option. Cited privacy, vendor policy shifts, and misuse cases (including a former Brunswick County SO employee). System had been searched ~3 million times since Jan 2025. County manager to work out cancellation with the sheriff; refund request for unused term.",
+      "id": "nc-new-hanover-county-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "Board of Commissioners voted 4-0 at a Sept 8 special meeting to cancel the Sheriff's Office Flock stationary-ALPR contract outright, rejecting a pause. The contract was reported at $219,000, but the sources do not confirm that figure is an annual amount, so cost is null. Cited privacy, vendor policy shifts, and misuse cases (including a former Brunswick County SO employee). System had been searched ~3 million times since Jan 2025. Refund requested for unused term. State-funded cameras unaffected.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-08",
+          "title": "New Hanover cancels Flock contract following concerns",
+          "url": "https://www.starnewsonline.com/story/news/local/2026/09/08/new-hanover-county-cancels-flock-contract-in-wilmington-nc/91656600007/"
+        },
+        {
+          "date": "2026-09-22",
+          "title": "Why Is Flock Safety Losing Municipal Contracts",
+          "url": "https://theinnovationattorney.substack.com/p/why-is-flock-safety-losing-municipal"
+        }
+      ],
+      "state": "NC",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Rutherford County",
+      "agency_type": "county",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Rutherford County",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "nc-rutherford-county",
+      "last_verified": "2026-09-25",
+      "notes": "Activist Jonathan Terry's petition (343 signatures in 15 days, goal 500) asked commissioners to suspend the county's Flock contract; commissioners were expected to take it up Sept 8, 2026, but no outcome was found in sources I opened. Petitioner's own cost/camera estimates (32-33 cameras, $80-99k/yr) are unverified, so nulls kept.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-08-28",
+          "title": "Asheville voted to tear out its Flock cameras. Here's the pushback that got it there.",
+          "url": "https://www.wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there"
+        }
+      ],
+      "state": "NC",
+      "status": "pending",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Wrightsville Beach Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 4,
+      "city": "Wrightsville Beach",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "nc-wrightsville-beach-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Contract remains ACTIVE. Department began using Flock in March 2026; 4 cameras read 135,951 unique plates in 30 days per its transparency portal. Former officer Tonya Baker: grand jury true bill Sept 8, arrested Sept 9, charged with one count of misuse of an automated license plate reader system (N.C. Gen. Stat. 20-183.31(b)) for accessing two plates Feb 10-May 12, 2026 without law enforcement purpose. Chief requested SBI investigation July 16. Court date Oct 12. Unaffected by New Hanover County's contract termination (separate deal).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-08",
+          "title": "Wrightsville Beach police officer out after alleged Flock misuse",
+          "url": "https://www.starnewsonline.com/story/news/crime/2026/09/08/wrightsville-beach-nc-officer-out-after-flock-misuse-investigation/91661963007/"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "Former Wrightsville Beach officer charged with misuse of Flock cameras",
+          "url": "https://www.starnewsonline.com/story/news/crime/2026/09/09/former-wrightsville-beach-nc-police-officer-charged-with-flock-misuse/91677027007/"
+        }
+      ],
+      "state": "NC",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Greenville County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 32,
+      "city": "Greenville County",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "sc-greenville-county-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "County budget funds 32 LPRs (29 fixed, 1 pending install, 4 offline from damage, plus 3 portable). Sheriff Hobart Lewis told the county Public Safety Committee each camera costs $3,500/yr plus $900 one-time install; county sets 30-day retention and says it does not sell data. Two deputies were fired in July 2026 for Flock misuse; sheriff addressed committee Aug 10. Agency remains active. SC DPS separately said it is 'in the process of potentially renewing' its HQ Flock contract (Greenville Business Magazine, Sept 2026) - worth watching for a renewal date but no agency-specific terms published.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-08-10",
+          "title": "Greenville County sheriff addresses Flock camera concerns after deputies fired",
+          "url": "https://gray-whns-prod.gtv-cdn.com/2026/08/10/greenville-county-sheriff-addresses-flock-camera-concerns-after-deputies-fired/"
+        }
+      ],
+      "state": "SC",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Gwinnett County Police Department",
+      "agency_type": "county",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Gwinnett County",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "ga-gwinnett-county-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Contract remains ACTIVE; no cancellation. On Sept 9, 2026 the department announced it had fired and charged 3 officers: Renee Downer (arrested May, simple battery + stalking), Derric Holmes (6 counts misuse of license plate data), Matthew Lau (1 count). A new June audit system exposed the abuse. Reforms: supervisor approval + written justification per search, mandatory retraining, retention cut from 30 to 15 days. Gwinnett County PD is the 3rd-highest searcher of Lexington KY's Flock system per WKYT. Town hall with residents planned/follow-up per WSB-TV.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-05",
+          "title": "Inside the Gwinnett County police audit that exposed license plate data abuse",
+          "url": "https://fox5atlanta.com/news/inside-gwinnett-county-police-audit-exposed-license-plate-data-abuse"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "Three Gwinnett PD officers fired and charged in connection with alleged misuse of Flock cameras",
+          "url": "https://www.waltontribune.com/news/three-gwinnett-pd-officers-fired-and-charged-in-connection-with-alleged-misuse-of-flock-cameras"
+        }
+      ],
+      "state": "GA",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Bradford County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 8,
+      "city": "Bradford County",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-08-31",
+      "decision_summary": "Sheriff Gordon Smith directed his office to stop using license plate readers throughout the entire county, not just state roads, citing the state's decision plus community unease with the technology. County had been awarded $77,200 in February 2026 for 8 license plate readers.",
+      "id": "fl-bradford-county-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "Sheriff Gordon Smith directed the office to stop using license plate readers countywide (not just state roads) after the FDOT memo, citing community unease. The county had been awarded $77,200 in Feb 2026 for 8 readers; that is a grant award, not a confirmed annual Flock subscription, so cost is null.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-02",
+          "title": "Before DeSantis nixed flock cameras, he approved funding them",
+          "url": "https://www.cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them"
+        }
+      ],
+      "state": "FL",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Brevard County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 7,
+      "city": "Brevard County",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-08-31",
+      "decision_summary": "After the FDOT memo withdrawing ALPR authority on state highway rights-of-way, Sheriff Wayne Ivey terminated the agency's use of and access to Flock camera data and removed cameras from major thoroughfares (Facebook post, per Florida Today).",
+      "id": "fl-brevard-county-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "After the FDOT memo withdrawing ALPR authority on state highway rights-of-way, Sheriff Wayne Ivey terminated use of and access to Flock camera data and removed cameras from major thoroughfares (announced via Facebook, per Florida Today, Aug 31, 2026). The agency had been approved for $29,750 in state funding to purchase 7 readers; that is a grant purchase amount, not a confirmed annual Flock subscription, so cost is null.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-02",
+          "title": "Before DeSantis nixed flock cameras, he approved funding them",
+          "url": "https://www.cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them"
+        },
+        {
+          "date": "2026-08-31",
+          "title": "Brevard agencies halt use of tag-reading system after FDOT order",
+          "url": "https://www.floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007/"
+        }
+      ],
+      "state": "FL",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "City of Oviedo",
+      "agency_type": "municipal_government",
+      "annual_cost_usd": null,
+      "cameras": 8,
+      "city": "Oviedo",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-09-21",
+      "decision_summary": "City Council ordered city staff to immediately remove all 8 Flock cameras positioned along public roads at Oviedo's boundaries and agreed to stop funding the program, after about two dozen residents spoke out against the technology. Council cited discomfort with how camera data is shared with other law enforcement agencies.",
+      "id": "fl-oviedo-city",
+      "last_verified": "2026-09-25",
+      "notes": "Secondhand via Police1 trade outlet summarizing council action ('late Monday' before the Sept 23 article = Sept 21, 2026, approximate). Vote margin not reported.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-23",
+          "title": "Florida bans most license plate readers from state roads",
+          "url": "https://www.police1.com/law-enforcement-policies/florida-bans-alprs-from-all-state-roads"
+        }
+      ],
+      "state": "FL",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Jacksonville Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Jacksonville",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-08-31",
+      "decision_summary": "Sheriff T.K. Waters announced the office would discontinue use of license plate reader technology throughout Duval County effective immediately, complying with the FDOT directive and citing citizen concerns. Statement: 'it is my responsibility to listen to the concerns of our citizens and act accordingly.'",
+      "id": "fl-jacksonville-duval-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "Camera count not reported in sources opened. Jacksonville Sheriff covers Duval County (consolidated government).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-09-01",
+          "title": "Florida Orders End of Flock Camera Use, Halts New Permits",
+          "url": "https://cmg-cmg-tv-10070-prod.cdn.arcpublishing.com/news/local/fdot-orders-license-plate-reading-cameras-removed-state-rights-of-way-halts-new-permits/XBT4JV2XJBCMVCPATCMBUWEU3A/"
+        }
+      ],
+      "state": "FL",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Palm Bay Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 51,
+      "city": "Palm Bay",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-09-21",
+      "decision_summary": "City suspended all 51 Flock cameras Aug 7 over permit/installation questions, reinstated Aug 24, then after the FDOT memo, Public Works began physically removing all Flock camera poles from municipal rights-of-way ahead of the Oct 1 fiscal year start (reported week of Sept 21, 2026).",
+      "id": "fl-palm-bay-pd",
+      "last_verified": "2026-09-25",
+      "notes": "City suspended all 51 Flock cameras Aug 7 over permit/installation questions, reinstated Aug 24, then after the FDOT memo Public Works began physically removing camera poles from municipal rights-of-way (reported week of Sept 21, 2026). Discrepancy: Florida Today reported 51 Flock cameras; The Palm Bayer reported 17 camera poles removed from municipal ROW (51 likely includes cameras on state highways). Whether the underlying Flock contract was formally terminated is unverified, so status is pending.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-08-31",
+          "title": "Brevard agencies halt use of tag-reading system after FDOT order",
+          "url": "https://www.floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007/"
+        },
+        {
+          "date": "2026-09-21",
+          "title": "This Week in Palm Bay: Budget Finality, 911 Dispatch Showdown, and Surveillance Grid Dismantled",
+          "url": "https://news.thepalmbayer.com/news/this-week-in-palm-bay-episode-24-september-21-2026/"
+        }
+      ],
+      "state": "FL",
+      "status": "pending",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Volusia County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Volusia County",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-08-31",
+      "decision_summary": "Sheriff Mike Chitwood ordered immediate shutdown of the agency's license plate readers countywide: 'until we have clarity, guidance and a legal framework from the Florida Legislature regarding this technology, it's no longer a tool we can use.'",
+      "id": "fl-volusia-county-sheriff",
+      "last_verified": "2026-09-25",
+      "notes": "Primary source: official sheriff's statement posted on volusiasheriff.gov (Aug 31, 2026, 4:32 pm). Shutdown is countywide, conditional on future state legislation, so status could revert if a legal framework passes.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "date": "2026-08-31",
+          "title": "Sheriff Chitwood's statement on discontinuation of VSO LPRs",
+          "url": "https://origin.volusiasheriff.gov/news/volusia-county-sheriff/sheriff-chitwoods-statement-on-discontinuation-of-vso-lprs.stml"
+        }
+      ],
+      "state": "FL",
+      "status": "cancelled",
+      "transparency_portal": null
+    }
+  ]
+}
