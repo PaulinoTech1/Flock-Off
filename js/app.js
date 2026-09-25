@@ -41,6 +41,22 @@ const App = (() => {
     for (const t of TABS) {
       document.getElementById(`nav-${t}`).addEventListener("click", () => show(t));
     }
+    // ARIA tabs keyboard pattern: arrows move between tabs, Home/End jump.
+    document.querySelector("nav.tabs").addEventListener("keydown", (e) => {
+      const id = document.activeElement && document.activeElement.id;
+      const i = id ? TABS.indexOf(id.replace("nav-", "")) : -1;
+      if (i === -1) return;
+      let j = null;
+      if (e.key === "ArrowRight") j = (i + 1) % TABS.length;
+      else if (e.key === "ArrowLeft") j = (i - 1 + TABS.length) % TABS.length;
+      else if (e.key === "Home") j = 0;
+      else if (e.key === "End") j = TABS.length - 1;
+      if (j !== null) {
+        e.preventDefault();
+        show(TABS[j]);
+        document.getElementById(`nav-${TABS[j]}`).focus();
+      }
+    });
     window.addEventListener("hashchange", () =>
       show(location.hash.replace("#", ""))
     );

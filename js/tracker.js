@@ -7,6 +7,7 @@
 const TrackerTab = (() => {
   let agencies = [];
   let meta = {};
+  let classification = null;
 
   const STATUS_LABEL = {
     active: "Active",
@@ -52,6 +53,10 @@ const TrackerTab = (() => {
       return;
     }
     el("coverage-note").textContent = meta.coverage_note || "";
+    try {
+      const cres = await fetch("data/source_classification.json");
+      if (cres.ok) classification = await cres.json();
+    } catch { /* transparency list degrades to a repo link */ }
     buildStateFilter();
     for (const id of ["filter-state", "filter-status", "filter-sort", "filter-evidence"]) {
       el(id).addEventListener("change", render);
@@ -64,8 +69,23 @@ const TrackerTab = (() => {
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && !el("drawer").hidden) closeDrawer();
     });
+    // Keep keyboard focus inside the modal drawer while it is open.
+    el("drawer").addEventListener("keydown", (e) => {
+      if (e.key !== "Tab") return;
+      const f = [...el("drawer").querySelectorAll(
+        'a[href], button:not([disabled]), input, select, [tabindex]:not([tabindex="-1"])'
+      )].filter((n) => n.offsetParent !== null);
+      if (!f.length) return;
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault(); last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first.focus();
+      }
+    });
     render();
     renderPriorities();
+    renderTransparency();
   }
 
   function debounce(fn, ms) {
@@ -143,7 +163,7 @@ const TrackerTab = (() => {
       tr.tabIndex = 0;
       tr.setAttribute("role", "button");
       tr.setAttribute("aria-label", `Details for ${a.agency}`);
-      const open = () => openDrawer(a);
+      const open = () => openDrawer(a, tr);
       tr.addEventListener("click", open);
       tr.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
@@ -152,7 +172,7 @@ const TrackerTab = (() => {
       const evBadge = ev.tier === "verified"
         ? ' <span class="badge badge-ok">verified</span>'
         : ev.tier === "pending"
-        ? ' <span class="badge badge-evpending">pending validation*</span>' : "";
+        ? " " + pendingBadge() : "";
       tr.innerHTML =
         `<td><strong>${esc(a.agency)}</strong><br><span class="muted">${esc(a.city || "")}</span></td>` +
         `<td>${esc(a.state)}</td>` +
@@ -183,12 +203,24 @@ const TrackerTab = (() => {
       stat(active.length, "active contracts") +
       stat(won.length, "cancelled / rejected") +
       stat(verifiedWon, "verified claims") +
-      stat(pendingWon, "pending validation*") +
+      stat(pendingWon, `pending validation<span aria-hidden="true">*</span><span class="visually-hidden">: fewer than 3 independent verified citations</span>`) +
       stat(upcoming, "renewals within 180 days") +
       stat(spend ? usd(spend) : "—", "known annual spend (active)");
   }
 
-  function openDrawer(a) {
+  // Accessible pending-validation badge: the visual asterisk is hidden from
+  // screen readers and replaced with a spoken explanation.
+  function pendingBadge() {
+    return `<span class="badge badge-evpending" ` +
+      `title="Fewer than ${EVIDENCE_BAR} independent verified citations; shown while awaiting corroboration">` +
+      `pending validation<span aria-hidden="true">*</span>` +
+      `<span class="visually-hidden">: fewer than ${EVIDENCE_BAR} independent verified citations</span></span>`;
+  }
+
+  let lastTrigger = null;
+
+  function openDrawer(a, trigger) {
+    lastTrigger = trigger || document.activeElement;
     el("drawer-title").textContent = a.agency;
     const ev = evidence(a);
     const src = (a.sources || []).map((s) =>
@@ -203,7 +235,7 @@ const TrackerTab = (() => {
       `<p class="status"><strong>${ev.independent} of ${EVIDENCE_BAR}</strong> independent verified citations. ` +
       (ev.tier === "verified"
         ? `<span class="badge badge-ok">verified</span> Strongly claimed.`
-        : `<span class="badge badge-evpending">pending validation*</span>`) +
+        : pendingBadge()) +
       `</p>` +
       (ev.tier === "pending"
         ? `<p class="muted">* Fewer than ${EVIDENCE_BAR} independent verified citations; shown while awaiting corroboration. ` +
@@ -227,7 +259,8 @@ const TrackerTab = (() => {
         ? `<p><a href="${esc(a.transparency_portal)}" target="_blank" rel="noopener noreferrer">Flock transparency portal</a></p>` : "") +
       (a.notes ? `<p>${esc(a.notes)}</p>` : "") +
       `<h3>Sources</h3><ul>${src || "<li>none listed</li>"}</ul>` +
-      `<p class="muted">✓ verified citation · ○ unverified lead (not counted toward the evidence bar)</p>` +
+      `<p class="muted">✓ verified citation · ○ unverified lead (not counted toward the evidence bar). ` +
+      `Classification: <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/scripts/classify_sources.py" target="_blank" rel="noopener noreferrer">scripts/classify_sources.py</a>.</p>` +
       `<p class="status">Confidence: <strong>${esc(a.confidence || "unrated")}</strong> · last verified ${esc(a.last_verified || "unknown" )}. ` +
       `Wrong or stale? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>`;
     el("drawer").hidden = false;
@@ -269,6 +302,41 @@ const TrackerTab = (() => {
 
   function closeDrawer() {
     el("drawer").hidden = true;
+    if (lastTrigger && typeof lastTrigger.focus === "function") lastTrigger.focus();
+    lastTrigger = null;
+  }
+
+  function renderTransparency() {
+    let v = 0, u = 0;
+    for (const a of agencies) {
+      for (const s of (a.sources || [])) {
+        if (s.verified) v++; else u++;
+      }
+    }
+    el("src-verified-count").textContent = v;
+    el("src-unverified-count").textContent = u;
+    el("data-updated").textContent = meta.last_updated || "unknown";
+    const host = el("domain-lists");
+    if (!classification) {
+      host.innerHTML = `<p class="status">Classification list unavailable here; ` +
+        `see <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/scripts/classify_sources.py">` +
+        `scripts/classify_sources.py</a> for the full domain list.</p>`;
+      return;
+    }
+    const news = classification.verified_news || [];
+    const primary = classification.verified_primary || [];
+    const leads = (classification.unverified_listed || [])
+      .concat(classification.unverified_unlisted_seen || []);
+    el("domain-count").textContent =
+      news.length + primary.length + leads.length;
+    const col = (title, items) =>
+      `<div><h4>${title} (${items.length})</h4><ul class="domain-list">` +
+      items.map((d) => `<li>${esc(d)}</li>`).join("") + `</ul></div>`;
+    host.innerHTML = `<div class="domain-cols">` +
+      col("Verified: established news outlets", news) +
+      col("Verified: primary and official records", primary) +
+      col("Not counted: leads only", leads) +
+      `</div>`;
   }
 
   function esc(s) {

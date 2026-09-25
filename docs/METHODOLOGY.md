@@ -58,7 +58,10 @@ approximates independence by distinct domains; a human judges the rest.
 Verification is stamped per citation (`sources[].verified`) by
 `scripts/classify_sources.py`, an explicit domain map reviewed in git.
 Unknown domains fail closed to unverified, and the weekly monitor flags
-newly added sources until they are classified.
+newly added sources until they are classified. The full domain
+classification is published verbatim on the tracker page itself
+("How this tracker works") and as `data/source_classification.json`, so
+readers can audit exactly which outlets count and which do not.
 
 ## Research priorities
 

@@ -327,6 +327,70 @@ tbody tr:hover, tbody tr:focus { background: #1b2029; }
 .badge-ok { background: #12351f; border-color: var(--ok); color: #b8f0c6; }
 .badge-evpending { background: #3a2f0d; border-color: var(--warn); color: #ffe1a1; }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 2000;
+  background: var(--accent);
+  color: #06121f;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+
+.skip-link:focus { top: 0.5rem; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+details {
+  margin: 0.8rem 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+  background: #0b0d12;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  min-height: var(--tap);
+  display: flex;
+  align-items: center;
+}
+
+.domain-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+.domain-cols h4 { margin: 0.4rem 0; font-size: 0.95rem; }
+
+.domain-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.domain-list li { margin-bottom: 0.15rem; overflow-wrap: break-word; }
+
+#how-it-works h3 { margin-top: 1.1rem; }
+#how-it-works .panel > h3:first-child { margin-top: 0; }
+
 .src-ver { color: var(--ok); font-weight: 700; }
 .src-unver { color: var(--muted); font-weight: 700; }
 

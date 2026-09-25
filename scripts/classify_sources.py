@@ -22,6 +22,7 @@ import sys
 import urllib.parse
 
 DATA_PATH = "data/agencies.json"
+CLASSIFICATION_PATH = "data/source_classification.json"
 
 # Established news outlets with an editorial process.
 VERIFIED_NEWS = {
@@ -126,7 +127,23 @@ def main() -> None:
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
         f.write("\n")
+
+    # Publish the classification itself so the site can show it verbatim.
+    from datetime import date
+    classification = {
+        "generated": date.today().isoformat(),
+        "criteria": "docs/METHODOLOGY.md#evidence-tiers",
+        "classifier": "scripts/classify_sources.py",
+        "verified_news": sorted(VERIFIED_NEWS),
+        "verified_primary": sorted(VERIFIED_PRIMARY),
+        "unverified_listed": sorted(UNVERIFIED),
+        "unverified_unlisted_seen": sorted(unlisted),
+    }
+    with open(CLASSIFICATION_PATH, "w", encoding="utf-8") as f:
+        json.dump(classification, f, indent=2, ensure_ascii=False)
+        f.write("\n")
     print(f"stamped {changed} source flags in {DATA_PATH}")
+    print(f"wrote {CLASSIFICATION_PATH}")
 
 
 if __name__ == "__main__":

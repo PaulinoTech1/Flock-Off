@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <noscript>
     <p style="padding:1rem">Flock-Off needs JavaScript for the interactive tracker. The project and methodology are documented in <a href="https://github.com/PaulinoTech1/Flock-Off">the repo README</a>.</p>
   </noscript>
@@ -26,7 +27,7 @@
     <button id="nav-learn" role="tab" aria-selected="false" aria-controls="tab-learn">Learn</button>
   </nav>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section id="tab-tracker" class="tab" role="tabpanel" aria-labelledby="nav-tracker">
       <h2>Contract tracker</h2>
       <p id="coverage-note" class="status"></p>
@@ -93,6 +94,24 @@
       <p class="status">Every record is sourced and confidence-rated. Claims with 3+ independent verified citations are marked verified; the rest are marked pending validation*. <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/METHODOLOGY.md#evidence-tiers">Evidence tiers</a>. *Pending validation = fewer than 3 independent verified citations; shown while awaiting corroboration. Spot an error or a missing contract? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>
 
       <section id="priorities" aria-label="Research priorities"></section>
+
+      <section id="how-it-works" aria-labelledby="how-heading">
+        <h2 id="how-heading">How this tracker works</h2>
+        <div class="panel">
+          <h3>Evidence tiers</h3>
+          <p>Cancelled, rejected, or expired claims are <strong>verified</strong> only with 3+ independent citations from verified sources. Everything else is marked <strong>pending validation*</strong>, with its exact citation count shown per record. <span class="muted">* Fewer than 3 independent verified citations; shown while awaiting corroboration.</span></p>
+          <h3>Source transparency</h3>
+          <p><strong id="src-verified-count">–</strong> verified citations and <strong id="src-unverified-count">–</strong> unverified leads across the dataset. Every citation is classified by an explicit, version-controlled domain list (<a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/scripts/classify_sources.py">scripts/classify_sources.py</a>); unknown domains fail closed to unverified. Advocacy organizations, social and video platforms, aggregators, and AI summaries count as leads, never as citations.</p>
+          <details>
+            <summary>Full domain classification (<span id="domain-count">–</span> domains)</summary>
+            <div id="domain-lists"><p class="status">Loading…</p></div>
+          </details>
+          <h3>Open data</h3>
+          <p>Dataset: <a href="data/agencies.json">agencies.json</a> (last updated <span id="data-updated">–</span>) · classification: <a href="data/source_classification.json">source_classification.json</a> · methodology, scripts, and full history on <a href="https://github.com/PaulinoTech1/Flock-Off">GitHub</a>.</p>
+          <h3>Corrections and upkeep</h3>
+          <p>Records are re-checked weekly (see the <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/MONITOR.md">monitor runbook</a>). Wrong or stale? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>. Corrections win over pride.</p>
+        </div>
+      </section>
     </section>
 
     <section id="tab-map" class="tab" role="tabpanel" aria-labelledby="nav-map" hidden>
@@ -153,7 +172,7 @@
   </main>
 
   <div id="drawer" class="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="drawer-title">
-    <div class="drawer-inner">
+    <div class="drawer-inner" id="drawer-inner">
       <button id="drawer-close" class="secondary" type="button" aria-label="Close details">Close</button>
       <h2 id="drawer-title"></h2>
       <div id="drawer-body"></div>
