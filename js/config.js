@@ -69,5 +69,11 @@ const FLOCKOFF_CONFIG = {
       tag: "Hardware detector",
       desc: "Open-source ESP32 firmware that passively detects Flock cameras by their WiFi/BLE emissions. Receive-only; 1,100+ stars. Requires a ~$20 ESP32 board.",
     },
+    {
+      name: "ALPR Watch",
+      url: "https://alprwatch.org",
+      tag: "Offline avoidance navigation",
+      desc: "ALPR-avoiding navigation with downloadable offline data packages (CoMaps-compatible) plus a suspected-locations map. Built largely on DeFlock's dataset, packaged for offline use.",
+    },
   ],
 };
