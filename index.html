@@ -3,32 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Flock-Off: the accessible way to see, avoid, and push back on ALPR surveillance cameras. No install, no account, no tracking.">
+  <meta name="description" content="Flock-Off: follow the money. A public tracker of Flock Safety ALPR contracts, costs, renewals, and cancellations. No install, no account, no tracking.">
   <meta name="theme-color" content="#0f1115">
-  <title>Flock-Off: see and avoid ALPR cameras</title>
+  <title>Flock-Off: follow the money behind ALPR cameras</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <noscript>
-    <p style="padding:1rem">Flock-Off needs JavaScript for the interactive map. The curated tool directory is listed in <a href="https://github.com/PaulinoTech1/Flock-Off">the repo README</a>.</p>
+    <p style="padding:1rem">Flock-Off needs JavaScript for the interactive tracker. The project and methodology are documented in <a href="https://github.com/PaulinoTech1/Flock-Off">the repo README</a>.</p>
   </noscript>
 
   <header class="top">
     <h1>Flock<span class="off">-Off</span></h1>
-    <p class="tagline">See, avoid, and push back on ALPR surveillance. No install, no account, no tracking.</p>
+    <p class="tagline">Follow the money. Every Flock camera is a contract, every contract has a renewal date, and every renewal is a pressure window.</p>
   </header>
 
   <nav class="tabs" role="tablist" aria-label="Flock-Off sections">
-    <button id="nav-map" role="tab" aria-selected="true" aria-controls="tab-map" class="active">Map</button>
-    <button id="nav-radar" role="tab" aria-selected="false" aria-controls="tab-radar">Radar</button>
-    <button id="nav-route" role="tab" aria-selected="false" aria-controls="tab-route">Route</button>
+    <button id="nav-tracker" role="tab" aria-selected="true" aria-controls="tab-tracker" class="active">Tracker</button>
+    <button id="nav-map" role="tab" aria-selected="false" aria-controls="tab-map">Map</button>
     <button id="nav-tools" role="tab" aria-selected="false" aria-controls="tab-tools">Tools</button>
     <button id="nav-learn" role="tab" aria-selected="false" aria-controls="tab-learn">Learn</button>
   </nav>
 
   <main>
-    <section id="tab-map" class="tab" role="tabpanel" aria-labelledby="nav-map">
+    <section id="tab-tracker" class="tab" role="tabpanel" aria-labelledby="nav-tracker">
+      <h2>Contract tracker</h2>
+      <p id="coverage-note" class="status"></p>
+
+      <div id="tracker-stats" class="stats" role="status" aria-live="polite"></div>
+
+      <div class="filters">
+        <div>
+          <label for="filter-state">State</label>
+          <select id="filter-state"><option value="">All states</option></select>
+        </div>
+        <div>
+          <label for="filter-status">Status</label>
+          <select id="filter-status">
+            <option value="">All statuses</option>
+            <option value="active">Active</option>
+            <option value="pending">Under debate</option>
+            <option value="cancelled">Cancelled</option>
+            <option value="rejected">Proposal rejected</option>
+            <option value="expired">Expired</option>
+          </select>
+        </div>
+        <div>
+          <label for="filter-search">Search</label>
+          <input type="text" id="filter-search" placeholder="Agency or city" autocomplete="off">
+        </div>
+        <div>
+          <label for="filter-sort">Sort</label>
+          <select id="filter-sort">
+            <option value="renewal">Renewal date</option>
+            <option value="cameras">Cameras</option>
+            <option value="cost">Annual cost</option>
+            <option value="agency">Agency name</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="tracker-status" class="status" role="status" aria-live="polite">Loading…</p>
+
+      <div class="table-wrap">
+        <table id="tracker-table">
+          <thead>
+            <tr>
+              <th scope="col">Agency</th>
+              <th scope="col">State</th>
+              <th scope="col">Status</th>
+              <th scope="col">Cameras</th>
+              <th scope="col">Annual cost</th>
+              <th scope="col">Renewal / decision</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <p class="status">Every record is sourced and confidence-rated. <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/METHODOLOGY.md">Read the methodology</a>. Spot an error or a missing contract? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>
+    </section>
+
+    <section id="tab-map" class="tab" role="tabpanel" aria-labelledby="nav-map" hidden>
       <h2>Camera map</h2>
       <p>Crowdsourced ALPR camera locations near the map center, from OpenStreetMap. Pan to your area, or use your location.</p>
       <div class="map-wrap">
@@ -47,89 +104,57 @@
       </div>
     </section>
 
-    <section id="tab-radar" class="tab" role="tabpanel" aria-labelledby="nav-radar" hidden>
-      <h2>Radar</h2>
-      <p>Get an alert when a known ALPR camera is near you, radar-detector style. Works with your phone's GPS. Nothing leaves your device except the camera-data download.</p>
-      <div id="radar-banner" class="banner" role="alert" hidden></div>
-      <div class="panel">
-        <button id="radar-toggle" type="button" aria-pressed="false">Start radar</button>
-        <label class="checkbox-row">
-          <input type="checkbox" id="radar-sound" checked>
-          Audible alerts
-        </label>
-        <p id="radar-count" class="status" role="status"></p>
-        <p id="radar-status" class="status" role="status" aria-live="polite">Radar off.</p>
-      </div>
-      <p class="status">Coverage depends on crowdsourced data. No alert is a clearance; cameras get installed faster than volunteers map them.</p>
-    </section>
-
-    <section id="tab-route" class="tab" role="tabpanel" aria-labelledby="nav-route" hidden>
-      <h2>Route exposure check</h2>
-      <p>See how many known ALPR cameras sit along a trip. This is exposure <em>analysis</em>; for turn-by-turn avoidance routing, use DeFlock or FlockHopper (Tools tab).</p>
-      <div class="route-form">
-        <div>
-          <label for="route-from">From</label>
-          <input type="text" id="route-from" placeholder="Address, place, or ZIP" autocomplete="off">
-        </div>
-        <div>
-          <label for="route-to">To</label>
-          <input type="text" id="route-to" placeholder="Address, place, or ZIP" autocomplete="off">
-        </div>
-        <div>
-          <button id="route-go" type="button">Check route</button>
-        </div>
-      </div>
-      <p id="route-status" class="status" role="status" aria-live="polite"></p>
-      <div id="route-summary" hidden></div>
-      <div id="route-map" role="application" aria-label="Route and nearby cameras" style="margin-top:.8rem"></div>
-      <ul id="route-list"></ul>
-    </section>
-
     <section id="tab-tools" class="tab" role="tabpanel" aria-labelledby="nav-tools" hidden>
       <h2>Anti-Flock tool directory</h2>
-      <p>The existing ecosystem, in one place. Flock-Off aggregates rather than duplicates: each tool below does something this page doesn't.</p>
+      <p>The existing ecosystem, in one place. Each tool below does something this tracker doesn't.</p>
       <div id="tools-grid" class="tools-grid"></div>
     </section>
 
     <section id="tab-learn" class="tab learn" role="tabpanel" aria-labelledby="nav-learn" hidden>
       <h2>Learn</h2>
 
+      <h3>How cancellations happen</h3>
+      <ul>
+        <li>Contracts have renewal dates. A renewal vote is the highest-leverage moment: the agency must publicly defend the system, and the tracker above shows when yours comes up.</li>
+        <li>What has worked elsewhere: public-records requests for the contract and audit logs, packing the council meeting, and citing neighboring towns that already cancelled.</li>
+        <li>23+ jurisdictions cancelled or rejected Flock systems in 2026; roughly 98 have done so since 2021 (DeFlock tally via press reporting). The playbook is proven.</li>
+      </ul>
+
       <h3>Spotting the cameras</h3>
       <ul>
         <li><strong>Flock Falcon</strong> (ALPR): small bullet camera on a pole, usually with a solar panel and a boxy housing. Photographs every passing plate.</li>
         <li><strong>Flock Raven</strong>: audio gunshot-detection sensor, often co-located with Falcons.</li>
         <li><strong>Flock Condor</strong>: pan-tilt-zoom live video camera for intersections and lots.</li>
-        <li>Other vendors (Motorola/Vigilant, Leonardo ELSAG) look similar; check DeFlock's identification guides before reporting.</li>
       </ul>
 
-      <h3>Contribute sightings</h3>
+      <h3>Contribute</h3>
       <ul>
-        <li>Report cameras on <a href="https://deflock.org" target="_blank" rel="noopener noreferrer">DeFlock</a>; they flow into OpenStreetMap, which feeds this page.</li>
-        <li>Experienced mappers can tag nodes directly in OSM as <code>surveillance:type=ALPR</code>.</li>
-        <li>A wrong pin is worse than a missing one: only report cameras you have positively identified.</li>
-      </ul>
-
-      <h3>Push back locally</h3>
-      <ul>
-        <li>File a public-records request with your police department for their Flock contract, camera locations, and search audit logs. DeFlock publishes request templates.</li>
+        <li>Contract tip (new deal, renewal date, cancellation vote)? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a> with a source link.</li>
+        <li>Camera sightings go to <a href="https://deflock.org" target="_blank" rel="noopener noreferrer">DeFlock</a>; they flow into OpenStreetMap, which feeds the map tab.</li>
         <li>Check <a href="https://haveibeenflocked.com" target="_blank" rel="noopener noreferrer">Have I Been Flocked</a> to see if your plate appears in released audit logs.</li>
-        <li>Abuse reports are tracked by the Institute for Justice's ALPR abuse database; misused systems get contracts cancelled (23+ jurisdictions in 2026).</li>
       </ul>
 
       <h3>Safety and scope</h3>
       <ul>
-        <li>Flock-Off is for <strong>awareness and lawful civic action</strong>: mapping, routing, records requests, and public pressure.</li>
+        <li>Flock-Off is for <strong>awareness and lawful civic action</strong>: mapping, records requests, public pressure, contract fights.</li>
         <li>Do not touch, disable, or vandalize cameras. That carries criminal liability and shifts the debate from privacy policy to property damage.</li>
-        <li>Detection here is passive and informational. It does not interfere with any system.</li>
       </ul>
     </section>
   </main>
 
+  <div id="drawer" class="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <div class="drawer-inner">
+      <button id="drawer-close" class="secondary" type="button" aria-label="Close details">Close</button>
+      <h2 id="drawer-title"></h2>
+      <div id="drawer-body"></div>
+    </div>
+  </div>
+
   <footer>
     <p>
+      Contract data is community-researched and sourced per record; see the methodology.
       Camera data: © OpenStreetMap contributors (ODbL) via the DeFlock community.
       Flock-Off stores nothing, tracks nothing, and requires no account.
-      Geolocation, when you opt in, stays on your device.
       <span id="year"></span> · <a href="https://github.com/PaulinoTech1/Flock-Off">Source on GitHub</a>
     </p>
   </footer>
@@ -137,9 +162,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/config.js"></script>
   <script src="js/data.js"></script>
+  <script src="js/tracker.js"></script>
   <script src="js/map.js"></script>
-  <script src="js/radar.js"></script>
-  <script src="js/route.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
