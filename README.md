@@ -6,7 +6,9 @@ Flock Safety has put 120,000+ automated license plate reader cameras across the 
 
 ## Use it
 
-Open `index.html` directly, or serve the directory:
+Live: **https://flock-off.vercel.app**
+
+Or open `index.html` directly, or serve the directory:
 
 ```bash
 python3 -m http.server 8080
