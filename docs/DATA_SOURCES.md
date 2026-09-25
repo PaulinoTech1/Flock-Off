@@ -24,7 +24,20 @@ OpenStreetMap standard tiles (`tile.openstreetmap.org`). Tile usage policy appli
 | Nominatim | `nominatim.openstreetmap.org/search` | Max 1 req/s; the app throttles geocoding. No bulk use. |
 | OSRM demo server | `router.project-osrm.org` | Demo use only. For any serious traffic, self-host OSRM (see ROADMAP). |
 
+## Contract records (discovery feeds, not citations)
+
+Both 100% free, no key, no account, no recurring cost. They *find* candidates;
+the underlying linked primary/news source is what gets cited, never the feed
+page itself. The weekly monitor diffs both against the dataset automatically.
+
+| Feed | What it gives | Use | Caveats |
+|---|---|---|---|
+| Finding Flock cancellation tracker (`findingflock.com/learn/flock-contract-cancellations`) | 14 verified terminal decisions, each with date, action, reason, and a direct source link; re-verified roughly monthly | Candidate cancelled/rejected records; cross-check our terminal claims | Narrow by design (verified-only); cite the linked report, not the tracker page |
+| EFF Atlas of Surveillance (`atlasofsurveillance.org/download.csv?vendor=Flock+Safety`) | ~2,700 Flock Safety deployment records (agency, city, county, state, summary, up to 3 source links each) as a free CSV | Candidate active agencies; camera counts; per-agency source links | Vendor filter is imperfect (confirm Flock on each record); entries go stale; EFF is advocacy, so records are leads per METHODOLOGY |
+
 ## What we deliberately do not use
 
 - **Flock's own APIs or transparency portals** scraped live: Eyes on Flock already mirrors portal stats under CC BY-SA 4.0; link there instead of re-scraping.
 - **Have I Been Flocked's audit-log index**: plate lookups stay on their site; Flock-Off never handles plate numbers.
+- **GovSpend**: `search_contracts` would give state/local contract expiration dates, but it requires a paid subscription. Rejected under the 100% free maintainability rule: a source we cannot afford to keep is a source we cannot maintain.
+- **USASpending**: verified to contain federal Flock awards (e.g. U.S. Park Police), but it is federal-only and the tracker scope is state/local. Out of scope.

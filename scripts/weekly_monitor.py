@@ -10,14 +10,189 @@ Usage: python3 weekly_monitor.py
 """
 from __future__ import annotations
 
+import csv
 import datetime
+import io
 import json
+import re
 import sys
 import urllib.request
+from html.parser import HTMLParser
 
 DATASET_URL = "https://raw.githubusercontent.com/PaulinoTech1/Flock-Off/main/data/agencies.json"
 STALE_DAYS = 180
 RENEWAL_WINDOW_DAYS = 90
+
+# --- Upstream discovery feeds: 100% free, no key, no account, no recurring
+# cost. Anything paywalled (e.g. GovSpend) is out by policy; see
+# docs/DATA_SOURCES.md. These feeds find candidates; the underlying linked
+# primary/news source is what gets cited, never the feed page itself.
+EAST_COAST_STATES = {
+    "CT", "DC", "DE", "FL", "GA", "MA", "ME", "NC",
+    "NH", "NJ", "NY", "PA", "RI", "SC", "VA", "VT",
+}
+FINDING_FLOCK_TRACKER_URL = "https://www.findingflock.com/learn/flock-contract-cancellations"
+ATLAS_CSV_URL = "https://www.atlasofsurveillance.org/download.csv?vendor=Flock+Safety"
+FF_ACTION_TO_STATUS = {
+    "canceled": "cancelled",
+    "non-renewal": "cancelled",
+    "paused": "pending",
+    "rejected": "rejected",
+    "deactivated": "cancelled",
+}
+_NAME_STOPWORDS = {
+    "police", "department", "dept", "sheriff", "sheriffs", "office", "county",
+    "city", "of", "the", "bureau", "metro", "metropolitan", "town",
+    "township", "village", "borough", "public", "safety",
+}
+
+
+def norm_name(s: str | None) -> str:
+    words = re.sub(r"[^a-z0-9 ]", " ", (s or "").lower()).split()
+    return " ".join(w for w in words if w not in _NAME_STOPWORDS)
+
+
+def fetch_text(url: str, timeout: int, max_bytes: int) -> str:
+    req = urllib.request.Request(url, headers={"User-Agent": "FlockOff-monitor/1.0"})
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        return resp.read(max_bytes + 1)[:max_bytes].decode("utf-8", "replace")
+
+
+class _TrackerTableParser(HTMLParser):
+    """Extract (place, state, date, action, source_url) rows from the first
+    table whose header mentions Place and Action."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self._in_table = False
+        self._in_th = False
+        self._in_td = False
+        self._headers: list[str] = []
+        self._row: list[str] = []
+        self._row_link: str | None = None
+        self._cell_link: str | None = None
+        self._buf: list[str] = []
+        self._is_tracker_table = False
+        self.rows: list[tuple[str, str, str, str, str | None]] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "table":
+            self._in_table = True
+            self._headers = []
+            self._is_tracker_table = False
+        elif self._in_table and tag == "th":
+            self._in_th = True
+            self._buf = []
+        elif self._in_table and tag == "td":
+            self._in_td = True
+            self._buf = []
+            self._cell_link = None
+        elif self._in_table and tag == "a":
+            for k, v in attrs:
+                if k == "href" and v:
+                    self._cell_link = v
+                    break
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "table":
+            self._in_table = False
+        elif tag == "th" and self._in_th:
+            self._in_th = False
+            self._headers.append("".join(self._buf).strip().lower())
+            if "place" in self._headers and "action" in self._headers:
+                self._is_tracker_table = True
+        elif tag == "td" and self._in_td:
+            self._in_td = False
+            self._row.append("".join(self._buf).strip())
+            if len(self._row) == 6:
+                self._row_link = self._cell_link  # source cell is last
+            if len(self._row) > 6:
+                self._row = self._row[:6]
+        elif tag == "tr" and self._in_table:
+            if self._is_tracker_table and len(self._row) >= 4:
+                place, state, date, action = self._row[0], self._row[1], self._row[2], self._row[3]
+                if place and state:
+                    self.rows.append((place, state, date, action, self._row_link))
+            self._row = []
+            self._row_link = None
+
+    def handle_data(self, data: str) -> None:
+        if self._in_th or self._in_td:
+            self._buf.append(data)
+
+
+def check_finding_flock_tracker(agencies: list[dict]) -> tuple[list[str], list[str]]:
+    """Compare the Finding Flock cancellation tracker against the dataset.
+
+    Returns (candidate_lines, mismatch_lines); raises on fetch/parse failure.
+    """
+    html = fetch_text(FINDING_FLOCK_TRACKER_URL, timeout=60, max_bytes=2_000_000)
+    parser = _TrackerTableParser()
+    parser.feed(html)
+    if not parser.rows:
+        raise RuntimeError("tracker table not found (page structure changed?)")
+
+    index: dict[tuple[str, str], list[dict]] = {}
+    for a in agencies:
+        index.setdefault((norm_name(a.get("agency")), a.get("state")), []).append(a)
+
+    candidates, mismatches = [], []
+    for place, state, date, action, source_url in parser.rows:
+        state = state.strip().upper()
+        if state not in EAST_COAST_STATES:
+            continue
+        key = (norm_name(place), state)
+        matched = []
+        for (nname, nstate), records in index.items():
+            if nstate != state:
+                continue
+            if key[0] and nname and (key[0] in nname or nname in key[0]):
+                matched.extend(records)
+        if not matched:
+            candidates.append(
+                f"- **{place}** ({state}): {action} on {date}. "
+                f"Research: confirm Flock vendor, find primary record. "
+                f"Tracker source: {source_url or FINDING_FLOCK_TRACKER_URL}"
+            )
+            continue
+        expected = FF_ACTION_TO_STATUS.get(action.strip().lower())
+        for m in matched:
+            if expected and m.get("status") != expected:
+                mismatches.append(
+                    f"- **{m['agency']}** ({state}): dataset says "
+                    f"{m.get('status')}, Finding Flock reports {action} on {date}. "
+                    f"Source: {source_url or FINDING_FLOCK_TRACKER_URL}"
+                )
+    return candidates, mismatches
+
+
+def check_atlas_csv(agencies: list[dict]) -> list[str]:
+    """Find East Coast Atlas of Surveillance agencies missing from the dataset.
+
+    Returns candidate lines; raises on fetch/parse failure.
+    """
+    text = fetch_text(ATLAS_CSV_URL, timeout=120, max_bytes=15_000_000)
+    reader = csv.DictReader(io.StringIO(text))
+    known = {(norm_name(a.get("agency")), a.get("state")) for a in agencies}
+    seen: set[tuple[str, str]] = set()
+    candidates = []
+    for row in reader:
+        state = (row.get("State") or "").strip().upper()
+        if state not in EAST_COAST_STATES:
+            continue
+        agency = (row.get("Agency") or "").strip()
+        key = (norm_name(agency), state)
+        if not key[0] or key in known or key in seen:
+            continue
+        # Atlas vendor filter is imperfect; flag for human vendor confirmation.
+        seen.add(key)
+        link = (row.get("Link 1") or "").strip()
+        candidates.append(
+            f"- **{agency}** ({row.get('City', '').strip()}, {state}): "
+            f"{(row.get('Summary') or '').strip()[:120]} "
+            f"Confirm Flock vendor. Lead: {link or 'atlasofsurveillance.org'}"
+        )
+    return candidates
 
 
 def days_until(date_str: str | None, today: datetime.date) -> int | None:
@@ -67,6 +242,8 @@ def main() -> None:
         lines.append("## Monitor health")
         lines.append(f"- Dataset source: {provenance}")
         lines.append("")
+
+    # (upstream health notes are collected below and appended here at the end)
 
     # Pressure windows: active contracts renewing soon.
     renewals = [
@@ -130,6 +307,42 @@ def main() -> None:
         lines.append("- none")
     lines.append("")
 
+    # Upstream discovery feeds (free, keyless). Failures are reported, never fatal.
+    health_notes: list[str] = []
+    try:
+        ff_candidates, ff_mismatches = check_finding_flock_tracker(agencies)
+    except Exception as exc:  # noqa: BLE001 - reported under Monitor health
+        ff_candidates, ff_mismatches = [], []
+        health_notes.append(f"Finding Flock tracker check failed: {exc}")
+    try:
+        atlas_candidates = check_atlas_csv(agencies)
+    except Exception as exc:  # noqa: BLE001 - reported under Monitor health
+        atlas_candidates = []
+        health_notes.append(f"Atlas of Surveillance CSV check failed: {exc}")
+
+    lines.append("## Upstream candidates: Finding Flock cancellation tracker")
+    if ff_candidates:
+        lines.extend(ff_candidates[:15])
+        if len(ff_candidates) > 15:
+            lines.append(f"- ...and {len(ff_candidates) - 15} more")
+    else:
+        lines.append("- none new in scope")
+    lines.append("")
+    if ff_mismatches:
+        lines.append("## Status mismatches vs Finding Flock tracker")
+        lines.extend(ff_mismatches[:15])
+        if len(ff_mismatches) > 15:
+            lines.append(f"- ...and {len(ff_mismatches) - 15} more")
+        lines.append("")
+    lines.append("## Upstream candidates: Atlas of Surveillance (active deployments)")
+    if atlas_candidates:
+        lines.extend(atlas_candidates[:15])
+        if len(atlas_candidates) > 15:
+            lines.append(f"- ...and {len(atlas_candidates) - 15} more")
+    else:
+        lines.append("- none new in scope")
+    lines.append("")
+
     # Stats.
     from collections import Counter
     import urllib.parse
@@ -153,6 +366,11 @@ def main() -> None:
         f"- Evidence: {bar_met} verified claims (3+ independent verified citations), "
         f"{len(terminal) - bar_met} pending validation* (fewer than 3)."
     )
+    if health_notes:
+        lines.append("")
+        lines.append("## Monitor health")
+        for note in health_notes:
+            lines.append(f"- {note}")
 
     print("\n".join(lines))
 

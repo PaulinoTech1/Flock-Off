@@ -61,11 +61,13 @@ VERIFIED_PRIMARY = {
 UNVERIFIED = {
     # Advocacy organizations: reputable, but advocacy. Leads, not citations.
     "eyesoffma.com", "riaclu.org", "deflocknewportnews.org",
+    "atlasofsurveillance.org",  # EFF: approved discovery feed, records are leads.
     # Social / video / self-publishing platforms.
     "youtube.com", "patreon.com", "medium.com",
     "theinnovationattorney.substack.com",
     # Aggregators and AI-generated summaries.
     "newspub.live", "findglocal.com", "citizenportal.ai", "brief.news",
+    "findingflock.com",  # approved discovery feed; cite the linked row source.
     # Activist / personal blogs.
     "thefreethoughtproject.com", "dankennedy.net",
     # Unknown or unverifiable outlets (revisit if they establish a masthead).

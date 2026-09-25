@@ -14,7 +14,12 @@ review per week. Automation finds candidates; a human makes every call.
 3. **News sweep**: targeted searches for Flock contract, cancellation, and
    renewal news from the last ~14 days, East Coast focus. Only items that are
    new or contradict the dataset survive; capped at 10.
-4. **Digest**: one GitHub issue titled `Monitor digest YYYY-MM-DD`, sections
+4. **Upstream feed checks** (in `weekly_monitor.py`, free and keyless):
+   Finding Flock's cancellation tracker (new in-scope terminal claims,
+   status mismatches against our records) and the EFF Atlas of Surveillance
+   CSV (in-scope agencies we lack). Failures are reported under Monitor
+   health, never fatal.
+5. **Digest**: one GitHub issue titled `Monitor digest YYYY-MM-DD`, sections
    ordered by priority, every item with a source link and a proposed dataset
    edit. Total action items capped around 25.
 
@@ -39,6 +44,8 @@ review per week. Automation finds candidates; a human makes every call.
 | Pressure windows | Active contract renews within 90 days | Verify the date against a primary source; this is organizer intel |
 | News items to classify | Fresh reporting not yet in the dataset | Read, decide status change, propose exact field edits |
 | Candidate new agencies | Upstream lists an agency we lack | Research: confirm Flock vendor, find contract or vote record |
+| Upstream candidates (feeds) | Finding Flock / Atlas entries not in dataset | Research: confirm vendor + find primary record; cite the linked source, not the feed |
+| Status mismatches | Feed disagrees with our record status | Re-verify against the linked source; correct the record |
 | Stale records | Unverified > 180 days | Re-check the top source; refresh `last_verified` or correct |
 | Low-confidence leads | Single-source records | Corroborate or leave flagged; never cite as confirmed |
 | Monitor health | What broke this run | Fix the check or accept the gap explicitly |

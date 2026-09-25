@@ -55,6 +55,23 @@ shown while awaiting corroboration.
 release, or syndicated copies of one wire story, count once. Automation
 approximates independence by distinct domains; a human judges the rest.
 
+### Upstream discovery feeds (free only)
+
+Two free feeds are approved for *discovery*; neither is a citation by itself:
+
+- **Finding Flock cancellation tracker.** Each row links a direct news report
+  or public record. Cite that linked source, not the tracker page.
+- **EFF Atlas of Surveillance.** Each record links up to three sources. The
+  Atlas is EFF-published advocacy data, so records are leads under the rule
+  above; cite the underlying linked government/news source, and independently
+  confirm the vendor on each record (the vendor filter is imperfect).
+
+Standing rule: every feed this tracker relies on must be 100% free, no key,
+no account, no recurring cost. Paid sources are out regardless of data
+quality, because a source we cannot afford to keep is a source we cannot
+maintain. The weekly monitor diffs both approved feeds against the dataset;
+see `docs/MONITOR.md`.
+
 Verification is stamped per citation (`sources[].verified`) by
 `scripts/classify_sources.py`, an explicit domain map reviewed in git.
 Unknown domains fail closed to unverified, and the weekly monitor flags
