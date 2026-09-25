@@ -23,7 +23,7 @@
     ],
     "last_updated": "2026-09-25",
     "methodology": "docs/METHODOLOGY.md",
-    "coverage_note": "69 sourced records across 15 states plus DC. A missing agency means not yet researched, not confirmed absent. Terminal claims (cancelled/rejected) need 3 independent verified citations to count as verified; the rest are flagged as needing corroboration. Exact renewal dates are still thin and are the top research priority."
+    "coverage_note": "69 sourced records across 15 states plus DC. A missing agency means not yet researched, not confirmed absent. Claims with 3+ independent verified citations are marked verified; the rest are marked pending validation*. Exact renewal dates are still thin and are the top research priority."
   },
   "agencies": [
     {

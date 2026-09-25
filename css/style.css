@@ -325,7 +325,7 @@ tbody tr:hover, tbody tr:focus { background: #1b2029; }
 .badge-expired { background: #26262b; color: var(--muted); }
 .badge-warn { background: #3a2f0d; border-color: var(--warn); color: #ffe1a1; }
 .badge-ok { background: #12351f; border-color: var(--ok); color: #b8f0c6; }
-.badge-unverified { background: #3a2f0d; border-color: var(--warn); color: #ffe1a1; }
+.badge-evpending { background: #3a2f0d; border-color: var(--warn); color: #ffe1a1; }
 
 .src-ver { color: var(--ok); font-weight: 700; }
 .src-unver { color: var(--muted); font-weight: 700; }

@@ -53,8 +53,8 @@
           <label for="filter-evidence">Evidence</label>
           <select id="filter-evidence">
             <option value="">All records</option>
-            <option value="verified">Verified terminal claims</option>
-            <option value="needs">Needs corroboration</option>
+            <option value="verified">Verified claims</option>
+            <option value="pending">Pending validation*</option>
           </select>
         </div>
         <div>
@@ -90,7 +90,7 @@
         </table>
       </div>
 
-      <p class="status">Every record is sourced and confidence-rated. Cancellations need 3 independent verified citations to count as verified (<a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/METHODOLOGY.md#evidence-bar">evidence bar</a>). Spot an error or a missing contract? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>
+      <p class="status">Every record is sourced and confidence-rated. Claims with 3+ independent verified citations are marked verified; the rest are marked pending validation*. <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/METHODOLOGY.md#evidence-tiers">Evidence tiers</a>. *Pending validation = fewer than 3 independent verified citations; shown while awaiting corroboration. Spot an error or a missing contract? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>
 
       <section id="priorities" aria-label="Research priorities"></section>
     </section>

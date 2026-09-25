@@ -9,7 +9,7 @@ Flock-Off stays small on purpose: static files, no build, no backend, no depende
 3. **Data stays upstream.** Camera corrections go to DeFlock/OpenStreetMap, not into this repo. We consume; we don't fork the dataset.
 4. **Accessibility is a feature.** Every UI change must work with keyboard only, screen reader labels where it matters, and `prefers-reduced-motion` respected.
 5. **Honest copy.** Never imply coverage is complete. "Known cameras" not "cameras." "No known cameras nearby" not "all clear."
-6. **Evidence bar for data.** Terminal-status records (cancelled/rejected/expired) need 3+ independent verified citations per `docs/METHODOLOGY.md`; new source domains must be classified in `scripts/classify_sources.py` (unknown domains fail closed to unverified).
+6. **Evidence tiers for data.** Terminal-status records (cancelled/rejected/expired) show verified (3+ independent verified citations) or pending validation\* (fewer); new source domains must be classified in `scripts/classify_sources.py` (unknown domains fail closed to unverified).
 
 ## Local dev
 

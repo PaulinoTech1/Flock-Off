@@ -16,9 +16,10 @@ const TrackerTab = (() => {
     expired: "Expired",
   };
 
-  // Evidence bar (docs/METHODOLOGY.md): a terminal claim is verified only with
-  // 3+ independent citations from verified sources. Independence is approximated
-  // by distinct domains; a human judges syndication and press-release quoting.
+  // Evidence tiers (docs/METHODOLOGY.md): terminal claims are "verified"
+  // (strongly claimed) at 3+ independent verified citations, otherwise
+  // "pending validation*" with the exact count shown. Independence is
+  // approximated by distinct domains; a human judges syndication.
   const TERMINAL_STATUS = new Set(["cancelled", "rejected", "expired"]);
   const EVIDENCE_BAR = 3;
 
@@ -31,12 +32,8 @@ const TrackerTab = (() => {
     const verified = (a.sources || []).filter((s) => s.verified);
     const independent = new Set(verified.map((s) => hostOf(s.url))).size;
     const terminal = TERMINAL_STATUS.has(a.status);
-    return {
-      independent,
-      verifiedCount: verified.length,
-      terminal,
-      met: !terminal || independent >= EVIDENCE_BAR,
-    };
+    const tier = !terminal ? "na" : independent >= EVIDENCE_BAR ? "verified" : "pending";
+    return { independent, verifiedCount: verified.length, terminal, tier };
   }
 
   const el = (id) => document.getElementById(id);
@@ -102,10 +99,10 @@ const TrackerTab = (() => {
     const sort = el("filter-sort").value;
     const evf = el("filter-evidence").value;
     let rows = agencies.filter((a) => {
-      if (evf === "needs" || evf === "verified") {
-        const ev = evidence(a);
-        if (evf === "needs" && !(ev.terminal && !ev.met)) return false;
-        if (evf === "verified" && !(ev.terminal && ev.met)) return false;
+      if (evf === "pending" || evf === "verified") {
+        const tier = evidence(a).tier;
+        if (evf === "pending" && tier !== "pending") return false;
+        if (evf === "verified" && tier !== "verified") return false;
       }
       return (!st || a.state === st) &&
         (!status || a.status === status) &&
@@ -152,8 +149,10 @@ const TrackerTab = (() => {
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
       });
       const ev = evidence(a);
-      const evBadge = (ev.terminal && !ev.met)
-        ? ' <span class="badge badge-unverified">needs corroboration</span>' : "";
+      const evBadge = ev.tier === "verified"
+        ? ' <span class="badge badge-ok">verified</span>'
+        : ev.tier === "pending"
+        ? ' <span class="badge badge-evpending">pending validation*</span>' : "";
       tr.innerHTML =
         `<td><strong>${esc(a.agency)}</strong><br><span class="muted">${esc(a.city || "")}</span></td>` +
         `<td>${esc(a.state)}</td>` +
@@ -170,7 +169,8 @@ const TrackerTab = (() => {
   function renderStats() {
     const active = agencies.filter((a) => a.status === "active");
     const won = agencies.filter((a) => a.status === "cancelled" || a.status === "rejected");
-    const verifiedWon = won.filter((a) => evidence(a).met).length;
+    const verifiedWon = won.filter((a) => evidence(a).tier === "verified").length;
+    const pendingWon = won.filter((a) => evidence(a).tier === "pending").length;
     const spend = active.reduce((s, a) => s + (a.annual_cost_usd || 0), 0);
     const upcoming = active.filter((a) => {
       const d = daysUntil(a.renewal_date);
@@ -182,7 +182,8 @@ const TrackerTab = (() => {
       stat(agencies.length, "agencies tracked") +
       stat(active.length, "active contracts") +
       stat(won.length, "cancelled / rejected") +
-      stat(`${verifiedWon}/${won.length}`, "cancellations verified (evidence bar)") +
+      stat(verifiedWon, "verified claims") +
+      stat(pendingWon, "pending validation*") +
       stat(upcoming, "renewals within 180 days") +
       stat(spend ? usd(spend) : "—", "known annual spend (active)");
   }
@@ -190,9 +191,6 @@ const TrackerTab = (() => {
   function openDrawer(a) {
     el("drawer-title").textContent = a.agency;
     const ev = evidence(a);
-    const shownConfidence = (ev.terminal && !ev.met) ? "low" : (a.confidence || "unrated");
-    const cappedNote = (ev.terminal && !ev.met && a.confidence && a.confidence !== "low")
-      ? ' <span class="muted">(capped: evidence bar not met)</span>' : "";
     const src = (a.sources || []).map((s) =>
       `<li><span class="${s.verified ? "src-ver" : "src-unver"}" title="${s.verified
         ? "Verified source: counts toward the evidence bar"
@@ -202,11 +200,14 @@ const TrackerTab = (() => {
     ).join("");
     const evSection = !ev.terminal ? "" :
       `<h3>Evidence</h3>` +
-      `<p class="status">Evidence bar: <strong>${ev.independent} of ${EVIDENCE_BAR}</strong> independent verified citations. ` +
-      (ev.met
-        ? `<span class="badge badge-ok">met</span>`
-        : `<span class="badge badge-unverified">not met</span> This claim is awaiting corroboration.`) +
-      `</p>`;
+      `<p class="status"><strong>${ev.independent} of ${EVIDENCE_BAR}</strong> independent verified citations. ` +
+      (ev.tier === "verified"
+        ? `<span class="badge badge-ok">verified</span> Strongly claimed.`
+        : `<span class="badge badge-evpending">pending validation*</span>`) +
+      `</p>` +
+      (ev.tier === "pending"
+        ? `<p class="muted">* Fewer than ${EVIDENCE_BAR} independent verified citations; shown while awaiting corroboration. ` +
+          `<a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Help corroborate</a>.</p>` : "");
     const timeline = [
       ["Status", `<span class="badge badge-${a.status}">${STATUS_LABEL[a.status] || a.status}</span>`],
       ["Location", `${esc(a.city || "")}, ${esc(a.state)}`],
@@ -227,7 +228,7 @@ const TrackerTab = (() => {
       (a.notes ? `<p>${esc(a.notes)}</p>` : "") +
       `<h3>Sources</h3><ul>${src || "<li>none listed</li>"}</ul>` +
       `<p class="muted">✓ verified citation · ○ unverified lead (not counted toward the evidence bar)</p>` +
-      `<p class="status">Confidence: <strong>${esc(shownConfidence)}</strong>${cappedNote} · last verified ${esc(a.last_verified || "unknown" )}. ` +
+      `<p class="status">Confidence: <strong>${esc(a.confidence || "unrated")}</strong> · last verified ${esc(a.last_verified || "unknown" )}. ` +
       `Wrong or stale? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>`;
     el("drawer").hidden = false;
     el("drawer-close").focus();
@@ -237,7 +238,7 @@ const TrackerTab = (() => {
     const host = el("priorities");
     if (!host || !agencies.length) return;
     const terminal = agencies.filter((a) => TERMINAL_STATUS.has(a.status));
-    const unmet = terminal.filter((a) => !evidence(a).met).length;
+    const pending = terminal.filter((a) => evidence(a).tier === "pending").length;
     const active = agencies.filter((a) => a.status === "active");
     const noRenewal = active.filter((a) => !a.renewal_date).length;
     const byState = {};
@@ -252,8 +253,8 @@ const TrackerTab = (() => {
       `<p class="status">Ranked by what most improves the tracker's trustworthiness. Counts are live from the dataset.</p>` +
       `<div class="priorities-grid">` +
       card("1. Corroborate terminal claims",
-        `<strong>${unmet} of ${terminal.length}</strong> cancelled/rejected records sit below the evidence bar of ${EVIDENCE_BAR} independent verified citations.`,
-        "3 independent verified citations per record.") +
+        `<strong>${pending} of ${terminal.length}</strong> cancelled/rejected records are pending validation* (fewer than ${EVIDENCE_BAR} independent verified citations).`,
+        "3 independent verified citations per record → verified.") +
       card("2. Fill the map gaps",
         (byState.MD ? "" : `<strong>Maryland: 0 records.</strong> `) +
         (thinStates.length ? `Single-record states: <strong>${thinStates.join(", ")}</strong>.` : "No single-record states."),
@@ -262,7 +263,7 @@ const TrackerTab = (() => {
         `<strong>${noRenewal} of ${active.length}</strong> active contracts have no exact renewal date.`,
         "a dated pressure window for every active contract.") +
       `</div>` +
-      `<p class="status"><a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/METHODOLOGY.md#evidence-bar">Evidence bar</a> · ` +
+      `<p class="status"><a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/METHODOLOGY.md#evidence-tiers">Evidence tiers</a> · ` +
       `<a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Contribute research</a></p>`;
   }
 

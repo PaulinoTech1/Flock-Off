@@ -150,8 +150,8 @@ def main() -> None:
         f"Status: {dict(status)}. Confidence: {dict(conf)}."
     )
     lines.append(
-        f"- Evidence bar: {bar_met} of {len(terminal)} terminal claims meet the "
-        f"3-independent-verified-citation bar."
+        f"- Evidence: {bar_met} verified claims (3+ independent verified citations), "
+        f"{len(terminal) - bar_met} pending validation* (fewer than 3)."
     )
 
     print("\n".join(lines))

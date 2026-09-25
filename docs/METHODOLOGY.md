@@ -21,14 +21,20 @@ How contract records get in, what the confidence ratings mean, and what we refus
 - **medium**: reputable news reporting (named outlet, dated).
 - **low**: single blog, social post, or activist claim without corroboration. Low-confidence records are included only when marked, and never drive the headline stats without a second source.
 
-Displayed confidence is capped at **low** for any terminal-status record that does not meet the evidence bar below, regardless of its stored rating.
+## Evidence tiers
 
-## Evidence bar
+Terminal claims (**cancelled**, **rejected**, **expired**) are shown in one of
+two tiers, computed from independent citations from verified sources:
 
-A terminal claim (**cancelled**, **rejected**, **expired**) is treated as **verified**
-only when backed by **3 or more independent citations from verified sources**.
-Records below the bar stay on the tracker but are flagged "needs corroboration"
-and are excluded from the verified-cancellations headline stat.
+- **Verified** (3 or more independent verified citations): strongly claimed.
+  Counted in the verified-claims headline stat.
+- **Pending validation\*** (fewer than 3): visible but marked with an
+  asterisk, with the exact citation count shown per record (e.g. "1 of 3").
+  A single local report is still a lead worth tracking; the asterisk says
+  "help corroborate."
+
+\* Pending validation = fewer than 3 independent verified citations;
+shown while awaiting corroboration.
 
 **Verified sources** are:
 
@@ -58,9 +64,9 @@ newly added sources until they are classified.
 
 Ranked by what most improves the tracker's trustworthiness:
 
-1. **Corroborate terminal claims.** Most cancelled/rejected records sit below
-   the evidence bar (a single local article, or advocacy-only sourcing).
-   Each needs 3 independent verified citations.
+1. **Corroborate terminal claims.** Most cancelled/rejected records are pending
+   validation\* (a single local article, or advocacy-only sourcing). Each needs
+   3 independent verified citations to move to verified.
 2. **Fill Maryland.** Zero sourced records, and the East Coast rollout claims
    ME-to-FL coverage. Then deepen the single-record states.
 3. **Renewal dates for active contracts.** Nearly all active records lack an
@@ -74,7 +80,7 @@ Ranked by what most improves the tracker's trustworthiness:
 3. Costs are reported figures only. The ~$3,000/camera/year figure is context, not a substitute; never multiply a camera count by it and present the result as a fact.
 4. Dates are ISO `YYYY-MM-DD`. If only a month is known, leave the field `null` and put the precision in `notes`.
 5. `last_verified` is the date a human last checked the record against its sources. Stale records (over 180 days) get flagged for re-verification.
-6. Terminal statuses (cancelled, rejected, expired) require the evidence bar: 3+ independent verified citations, or the claim is flagged "needs corroboration."
+6. Terminal statuses (cancelled, rejected, expired) show an evidence tier: verified (3+ independent verified citations) or pending validation\* (fewer).
 7. Corrections win over pride. A wrong record is worse than a missing one; fix upstream facts first, then the JSON.
 
 ## What we don't track
