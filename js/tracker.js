@@ -219,6 +219,16 @@ const TrackerTab = (() => {
 
   let lastTrigger = null;
 
+  // A modal dialog must remove the background from the accessibility tree
+  // and the tab order; the focus trap alone does not stop screen-reader
+  // virtual cursors from wandering behind the drawer.
+  function setBackgroundInert(on) {
+    for (const sel of ["header", "main", "footer"]) {
+      const n = document.querySelector(sel);
+      if (n) n.inert = on;
+    }
+  }
+
   function openDrawer(a, trigger) {
     lastTrigger = trigger || document.activeElement;
     el("drawer-title").textContent = a.agency;
@@ -264,6 +274,7 @@ const TrackerTab = (() => {
       `<p class="status">Confidence: <strong>${esc(a.confidence || "unrated")}</strong> · last verified ${esc(a.last_verified || "unknown" )}. ` +
       `Wrong or stale? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>`;
     el("drawer").hidden = false;
+    setBackgroundInert(true);
     el("drawer-close").focus();
   }
 
@@ -302,6 +313,7 @@ const TrackerTab = (() => {
 
   function closeDrawer() {
     el("drawer").hidden = true;
+    setBackgroundInert(false);
     if (lastTrigger && typeof lastTrigger.focus === "function") lastTrigger.focus();
     lastTrigger = null;
   }

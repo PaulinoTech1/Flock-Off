@@ -46,15 +46,18 @@ header.top h1 .off { color: var(--flock); }
 }
 
 nav.tabs {
-  display: flex;
-  gap: 0.4rem;
-  overflow-x: auto;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   background: var(--bg);
   z-index: 500;
+}
+
+.tabs-inner {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
 }
 
 nav.tabs button {
