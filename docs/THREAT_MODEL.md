@@ -2,27 +2,29 @@
 
 Flock-Off is an awareness tool, not a security product. This page states plainly what it protects against, what it does not, and what data moves where.
 
-## What the app knows about you
+## What the site stores
 
-Nothing, by construction. There is no backend, no database, no analytics, no cookies, no accounts. The strongest privacy control is the absence of a place to put your data.
+Two things, both public by design:
+
+- **The contract dataset** (`data/agencies.json`): community-researched public records about agency Flock contracts, with per-field source citations.
+- **Submitted tips**: visitor-submitted reports are held in a private quarantine until reviewed; approved tips are published in the public history. A stored tip contains only what the submitter typed (agency, source URL, notes, timestamps). The form asks for no name, email, or private details, and none is stored.
+
+No accounts, no cookies, no analytics. There is no place for private visitor data to go.
 
 ## What leaves your device
 
-When you use the map, radar, or route features, your browser makes ordinary HTTPS requests to public services:
+- **Map tab**: your browser fetches camera data from the Overpass API (the request includes your IP and the bounding box you asked about, which reveals an area of interest, not your identity) and map tiles from tile.openstreetmap.org (standard web requests: IP + user-agent). This is the same exposure as loading any online map.
+- **Everything else**: only the page and its assets, served from the hosting provider.
 
-- **Overpass API** (camera data): request includes your IP and the bounding box you asked about. The bbox reveals an area of interest, not your identity.
-- **Nominatim** (address search): the address text you type.
-- **OSRM** (routing): origin/destination coordinates.
-- **OSM tiles / Leaflet CDN**: standard web requests with IP + user-agent.
+Geolocation, when you grant it, is consumed by JavaScript running locally to center the map. Coordinates are never transmitted to Flock-Off infrastructure.
 
-This is the same exposure as loading any online map. If that is unacceptable for your situation, use Tor Browser: the app is fully client-side and works fine over Tor (geolocation will be unavailable; use manual map panning).
+## Hosting
 
-Geolocation, when you grant it, is consumed by JavaScript running locally. Coordinates are never transmitted to any Flock-Off infrastructure because none exists.
+The site runs on Vercel. Vercel keeps standard edge request logs (IP, URL, timestamp) as part of operating the service; that cannot be disabled on the platform. Flock-Off adds nothing on top: no analytics integrations, no cookies, no fingerprinting, no per-visitor logging in our code. The report endpoint reads the client IP only in memory for rate limiting; it is never written to storage.
 
 ## What the app does not do
 
-- **No real-time detection of cameras.** Radar mode checks your GPS against *previously reported* camera locations. A silent phone means "no known camera here," never "no camera here."
-- **No avoidance routing.** Route analysis counts known cameras near a route. DeFlock and FlockHopper do true avoidance routing; we link to them instead of shipping a worse copy.
+- **No real-time detection of cameras.** The map shows *previously reported* camera locations. Absence of a pin means "no known camera here," never "no camera here."
 - **No interference.** Everything is passive and informational. The project does not help disable, jam, or evade law enforcement in the commission of wrongdoing; it helps ordinary people understand and lawfully contest mass surveillance.
 
 ## Adversary considerations
@@ -33,4 +35,4 @@ Geolocation, when you grant it, is consumed by JavaScript running locally. Coord
 
 ## Out of scope (by design)
 
-Plate-number handling of any kind, user accounts, server-side storage, push notifications, background location tracking. If a feature needs a backend, it does not belong in Flock-Off v1.
+Plate-number handling of any kind, user accounts, push notifications, background location tracking. Server-side pieces are limited to the tip quarantine and public history; anything else that needs a backend does not belong here.

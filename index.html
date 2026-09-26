@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Flock-Off: follow the money. A public tracker of Flock Safety ALPR contracts, costs, renewals, and cancellations. No install, no account, no tracking.">
+  <meta name="description" content="Flock-Off: follow the money. A public tracker of Flock Safety ALPR contracts, costs, renewals, and cancellations. No account, no cookies, no analytics.">
   <meta name="theme-color" content="#0f1115">
   <link rel="canonical" href="https://flock-off.vercel.app/">
   <meta property="og:type" content="website">
@@ -177,7 +177,7 @@
 
     <section id="tab-map" class="tab" role="tabpanel" aria-labelledby="nav-map" hidden>
       <h2>Camera map</h2>
-      <p>Crowdsourced ALPR camera locations near the map center, from OpenStreetMap. Pan to your area, or use your location.</p>
+      <p>Crowdsourced ALPR camera locations near the map center, from OpenStreetMap. Pan to your area, or use your location. Note: using the map sends your IP and the viewed area to the Overpass API and OpenStreetMap tile servers, like any online map; your precise location never leaves your device.</p>
       <div class="map-wrap">
         <div id="map" role="application" aria-label="Map of reported ALPR cameras"></div>
       </div>
@@ -229,6 +229,14 @@
         <li>Flock-Off is for <strong>awareness and lawful civic action</strong>: mapping, records requests, public pressure, contract fights.</li>
         <li>Do not touch, disable, or vandalize cameras. That carries criminal liability and shifts the debate from privacy policy to property damage.</li>
       </ul>
+
+      <h3 id="learn-privacy">Privacy</h3>
+      <ul>
+        <li><strong>No account, no cookies, no analytics, no fingerprinting.</strong> The site sets nothing in your browser and runs no third-party trackers.</li>
+        <li><strong>Tips are public documents.</strong> If you submit a contract tip, what you type (agency, source link, notes) is stored and, once approved, shown publicly. Submit only public information. The form asks for no name, email, or private details, and none is stored.</li>
+        <li><strong>The map talks to third parties.</strong> Camera data comes from the Overpass API and map tiles from OpenStreetMap, so using the map tab sends them your IP address and the area you view, the same as loading any online map. Your precise location, when you tap "Use my location", only centers the map on your device and is never sent anywhere.</li>
+        <li><strong>Hosting.</strong> The site runs on Vercel, which keeps standard server request logs (IP, page, time) to operate the service; that cannot be switched off. Nothing is added on top: our code keeps no visitor logs, and the report endpoint uses your IP only in memory for rate limiting, never writing it to storage.</li>
+      </ul>
     </section>
   </main>
 
@@ -244,7 +252,7 @@
     <p>
       Contract data is community-researched and sourced per record; see the methodology.
       Camera data: © OpenStreetMap contributors (ODbL) via the DeFlock community.
-      Flock-Off stores nothing, tracks nothing, and requires no account.
+      No account, no cookies, no analytics. Tips you submit are stored as public documents; no private information is collected. <a href="#learn-privacy">Privacy details</a>.
       <span id="year"></span> · <a href="https://github.com/PaulinoTech1/Flock-Off">Source on GitHub</a>
     </p>
   </footer>

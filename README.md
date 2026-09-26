@@ -15,7 +15,7 @@ python3 -m http.server 8080
 # http://localhost:8080
 ```
 
-Deploy anywhere static: GitHub Pages, Vercel, Cloudflare Pages, Netlify. No build step, no backend.
+Deploy: no build step. The tracker page is fully static; tip submission uses minimal serverless endpoints backed by blob storage (see Privacy posture).
 
 ## What it does
 
@@ -34,8 +34,10 @@ To contribute a contract tip (new deal, renewal date, cancellation vote): open a
 
 ## Privacy posture
 
-- No cookies, no analytics, no accounts, no backend. The site cannot track you because there is nowhere for the data to go.
-- Geolocation stays on your device. The only network requests are the ones your browser makes to fetch public map/camera data (same as loading any map).
+- No accounts, no cookies, no analytics, no fingerprinting, no third-party trackers on the page.
+- The only thing stored about visitors is what they submit: tips are public documents by design. The tip form asks for no name, email, or private information, and none is stored. Client IPs are used in memory only for rate limiting the submission endpoint and never written to storage.
+- Map tab exception: camera data comes from the Overpass API and map tiles from OpenStreetMap, so using the map exposes your IP and the viewed area to those services, like any online map. Precise geolocation never leaves your device.
+- Hosting: the site runs on Vercel, which keeps standard edge request logs (IP, URL, time) to operate the service; that is platform-level and cannot be disabled. Flock-Off adds no tracking on top of it.
 - Outbound links use `rel="noopener noreferrer"`.
 - See `docs/THREAT_MODEL.md` for the full statement and `docs/DATA_SOURCES.md` for data licenses.
 

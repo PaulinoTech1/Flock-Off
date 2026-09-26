@@ -37,6 +37,19 @@ const App = (() => {
     }
   }
 
+  // Deep links: "#learn-privacy" opens the Learn tab, then scrolls to the anchor.
+  function showFromHash() {
+    const raw = location.hash.replace("#", "") || "tracker";
+    const tab = TABS.includes(raw)
+      ? raw
+      : TABS.find((t) => raw.startsWith(t + "-")) || raw;
+    show(tab);
+    if (raw !== tab) {
+      const el = document.getElementById(raw);
+      if (el) el.scrollIntoView({ block: "start" });
+    }
+  }
+
   function init() {
     for (const t of TABS) {
       document.getElementById(`nav-${t}`).addEventListener("click", () => show(t));
@@ -57,12 +70,10 @@ const App = (() => {
         document.getElementById(`nav-${TABS[j]}`).focus();
       }
     });
-    window.addEventListener("hashchange", () =>
-      show(location.hash.replace("#", ""))
-    );
+    window.addEventListener("hashchange", showFromHash);
     renderDirectory();
     document.getElementById("year").textContent = new Date().getFullYear();
-    show(location.hash.replace("#", "") || "tracker");
+    showFromHash();
     TrackerTab.init();
     SourcesTab.init();
     MapTab.init();
