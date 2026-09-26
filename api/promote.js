@@ -10,12 +10,29 @@
  * x-admin-key header). This key must differ from REPORT_WRITE_KEY: submitters
  * must not be able to approve their own reports.
  *
- * Body: { "url": "https://<store>.public.blob.vercel-storage.com/reports-pending/<agency>/<file>.json" }
+ * Body: { "url": "<pending blob url>", "action": "approve" | "reject" }
+ *   "approve": copy into the public reports/ tree stamped as approved,
+ *     then delete the pending blob.
+ *   "reject": delete the pending blob without approving it and record a
+ *     rejection against the submitter's bucket.
+ *
+ * The action is mandatory and exact: a missing, misspelled, or wrongly
+ * typed value is a 400 with no state change. There is deliberately no
+ * default path, so a malformed review request can never fall through to
+ * approval.
+ *
+ * Reputation: approve/reject decisions increment per-bucket counters in the
+ * blob store (signals-rep/<day>/<bucket>.json), keyed by the same
+ * daily-rotated subnet pseudonym the intake uses. Buckets with a poor
+ * decision history only get flagged for closer human review on future tips;
+ * nothing is auto-rejected. See api/_signals.js for the privacy model.
  *
  * Failure semantics: if the approved copy is written but the pending delete
  * fails, the endpoint still returns 200 with a warning — the public archive
  * is correct; the orphaned pending blob is untidy, not wrong.
  */
+
+const signals = require("./_signals");
 
 const BLOB_API = "https://vercel.com/api/blob";
 const API_VERSION = "12"; // pinned to the @vercel/blob protocol version verified 2026-09-25
@@ -98,6 +115,40 @@ async function blobDelete(url, token) {
   if (!res.ok) throw new Error(`blob delete failed: HTTP ${res.status}`);
 }
 
+// Best-effort reputation update from a pending blob's _signals block.
+// Never throws: reputation is advisory and must not break review actions.
+async function repUpdateFromPending(pending, field, token) {
+  try {
+    const sig = pending && pending._signals;
+    if (!sig || typeof sig.bucket !== "string" || typeof sig.day !== "string") return;
+    if (!/^[0-9a-f]{64}$/.test(sig.bucket) || !/^\d{4}-\d{2}-\d{2}$/.test(sig.day)) return;
+    const prefix = signals.repPath(sig.day, sig.bucket);
+    let cur = {};
+    try {
+      const list = await fetch(
+        `${BLOB_API}/?prefix=${encodeURIComponent(prefix)}&limit=5`,
+        { headers: { authorization: `Bearer ${token}`, "x-api-version": API_VERSION } }
+      );
+      if (list.ok) {
+        const data = await list.json();
+        const hit = (data.blobs || []).find((b) => b.pathname === prefix);
+        if (hit && hit.url) {
+          const r = await fetch(hit.url);
+          if (r.ok) cur = await r.json();
+        }
+      }
+    } catch { /* missing counter starts at zero */ }
+    const next = {
+      day: sig.day,
+      bucket: sig.bucket,
+      submitted: cur.submitted | 0,
+      approved: (cur.approved | 0) + (field === "approved" ? 1 : 0),
+      rejected: (cur.rejected | 0) + (field === "rejected" ? 1 : 0),
+    };
+    await blobPut(prefix, JSON.stringify(next), token);
+  } catch { /* advisory only */ }
+}
+
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
@@ -145,6 +196,26 @@ module.exports = async (req, res) => {
     return send(res, 400, { error: "blob is not a pending report" });
   }
 
+  // Explicit action, fail closed: there is no default path. A missing,
+  // misspelled, or wrongly typed action is a 400 with no state change, so
+  // a malformed review request can never fall through to approval.
+  const action = body && body.action;
+  if (action !== "approve" && action !== "reject") {
+    return send(res, 400, { error: 'action must be "approve" or "reject"' });
+  }
+
+  // Rejection path: delete the pending blob, record the decision against the
+  // submitter's bucket, return. The report never enters the public archive.
+  if (action === "reject") {
+    await repUpdateFromPending(pending, "rejected", token);
+    try {
+      await blobDelete(u.toString(), token);
+    } catch {
+      return send(res, 502, { error: "could not delete pending blob" });
+    }
+    return send(res, 200, { ok: true, action: "rejected" });
+  }
+
   const filename = u.pathname.split("/").pop();
   const approvedPath = `reports/${pending.agency_id}/${filename}`;
   const approvedAt = new Date().toISOString();
@@ -178,8 +249,11 @@ module.exports = async (req, res) => {
     });
   }
 
+  await repUpdateFromPending(pending, "approved", token);
+
   return send(res, 200, {
     ok: true,
+    action: "approved",
     approved_pathname: stored.pathname || approvedPath,
     approved_url: stored.url,
     approved_at: approvedAt,
