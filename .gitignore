@@ -1,0 +1,4 @@
+# Local build output (created by scripts/vercel_build.py during Vercel builds;
+# never committed)
+public/
+__pycache__/

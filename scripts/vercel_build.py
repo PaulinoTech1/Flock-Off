@@ -17,6 +17,7 @@ so Vercel fails the build instead of publishing a degraded site.
 from __future__ import annotations
 
 import json
+import shutil
 import sys
 import urllib.parse
 from pathlib import Path
@@ -147,6 +148,20 @@ def main() -> None:
     if any(not i for i in ids):
         sys.exit("build failed: agency record missing id")
     report_path.write_text(src.replace(ids_marker, json.dumps(ids)), encoding="utf-8")
+
+    # Stage the servable site into public/: everything except dev-only
+    # paths. Vercel serves static files from outputDirectory (public/);
+    # api/ functions are collected from the repo-root api/ dir, so the
+    # transformed api/report.js above is what gets bundled.
+    public = ROOT / "public"
+    if public.exists():
+        shutil.rmtree(public)
+    ignore = shutil.ignore_patterns(
+        ".git", ".github", "__pycache__", ".venv", "node_modules",
+        "research", "scripts", "docs", "config", "api", "public",
+        "vercel.json",
+    )
+    shutil.copytree(ROOT, public, ignore=ignore)
 
     print(f"build ok: pre-rendered {len(agencies)} agencies, injected {len(ids)} agency ids")
 

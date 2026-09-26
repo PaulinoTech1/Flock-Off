@@ -19,7 +19,7 @@ BUILD_SCRIPT = os.path.join(REPO_ROOT, "scripts", "vercel_build.py")
 
 def _copy_repo():
     tmp = tempfile.mkdtemp(prefix="flockoff-build-")
-    for name in ("index.html", "api", "data", "scripts"):
+    for name in ("index.html", "api", "data", "scripts", "js", "css"):
         src = os.path.join(REPO_ROOT, name)
         dst = os.path.join(tmp, name)
         if os.path.isdir(src):
@@ -65,6 +65,16 @@ class TestVercelBuild(unittest.TestCase):
             self.assertNotIn("__AGENCY_IDS__*/[]", report)
             for a in agencies:
                 self.assertIn('"%s"' % a["id"], report)
+            # public/ staging: servable site present, dev-only paths excluded.
+            public_index = os.path.join(tmp, "public", "index.html")
+            self.assertTrue(os.path.isfile(public_index))
+            public_html = open(public_index, encoding="utf-8").read()
+            self.assertEqual(public_html.count("<tr>"), len(agencies) + 1)
+            self.assertFalse(os.path.exists(os.path.join(tmp, "public", "scripts")))
+            self.assertFalse(os.path.exists(os.path.join(tmp, "public", "research")))
+            self.assertFalse(os.path.exists(os.path.join(tmp, "public", "api")))
+            self.assertTrue(os.path.isfile(os.path.join(tmp, "public", "data", "agencies.json")))
+            self.assertTrue(os.path.isfile(os.path.join(tmp, "public", "js", "app.js")))
         finally:
             shutil.rmtree(tmp, ignore_errors=True)
 
