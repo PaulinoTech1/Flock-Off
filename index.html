@@ -46,6 +46,7 @@
   <nav class="tabs" aria-label="Flock-Off sections">
     <div role="tablist" class="tabs-inner" aria-label="Flock-Off sections">
       <button id="nav-tracker" role="tab" aria-selected="true" aria-controls="tab-tracker" class="active">Tracker</button>
+      <button id="nav-sources" role="tab" aria-selected="false" aria-controls="tab-sources">Sources</button>
       <button id="nav-map" role="tab" aria-selected="false" aria-controls="tab-map">Map</button>
       <button id="nav-tools" role="tab" aria-selected="false" aria-controls="tab-tools">Tools</button>
       <button id="nav-learn" role="tab" aria-selected="false" aria-controls="tab-learn">Learn</button>
@@ -141,6 +142,34 @@
       </section>
     </section>
 
+    <section id="tab-sources" class="tab" role="tabpanel" aria-labelledby="nav-sources" hidden>
+      <h2>Sources</h2>
+      <p>Every citation used anywhere in the tracker, in one browsable list. <strong>Verified</strong> sources count toward the evidence bar; <strong>leads</strong> are discovery-only (advocacy orgs, aggregators, social and video platforms). Browse the underlying reporting yourself.</p>
+
+      <p id="sources-stats" class="status" role="status" aria-live="polite"></p>
+
+      <div class="filters">
+        <div>
+          <label for="src-filter-type">Type</label>
+          <select id="src-filter-type">
+            <option value="">All sources</option>
+            <option value="verified">Verified citations</option>
+            <option value="lead">Leads</option>
+          </select>
+        </div>
+        <div>
+          <label for="src-filter-search">Search</label>
+          <input type="text" id="src-filter-search" placeholder="Title, publisher, or agency" autocomplete="off">
+        </div>
+      </div>
+
+      <p id="sources-status" class="status" role="status" aria-live="polite">Loading…</p>
+
+      <div id="sources-list" class="sources-list"><!--PRE_RENDER_SOURCES--></div>
+
+      <p class="status">Source classification is explicit and version-controlled (<a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/scripts/classify_sources.py">scripts/classify_sources.py</a>); unknown domains fail closed to leads. Raw data: <a href="data/agencies.json">agencies.json</a>.</p>
+    </section>
+
     <section id="tab-map" class="tab" role="tabpanel" aria-labelledby="nav-map" hidden>
       <h2>Camera map</h2>
       <p>Crowdsourced ALPR camera locations near the map center, from OpenStreetMap. Pan to your area, or use your location.</p>
@@ -219,6 +248,7 @@
   <script src="js/config.js"></script>
   <script src="js/data.js"></script>
   <script src="js/tracker.js"></script>
+  <script src="js/sources.js"></script>
   <script src="js/map.js"></script>
   <script src="js/app.js"></script>
 </body>

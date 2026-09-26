@@ -2,7 +2,7 @@
 "use strict";
 
 const App = (() => {
-  const TABS = ["tracker", "map", "tools", "learn"];
+  const TABS = ["tracker", "sources", "map", "tools", "learn"];
 
   function show(name) {
     if (!TABS.includes(name)) name = "map";
@@ -64,6 +64,7 @@ const App = (() => {
     document.getElementById("year").textContent = new Date().getFullYear();
     show(location.hash.replace("#", "") || "tracker");
     TrackerTab.init();
+    SourcesTab.init();
     MapTab.init();
   }
 
