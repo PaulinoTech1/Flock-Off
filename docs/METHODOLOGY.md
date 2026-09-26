@@ -102,6 +102,7 @@ Ranked by what most improves the tracker's trustworthiness:
 5. `last_verified` is the date a human last checked the record against its sources. Stale records (over 180 days) get flagged for re-verification.
 6. Terminal statuses (cancelled, rejected, expired) show an evidence tier: verified (3+ independent verified citations) or pending validation\* (fewer).
 7. Corrections win over pride. A wrong record is worse than a missing one; fix upstream facts first, then the JSON.
+8. Citations are deduplicated in three layers: (1) every source carries a stable `source_key`, the canonical form of its URL, and the same key twice in one agency's sources is a reject; (2) content simhashes flag near-duplicate articles cited under different URLs for human review, never auto-merged; (3) re-fetched articles that materially changed since citation are flagged for re-verification. Bot-blocked pages are "unverifiable," never "probably fine."
 
 ## What we don't track
 

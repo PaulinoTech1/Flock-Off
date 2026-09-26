@@ -17,14 +17,26 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.request
 from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 try:
     from source_keys import check as check_source_keys
+    from source_keys import canonical_url
+    from source_fingerprints import (
+        NEAR_DUP_DISTANCE, UPDATE_DISTANCE, PAIR_MIN_LEN, MIN_TEXT_LEN,
+        fetch_page, extract_text, simhash64, content_hash, hamming,
+    )
+    _fp_import_ok = True
 except ImportError:
     check_source_keys = None
+    _fp_import_ok = False
+
+FINGERPRINTS_URL = "https://raw.githubusercontent.com/PaulinoTech1/Flock-Off/main/data/source_fingerprints.json"
+UPDATE_PROBE_SAMPLE = 20
+UPDATE_PROBE_DELAY = 1.5
 
 DATASET_URL = "https://raw.githubusercontent.com/PaulinoTech1/Flock-Off/main/data/agencies.json"
 STALE_DAYS = 180
@@ -367,7 +379,7 @@ def main() -> None:
         })
 
     # Source key hygiene: missing/stale dedup keys, intra-agency duplicates.
-    if check_source_keys is None:
+    if not _fp_import_ok:
         health_notes.append("source_keys.py unavailable; dedup-key check skipped")
     else:
         key_problems = check_source_keys(data)
@@ -381,6 +393,126 @@ def main() -> None:
         else:
             lines.append("- none: all citations carry valid keys, no intra-agency duplicates")
         lines.append("")
+
+    # Layers 2+3: content fingerprints (read-only; baseline advances via
+    # scripts/source_fingerprints.py --refresh + push).
+    fps = None
+    if _fp_import_ok:
+        try:
+            with urllib.request.urlopen(FINGERPRINTS_URL, timeout=120) as resp:
+                fps = json.load(resp)
+        except Exception:  # noqa: BLE001 - reported below
+            fps = None
+    if not _fp_import_ok:
+        health_notes.append("source_fingerprints.py unavailable; content checks skipped")
+    elif fps is None:
+        health_notes.append("source_fingerprints.json not on GitHub main; "
+                             "run scripts/source_fingerprints.py --refresh and push")
+    else:
+        def _fp_for(src):
+            try:
+                key = src.get("source_key") or canonical_url(src["url"])
+            except ValueError:
+                return None, None
+            return key, fps.get(key)
+
+        # Layer 2: pairwise near-duplicate detection across URLs.
+        cands = []
+        for agency in agencies:
+            for src in agency.get("sources", []):
+                key, fp = _fp_for(src)
+                if not fp or fp.get("fetch_status") != "ok" or not fp.get("simhash"):
+                    continue
+                if fp.get("text_len", 0) < PAIR_MIN_LEN:
+                    continue
+                cands.append((agency["id"], src.get("title", ""), src["url"],
+                              key, int(fp["simhash"], 16)))
+        pairs = []
+        for i in range(len(cands)):
+            for j in range(i + 1, len(cands)):
+                if cands[i][3] == cands[j][3]:
+                    continue  # same canonical URL: legitimate reuse, not a dup
+                if hamming(cands[i][4], cands[j][4]) <= NEAR_DUP_DISTANCE:
+                    pairs.append((cands[i], cands[j]))
+        lines.append("## Possible duplicate sources (cross-URL)")
+        if pairs:
+            for (a1, t1, u1, k1, _), (a2, t2, u2, k2, _) in pairs[:12]:
+                scope = "SAME AGENCY" if a1 == a2 else "cross-agency"
+                lines.append(f"- [{scope}] {a1} <-> {a2} (simhash near-duplicate)")
+                lines.append(f"  - {t1[:70]}: {u1[:90]}")
+                lines.append(f"  - {t2[:70]}: {u2[:90]}")
+                if a1 == a2:
+                    lines.append("  - Proposed: drop the redundant citation, keep one URL.")
+            if len(pairs) > 12:
+                lines.append(f"  - ...and {len(pairs) - 12} more pairs")
+        else:
+            lines.append("- none")
+        lines.append("")
+
+        # Layer 3: rotating probe; has the cited article materially changed?
+        ok_entries = []
+        for agency in agencies:
+            for src in agency.get("sources", []):
+                key, fp = _fp_for(src)
+                if not fp or fp.get("fetch_status") != "ok" or not fp.get("simhash"):
+                    continue
+                ok_entries.append((agency["id"], src.get("title", ""),
+                                   src["url"], key, fp))
+        ok_entries.sort(key=lambda t: t[3])
+        week = int(today.strftime("%V"))
+        start = (week * UPDATE_PROBE_SAMPLE) % len(ok_entries) if ok_entries else 0
+        sample = [ok_entries[(start + i) % len(ok_entries)]
+                  for i in range(min(UPDATE_PROBE_SAMPLE, len(ok_entries)))]
+        changed, probe_blocked, probe_err = [], 0, 0
+        for agency_id, title, url, key, fp in sample:
+            time.sleep(UPDATE_PROBE_DELAY)
+            status, _, html = fetch_page(url)
+            if status != "ok" or not html:
+                if status == "blocked":
+                    probe_blocked += 1
+                else:
+                    probe_err += 1
+                continue
+            _, text = extract_text(html)
+            if len(text) < MIN_TEXT_LEN:
+                continue
+            new_hash = content_hash(text)
+            if new_hash == fp.get("content_hash"):
+                continue
+            new_sh = simhash64(text)
+            dist = hamming(new_sh, int(fp["simhash"], 16)) if new_sh else 64
+            old_len = fp.get("text_len", 0) or 1
+            len_change = abs(len(text) - old_len) / old_len
+            if dist >= UPDATE_DISTANCE or len_change > 0.5:
+                changed.append((agency_id, title, url, fp.get("fetched_at"), dist))
+        lines.append("## Sources changed since citation")
+        if changed:
+            for agency_id, title, url, fetched_at, dist in changed:
+                lines.append(
+                    f"- **{agency_id}**: {title[:70]} materially changed since "
+                    f"fingerprinted {fetched_at} (simhash distance {dist}). "
+                    f"Proposed: re-verify the citation; refresh the fingerprint "
+                    f"baseline after review. {url[:90]}"
+                )
+        else:
+            lines.append(f"- none in this week's probe sample ({len(sample)} checked)")
+        lines.append("")
+        if probe_blocked or probe_err:
+            health_notes.append(
+                f"update probe: {probe_blocked} blocked, {probe_err} fetch errors "
+                f"(of {len(sample)} sampled)"
+            )
+        missing_fp = 0
+        for agency in agencies:
+            for src in agency.get("sources", []):
+                _, fp = _fp_for(src)
+                if fp is None:
+                    missing_fp += 1
+        if missing_fp:
+            health_notes.append(
+                f"{missing_fp} citations lack fingerprints; "
+                f"run scripts/source_fingerprints.py --refresh and push"
+            )
 
     bar_met = sum(1 for a in terminal if independent_citations(a) >= 3)
     lines.append("## Dataset stats")

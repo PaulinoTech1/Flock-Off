@@ -22,6 +22,19 @@ review per week. Automation finds candidates; a human makes every call.
 5. **Digest**: one GitHub issue titled `Monitor digest YYYY-MM-DD`, sections
    ordered by priority, every item with a source link and a proposed dataset
    edit. Total action items capped around 25.
+6. **Citation integrity** (in `weekly_monitor.py`, read-only):
+   - *Source key hygiene*: every citation carries a stable `source_key`;
+     missing/stale keys and intra-agency duplicates are flagged.
+   - *Possible duplicate sources*: pairwise simhash over content fingerprints
+     flags the same article cited under different URLs. Same-agency pairs are
+     actionable (drop the redundant citation); cross-agency pairs are
+     informational. Never auto-merged.
+   - *Sources changed since citation*: a rotating probe (20/week) re-fetches
+     citations and flags articles that materially changed since they were
+     fingerprinted. Bot-blocked pages are "unverifiable," never "probably fine."
+   - The fingerprint baseline (`data/source_fingerprints.json`) advances when
+     a maintainer runs `python3 scripts/source_fingerprints.py --refresh`
+     (or `--keys k1,k2` for specific citations) and pushes the result.
 
 ## The one-hour workflow
 
@@ -48,6 +61,9 @@ review per week. Automation finds candidates; a human makes every call.
 | Status mismatches | Feed disagrees with our record status | Re-verify against the linked source; correct the record |
 | Stale records | Unverified > 180 days | Re-check the top source; refresh `last_verified` or correct |
 | Low-confidence leads | Single-source records | Corroborate or leave flagged; never cite as confirmed |
+| Possible duplicate sources (cross-URL) | Same article cited under different URLs (simhash) | Same agency: drop the redundant citation. Cross-agency: informational |
+| Sources changed since citation | Cited article materially changed since fingerprinted | Re-verify the citation; refresh the fingerprint baseline after review |
+| Source key hygiene | Missing/stale/duplicate `source_key` | Backfill with `scripts/source_keys.py`, dedupe, push |
 | Monitor health | What broke this run | Fix the check or accept the gap explicitly |
 
 ## Escape hatches
