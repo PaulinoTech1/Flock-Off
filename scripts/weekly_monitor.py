@@ -27,9 +27,12 @@ RENEWAL_WINDOW_DAYS = 90
 # cost. Anything paywalled (e.g. GovSpend) is out by policy; see
 # docs/DATA_SOURCES.md. These feeds find candidates; the underlying linked
 # primary/news source is what gets cited, never the feed page itself.
-EAST_COAST_STATES = {
+COVERED_STATES = {
     "CT", "DC", "DE", "FL", "GA", "MA", "ME", "NC",
     "NH", "NJ", "NY", "PA", "RI", "SC", "VA", "VT",
+    # Wave 1 (westward expansion, in progress):
+    "OH", "MI", "IN", "IL", "WI",
+    "WV", "KY", "TN", "AL", "MS",
 }
 FINDING_FLOCK_TRACKER_URL = "https://www.findingflock.com/learn/flock-contract-cancellations"
 ATLAS_CSV_URL = "https://www.atlasofsurveillance.org/download.csv?vendor=Flock+Safety"
@@ -139,7 +142,7 @@ def check_finding_flock_tracker(agencies: list[dict]) -> tuple[list[str], list[s
     candidates, mismatches = [], []
     for place, state, date, action, source_url in parser.rows:
         state = state.strip().upper()
-        if state not in EAST_COAST_STATES:
+        if state not in COVERED_STATES:
             continue
         key = (norm_name(place), state)
         matched = []
@@ -167,7 +170,7 @@ def check_finding_flock_tracker(agencies: list[dict]) -> tuple[list[str], list[s
 
 
 def check_atlas_csv(agencies: list[dict]) -> list[str]:
-    """Find East Coast Atlas of Surveillance agencies missing from the dataset.
+    """Find covered-state Atlas of Surveillance agencies missing from the dataset.
 
     Returns candidate lines; raises on fetch/parse failure.
     """
@@ -178,7 +181,7 @@ def check_atlas_csv(agencies: list[dict]) -> list[str]:
     candidates = []
     for row in reader:
         state = (row.get("State") or "").strip().upper()
-        if state not in EAST_COAST_STATES:
+        if state not in COVERED_STATES:
             continue
         agency = (row.get("Agency") or "").strip()
         key = (norm_name(agency), state)

@@ -87,8 +87,8 @@ Ranked by what most improves the tracker's trustworthiness:
 1. **Corroborate terminal claims.** Most cancelled/rejected records are pending
    validation\* (a single local article, or advocacy-only sourcing). Each needs
    3 independent verified citations to move to verified.
-2. **Fill Maryland.** Zero sourced records, and the East Coast rollout claims
-   ME-to-FL coverage. Then deepen the single-record states.
+2. **Fill Maryland.** Zero sourced records, and coverage is now USA-wide, expanding
+   westward in 10-state waves. Then deepen the single-record states.
 3. **Renewal dates for active contracts.** Nearly all active records lack an
    exact renewal date; without dates there are no pressure windows, which is
    the tracker's core civic value.

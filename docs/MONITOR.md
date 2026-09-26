@@ -12,7 +12,7 @@ review per week. Automation finds candidates; a human makes every call.
    URL get a best-effort fetch. A dead portal is a *weak* signal of contract
    termination: reported as "investigate", never as fact.
 3. **News sweep**: targeted searches for Flock contract, cancellation, and
-   renewal news from the last ~14 days, East Coast focus. Only items that are
+   renewal news from the last ~14 days, US-wide focus. Only items that are
    new or contradict the dataset survive; capped at 10.
 4. **Upstream feed checks** (in `weekly_monitor.py`, free and keyless):
    Finding Flock's cancellation tracker (new in-scope terminal claims,

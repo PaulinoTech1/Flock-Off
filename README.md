@@ -28,7 +28,7 @@ Deploy anywhere static: GitHub Pages, Vercel, Cloudflare Pages, Netlify. No buil
 
 ## The dataset
 
-`data/agencies.json` is the whole database: one record per agency, every factual field traced to a `sources[]` entry, confidence-rated per the methodology in `docs/METHODOLOGY.md`. Coverage is rolling north to south down the East Coast (ME through FL); a missing agency means not yet researched, never confirmed absent.
+`data/agencies.json` is the whole database: one record per agency, every factual field traced to a `sources[]` entry, confidence-rated per the methodology in `docs/METHODOLOGY.md`. Coverage is USA-wide, expanding westward in 10-state waves (wave 1: OH, MI, IN, IL, WI, WV, KY, TN, AL, MS); a missing agency means not yet researched, never confirmed absent.
 
 To contribute a contract tip (new deal, renewal date, cancellation vote): open a GitHub issue with a source link.
 

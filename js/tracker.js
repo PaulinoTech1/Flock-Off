@@ -327,7 +327,7 @@ const TrackerTab = (() => {
       card("2. Fill the map gaps",
         (byState.MD ? "" : `<strong>Maryland: 0 records.</strong> `) +
         (thinStates.length ? `Single-record states: <strong>${thinStates.join(", ")}</strong>.` : "No single-record states."),
-        "every East Coast state with 3+ sourced records.") +
+        "every covered state with 3+ sourced records.") +
       card("3. Renewal dates for active contracts",
         `<strong>${noRenewal} of ${active.length}</strong> active contracts have no exact renewal date.`,
         "a dated pressure window for every active contract.") +
