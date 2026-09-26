@@ -72,6 +72,23 @@ def classify(url: str) -> tuple[bool, str]:
     return False, "unverified-unlisted"
 
 
+def stamp_source(src: dict, verified: bool) -> None:
+    """Set the verified flag, preserving every field in a stable key order.
+
+    The old inline rebuild silently dropped source_key (added by Layer 1
+    after this script was written). Unknown fields are appended in their
+    original order, never dropped.
+    """
+    ordered = ["title", "url", "date", "verified", "source_key"]
+    rebuilt = {k: src[k] for k in ordered if k in src}
+    for k, v in src.items():
+        if k not in rebuilt:
+            rebuilt[k] = v
+    rebuilt["verified"] = verified
+    src.clear()
+    src.update(rebuilt)
+
+
 def main(argv: list[str] | None = None) -> None:
     argv = sys.argv[1:] if argv is None else argv
     check_only = "--check" in argv
@@ -95,18 +112,7 @@ def main(argv: list[str] | None = None) -> None:
             if src.get("verified") is not verified:
                 changed += 1
             if not check_only:
-                # Rebuild for a stable key order, but preserve every field:
-                # the old rebuild silently dropped source_key (added by
-                # Layer 1 after this script was written). Unknown fields are
-                # appended in their original order, never dropped.
-                ordered = ["title", "url", "date", "verified", "source_key"]
-                rebuilt = {k: src[k] for k in ordered if k in src}
-                for k, v in src.items():
-                    if k not in rebuilt:
-                        rebuilt[k] = v
-                rebuilt["verified"] = verified
-                src.clear()
-                src.update(rebuilt)
+                stamp_source(src, verified)
 
     if unlisted:
         print("Unlisted domains (stamped false, review needed):")

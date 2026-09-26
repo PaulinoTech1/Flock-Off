@@ -46,8 +46,8 @@ def _is_num(v):
 
 # (dotted key, expected type, constraint fn, constraint description)
 SCHEMA = [
-    ("config_version", int, lambda v: v == CONFIG_VERSION,
-     f"must be {CONFIG_VERSION}"),
+    ("config_version", int, lambda v: v >= 1,
+     "must be a positive int (mismatches raise E_CFG_VERSION)"),
     ("paths.data", str, lambda v: bool(v), "must be a non-empty path"),
     ("paths.fingerprints", str, lambda v: bool(v), "must be a non-empty path"),
     ("paths.classification", str, lambda v: bool(v), "must be a non-empty path"),

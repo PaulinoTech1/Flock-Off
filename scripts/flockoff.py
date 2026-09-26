@@ -77,6 +77,16 @@ def cmd_monitor(args, _cfg) -> None:
     weekly_monitor.main()
 
 
+def cmd_test(args, _cfg) -> None:
+    import unittest
+    loader = unittest.TestLoader()
+    suite = loader.discover(os.path.join(HERE, "tests"), pattern=args.pattern)
+    verbosity = 2 if args.verbose else 1
+    result = unittest.TextTestRunner(verbosity=verbosity).run(suite)
+    if not result.wasSuccessful():
+        sys.exit(1)
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="flockoff.py",
@@ -110,6 +120,12 @@ def build_parser() -> argparse.ArgumentParser:
     m = sub.add_parser("monitor", help="run the weekly monitor")
     m.add_argument("local_dataset", nargs="?",
                    help="local agencies.json fallback if the GitHub fetch fails")
+
+    t = sub.add_parser("test", help="run the stdlib test suite (scripts/tests/)")
+    t.add_argument("--pattern", default="test_*.py",
+                   help="unittest discovery pattern")
+    t.add_argument("-v", "--verbose", action="store_true",
+                   help="verbose test output")
     return p
 
 
@@ -125,6 +141,7 @@ def main() -> None:
         ("fingerprints", "refresh"): cmd_fingerprints,
         ("classify", None): cmd_classify,
         ("monitor", None): cmd_monitor,
+        ("test", None): cmd_test,
     }
     key = (args.command,
            getattr(args, "config_cmd", None)
