@@ -1,0 +1,415 @@
+[
+  {
+    "agency": "Columbia Heights Police Department",
+    "agency_type": "Police Department",
+    "annual_cost_usd": null,
+    "cameras": 12,
+    "city": "Columbia Heights",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": "2026-06-08",
+    "decision_summary": "City council voted unanimously to cancel the Flock contract and remove all 12 cameras after community pushback over data access and privacy. A later council packet shows a $49,000 final-year payout to Flock was made even though the city received no further service, and the contract could otherwise have auto-renewed in May 2027.",
+    "id": "mn-columbia-heights-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Camera count 12 (7 fixed + 5 flex) from the primary city packet. The three-year contract total of $151,000 is reported but annual_cost_usd left null because the annual figure is not directly stated. Decision date 2026-06-08 from news reporting of the council vote.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "FOX 9",
+        "title": "Columbia Heights set to drop Flock license plate cameras after community pushback",
+        "url": "https://fox9.com/news/columbia-heights-set-drop-flock-license-plate-cameras-after-community-pushback",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "City of Columbia Heights",
+        "title": "City of Columbia Heights council attachment: Flock contract termination details (7 fixed + 5 flex cameras, $49,000 final-year payout)",
+        "url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columbhtmn-meet-58b52135de1f43089d7974a55fb7def8/ITEM-Attachment-001-ff4c4d1fffa24182b6263fa8bd698d28.pdf",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "MinneapoliMedia",
+        "title": "Columbia Heights ends Flock Safety contract",
+        "url": "https://minneapolimedia.town.news/g/coon-rapids-mn/n/379970/minneapolimedia-news-columbia-heights-ends-flock-safety-contract-after",
+        "verified": false,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Crystal Police Department",
+    "agency_type": "Police Department",
+    "annual_cost_usd": null,
+    "cameras": 6,
+    "city": "Crystal",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": "2026-09-09",
+    "decision_summary": "Police Chief Brian Hubbard announced the department would completely end its involvement with Flock Safety after a Sept. 2 community meeting. All six ALPRs were physically removed and are being returned to Flock, and data sharing with other agencies was turned off.",
+    "id": "mn-crystal-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Primary department letter states the decision explicitly and dates it 09/09/26. CCX Media confirms cameras were taken down Sept. 9 following the Sept. 2 community meeting.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "Crystal Police Department",
+        "title": "Crystal Police Department community letter dated 09/09/26 announcing complete end of Flock involvement, removal of 6 ALPRs",
+        "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_10879634/File/Government/Public Notices/ALPR Letter.pdf",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "FOX 9",
+        "title": "Crystal drops Flock cams after community concerns",
+        "url": "https://fox9.com/news/crystal-drops-flock-cams-after-community-concerns",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "CCX Media",
+        "title": "Crystal Police Remove Flock License Plate Readers After Community Backlash",
+        "url": "https://ccxmedia.org/news/crystal-police-remove-flock-automatic-license-plate-readers-after-community-backlash/",
+        "verified": true,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Duluth Police Department",
+    "agency_type": "Police Department",
+    "annual_cost_usd": null,
+    "cameras": 9,
+    "city": "Duluth",
+    "confidence": "high",
+    "contract_end": "2026-09-07",
+    "contract_start": null,
+    "decision_date": "2026-08-03",
+    "decision_summary": "Duluth PD notified Flock on Aug. 3, 2026 that it would not renew its 12-month, grant-funded contract, which ended Sept. 7, 2026. Six of nine cameras had been stolen or damaged; the department will continue using other license plate reader technology instead.",
+    "id": "mn-duluth-pd",
+    "last_verified": "2026-09-25",
+    "notes": "A $30,000 grant allocation was reported for the Flock system, but annual_cost_usd is null because it is not an established annual contract cost. Camera count 9 from GovTech reporting; 6 of the 9 were stolen or damaged.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "Government Technology (carrying Duluth News Tribune reporting)",
+        "title": "Duluth, Minn. Police Explain Decision to End Flock Contract",
+        "url": "https://www.govtech.com/public-safety/duluth-minn-police-explain-decision-to-end-flock-contract",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "FOX 9",
+        "title": "Duluth PD ends Flock camera contract, will keep using license plate reader tech",
+        "url": "https://fox9.com/news/duluth-pd-ends-flock-camera-contract-keep-using-license-plate-reader-tech",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "Police1 (carrying Star Tribune reporting)",
+        "title": "Law enforcement agencies report widespread ALPR vandalism",
+        "url": "https://www.police1.com/arrests-sentencing/law-enforcement-agencies-report-widespread-alpr-vandalism",
+        "verified": true,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Saint Paul Police Department",
+    "agency_type": "Police Department",
+    "annual_cost_usd": null,
+    "cameras": 2,
+    "city": "Saint Paul",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": "2026-08-26",
+    "decision_summary": "The St. Paul City Council voted 7-0 on a nonbinding resolution asking the city and Ramsey County to end Flock contracts. The mayor and police chief then announced removal of the city's two Flock cameras. This covers only the two city-owned cameras; the Ramsey County Sheriff's nine cameras inside city limits remain active.",
+    "id": "mn-saint-paul-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Record covers only the two city-owned cameras removed by the city. Do not merge with the Ramsey County Sheriff's Office cameras, which are a separate active deployment.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "FOX 9",
+        "title": "St. Paul City Council moves to cut Flock camera contract",
+        "url": "https://fox9.com/news/st-paul-city-council-flock-cameras-aug-26-2026",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "Government Technology",
+        "title": "St. Paul, Minn. Council Will Not Expand Police Drone Program (includes Flock vote details)",
+        "url": "https://www.govtech.com/public-safety/st-paul-minn-council-will-not-expand-police-drone-program",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "CitizenPortal (AI summary)",
+        "title": "Saint Paul council unanimously urges end to Flock Safety contracts, orders 60-day report",
+        "url": "https://citizenportal.ai/articles/9610114/minnesota/washington-county/city-of-saint-paul/saint-paul-council-unanimously-urges-end-to-flock-safety-contracts-orders-60day-report",
+        "verified": false,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Plymouth Police Department",
+    "agency_type": "Police Department",
+    "annual_cost_usd": null,
+    "cameras": 16,
+    "city": "Plymouth",
+    "confidence": "medium",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": null,
+    "decision_summary": "The Plymouth City Council voted 6-1 to discontinue the city's Flock Safety surveillance cameras, with the mayor casting the lone dissenting vote. Police leadership had defended the cameras as a safety tool but understood the privacy concerns; residents had raised complaints for months.",
+    "id": "mn-plymouth-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Camera count 16 and the 6-1 vote are reported by CCX Media, but a primary council record was not located, so confidence is medium. Decision date left null because the vote occurred the week of Sept. 22, 2026 and the exact council meeting date was not confirmed. Not the same jurisdiction as Plymouth, WI or Plymouth, NC.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "CCX Media",
+        "title": "Plymouth Latest City To Discontinue Flock Safety Surveillance",
+        "url": "https://ccxmedia.org/news/plymouth-latest-city-to-discontinue-flock-safety-surveillance/",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "WCCO (YouTube)",
+        "title": "Plymouth police ask city council to keep Flock cameras despite residents' concerns",
+        "url": "https://www.youtube.com/watch?v=7EnIagLPwEo",
+        "verified": false,
+        "date": null
+      },
+      {
+        "publisher": "Squatch Rocks (blog)",
+        "title": "Minnesota Cities Now Ending or Pausing Flock Camera Use",
+        "url": "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras/",
+        "verified": false,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Brooklyn Park Police Department",
+    "agency_type": "Police Department",
+    "annual_cost_usd": null,
+    "cameras": null,
+    "city": "Brooklyn Park",
+    "confidence": "medium",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": null,
+    "decision_summary": "Brooklyn Park cancelled its Flock contract after about six months, citing poor data-sharing protocols and customer support concerns. The city reportedly still wants license plate readers but intends to switch to a system without the data-sharing function.",
+    "id": "mn-brooklyn-park-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Only a statewide blog gives the specific figures (8 cameras, $28,000, cancellation at end of December 2025), so cameras, costs, and dates are left null until a primary or stronger source confirms them. Termination itself is corroborated by GovTech and FOX 9.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "Government Technology",
+        "title": "Minneapolis-Area Cities Shutting Off License Plate Cameras",
+        "url": "https://www.govtech.com/public-safety/minneapolis-area-cities-shutting-off-license-plate-cameras",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "FOX 9",
+        "title": "Columbia Heights set to drop Flock license plate cameras after community pushback (notes Brooklyn Park cancelled six months into its contract)",
+        "url": "https://fox9.com/news/columbia-heights-set-drop-flock-license-plate-cameras-after-community-pushback",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "Squatch Rocks (blog)",
+        "title": "Minnesota Cities Now Ending or Pausing Flock Camera Use",
+        "url": "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras/",
+        "verified": false,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Winona Police Department",
+    "agency_type": "Police Department",
+    "annual_cost_usd": null,
+    "cameras": 8,
+    "city": "Winona",
+    "confidence": "medium",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": "2026-08-12",
+    "decision_summary": "All eight Flock cameras were stolen after poles were cut down. On Aug. 12, 2026 the department announced it would not replace them, citing the need to maintain community trust.",
+    "id": "mn-winona-pd",
+    "last_verified": "2026-09-25",
+    "notes": "The department publicly abandoned the program after the theft, but no source confirms formal contract termination or expiry, so confidence is medium. Formal contract paperwork, if located, could sharpen this record.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "FOX 9",
+        "title": "Flock cameras: Company announces changes to data retention, offense filtering (notes Winona removing ALPRs after vandalism)",
+        "url": "https://fox9.com/news/flock-cameras-company-changes-data-retention-offense-filtering-aug-14-2026",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "Police1 (carrying Star Tribune reporting)",
+        "title": "Law enforcement agencies report widespread ALPR vandalism",
+        "url": "https://www.police1.com/arrests-sentencing/law-enforcement-agencies-report-widespread-alpr-vandalism",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "Mandatory",
+        "title": "Flock Camera Thefts Force Police Department to Give Up in Minnesota",
+        "url": "https://www.mandatory.com/culture/1830228-flock-camera-thefts-force-police-department-give-up-minnesota",
+        "verified": false,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "North Branch Police Department",
+    "agency_type": "Police Department",
+    "annual_cost_usd": null,
+    "cameras": 3,
+    "city": "North Branch",
+    "confidence": "medium",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": null,
+    "decision_summary": "The mayor paused installation in mid-August 2026, covering the three installed cameras, after public pushback. FOX 9 later listed North Branch among Minnesota agencies announcing removal of Flock cameras; a statewide blog reports the council then voted unanimously on Aug. 26 to cancel the agreement and take the three cameras down while four more were never installed.",
+    "id": "mn-north-branch-pd",
+    "last_verified": "2026-09-25",
+    "notes": "The Aug. 26, 2026 unanimous council vote and the three-year contract liability claim come only from an unverified blog, so decision_date is null. The removal itself is confirmed by FOX 9. Camera count 3 reflects the installed cameras only; four more were reportedly never installed.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "FOX 9",
+        "title": "Minnesota cities pull back on Flock cameras amid public pushback (North Branch pauses installation)",
+        "url": "https://fox9.com/news/minnesota-cities-pull-back-flock-cameras-amid-public-pushback",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "FOX 9",
+        "title": "Flock cameras: Company announces changes to data retention, offense filtering (lists North Branch among agencies removing cameras)",
+        "url": "https://fox9.com/news/flock-cameras-company-changes-data-retention-offense-filtering-aug-14-2026",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "Squatch Rocks (blog)",
+        "title": "Minnesota Cities Now Ending or Pausing Flock Camera Use",
+        "url": "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras/",
+        "verified": false,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Anoka County Sheriff's Office",
+    "agency_type": "Sheriff's Office",
+    "annual_cost_usd": null,
+    "cameras": null,
+    "city": "Anoka",
+    "confidence": "medium",
+    "contract_end": null,
+    "contract_start": "2026-06-30",
+    "decision_date": null,
+    "decision_summary": "Sheriff Brad Wise signed a one-year Flock pilot agreement on June 30, 2026 covering ALPRs and drones. The deal was priced just under the $175,000 county board approval threshold, which drew public criticism. The sheriff's office has since cited Flock cameras in active investigations.",
+    "id": "mn-anoka-county-so",
+    "last_verified": "2026-09-25",
+    "notes": "Contract value is reported as either $174,500 or $174,999 by different sources, so annual_cost_usd is null. The reported 75 readers may cover a broader pilot or existing network, so cameras is null. The original Sahan Journal piece was not located; primary procurement documents would strengthen this record.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "The Cool Down (derivative of Sahan Journal reporting)",
+        "title": "Minnesota county sheriff signs Flock deal below board approval threshold, drawing backlash",
+        "url": "https://www.thecooldown.com/green-tech/anoka-county-sheriff-flock-deal-backlash/",
+        "verified": false,
+        "date": null
+      },
+      {
+        "publisher": "Civic Lens Network",
+        "title": "Anoka County Sheriff Signs Flock Camera Deal Just Under $175,000 Board Limit",
+        "url": "https://civiclensnetwork.com/articles/anoka-county-sheriff-signs-flock-camera-deal-just-under-175000-board-limit",
+        "verified": false,
+        "date": null
+      },
+      {
+        "publisher": "FOX 9",
+        "title": "Flock cameras praised by Anoka County sheriff after scam arrest",
+        "url": "https://fox9.com/news/flock-cameras-praised-anoka-co-sheriff-after-led-scam-arrest",
+        "verified": true,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "active",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Shakopee Police Department",
+    "agency_type": "Police Department",
+    "annual_cost_usd": null,
+    "cameras": null,
+    "city": "Shakopee",
+    "confidence": "medium",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": null,
+    "decision_summary": "Shakopee officials publicly defended continued use of Flock cameras against misinformation ahead of a city council meeting, with the city defending the technology's crime-fighting value. No cancellation or nonrenewal has been reported.",
+    "id": "mn-shakopee-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Active status is inferred from the city's public defense of the program and the absence of any reported cancellation. Camera count, costs, and contract dates are unknown; a primary council record would firm this up.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "publisher": "FOX 9",
+        "title": "Shakopee officials defend Flock cameras against misinformation ahead of council meeting",
+        "url": "https://fox9.com/news/shakopee-officials-defend-flock-cameras-against-misinformation-ahead-council-meeting",
+        "verified": true,
+        "date": null
+      },
+      {
+        "publisher": "Disa.org",
+        "title": "Flock camera backlash: MN cities keep license plate readers despite privacy concerns",
+        "url": "https://disa.org/usa/minnesota/article_ba8bca36-c7e9-11f0-b0ab-9d2e6ee6bd90.html",
+        "verified": false,
+        "date": null
+      }
+    ],
+    "state": "MN",
+    "status": "active",
+    "transparency_portal": null
+  }
+]

@@ -87,9 +87,12 @@ Ranked by what most improves the tracker's trustworthiness:
 1. **Corroborate terminal claims.** Most cancelled/rejected records are pending
    validation\* (a single local article, or advocacy-only sourcing). Each needs
    3 independent verified citations to move to verified.
-2. **Fill Maryland.** Zero sourced records, and coverage is now USA-wide: the
-   first westward 10-state wave (TX, CA, CO, AZ, WA, OR, MO, KS, LA, OK) landed
-   2026-09-26. Then deepen the single-record states.
+2. **Fill the remaining states.** Maryland's zero-record gap was closed by the
+   second 10-state wave (AR, IA, ID, MD, MN, MT, NE, NM, NV, UT), which landed
+   2026-09-26 and took the tracker to 322 records across 45 jurisdictions.
+   Montana researched to a well-evidenced zero (restrictive ALPR statutes, no
+   qualifying government contracts). Still unresearched: AK, HI, ND, SD, WY.
+   Then deepen the single-record states.
 3. **Renewal dates for active contracts.** Nearly all active records lack an
    exact renewal date; without dates there are no pressure windows, which is
    the tracker's core civic value.

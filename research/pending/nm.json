@@ -1,0 +1,345 @@
+[
+  {
+    "id": "nm-bernalillo-county-so",
+    "agency": "Bernalillo County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "city": "Albuquerque",
+    "state": "NM",
+    "status": "cancelled",
+    "cameras": 21,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-09-03",
+    "decision_summary": "Sheriff John Allen announced the decision to end BCSO's Flock Safety contracts in a Sept. 3 official statement, citing lost confidence in Flock's privacy safeguards and data sharing. Three contracts ended: five ALPR cameras, 16 speed cameras connected to the Flock network, and gunshot detection technology. BCSO is replacing Flock with Axon ALPR technology.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-09-17",
+        "title": "New portal reveals how Las Cruces police use cameras",
+        "url": "https://www.lcsun-news.com/story/news/education/2026/09/17/flock-cameras-las-cruces/91792151007/",
+        "verified": true,
+        "source_key": "https://lcsun-news.com/story/news/education/2026/09/17/flock-cameras-las-cruces/91792151007"
+      },
+      {
+        "date": "2026-09-08",
+        "title": "Sheriff Allen to address Flock shutdown and BCSO's transition to Axon ALPR technology",
+        "url": "https://citydesk.org/2026/09/08/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology/",
+        "verified": true,
+        "source_key": "https://citydesk.org/2026/09/08/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology"
+      },
+      {
+        "date": "2026-09-08",
+        "title": "Sheriff Allen to address Flock shutdown and BCSO's transition to Axon ALPR technology",
+        "url": "https://abq.news/2026/09/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology/",
+        "verified": true,
+        "source_key": "https://abq.news/2026/09/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology"
+      },
+      {
+        "date": "2026-09-12",
+        "title": "Man films himself taking down Flock cameras, gets arrested",
+        "url": "https://foxnews.com/tech/man-films-himself-taking-down-flock-cameras-gets-arrested",
+        "verified": true,
+        "source_key": "https://foxnews.com/tech/man-films-himself-taking-down-flock-cameras-gets-arrested"
+      },
+      {
+        "date": "2026-09-22",
+        "title": "Man dismantles Flock cameras, drops them off at Bernalillo County Sheriff's Office",
+        "url": "https://www.police1.com/arrests-sentencing/man-shows-up-at-n-m-sheriffs-office-with-truck-full-of-dismantled-alpr-cameras",
+        "verified": true,
+        "source_key": "https://police1.com/arrests-sentencing/man-shows-up-at-n-m-sheriffs-office-with-truck-full-of-dismantled-alpr-cameras"
+      },
+      {
+        "date": "2026-09-03",
+        "title": "Flock cameras protester arrested in New Mexico",
+        "url": "https://cybernews.com/ai-news/police-arrest-viral-protestor-with-flock/",
+        "verified": true,
+        "source_key": "https://cybernews.com/ai-news/police-arrest-viral-protestor-with-flock"
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Six independent verified citations. Camera count 21 = five ALPRs plus 16 speed cameras connected to the Flock network per Fox News reporting; CityDesk ABQ reported 21 regional Flock cameras. Fox News and Cybernews dates are approximate to within a day or two based on search-result timestamps. The abq.news (The Paper) article appears to be the same Kevin Hendricks article as the citydesk.org piece, so it is not counted as independent; retained for convenience. Decision date of 2026-09-03 comes from the official BCSO statement quoted by the Las Cruces Sun-News; Fox affiliate reporting noted Allen discussing the decision on KOB 4 on Aug. 24 and deciding in late August."
+  },
+  {
+    "id": "nm-las-cruces-pd",
+    "agency": "Las Cruces Police Department",
+    "agency_type": "municipal_police",
+    "city": "Las Cruces",
+    "state": "NM",
+    "status": "active",
+    "cameras": 21,
+    "annual_cost_usd": 141850,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "60-month Flock agreement signed 2024-09-12 with 24-month renewal term; $141,850 annual recurring platform cost; 15 Falcon ALPRs plus 6 solar multi-purpose LPR/video units; 30-day retention. City council added privacy rules in September 2026 requiring a public Flock data portal and affidavits from out-of-state agencies.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-02-01",
+        "title": "NM - Las Cruces PD FlockOS LPR/Live Video Law Enforcement Agreement (signed contract PDF)",
+        "url": "https://haussamen.com/wp-content/uploads/2026/02/NM-Las-Cruces-PD-FlockOSLPRLive-Video-Law-Enforcement-Agreement-9122024.pdf",
+        "verified": true,
+        "source_key": "https://haussamen.com/wp-content/uploads/2026/02/NM-Las-Cruces-PD-FlockOSLPRLive-Video-Law-Enforcement-Agreement-9122024.pdf"
+      },
+      {
+        "date": "2026-09-17",
+        "title": "New portal reveals how Las Cruces police use cameras",
+        "url": "https://www.lcsun-news.com/story/news/education/2026/09/17/flock-cameras-las-cruces/91792151007/",
+        "verified": true,
+        "source_key": "https://lcsun-news.com/story/news/education/2026/09/17/flock-cameras-las-cruces/91792151007"
+      },
+      {
+        "date": "2026-09-21",
+        "title": "Las Cruces adds privacy rules to Flock camera contract",
+        "url": "https://www.lcsun-news.com/story/news/local/las-cruces/2026/09/21/las-cruces-restricts-police-surveillance-technology/91814555007/",
+        "verified": true,
+        "source_key": "https://lcsun-news.com/story/news/local/las-cruces/2026/09/21/las-cruces-restricts-police-surveillance-technology/91814555007"
+      },
+      {
+        "date": "2026-03-29",
+        "title": "Ensuring privacy when ALPRs are in use (opinion)",
+        "url": "https://www.lcsun-news.com/story/opinion/2026/03/29/ensuring-privacy-in-alrp-use/89303419007/",
+        "verified": true,
+        "source_key": "https://lcsun-news.com/story/opinion/2026/03/29/ensuring-privacy-in-alrp-use/89303419007"
+      },
+      {
+        "date": "2026-09-25",
+        "title": "Atlas of Surveillance: Las Cruces Police Department, NM",
+        "url": "https://www.atlasofsurveillance.org/search?locale=zh-hans&location=Las+Cruces+Police+Department%2C+NM&sort=technology_asc",
+        "verified": false,
+        "source_key": "https://atlasofsurveillance.org/search?locale=zh-hans&location=Las+Cruces+Police+Department%2C+NM&sort=technology_asc"
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Signed primary contract document reviewed in full: DocuSign envelope signed 2024-09-12 by Las Cruces purchasing manager Alicia Hernandez; 60-month initial term, 24-month renewal; $141,850 annual recurring platform; contract total $737,750. Term commences upon first installation and validation of hardware, so contract_start left null rather than inferred from the signature date. Hosted on haussamen.com, a third-party blog mirror, not a government domain; the document itself is the signed primary agreement, so marked verified with this caveat. Camera count 21 = 15 Falcon plus 6 solar multi-purpose LPR units per the contract; video-only Condor units excluded. EFF Atlas reports 22 installed ALPRs from July 2025 public records; kept as unverified lead. The PDF upload date (2026-02-01) is approximate, taken from the URL path."
+  },
+  {
+    "id": "nm-rio-rancho-pd",
+    "agency": "Rio Rancho Police Department",
+    "agency_type": "municipal_police",
+    "city": "Rio Rancho",
+    "state": "NM",
+    "status": "active",
+    "cameras": 19,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Active Flock network of 19 cameras reported August 2026. Program began with vehicle-mounted cameras in 2018, moved to fixed units in 2020. On Sept. 10, 2026 residents pressed the city council to end Flock; no cancellation or formal action was reported. Data deleted after 30 days unless retained for a case.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08-15",
+        "title": "Rio Rancho traffic study (Flock work session recap)",
+        "url": "https://riorancho.news/2026/08/rio-rancho-traffic-study/",
+        "verified": true,
+        "source_key": "https://riorancho.news/2026/08/rio-rancho-traffic-study"
+      },
+      {
+        "date": "2026-09-10",
+        "title": "DeFlock RR (Sept. 10 council meeting)",
+        "url": "https://riorancho.news/2026/09/deflock-rr/",
+        "verified": true,
+        "source_key": "https://riorancho.news/2026/09/deflock-rr"
+      },
+      {
+        "date": "2026-09-10",
+        "title": "DeFlock RR (Sept. 10 council meeting, syndicated)",
+        "url": "https://sandovalsignpost.com/2026/09/deflock-rr/",
+        "verified": true,
+        "source_key": "https://sandovalsignpost.com/2026/09/deflock-rr"
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "riorancho.news is The Paper's Rio Rancho edition, a local news outlet. Sandoval Signpost appears to syndicate the same DeFlock article and is not counted as independent. Source dates are approximate to within a few days based on publication-month context. A 2018-era deal for 10 cameras was reported at $55,000 over five years; that is a historical total, not an annual cost, so annual_cost_usd stays null. No primary city procurement page found; would benefit from one for a high rating."
+  },
+  {
+    "id": "nm-alamogordo-pd",
+    "agency": "Alamogordo Police Department",
+    "agency_type": "municipal_police",
+    "city": "Alamogordo",
+    "state": "NM",
+    "status": "active",
+    "cameras": 60,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "$500,000 two-year Flock agreement covering 60 surveillance devices (LPR plus live-view); full installation completed June 2026. Approval timing conflicts across sources: an Aug. 2026 commission presentation says approved February 2025; a retrospective says initially approved in 2024; the proposal went before the commission in December 2024. LPR data retained 30 days, video 7 days.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08-10",
+        "title": "Alamogordo City Commission Meeting Tuesday 6:30 pm Focuses on Flock Public Safety Technology",
+        "url": "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384255/alamogordo-city-commission-meeting-tuesday-630-pm-focuses-flock-public",
+        "verified": true,
+        "source_key": "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384255/alamogordo-city-commission-meeting-tuesday-630-pm-focuses-flock-public"
+      },
+      {
+        "date": "2026-08-01",
+        "title": "Alamogordo City Commission Moves Forward with 2 Year Flock Camera Contract",
+        "url": "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384346/alamogordo-city-commission-moves-forward-2-year-flock-camera-contract",
+        "verified": true,
+        "source_key": "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384346/alamogordo-city-commission-moves-forward-2-year-flock-camera-contract"
+      },
+      {
+        "date": "2026-09-16",
+        "title": "Eyes on the Road: Dr. Stephanie Hernandez on why Alamogordo turned to Flock cameras",
+        "url": "https://newmexicoconservativenews.com/2026/09/16/eyes-on-the-road-dr-stephanie-hernandez-on-why-alamogordo-turned-to-flock-cameras/",
+        "verified": true,
+        "source_key": "https://newmexicoconservativenews.com/2026/09/16/eyes-on-the-road-dr-stephanie-hernandez-on-why-alamogordo-turned-to-flock-cameras"
+      },
+      {
+        "date": "2026-09-25",
+        "title": "Atlas of Surveillance: Alamogordo Police Department, NM",
+        "url": "https://www.atlasofsurveillance.org/search?locale=zh-hans&location=Alamogordo+Police+Department%2C+NM&sort=technology_asc",
+        "verified": false,
+        "source_key": "https://atlasofsurveillance.org/search?locale=zh-hans&location=Alamogordo+Police+Department%2C+NM&sort=technology_asc"
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Camera count 60 is total surveillance devices (LPR plus live-view) per the Aug. 11, 2026 commission presentation; the ALPR-only count is not separately reported. EFF Atlas reports 21 ALPRs; kept as unverified lead. $500,000 is a two-year total, so annual_cost_usd stays null rather than derived. town.news pages do not display publication dates; dates are approximate, inferred from the Aug. 11, 2026 meeting preview and the June 2026 installation-complete reference. Small local outlets; medium confidence despite three verified citations."
+  },
+  {
+    "id": "nm-farmington-pd",
+    "agency": "Farmington Police Department",
+    "agency_type": "municipal_police",
+    "city": "Farmington",
+    "state": "NM",
+    "status": "active",
+    "cameras": 24,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "24 Flock cameras active in Farmington as of August 2026 reporting; older reporting described 20 fixed ALPRs feeding a regional real-time crime center that also assists the San Juan County Sheriff, Bloomfield, and Aztec. An August 2026 YouTube video claims FPD announced it would not renew its Flock contract, but no primary statement or established-news report confirms it, so the record stays active.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08-28",
+        "title": "New Mexico legislation limits use of Flock cameras and data",
+        "url": "https://www.tricityrecordnm.com/articles/tri-cities/new-mexico-legislation-limits-use-of-flock-cameras-and-data/",
+        "verified": true,
+        "source_key": "https://tricityrecordnm.com/articles/tri-cities/new-mexico-legislation-limits-use-of-flock-cameras-and-data"
+      },
+      {
+        "date": "2026-09-25",
+        "title": "Atlas of Surveillance: Farmington Police Department, NM",
+        "url": "https://www.atlasofsurveillance.org/search?locale=zh-hans&location=Farmington+Police+Department%2C+NM&sort=technology_asc",
+        "verified": false,
+        "source_key": "https://atlasofsurveillance.org/search?locale=zh-hans&location=Farmington+Police+Department%2C+NM&sort=technology_asc"
+      },
+      {
+        "date": "2026-08-18",
+        "title": "Farmington PD non-renewal statement (video, unverified)",
+        "url": "https://www.youtube.com/watch?v=2-oXsYJ1zJs",
+        "verified": false,
+        "source_key": "https://youtube.com/watch?v=2-oXsYJ1zJs"
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Status is the weak point: a YouTube video dated approximately Aug. 18, 2026 claims Farmington released a statement that it will not renew its Flock contract, but no primary document or established-news confirmation was found, and the Tri-City Record described 24 cameras in present tense in late August 2026. Per the no-terminal-status-without-solid-sourcing rule, status stays active with the claim flagged here. A possible five-year contract (2023-07-01 to 2028-06-30, 19 Falcon plus 1 Flex, $51,000/yr recurring) circulates on the ALPR Watch advocacy mirror, but the named customer could not be confirmed from the document, so it is not used."
+  },
+  {
+    "id": "nm-san-juan-county-so",
+    "agency": "San Juan County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "city": "Aztec",
+    "state": "NM",
+    "status": "active",
+    "cameras": 7,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Seven Flock cameras operating in San Juan County as of August 2026 reporting, alongside Farmington's 24. The sheriff's office is assisted by Farmington's regional real-time crime center network.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08-28",
+        "title": "New Mexico legislation limits use of Flock cameras and data",
+        "url": "https://www.tricityrecordnm.com/articles/tri-cities/new-mexico-legislation-limits-use-of-flock-cameras-and-data/",
+        "verified": true,
+        "source_key": "https://tricityrecordnm.com/articles/tri-cities/new-mexico-legislation-limits-use-of-flock-cameras-and-data"
+      }
+    ],
+    "confidence": "low",
+    "last_verified": "2026-09-25",
+    "notes": "Single verified source (Tri-City Record, established local paper). County-specific contract terms, cost, and dates not found. City listed as Aztec, the San Juan County seat."
+  },
+  {
+    "id": "nm-new-mexico-state-university-pd",
+    "agency": "New Mexico State University Police",
+    "agency_type": "university",
+    "city": "Las Cruces",
+    "state": "NM",
+    "status": "active",
+    "cameras": 7,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "NMSU Police uses seven Flock ALPR cameras at campus entry and exit points under a five-year contract, per NMSU Police Chief Justin Dunivan. Data held 30 days; cameras used in multiple investigations including stolen vehicles and an attempted abduction.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-09-14",
+        "title": "Who's watching who? How NMSU students feel about Flock cameras",
+        "url": "https://nmsuroundup.com/33615/showcase/whos-watching-who-how-nmsu-students-feel-about-flock-camerass/",
+        "verified": true,
+        "source_key": "https://nmsuroundup.com/33615/showcase/whos-watching-who-how-nmsu-students-feel-about-flock-camerass"
+      }
+    ],
+    "confidence": "low",
+    "last_verified": "2026-09-25",
+    "notes": "Single source: the NMSU student newspaper, with direct quotes from the police chief confirming the seven cameras and five-year contract. No second source or university primary record found. Contract length is stated (five years) but start date is unknown, so dates stay null."
+  },
+  {
+    "id": "nm-otero-county-so",
+    "agency": "Otero County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "city": "Alamogordo",
+    "state": "NM",
+    "status": "active",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Otero County Sheriff's Office joined the Alamogordo Police Department in a county-wide Flock Safety partnership, sharing access to a growing network of Flock LPR and live-view cameras across Alamogordo and greater Otero County.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2025-07-01",
+        "title": "Alamogordo Police Department and the Otero County Sheriff's Department Partner for Public Safety",
+        "url": "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/349627/alamogordo-police-department-and-otero-county-sheriffs-department-partner",
+        "verified": true,
+        "source_key": "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/349627/alamogordo-police-department-and-otero-county-sheriffs-department-partner"
+      },
+      {
+        "date": "2026-09-25",
+        "title": "Atlas of Surveillance: Otero County Sheriff's Office, NM",
+        "url": "https://www.atlasofsurveillance.org/search?locale=zh-hans&location=Otero+County+Sheriff%27s+Office%2C+NM&sort=technology_asc",
+        "verified": false,
+        "source_key": "https://atlasofsurveillance.org/search?locale=zh-hans&location=Otero+County+Sheriff%27s+Office%2C+NM&sort=technology_asc"
+      }
+    ],
+    "confidence": "low",
+    "last_verified": "2026-09-25",
+    "notes": "Weakest county-level record: one local-outlet article describing the partnership, no county-specific camera count, cost, or contract dates. Cameras left null because the only reported counts (60 devices) are Alamogordo's; the shared-network figure cannot be attributed to the sheriff's office. Source date is approximate; the town.news page does not display a publication date."
+  }
+]

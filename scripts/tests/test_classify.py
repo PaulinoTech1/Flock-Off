@@ -36,9 +36,11 @@ class TestClassify(unittest.TestCase):
     def test_counts(self):
         # Updated 2026-09-26: Wave 2 domain triage (TX/CA/CO/AZ/WA/OR/MO/KS/LA/OK
         # research wave) added 62 verified-news, 30 verified-primary, 5 unverified.
-        self.assertEqual(len(cs.VERIFIED_NEWS()), 177)
-        self.assertEqual(len(cs.VERIFIED_PRIMARY()), 63)
-        self.assertEqual(len(cs.UNVERIFIED()), 54)
+        # Updated 2026-09-26: Wave 3 domain triage (AR/IA/ID/MD/MN/MT/NE/NM/NV/UT
+        # research wave) added 18 verified-news, 20 verified-primary, 11 unverified.
+        self.assertEqual(len(cs.VERIFIED_NEWS()), 195)
+        self.assertEqual(len(cs.VERIFIED_PRIMARY()), 83)
+        self.assertEqual(len(cs.UNVERIFIED()), 65)
 
 
 class TestStampSource(unittest.TestCase):
