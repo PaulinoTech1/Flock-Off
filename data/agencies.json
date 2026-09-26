@@ -1653,7 +1653,7 @@
       "sources": [
         {
           "title": "Dare County to remove all automated license plate recognition cameras from unincorporated areas",
-          "url": "https://www.publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-reading-cameras-from-unincorporated-areas",
+          "url": "https://www.publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-recognition-cameras-from-unincorporated-areas",
           "date": "2026-09-03",
           "verified": true
         },
@@ -1932,7 +1932,7 @@
         },
         {
           "title": "Three Gwinnett PD officers fired and charged in connection with alleged misuse of Flock cameras",
-          "url": "https://www.waltontribune.com/news/three-gwinnett-pd-officers-fired-and-charged-in-connection-with-alleged-misuse-of-flock-cameras",
+          "url": "https://www.waltontribune.com/news/three-gwinnett-pd-officers-fired-and-charged-in-connection-with-alleged-misuse-of-flock-cameras/article_d6092fd8-3247-5b13-b502-e06aac47a87c.html",
           "date": "2026-09-09",
           "verified": true
         }
@@ -2147,12 +2147,6 @@
           "title": "Staff memorandum on Flock contract termination",
           "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15710541-Memorandum.pdf",
           "date": "2026-07-28",
-          "verified": true
-        },
-        {
-          "title": "City of Harrisonburg official Flock Safety page",
-          "url": "https://www.harrisonburgva.gov/FLOCK",
-          "date": null,
           "verified": true
         },
         {
@@ -2687,12 +2681,6 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "Flock ALPR Research — Marinette & Menominee (city council minutes archive)",
-          "url": "https://github.com/spmckenney/flock_alpr_research",
-          "date": null,
-          "verified": false
-        },
-        {
           "title": "Kaukauna ends Flock Safety camera contract (WTAQ-WLUK, notes Menominee cancellation)",
           "url": "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract/",
           "date": "2026-07-08",
@@ -3041,12 +3029,6 @@
           "title": "Flock camera poles cut down near site of ICE detainments",
           "url": "https://www.ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments",
           "date": "2026-09-08",
-          "verified": true
-        },
-        {
-          "title": "Flock in question: Some concerned with potential overreach while others tout cameras as important tool for law enforcement",
-          "url": "https://www.cnhinews.com/indiana/news/article_7a6d1a43-dab3-5081-b8c9-4ab02ec22a36.html",
-          "date": null,
           "verified": true
         },
         {
@@ -4377,7 +4359,7 @@
         },
         {
           "title": "Milwaukee Mayor Announces Changes To Flock System Usage",
-          "url": "https://949tnt.iheart.com/content/2026-09-01-milwaukee-mayor-announces-changes-to-flock-system-usage/91919882007/",
+          "url": "https://949tnt.iheart.com/content/2026-09-01-milwaukee-mayor-announces-changes-to-flock-system-usage/",
           "date": "2026-09-01",
           "verified": true
         }
@@ -4913,12 +4895,6 @@
           "verified": true
         },
         {
-          "title": "City of Birmingham approves amendment to camera agreement with Alabama Power, expands network by 100 cameras",
-          "url": "https://europesays.com/2100775/",
-          "date": "2025-07-08",
-          "verified": false
-        },
-        {
           "title": "Birmingham surveillance camera expansion cost report",
           "url": "https://alpolitics.com/",
           "date": null,
@@ -5067,12 +5043,6 @@
           "url": "https://www.clarionledger.com/story/news/2026/09/01/where-flock-cameras-are-located-in-jackson-ms-can-license-plate-readers-issue-tickets/91338937007/",
           "date": "2026-09-01",
           "verified": true
-        },
-        {
-          "title": "Public Records & Research",
-          "url": "https://www.eff.org/pages/public-records-research",
-          "date": "2026-04-17",
-          "verified": false
         }
       ],
       "state": "MS",
