@@ -2104,6 +2104,132 @@
       "state": "FL",
       "status": "cancelled",
       "transparency_portal": null
+    },
+    {
+      "agency": "Harrisonburg Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 33,
+      "city": "Harrisonburg",
+      "confidence": "high",
+      "contract_end": "2026-07-31",
+      "contract_start": "2023-06-30",
+      "decision_date": "2026-07-28",
+      "decision_summary": "Resolution RES 26-005 adopted 4-0 (one absent) terminating the Flock contract; system went dark July 31, 2026 and a removal work order was placed with Flock. 33 cameras (31 Falcon + 2 Falcon Flex, installed Jan 2024). Stated reasons: equity, privacy, data security, diminished community trust. Stationary ALPRs banned without express council approval; vehicle-mounted units unaffected.",
+      "id": "va-harrisonburg-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Date discrepancies resolved against primary records: July 14, 2026 was the direction-to-staff; July 29 was the WHSV article publication date; the Washington Examiner's 'July 20' is contradicted by the minutes. Contract signed June 30, 2023 per the resolution. No annual cost reported (council memo lists fiscal impact N/A).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Resolution RES 26-005 terminating the Flock Safety contract (City of Harrisonburg)",
+          "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15723134-Resolution.pdf",
+          "date": "2026-07-28",
+          "verified": true
+        },
+        {
+          "title": "City Council meeting minutes, July 28, 2026 (draft)",
+          "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1425067-city-council-meeting-2026-08-11/attachments/15742880-Minutes.pdf",
+          "date": "2026-08-11",
+          "verified": true
+        },
+        {
+          "title": "Staff memorandum on Flock contract termination",
+          "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15710541-Memorandum.pdf",
+          "date": "2026-07-28",
+          "verified": true
+        },
+        {
+          "title": "City of Harrisonburg official Flock Safety page",
+          "url": "https://www.harrisonburgva.gov/FLOCK",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Flock surveillance spreads in Virginia, communities push back (WHRO)",
+          "url": "https://www.whro.org/virginia-center-for-investigative-journalism/2026-08-14/flock-surveillance-spreads-virginia-communities-push-back",
+          "date": "2026-08-14",
+          "verified": true
+        },
+        {
+          "title": "Flock controversial camera contracts canceled in 23 states (Washington Examiner)",
+          "url": "https://www.washingtonexaminer.com/policy/technology/4672621/flock-controversial-camera-contracts-canceled-23-states/",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Virginia localities rethink Flock camera use (The Breeze / The Center Square)",
+          "url": "https://www.breezejmu.org/news/state/virginia-localities-rethink-flock-camera-use/article_eacd2cb8-c4e8-504a-a544-c72569bbec26.html",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Flock Safety opponents pack community meeting in Virginia (GovTech / Roanoke Times)",
+          "url": "https://www.govtech.com/public-safety/flock-safety-opponents-pack-community-meeting-in-virginia",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "VA",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Ithaca Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 22,
+      "city": "Ithaca",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "decision_date": "2026-03-04",
+      "decision_summary": "Common Council voted unanimously March 4, 2026 to end the city's relationship with Flock Safety. Resolution directs termination at the earliest opportunity, immediate suspension of use, and equipment disconnected within 14 days. 22 Flock ALPR cameras plus Flock Raven devices covered. Reasons: sanctuary-city conflict, fear of ICE/federal data sharing, security concerns.",
+      "id": "ny-ithaca-pd",
+      "last_verified": "2026-09-25",
+      "notes": "Contract date disputed: the resolution states the contract is dated 2026-02-01, but The Ithacan reports council approved the contract in Dec 2023; left null pending the actual contract. Cameras still physically standing as of June 2026 per Cornell Sun. The Tompkins County legislature's separate 12-1 non-renewal vote is a county-level lead, not merged here. WSKG article unreachable; not cited.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Resolution to end the city's relationship with Flock Safety (City of Ithaca, via Legistar)",
+          "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3942354/Trumble_-_RESOLUTION_TO_END_THE_CITY_S_RELATIONSHIP_WITH_FLOCK_SAFETY_-_final_2_26.pdf",
+          "date": "2026-03-04",
+          "verified": true
+        },
+        {
+          "title": "Common Council votes to end Ithaca's contract with Flock Safety (Cornell Daily Sun)",
+          "url": "https://www.cornellsun.com/article/2026/03/common-council-votes-to-end-ithaca-s-contract-with-flock-safety-keep-free-gaza-on-green-street-mural",
+          "date": "2026-03-12",
+          "verified": true
+        },
+        {
+          "title": "Ithaca Common Council cuts contract with Flock Safety (607 News Now)",
+          "url": "https://607newsnow.com/news/258852-ithaca-common-council-cuts-contract-with-flock-safety/",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "How Flock's cameras became an immigration enforcement flashpoint (Latin Times)",
+          "url": "https://d33gy59ovltp76.cloudfront.net/news/from-illinois-to-doral-how-flocks-cameras-became-an-immigration-enforcement-flashpoint",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Presence of Flock cameras in Ithaca raises surveillance concerns (The Ithacan)",
+          "url": "https://theithacan.org/66799/news/presence-of-flock-cameras-in-ithaca-raises-surveillance-concerns/",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Community statement on GIVE and Flock Safety (Tompkins County Sheriff's Office)",
+          "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/sheriffs-office/documents/community-statement-from-tcso-re-give-flock-safety-1.pdf",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "NY",
+      "status": "cancelled",
+      "transparency_portal": null
     }
   ]
 }

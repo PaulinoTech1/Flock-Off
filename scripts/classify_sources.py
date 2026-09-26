@@ -36,6 +36,10 @@ VERIFIED_NEWS = {
     "newpineplainsherald.org", "thedailycatch.org", "compassvermont.com",
     "montco.today", "jalopnik.com", "carscoops.com", "thecooldown.com",
     "govtech.com", "police1.com", "dropsitenews.com", "karmactive.com",
+    "washingtonexaminer.com", "breezejmu.org",  # JMU student paper, editorial process
+    "cornellsun.com", "theithacan.org",  # established student papers w/ editorial process
+    "607newsnow.com",  # Cayuga Media Group local news
+    "latintimes.com", "d33gy59ovltp76.cloudfront.net",  # Latin Times (+ its CDN host)
     "94hjy.iheart.com", "b101.iheart.com", "wsyr.iheart.com", "b985.fm",
     "waltontribune.com", "news.thepalmbayer.com", "cardinalpine.com",
     "cvillerightnow.com",
@@ -54,6 +58,10 @@ VERIFIED_PRIMARY = {
     "live-township-of-north-brunswick.pantheonsite.io",
     "origin.volusiasheriff.gov",
     "transparency.flocksafety.com",  # vendor portal: primary evidence of deployment
+    "harrisonburgva.gov",  # official City of Harrisonburg site
+    "tompkinscountyny.gov",  # official Tompkins County NY site
+    "meetings.cvilledata.org",  # civic mirror hosting official Harrisonburg council docs
+    "legistarweb-production.s3.amazonaws.com",  # Legistar official document store
 }
 
 # Explicitly NOT counted toward the evidence bar. Listed here so the choice
