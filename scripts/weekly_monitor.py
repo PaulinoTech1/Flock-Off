@@ -14,10 +14,17 @@ import csv
 import datetime
 import io
 import json
+import os
 import re
 import sys
 import urllib.request
 from html.parser import HTMLParser
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from source_keys import check as check_source_keys
+except ImportError:
+    check_source_keys = None
 
 DATASET_URL = "https://raw.githubusercontent.com/PaulinoTech1/Flock-Off/main/data/agencies.json"
 STALE_DAYS = 180
@@ -358,6 +365,22 @@ def main() -> None:
             urllib.parse.urlparse(s["url"]).netloc.replace("www.", "")
             for s in a.get("sources", []) if s.get("verified")
         })
+
+    # Source key hygiene: missing/stale dedup keys, intra-agency duplicates.
+    if check_source_keys is None:
+        health_notes.append("source_keys.py unavailable; dedup-key check skipped")
+    else:
+        key_problems = check_source_keys(data)
+        lines.append("## Source key hygiene (dedup)")
+        if key_problems:
+            lines.append(f"- {len(key_problems)} problem(s):")
+            for p in key_problems[:15]:
+                lines.append(f"  - {p}")
+            if len(key_problems) > 15:
+                lines.append(f"  - ...and {len(key_problems) - 15} more")
+        else:
+            lines.append("- none: all citations carry valid keys, no intra-agency duplicates")
+        lines.append("")
 
     bar_met = sum(1 for a in terminal if independent_citations(a) >= 3)
     lines.append("## Dataset stats")

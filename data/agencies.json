@@ -56,7 +56,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -83,7 +84,8 @@
           "title": "By Vote of Select Board, Town of Ayer Terminates Contract with Flock Safety",
           "url": "https://www.ayer.ma.us/m/newsflash/Home/Detail/73",
           "date": "2026-09-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ayer.ma.us/m/newsflash/Home/Detail/73"
         }
       ],
       "confidence": "high",
@@ -110,7 +112,8 @@
           "title": "Barnstable votes to remove Flock cameras despite police objections",
           "url": "https://www.capecodtimes.com/story/news/public-safety/2026/09/05/barnstable-flock-cameras-removed/91611060007/",
           "date": "2026-09-05",
-          "verified": true
+          "verified": true,
+          "source_key": "https://capecodtimes.com/story/news/public-safety/2026/09/05/barnstable-flock-cameras-removed/91611060007"
         }
       ],
       "confidence": "high",
@@ -137,7 +140,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -164,7 +168,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -191,7 +196,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -218,7 +224,8 @@
           "title": "East Bridgewater Police Department to Terminate Contract with Flock Safety",
           "url": "https://ebpd.org/east-bridgewater-police-department-to-terminate-contract-with-flock-safety/",
           "date": "2026-08-21",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ebpd.org/east-bridgewater-police-department-to-terminate-contract-with-flock-safety"
         }
       ],
       "confidence": "high",
@@ -245,7 +252,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -272,7 +280,8 @@
           "title": "Town of Groton to Terminate Flock Safety Camera Contract",
           "url": "https://www.grotonma.gov/2026/08/31/town-of-groton-to-terminate-flock-safety-camera-contract-commit-to-developing-permanent-solution-for-spring-2027-town-meeting/",
           "date": "2026-08-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://grotonma.gov/2026/08/31/town-of-groton-to-terminate-flock-safety-camera-contract-commit-to-developing-permanent-solution-for-spring-2027-town-meeting"
         }
       ],
       "confidence": "high",
@@ -299,7 +308,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -326,7 +336,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -353,7 +364,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -380,7 +392,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -407,13 +420,15 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         },
         {
           "title": "Amended Motion for STM Article 15 - Police Department Capital (Stoughton)",
           "url": "https://stoughton.org/DocumentCenter/View/6337/Amended-Motion-for-STM-Article-15---Police-Department-Capital-submitted-by-Noah-Beit-Aharon-Precinct-6-on-April-28-2026",
           "date": "2026-04-28",
-          "verified": true
+          "verified": true,
+          "source_key": "https://stoughton.org/DocumentCenter/View/6337/Amended-Motion-for-STM-Article-15---Police-Department-Capital-submitted-by-Noah-Beit-Aharon-Precinct-6-on-April-28-2026"
         }
       ],
       "confidence": "low",
@@ -440,7 +455,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -467,7 +483,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -494,7 +511,8 @@
           "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
           "url": "https://eyesoffma.com/wins/",
           "date": "2026-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffma.com/wins"
         }
       ],
       "confidence": "low",
@@ -521,13 +539,15 @@
           "title": "Connecticut Police Discuss Use of License Plate Readers (GovTech / The Day)",
           "url": "https://www.govtech.com/public-safety/connecticut-police-discuss-use-of-license-plate-readers",
           "date": "2025-11-03",
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/connecticut-police-discuss-use-of-license-plate-readers"
         },
         {
           "title": "Mayor and Board of Selectmen's Meeting Minutes, October 20, 2025 (Town of Putnam)",
           "url": "https://resources.finalsite.net/images/v1761753101/putnamctus/uv0v8sucfql7nza6eqp5/MayorandBoardofSelectmensMinutesOctober202025.pdf",
           "date": "2025-10-20",
-          "verified": true
+          "verified": true,
+          "source_key": "https://resources.finalsite.net/images/v1761753101/putnamctus/uv0v8sucfql7nza6eqp5/MayorandBoardofSelectmensMinutesOctober202025.pdf"
         }
       ],
       "confidence": "medium",
@@ -554,7 +574,8 @@
           "title": "After Flock Safety Image Led to False Arrest, ACLU Urges Cumberland Town Council to Cancel Contract - ACLU of Rhode Island",
           "url": "https://www.riaclu.org/news/flock-safety-image-led-to-false-arrest-aclu-urges-cumberland-cancel-contract/",
           "date": "2026-08-07",
-          "verified": false
+          "verified": false,
+          "source_key": "https://riaclu.org/news/flock-safety-image-led-to-false-arrest-aclu-urges-cumberland-cancel-contract"
         }
       ],
       "confidence": "medium",
@@ -581,19 +602,22 @@
           "title": "Glocester Town Council votes to remove Flock license plate cameras amid privacy concerns (WJAR)",
           "url": "https://coastalabc.com/newsletter-daily/glocesters-town-council-to-discuss-flock-cameras-as-opposition-rises-privacy-concerns-aug-6-2026",
           "date": "2026-08-07",
-          "verified": true
+          "verified": true,
+          "source_key": "https://coastalabc.com/newsletter-daily/glocesters-town-council-to-discuss-flock-cameras-as-opposition-rises-privacy-concerns-aug-6-2026"
         },
         {
           "title": "After Rhode Island residents push back on surveillance cameras, town faces up to $15,000 bill",
           "url": "https://www.thecooldown.com/green-tech/glocester-rhode-island-vote-remove-flock-plate-reader-cameras/",
           "date": "2026-08-14",
-          "verified": true
+          "verified": true,
+          "source_key": "https://thecooldown.com/green-tech/glocester-rhode-island-vote-remove-flock-plate-reader-cameras"
         },
         {
           "title": "ACLU of Rhode Island - Glocester vote announcement",
           "url": "https://www.findglocal.com/US/Unknown/89921252335/ACLU-of-Rhode-Island",
           "date": "2026-08-07",
-          "verified": false
+          "verified": false,
+          "source_key": "https://findglocal.com/US/Unknown/89921252335/ACLU-of-Rhode-Island"
         }
       ],
       "confidence": "medium",
@@ -620,19 +644,22 @@
           "title": "Narragansett to stop using automated license plate readers (WPRI 12)",
           "url": "https://www.youtube.com/watch?v=vTZA2DP1MNI",
           "date": "2026-08-03",
-          "verified": false
+          "verified": false,
+          "source_key": "https://youtube.com/watch?v=vTZA2DP1MNI"
         },
         {
           "title": "Narragansett To Stop Using Flock Cameras (94HJY)",
           "url": "https://94hjy.iheart.com/content/2026-08-04-narragansett-to-stop-using-flock-cameras/",
           "date": "2026-08-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://94hjy.iheart.com/content/2026-08-04-narragansett-to-stop-using-flock-cameras"
         },
         {
           "title": "Second Rhode Island town scraps Flock cameras after privacy concerns mount",
           "url": "https://www.thecooldown.com/green-tech/narragansett-flock-cameras-privacy-concerns/",
           "date": "2026-08-09",
-          "verified": true
+          "verified": true,
+          "source_key": "https://thecooldown.com/green-tech/narragansett-flock-cameras-privacy-concerns"
         }
       ],
       "confidence": "medium",
@@ -659,7 +686,8 @@
           "title": "Under ACLU pressure, NK officials kill contract with Flock cameras (East Greenwich Pendulum)",
           "url": "https://www.ricentral.com/east_greenwich_pendulum/under-aclu-pressure-nk-officials-kill-contract-with-flock-cameras/article_465d83b3-57cf-4b22-b956-071471c3db6c.html",
           "date": "2026-08-21",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ricentral.com/east_greenwich_pendulum/under-aclu-pressure-nk-officials-kill-contract-with-flock-cameras/article_465d83b3-57cf-4b22-b956-071471c3db6c.html"
         }
       ],
       "confidence": "medium",
@@ -686,7 +714,8 @@
           "title": "Flock Safety - Providence Business News (tag page)",
           "url": "https://pbn.com/tag/flock-safety/",
           "date": "2026-09-20",
-          "verified": true
+          "verified": true,
+          "source_key": "https://pbn.com/tag/flock-safety"
         }
       ],
       "confidence": "low",
@@ -713,13 +742,15 @@
           "title": "RISP To Install 39 Plate Readers Under Flock Contract (B101)",
           "url": "https://b101.iheart.com/content/2026-07-31-risp-to-install-39-plate-readers-under-flock-contract/",
           "date": "2026-07-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://b101.iheart.com/content/2026-07-31-risp-to-install-39-plate-readers-under-flock-contract"
         },
         {
           "title": "State police launch Flock cameras across RI. Here's where. (Providence Journal)",
           "url": "https://www.providencejournal.com/story/news/crime/2026/07/31/license-plate-reading-flock-cameras-already-in-use-by-rhode-island-state-police/91088862007/",
           "date": "2026-07-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://providencejournal.com/story/news/crime/2026/07/31/license-plate-reading-flock-cameras-already-in-use-by-rhode-island-state-police/91088862007"
         }
       ],
       "confidence": "medium",
@@ -746,7 +777,8 @@
           "title": "Bristol Police Dept Flock Safety / RISP Presentation (ACLU of RI)",
           "url": "https://www.riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf",
           "date": "2026-02",
-          "verified": false
+          "verified": false,
+          "source_key": "https://riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf"
         }
       ],
       "confidence": "medium",
@@ -773,19 +805,22 @@
           "title": "As Flock cameras spread across RI, opposition is growing (Providence Journal)",
           "url": "https://www.providencejournal.com/story/news/crime/2026/08/03/vandals-target-cranston-camera-as-resistance-to-flock-grows-in-ri/91116402007/",
           "date": "2026-08-03",
-          "verified": true
+          "verified": true,
+          "source_key": "https://providencejournal.com/story/news/crime/2026/08/03/vandals-target-cranston-camera-as-resistance-to-flock-grows-in-ri/91116402007"
         },
         {
           "title": "Town ends partnership with Flock cameras (NBC 10 WJAR)",
           "url": "https://www.youtube.com/watch?v=9RRqBtry1CU",
           "date": "2026-07-28",
-          "verified": false
+          "verified": false,
+          "source_key": "https://youtube.com/watch?v=9RRqBtry1CU"
         },
         {
           "title": "Rhode Island town unanimously removes Flock license plate readers after privacy clash",
           "url": "https://www.thecooldown.com/green-tech/south-kingstown-removes-flock-license-plate-readers/",
           "date": "2026-08-08",
-          "verified": true
+          "verified": true,
+          "source_key": "https://thecooldown.com/green-tech/south-kingstown-removes-flock-license-plate-readers"
         }
       ],
       "confidence": "medium",
@@ -812,7 +847,8 @@
           "title": "Tiverton to buy more Flock cameras after contentious council meeting (Herald News)",
           "url": "https://www.heraldnews.com/story/news/2026/07/29/tiverton-town-council-oks-purchase-of-more-flock-surveillance-cameras/91081209007/",
           "date": "2026-07-29",
-          "verified": true
+          "verified": true,
+          "source_key": "https://heraldnews.com/story/news/2026/07/29/tiverton-town-council-oks-purchase-of-more-flock-surveillance-cameras/91081209007"
         }
       ],
       "confidence": "medium",
@@ -839,7 +875,8 @@
           "title": "These 2 towns rejected state police request to install Flock cameras (WJAR)",
           "url": "https://coastalabc.com/news/local/these-2-towns-rejected-rhode-island-state-police-request-install-flock-cameras-automatic-license-plate-readers-portsmouth-warren-july-31-2026",
           "date": "2026-07-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://coastalabc.com/news/local/these-2-towns-rejected-rhode-island-state-police-request-install-flock-cameras-automatic-license-plate-readers-portsmouth-warren-july-31-2026"
         }
       ],
       "confidence": "medium",
@@ -866,7 +903,8 @@
           "title": "State police launch Flock cameras across RI. Here's where. (Providence Journal)",
           "url": "https://www.providencejournal.com/story/news/crime/2026/07/31/license-plate-reading-flock-cameras-already-in-use-by-rhode-island-state-police/91088862007/",
           "date": "2026-07-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://providencejournal.com/story/news/crime/2026/07/31/license-plate-reading-flock-cameras-already-in-use-by-rhode-island-state-police/91088862007"
         }
       ],
       "confidence": "medium",
@@ -893,7 +931,8 @@
           "title": "As states seek to rein in Flock license plate cameras, New Hampshire is considered a model (Boston Globe)",
           "url": "https://newspub.live/northeast/new-hampshire/as-states-seek-to-rein-in-flock-license-plate-cameras-new-hampshire-is-considered-a-model-the-boston-globe/",
           "date": "2026-09-24",
-          "verified": false
+          "verified": false,
+          "source_key": "https://newspub.live/northeast/new-hampshire/as-states-seek-to-rein-in-flock-license-plate-cameras-new-hampshire-is-considered-a-model-the-boston-globe"
         }
       ],
       "confidence": "low",
@@ -920,7 +959,8 @@
           "title": "Protesters Target Flock Safety Cameras as Florida Bans License Plate Readers From State Highways (NewsCord)",
           "url": "https://newscord.org/article/protesters-target-flock-cameras-fro--Story_20260901_FloridaandTexasmovetf84d0564",
           "date": "2026-09-01",
-          "verified": false
+          "verified": false,
+          "source_key": "https://newscord.org/article/protesters-target-flock-cameras-fro--Story_20260901_FloridaandTexasmovetf84d0564"
         }
       ],
       "confidence": "low",
@@ -947,7 +987,8 @@
           "title": "Vermont Towns Face a July 2027 Ban on License Plate Cameras, State Says (Compass Vermont)",
           "url": "https://www.compassvermont.com/p/vermont-towns-face-a-july-2027-ban",
           "date": "2026-09-23",
-          "verified": true
+          "verified": true,
+          "source_key": "https://compassvermont.com/p/vermont-towns-face-a-july-2027-ban"
         }
       ],
       "confidence": "medium",
@@ -974,13 +1015,15 @@
           "title": "South Portland Reconsiders AI License Plate Cameras (B98.5, via WGME)",
           "url": "https://b985.fm/ixp/490/p/south-portland-flock-camera-privacy-concerns/",
           "date": "2026-05-20",
-          "verified": true
+          "verified": true,
+          "source_key": "https://b985.fm/ixp/490/p/south-portland-flock-camera-privacy-concerns"
         },
         {
           "title": "City of South Portland Releases Audit Summary of Flock Safety ALPR Usage and Provides Update on Safeguards",
           "url": "http://southportland-gov.community.diligentoneplatform.com/document/9d70cca1-180d-4a47-a702-52af619d2310/",
           "date": "2026-05-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://southportland-gov.community.diligentoneplatform.com/document/9d70cca1-180d-4a47-a702-52af619d2310"
         }
       ],
       "confidence": "medium",
@@ -1007,7 +1050,8 @@
           "title": "Beacon Police Chief Explains Camera System",
           "url": "https://highlandscurrent.org/2026/09/25/beacon-police-chief-explains-camera-system/",
           "date": "2026-09-25",
-          "verified": true
+          "verified": true,
+          "source_key": "https://highlandscurrent.org/2026/09/25/beacon-police-chief-explains-camera-system"
         }
       ],
       "state": "NY",
@@ -1034,13 +1078,15 @@
           "title": "Dutchess Orders Removal of Flock Cameras After Officials Abandon Program",
           "url": "https://www.newpineplainsherald.org/dutchess-orders-removal-of-flock-cameras-after-officials-abandon-program/",
           "date": "2026-09-25",
-          "verified": true
+          "verified": true,
+          "source_key": "https://newpineplainsherald.org/dutchess-orders-removal-of-flock-cameras-after-officials-abandon-program"
         },
         {
           "title": "Dutchess County to Remove Flock Cameras After Top Officials Withdraw Support",
           "url": "https://www.thedailycatch.org/articles/dutchess-county-district-attorney-and-sheriff-withdraw-support-for-continued-use-of-flock-cameras/",
           "date": "2026-09-25",
-          "verified": true
+          "verified": true,
+          "source_key": "https://thedailycatch.org/articles/dutchess-county-district-attorney-and-sheriff-withdraw-support-for-continued-use-of-flock-cameras"
         }
       ],
       "state": "NY",
@@ -1067,13 +1113,15 @@
           "title": "N.Y. city seeks $300,100 grant for license plate reader cameras",
           "url": "https://www.gov1.com/products/technology/n-y-city-seeks-300-100-grant-for-license-plate-reader-cameras",
           "date": "2026-01-15",
-          "verified": false
+          "verified": false,
+          "source_key": "https://gov1.com/products/technology/n-y-city-seeks-300-100-grant-for-license-plate-reader-cameras"
         },
         {
           "title": "Niagara Falls, N.Y., Approves License Plate Reader Deployment",
           "url": "https://www.govtech.com/public-safety/niagara-falls-n-y-approves-license-plate-reader-deployment",
           "date": "2025-03-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/niagara-falls-n-y-approves-license-plate-reader-deployment"
         }
       ],
       "state": "NY",
@@ -1100,19 +1148,22 @@
           "title": "New Lawsuit: Do We Have a Right to Know We're Being Surveilled?",
           "url": "https://www.dropsitenews.com/p/nyclu-lawsuit-surveillance-camera-location-public-record-flock",
           "date": "2026-04-30",
-          "verified": true
+          "verified": true,
+          "source_key": "https://dropsitenews.com/p/nyclu-lawsuit-surveillance-camera-location-public-record-flock"
         },
         {
           "title": "In a village without a newspaper, a small digital outlet is keeping tabs and asking questions",
           "url": "http://dankennedy.net/2025/08/04/in-a-village-without-a-newspaper-a-small-digital-outlet-was-keeping-tabs-and-asking-questions/",
           "date": "2025-08-04",
-          "verified": false
+          "verified": false,
+          "source_key": "https://dankennedy.net/2025/08/04/in-a-village-without-a-newspaper-a-small-digital-outlet-was-keeping-tabs-and-asking-questions"
         },
         {
           "title": "Committee on Open Government FOIL AO 19882 (confirms contract rescinded, cameras never installed)",
           "url": "https://opengovernment.ny.gov/system/files/documents/2025/10/f19882.pdf",
           "date": "2025-10-27",
-          "verified": true
+          "verified": true,
+          "source_key": "https://opengovernment.ny.gov/system/files/documents/2025/10/f19882.pdf"
         }
       ],
       "state": "NY",
@@ -1139,25 +1190,29 @@
           "title": "Cities Ditch Flock Cameras for Axon ALPRs — Who Owns Axon?",
           "url": "https://nexfinitynews.com/cities-drop-flock-cameras-replace-axon-alpr-who-owns-axon/",
           "date": "2026-07-27",
-          "verified": false
+          "verified": false,
+          "source_key": "https://nexfinitynews.com/cities-drop-flock-cameras-replace-axon-alpr-who-owns-axon"
         },
         {
           "title": "Syracuse Council To Vote On License Plate Reader Switch After Data Leak",
           "url": "https://wsyr.iheart.com/content/2026-02-09-syracuse-council-to-vote-on-license-plate-reader-switch-after-data-leak/",
           "date": "2026-02-09",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wsyr.iheart.com/content/2026-02-09-syracuse-council-to-vote-on-license-plate-reader-switch-after-data-leak"
         },
         {
           "title": "Cities Are Ditching Flock, Immediately Replacing It With Axon License Plate Readers",
           "url": "http://thefreethoughtproject.com/government-surveillance/cities-are-ditching-flock-immediately-replacing-it-with-axon-license-plate-readers",
           "date": "2026-08-07",
-          "verified": false
+          "verified": false,
+          "source_key": "https://thefreethoughtproject.com/government-surveillance/cities-are-ditching-flock-immediately-replacing-it-with-axon-license-plate-readers"
         },
         {
           "title": "Flock Safety Cameras Face Grassroots Backlash Across the US as 50 Cities Cut Contracts",
           "url": "https://www.karmactive.com/flock-safety-cameras-grassroots-backlash-50-cities/",
           "date": "2026-08-23",
-          "verified": true
+          "verified": true,
+          "source_key": "https://karmactive.com/flock-safety-cameras-grassroots-backlash-50-cities"
         }
       ],
       "state": "NY",
@@ -1184,19 +1239,22 @@
           "title": "Flock License Plate Readers Drive Small Town Into A State Of Emergency",
           "url": "https://www.jalopnik.com/2177234/troy-new-york-town-torn-apart-police-using-flock-cameras-safety-concerns/",
           "date": "2026-05-19",
-          "verified": true
+          "verified": true,
+          "source_key": "https://jalopnik.com/2177234/troy-new-york-town-torn-apart-police-using-flock-cameras-safety-concerns"
         },
         {
           "title": "Troy City Council limits mayor's emergency powers after Flock dispute",
           "url": "https://www.wamc.org/news/2026-09-06/troy-flock-cameras-city-council-limits-mayors-emergency-powers",
           "date": "2026-09-06",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wamc.org/news/2026-09-06/troy-flock-cameras-city-council-limits-mayors-emergency-powers"
         },
         {
           "title": "Troy passes changes to law regulating automatic license plate readers cameras",
           "url": "https://www.wamc.org/new-york-news/2026-09-18/troy-council-flock-camera-regulations-law",
           "date": "2026-09-18",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wamc.org/new-york-news/2026-09-18/troy-council-flock-camera-regulations-law"
         }
       ],
       "state": "NY",
@@ -1223,7 +1281,8 @@
           "title": "Township of North Brunswick Resolution 302-9.25 (authorizing proprietary Flock ALPR contract)",
           "url": "https://live-township-of-north-brunswick.pantheonsite.io/wp-content/uploads/2025/09/302-9.25-Authorizing-A-Proprietary-Contract-with-Flock-Safety-for-Automated-License-Plate-Reader-1.pdf",
           "date": "2025-09-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://live-township-of-north-brunswick.pantheonsite.io/wp-content/uploads/2025/09/302-9.25-Authorizing-A-Proprietary-Contract-with-Flock-Safety-for-Automated-License-Plate-Reader-1.pdf"
         }
       ],
       "state": "NJ",
@@ -1250,13 +1309,15 @@
           "title": "Abington Township votes to ditch Flock cameras over privacy concerns",
           "url": "https://fox29.com/news/abington-township-votes-ditch-flock-cameras-over-privacy-concerns",
           "date": "2026-08-28",
-          "verified": true
+          "verified": true,
+          "source_key": "https://fox29.com/news/abington-township-votes-ditch-flock-cameras-over-privacy-concerns"
         },
         {
           "title": "Abington Police Drop Flock Cameras Over Data Security Concerns",
           "url": "http://montco.today/2026/08/abington-police-drop-flock-cameras-data-security/",
           "date": "2026-08-26",
-          "verified": true
+          "verified": true,
+          "source_key": "https://montco.today/2026/08/abington-police-drop-flock-cameras-data-security"
         }
       ],
       "state": "PA",
@@ -1283,13 +1344,15 @@
           "title": "Shapiro backs Flock ban in PA. What's happening in Franklin County?",
           "url": "https://www.publicopiniononline.com/story/news/local/2026/08/31/shapiro-supports-flock-ban-in-pa-whats-happening-in-franklin-county/91545178007/",
           "date": "2026-08-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://publicopiniononline.com/story/news/local/2026/08/31/shapiro-supports-flock-ban-in-pa-whats-happening-in-franklin-county/91545178007"
         },
         {
           "title": "Franklin County officials, citizens clash over Flock cameras",
           "url": "https://www.publicopiniononline.com/story/news/local/2026/08/24/residents-law-enforcement-clash-over-flock-in-franklin-county/91387192007/",
           "date": "2026-08-24",
-          "verified": true
+          "verified": true,
+          "source_key": "https://publicopiniononline.com/story/news/local/2026/08/24/residents-law-enforcement-clash-over-flock-in-franklin-county/91387192007"
         }
       ],
       "state": "PA",
@@ -1316,7 +1379,8 @@
           "title": "Flock cameras raise privacy, transparency concerns at Penn State",
           "url": "https://www.psucollegian.com/features/features_investigation/its-like-youve-had-a-tail-the-entire-time-flock-cameras-on-campus-raise-privacy/article_d29a3790-5fd0-45d6-ace2-40d38d3f37a7.html",
           "date": "2026-04-09",
-          "verified": true
+          "verified": true,
+          "source_key": "https://psucollegian.com/features/features_investigation/its-like-youve-had-a-tail-the-entire-time-flock-cameras-on-campus-raise-privacy/article_d29a3790-5fd0-45d6-ace2-40d38d3f37a7.html"
         }
       ],
       "state": "PA",
@@ -1343,13 +1407,15 @@
           "title": "Pa. lawmakers are considering limits on Flock cameras. But how many are already in Philly?",
           "url": "https://www.phillyvoice.com/flock-cameras-philadelphia-pennsylvania-lawmakers/",
           "date": "2026-09-23",
-          "verified": true
+          "verified": true,
+          "source_key": "https://phillyvoice.com/flock-cameras-philadelphia-pennsylvania-lawmakers"
         },
         {
           "title": "Temple University Leads State with Flock License Plate Tech, Arrests Notorious Burglar",
           "url": "https://www.brief.news/tech/2025/05/30/temple-university-tackles-burglar?briefFormat=TopStories&categories=Science&categories=World&categories=US&categories=Financial+Market+Space&source=%2Ftech&utm_source=category-page&utm_medium=web",
           "date": "2025-05-30",
-          "verified": false
+          "verified": false,
+          "source_key": "https://brief.news/tech/2025/05/30/temple-university-tackles-burglar?briefFormat=TopStories&categories=Financial+Market+Space&categories=Science&categories=US&categories=World&source=%2Ftech"
         }
       ],
       "state": "PA",
@@ -1376,7 +1442,8 @@
           "title": "Does Wilmington use Flock cameras? Not anymore",
           "url": "https://www.delawareonline.com/story/news/local/2026/08/06/wilmington-discontinues-use-of-flock-cameras/91187957007/",
           "date": "2026-08-06",
-          "verified": true
+          "verified": true,
+          "source_key": "https://delawareonline.com/story/news/local/2026/08/06/wilmington-discontinues-use-of-flock-cameras/91187957007"
         }
       ],
       "state": "DE",
@@ -1403,13 +1470,15 @@
           "title": "D.C. Won't Say How It's Using Its Flock Cameras - The Washington Sun",
           "url": "https://www.washingtonsun.com/metro/dc-flock-cameras?redirected=notus_org",
           "date": "2026-08-28",
-          "verified": false
+          "verified": false,
+          "source_key": "https://washingtonsun.com/metro/dc-flock-cameras?redirected=notus_org"
         },
         {
           "title": "DC Police investigate 2 potential cases of Flock camera misuse amid councilmember's concerns",
           "url": "https://fox5dc.com/news/dc-police-investigate-2-potential-cases-flock-camera-misuse-amid-privacy-concerns",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://fox5dc.com/news/dc-police-investigate-2-potential-cases-flock-camera-misuse-amid-privacy-concerns"
         }
       ],
       "state": "DC",
@@ -1436,7 +1505,8 @@
           "title": "Augusta County to revisit Flock camera contract following recent vandalism",
           "url": "https://www.newsleader.com/story/politics/2026/09/10/flock-camera-vandalism-prompts-augusta-county-to-revisit-lpr-contract/91689439007/",
           "date": "2026-09-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://newsleader.com/story/politics/2026/09/10/flock-camera-vandalism-prompts-augusta-county-to-revisit-lpr-contract/91689439007"
         }
       ],
       "state": "VA",
@@ -1463,7 +1533,8 @@
           "title": "A small Virginia town de-Flocks",
           "url": "https://www.whro.org/virginia-center-for-investigative-journalism/2026-09-10/small-virginia-town-de-flocks",
           "date": "2026-09-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://whro.org/virginia-center-for-investigative-journalism/2026-09-10/small-virginia-town-de-flocks"
         }
       ],
       "state": "VA",
@@ -1490,7 +1561,8 @@
           "title": "Flock CEO includes Charlottesville, Staunton in email blaming activists",
           "url": "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services/",
           "date": "2025-12-19",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services"
         }
       ],
       "state": "VA",
@@ -1517,13 +1589,15 @@
           "title": "Lynchburg City Council votes to end Flock Safety contract amid surveillance concerns (WSLS)",
           "url": "https://gmg-wsls-prod.cdn.arcpublishing.com/topic/Flock_Safety/",
           "date": "2026-09-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gmg-wsls-prod.cdn.arcpublishing.com/topic/Flock_Safety"
         },
         {
           "title": "Council rejects Misjuns' bid for more rapid removal of Flock cameras (The News & Advance via Medium)",
           "url": "https://medium.com/@iwan.steinmann/week-3-cna-4cb0e2f95099",
           "date": "2026-09-11",
-          "verified": false
+          "verified": false,
+          "source_key": "https://medium.com/@iwan.steinmann/week-3-cna-4cb0e2f95099"
         }
       ],
       "state": "VA",
@@ -1550,13 +1624,15 @@
           "title": "DeFlock Newport News VA - Follow the Money (FOIA purchase orders)",
           "url": "https://deflocknewportnews.org/",
           "date": "2026-09-25",
-          "verified": false
+          "verified": false,
+          "source_key": "https://deflocknewportnews.org/"
         },
         {
           "title": "Newport News VA PD Transparency Portal",
           "url": "https://transparency.flocksafety.com/newport-news-va-pd",
           "date": "2026-09-25",
-          "verified": true
+          "verified": true,
+          "source_key": "https://transparency.flocksafety.com/newport-news-va-pd"
         }
       ],
       "state": "VA",
@@ -1583,19 +1659,22 @@
           "title": "Flock camera records stay hidden but surveillance remains in region",
           "url": "https://www.newsleader.com/story/news/local/2026/09/10/augusta-county-flock-searches-database-camera-records-hidden/91506798007/",
           "date": "2026-09-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://newsleader.com/story/news/local/2026/09/10/augusta-county-flock-searches-database-camera-records-hidden/91506798007"
         },
         {
           "title": "Why More Cities Are Suddenly Pulling The Plug On Flock Safety Cameras",
           "url": "https://www.carscoops.com/2026/02/flock-safety-alpr-contract-termination/",
           "date": "2026-02-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://carscoops.com/2026/02/flock-safety-alpr-contract-termination"
         },
         {
           "title": "Flock CEO includes Charlottesville, Staunton in email blaming activists",
           "url": "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services/",
           "date": "2025-12-19",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services"
         }
       ],
       "state": "VA",
@@ -1622,13 +1701,15 @@
           "title": "Asheville Council votes to end Flock contract 'immediately'",
           "url": "https://www.citizen-times.com/story/news/local/2026/08/26/asheville-city-council-votes-to-end-flock-camera-contract/91405585007/",
           "date": "2026-08-26",
-          "verified": true
+          "verified": true,
+          "source_key": "https://citizen-times.com/story/news/local/2026/08/26/asheville-city-council-votes-to-end-flock-camera-contract/91405585007"
         },
         {
           "title": "Asheville voted to tear out its Flock cameras. Here's the pushback that got it there.",
           "url": "https://www.wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there",
           "date": "2026-08-28",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there"
         }
       ],
       "state": "NC",
@@ -1655,13 +1736,15 @@
           "title": "Dare County to remove all automated license plate recognition cameras from unincorporated areas",
           "url": "https://www.publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-recognition-cameras-from-unincorporated-areas",
           "date": "2026-09-03",
-          "verified": true
+          "verified": true,
+          "source_key": "https://publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-recognition-cameras-from-unincorporated-areas"
         },
         {
           "title": "Nags Head leaves Flock cameras in place for now, delays e-bike restrictions",
           "url": "https://www.patreon.com/SamWalkerOBXNews/posts/nags-head-leaves-168428390",
           "date": "2026-09-03",
-          "verified": false
+          "verified": false,
+          "source_key": "https://patreon.com/SamWalkerOBXNews/posts/nags-head-leaves-168428390"
         }
       ],
       "state": "NC",
@@ -1688,7 +1771,8 @@
           "title": "Greenville to reject Flock cameras",
           "url": "https://www.piratemedia1.com/theeastcarolinian/article_4caa430a-e61d-4369-af40-86e56b59d4ac.html",
           "date": "2026-09-10",
-          "verified": false
+          "verified": false,
+          "source_key": "https://piratemedia1.com/theeastcarolinian/article_4caa430a-e61d-4369-af40-86e56b59d4ac.html"
         }
       ],
       "state": "NC",
@@ -1715,13 +1799,15 @@
           "title": "Brevard drops plate-reader camera plan as Flock controversy roils WNC",
           "url": "https://www.blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007/",
           "date": "2026-09-14",
-          "verified": true
+          "verified": true,
+          "source_key": "https://blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007"
         },
         {
           "title": "In rural NC county, opposition to Flock cameras unites conservatives and liberals",
           "url": "https://cardinalpine.com/news/in-rural-nc-county-opposition-to-flock-cameras-unites-conservatives-and-liberals/",
           "date": "2026-08-18",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cardinalpine.com/news/in-rural-nc-county-opposition-to-flock-cameras-unites-conservatives-and-liberals"
         }
       ],
       "state": "NC",
@@ -1748,13 +1834,15 @@
           "title": "Brevard drops plate-reader camera plan as Flock controversy roils WNC",
           "url": "https://www.blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007/",
           "date": "2026-09-14",
-          "verified": true
+          "verified": true,
+          "source_key": "https://blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007"
         },
         {
           "title": "Residents press council to cancel Flock cameras as police chief defends license-plate readers",
           "url": "https://citizenportal.ai/articles/9830765/north-carolina/henderson-county/hendersonville/residents-press-council-to-cancel-flock-cameras-as-police-chief-defends-license-plate-readers",
           "date": "2026-09-03",
-          "verified": false
+          "verified": false,
+          "source_key": "https://citizenportal.ai/articles/9830765/north-carolina/henderson-county/hendersonville/residents-press-council-to-cancel-flock-cameras-as-police-chief-defends-license-plate-readers"
         }
       ],
       "state": "NC",
@@ -1781,7 +1869,8 @@
           "title": "Nags Head leaves Flock cameras in place for now, delays e-bike restrictions",
           "url": "https://www.patreon.com/SamWalkerOBXNews/posts/nags-head-leaves-168428390",
           "date": "2026-09-03",
-          "verified": false
+          "verified": false,
+          "source_key": "https://patreon.com/SamWalkerOBXNews/posts/nags-head-leaves-168428390"
         }
       ],
       "state": "NC",
@@ -1808,13 +1897,15 @@
           "title": "New Hanover cancels Flock contract following concerns",
           "url": "https://www.starnewsonline.com/story/news/local/2026/09/08/new-hanover-county-cancels-flock-contract-in-wilmington-nc/91656600007/",
           "date": "2026-09-08",
-          "verified": true
+          "verified": true,
+          "source_key": "https://starnewsonline.com/story/news/local/2026/09/08/new-hanover-county-cancels-flock-contract-in-wilmington-nc/91656600007"
         },
         {
           "title": "Why Is Flock Safety Losing Municipal Contracts",
           "url": "https://theinnovationattorney.substack.com/p/why-is-flock-safety-losing-municipal",
           "date": "2026-09-22",
-          "verified": false
+          "verified": false,
+          "source_key": "https://theinnovationattorney.substack.com/p/why-is-flock-safety-losing-municipal"
         }
       ],
       "state": "NC",
@@ -1841,7 +1932,8 @@
           "title": "Asheville voted to tear out its Flock cameras. Here's the pushback that got it there.",
           "url": "https://www.wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there",
           "date": "2026-08-28",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there"
         }
       ],
       "state": "NC",
@@ -1868,13 +1960,15 @@
           "title": "Wrightsville Beach police officer out after alleged Flock misuse",
           "url": "https://www.starnewsonline.com/story/news/crime/2026/09/08/wrightsville-beach-nc-officer-out-after-flock-misuse-investigation/91661963007/",
           "date": "2026-09-08",
-          "verified": true
+          "verified": true,
+          "source_key": "https://starnewsonline.com/story/news/crime/2026/09/08/wrightsville-beach-nc-officer-out-after-flock-misuse-investigation/91661963007"
         },
         {
           "title": "Former Wrightsville Beach officer charged with misuse of Flock cameras",
           "url": "https://www.starnewsonline.com/story/news/crime/2026/09/09/former-wrightsville-beach-nc-police-officer-charged-with-flock-misuse/91677027007/",
           "date": "2026-09-09",
-          "verified": true
+          "verified": true,
+          "source_key": "https://starnewsonline.com/story/news/crime/2026/09/09/former-wrightsville-beach-nc-police-officer-charged-with-flock-misuse/91677027007"
         }
       ],
       "state": "NC",
@@ -1901,7 +1995,8 @@
           "title": "Greenville County sheriff addresses Flock camera concerns after deputies fired",
           "url": "https://gray-whns-prod.gtv-cdn.com/2026/08/10/greenville-county-sheriff-addresses-flock-camera-concerns-after-deputies-fired/",
           "date": "2026-08-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-whns-prod.gtv-cdn.com/2026/08/10/greenville-county-sheriff-addresses-flock-camera-concerns-after-deputies-fired"
         }
       ],
       "state": "SC",
@@ -1928,13 +2023,15 @@
           "title": "Inside the Gwinnett County police audit that exposed license plate data abuse",
           "url": "https://fox5atlanta.com/news/inside-gwinnett-county-police-audit-exposed-license-plate-data-abuse",
           "date": "2026-09-05",
-          "verified": true
+          "verified": true,
+          "source_key": "https://fox5atlanta.com/news/inside-gwinnett-county-police-audit-exposed-license-plate-data-abuse"
         },
         {
           "title": "Three Gwinnett PD officers fired and charged in connection with alleged misuse of Flock cameras",
           "url": "https://www.waltontribune.com/news/three-gwinnett-pd-officers-fired-and-charged-in-connection-with-alleged-misuse-of-flock-cameras/article_d6092fd8-3247-5b13-b502-e06aac47a87c.html",
           "date": "2026-09-09",
-          "verified": true
+          "verified": true,
+          "source_key": "https://waltontribune.com/news/three-gwinnett-pd-officers-fired-and-charged-in-connection-with-alleged-misuse-of-flock-cameras/article_d6092fd8-3247-5b13-b502-e06aac47a87c.html"
         }
       ],
       "state": "GA",
@@ -1961,7 +2058,8 @@
           "title": "Before DeSantis nixed flock cameras, he approved funding them",
           "url": "https://www.cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them",
           "date": "2026-09-02",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them"
         }
       ],
       "state": "FL",
@@ -1988,13 +2086,15 @@
           "title": "Before DeSantis nixed flock cameras, he approved funding them",
           "url": "https://www.cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them",
           "date": "2026-09-02",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them"
         },
         {
           "title": "Brevard agencies halt use of tag-reading system after FDOT order",
           "url": "https://www.floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007/",
           "date": "2026-08-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007"
         }
       ],
       "state": "FL",
@@ -2021,7 +2121,8 @@
           "title": "Florida bans most license plate readers from state roads",
           "url": "https://www.police1.com/law-enforcement-policies/florida-bans-alprs-from-all-state-roads",
           "date": "2026-09-23",
-          "verified": true
+          "verified": true,
+          "source_key": "https://police1.com/law-enforcement-policies/florida-bans-alprs-from-all-state-roads"
         }
       ],
       "state": "FL",
@@ -2048,7 +2149,8 @@
           "title": "Florida Orders End of Flock Camera Use, Halts New Permits",
           "url": "https://cmg-cmg-tv-10070-prod.cdn.arcpublishing.com/news/local/fdot-orders-license-plate-reading-cameras-removed-state-rights-of-way-halts-new-permits/XBT4JV2XJBCMVCPATCMBUWEU3A/",
           "date": "2026-09-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cmg-cmg-tv-10070-prod.cdn.arcpublishing.com/news/local/fdot-orders-license-plate-reading-cameras-removed-state-rights-of-way-halts-new-permits/XBT4JV2XJBCMVCPATCMBUWEU3A"
         }
       ],
       "state": "FL",
@@ -2075,13 +2177,15 @@
           "title": "Brevard agencies halt use of tag-reading system after FDOT order",
           "url": "https://www.floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007/",
           "date": "2026-08-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007"
         },
         {
           "title": "This Week in Palm Bay: Budget Finality, 911 Dispatch Showdown, and Surveillance Grid Dismantled",
           "url": "https://news.thepalmbayer.com/news/this-week-in-palm-bay-episode-24-september-21-2026/",
           "date": "2026-09-21",
-          "verified": true
+          "verified": true,
+          "source_key": "https://news.thepalmbayer.com/news/this-week-in-palm-bay-episode-24-september-21-2026"
         }
       ],
       "state": "FL",
@@ -2108,7 +2212,8 @@
           "title": "Sheriff Chitwood's statement on discontinuation of VSO LPRs",
           "url": "https://origin.volusiasheriff.gov/news/volusia-county-sheriff/sheriff-chitwoods-statement-on-discontinuation-of-vso-lprs.stml",
           "date": "2026-08-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://origin.volusiasheriff.gov/news/volusia-county-sheriff/sheriff-chitwoods-statement-on-discontinuation-of-vso-lprs.stml"
         }
       ],
       "state": "FL",
@@ -2135,43 +2240,50 @@
           "title": "Resolution RES 26-005 terminating the Flock Safety contract (City of Harrisonburg)",
           "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15723134-Resolution.pdf",
           "date": "2026-07-28",
-          "verified": true
+          "verified": true,
+          "source_key": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15723134-Resolution.pdf"
         },
         {
           "title": "City Council meeting minutes, July 28, 2026 (draft)",
           "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1425067-city-council-meeting-2026-08-11/attachments/15742880-Minutes.pdf",
           "date": "2026-08-11",
-          "verified": true
+          "verified": true,
+          "source_key": "https://meetings.cvilledata.org/meetings/harrisonburg/1425067-city-council-meeting-2026-08-11/attachments/15742880-Minutes.pdf"
         },
         {
           "title": "Staff memorandum on Flock contract termination",
           "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15710541-Memorandum.pdf",
           "date": "2026-07-28",
-          "verified": true
+          "verified": true,
+          "source_key": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15710541-Memorandum.pdf"
         },
         {
           "title": "Flock surveillance spreads in Virginia, communities push back (WHRO)",
           "url": "https://www.whro.org/virginia-center-for-investigative-journalism/2026-08-14/flock-surveillance-spreads-virginia-communities-push-back",
           "date": "2026-08-14",
-          "verified": true
+          "verified": true,
+          "source_key": "https://whro.org/virginia-center-for-investigative-journalism/2026-08-14/flock-surveillance-spreads-virginia-communities-push-back"
         },
         {
           "title": "Flock controversial camera contracts canceled in 23 states (Washington Examiner)",
           "url": "https://www.washingtonexaminer.com/policy/technology/4672621/flock-controversial-camera-contracts-canceled-23-states/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://washingtonexaminer.com/policy/technology/4672621/flock-controversial-camera-contracts-canceled-23-states"
         },
         {
           "title": "Virginia localities rethink Flock camera use (The Breeze / The Center Square)",
           "url": "https://www.breezejmu.org/news/state/virginia-localities-rethink-flock-camera-use/article_eacd2cb8-c4e8-504a-a544-c72569bbec26.html",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://breezejmu.org/news/state/virginia-localities-rethink-flock-camera-use/article_eacd2cb8-c4e8-504a-a544-c72569bbec26.html"
         },
         {
           "title": "Flock Safety opponents pack community meeting in Virginia (GovTech / Roanoke Times)",
           "url": "https://www.govtech.com/public-safety/flock-safety-opponents-pack-community-meeting-in-virginia",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/flock-safety-opponents-pack-community-meeting-in-virginia"
         }
       ],
       "state": "VA",
@@ -2198,37 +2310,43 @@
           "title": "Resolution to end the city's relationship with Flock Safety (City of Ithaca, via Legistar)",
           "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3942354/Trumble_-_RESOLUTION_TO_END_THE_CITY_S_RELATIONSHIP_WITH_FLOCK_SAFETY_-_final_2_26.pdf",
           "date": "2026-03-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3942354/Trumble_-_RESOLUTION_TO_END_THE_CITY_S_RELATIONSHIP_WITH_FLOCK_SAFETY_-_final_2_26.pdf"
         },
         {
           "title": "Common Council votes to end Ithaca's contract with Flock Safety (Cornell Daily Sun)",
           "url": "https://www.cornellsun.com/article/2026/03/common-council-votes-to-end-ithaca-s-contract-with-flock-safety-keep-free-gaza-on-green-street-mural",
           "date": "2026-03-12",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cornellsun.com/article/2026/03/common-council-votes-to-end-ithaca-s-contract-with-flock-safety-keep-free-gaza-on-green-street-mural"
         },
         {
           "title": "Ithaca Common Council cuts contract with Flock Safety (607 News Now)",
           "url": "https://607newsnow.com/news/258852-ithaca-common-council-cuts-contract-with-flock-safety/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://607newsnow.com/news/258852-ithaca-common-council-cuts-contract-with-flock-safety"
         },
         {
           "title": "How Flock's cameras became an immigration enforcement flashpoint (Latin Times)",
           "url": "https://d33gy59ovltp76.cloudfront.net/news/from-illinois-to-doral-how-flocks-cameras-became-an-immigration-enforcement-flashpoint",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://d33gy59ovltp76.cloudfront.net/news/from-illinois-to-doral-how-flocks-cameras-became-an-immigration-enforcement-flashpoint"
         },
         {
           "title": "Presence of Flock cameras in Ithaca raises surveillance concerns (The Ithacan)",
           "url": "https://theithacan.org/66799/news/presence-of-flock-cameras-in-ithaca-raises-surveillance-concerns/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://theithacan.org/66799/news/presence-of-flock-cameras-in-ithaca-raises-surveillance-concerns"
         },
         {
           "title": "Community statement on GIVE and Flock Safety (Tompkins County Sheriff's Office)",
           "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/sheriffs-office/documents/community-statement-from-tcso-re-give-flock-safety-1.pdf",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://tompkinscountyny.gov/files/assets/county/v/1/sheriffs-office/documents/community-statement-from-tcso-re-give-flock-safety-1.pdf"
         }
       ],
       "state": "NY",
@@ -2255,19 +2373,22 @@
           "title": "Flock cameras covered as Dayton suspends program",
           "url": "http://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?guid=5667c99a-30a1-46fc-b1fd-8dd6285b4a8a&pbid=6553bde4-6f9f-4e22-9ccc-4f84dc38dcd6&share=true&appcode=SNSFEE",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?appcode=SNSFEE&guid=5667c99a-30a1-46fc-b1fd-8dd6285b4a8a&pbid=6553bde4-6f9f-4e22-9ccc-4f84dc38dcd6&share=true"
         },
         {
           "title": "More than 1,000 Flock cameras watch Cincinnati area. Resistance is growing",
           "url": "https://www.cincinnati.com/story/news/crime/2026/08/23/flock-cameras-spread-ohio-northern-kentucky-backlash/90912929007/",
           "date": "2026-08-23",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cincinnati.com/story/news/crime/2026/08/23/flock-cameras-spread-ohio-northern-kentucky-backlash/90912929007"
         },
         {
           "title": "Dayton Pulls Plug on Flock Cameras After 7,100 Immigration Searches Slip Through",
           "url": "https://www.webpronews.com/dayton-pulls-plug-on-flock-cameras-after-7100-immigration-searches-slip-through/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://webpronews.com/dayton-pulls-plug-on-flock-cameras-after-7100-immigration-searches-slip-through"
         }
       ],
       "state": "OH",
@@ -2294,13 +2415,15 @@
           "title": "Sheriff ends Flock camera program",
           "url": "https://loraindaily.com/sheriff-ends-flock-camera-program/",
           "date": "2026-09-03",
-          "verified": false
+          "verified": false,
+          "source_key": "https://loraindaily.com/sheriff-ends-flock-camera-program"
         },
         {
           "title": "Lorain County Sheriff's Office to discontinue Flock license plate camera program",
           "url": "https://www.youtube.com/watch?v=dFN-CMtnkWQ",
           "date": "2026-09-03",
-          "verified": false
+          "verified": false,
+          "source_key": "https://youtube.com/watch?v=dFN-CMtnkWQ"
         }
       ],
       "state": "OH",
@@ -2327,13 +2450,15 @@
           "title": "Reynoldsburg dropping Flock cameras amid investigations into misuse",
           "url": "https://www.dispatch.com/story/news/local/reynoldsburg/2026/09/09/flock-cameras-to-be-bagged-in-reynoldsburg-as-city-ends-use/91676029007/",
           "date": "2026-09-09",
-          "verified": true
+          "verified": true,
+          "source_key": "https://dispatch.com/story/news/local/reynoldsburg/2026/09/09/flock-cameras-to-be-bagged-in-reynoldsburg-as-city-ends-use/91676029007"
         },
         {
           "title": "Candidates for Ohio attorney general address Flock cameras controversy, make proposals",
           "url": "https://www.akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html",
           "date": "2026-09-15",
-          "verified": true
+          "verified": true,
+          "source_key": "https://akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html"
         }
       ],
       "state": "OH",
@@ -2360,13 +2485,15 @@
           "title": "Ohio township ends Flock contract, 8th Tri-State community to cut ties",
           "url": "https://www.youtube.com/watch?v=L-KcNG3lf4g",
           "date": "2026-08-31",
-          "verified": false
+          "verified": false,
+          "source_key": "https://youtube.com/watch?v=L-KcNG3lf4g"
         },
         {
           "title": "Ohio cities take different approaches to Flock camera privacy concerns",
           "url": "https://www.wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns",
           "date": "2026-09-02",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns"
         }
       ],
       "state": "OH",
@@ -2393,13 +2520,15 @@
           "title": "Ohio cities take different approaches to Flock camera privacy concerns",
           "url": "https://www.wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns",
           "date": "2026-09-02",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns"
         },
         {
           "title": "Law Enforcement Use of Flock Cameras Sparks Privacy Debate in Greater Cincinnati",
           "url": "https://www.archynewsy.com/watch-hamilton-county-sheriff-discuss-use-flock-safety-cameras/",
           "date": "2026-09-03",
-          "verified": false
+          "verified": false,
+          "source_key": "https://archynewsy.com/watch-hamilton-county-sheriff-discuss-use-flock-safety-cameras"
         }
       ],
       "state": "OH",
@@ -2426,13 +2555,15 @@
           "title": "Local city council unanimously votes to end contract with Flock amid privacy concerns",
           "url": "https://star64.tv/newsletter-daily/monroe-city-council-votes-end-flock-safety-contract-amid-privacy-concerns-license-plate-readers-tech-technology-surveillance-backlash-private-cost-price-recording-safety-government-cincinnati",
           "date": "2026-09-21",
-          "verified": true
+          "verified": true,
+          "source_key": "https://star64.tv/newsletter-daily/monroe-city-council-votes-end-flock-safety-contract-amid-privacy-concerns-license-plate-readers-tech-technology-surveillance-backlash-private-cost-price-recording-safety-government-cincinnati"
         },
         {
           "title": "Deflock Monroe - End the Flock Safety camera contract",
           "url": "https://deflockmonroe.com/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://deflockmonroe.com/"
         }
       ],
       "state": "OH",
@@ -2459,13 +2590,15 @@
           "title": "Akron City Council approves purchasing license-plate reading cameras",
           "url": "https://www.beaconjournal.com/story/news/2022/06/10/akron-city-council-approves-license-plate-reading-cameras-flock-security-fight-crime/7583684001/",
           "date": "2022-06-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://beaconjournal.com/story/news/2022/06/10/akron-city-council-approves-license-plate-reading-cameras-flock-security-fight-crime/7583684001"
         },
         {
           "title": "How are Akron Police using Flock cameras? Auditor wants to know",
           "url": "https://signalakron.org/akron-police-flock-camera-program-review-independent-auditor-anthony-finnell/",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://signalakron.org/akron-police-flock-camera-program-review-independent-auditor-anthony-finnell"
         }
       ],
       "state": "OH",
@@ -2492,13 +2625,15 @@
           "title": "Lorain, Ohio, Council Approves License Plate Reader Network",
           "url": "https://www.govtech.com/public-safety/lorain-ohio-council-approves-license-plate-reader-network",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/lorain-ohio-council-approves-license-plate-reader-network"
         },
         {
           "title": "Lorain Police credit Flock system for capture of murder suspect in less than 30 minutes",
           "url": "https://www.police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes"
         }
       ],
       "state": "OH",
@@ -2525,7 +2660,8 @@
           "title": "3 Ohio Cities Approve Automated License Plate Reader Pacts",
           "url": "https://www.govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts",
           "date": "2026-07-30",
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts"
         }
       ],
       "state": "OH",
@@ -2552,19 +2688,22 @@
           "title": "Cleveland City Council Warily Approves Flock Safety Renewal",
           "url": "https://www.clevescene.com/news/cleveland-city-council-warily-approves-flock-safety-renewal/",
           "date": "2026-07-15",
-          "verified": true
+          "verified": true,
+          "source_key": "https://clevescene.com/news/cleveland-city-council-warily-approves-flock-safety-renewal"
         },
         {
           "title": "Ohio cities take different approaches to Flock camera privacy concerns",
           "url": "https://www.wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns",
           "date": "2026-09-02",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns"
         },
         {
           "title": "3 Ohio Cities Approve Automated License Plate Reader Pacts",
           "url": "https://www.govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts",
           "date": "2026-07-30",
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts"
         }
       ],
       "state": "OH",
@@ -2591,7 +2730,8 @@
           "title": "Mansfield police say ICE can't see city's Flock camera data",
           "url": "https://www.mansfieldnewsjournal.com/story/news/crime/2026/06/12/flock-cameras-are-used-locally-to-fight-crime/90402150007/",
           "date": "2026-06-12",
-          "verified": true
+          "verified": true,
+          "source_key": "https://mansfieldnewsjournal.com/story/news/crime/2026/06/12/flock-cameras-are-used-locally-to-fight-crime/90402150007"
         }
       ],
       "state": "OH",
@@ -2618,13 +2758,15 @@
           "title": "Euclid Public Safety Committee agenda, Ord. (040-22)",
           "url": "https://cdn.euclidlibrary.org/cdn/ecc/2022/20220420_SAF/agenda.pdf",
           "date": "2022-04-20",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cdn.euclidlibrary.org/cdn/ecc/2022/20220420_SAF/agenda.pdf"
         },
         {
           "title": "Flock Safety transparency portal: Euclid OH PD",
           "url": "https://transparency.flocksafety.com/euclid-oh-pd",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://transparency.flocksafety.com/euclid-oh-pd"
         }
       ],
       "state": "OH",
@@ -2651,13 +2793,15 @@
           "title": "Ginther halts Flock data sharing after audit finds immigration searches",
           "url": "https://www.dispatch.com/story/news/local/2026/07/10/columbus-immigration-searches-flock-cameras-audit/90880977007/",
           "date": "2026-07-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://dispatch.com/story/news/local/2026/07/10/columbus-immigration-searches-flock-cameras-audit/90880977007"
         },
         {
           "title": "Candidates for Ohio attorney general address Flock cameras controversy, make proposals",
           "url": "https://www.akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html",
           "date": "2026-09-15",
-          "verified": true
+          "verified": true,
+          "source_key": "https://akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html"
         }
       ],
       "state": "OH",
@@ -2684,13 +2828,15 @@
           "title": "Kaukauna ends Flock Safety camera contract (WTAQ-WLUK, notes Menominee cancellation)",
           "url": "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract/",
           "date": "2026-07-08",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract"
         },
         {
           "title": "Officials vote not to move forward with contract for Flock cameras in Menominee, Michigan (FOX 11)",
           "url": "https://fox11online.com/news/local/officials-vote-not-to-move-forward-with-contract-for-flock-cameras-in-menominee-michigan",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://fox11online.com/news/local/officials-vote-not-to-move-forward-with-contract-for-flock-cameras-in-menominee-michigan"
         }
       ],
       "state": "MI",
@@ -2717,13 +2863,15 @@
           "title": "Ordinance No. 1401 — An ordinance to prohibit the installation or use of electronic license plate scanning devices in the City of Ypsilanti (adopted 2022-09-13)",
           "url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743",
           "date": "2022-09-13",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cityofypsilanti.com/Archive/ViewFile/Item/743"
         },
         {
           "title": "Ypsilanti Township residents cry for halt on surveillance proposal (Washtenaw Voice, notes city ban)",
           "url": "https://www.washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal/",
           "date": "2022-09-16",
-          "verified": true
+          "verified": true,
+          "source_key": "https://washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal"
         }
       ],
       "state": "MI",
@@ -2750,13 +2898,15 @@
           "title": "After Outcry, Bay City, Mich., Rejects License Plate Readers (GovTech / Tribune News Service)",
           "url": "https://www.govtech.com/public-safety/after-outcry-bay-city-mich-rejects-license-plate-readers",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/after-outcry-bay-city-mich-rejects-license-plate-readers"
         },
         {
           "title": "Bay City Commission rejects Flock license-plate reader contract after ACLU and months of public debate (AI meeting summary)",
           "url": "https://citizenportal.ai/articles/7000890/Bay-City/Bay-County/Michigan/Bay-City-Commission-rejects-Flock-license-plate-reader-contract-after-ACLU-and-months-of-public-debate",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://citizenportal.ai/articles/7000890/Bay-City/Bay-County/Michigan/Bay-City-Commission-rejects-Flock-license-plate-reader-contract-after-ACLU-and-months-of-public-debate"
         }
       ],
       "state": "MI",
@@ -2783,13 +2933,15 @@
           "title": "VBT approves license plate recognition project (The Belleville Independent)",
           "url": "https://bellevilleareaindependent.com/vbt-approves-license-plate-recognition-project/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://bellevilleareaindependent.com/vbt-approves-license-plate-recognition-project"
         },
         {
           "title": "VBT DDA will pay for license plate recognition cameras in its district (The Belleville Independent)",
           "url": "https://bellevilleareaindependent.com/will-pay-for-license-plate-recognition-cameras-in-its-district/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://bellevilleareaindependent.com/will-pay-for-license-plate-recognition-cameras-in-its-district"
         }
       ],
       "state": "MI",
@@ -2816,7 +2968,8 @@
           "title": "City Council Agenda Item — Flock Safety Cameras, Troy Police Department (2023-03-08, with Insight/Flock quote)",
           "url": "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116",
           "date": "2023-03-08",
-          "verified": true
+          "verified": true,
+          "source_key": "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116"
         }
       ],
       "state": "MI",
@@ -2843,7 +2996,8 @@
           "title": "License plate readers an invaluable tool for Chesterfield Township police (The Voice)",
           "url": "https://www.voicenews.com/2023/09/29/license-plate-readers-an-invaluable-tool-for-chesterfield-township-police/",
           "date": "2023-09-29",
-          "verified": false
+          "verified": false,
+          "source_key": "https://voicenews.com/2023/09/29/license-plate-readers-an-invaluable-tool-for-chesterfield-township-police"
         }
       ],
       "state": "MI",
@@ -2870,7 +3024,8 @@
           "title": "License plate readers helping police fight crime in New Baltimore (The Voice)",
           "url": "https://www.voicenews.com/2023/05/11/license-plate-readers-helping-police-fight-crime-in-new-baltimore/",
           "date": "2023-05-11",
-          "verified": false
+          "verified": false,
+          "source_key": "https://voicenews.com/2023/05/11/license-plate-readers-helping-police-fight-crime-in-new-baltimore"
         }
       ],
       "state": "MI",
@@ -2897,7 +3052,8 @@
           "title": "Michigan Bills Would Regulate Automatic License Plate Readers (GovTech / Tribune News Service)",
           "url": "https://www.govtech.com/public-safety/michigan-bills-would-regulate-automatic-license-plate-readers",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/michigan-bills-would-regulate-automatic-license-plate-readers"
         }
       ],
       "state": "MI",
@@ -2924,19 +3080,22 @@
           "title": "Grand Rapids, Mich., Residents Pack Meeting Over Flock Safety (GovTech / Tribune News Service)",
           "url": "https://www.govtech.com/public-safety/grand-rapids-mich-residents-pack-meeting-over-flock-safety",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/grand-rapids-mich-residents-pack-meeting-over-flock-safety"
         },
         {
           "title": "Bipartisan effort to protect privacy as Flock cameras spread across state (The Midwesterner)",
           "url": "https://www.themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state"
         },
         {
           "title": "What to know before the Grand Rapids City Commission hosts Flock hearing (Grand Valley Lanthorn)",
           "url": "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing"
         }
       ],
       "state": "MI",
@@ -2963,13 +3122,15 @@
           "title": "Grand Rapids Police Launch Flock Transparency Portal Showing License Plate Reader Usage (Officer / Tribune News Service, KCSO figures)",
           "url": "https://www.officer.com/command-hq/technology/traffic/lpr-license-plate-recognition/news/55403871/grand-rapids-police-launch-flock-transparency-portal-showing-license-plate-reader-usage",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://officer.com/command-hq/technology/traffic/lpr-license-plate-recognition/news/55403871/grand-rapids-police-launch-flock-transparency-portal-showing-license-plate-reader-usage"
         },
         {
           "title": "Bipartisan effort to protect privacy as Flock cameras spread across state (The Midwesterner)",
           "url": "https://www.themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state"
         }
       ],
       "state": "MI",
@@ -2996,7 +3157,8 @@
           "title": "Sheriff DeBoer outlines Flock camera usage in Ottawa County (The Holland Sentinel)",
           "url": "https://www.hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007/",
           "date": "2026-09-24",
-          "verified": true
+          "verified": true,
+          "source_key": "https://hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007"
         }
       ],
       "state": "MI",
@@ -3023,19 +3185,22 @@
           "title": "Monroe County cancels contract with Flock Safety",
           "url": "https://www.ipm.org/news/2026-07-26/monroe-county-cancels-contract-with-flock-safety",
           "date": "2026-07-26",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ipm.org/news/2026-07-26/monroe-county-cancels-contract-with-flock-safety"
         },
         {
           "title": "Flock camera poles cut down near site of ICE detainments",
           "url": "https://www.ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments",
           "date": "2026-09-08",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments"
         },
         {
           "title": "License plate camera systems have given some rogue officers a tool for stalking",
           "url": "https://www.theindianalawyer.com/articles/license-plate-camera-systems-have-given-some-rogue-officers-a-tool-for-stalking",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://theindianalawyer.com/articles/license-plate-camera-systems-have-given-some-rogue-officers-a-tool-for-stalking"
         }
       ],
       "state": "IN",
@@ -3062,19 +3227,22 @@
           "title": "Bloomington's Flock contract may have ended, but other cameras still active",
           "url": "https://www.ipm.org/news/2026-05-21/bloomingtons-flock-contract-may-have-ended-but-other-cameras-still-active",
           "date": "2026-05-21",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ipm.org/news/2026-05-21/bloomingtons-flock-contract-may-have-ended-but-other-cameras-still-active"
         },
         {
           "title": "Flock camera poles cut down near site of ICE detainments",
           "url": "https://www.ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments",
           "date": "2026-09-08",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments"
         },
         {
           "title": "What is a Flock camera, and why are people cutting them down?",
           "url": "https://www.indystar.com/story/news/crime/2026/08/10/what-is-a-flock-camera-and-why-are-people-cutting-them-down/91195834007/",
           "date": "2026-08-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://indystar.com/story/news/crime/2026/08/10/what-is-a-flock-camera-and-why-are-people-cutting-them-down/91195834007"
         }
       ],
       "state": "IN",
@@ -3101,25 +3269,29 @@
           "title": "FWPD Chief Statement on Flock in Fort Wayne",
           "url": "http://www.cityoffortwayne.in.gov/m/newsflash/Home/Detail/716",
           "date": "2026-08-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://cityoffortwayne.in.gov/m/newsflash/Home/Detail/716"
         },
         {
           "title": "Activist says work isn't finished after Fort Wayne City Council votes to defund Flock license plate cameras",
           "url": "https://gray-wpta-prod.gtv-cdn.com/2026/08/26/activist-says-work-isnt-finished-after-fort-wayne-city-council-votes-defund-flock-license-plate-cameras/",
           "date": "2026-08-26",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-wpta-prod.gtv-cdn.com/2026/08/26/activist-says-work-isnt-finished-after-fort-wayne-city-council-votes-defund-flock-license-plate-cameras"
         },
         {
           "title": "Flock Fallout: Mayor explains decision to remove Fort Wayne's 36 cameras",
           "url": "https://gray-wpta-prod.gtv-cdn.com/2026/08/28/flock-fallout-mayor-explains-decision-remove-fort-waynes-36-cameras/",
           "date": "2026-08-28",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-wpta-prod.gtv-cdn.com/2026/08/28/flock-fallout-mayor-explains-decision-remove-fort-waynes-36-cameras"
         },
         {
           "title": "Indiana sees surge of cities, counties ending Flock camera contracts",
           "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts"
         }
       ],
       "state": "IN",
@@ -3146,25 +3318,29 @@
           "title": "Indiana sees surge of cities, counties ending Flock camera contracts",
           "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts"
         },
         {
           "title": "Flock funding defeated as nearly 200 show up at Kosciusko Courthouse in opposition (News Now Warsaw, via europesays)",
           "url": "https://www.europesays.com/poland/25025/",
           "date": "2026-09-10",
-          "verified": false
+          "verified": false,
+          "source_key": "https://europesays.com/poland/25025"
         },
         {
           "title": "Flock camera fight divides communities beyond Fort Wayne (WPTA)",
           "url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/04/flock-camera-fight-divides-communities-beyond-fort-wayne/",
           "date": "2026-09-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-wpta-prod.gtv-cdn.com/2026/09/04/flock-camera-fight-divides-communities-beyond-fort-wayne"
         },
         {
           "title": "Prosecutor orders local law enforcement to remove and disable entire Flock network in Kosciusko County (WANE, via NewsLocker)",
           "url": "https://www.newslocker.com/en-us/region/fort-wayne/prosecutor-orders-local-law-enforcement-to-remove-and-disable-entire-flock-network-in-kosciusko-county/",
           "date": "2026-09-08",
-          "verified": false
+          "verified": false,
+          "source_key": "https://newslocker.com/en-us/region/fort-wayne/prosecutor-orders-local-law-enforcement-to-remove-and-disable-entire-flock-network-in-kosciusko-county"
         }
       ],
       "state": "IN",
@@ -3191,19 +3367,22 @@
           "title": "Chesterton Town Council votes to discontinue contract with Flock Safety license plate readers (official town record)",
           "url": "https://chestertonin.org/DocumentCenter/View/34569/Chesterton-Town-Council-votes-to-discontinue-contract-with-Flock-Safety-license-plate-readers",
           "date": "2026-09-14",
-          "verified": true
+          "verified": true,
+          "source_key": "https://chestertonin.org/DocumentCenter/View/34569/Chesterton-Town-Council-votes-to-discontinue-contract-with-Flock-Safety-license-plate-readers"
         },
         {
           "title": "Indiana sees surge of cities, counties ending Flock camera contracts",
           "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts"
         },
         {
           "title": "Chesterton council votes to discontinue Flock camera contract pending review",
           "url": "https://citizenportal.ai/articles/9986177/indiana/porter-county/chesterton/chesterton-council-votes-to-discontinue-flock-camera-contract-pending-review",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://citizenportal.ai/articles/9986177/indiana/porter-county/chesterton/chesterton-council-votes-to-discontinue-flock-camera-contract-pending-review"
         }
       ],
       "state": "IN",
@@ -3230,19 +3409,22 @@
           "title": "Noble County sheriff asks Flock remove cameras, says he still backs system (WPTA)",
           "url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system/",
           "date": "2026-09-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system"
         },
         {
           "title": "Flock dropped by Noble County authorities after pushback, for now (WANE, via NewsLocker)",
           "url": "https://www.newslocker.com/en-us/region/fort-wayne/flock-dropped-by-noble-county-authorities-after-pushback-for-now/",
           "date": "2026-09-08",
-          "verified": false
+          "verified": false,
+          "source_key": "https://newslocker.com/en-us/region/fort-wayne/flock-dropped-by-noble-county-authorities-after-pushback-for-now"
         },
         {
           "title": "Indiana sees surge of cities, counties ending Flock camera contracts",
           "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts"
         }
       ],
       "state": "IN",
@@ -3269,13 +3451,15 @@
           "title": "With contract expiring, Flock cameras are in Evansville's 2027 budget",
           "url": "https://www.courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007/",
           "date": "2026-09-18",
-          "verified": true
+          "verified": true,
+          "source_key": "https://courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007"
         },
         {
           "title": "Vanderburgh County Sheriff's Office to install license plate cameras",
           "url": "https://www.beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007/",
           "date": "2023-11-20",
-          "verified": true
+          "verified": true,
+          "source_key": "https://beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007"
         }
       ],
       "state": "IN",
@@ -3302,13 +3486,15 @@
           "title": "Vanderburgh County Sheriff's Office to install license plate cameras",
           "url": "https://www.beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007/",
           "date": "2023-11-20",
-          "verified": true
+          "verified": true,
+          "source_key": "https://beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007"
         },
         {
           "title": "Vanderburgh County Sheriff's Office to install three Flock Safety cameras on USI campus",
           "url": "https://www.usi.edu/news/releases/2024/01/vanderburgh-county-sheriff-s-office-to-install-three-flock-safety-cameras-on-usi-campus",
           "date": "2024-01-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://usi.edu/news/releases/2024/01/vanderburgh-county-sheriff-s-office-to-install-three-flock-safety-cameras-on-usi-campus"
         }
       ],
       "state": "IN",
@@ -3335,19 +3521,22 @@
           "title": "Indiana lawmakers want to crack down on data privacy. What about license plate readers?",
           "url": "https://indianacapitalchronicle.com/2023/02/01/indiana-lawmakers-want-to-crack-down-on-data-privacy-what-about-license-plate-readers/",
           "date": "2023-02-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://indianacapitalchronicle.com/2023/02/01/indiana-lawmakers-want-to-crack-down-on-data-privacy-what-about-license-plate-readers"
         },
         {
           "title": "IMPD contract for license plate readers also allows for gunshot detection tech",
           "url": "http://mirrorindy.org/indianapolis-impd-license-plate-readers-gunshot-detection-technology-flock-sensors-contract/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://mirrorindy.org/indianapolis-impd-license-plate-readers-gunshot-detection-technology-flock-sensors-contract"
         },
         {
           "title": "Indy cops abused Flock cameras. The fallout proves they work. | Opinion",
           "url": "https://www.indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007/",
           "date": "2026-09-24",
-          "verified": true
+          "verified": true,
+          "source_key": "https://indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007"
         }
       ],
       "state": "IN",
@@ -3374,19 +3563,22 @@
           "title": "Indiana police agencies trying out license plate cameras",
           "url": "https://www.ipm.org/2021-12-29/indiana-police-agencies-trying-out-license-plate-cameras",
           "date": "2021-12-29",
-          "verified": true
+          "verified": true,
+          "source_key": "https://ipm.org/2021-12-29/indiana-police-agencies-trying-out-license-plate-cameras"
         },
         {
           "title": "Plainfield Police Department Deploys Innovative License Plate Reader Cameras to Help Solve and Reduce Crime",
           "url": "https://wyrz.org/plainfield-police-department-deploys-innovative-license-plate-reader-cameras-to-help-solve-and-reduce-crime/",
           "date": "2021-09-09",
-          "verified": false
+          "verified": false,
+          "source_key": "https://wyrz.org/plainfield-police-department-deploys-innovative-license-plate-reader-cameras-to-help-solve-and-reduce-crime"
         },
         {
           "title": "Plainfield police install digital license plate readers to fight crime",
           "url": "https://apbweb.com/2021/09/plainfield-police-install-digital-license-plate-readers-to-fight-crime/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://apbweb.com/2021/09/plainfield-police-install-digital-license-plate-readers-to-fight-crime"
         }
       ],
       "state": "IN",
@@ -3413,13 +3605,15 @@
           "title": "Flock Cameras in South Bend - Irish Rover",
           "url": "https://irishrover.net/2026/09/flock-cameras-in-south-bend/",
           "date": "2026-09-16",
-          "verified": true
+          "verified": true,
+          "source_key": "https://irishrover.net/2026/09/flock-cameras-in-south-bend"
         },
         {
           "title": "2023 South Bend Police Department Annual Report",
           "url": "http://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx",
           "date": "2024-05-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx"
         }
       ],
       "state": "IN",
@@ -3446,13 +3640,15 @@
           "title": "Lafayette residents voice concerns over Flock Safety cameras",
           "url": "https://www.jconline.com/story/news/local/lafayette/2026/06/02/lafayette-residents-voice-concerns-over-flock-safety-cameras/90369141007/",
           "date": "2026-06-02",
-          "verified": true
+          "verified": true,
+          "source_key": "https://jconline.com/story/news/local/lafayette/2026/06/02/lafayette-residents-voice-concerns-over-flock-safety-cameras/90369141007"
         },
         {
           "title": "WLPD chief defends deployment of Flock cameras to skeptical standing room crowd",
           "url": "https://www.basedinlafayette.com/p/wlpd-chief-defends-deployment-of",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://basedinlafayette.com/p/wlpd-chief-defends-deployment-of"
         }
       ],
       "state": "IN",
@@ -3479,19 +3675,22 @@
           "title": "West Lafayette police chief: Flock cameras have 'public safety value'",
           "url": "https://www.jconline.com/story/news/local/2026/09/24/west-lafayette-citizens-voice-concerns-during-police-chiefs-flock-talk-what-are-flock-cameras/91908852007/",
           "date": "2026-09-24",
-          "verified": true
+          "verified": true,
+          "source_key": "https://jconline.com/story/news/local/2026/09/24/west-lafayette-citizens-voice-concerns-during-police-chiefs-flock-talk-what-are-flock-cameras/91908852007"
         },
         {
           "title": "WL chief of police 'absolutely in favor' of Flock cameras (Purdue Exponent)",
           "url": "https://www.purdueexponent.org/city_state/police-chief-flock-camera-interview/article_70b9d1d8-49ad-47ff-b66c-f8912b83b6a6.html",
           "date": "2026-09-07",
-          "verified": true
+          "verified": true,
+          "source_key": "https://purdueexponent.org/city_state/police-chief-flock-camera-interview/article_70b9d1d8-49ad-47ff-b66c-f8912b83b6a6.html"
         },
         {
           "title": "WLPD chief defends deployment of Flock cameras to skeptical standing room crowd",
           "url": "https://www.basedinlafayette.com/p/wlpd-chief-defends-deployment-of",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://basedinlafayette.com/p/wlpd-chief-defends-deployment-of"
         }
       ],
       "state": "IN",
@@ -3518,19 +3717,22 @@
           "title": "Flock cameras, New Chauncey plan spark debate in West Lafayette",
           "url": "https://www.jconline.com/story/news/local/purdue/2026/09/14/flock-cameras-new-chauncey-plan-spark-debate-in-west-lafayette/91760390007/",
           "date": "2026-09-14",
-          "verified": true
+          "verified": true,
+          "source_key": "https://jconline.com/story/news/local/purdue/2026/09/14/flock-cameras-new-chauncey-plan-spark-debate-in-west-lafayette/91760390007"
         },
         {
           "title": "WL community members voice concerns over Flock cameras (Purdue Exponent)",
           "url": "https://www.purdueexponent.org/city_state/general_news/west-lafayette-flock-info-session-september/article_51bd2068-01d7-4f6c-975b-bbd1fc6a0b7b.html",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://purdueexponent.org/city_state/general_news/west-lafayette-flock-info-session-september/article_51bd2068-01d7-4f6c-975b-bbd1fc6a0b7b.html"
         },
         {
           "title": "WLPD chief defends deployment of Flock cameras to skeptical standing room crowd",
           "url": "https://www.basedinlafayette.com/p/wlpd-chief-defends-deployment-of",
           "date": "2026-09-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://basedinlafayette.com/p/wlpd-chief-defends-deployment-of"
         }
       ],
       "state": "IN",
@@ -3557,13 +3759,15 @@
           "title": "Johnson County IN SO Transparency Portal (Flock Safety)",
           "url": "https://transparency.flocksafety.com/johnson-county-in-so",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://transparency.flocksafety.com/johnson-county-in-so"
         },
         {
           "title": "Flock Safety & ALPR Cameras in Johnson County, Indiana (Eyes Off Indiana)",
           "url": "https://eyesoffindiana.org/counties/johnson",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffindiana.org/counties/johnson"
         }
       ],
       "state": "IN",
@@ -3590,7 +3794,8 @@
           "title": "Hendricks County IN SO Transparency Portal (Flock Safety)",
           "url": "https://transparency.flocksafety.com/hendricks-county-in-so",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://transparency.flocksafety.com/hendricks-county-in-so"
         }
       ],
       "state": "IN",
@@ -3617,13 +3822,15 @@
           "title": "Vigilantism or accident? ISP probes downed I-69 Flock camera",
           "url": "https://www.courierpress.com/story/news/local/2026/07/22/isp-flock-safety-camera-damaged-on-i-69-evansville/91002066007/",
           "date": "2026-07-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://courierpress.com/story/news/local/2026/07/22/isp-flock-safety-camera-damaged-on-i-69-evansville/91002066007"
         },
         {
           "title": "Warrick County IN SO Transparency Portal (Flock Safety)",
           "url": "https://transparency.flocksafety.com/warrick-co-in-so",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://transparency.flocksafety.com/warrick-co-in-so"
         }
       ],
       "state": "IN",
@@ -3650,7 +3857,8 @@
           "title": "Greenfield IN PD Transparency Portal (Flock Safety)",
           "url": "https://transparency.flocksafety.com/greenfield-in-pd",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://transparency.flocksafety.com/greenfield-in-pd"
         }
       ],
       "state": "IN",
@@ -3677,7 +3885,8 @@
           "title": "Noble County drops Flock cameras amid ongoing debate across Indiana (WPTA)",
           "url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system/",
           "date": "2026-09-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system"
         }
       ],
       "state": "IN",
@@ -3704,25 +3913,29 @@
           "title": "Why I voted to cancel Oak Park's contract with Flock (and so should you)",
           "url": "https://derekeder.com/blog/why-i-voted-to-cancel-flock",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://derekeder.com/blog/why-i-voted-to-cancel-flock"
         },
         {
           "title": "Impact: Evanston shuts off license plate readers after report of Illinois data shared with feds (Pioneer Press, via Illinois Press Association)",
           "url": "https://www.illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx"
         },
         {
           "title": "Evanston and Oak Park Terminate Agreements with Flock Safety (WLS-TV I-Team)",
           "url": "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois"
         },
         {
           "title": "DEA agent used Illinois cop's Flock license plate reader password for immigration enforcement searches",
           "url": "https://unraveledpress.com/a-dea-agent-used-an-illinois-police-officers-flock-license-plate-reader-password-for-unauthorized-immigration-enforcement-searches/",
           "date": "2025-08-11",
-          "verified": true
+          "verified": true,
+          "source_key": "https://unraveledpress.com/a-dea-agent-used-an-illinois-police-officers-flock-license-plate-reader-password-for-unauthorized-immigration-enforcement-searches"
         }
       ],
       "state": "IL",
@@ -3749,25 +3962,29 @@
           "title": "Statement: Evanston Deactivates Flock Cameras and Terminates Contract (City of Evanston)",
           "url": "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/3efa81d",
           "date": "2025-08-26",
-          "verified": true
+          "verified": true,
+          "source_key": "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/3efa81d"
         },
         {
           "title": "Impact: Evanston shuts off license plate readers after report of Illinois data shared with feds (Pioneer Press, via Illinois Press Association)",
           "url": "https://www.illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx"
         },
         {
           "title": "Evanston and Oak Park Terminate Agreements with Flock Safety (WLS-TV I-Team)",
           "url": "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois"
         },
         {
           "title": "Flock Safety Crosses 100,000 Cameras as 53 Cities Cancel Over Unauthorized Federal Data Access",
           "url": "https://www.techtimes.com/articles/319317/20260629/flock-safety-crosses-100000-cameras-53-cities-cancel-over-unauthorized-federal-data-access.htm",
           "date": "2026-06-29",
-          "verified": false
+          "verified": false,
+          "source_key": "https://techtimes.com/articles/319317/20260629/flock-safety-crosses-100000-cameras-53-cities-cancel-over-unauthorized-federal-data-access.htm"
         }
       ],
       "state": "IL",
@@ -3794,7 +4011,8 @@
           "title": "Springfield City Council approves Flock license plate reader contract, with changes",
           "url": "https://capitolcitynow.com/news/248842-springfield-city-council-approves-flock-license-plate-reader-contract-with-changes/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://capitolcitynow.com/news/248842-springfield-city-council-approves-flock-license-plate-reader-contract-with-changes"
         }
       ],
       "state": "IL",
@@ -3821,25 +4039,29 @@
           "title": "RESOLUTION NO. R2021-40 authorizing a lease agreement between the City of Decatur and Flock Safety for 60 LPR cameras (City of Decatur, adopted 2021-03-15)",
           "url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2021-40_Resolution_Authorizing_a_Lease_Agreement_Between_the_City_of_Decatur_and_Flock_Safety_for_the_Deployment_of_60_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf",
           "date": "2021-03-15",
-          "verified": false
+          "verified": false,
+          "source_key": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2021-40_Resolution_Authorizing_a_Lease_Agreement_Between_the_City_of_Decatur_and_Flock_Safety_for_the_Deployment_of_60_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf"
         },
         {
           "title": "RESOLUTION NO. R2023-231 authorizing a five-year lease agreement extension with Flock Safety (City of Decatur staff memo, 2023-10-27)",
           "url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf"
         },
         {
           "title": "Decatur city council approves license plate reading cameras (WCIA)",
           "url": "https://www.wcia.com/news/decatur-city-council-approves-license-plate-reading-cameras/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://wcia.com/news/decatur-city-council-approves-license-plate-reading-cameras"
         },
         {
           "title": "Decatur extends usage of license plate readers (WCIA)",
           "url": "https://www.wcia.com/news/decatur-extends-usage-of-license-plate-readers/amp/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://wcia.com/news/decatur-extends-usage-of-license-plate-readers"
         }
       ],
       "state": "IL",
@@ -3866,13 +4088,15 @@
           "title": "Champaign Police Installing Automated License Plate Readers (City of Champaign press release)",
           "url": "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers/",
           "date": "2022-05-02",
-          "verified": true
+          "verified": true,
+          "source_key": "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers"
         },
         {
           "title": "Illinois police double down on license plate readers (The Daily Illini)",
           "url": "https://dailyillini.com/news-stories/world-news/state-news/2026/07/28/illinois-police-double-down-on-license-plate-readers/",
           "date": "2026-07-28",
-          "verified": true
+          "verified": true,
+          "source_key": "https://dailyillini.com/news-stories/world-news/state-news/2026/07/28/illinois-police-double-down-on-license-plate-readers"
         }
       ],
       "state": "IL",
@@ -3899,13 +4123,15 @@
           "title": "Automated License Plate Readers (Village of Vernon Hills official page)",
           "url": "http://vernonhills.org/963/Automated-License-Plate-Readers",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://vernonhills.org/963/Automated-License-Plate-Readers"
         },
         {
           "title": "More Chicago Suburbs Deploy Automatic License Plate Scanners (Government Technology)",
           "url": "https://www.govtech.com/public-safety/More-Chicago-Suburbs-Deploy-Automatic-License-Plate-Scanners.html",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/More-Chicago-Suburbs-Deploy-Automatic-License-Plate-Scanners.html"
         }
       ],
       "state": "IL",
@@ -3932,7 +4158,8 @@
           "title": "Huntley Police present new tech at Village Board meeting (My Huntley News)",
           "url": "https://www.myhuntleynews.com/2023/04/24/huntley-police-present-new-tech-at-village-board-meeting/",
           "date": "2023-04-24",
-          "verified": false
+          "verified": false,
+          "source_key": "https://myhuntleynews.com/2023/04/24/huntley-police-present-new-tech-at-village-board-meeting"
         }
       ],
       "state": "IL",
@@ -3959,19 +4186,22 @@
           "title": "Where Are Quincy's Flock Cameras? A Look at the Network Ahead of City Council Report (Quincy Current)",
           "url": "https://quincycurrent.com/where-are-quincys-flock-cameras-a-look-at-the-network-ahead-of-city-council-report/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://quincycurrent.com/where-are-quincys-flock-cameras-a-look-at-the-network-ahead-of-city-council-report"
         },
         {
           "title": "Quincy Police Chief Defends Flock Cameras as Local Debate Intensifies (Quincy Current)",
           "url": "https://quincycurrent.com/quincy-police-chief-defends-flock-cameras-as-local-debate-intensifies/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://quincycurrent.com/quincy-police-chief-defends-flock-cameras-as-local-debate-intensifies"
         },
         {
           "title": "City council approves $128k deal to keep 20 license plate readers aiding police efforts (KHQA)",
           "url": "https://www.youtube.com/shorts/eXP2lOH27Zs",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://youtube.com/shorts/eXP2lOH27Zs"
         }
       ],
       "state": "IL",
@@ -3998,13 +4228,15 @@
           "title": "Village installing license plate reader cameras (WCIA)",
           "url": "https://www.wcia.com/news/village-installing-license-plate-reader-cameras/",
           "date": "2021-06-11",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wcia.com/news/village-installing-license-plate-reader-cameras"
         },
         {
           "title": "Rantoul Police looking to fill blind spots with new license plate readers (WCIA)",
           "url": "https://www.wcia.com/news/rantoul-police-looking-to-fill-blind-spots-with-new-license-plate-readers/amp/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://wcia.com/news/rantoul-police-looking-to-fill-blind-spots-with-new-license-plate-readers"
         }
       ],
       "state": "IL",
@@ -4031,19 +4263,22 @@
           "title": "Mayor Jacob A. Woodford memo: Flock Service Termination and Final Recommendation",
           "url": "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf",
           "date": "2026-06-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf"
         },
         {
           "title": "Appleton asks Flock Safety to disable surveillance cameras by June 30",
           "url": "https://www.postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007/",
           "date": "2026-06-25",
-          "verified": true
+          "verified": true,
+          "source_key": "https://postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007"
         },
         {
           "title": "City of Appleton to stop using Flock cameras (WBAY)",
           "url": "https://gray-wbay-prod.gtv-cdn.com/2026/05/06/city-appleton-stop-using-flock-cameras/",
           "date": "2026-05-06",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-wbay-prod.gtv-cdn.com/2026/05/06/city-appleton-stop-using-flock-cameras"
         }
       ],
       "state": "WI",
@@ -4070,13 +4305,15 @@
           "title": "Dane County press release on Flock funding resolution",
           "url": "https://department-test3.countyofdane.com/PressDetail/11832",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://department-test3.countyofdane.com/PressDetail/11832"
         },
         {
           "title": "County board cuts funding for license plate readers (Fitchburg Star)",
           "url": "https://www.fitchburgstar.com/news/public_safety/county-board-cuts-funding-for-license-plate-readers/article_ba3d111c-ea78-4c1d-9621-fdfad4e2a101.html",
           "date": "2026-04-16",
-          "verified": true
+          "verified": true,
+          "source_key": "https://fitchburgstar.com/news/public_safety/county-board-cuts-funding-for-license-plate-readers/article_ba3d111c-ea78-4c1d-9621-fdfad4e2a101.html"
         }
       ],
       "state": "WI",
@@ -4103,25 +4340,29 @@
           "title": "Racine Common Council votes to end Flock Safety contract",
           "url": "https://www.tmj4.com/news/local-news/in-your-community/racine-county/racine-common-council-votes-to-end-flock-safety-contract-cameras-to-stay-up-for-30-more-days",
           "date": "2026-09-15",
-          "verified": true
+          "verified": true,
+          "source_key": "https://tmj4.com/news/local-news/in-your-community/racine-county/racine-common-council-votes-to-end-flock-safety-contract-cameras-to-stay-up-for-30-more-days"
         },
         {
           "title": "Flock cameras: Racine mayor votes to terminate contract, breaks tie",
           "url": "https://fox6now.com/news/flock-cameras-racine-mayor-tie-vote",
           "date": "2026-09-18",
-          "verified": true
+          "verified": true,
+          "source_key": "https://fox6now.com/news/flock-cameras-racine-mayor-tie-vote"
         },
         {
           "title": "Wisconsin PM News Summary - Wisconsin Radio Network",
           "url": "https://www.wrn.com/wisconsin-pm-news-summary-91/",
           "date": "2026-09-24",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wrn.com/wisconsin-pm-news-summary-91"
         },
         {
           "title": "Racine, Waukesha, Oconomowoc Vote to End Flock Camera Contracts",
           "url": "https://heartlandpost.com/racine-waukesha-and-oconomowoc-vote-to-end-flock-camera-contracts/",
           "date": "2026-09-15",
-          "verified": false
+          "verified": false,
+          "source_key": "https://heartlandpost.com/racine-waukesha-and-oconomowoc-vote-to-end-flock-camera-contracts"
         }
       ],
       "state": "WI",
@@ -4148,25 +4389,29 @@
           "title": "A dozen Wisconsin police agencies announce Flock suspensions",
           "url": "https://www.jsonline.com/story/news/crime/2026/09/04/wisconsin-police-agencies-are-suspending-flock-use-over-data-concerns/91616870007/",
           "date": "2026-09-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://jsonline.com/story/news/crime/2026/09/04/wisconsin-police-agencies-are-suspending-flock-use-over-data-concerns/91616870007"
         },
         {
           "title": "Racine County Sheriff Orders Immediate Removal Of Flock Cameras After Learning Company Retains, Monetizes Data",
           "url": "https://kenoshacountyeye.com/2026/09/04/racine-county-sheriff-orders-immediate-removal-of-flock-cameras-after-learning-company-retains-monetizes-data/",
           "date": "2026-09-04",
-          "verified": false
+          "verified": false,
+          "source_key": "https://kenoshacountyeye.com/2026/09/04/racine-county-sheriff-orders-immediate-removal-of-flock-cameras-after-learning-company-retains-monetizes-data"
         },
         {
           "title": "Flock Cameras in Milwaukee: The Writing is on the Wall",
           "url": "https://shepherdexpress.com/news/issue-of-the-month/flock-cameras-in-milwaukee-the-writing-is-on-the-wall/",
           "date": "2026-09-15",
-          "verified": true
+          "verified": true,
+          "source_key": "https://shepherdexpress.com/news/issue-of-the-month/flock-cameras-in-milwaukee-the-writing-is-on-the-wall"
         },
         {
           "title": "Flock Off: Wisconsinites Continue the Fight Against Constant Surveillance",
           "url": "https://www.aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance/",
           "date": "2026-09-21",
-          "verified": false
+          "verified": false,
+          "source_key": "https://aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance"
         }
       ],
       "state": "WI",
@@ -4193,25 +4438,29 @@
           "title": "Kenosha police ending Flock contract, moving to Axon",
           "url": "https://fox6now.com/news/kenosha-police-ending-flock-contract-moving-axon",
           "date": "2026-09-02",
-          "verified": true
+          "verified": true,
+          "source_key": "https://fox6now.com/news/kenosha-police-ending-flock-contract-moving-axon"
         },
         {
           "title": "Kenosha says farewell to Flock, drops license plate readers citing security, misuse and data sharing concerns",
           "url": "https://www.tmj4.com/about-us/lighthouse/kenosha-says-farewell-to-flock-drops-license-plate-readers-citing-security-misuse-and-data-sharing-concerns",
           "date": "2026-09-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://tmj4.com/about-us/lighthouse/kenosha-says-farewell-to-flock-drops-license-plate-readers-citing-security-misuse-and-data-sharing-concerns"
         },
         {
           "title": "Flock out, Axon in: Kenosha police lead surveillance tech shift",
           "url": "https://fox6now.com/news/kenosha-police-flock-axon-surveillance",
           "date": "2026-09-09",
-          "verified": true
+          "verified": true,
+          "source_key": "https://fox6now.com/news/kenosha-police-flock-axon-surveillance"
         },
         {
           "title": "Meet the New Boss, Same as the Old Boss: Kenosha Doubles Down on Big Brother, Replacing Flock With Axon",
           "url": "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon/",
           "date": "2026-09-05",
-          "verified": false
+          "verified": false,
+          "source_key": "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon"
         }
       ],
       "state": "WI",
@@ -4238,13 +4487,15 @@
           "title": "Sheboygan chief: Flock exit may limit solved crimes but preserve trust",
           "url": "https://www.sheboyganpress.com/story/news/local/2026/09/08/sheboygan-flock-safety-cameras-contract-ended-data-dispute/91663620007/",
           "date": "2026-09-08",
-          "verified": true
+          "verified": true,
+          "source_key": "https://sheboyganpress.com/story/news/local/2026/09/08/sheboygan-flock-safety-cameras-contract-ended-data-dispute/91663620007"
         },
         {
           "title": "Sheboygan Common Council votes to end Flock camera contract",
           "url": "https://fox6now.com/news/sheboygan-common-council-votes-end-flock-camera-contract",
           "date": "2026-09-09",
-          "verified": true
+          "verified": true,
+          "source_key": "https://fox6now.com/news/sheboygan-common-council-votes-end-flock-camera-contract"
         }
       ],
       "state": "WI",
@@ -4271,19 +4522,22 @@
           "title": "Oshkosh moves to undo Flock contract after OPD raises concerns",
           "url": "https://www.thenorthwestern.com/story/news/local/oshkosh/2026/04/22/oshkosh-flock-cameras-contract-rescind-resolution-after-renewal-vote/89737022007/",
           "date": "2026-04-22",
-          "verified": true
+          "verified": true,
+          "source_key": "https://thenorthwestern.com/story/news/local/oshkosh/2026/04/22/oshkosh-flock-cameras-contract-rescind-resolution-after-renewal-vote/89737022007"
         },
         {
           "title": "Flock Safety suspended by Winnebago County law enforcement",
           "url": "https://www.thenorthwestern.com/story/news/local/oshkosh/2026/09/04/winnebago-county-flock-safety-license-plate-readers-suspended/91614453007/",
           "date": "2026-09-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://thenorthwestern.com/story/news/local/oshkosh/2026/09/04/winnebago-county-flock-safety-license-plate-readers-suspended/91614453007"
         },
         {
           "title": "WLUK FOX 11 News: Oshkosh council votes 7-0 to rescind Flock agreement (TikTok)",
           "url": "https://www.tiktok.com/@wlukfox11/video/7631973302319320333",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://tiktok.com/@wlukfox11/video/7631973302319320333"
         }
       ],
       "state": "WI",
@@ -4310,19 +4564,22 @@
           "title": "Green Bay keeps Flock cameras amid statewide backlash",
           "url": "https://www.tmj4.com/news/local-news/green-bay-keeps-flock-cameras-amid-statewide-backlash",
           "date": "2026-09-14",
-          "verified": true
+          "verified": true,
+          "source_key": "https://tmj4.com/news/local-news/green-bay-keeps-flock-cameras-amid-statewide-backlash"
         },
         {
           "title": "Green Bay Police will revise camera policies, but not remove Flock",
           "url": "https://www.greenbaypressgazette.com/story/news/local/2026/09/14/green-bay-police-will-keep-flock-cameras-revise-camera-policies/91657879007/",
           "date": "2026-09-14",
-          "verified": true
+          "verified": true,
+          "source_key": "https://greenbaypressgazette.com/story/news/local/2026/09/14/green-bay-police-will-keep-flock-cameras-revise-camera-policies/91657879007"
         },
         {
           "title": "De Pere to end use of ALPRs, Green Bay to continue with updated policy - Press Times",
           "url": "https://www.gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891",
           "date": "2026-09-19",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891"
         }
       ],
       "state": "WI",
@@ -4349,19 +4606,22 @@
           "title": "What to know about Flock cameras and their use in Milwaukee",
           "url": "https://www.jsonline.com/story/news/local/milwaukee/2026/09/04/what-to-know-about-flock-cameras-and-how-milwaukee-police-use-them/91582638007/",
           "date": "2026-09-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://jsonline.com/story/news/local/milwaukee/2026/09/04/what-to-know-about-flock-cameras-and-how-milwaukee-police-use-them/91582638007"
         },
         {
           "title": "Milwaukee Flock camera policy changes; Fire and Police Commission to discuss",
           "url": "https://fox6now.com/news/milwaukee-fire-police-commission-host-public-comment-flock",
           "date": "2026-09-17",
-          "verified": true
+          "verified": true,
+          "source_key": "https://fox6now.com/news/milwaukee-fire-police-commission-host-public-comment-flock"
         },
         {
           "title": "Milwaukee Mayor Announces Changes To Flock System Usage",
           "url": "https://949tnt.iheart.com/content/2026-09-01-milwaukee-mayor-announces-changes-to-flock-system-usage/",
           "date": "2026-09-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://949tnt.iheart.com/content/2026-09-01-milwaukee-mayor-announces-changes-to-flock-system-usage"
         }
       ],
       "state": "WI",
@@ -4388,25 +4648,29 @@
           "title": "Fond du Lac law enforcement agencies discontinue use of Flock cameras",
           "url": "https://www.tmj4.com/news/fond-du-lac-county/fond-du-lac-county-law-enforcement-agencies-discontinue-flock-camera-use-effective-immediately",
           "date": "2026-09-03",
-          "verified": true
+          "verified": true,
+          "source_key": "https://tmj4.com/news/fond-du-lac-county/fond-du-lac-county-law-enforcement-agencies-discontinue-flock-camera-use-effective-immediately"
         },
         {
           "title": "A dozen Wisconsin police agencies announce Flock suspensions",
           "url": "https://www.jsonline.com/story/news/crime/2026/09/04/wisconsin-police-agencies-are-suspending-flock-use-over-data-concerns/91616870007/",
           "date": "2026-09-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://jsonline.com/story/news/crime/2026/09/04/wisconsin-police-agencies-are-suspending-flock-use-over-data-concerns/91616870007"
         },
         {
           "title": "Flock Off: Wisconsinites Continue the Fight Against Constant Surveillance",
           "url": "https://www.aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance/",
           "date": "2026-09-21",
-          "verified": false
+          "verified": false,
+          "source_key": "https://aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance"
         },
         {
           "title": "Multiple Wisconsin Counties Pull the Plug on Flock Cameras",
           "url": "https://heartlandpost.com/multiple-wisconsin-counties-pull-the-plug-on-flock-cameras/",
           "date": "2026-09-04",
-          "verified": false
+          "verified": false,
+          "source_key": "https://heartlandpost.com/multiple-wisconsin-counties-pull-the-plug-on-flock-cameras"
         }
       ],
       "state": "WI",
@@ -4433,13 +4697,15 @@
           "title": "Collierville CCPA donation / LPR grant memo",
           "url": "https://collierville.granicus.com/services/legistar/download/pdf/4055509/FY26_CCPA__20_000.pdf",
           "date": "2026-04-17",
-          "verified": true
+          "verified": true,
+          "source_key": "https://collierville.granicus.com/services/legistar/download/pdf/4055509/FY26_CCPA__20_000.pdf"
         },
         {
           "title": "Flock cameras are in Memphis. See where, if your plate has been searched",
           "url": "https://www.commercialappeal.com/story/news/local/2026/08/18/flock-cameras-memphis-where-how-to-look-up-searches/91340875007/",
           "date": "2026-08-18",
-          "verified": true
+          "verified": true,
+          "source_key": "https://commercialappeal.com/story/news/local/2026/08/18/flock-cameras-memphis-where-how-to-look-up-searches/91340875007"
         }
       ],
       "state": "TN",
@@ -4466,13 +4732,15 @@
           "title": "Shelby County Sheriff Cuts Crime 10% with LPR Cameras",
           "url": "https://www.flocksafety.com/blog/shelby-county-policing-technology",
           "date": "2021-04-01",
-          "verified": false
+          "verified": false,
+          "source_key": "https://flocksafety.com/blog/shelby-county-policing-technology"
         },
         {
           "title": "Shelby County TN SO Transparency Portal",
           "url": "https://transparency.flocksafety.com/shelby-county-tn-so",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://transparency.flocksafety.com/shelby-county-tn-so"
         }
       ],
       "state": "TN",
@@ -4499,7 +4767,8 @@
           "title": "Resolution 3-2024: Approving Contract with Flock Group Inc",
           "url": "https://www.millingtontn.gov/AgendaCenter/ViewFile/Item/4271?fileID=5051",
           "date": "2024-01-08",
-          "verified": true
+          "verified": true,
+          "source_key": "https://millingtontn.gov/AgendaCenter/ViewFile/Item/4271?fileID=5051"
         }
       ],
       "state": "TN",
@@ -4526,25 +4795,29 @@
           "title": "City Commission Agenda Summary: Flock Group Inc. dba Flock Safety, Flock Safety Platform: Safe City Project",
           "url": "https://johnsoncitytn.civicweb.net/document/322557/Flock%20Group%20Inc.%20dba%20Flock%20Safety_Flock%20Safety%20.pdf?handle=FFC6987687084379BCCF1920802EF93D",
           "date": "2025-07-17",
-          "verified": true
+          "verified": true,
+          "source_key": "https://johnsoncitytn.civicweb.net/document/322557/Flock%20Group%20Inc.%20dba%20Flock%20Safety_Flock%20Safety%20.pdf?handle=FFC6987687084379BCCF1920802EF93D"
         },
         {
           "title": "Safe City Project (Flock Safety) | Johnson City, TN",
           "url": "https://www.johnsoncitytn.org/services/police/safe_city_project/index.php",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://johnsoncitytn.org/services/police/safe_city_project/index.php"
         },
         {
           "title": "Flock cameras divide Tennessee governments, residents over privacy as some end their contracts",
           "url": "https://www.route-fifty.com/public-safety/2026/09/flock-cameras-divide-tennessee-governments-residents-over-privacy-some-end-their-contracts/415832/",
           "date": "2026-09-07",
-          "verified": true
+          "verified": true,
+          "source_key": "https://route-fifty.com/public-safety/2026/09/flock-cameras-divide-tennessee-governments-residents-over-privacy-some-end-their-contracts/415832"
         },
         {
           "title": "Johnson City TN PD Transparency Portal",
           "url": "https://transparency.flocksafety.com/johnson-city-tn-pd",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://transparency.flocksafety.com/johnson-city-tn-pd"
         }
       ],
       "state": "TN",
@@ -4571,13 +4844,15 @@
           "title": "Flock Cameras Raise Privacy Questions, Murfreesboro Now Operates Over 100 License Plate Readers",
           "url": "https://boropulse.com/2026/08/flock-cameras-raise-privacy-questions-murfreesboro-now-operates-over-100-license-plate-readers-documenting-the-movement-of-vehicles/",
           "date": "2026-08-30",
-          "verified": true
+          "verified": true,
+          "source_key": "https://boropulse.com/2026/08/flock-cameras-raise-privacy-questions-murfreesboro-now-operates-over-100-license-plate-readers-documenting-the-movement-of-vehicles"
         },
         {
           "title": "Council approves expanded park cameras, Axon body-camera amendment and pedestrian/traffic safety grants",
           "url": "https://citizenportal.ai/articles/7086489/Tennessee/Council-approves-expanded-park-cameras-Axon-body-camera-amendment-and-pedestriantraffic-safety-grants",
           "date": "2025-09-18",
-          "verified": false
+          "verified": false,
+          "source_key": "https://citizenportal.ai/articles/7086489/Tennessee/Council-approves-expanded-park-cameras-Axon-body-camera-amendment-and-pedestriantraffic-safety-grants"
         }
       ],
       "state": "TN",
@@ -4604,43 +4879,50 @@
           "title": "Knox County Sheriff's Office agreement with Flock may be invalid, letter from mayor says",
           "url": "https://www.wvlt.tv/2026/08/24/knox-county-sheriffs-office-agreement-with-flock-may-be-invalid-letter-mayor-says/",
           "date": "2026-08-24",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wvlt.tv/2026/08/24/knox-county-sheriffs-office-agreement-with-flock-may-be-invalid-letter-mayor-says"
         },
         {
           "title": "KCSO's deal with Flock Safety lasts 10 years. The department won't share its plans",
           "url": "https://www.knoxnews.com/story/news/politics/2026/07/31/knox-county-sheriffs-office-deal-with-flock-safety-is-for-10-years/91075175007/",
           "date": "2026-07-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://knoxnews.com/story/news/politics/2026/07/31/knox-county-sheriffs-office-deal-with-flock-safety-is-for-10-years/91075175007"
         },
         {
           "title": "Knox County Banned Fixed Plate Readers. The New Surveillance Ordinance Goes Much Further.",
           "url": "https://newsroom.theredemptionproject.news/p/knox-county-banned-fixed-plate-readers",
           "date": "2026-09-01",
-          "verified": false
+          "verified": false,
+          "source_key": "https://newsroom.theredemptionproject.news/p/knox-county-banned-fixed-plate-readers"
         },
         {
           "title": "Knox County Commission passes emergency ordinance to remove Flock cameras; here is what happens next",
           "url": "https://www.wvlt.tv/2026/09/01/knox-county-commission-passes-emergency-ordinance-remove-flock-cameras-heres-what-happens-next/",
           "date": "2026-09-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wvlt.tv/2026/09/01/knox-county-commission-passes-emergency-ordinance-remove-flock-cameras-heres-what-happens-next"
         },
         {
           "title": "Knox County joins cities nationwide in removing Flock cameras",
           "url": "https://www.wuot.org/news/2026-09-02/knox-county-joins-cities-nationwide-in-removing-flock-cameras",
           "date": "2026-09-02",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wuot.org/news/2026-09-02/knox-county-joins-cities-nationwide-in-removing-flock-cameras"
         },
         {
           "title": "Knox County to install plastic covers after Flock says it will miss deadline to take cameras down",
           "url": "https://www.wvlt.tv/2026/09/10/knox-county-mayor-reveals-solution-after-flock-says-it-will-miss-deadline-take-down-cameras/",
           "date": "2026-09-10",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wvlt.tv/2026/09/10/knox-county-mayor-reveals-solution-after-flock-says-it-will-miss-deadline-take-down-cameras"
         },
         {
           "title": "After the deadline for removal passed, here is how many Flock cameras remain",
           "url": "https://www.knoxnews.com/story/news/local/2026/09/17/nearly-all-flock-cameras-in-knox-county-have-been-taken-down/91790190007/",
           "date": "2026-09-17",
-          "verified": true
+          "verified": true,
+          "source_key": "https://knoxnews.com/story/news/local/2026/09/17/nearly-all-flock-cameras-in-knox-county-have-been-taken-down/91790190007"
         }
       ],
       "state": "TN",
@@ -4667,19 +4949,22 @@
           "title": "Council Approves Five-Year Lease Extension for Flock Cameras",
           "url": "https://civiclex.org/weekly-posts/council-approves-five-year-lease-extension-for-flock-cameras",
           "date": "2026-04-29",
-          "verified": true
+          "verified": true,
+          "source_key": "https://civiclex.org/weekly-posts/council-approves-five-year-lease-extension-for-flock-cameras"
         },
         {
           "title": "Lexington residents push back against Flock cameras at council meeting",
           "url": "https://www.weku.org/lexington-richmond/2026-08-28/lexington-residents-push-back-against-flock-cameras-at-council-meeting",
           "date": "2026-08-28",
-          "verified": true
+          "verified": true,
+          "source_key": "https://weku.org/lexington-richmond/2026-08-28/lexington-residents-push-back-against-flock-cameras-at-council-meeting"
         },
         {
           "title": "As outcry grows, Lexington mayor announces independent review of city's Flock cameras",
           "url": "https://www.weku.org/lexington-richmond/2026-09-04/as-outcry-grows-lexington-mayor-announces-independent-review-of-citys-flock-cameras",
           "date": "2026-09-04",
-          "verified": true
+          "verified": true,
+          "source_key": "https://weku.org/lexington-richmond/2026-09-04/as-outcry-grows-lexington-mayor-announces-independent-review-of-citys-flock-cameras"
         }
       ],
       "state": "KY",
@@ -4706,13 +4991,15 @@
           "title": "DocuSign Envelope ID AC67427B-D6B8-4536-AC7B-C32EE200C444: Flock Safety + KY - Elizabethtown PD (signed order form and MSA)",
           "url": "https://portal.ksba.org/public/Meeting/Attachments/DisplayAttachment.aspx?AttachmentID=784808",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://portal.ksba.org/public/Meeting/Attachments/DisplayAttachment.aspx?AttachmentID=784808"
         },
         {
           "title": "Warrants for Flock searches? Kentucky lawmakers may add more rules for public cameras",
           "url": "https://kentuckylantern.com/2026/09/03/warrants-for-flock-searches-kentucky-lawmakers-may-add-more-rules-for-public-cameras/",
           "date": "2026-09-03",
-          "verified": true
+          "verified": true,
+          "source_key": "https://kentuckylantern.com/2026/09/03/warrants-for-flock-searches-kentucky-lawmakers-may-add-more-rules-for-public-cameras"
         }
       ],
       "state": "KY",
@@ -4739,13 +5026,15 @@
           "title": "Oldham County Fiscal Court accounts payable, July 21, 2026 regular meeting",
           "url": "https://ocdeez.github.io/magistrate-monitor/archive/files/july-21-2026-regular-meeting/2026-07-20/all-in-one-document.pdf",
           "date": "2026-07-21",
-          "verified": false
+          "verified": false,
+          "source_key": "https://ocdeez.github.io/magistrate-monitor/archive/files/july-21-2026-regular-meeting/2026-07-20/all-in-one-document.pdf"
         },
         {
           "title": "February is but in Oldham County (Oldham Era legal notices)",
           "url": "https://kypublicnotices.newzgroup.com/KYLegals/2026/70229-2026-01-29_1004.pdf",
           "date": "2026-01-29",
-          "verified": true
+          "verified": true,
+          "source_key": "https://kypublicnotices.newzgroup.com/KYLegals/2026/70229-2026-01-29_1004.pdf"
         }
       ],
       "state": "KY",
@@ -4772,7 +5061,8 @@
           "title": "KyCIR Report: U of L, UK use Flock license plate readers to monitor drivers. Here's where their cameras are.",
           "url": "https://www.louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are"
         }
       ],
       "state": "KY",
@@ -4799,7 +5089,8 @@
           "title": "KyCIR Report: U of L, UK use Flock license plate readers to monitor drivers. Here's where their cameras are.",
           "url": "https://www.louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are"
         }
       ],
       "state": "KY",
@@ -4826,19 +5117,22 @@
           "title": "Monongalia County Sheriff's Office Says Flock Camera Helped Locate Missing 9-Year-Old",
           "url": "https://www.connect-clarksburg.com/monongalia-county-sheriffs-office-says-flock-camera-helped-locate-missing-9-year-old/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://connect-clarksburg.com/monongalia-county-sheriffs-office-says-flock-camera-helped-locate-missing-9-year-old"
         },
         {
           "title": "Residents push back on Mon County Flock Camera use",
           "url": "https://www.thedaonline.com/news/morgantown/residents-push-back-on-mon-county-flock-camera-use/article_1b6f1749-9816-49ca-9da3-2831a405c329.html",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://thedaonline.com/news/morgantown/residents-push-back-on-mon-county-flock-camera-use/article_1b6f1749-9816-49ca-9da3-2831a405c329.html"
         },
         {
           "title": "License to Track: Lawmakers question Flock Safety over data security and privacy concerns",
           "url": "https://wvpress.org/breaking-news/license-to-track-lawmakers-question-flock-safety-over-data-security-and-privacy-concerns/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://wvpress.org/breaking-news/license-to-track-lawmakers-question-flock-safety-over-data-security-and-privacy-concerns"
         }
       ],
       "state": "WV",
@@ -4865,7 +5159,8 @@
           "title": "Marion County Sheriff's Office dispels myths about Flock cameras",
           "url": "https://wvpress.org/breaking-news/marion-county-sheriffs-office-dispels-myths-about-flock-cameras/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://wvpress.org/breaking-news/marion-county-sheriffs-office-dispels-myths-about-flock-cameras"
         }
       ],
       "state": "WV",
@@ -4892,19 +5187,22 @@
           "title": "With $9.7M Pact, Birmingham, Ala., Adds 100 Security Cameras",
           "url": "https://www.govtech.com/public-safety/with-9-7m-pact-birmingham-ala-adds-100-security-cameras",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/with-9-7m-pact-birmingham-ala-adds-100-security-cameras"
         },
         {
           "title": "Birmingham surveillance camera expansion cost report",
           "url": "https://alpolitics.com/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://alpolitics.com/"
         },
         {
           "title": "Birmingham approves 3 Flock Safety cameras trial summary",
           "url": "https://citizenportal.ai/",
           "date": null,
-          "verified": false
+          "verified": false,
+          "source_key": "https://citizenportal.ai/"
         }
       ],
       "state": "AL",
@@ -4931,19 +5229,22 @@
           "title": "Huntsville police detail privacy safeguards for Flock cameras",
           "url": "https://gray-waff-prod.gtv-cdn.com/2026/08/27/huntsville-police-detail-privacy-safeguards-flock-cameras/",
           "date": "2026-08-27",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-waff-prod.gtv-cdn.com/2026/08/27/huntsville-police-detail-privacy-safeguards-flock-cameras"
         },
         {
           "title": "Huntsville Flock camera forum put access, oversight questions before police",
           "url": "https://gray-waff-prod.gtv-cdn.com/2026/09/16/huntsville-flock-camera-forum-put-access-oversight-questions-before-police/",
           "date": "2026-09-16",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-waff-prod.gtv-cdn.com/2026/09/16/huntsville-flock-camera-forum-put-access-oversight-questions-before-police"
         },
         {
           "title": "Huntsville police detail privacy safeguards for Flock cameras",
           "url": "https://citizenportal.ai/articles/6169089/Huntsville/Madison-County/Alabama/Huntsville-police-detail-privacy-safeguards-for-Flock-cameras",
           "date": "2026-08-28",
-          "verified": false
+          "verified": false,
+          "source_key": "https://citizenportal.ai/articles/6169089/Huntsville/Madison-County/Alabama/Huntsville-police-detail-privacy-safeguards-for-Flock-cameras"
         }
       ],
       "state": "AL",
@@ -4970,7 +5271,8 @@
           "title": "FLOCK Cameras in Center Point Prove Effective",
           "url": "https://jeffcosheriffal.com/flock-cameras-in-center-point-prove-effective/",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://jeffcosheriffal.com/flock-cameras-in-center-point-prove-effective"
         }
       ],
       "state": "AL",
@@ -4997,19 +5299,22 @@
           "title": "Decatur residents push back against Flock cameras",
           "url": "https://gray-waff-prod.gtv-cdn.com/2026/07/31/decatur-residents-push-back-against-flock-cameras/",
           "date": "2026-07-31",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-waff-prod.gtv-cdn.com/2026/07/31/decatur-residents-push-back-against-flock-cameras"
         },
         {
           "title": "Decatur police officer under investigation for alleged misuse of Flock safety cameras",
           "url": "https://gray-waff-prod.gtv-cdn.com/2026/09/15/decatur-officer-reassigned-under-investigation-license-plate-reader-misuse/",
           "date": "2026-09-15",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gray-waff-prod.gtv-cdn.com/2026/09/15/decatur-officer-reassigned-under-investigation-license-plate-reader-misuse"
         },
         {
           "title": "License Plate Readers Help Police in Alabama Cities Solve Crimes",
           "url": "https://www.govtech.com/public-safety/license-plate-readers-help-police-in-alabama-cities-solve-crimes",
           "date": null,
-          "verified": true
+          "verified": true,
+          "source_key": "https://govtech.com/public-safety/license-plate-readers-help-police-in-alabama-cities-solve-crimes"
         }
       ],
       "state": "AL",
@@ -5036,13 +5341,15 @@
           "title": "Ridgeland adds 12 license plate reader cameras",
           "url": "https://thebeatofthecapital.com/2021/10/26/ridgeland-adds-12-license-plate-reader-cameras/",
           "date": "2021-10-26",
-          "verified": true
+          "verified": true,
+          "source_key": "https://thebeatofthecapital.com/2021/10/26/ridgeland-adds-12-license-plate-reader-cameras"
         },
         {
           "title": "Where Flock cameras are located in Jackson MS: Can license plate readers issue tickets?",
           "url": "https://www.clarionledger.com/story/news/2026/09/01/where-flock-cameras-are-located-in-jackson-ms-can-license-plate-readers-issue-tickets/91338937007/",
           "date": "2026-09-01",
-          "verified": true
+          "verified": true,
+          "source_key": "https://clarionledger.com/story/news/2026/09/01/where-flock-cameras-are-located-in-jackson-ms-can-license-plate-readers-issue-tickets/91338937007"
         }
       ],
       "state": "MS",
