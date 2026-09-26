@@ -31,9 +31,9 @@
       "AL",
       "MS"
     ],
-    "last_updated": "2026-09-25",
+    "last_updated": "2026-09-26",
     "methodology": "docs/METHODOLOGY.md",
-    "coverage_note": "71 sourced records across 16 states. Coverage is USA-wide, expanding westward in 10-state waves. A missing agency means not yet researched, not confirmed absent. Claims with 3+ independent verified citations are marked verified; the rest are marked pending validation*. Exact renewal dates are still thin and are the top research priority."
+    "coverage_note": "151 sourced records across 25 states plus DC. Coverage is USA-wide, expanding westward in 10-state waves. A missing agency means not yet researched, not confirmed absent. Claims with 3+ independent verified citations are marked verified; the rest are marked pending validation*. Exact renewal dates are still thin and are the top research priority."
   },
   "agencies": [
     {
@@ -2239,6 +2239,2844 @@
       ],
       "state": "NY",
       "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Dayton Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 72,
+      "city": "Dayton",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Montgomery County",
+      "decision_date": "2026-05-01",
+      "decision_summary": "City indefinitely suspended its Flock ALPR program on May 1, 2026 after an internal audit found 7,100+ immigration-enforcement searches by 140 outside agencies against a 2022 city policy barring that use; all 72 cameras were covered with trash bags pending an independent review.",
+      "id": "oh-dayton-pd",
+      "notes": "Suspended, not terminated, so status pending per dataset convention. December 2024 deal had been $825,750 for 35 new + 37 existing cameras through end of 2028 (police1/Dayton Daily News). Contract end unknown.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Flock cameras covered as Dayton suspends program",
+          "url": "http://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?guid=5667c99a-30a1-46fc-b1fd-8dd6285b4a8a&pbid=6553bde4-6f9f-4e22-9ccc-4f84dc38dcd6&share=true&appcode=SNSFEE",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "More than 1,000 Flock cameras watch Cincinnati area. Resistance is growing",
+          "url": "https://www.cincinnati.com/story/news/crime/2026/08/23/flock-cameras-spread-ohio-northern-kentucky-backlash/90912929007/",
+          "date": "2026-08-23",
+          "verified": true
+        },
+        {
+          "title": "Dayton Pulls Plug on Flock Cameras After 7,100 Immigration Searches Slip Through",
+          "url": "https://www.webpronews.com/dayton-pulls-plug-on-flock-cameras-after-7100-immigration-searches-slip-through/",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "OH",
+      "status": "pending",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Lorain County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 15,
+      "city": "Elyria",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Lorain County",
+      "decision_date": "2026-08-28",
+      "decision_summary": "Sheriff Jack Hall announced the office will discontinue its 15-camera Flock program after the two-year renewal quote jumped 79%, from $58,650 to ~$105,000; Hall said the benefit no longer justifies the cost. Program began in 2024.",
+      "id": "oh-lorain-county-so",
+      "notes": "decision_date 2026-08-28 inferred: announcement video posted to the office's Facebook page on a Friday (Aug 28 was a Friday), reported by an article published ~2026-09-03. Cost figures are two-year terms, so annual_cost_usd left null.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Sheriff ends Flock camera program",
+          "url": "https://loraindaily.com/sheriff-ends-flock-camera-program/",
+          "date": "2026-09-03",
+          "verified": false
+        },
+        {
+          "title": "Lorain County Sheriff's Office to discontinue Flock license plate camera program",
+          "url": "https://www.youtube.com/watch?v=dFN-CMtnkWQ",
+          "date": "2026-09-03",
+          "verified": false
+        }
+      ],
+      "state": "OH",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Reynoldsburg Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Reynoldsburg",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Franklin County",
+      "decision_date": "2026-09-09",
+      "decision_summary": "Mayor Joe Begeny announced immediate discontinuation of the city's Flock system during a Sept. 9, 2026 Facebook livestream, after two officers resigned in July amid investigations into personal misuse of the Flock network (46 and 53 searches on personal plates). Cameras to be bagged pending removal.",
+      "id": "oh-reynoldsburg-pd",
+      "notes": "Terminal decision confirmed by two independent outlets (Columbus Dispatch, Ohio Capital Journal). Camera count and cost not reported.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Reynoldsburg dropping Flock cameras amid investigations into misuse",
+          "url": "https://www.dispatch.com/story/news/local/reynoldsburg/2026/09/09/flock-cameras-to-be-bagged-in-reynoldsburg-as-city-ends-use/91676029007/",
+          "date": "2026-09-09",
+          "verified": true
+        },
+        {
+          "title": "Candidates for Ohio attorney general address Flock cameras controversy, make proposals",
+          "url": "https://www.akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html",
+          "date": "2026-09-15",
+          "verified": true
+        }
+      ],
+      "state": "OH",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Pierce Township Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Pierce Township",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Clermont County",
+      "decision_date": null,
+      "decision_summary": "Township leaders voted to terminate the Flock contract early in late August 2026 amid public concerns; described as the 8th Tri-State community to cut ties. Reason cited: vandalism replacement costs and expense.",
+      "id": "oh-pierce-township-pd",
+      "notes": "decision_date left null: only reported as 'late August 2026' (WKRC video posted ~2026-08-31). Camera count and cost not reported. Do not confuse with Miami Township PD (separate agency, also Clermont County).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Ohio township ends Flock contract, 8th Tri-State community to cut ties",
+          "url": "https://www.youtube.com/watch?v=L-KcNG3lf4g",
+          "date": "2026-08-31",
+          "verified": false
+        },
+        {
+          "title": "Ohio cities take different approaches to Flock camera privacy concerns",
+          "url": "https://www.wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns",
+          "date": "2026-09-02",
+          "verified": true
+        }
+      ],
+      "state": "OH",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Oxford Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 14,
+      "city": "Oxford",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Butler County",
+      "decision_date": null,
+      "decision_summary": "Oxford City Council voted 6-1 to terminate the Flock contract after the police review board recommended keeping it with guardrails; residents said they trusted Oxford PD but opposed data sharing with outside departments.",
+      "id": "oh-oxford-pd",
+      "notes": "Vote was 'over the summer' per Ideastream reporting (article 2026-09-02); exact decision date unknown. 14 cameras per same report.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Ohio cities take different approaches to Flock camera privacy concerns",
+          "url": "https://www.wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns",
+          "date": "2026-09-02",
+          "verified": true
+        },
+        {
+          "title": "Law Enforcement Use of Flock Cameras Sparks Privacy Debate in Greater Cincinnati",
+          "url": "https://www.archynewsy.com/watch-hamilton-county-sheriff-discuss-use-flock-safety-cameras/",
+          "date": "2026-09-03",
+          "verified": false
+        }
+      ],
+      "state": "OH",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Monroe Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Monroe",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Butler County",
+      "decision_date": "2026-09-22",
+      "decision_summary": "Monroe City Council voted 5-0 (Ordinance 2026-27) on Sept. 22, 2026 to end the city's Flock Safety contract and remove the cameras, after resident petitioning over rollout without public choice.",
+      "id": "oh-monroe-pd",
+      "notes": "Camera count (23) and cost (~$70k/year) claimed only by activist site deflockmonroe.com; left null. This is Monroe, Ohio (45050), NOT Monroe County, Michigan, which separately terminated funding Sept. 1, 2026.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Local city council unanimously votes to end contract with Flock amid privacy concerns",
+          "url": "https://star64.tv/newsletter-daily/monroe-city-council-votes-end-flock-safety-contract-amid-privacy-concerns-license-plate-readers-tech-technology-surveillance-backlash-private-cost-price-recording-safety-government-cincinnati",
+          "date": "2026-09-21",
+          "verified": true
+        },
+        {
+          "title": "Deflock Monroe - End the Flock Safety camera contract",
+          "url": "https://deflockmonroe.com/",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "OH",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Akron Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 145,
+      "city": "Akron",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Summit County",
+      "decision_date": "2022-06-10",
+      "decision_summary": "Akron City Council approved 145 license plate-reading cameras from Flock Safety in June 2022 (unanimous, one abstention) for just over $400,000 including cameras, software, storage, and equipment. As of Sept. 2026 the independent police auditor is auditing the ~145-camera program for policy compliance; contract expires Sept. 2027.",
+      "id": "oh-akron-pd",
+      "notes": "$400k figure is from the 2022 approval and is not clearly an annual figure, so annual_cost_usd is null. Contract started 2022, expires Sept. 2027 per Signal Akron (Sept. 22, 2026); expiry makes it a renewal pressure window.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Akron City Council approves purchasing license-plate reading cameras",
+          "url": "https://www.beaconjournal.com/story/news/2022/06/10/akron-city-council-approves-license-plate-reading-cameras-flock-security-fight-crime/7583684001/",
+          "date": "2022-06-10",
+          "verified": true
+        },
+        {
+          "title": "How are Akron Police using Flock cameras? Auditor wants to know",
+          "url": "https://signalakron.org/akron-police-flock-camera-program-review-independent-auditor-anthony-finnell/",
+          "date": "2026-09-22",
+          "verified": true
+        }
+      ],
+      "state": "OH",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Lorain Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 40,
+      "city": "Lorain",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Lorain County",
+      "decision_date": "2023-02-08",
+      "decision_summary": "Lorain City Council approved a five-year agreement with Flock Group Inc. for 40 license plate readers, not to exceed $531,500, funded from the city's American Rescue Plan Act share.",
+      "id": "oh-lorain-pd",
+      "notes": "$531,500 is the five-year total, not annual; annual_cost_usd null. Independent of the Lorain County Sheriff's discontinued program. Cameras recently used in the capture of a juvenile murder suspect (Sept. 2026).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Lorain, Ohio, Council Approves License Plate Reader Network",
+          "url": "https://www.govtech.com/public-safety/lorain-ohio-council-approves-license-plate-reader-network",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Lorain Police credit Flock system for capture of murder suspect in less than 30 minutes",
+          "url": "https://www.police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "OH",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Strongsville Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 63500,
+      "cameras": 19,
+      "city": "Strongsville",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Cuyahoga County",
+      "decision_date": null,
+      "decision_summary": "Council authorized an initial 24-month agreement for 19 Flock readers in January 2024 ($72,250 first year, $63,500 annual recurring, $135,750 initial total) and six additional readers in November 2025; renewal status of the initial agreement is unconfirmed.",
+      "id": "oh-strongsville-pd",
+      "notes": "Corrects the seed's '17-camera lease approved Feb 2024' to 19 readers, January 2024, per cleveland.com reporting republished by GovTech. The November 2025 expansion figures ($18,900 first year, $18,000/yr after) are a separate ordinance. One advocacy article misattributes Shaker Heights' $204,550 figure to Strongsville; ignored.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "3 Ohio Cities Approve Automated License Plate Reader Pacts",
+          "url": "https://www.govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts",
+          "date": "2026-07-30",
+          "verified": true
+        }
+      ],
+      "state": "OH",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Cleveland Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 100,
+      "city": "Cleveland",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Cuyahoga County",
+      "decision_date": "2026-07-15",
+      "decision_summary": "After the Public Safety Committee voted 3-1 against a $250,000/yr renewal, full council voted 9-6 on July 15, 2026 to extend the Flock contract six months for $125,000, adding guardrails: removal from Flock's national lookup network, a public transparency portal, quarterly reports, and a 25% penalty for privacy/data-sharing violations.",
+      "id": "oh-cleveland-pd",
+      "notes": "$125,000 covers six months; annual_cost_usd null (not annualized). This is a renewal/extension, NOT a termination; earlier reports of the committee vote alone are misleading without the full-council outcome.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Cleveland City Council Warily Approves Flock Safety Renewal",
+          "url": "https://www.clevescene.com/news/cleveland-city-council-warily-approves-flock-safety-renewal/",
+          "date": "2026-07-15",
+          "verified": true
+        },
+        {
+          "title": "Ohio cities take different approaches to Flock camera privacy concerns",
+          "url": "https://www.wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns",
+          "date": "2026-09-02",
+          "verified": true
+        },
+        {
+          "title": "3 Ohio Cities Approve Automated License Plate Reader Pacts",
+          "url": "https://www.govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts",
+          "date": "2026-07-30",
+          "verified": true
+        }
+      ],
+      "state": "OH",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Mansfield Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 24,
+      "city": "Mansfield",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Richland County",
+      "decision_date": null,
+      "decision_summary": "Mansfield PD operates 24 leased Flock cameras paid for by a state grant, per June 2026 reporting; Chief Jason Bammann confirmed the department shares data nationwide and says ICE cannot access it only if sharing is disabled.",
+      "id": "oh-mansfield-pd",
+      "notes": "Camera count discrepancy: Atlas seed says 29; Mansfield News Journal (June 12, 2026) says 24; using 24 per named outlet. Independent of Richland County Sheriff's 16-camera program (expanded 2025, separate agency, unconfirmed).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Mansfield police say ICE can't see city's Flock camera data",
+          "url": "https://www.mansfieldnewsjournal.com/story/news/crime/2026/06/12/flock-cameras-are-used-locally-to-fight-crime/90402150007/",
+          "date": "2026-06-12",
+          "verified": true
+        }
+      ],
+      "state": "OH",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Euclid Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 26,
+      "city": "Euclid",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Cuyahoga County",
+      "decision_date": null,
+      "decision_summary": "Euclid Ordinance 040-22 (April 2022 public safety committee agenda, primary document) authorized the mayor to enter a two-year Flock Safety camera contract, with a two-year renewal option, not to exceed $110,000. Flock's transparency portal reports 26 cameras as of April 2024.",
+      "id": "oh-euclid-pd",
+      "notes": "Camera count is agency self-reported on Flock's portal (unverified flag kept). $110,000 NTE figure may be the two-year total; annual_cost_usd left null. decision_date left null: April 20, 2022 is the committee agenda date, not the passage date.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Euclid Public Safety Committee agenda, Ord. (040-22)",
+          "url": "https://cdn.euclidlibrary.org/cdn/ecc/2022/20220420_SAF/agenda.pdf",
+          "date": "2022-04-20",
+          "verified": true
+        },
+        {
+          "title": "Flock Safety transparency portal: Euclid OH PD",
+          "url": "https://transparency.flocksafety.com/euclid-oh-pd",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "OH",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/euclid-oh-pd"
+    },
+    {
+      "agency": "Columbus Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Columbus",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Franklin County",
+      "decision_date": null,
+      "decision_summary": "Mayor Andrew Ginther paused the city's Flock camera program in early September 2026 amid a misuse investigation after an audit flagged one officer's 272 searches of a single plate; this followed a July audit finding immigration-related searches of Columbus Flock data and June 3 restrictions on sharing with DHS 287(g) agencies.",
+      "id": "oh-columbus-pd",
+      "notes": "Pause, not cancellation: status pending. Independent of Franklin County Sheriff's mobile-camera contract (deputy under review Sept. 10, 2026). Pause date is ~early Sept. 2026 (a week before Reynoldsburg's Sept. 9 announcement); exact date unconfirmed, so decision_date null.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Ginther halts Flock data sharing after audit finds immigration searches",
+          "url": "https://www.dispatch.com/story/news/local/2026/07/10/columbus-immigration-searches-flock-cameras-audit/90880977007/",
+          "date": "2026-07-10",
+          "verified": true
+        },
+        {
+          "title": "Candidates for Ohio attorney general address Flock cameras controversy, make proposals",
+          "url": "https://www.akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html",
+          "date": "2026-09-15",
+          "verified": true
+        }
+      ],
+      "state": "OH",
+      "status": "pending",
+      "transparency_portal": null
+    },
+    {
+      "agency": "City of Menominee",
+      "agency_type": "municipal_government",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Menominee",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Menominee County",
+      "decision_date": "2026-05-18",
+      "decision_summary": "On May 18, 2026 the Menominee City Council voted 8-0 to deny the ALPR ordinance and terminate the city's Flock Safety contract, which had been signed for a temporary demo phase. One camera had been installed but the system was never made operational.",
+      "id": "mi-menominee",
+      "notes": "TERMINAL CLAIM, pending validation (2 of 3 independent verified citations: WLUK Fox 11, WTAQ/WLUK via wncy.com). City council voted 2026-07-20 not to move forward with the Flock contract; the $16,000 budgeted was reallocated. A citizen GitHub archive of council minutes is kept as a lead, not counted toward the evidence bar.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Flock ALPR Research — Marinette & Menominee (city council minutes archive)",
+          "url": "https://github.com/spmckenney/flock_alpr_research",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "Kaukauna ends Flock Safety camera contract (WTAQ-WLUK, notes Menominee cancellation)",
+          "url": "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract/",
+          "date": "2026-07-08",
+          "verified": true
+        },
+        {
+          "title": "Officials vote not to move forward with contract for Flock cameras in Menominee, Michigan (FOX 11)",
+          "url": "https://fox11online.com/news/local/officials-vote-not-to-move-forward-with-contract-for-flock-cameras-in-menominee-michigan",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "MI",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "City of Ypsilanti",
+      "agency_type": "municipal_government",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Ypsilanti",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Washtenaw County",
+      "decision_date": "2022-09-13",
+      "decision_summary": "The Ypsilanti City Council adopted Ordinance No. 1401 on September 13, 2022, prohibiting the installation or use of electronic license plate scanning devices anywhere in the city. It took effect October 13, 2022.",
+      "id": "mi-ypsilanti",
+      "notes": "Preemptive ban (no Flock deployment ever existed); classified rejected. Terminal citations: 2 (city ordinance + Washtenaw Voice) = below verified tier.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Ordinance No. 1401 — An ordinance to prohibit the installation or use of electronic license plate scanning devices in the City of Ypsilanti (adopted 2022-09-13)",
+          "url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743",
+          "date": "2022-09-13",
+          "verified": true
+        },
+        {
+          "title": "Ypsilanti Township residents cry for halt on surveillance proposal (Washtenaw Voice, notes city ban)",
+          "url": "https://www.washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal/",
+          "date": "2022-09-16",
+          "verified": true
+        }
+      ],
+      "state": "MI",
+      "status": "rejected",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Bay City Department of Public Safety",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Bay City",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Bay County",
+      "decision_date": "2025-11-17",
+      "decision_summary": "On November 17, 2025 the Bay City Commission voted 6-2 to reject a two-year Flock Safety contract for 13 license plate reader cameras at a total cost of $84,150, after months of public debate and an ACLU presentation. The cameras were never installed.",
+      "id": "mi-bay-city-dps",
+      "notes": "$84,150 was the reported two-year contract total (not annual); annual_cost_usd left null per reported-figures rule. Terminal citations: 2 (GovTech/TNS + citizenportal.ai AI summary) = below verified tier.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "After Outcry, Bay City, Mich., Rejects License Plate Readers (GovTech / Tribune News Service)",
+          "url": "https://www.govtech.com/public-safety/after-outcry-bay-city-mich-rejects-license-plate-readers",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Bay City Commission rejects Flock license-plate reader contract after ACLU and months of public debate (AI meeting summary)",
+          "url": "https://citizenportal.ai/articles/7000890/Bay-City/Bay-County/Michigan/Bay-City-Commission-rejects-Flock-license-plate-reader-contract-after-ACLU-and-months-of-public-debate",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "MI",
+      "status": "rejected",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Van Buren Township Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 75000,
+      "cameras": 30,
+      "city": null,
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Wayne County",
+      "decision_date": "2021-11-16",
+      "decision_summary": "On November 16, 2021 the Van Buren Township Board of Trustees voted unanimously to approve a $75,000 contract with Flock Safety for 30 cameras at $2,500 per camera per year. The Downtown Development Authority later agreed to pay the annual fees for up to ten cameras in its district.",
+      "id": "mi-van-buren-twp-pd",
+      "notes": "decision_date is the board meeting date (article reports the vote at the Nov. 16 meeting). Cost is annual subscription; equipment not purchased, installation included.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "VBT approves license plate recognition project (The Belleville Independent)",
+          "url": "https://bellevilleareaindependent.com/vbt-approves-license-plate-recognition-project/",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "VBT DDA will pay for license plate recognition cameras in its district (The Belleville Independent)",
+          "url": "https://bellevilleareaindependent.com/will-pay-for-license-plate-recognition-cameras-in-its-district/",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "MI",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Troy Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 66000,
+      "cameras": 25,
+      "city": "Troy",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Oakland County",
+      "decision_date": null,
+      "decision_summary": "Troy's March 8, 2023 council agenda item recommended awarding a 2-year Flock Safety contract via Insight Public Sector (OMNIA contract 4400006644): 23 Falcon LE cameras at $2,500/yr and 2 Falcon Flex portable cameras at $3,000/yr. Payment 1 was $74,050 (incl. $8,050 implementation) and Payment 2 $66,000, with estimated installation July 1, 2023.",
+      "id": "mi-troy-pd",
+      "notes": "annual_cost_usd = $66,000 is the recurring year-2 subscription figure (reported directly); year 1 was $74,050 including one-time implementation. Camera count 25 = 23 fixed + 2 portable per the attached vendor quote #0225998734. The same agenda item confirms Flock use by Auburn Hills, Madison Heights, Sterling Heights, Michigan State Police, Royal Oak, and Southfield PDs and the Oakland County Sheriff's Office (vendor confirmation only, no counts).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "City Council Agenda Item — Flock Safety Cameras, Troy Police Department (2023-03-08, with Insight/Flock quote)",
+          "url": "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116",
+          "date": "2023-03-08",
+          "verified": true
+        }
+      ],
+      "state": "MI",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Chesterfield Township Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 5,
+      "city": null,
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Macomb County",
+      "decision_date": null,
+      "decision_summary": "In 2023 the department entered a five-year lease contract with Flock Safety for five cameras at a total cost of $62,500.",
+      "id": "mi-chesterfield-twp-pd",
+      "notes": "The Voice article page was unreachable at research time (domain blocked); facts corroborated by the Atlas of Surveillance entry citing the 2023-09-29 Voice article. $62,500 is the five-year lease total, not annual; annual_cost_usd left null.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "License plate readers an invaluable tool for Chesterfield Township police (The Voice)",
+          "url": "https://www.voicenews.com/2023/09/29/license-plate-readers-an-invaluable-tool-for-chesterfield-township-police/",
+          "date": "2023-09-29",
+          "verified": false
+        }
+      ],
+      "state": "MI",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "New Baltimore Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 9,
+      "city": "New Baltimore",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Macomb County",
+      "decision_date": null,
+      "decision_summary": "The department renewed its Flock Safety contract in 2023 for nine cameras.",
+      "id": "mi-new-baltimore-pd",
+      "notes": "The Voice article page was unreachable at research time (domain blocked); facts corroborated by the Atlas of Surveillance entry citing the 2023-05-11 Voice article. Renewal cost not reported, so annual_cost_usd left null.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "License plate readers helping police fight crime in New Baltimore (The Voice)",
+          "url": "https://www.voicenews.com/2023/05/11/license-plate-readers-helping-police-fight-crime-in-new-baltimore/",
+          "date": "2023-05-11",
+          "verified": false
+        }
+      ],
+      "state": "MI",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Michigan State Police",
+      "agency_type": "state_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": null,
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": null,
+      "decision_date": null,
+      "decision_summary": "The state of Michigan holds a $2.626 million contract with Flock Safety valid through June 2030, per a February 2026 GovTech/TNS report citing the state contract record.",
+      "id": "mi-michigan-state-police",
+      "notes": "$2.626M is the reported total contract value, not annual; camera count not reported. contract_end left null (only month precision: June 2030). Single-source claim; the underlying michigan.gov contract page was linked by GovTech but not independently fetched.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Michigan Bills Would Regulate Automatic License Plate Readers (GovTech / Tribune News Service)",
+          "url": "https://www.govtech.com/public-safety/michigan-bills-would-regulate-automatic-license-plate-readers",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "MI",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Grand Rapids Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 29,
+      "city": "Grand Rapids",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Kent County",
+      "decision_date": null,
+      "decision_summary": "Grand Rapids' Flock contract was approved by the city commission in January 2024 at a cost not to exceed $165,700 and is set to expire in 2027, with renewal due in June 2027. The department launched a Flock transparency portal in September 2026 showing 29 cameras; the city commission placed ALPRs under the surveillance policy on September 8, 2026, requiring public review of any expansion or renewal.",
+      "id": "mi-grand-rapids-pd",
+      "notes": "$165,700 was the reported authorization cap (period ambiguous); annual_cost_usd left null. Camera count 29 is the September 2026 agency transparency portal figure (original 2024 contract covered 25 Falcon cameras).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Grand Rapids, Mich., Residents Pack Meeting Over Flock Safety (GovTech / Tribune News Service)",
+          "url": "https://www.govtech.com/public-safety/grand-rapids-mich-residents-pack-meeting-over-flock-safety",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Bipartisan effort to protect privacy as Flock cameras spread across state (The Midwesterner)",
+          "url": "https://www.themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state/",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "What to know before the Grand Rapids City Commission hosts Flock hearing (Grand Valley Lanthorn)",
+          "url": "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing/",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "MI",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Kent County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 62,
+      "city": null,
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Kent County",
+      "decision_date": null,
+      "decision_summary": "The Kent County Sheriff's Office has used Flock cameras since 2022. In September 2026 it launched a Flock transparency portal reporting 62 cameras, 1,011,594 unique plates detected in 30 days, and 1,257 searches; Undersheriff Bryan Muir confirmed the figures to media.",
+      "id": "mi-kent-county-so",
+      "notes": "Camera count grew from the original 25 announced in February 2022 (MLive, blocked for fetch) to 62 per the September 2026 agency transparency portal. Not merged with Grand Rapids PD (separate agency, separate portal).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Grand Rapids Police Launch Flock Transparency Portal Showing License Plate Reader Usage (Officer / Tribune News Service, KCSO figures)",
+          "url": "https://www.officer.com/command-hq/technology/traffic/lpr-license-plate-recognition/news/55403871/grand-rapids-police-launch-flock-transparency-portal-showing-license-plate-reader-usage",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "Bipartisan effort to protect privacy as Flock cameras spread across state (The Midwesterner)",
+          "url": "https://www.themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state/",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "MI",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Ottawa County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": 45000,
+      "cameras": 31,
+      "city": null,
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Ottawa County",
+      "decision_date": null,
+      "decision_summary": "Use approved by the county board in spring 2024. Sheriff Eric DeBoer told the board on September 18, 2026 that the county operates 31 Flock cameras and pays $45,000 per year for its 15 county-owned cameras; two mobile and 14 fixed cameras were added via pass-through agreements with local townships.",
+      "id": "mi-ottawa-county-so",
+      "notes": "$45,000/yr covers the 15 county-owned cameras; 16 additional cameras operate under township pass-through agreements. decision_date left null (only 'spring 2024' reported).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Sheriff DeBoer outlines Flock camera usage in Ottawa County (The Holland Sentinel)",
+          "url": "https://www.hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007/",
+          "date": "2026-09-24",
+          "verified": true
+        }
+      ],
+      "state": "MI",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Monroe County",
+      "agency_type": "county",
+      "annual_cost_usd": null,
+      "cameras": 6,
+      "city": "Bloomington",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Monroe County",
+      "decision_date": "2026-07-23",
+      "decision_summary": "County commissioners voted July 23, 2026 to terminate the Flock contract a year early, citing national reporting on plate-data misuse; the county paid about $3,000 to remove six cameras used by the Monroe County Sheriff's Office. Matches the Finding Flock tracker row (IN, Jul 23 2026, Canceled).",
+      "id": "in-monroe-county",
+      "notes": "County government is the contracting party; cameras operated by the Sheriff's Office. Initial contract approved Sept 2021 for $16,500 covering six cameras (month precision only). Independent verified citations from distinct publishers: Indiana Public Media, CNHI News Indiana, Indiana Lawyer = verified tier (3).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Monroe County cancels contract with Flock Safety",
+          "url": "https://www.ipm.org/news/2026-07-26/monroe-county-cancels-contract-with-flock-safety",
+          "date": "2026-07-26",
+          "verified": true
+        },
+        {
+          "title": "Flock camera poles cut down near site of ICE detainments",
+          "url": "https://www.ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments",
+          "date": "2026-09-08",
+          "verified": true
+        },
+        {
+          "title": "Flock in question: Some concerned with potential overreach while others tout cameras as important tool for law enforcement",
+          "url": "https://www.cnhinews.com/indiana/news/article_7a6d1a43-dab3-5081-b8c9-4ab02ec22a36.html",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "License plate camera systems have given some rogue officers a tool for stalking",
+          "url": "https://www.theindianalawyer.com/articles/license-plate-camera-systems-have-given-some-rogue-officers-a-tool-for-stalking",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Bloomington Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Bloomington",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Monroe County",
+      "decision_date": null,
+      "decision_summary": "In April 2026 the City of Bloomington announced it would not renew its Flock Safety contract after protests from privacy and civil-rights advocates; Flock physically removed all department cameras and poles from the city.",
+      "id": "in-bloomington-pd",
+      "notes": "TERMINAL CLAIM, pending validation (2 of 3 independent verified citations: Indiana Public Media, IndyStar). City council voted to end the Flock contract in 2026; Flock poles were later cut down near the site of ICE detainments. An Indiana Daily Student op-ed on the cancellation is kept out of the evidence count (opinion, not reporting).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Bloomington's Flock contract may have ended, but other cameras still active",
+          "url": "https://www.ipm.org/news/2026-05-21/bloomingtons-flock-contract-may-have-ended-but-other-cameras-still-active",
+          "date": "2026-05-21",
+          "verified": true
+        },
+        {
+          "title": "Flock camera poles cut down near site of ICE detainments",
+          "url": "https://www.ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments",
+          "date": "2026-09-08",
+          "verified": true
+        },
+        {
+          "title": "What is a Flock camera, and why are people cutting them down?",
+          "url": "https://www.indystar.com/story/news/crime/2026/08/10/what-is-a-flock-camera-and-why-are-people-cutting-them-down/91195834007/",
+          "date": "2026-08-10",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "expired",
+      "transparency_portal": null
+    },
+    {
+      "agency": "City of Fort Wayne",
+      "agency_type": "municipal_government",
+      "annual_cost_usd": null,
+      "cameras": 36,
+      "city": "Fort Wayne",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Allen County",
+      "decision_date": "2026-08-25",
+      "decision_summary": "Fort Wayne City Council voted unanimously on Aug 25, 2026 to defund the city's 36 Flock cameras; the police department then took the cameras offline and deleted its data from the national system. Police Chief Scott Caudill's Aug 31 statement confirms the department discontinued Flock use after council declined to approve a new contract.",
+      "id": "in-fort-wayne",
+      "notes": "Program began in 2024 via a DOJ grant; grant closed early without penalty. decision_date 2026-08-25 inferred: WPTA articles published Aug 26/28 report the council 'voted Tuesday', and Aug 25, 2026 was a Tuesday. Independent verified citations: City of Fort Wayne (official chief statement), WPTA/21Alive, Free Press Indiana/IPM = verified tier (3). CAUTION: one WPTA URL below contains a likely worker typo ('fort-ways'); re-verify before import.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "FWPD Chief Statement on Flock in Fort Wayne",
+          "url": "http://www.cityoffortwayne.in.gov/m/newsflash/Home/Detail/716",
+          "date": "2026-08-31",
+          "verified": true
+        },
+        {
+          "title": "Activist says work isn't finished after Fort Wayne City Council votes to defund Flock license plate cameras",
+          "url": "https://gray-wpta-prod.gtv-cdn.com/2026/08/26/activist-says-work-isnt-finished-after-fort-wayne-city-council-votes-defund-flock-license-plate-cameras/",
+          "date": "2026-08-26",
+          "verified": true
+        },
+        {
+          "title": "Flock Fallout: Mayor explains decision to remove Fort Wayne's 36 cameras",
+          "url": "https://gray-wpta-prod.gtv-cdn.com/2026/08/28/flock-fallout-mayor-explains-decision-remove-fort-waynes-36-cameras/",
+          "date": "2026-08-28",
+          "verified": true
+        },
+        {
+          "title": "Indiana sees surge of cities, counties ending Flock camera contracts",
+          "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts",
+          "date": "2026-09-22",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Kosciusko County",
+      "agency_type": "county",
+      "annual_cost_usd": null,
+      "cameras": 31,
+      "city": null,
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Kosciusko County",
+      "decision_date": "2026-09-10",
+      "decision_summary": "Kosciusko County Council voted unanimously Sept 10, 2026 to defund the county's 31 Flock cameras after hours of public opposition; the county prosecutor then ordered all local law enforcement to remove and disable the network by Sept 18, 2026.",
+      "id": "in-kosciusko-county",
+      "notes": "Independent verified citations: Free Press Indiana/IPM, News Now Warsaw, WPTA/21Alive = verified tier (3). News Now Warsaw and WPTA versions reached via europesays.com and gray-wpta-prod.gtv-cdn.com mirrors; underlying outlets are established local news.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Indiana sees surge of cities, counties ending Flock camera contracts",
+          "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts",
+          "date": "2026-09-22",
+          "verified": true
+        },
+        {
+          "title": "Flock funding defeated as nearly 200 show up at Kosciusko Courthouse in opposition (News Now Warsaw, via europesays)",
+          "url": "https://www.europesays.com/poland/25025/",
+          "date": "2026-09-10",
+          "verified": false
+        },
+        {
+          "title": "Flock camera fight divides communities beyond Fort Wayne (WPTA)",
+          "url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/04/flock-camera-fight-divides-communities-beyond-fort-wayne/",
+          "date": "2026-09-04",
+          "verified": true
+        },
+        {
+          "title": "Prosecutor orders local law enforcement to remove and disable entire Flock network in Kosciusko County (WANE, via NewsLocker)",
+          "url": "https://www.newslocker.com/en-us/region/fort-wayne/prosecutor-orders-local-law-enforcement-to-remove-and-disable-entire-flock-network-in-kosciusko-county/",
+          "date": "2026-09-08",
+          "verified": false
+        }
+      ],
+      "state": "IN",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Town of Chesterton",
+      "agency_type": "municipal_government",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Chesterton",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Porter County",
+      "decision_date": "2026-09-14",
+      "decision_summary": "Chesterton Town Council voted unanimously Sept 14, 2026 to discontinue the town's Flock Safety contract effective Oct 31, 2026, after an internal investigation found an officer misused the system in 2024-2025; system access was limited to the police chief pending a month-by-month audit.",
+      "id": "in-chesterton",
+      "notes": "Below verified tier (2 verified publishers: official town document center + Free Press Indiana/IPM). Misusing officer resigned. Pause framing: council left the door open to resume if safeguards improve. Camera count not reported.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Chesterton Town Council votes to discontinue contract with Flock Safety license plate readers (official town record)",
+          "url": "https://chestertonin.org/DocumentCenter/View/34569/Chesterton-Town-Council-votes-to-discontinue-contract-with-Flock-Safety-license-plate-readers",
+          "date": "2026-09-14",
+          "verified": true
+        },
+        {
+          "title": "Indiana sees surge of cities, counties ending Flock camera contracts",
+          "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts",
+          "date": "2026-09-22",
+          "verified": true
+        },
+        {
+          "title": "Chesterton council votes to discontinue Flock camera contract pending review",
+          "url": "https://citizenportal.ai/articles/9986177/indiana/porter-county/chesterton/chesterton-council-votes-to-discontinue-flock-camera-contract-pending-review",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "IN",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Noble County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": null,
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Noble County",
+      "decision_date": null,
+      "decision_summary": "In September 2026 the Noble County sheriff asked Flock Safety to remove the county's cameras and the sheriff's office will not use the system for at least the next three months; the sheriff says he still supports the technology.",
+      "id": "in-noble-county-so",
+      "notes": "Framed as a temporary pause ('for at least the next three months'), not a full termination; could be reactivated. Exact decision date not reported. Re-check in Q1 2027 to see if cameras returned.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Noble County sheriff asks Flock remove cameras, says he still backs system (WPTA)",
+          "url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system/",
+          "date": "2026-09-10",
+          "verified": true
+        },
+        {
+          "title": "Flock dropped by Noble County authorities after pushback, for now (WANE, via NewsLocker)",
+          "url": "https://www.newslocker.com/en-us/region/fort-wayne/flock-dropped-by-noble-county-authorities-after-pushback-for-now/",
+          "date": "2026-09-08",
+          "verified": false
+        },
+        {
+          "title": "Indiana sees surge of cities, counties ending Flock camera contracts",
+          "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts",
+          "date": "2026-09-22",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "pending",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Evansville Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 142500,
+      "cameras": 55,
+      "city": "Evansville",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Vanderburgh County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-evansville-pd",
+      "notes": "Contract set to expire Nov 20, 2026; renewal is funded in the city's 2027 budget but no extension talks had occurred as of Sept 2026 (Courier & Press, Sept 18, 2026). $142,500 reported as the 2026 contract value (computer software budget line also covers Clearview AI; chief described $142,500 as the Flock figure). 55-camera count from Nov 2023 reporting. Grassroots De-Flock Evansville/Vanderburgh County is lobbying against renewal.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "With contract expiring, Flock cameras are in Evansville's 2027 budget",
+          "url": "https://www.courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007/",
+          "date": "2026-09-18",
+          "verified": true
+        },
+        {
+          "title": "Vanderburgh County Sheriff's Office to install license plate cameras",
+          "url": "https://www.beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007/",
+          "date": "2023-11-20",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Vanderburgh County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 17,
+      "city": "Evansville",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Vanderburgh County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-vanderburgh-county-so",
+      "notes": "60-month professional services agreement with Flock Safety approved by county commissioners Nov 14, 2023 for $240,050 total (Flock OS, 17 Falcons, advanced search); not annualized since only the total is reported. Three of the cameras installed on the USI campus (USI, Jan 2024); sheriff planned expansion to 45 countywide. Separate from Evansville PD's 55 cameras.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Vanderburgh County Sheriff's Office to install license plate cameras",
+          "url": "https://www.beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007/",
+          "date": "2023-11-20",
+          "verified": true
+        },
+        {
+          "title": "Vanderburgh County Sheriff's Office to install three Flock Safety cameras on USI campus",
+          "url": "https://www.usi.edu/news/releases/2024/01/vanderburgh-county-sheriff-s-office-to-install-three-flock-safety-cameras-on-usi-campus",
+          "date": "2024-01-01",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Indianapolis Metropolitan Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Indianapolis",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Marion County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-indianapolis-mpd",
+      "notes": "Camera counts are mixed: Indiana Capital Chronicle (Feb 2023) reported IMPD had 250+ license plate readers after adding 200 stationary units, but not all are Flock (department also runs mobile/Vigilant units); only 'dozens' were identified as Flock. Mirror Indy (2025) reported a ~$1M/year Flock spend target pitched to city boards, including gunshot-detection and drone provisions. On Sept 23, 2026 five IMPD officers were criminally charged (fraud, official misconduct, stalking) for alleged misuse of the Flock system.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Indiana lawmakers want to crack down on data privacy. What about license plate readers?",
+          "url": "https://indianacapitalchronicle.com/2023/02/01/indiana-lawmakers-want-to-crack-down-on-data-privacy-what-about-license-plate-readers/",
+          "date": "2023-02-01",
+          "verified": true
+        },
+        {
+          "title": "IMPD contract for license plate readers also allows for gunshot detection tech",
+          "url": "http://mirrorindy.org/indianapolis-impd-license-plate-readers-gunshot-detection-technology-flock-sensors-contract/",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Indy cops abused Flock cameras. The fallout proves they work. | Opinion",
+          "url": "https://www.indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007/",
+          "date": "2026-09-24",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Plainfield Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 12,
+      "city": "Plainfield",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Hendricks County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-plainfield-pd",
+      "notes": "Purchased 12 Flock cameras in 2021 for about $27,000, installed September 2021 along main thoroughfares (IPM/Indianapolis Star, Dec 2021); an earlier trial involved 14 cameras (American Police Beat). $27,000 described as the purchase price, unclear whether recurring; not annualized. No reporting found on current status; treated as active on absence of any cancellation.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Indiana police agencies trying out license plate cameras",
+          "url": "https://www.ipm.org/2021-12-29/indiana-police-agencies-trying-out-license-plate-cameras",
+          "date": "2021-12-29",
+          "verified": true
+        },
+        {
+          "title": "Plainfield Police Department Deploys Innovative License Plate Reader Cameras to Help Solve and Reduce Crime",
+          "url": "https://wyrz.org/plainfield-police-department-deploys-innovative-license-plate-reader-cameras-to-help-solve-and-reduce-crime/",
+          "date": "2021-09-09",
+          "verified": false
+        },
+        {
+          "title": "Plainfield police install digital license plate readers to fight crime",
+          "url": "https://apbweb.com/2021/09/plainfield-police-install-digital-license-plate-readers-to-fight-crime/",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "South Bend Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 52,
+      "city": "South Bend",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "St. Joseph County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-south-bend-pd",
+      "notes": "Irish Rover (Sept 16, 2026) reports 53 ALPRs in South Bend, all but one Flock Safety units; city-owned vs police-operated count may differ. SBPD's 2023 annual report (city clerk filing) lists Flock among RTCC tools with 83 case assists. Atlas (2022) documented Flock ALPR use. Mayor James Mueller has defended the cameras' crime-fighting effectiveness.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Flock Cameras in South Bend - Irish Rover",
+          "url": "https://irishrover.net/2026/09/flock-cameras-in-south-bend/",
+          "date": "2026-09-16",
+          "verified": true
+        },
+        {
+          "title": "2023 South Bend Police Department Annual Report",
+          "url": "http://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx",
+          "date": "2024-05-10",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Lafayette Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 20,
+      "city": "Lafayette",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Tippecanoe County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-lafayette-pd",
+      "notes": "Journal & Courier (June 2026): Lafayette's Flock contract in operation since 2024, expires end of 2028; residents asked council to terminate early. Camera count varies by source: basedinlafayette reports roughly 20 contracted by LPD; J&C says Lafayette holds the lion's share of 50 countywide; Atlas (Apr 2024) said 22. Contract cost figures seen only in a forum post, not used.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Lafayette residents voice concerns over Flock Safety cameras",
+          "url": "https://www.jconline.com/story/news/local/lafayette/2026/06/02/lafayette-residents-voice-concerns-over-flock-safety-cameras/90369141007/",
+          "date": "2026-06-02",
+          "verified": true
+        },
+        {
+          "title": "WLPD chief defends deployment of Flock cameras to skeptical standing room crowd",
+          "url": "https://www.basedinlafayette.com/p/wlpd-chief-defends-deployment-of",
+          "date": "2026-09-22",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/lafayette-pd-in"
+    },
+    {
+      "agency": "West Lafayette Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 4,
+      "city": "West Lafayette",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Tippecanoe County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-west-lafayette-pd",
+      "notes": "Four Flock cameras contracted since 2022; three operating as of Sept 2026 after one was vandalized (cut down) in Aug 2026. Chief Adam Ferguson defended the program at a Sept 2026 public session; 7-day routine data access, 30-day max retention. Part of a shared local network: 6 Purdue PD, 2 Tippecanoe County Sheriff, 8 private (The Launch) cameras.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "West Lafayette police chief: Flock cameras have 'public safety value'",
+          "url": "https://www.jconline.com/story/news/local/2026/09/24/west-lafayette-citizens-voice-concerns-during-police-chiefs-flock-talk-what-are-flock-cameras/91908852007/",
+          "date": "2026-09-24",
+          "verified": true
+        },
+        {
+          "title": "WL chief of police 'absolutely in favor' of Flock cameras (Purdue Exponent)",
+          "url": "https://www.purdueexponent.org/city_state/police-chief-flock-camera-interview/article_70b9d1d8-49ad-47ff-b66c-f8912b83b6a6.html",
+          "date": "2026-09-07",
+          "verified": true
+        },
+        {
+          "title": "WLPD chief defends deployment of Flock cameras to skeptical standing room crowd",
+          "url": "https://www.basedinlafayette.com/p/wlpd-chief-defends-deployment-of",
+          "date": "2026-09-22",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/west-lafayette-in-pd"
+    },
+    {
+      "agency": "Tippecanoe County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Lafayette",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Tippecanoe County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-tippecanoe-county-so",
+      "notes": "Camera count discrepancy: WLFI (2023, via Atlas) reported the sheriff purchased six Flock cameras in 2023, but Sept 2026 local reporting (J&C, Purdue Exponent, basedinlafayette) says the office currently operates two in the shared West Lafayette network. Count left null pending reconciliation. Separate record from Lafayette PD and West Lafayette PD. CAUTION: one J&C URL below contains a likely worker typo ('west-lakfayette'); re-verify before import.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Flock cameras, New Chauncey plan spark debate in West Lafayette",
+          "url": "https://www.jconline.com/story/news/local/purdue/2026/09/14/flock-cameras-new-chauncey-plan-spark-debate-in-west-lafayette/91760390007/",
+          "date": "2026-09-14",
+          "verified": true
+        },
+        {
+          "title": "WL community members voice concerns over Flock cameras (Purdue Exponent)",
+          "url": "https://www.purdueexponent.org/city_state/general_news/west-lafayette-flock-info-session-september/article_51bd2068-01d7-4f6c-975b-bbd1fc6a0b7b.html",
+          "date": "2026-09-22",
+          "verified": true
+        },
+        {
+          "title": "WLPD chief defends deployment of Flock cameras to skeptical standing room crowd",
+          "url": "https://www.basedinlafayette.com/p/wlpd-chief-defends-deployment-of",
+          "date": "2026-09-22",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Johnson County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Franklin",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Johnson County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-johnson-county-so",
+      "notes": "Flock transparency portal (updated Jul 24, 2026) confirms active Flock use by the sheriff's office. Atlas (Apr 2024) reported 12 cameras; treated as a lead, so count left null. Eyes Off Indiana documents the vendor as Flock Safety for this agency.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Johnson County IN SO Transparency Portal (Flock Safety)",
+          "url": "https://transparency.flocksafety.com/johnson-county-in-so",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Flock Safety & ALPR Cameras in Johnson County, Indiana (Eyes Off Indiana)",
+          "url": "https://eyesoffindiana.org/counties/johnson",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/johnson-county-in-so"
+    },
+    {
+      "agency": "Hendricks County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Danville",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Hendricks County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-hendricks-county-so",
+      "notes": "Flock transparency portal confirms active Flock use. Atlas (Apr 2024) reported 12 cameras; treated as a lead, count left null. No independent news reporting found; thin record.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Hendricks County IN SO Transparency Portal (Flock Safety)",
+          "url": "https://transparency.flocksafety.com/hendricks-county-in-so",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/hendricks-county-in-so"
+    },
+    {
+      "agency": "Warrick County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Boonville",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Warrick County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-warrick-county-so",
+      "notes": "Courier & Press (July 2026) names the Warrick County Sheriff's Office as a Flock Safety user. Flock transparency portal confirms active use. Atlas (Apr 2024) reported 12 cameras; treated as a lead, count left null. Thin record.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Vigilantism or accident? ISP probes downed I-69 Flock camera",
+          "url": "https://www.courierpress.com/story/news/local/2026/07/22/isp-flock-safety-camera-damaged-on-i-69-evansville/91002066007/",
+          "date": "2026-07-22",
+          "verified": true
+        },
+        {
+          "title": "Warrick County IN SO Transparency Portal (Flock Safety)",
+          "url": "https://transparency.flocksafety.com/warrick-co-in-so",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/warrick-co-in-so"
+    },
+    {
+      "agency": "Greenfield Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Greenfield",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Hancock County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-greenfield-pd",
+      "notes": "Flock transparency portal confirms the agency uses Flock Safety. Atlas (Apr 2024) reported 13 cameras; treated as a lead, count left null. No independent news reporting found; thinnest record in the set.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Greenfield IN PD Transparency Portal (Flock Safety)",
+          "url": "https://transparency.flocksafety.com/greenfield-in-pd",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/greenfield-in-pd"
+    },
+    {
+      "agency": "Huntington Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 15000,
+      "cameras": null,
+      "city": "Huntington",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Huntington County",
+      "decision_date": null,
+      "decision_summary": null,
+      "id": "in-huntington-pd",
+      "notes": "Chief Cory Boxell told city council the department pays $15,000/year for its Flock contract and planned a full public presentation on use and safeguards (WPTA, Sept 2026). Single-source cost figure; camera count not reported.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Noble County drops Flock cameras amid ongoing debate across Indiana (WPTA)",
+          "url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system/",
+          "date": "2026-09-10",
+          "verified": true
+        }
+      ],
+      "state": "IN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Oak Park Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 8,
+      "city": "Oak Park",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Cook County",
+      "decision_date": "2025-08-05",
+      "decision_summary": "On August 5, 2025 the Oak Park Village Board voted 5-2 to cancel its contract with Flock Safety and deactivate the 8 ALPR cameras operating since 2022, following the Illinois Secretary of State's audit finding that Flock had shared Illinois plate data with U.S. Customs and Border Protection in violation of state law.",
+      "id": "il-oak-park-pd",
+      "notes": "Independent verified citations: 4 distinct publishers (Derek Eder's blog as the voting trustee, Pioneer Press, WLS-TV I-team, Unraveled Press) = VERIFIED TIER terminal claim. Trustee's blog cites the village's Civilian Police Oversight Commission finding that over 99% of Flock alerts produced no police action. Finding Flock tracker lists this row but was used only as a lead; the per-row linked trustee blog was confirmed independently.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Why I voted to cancel Oak Park's contract with Flock (and so should you)",
+          "url": "https://derekeder.com/blog/why-i-voted-to-cancel-flock",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "Impact: Evanston shuts off license plate readers after report of Illinois data shared with feds (Pioneer Press, via Illinois Press Association)",
+          "url": "https://www.illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Evanston and Oak Park Terminate Agreements with Flock Safety (WLS-TV I-Team)",
+          "url": "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois/",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "DEA agent used Illinois cop's Flock license plate reader password for immigration enforcement searches",
+          "url": "https://unraveledpress.com/a-dea-agent-used-an-illinois-police-officers-flock-license-plate-reader-password-for-unauthorized-immigration-enforcement-searches/",
+          "date": "2025-08-11",
+          "verified": true
+        }
+      ],
+      "state": "IL",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Evanston Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 19,
+      "city": "Evanston",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Cook County",
+      "decision_date": "2025-08-26",
+      "decision_summary": "On August 26, 2025 the City of Evanston deactivated all 19 Flock ALPR cameras and issued a 30-day termination notice to Flock Safety effective September 26, 2025, after the Illinois Secretary of State's audit found Flock had let U.S. Customs and Border Protection access Illinois camera data through an undisclosed pilot program.",
+      "id": "il-evanston-pd",
+      "notes": "Independent verified citations: 3 distinct publishers (City of Evanston official statement, Pioneer Press, WLS-TV I-Team) = VERIFIED TIER terminal claim. The deactivation was an administrative decision by the police chief; no council vote was required. TechTimes (June 2026, low-confidence) reported Flock partially reinstalled cameras after the takedown order, prompting a city cease-and-desist, with full removal not until early 2026.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Statement: Evanston Deactivates Flock Cameras and Terminates Contract (City of Evanston)",
+          "url": "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/3efa81d",
+          "date": "2025-08-26",
+          "verified": true
+        },
+        {
+          "title": "Impact: Evanston shuts off license plate readers after report of Illinois data shared with feds (Pioneer Press, via Illinois Press Association)",
+          "url": "https://www.illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Evanston and Oak Park Terminate Agreements with Flock Safety (WLS-TV I-Team)",
+          "url": "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois/",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "Flock Safety Crosses 100,000 Cameras as 53 Cities Cancel Over Unauthorized Federal Data Access",
+          "url": "https://www.techtimes.com/articles/319317/20260629/flock-safety-crosses-100000-cameras-53-cities-cancel-over-unauthorized-federal-data-access.htm",
+          "date": "2026-06-29",
+          "verified": false
+        }
+      ],
+      "state": "IL",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Springfield Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Springfield",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": "2026-03-01",
+      "county": "Sangamon County",
+      "decision_date": null,
+      "decision_summary": "In early July 2026 the Springfield City Council voted 9-0 to extend the police department's Flock ALPR contract, at a reported cost of $508,000 for the March 1, 2026 through February 28, 2028 term. An amendment requires annual ALPR data reports to the council.",
+      "id": "il-springfield-pd",
+      "notes": "annual_cost_usd left null per the no-derivation rule: $508,000 is the reported two-year total, not an annual figure. Camera count left null: Atlas (lead only) reported 94 as of April 2024; SJ-R reported the department's real-time information center 'utilizes 98 license plate readers' as of spring 2026, but that figure is not Flock-specific. CAUTION: an AI-generated meeting summary on citizenportal.ai stated $58,000 for the same term; that conflicts with Capitol City Now's $508,000 and looks like an AI transcription error. Exact vote date unconfirmed (reported by Capitol City Now circa early July 2026).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Springfield City Council approves Flock license plate reader contract, with changes",
+          "url": "https://capitolcitynow.com/news/248842-springfield-city-council-approves-flock-license-plate-reader-contract-with-changes/",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "IL",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/springfield-il-pd"
+    },
+    {
+      "agency": "Decatur Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 100,
+      "city": "Decatur",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Macon County",
+      "decision_date": null,
+      "decision_summary": "Decatur leased 60 Flock LPR cameras in March 2021 ($165k year 1, $150k each of years 2-3), added 40 more in 2022, and in late 2023 the City Council approved a 5-year lease extension fixing the price at $2,500 per camera per year through 2028, with roughly 100 cameras deployed.",
+      "id": "il-decatur-pd",
+      "notes": "annual_cost_usd left null per the no-derivation rule: $2,500 per camera per year is the reported rate, but the annual total depends on camera count. Primary council resolutions (R2021-40 adopted 2021-03-15; R2022-26 for 40 additional cameras; R2023-231 5-year extension) hosted on alprwatch.org as FOIA-obtained copies; corroborated by WCIA reporting. Camera count: WCIA reported 100; the Oct 2023 staff memo says 101 deployed. Exact 2023 extension vote date unconfirmed (staff memo dated 2023-10-27; WCIA report circa Nov 2023).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "RESOLUTION NO. R2021-40 authorizing a lease agreement between the City of Decatur and Flock Safety for 60 LPR cameras (City of Decatur, adopted 2021-03-15)",
+          "url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2021-40_Resolution_Authorizing_a_Lease_Agreement_Between_the_City_of_Decatur_and_Flock_Safety_for_the_Deployment_of_60_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf",
+          "date": "2021-03-15",
+          "verified": false
+        },
+        {
+          "title": "RESOLUTION NO. R2023-231 authorizing a five-year lease agreement extension with Flock Safety (City of Decatur staff memo, 2023-10-27)",
+          "url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "Decatur city council approves license plate reading cameras (WCIA)",
+          "url": "https://www.wcia.com/news/decatur-city-council-approves-license-plate-reading-cameras/",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Decatur extends usage of license plate readers (WCIA)",
+          "url": "https://www.wcia.com/news/decatur-extends-usage-of-license-plate-readers/amp/",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "IL",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Champaign Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 46,
+      "city": "Champaign",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Champaign County",
+      "decision_date": null,
+      "decision_summary": "Champaign authorized ALPRs in December 2021 for a two-year trial, with 46 Flock units installed starting May 2022. In December 2023 the City Council authorized 66 ALPR units under a five-year, $1.15 million Flock contract (fiscal year 2023-24 was year 1).",
+      "id": "il-champaign-pd",
+      "notes": "annual_cost_usd left null per the no-derivation rule: $1.15M is the reported five-year total. Camera count 46 = installed units under the 2021 trial per the city's own press release; the December 2023 contract authorized 66 units (Daily Illini). Atlas reported 46 operating as of April 2024 (lead, unconfirmed). Exact December 2023 resolution date unknown. City ran a dedicated transparency page at champaignil.gov/alpr per the press release.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Champaign Police Installing Automated License Plate Readers (City of Champaign press release)",
+          "url": "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers/",
+          "date": "2022-05-02",
+          "verified": true
+        },
+        {
+          "title": "Illinois police double down on license plate readers (The Daily Illini)",
+          "url": "https://dailyillini.com/news-stories/world-news/state-news/2026/07/28/illinois-police-double-down-on-license-plate-readers/",
+          "date": "2026-07-28",
+          "verified": true
+        }
+      ],
+      "state": "IL",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/champaign-il-pd"
+    },
+    {
+      "agency": "Vernon Hills Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 28,
+      "city": "Vernon Hills",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Lake County",
+      "decision_date": null,
+      "decision_summary": "The Village of Vernon Hills contracted with Flock Safety for 28 ALPR units in phases: 10 effective February 2022, 6 more in March 2023, and the remaining 12 in August 2023. The department maintains a Flock transparency portal for the village.",
+      "id": "il-vernon-hills-pd",
+      "notes": "Per the village's official ALPR page (primary). The initial ~2021 approval covered 10 stationary cameras at $20,000/year (GovTech/TNS); post-expansion annual cost not reported, so annual_cost_usd left null. Initial board approval date not pinned (GovTech reports 'last month' relative to an April 2021 article).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Automated License Plate Readers (Village of Vernon Hills official page)",
+          "url": "http://vernonhills.org/963/Automated-License-Plate-Readers",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "More Chicago Suburbs Deploy Automatic License Plate Scanners (Government Technology)",
+          "url": "https://www.govtech.com/public-safety/More-Chicago-Suburbs-Deploy-Automatic-License-Plate-Scanners.html",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "IL",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/vernon-hills-il-pd"
+    },
+    {
+      "agency": "Huntley Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 17,
+      "city": "Huntley",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "McHenry County",
+      "decision_date": "2023-04-13",
+      "decision_summary": "At its April 13, 2023 meeting the Huntley Village Board unanimously approved a resolution and four-year lease with Flock Safety for 17 license plate readers at a total cost of $187,150, for mounting on major thoroughfares in and out of the village.",
+      "id": "il-huntley-pd",
+      "notes": "annual_cost_usd left null per the no-derivation rule: $187,150 is the reported four-year lease total. My Huntley News reported the board 'unanimously approved the resolution and the lease agreement' in its account of the April 13 meeting; the meeting itself is the decision date. Lease runs through ~2027; renewal status unknown.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Huntley Police present new tech at Village Board meeting (My Huntley News)",
+          "url": "https://www.myhuntleynews.com/2023/04/24/huntley-police-present-new-tech-at-village-board-meeting/",
+          "date": "2023-04-24",
+          "verified": false
+        }
+      ],
+      "state": "IL",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Quincy Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 20,
+      "city": "Quincy",
+      "confidence": "low",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Adams County",
+      "decision_date": null,
+      "decision_summary": "In March 2023 the Quincy City Council unanimously approved a two-year agreement for 20 fixed-location Flock license plate readers at ~$117,600. In September 2025 the council renewed the system for another two years at $128,750, amid an active local privacy debate; the interim police chief told the council Quincy runs a closed system opted out of nationwide sharing.",
+      "id": "il-quincy-pd",
+      "notes": "annual_cost_usd left null per the no-derivation rule: $128,750 is the reported two-year renewal total. Exact September 2025 renewal vote date unconfirmed (KHQA reported 'Monday night' renewal; Quincy Current documented the Sept 2025 agenda item and Sept 8 debate). DeFlock/MyTownView maps show ~22-25 reader locations, consistent with 20 fixed cameras plus the Adams County Sheriff's separate deployment.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Where Are Quincy's Flock Cameras? A Look at the Network Ahead of City Council Report (Quincy Current)",
+          "url": "https://quincycurrent.com/where-are-quincys-flock-cameras-a-look-at-the-network-ahead-of-city-council-report/",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "Quincy Police Chief Defends Flock Cameras as Local Debate Intensifies (Quincy Current)",
+          "url": "https://quincycurrent.com/quincy-police-chief-defends-flock-cameras-as-local-debate-intensifies/",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "City council approves $128k deal to keep 20 license plate readers aiding police efforts (KHQA)",
+          "url": "https://www.youtube.com/shorts/eXP2lOH27Zs",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "IL",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Rantoul Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 25,
+      "city": "Rantoul",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Champaign County",
+      "decision_date": null,
+      "decision_summary": "Rantoul partnered with Flock Safety in June 2021, installing 12 cameras that summer. By late 2023 the department had 25 ALPRs deployed (reported total paid: $312,500) and was asking the village for 9 more cameras at just under $10,000 apiece to fill coverage gaps.",
+      "id": "il-rantoul-pd",
+      "notes": "Camera count 25 is the firm reported figure (late 2023). The 9-camera expansion request outcome is not confirmed by news; Atlas reported 34 operating as of April 2024 (lead, consistent with 25+9, but unconfirmed). Do not annualize the $312,500 figure (lease-term basis unknown). Deputy chief publicly praised the system in Aug 2025 (WCIA), indicating active status.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Village installing license plate reader cameras (WCIA)",
+          "url": "https://www.wcia.com/news/village-installing-license-plate-reader-cameras/",
+          "date": "2021-06-11",
+          "verified": true
+        },
+        {
+          "title": "Rantoul Police looking to fill blind spots with new license plate readers (WCIA)",
+          "url": "https://www.wcia.com/news/rantoul-police-looking-to-fill-blind-spots-with-new-license-plate-readers/amp/",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "IL",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/rantoul-il-pd"
+    },
+    {
+      "agency": "Appleton Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 20,
+      "city": "Appleton",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Outagamie County",
+      "decision_date": "2026-05-06",
+      "decision_summary": "Mayor Jake Woodford announced May 6, 2026 that the city was ending use of Flock Safety ALPR cameras over 'concerns about the integrity of Flock's underlying system.' A June 22 memo terminated use effective June 30, 2026, asked Flock to verify cameras disabled by June 30 and removed by July 31, and the Safety and Licensing Committee voted unanimously June 24 to stop payments after June 30. The contract had been set to run through 2028.",
+      "id": "wi-appleton-pd",
+      "notes": "City had paid through end of 2026. Council retained the option to revisit ALPR with a non-Flock vendor and adopted ALPR oversight standards. Terminal citations: 3 independent verified publishers (city memo, Post-Crescent, WBAY) = verified tier.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Mayor Jacob A. Woodford memo: Flock Service Termination and Final Recommendation",
+          "url": "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf",
+          "date": "2026-06-22",
+          "verified": true
+        },
+        {
+          "title": "Appleton asks Flock Safety to disable surveillance cameras by June 30",
+          "url": "https://www.postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007/",
+          "date": "2026-06-25",
+          "verified": true
+        },
+        {
+          "title": "City of Appleton to stop using Flock cameras (WBAY)",
+          "url": "https://gray-wbay-prod.gtv-cdn.com/2026/05/06/city-appleton-stop-using-flock-cameras/",
+          "date": "2026-05-06",
+          "verified": true
+        }
+      ],
+      "state": "WI",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Dane County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": 80000,
+      "cameras": 24,
+      "city": "Madison",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Dane County",
+      "decision_date": "2026-04-16",
+      "decision_summary": "The Dane County Board of Supervisors voted (reported 32-1) to remove the $80,000 Flock subscription from the sheriff's budget, ending funding for the system. The subscription ran through May 31, 2026. After Flock failed to retrieve its cameras for nearly a week post-contract, deputies placed bags over the cameras on June 5, 2026.",
+      "id": "wi-dane-county-sheriff",
+      "notes": "Camera count discrepancy: county/fitchburgstar report 24 cameras; a blog citing WMTV says deputies bagged 26. Used 24 (matches budget sources and Atlas). $80,000 is the reported annual subscription figure from the 2026 county budget. Terminal citations: 2 on-point verified publishers (county press release + Fitchburg Star); the GovTech UW-Madison article does not support the Dane County terminal claim. Below verified tier.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Dane County press release on Flock funding resolution",
+          "url": "https://department-test3.countyofdane.com/PressDetail/11832",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "County board cuts funding for license plate readers (Fitchburg Star)",
+          "url": "https://www.fitchburgstar.com/news/public_safety/county-board-cuts-funding-for-license-plate-readers/article_ba3d111c-ea78-4c1d-9621-fdfad4e2a101.html",
+          "date": "2026-04-16",
+          "verified": true
+        }
+      ],
+      "state": "WI",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Racine Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Racine",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Racine County",
+      "decision_date": "2026-09-15",
+      "decision_summary": "The Racine Common Council voted to terminate the city's Flock Safety contract after nearly two hours of debate; Mayor Cory Mason broke a 7-7 tie to end the contract with a 30-day grace period so police could finish open cases. The department had used Flock cameras since 2022. Mason cited lost community trust over how Flock handles data, and one officer remained under investigation for misuse at the time.",
+      "id": "wi-racine-pd",
+      "notes": "Camera count left null: Atlas of Surveillance reported 32 cameras as of Aug 2023 (lead only, stale). Separate from the Racine County Sheriff's Office, which ordered its own Flock units removed Sept 4. Terminal citations: 3 independent verified publishers (TMJ4, FOX6, Wisconsin Radio Network) = verified tier.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Racine Common Council votes to end Flock Safety contract",
+          "url": "https://www.tmj4.com/news/local-news/in-your-community/racine-county/racine-common-council-votes-to-end-flock-safety-contract-cameras-to-stay-up-for-30-more-days",
+          "date": "2026-09-15",
+          "verified": true
+        },
+        {
+          "title": "Flock cameras: Racine mayor votes to terminate contract, breaks tie",
+          "url": "https://fox6now.com/news/flock-cameras-racine-mayor-tie-vote",
+          "date": "2026-09-18",
+          "verified": true
+        },
+        {
+          "title": "Wisconsin PM News Summary - Wisconsin Radio Network",
+          "url": "https://www.wrn.com/wisconsin-pm-news-summary-91/",
+          "date": "2026-09-24",
+          "verified": true
+        },
+        {
+          "title": "Racine, Waukesha, Oconomowoc Vote to End Flock Camera Contracts",
+          "url": "https://heartlandpost.com/racine-waukesha-and-oconomowoc-vote-to-end-flock-camera-contracts/",
+          "date": "2026-09-15",
+          "verified": false
+        }
+      ],
+      "state": "WI",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Racine County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Racine",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Racine County",
+      "decision_date": "2026-09-04",
+      "decision_summary": "Sheriff Christopher Schmaling ordered the immediate removal of every Flock camera operated by the Sheriff's Office on Sept 4, 2026, after learning the company had built a separate dataset from the county's images, retained it for up to five years, and marketed it. The office retained outside legal counsel to terminate its agreement. Separate from the City of Racine PD contract ended Sept 15.",
+      "id": "wi-racine-county-sheriff",
+      "notes": "Reported as a suspension/removal announcement Sept 4 with legal termination of the agreement in process; cameras ordered pulled immediately. No camera count reported in sources. Terminal citations below verified tier: jsonline wave article is the single clearly on-point verified publisher; kenoshacountyeye and ACLU-WI are lead-class; the Shepherd Express piece is Milwaukee-focused.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "A dozen Wisconsin police agencies announce Flock suspensions",
+          "url": "https://www.jsonline.com/story/news/crime/2026/09/04/wisconsin-police-agencies-are-suspending-flock-use-over-data-concerns/91616870007/",
+          "date": "2026-09-04",
+          "verified": true
+        },
+        {
+          "title": "Racine County Sheriff Orders Immediate Removal Of Flock Cameras After Learning Company Retains, Monetizes Data",
+          "url": "https://kenoshacountyeye.com/2026/09/04/racine-county-sheriff-orders-immediate-removal-of-flock-cameras-after-learning-company-retains-monetizes-data/",
+          "date": "2026-09-04",
+          "verified": false
+        },
+        {
+          "title": "Flock Cameras in Milwaukee: The Writing is on the Wall",
+          "url": "https://shepherdexpress.com/news/issue-of-the-month/flock-cameras-in-milwaukee-the-writing-is-on-the-wall/",
+          "date": "2026-09-15",
+          "verified": true
+        },
+        {
+          "title": "Flock Off: Wisconsinites Continue the Fight Against Constant Surveillance",
+          "url": "https://www.aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance/",
+          "date": "2026-09-21",
+          "verified": false
+        }
+      ],
+      "state": "WI",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Kenosha Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 31,
+      "city": "Kenosha",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Kenosha County",
+      "decision_date": "2026-09-02",
+      "decision_summary": "Chief Patrick Patton announced the department is canceling its Flock contract one year early and replacing 31 Flock cameras with Axon Outpost cameras. Patton cited eroded trust after learning Flock had undisclosed data capabilities (traffic-speed/movement tracking) and was pitching traffic analytics to other cities. The department gave Flock its required 30-day notice, with termination expected about a month after announcement; cameras were to be covered citywide immediately.",
+      "id": "wi-kenosha-pd",
+      "notes": "Decision date 2026-09-02 is the date of the first published report (FOX6); TMJ4 on Sept 4 says the 30-day notice was already given, so the announcement falls Sept 2-3. The $14.6M Axon contract covers body cameras, Tasers, drones and software too; do NOT attribute it as the ALPR cost. Terminal citations below verified tier: 3 verified entries but only 2 distinct publishers (FOX6 + TMJ4).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Kenosha police ending Flock contract, moving to Axon",
+          "url": "https://fox6now.com/news/kenosha-police-ending-flock-contract-moving-axon",
+          "date": "2026-09-02",
+          "verified": true
+        },
+        {
+          "title": "Kenosha says farewell to Flock, drops license plate readers citing security, misuse and data sharing concerns",
+          "url": "https://www.tmj4.com/about-us/lighthouse/kenosha-says-farewell-to-flock-drops-license-plate-readers-citing-security-misuse-and-data-sharing-concerns",
+          "date": "2026-09-04",
+          "verified": true
+        },
+        {
+          "title": "Flock out, Axon in: Kenosha police lead surveillance tech shift",
+          "url": "https://fox6now.com/news/kenosha-police-flock-axon-surveillance",
+          "date": "2026-09-09",
+          "verified": true
+        },
+        {
+          "title": "Meet the New Boss, Same as the Old Boss: Kenosha Doubles Down on Big Brother, Replacing Flock With Axon",
+          "url": "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon/",
+          "date": "2026-09-05",
+          "verified": false
+        }
+      ],
+      "state": "WI",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Sheboygan Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 15,
+      "city": "Sheboygan",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Sheboygan County",
+      "decision_date": "2026-09-08",
+      "decision_summary": "The Sheboygan Common Council voted unanimously on Sept 8, 2026 to end the city's Flock Safety contract after police learned Flock had offered to sell the Public Works Department up to five years of anonymized traffic data from the city's 15 cameras without the police department's knowledge. Police had already covered the cameras; Chief Kurt Zempel said the company breached contract terms and undermined trust.",
+      "id": "wi-sheboygan-pd",
+      "notes": "Contract termination effective at end of 2026. Agreement was a two-year deal approved end of 2023 that had auto-renewed; it stated Flock cannot own or sell customer data and retains data 30 days. Annual cost not reported. Terminal citations below verified tier: 2 on-point verified publishers (Sheboygan Press + FOX6); the htrnews article covers Manitowoc, not Sheboygan.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Sheboygan chief: Flock exit may limit solved crimes but preserve trust",
+          "url": "https://www.sheboyganpress.com/story/news/local/2026/09/08/sheboygan-flock-safety-cameras-contract-ended-data-dispute/91663620007/",
+          "date": "2026-09-08",
+          "verified": true
+        },
+        {
+          "title": "Sheboygan Common Council votes to end Flock camera contract",
+          "url": "https://fox6now.com/news/sheboygan-common-council-votes-end-flock-camera-contract",
+          "date": "2026-09-09",
+          "verified": true
+        }
+      ],
+      "state": "WI",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Oshkosh Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Oshkosh",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Winnebago County",
+      "decision_date": "2026-04-22",
+      "decision_summary": "Less than 24 hours after the Common Council approved a one-year renewal, it voted 7-0 on April 22, 2026 to rescind it. Police Chief Dean Smith told the council Flock representatives had misrepresented system capabilities at the April 21 meeting, specifically denying the cameras could create vehicle 'heat maps' and that federal agencies could access data without OPD's knowledge. The city said it would form an advisory committee to vet a future ALPR vendor.",
+      "id": "wi-oshkosh-pd",
+      "notes": "Proposed two-year $163,500 figure was reduced to a one-year deal before rescission; no reported actual annual cost. Camera count not reported in sources. Terminal citations below verified tier: single on-point verified publisher (The Northwestern; two articles, one publisher).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Oshkosh moves to undo Flock contract after OPD raises concerns",
+          "url": "https://www.thenorthwestern.com/story/news/local/oshkosh/2026/04/22/oshkosh-flock-cameras-contract-rescind-resolution-after-renewal-vote/89737022007/",
+          "date": "2026-04-22",
+          "verified": true
+        },
+        {
+          "title": "Flock Safety suspended by Winnebago County law enforcement",
+          "url": "https://www.thenorthwestern.com/story/news/local/oshkosh/2026/09/04/winnebago-county-flock-safety-license-plate-readers-suspended/91614453007/",
+          "date": "2026-09-04",
+          "verified": true
+        },
+        {
+          "title": "WLUK FOX 11 News: Oshkosh council votes 7-0 to rescind Flock agreement (TikTok)",
+          "url": "https://www.tiktok.com/@wlukfox11/video/7631973302319320333",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "WI",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Green Bay Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 42,
+      "city": "Green Bay",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Brown County",
+      "decision_date": "2026-09-14",
+      "decision_summary": "Green Bay's mayor and police chief announced Sept 14, 2026 the city will keep its Flock cameras under a new ALPR policy: data retention cut from 30 days to 7, every search requires a case/call number and stated reason, limited data sharing, monthly public reports, and monthly audits. First ALPR installed 2022; 42 cameras active.",
+      "id": "wi-green-bay-pd",
+      "notes": "Camera count 42 (Sept 2026 reporting) vs 43 in Atlas as of April 2024. Decision was explicitly to retain, amid statewide cancellations.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Green Bay keeps Flock cameras amid statewide backlash",
+          "url": "https://www.tmj4.com/news/local-news/green-bay-keeps-flock-cameras-amid-statewide-backlash",
+          "date": "2026-09-14",
+          "verified": true
+        },
+        {
+          "title": "Green Bay Police will revise camera policies, but not remove Flock",
+          "url": "https://www.greenbaypressgazette.com/story/news/local/2026/09/14/green-bay-police-will-keep-flock-cameras-revise-camera-policies/91657879007/",
+          "date": "2026-09-14",
+          "verified": true
+        },
+        {
+          "title": "De Pere to end use of ALPRs, Green Bay to continue with updated policy - Press Times",
+          "url": "https://www.gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891",
+          "date": "2026-09-19",
+          "verified": true
+        }
+      ],
+      "state": "WI",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/green-bay-wi-pd"
+    },
+    {
+      "agency": "Milwaukee Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 27,
+      "city": "Milwaukee",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Milwaukee County",
+      "decision_date": "2026-08-31",
+      "decision_summary": "Milwaukee chose not to cancel. On Aug 31, 2026 Mayor Cavalier Johnson and MPD announced tightened policies after officer-misuse investigations (three officers investigated, including stalking of a romantic partner): only supervisors may access Flock, use limited to serious Part I crimes/missing persons, no data sharing with outside or federal agencies, and immigration-enforcement queries expressly prohibited. The Common Council gave MPD until Sept 30 to answer on safeguards; cancellation was raised as a possibility.",
+      "id": "wi-milwaukee-pd",
+      "notes": "Camera count 27 is from Atlas (Aug 2023) with plans for 8 more; current count not confirmed. Separate from Milwaukee County Sheriff's Office and county-level funding decisions.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "What to know about Flock cameras and their use in Milwaukee",
+          "url": "https://www.jsonline.com/story/news/local/milwaukee/2026/09/04/what-to-know-about-flock-cameras-and-how-milwaukee-police-use-them/91582638007/",
+          "date": "2026-09-04",
+          "verified": true
+        },
+        {
+          "title": "Milwaukee Flock camera policy changes; Fire and Police Commission to discuss",
+          "url": "https://fox6now.com/news/milwaukee-fire-police-commission-host-public-comment-flock",
+          "date": "2026-09-17",
+          "verified": true
+        },
+        {
+          "title": "Milwaukee Mayor Announces Changes To Flock System Usage",
+          "url": "https://949tnt.iheart.com/content/2026-09-01-milwaukee-mayor-announces-changes-to-flock-system-usage/91919882007/",
+          "date": "2026-09-01",
+          "verified": true
+        }
+      ],
+      "state": "WI",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Fond du Lac County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Fond du Lac",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Fond du Lac County",
+      "decision_date": "2026-09-04",
+      "decision_summary": "Sheriff Ryan Waldschmidt signed a joint statement with the Fond du Lac, Waupun, Ripon, and North Fond du Lac police chiefs announcing they are 'fully discontinuing use of Flock systems effective immediately,' with search access ended and covers going over every lens. The stated cause: learning that Flock search data, including active-investigation records, had been disclosed to the public via open-records requests in other states, so the agencies could no longer guarantee how data is handled once it leaves them.",
+      "id": "wi-fond-du-lac-county-sheriff",
+      "notes": "The same statement covers four municipal PDs (Fond du Lac, North Fond du Lac, Ripon, Waupun) listed below as leads; I did not create separate records since camera counts and contract terms were not reported per agency. Agencies left a door open to reconsider ALPR with stronger safeguards. Terminal citations below verified tier: 2 on-point verified publishers (TMJ4 + jsonline wave article); ACLU-WI and heartlandpost are lead-class.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Fond du Lac law enforcement agencies discontinue use of Flock cameras",
+          "url": "https://www.tmj4.com/news/fond-du-lac-county/fond-du-lac-county-law-enforcement-agencies-discontinue-flock-camera-use-effective-immediately",
+          "date": "2026-09-03",
+          "verified": true
+        },
+        {
+          "title": "A dozen Wisconsin police agencies announce Flock suspensions",
+          "url": "https://www.jsonline.com/story/news/crime/2026/09/04/wisconsin-police-agencies-are-suspending-flock-use-over-data-concerns/91616870007/",
+          "date": "2026-09-04",
+          "verified": true
+        },
+        {
+          "title": "Flock Off: Wisconsinites Continue the Fight Against Constant Surveillance",
+          "url": "https://www.aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance/",
+          "date": "2026-09-21",
+          "verified": false
+        },
+        {
+          "title": "Multiple Wisconsin Counties Pull the Plug on Flock Cameras",
+          "url": "https://heartlandpost.com/multiple-wisconsin-counties-pull-the-plug-on-flock-cameras/",
+          "date": "2026-09-04",
+          "verified": false
+        }
+      ],
+      "state": "WI",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Memphis Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Memphis",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Shelby County",
+      "decision_date": null,
+      "decision_summary": "MPD added Flock Safety license plate readers in 2021 (Commercial Appeal, WREG). No cancellation has been reported; a September 2025 Collierville grant application and an April 2026 town memo both describe the Flock ALPR system as currently in use by the City of Memphis Police Department.",
+      "id": "tn-memphis-pd",
+      "notes": "No camera count or contract dates were publicly verified. Recent status is inferred from absence of termination reporting plus third-party municipal documents referencing current use. A Sept 2026 Commercial Appeal article documents ~1,000 Flock cameras across the Memphis metro (DeFlock data, all owners combined), not MPD-specific.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Collierville CCPA donation / LPR grant memo",
+          "url": "https://collierville.granicus.com/services/legistar/download/pdf/4055509/FY26_CCPA__20_000.pdf",
+          "date": "2026-04-17",
+          "verified": true
+        },
+        {
+          "title": "Flock cameras are in Memphis. See where, if your plate has been searched",
+          "url": "https://www.commercialappeal.com/story/news/local/2026/08/18/flock-cameras-memphis-where-how-to-look-up-searches/91340875007/",
+          "date": "2026-08-18",
+          "verified": true
+        }
+      ],
+      "state": "TN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Shelby County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Memphis",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Shelby County",
+      "decision_date": null,
+      "decision_summary": "Flock Safety's own case study states the Sheriff's Office has used Flock LPR technology since 2018, beginning with a 45-camera pilot, and the agency maintains a live Flock transparency portal.",
+      "id": "tn-shelby-county-so",
+      "notes": "Atlas (lead only) reported 169 cameras as of April 2024 and 30-day retention; neither figure was independently verified from a fetched source, so both are left null. Vendor blog describes access to 'hundreds of Falcon cameras' via shared regional network.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Shelby County Sheriff Cuts Crime 10% with LPR Cameras",
+          "url": "https://www.flocksafety.com/blog/shelby-county-policing-technology",
+          "date": "2021-04-01",
+          "verified": false
+        },
+        {
+          "title": "Shelby County TN SO Transparency Portal",
+          "url": "https://transparency.flocksafety.com/shelby-county-tn-so",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "TN",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/shelby-county-tn-so"
+    },
+    {
+      "agency": "Germantown Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Germantown",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Shelby County",
+      "decision_date": null,
+      "decision_summary": "Germantown PD began a partnership with Flock Safety for ALPR installation in 2020 (Memphis Commercial Appeal). A January 8, 2024 Millington, TN city resolution names the Germantown Police Department among local agencies using Flock equipment; no termination has been reported.",
+      "id": "tn-germantown-pd",
+      "notes": "The 2020 Commercial Appeal article is paywalled and could not be re-read directly; content relied on as originally linked by Atlas. Numerous Ohio 'Germantown' search hits were explicitly excluded as a different state.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Resolution 3-2024: Approving Contract with Flock Group Inc",
+          "url": "https://www.millingtontn.gov/AgendaCenter/ViewFile/Item/4271?fileID=5051",
+          "date": "2024-01-08",
+          "verified": true
+        }
+      ],
+      "state": "TN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Johnson City Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 145,
+      "city": "Johnson City",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": "2025-07-17",
+      "county": "Washington County",
+      "decision_date": "2025-07-17",
+      "decision_summary": "On July 17, 2025 the Johnson City Board of Commissioners approved a 10-year agreement with Flock Group Inc. for the 'Safe City' platform: 145 license plate readers, 145 pan/tilt/zoom cameras, gunshot detection, two mobile security trailers and real-time crime center software. Contract total $8,063,000, procured via OMNIA cooperative contract #RS250203; year 1 funded $300,000 from the Drug Fund.",
+      "id": "tn-johnson-city-pd",
+      "notes": "cameras=145 counts license plate readers only (145 separate PTZ cameras not ALPRs, excluded). No annualized cost published; $8,063,000 is the 10-year contract total, not an annual figure. Agency confirmed still active: its Flock transparency portal was updated July 26, 2026, and the city imposed new data-sharing restrictions in Aug-Sep 2026 (patrol search disabled, out-of-state sharing cut, Nationwide Lookup disabled) without ending the contract. The Atlas '10-year/145-camera' lead is fully confirmed by primary records.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "City Commission Agenda Summary: Flock Group Inc. dba Flock Safety, Flock Safety Platform: Safe City Project",
+          "url": "https://johnsoncitytn.civicweb.net/document/322557/Flock%20Group%20Inc.%20dba%20Flock%20Safety_Flock%20Safety%20.pdf?handle=FFC6987687084379BCCF1920802EF93D",
+          "date": "2025-07-17",
+          "verified": true
+        },
+        {
+          "title": "Safe City Project (Flock Safety) | Johnson City, TN",
+          "url": "https://www.johnsoncitytn.org/services/police/safe_city_project/index.php",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Flock cameras divide Tennessee governments, residents over privacy as some end their contracts",
+          "url": "https://www.route-fifty.com/public-safety/2026/09/flock-cameras-divide-tennessee-governments-residents-over-privacy-some-end-their-contracts/415832/",
+          "date": "2026-09-07",
+          "verified": true
+        },
+        {
+          "title": "Johnson City TN PD Transparency Portal",
+          "url": "https://transparency.flocksafety.com/johnson-city-tn-pd",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "TN",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/johnson-city-tn-pd"
+    },
+    {
+      "agency": "Murfreesboro Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Murfreesboro",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": "2025-08-01",
+      "county": "Rutherford County",
+      "decision_date": null,
+      "decision_summary": "City first contracted effective Aug 1, 2025 for 15 LPR cameras ($128,250 over 3 years). A Sept 19, 2025 amendment added 17 standalone LPRs, 8 dual-camera LPR bundles, 1 combined LPR/video unit, 23 PTZ and 2 fixed video cameras ($517,832.70 over 3 years). The city council voted to renew the Flock contract in June 2026 despite resident opposition; the city reports operating 'over 100' license plate readers.",
+      "id": "tn-murfreesboro-pd",
+      "notes": "No single annualized cost published. Combined 2025 commitments total $646,082.70 over three years ($42,750/yr base + $195,515.10 yr1 / $161,158.80 yr2-3 amendment); do not reduce to one annual number. June 2026 renewal decision date is month-precision only. BoroPulse reporting cites city contract copies.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Flock Cameras Raise Privacy Questions, Murfreesboro Now Operates Over 100 License Plate Readers",
+          "url": "https://boropulse.com/2026/08/flock-cameras-raise-privacy-questions-murfreesboro-now-operates-over-100-license-plate-readers-documenting-the-movement-of-vehicles/",
+          "date": "2026-08-30",
+          "verified": true
+        },
+        {
+          "title": "Council approves expanded park cameras, Axon body-camera amendment and pedestrian/traffic safety grants",
+          "url": "https://citizenportal.ai/articles/7086489/Tennessee/Council-approves-expanded-park-cameras-Axon-body-camera-amendment-and-pedestriantraffic-safety-grants",
+          "date": "2025-09-18",
+          "verified": false
+        }
+      ],
+      "state": "TN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Knox County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 143,
+      "city": "Knoxville",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Knox County",
+      "decision_date": "2026-08-31",
+      "decision_summary": "On Aug 31, 2026 the Knox County Commission unanimously approved emergency ordinance O-26-8-102, banning county purchase, leasing, installation or operation of fixed ALPRs and requiring removal of 143 KCSO Flock cameras within 30 days. Earlier, on Aug 12, 2026, Mayor Glenn Jacobs declared the underlying 2020 Flock contract invalid and issued a non-renewal notice, finding batched KCSO purchases exceeding the $100,000 approval threshold.",
+      "id": "tn-knox-county-so",
+      "notes": "TERMINAL CLAIM, VERIFIED tier (4+ independent verified citations: WVLT, Knox News, WUOT). Commission unanimously banned fixed ALPRs on 2026-08-31 and ordered ~143 cameras removed. As of 2026-09-17 nearly all cameras were down; Flock missed the Sept 16 removal deadline (now expected Oct 7) and the county installed privacy shields in the interim. County budget shows no Flock line item for 2027.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Knox County Sheriff's Office agreement with Flock may be invalid, letter from mayor says",
+          "url": "https://www.wvlt.tv/2026/08/24/knox-county-sheriffs-office-agreement-with-flock-may-be-invalid-letter-mayor-says/",
+          "date": "2026-08-24",
+          "verified": true
+        },
+        {
+          "title": "KCSO's deal with Flock Safety lasts 10 years. The department won't share its plans",
+          "url": "https://www.knoxnews.com/story/news/politics/2026/07/31/knox-county-sheriffs-office-deal-with-flock-safety-is-for-10-years/91075175007/",
+          "date": "2026-07-31",
+          "verified": true
+        },
+        {
+          "title": "Knox County Banned Fixed Plate Readers. The New Surveillance Ordinance Goes Much Further.",
+          "url": "https://newsroom.theredemptionproject.news/p/knox-county-banned-fixed-plate-readers",
+          "date": "2026-09-01",
+          "verified": false
+        },
+        {
+          "title": "Knox County Commission passes emergency ordinance to remove Flock cameras; here is what happens next",
+          "url": "https://www.wvlt.tv/2026/09/01/knox-county-commission-passes-emergency-ordinance-remove-flock-cameras-heres-what-happens-next/",
+          "date": "2026-09-01",
+          "verified": true
+        },
+        {
+          "title": "Knox County joins cities nationwide in removing Flock cameras",
+          "url": "https://www.wuot.org/news/2026-09-02/knox-county-joins-cities-nationwide-in-removing-flock-cameras",
+          "date": "2026-09-02",
+          "verified": true
+        },
+        {
+          "title": "Knox County to install plastic covers after Flock says it will miss deadline to take cameras down",
+          "url": "https://www.wvlt.tv/2026/09/10/knox-county-mayor-reveals-solution-after-flock-says-it-will-miss-deadline-take-down-cameras/",
+          "date": "2026-09-10",
+          "verified": true
+        },
+        {
+          "title": "After the deadline for removal passed, here is how many Flock cameras remain",
+          "url": "https://www.knoxnews.com/story/news/local/2026/09/17/nearly-all-flock-cameras-in-knox-county-have-been-taken-down/91790190007/",
+          "date": "2026-09-17",
+          "verified": true
+        }
+      ],
+      "state": "TN",
+      "status": "cancelled",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Lexington Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 317500,
+      "cameras": 125,
+      "city": "Lexington",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Fayette County",
+      "decision_date": "2024-04-25",
+      "decision_summary": "Council gave final approval April 25, 2024 to a five-year lease extension for 100 Flock LPR cameras (year 1 $352,404.11 incl. implementation, then $317,500/yr; five-year total $1,622,404.11). The program began as a 25-camera free pilot in March 2022, with 75 more acquired Dec 2022. The city reports 125 cameras in use as of Aug 2026; mayor announced an independent review panel Sept 4, 2026 but the contract remains in effect.",
+      "id": "ky-lexington-pd",
+      "notes": "Only council member Tayna Fogle voted against the 2024 extension. FY25 budget allocated $75,000 for 25 additional cameras, bringing total to 125. WEKU/Aug 2026: 125 cameras citywide per lexingtonky.gov; contract 'dates back to 2022'. Independent panel was to be established by end of Sept 2026; no cancellation decision as of research date. Annual cost field = recurring yearly rate; year 1 was higher. CAUTION: CivicLex article dated 2026-04-29 reports an April 25, 2024 approval; date mismatch unexplained, re-fetch before merge.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Council Approves Five-Year Lease Extension for Flock Cameras",
+          "url": "https://civiclex.org/weekly-posts/council-approves-five-year-lease-extension-for-flock-cameras",
+          "date": "2026-04-29",
+          "verified": true
+        },
+        {
+          "title": "Lexington residents push back against Flock cameras at council meeting",
+          "url": "https://www.weku.org/lexington-richmond/2026-08-28/lexington-residents-push-back-against-flock-cameras-at-council-meeting",
+          "date": "2026-08-28",
+          "verified": true
+        },
+        {
+          "title": "As outcry grows, Lexington mayor announces independent review of city's Flock cameras",
+          "url": "https://www.weku.org/lexington-richmond/2026-09-04/as-outcry-grows-lexington-mayor-announces-independent-review-of-citys-flock-cameras",
+          "date": "2026-09-04",
+          "verified": true
+        }
+      ],
+      "state": "KY",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Elizabethtown Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 100000,
+      "cameras": 40,
+      "city": "Elizabethtown",
+      "confidence": "high",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Hardin County",
+      "decision_date": "2023-12-08",
+      "decision_summary": "Signed Flock order form (primary record): 60-month initial term, 40 Falcon cameras, $100,000 annual recurring ($114,400 year 1 with implementation), contract total $514,400, 30-day retention, executed 12/8/2023 by Chief Jeremy Thompson and Flock General Counsel. Chief Thompson publicly defended the cameras before Kentucky lawmakers in Sept 2026.",
+      "id": "ky-elizabethtown-pd",
+      "notes": "Term 'commences upon first installation and validation of Flock Hardware', so exact contract_start unknown; used signature date as decision_date. Atlas summary said 'began using in 2022'; this signed 2023 contract may be an expansion or renewal of an earlier agreement. Annual cost = recurring subtotal on the order form. DeFlock reports 73 cameras mapped in Elizabethtown vs 40 on this contract; mapped counts may include other operators/private cameras.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "DocuSign Envelope ID AC67427B-D6B8-4536-AC7B-C32EE200C444: Flock Safety + KY - Elizabethtown PD (signed order form and MSA)",
+          "url": "https://portal.ksba.org/public/Meeting/Attachments/DisplayAttachment.aspx?AttachmentID=784808",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Warrants for Flock searches? Kentucky lawmakers may add more rules for public cameras",
+          "url": "https://kentuckylantern.com/2026/09/03/warrants-for-flock-searches-kentucky-lawmakers-may-add-more-rules-for-public-cameras/",
+          "date": "2026-09-03",
+          "verified": true
+        }
+      ],
+      "state": "KY",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Oldham County Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "La Grange",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Oldham County",
+      "decision_date": null,
+      "decision_summary": "Oldham County Fiscal Court accounts payable for the July 21, 2026 meeting show vendor [FLO005] FLOCK SAFETY, invoice INV-98764 dated 7/09/2026, 'FLOCK SAFETY LPR', $12,000 paid. The Oldham Era (Jan 2026) refers to 'the county's Flock cameras' with a 30-day retention period.",
+      "id": "ky-oldham-county-pd",
+      "notes": "$12,000 payment is a single reported invoice, not a confirmed annual figure; cameras and billing period unknown, so annual_cost_usd left null (no camera-count x rate inference per methodology). Distinct from La Grange PD (city PD, Atlas: 4 cameras installed 2023) and Crestwood city (4 + 4 more) - do not merge. CAUTION: weakest high-confidence call in the set; primary source is a citizen-run mirror (ocdeez.github.io) of county AP records.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Oldham County Fiscal Court accounts payable, July 21, 2026 regular meeting",
+          "url": "https://ocdeez.github.io/magistrate-monitor/archive/files/july-21-2026-regular-meeting/2026-07-20/all-in-one-document.pdf",
+          "date": "2026-07-21",
+          "verified": false
+        },
+        {
+          "title": "February is but in Oldham County (Oldham Era legal notices)",
+          "url": "https://kypublicnotices.newzgroup.com/KYLegals/2026/70229-2026-01-29_1004.pdf",
+          "date": "2026-01-29",
+          "verified": true
+        }
+      ],
+      "state": "KY",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "University of Kentucky Police Department",
+      "agency_type": "university",
+      "annual_cost_usd": null,
+      "cameras": 15,
+      "city": "Lexington",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Fayette County",
+      "decision_date": null,
+      "decision_summary": "University of Kentucky records obtained by the Kentucky Center for Investigative Reporting show campus police maintain 15 Flock license plate readers, from the Historic South Hill neighborhood down to Kroger Field, after UK reversed an initial records denial following an AG appeal.",
+      "id": "ky-university-kentucky-pd",
+      "notes": "Atlas said 14 as of Sept 2025; KyCIR's Jan 2026 records show 15. Camera locations were disclosed after KyCIR appealed to the KY attorney general. Flock transparency portal URL returned HTTP 403 when fetched; listed for reference.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "KyCIR Report: U of L, UK use Flock license plate readers to monitor drivers. Here's where their cameras are.",
+          "url": "https://www.louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are/",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "KY",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/university-of-kentucky-ky-pd"
+    },
+    {
+      "agency": "Jeffersontown Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Jeffersontown",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Jefferson County",
+      "decision_date": null,
+      "decision_summary": "KyCIR confirmed Jeffersontown PD is a Flock Safety agency and that the department provided records showing its Flock camera locations (early 2026). Flock's transparency portal reportedly lists 32 cameras as of Sept 2025, but the portal returned HTTP 403 and could not be fetched, so the count is left unverified.",
+      "id": "ky-jeffersontown-pd",
+      "notes": "Camera count of 32 comes only from the Atlas summary of the vendor transparency portal; do not use until verified. Portal URL included in transparency_portal field for reference.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "KyCIR Report: U of L, UK use Flock license plate readers to monitor drivers. Here's where their cameras are.",
+          "url": "https://www.louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are/",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "KY",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/jeffersontown-ky-pd"
+    },
+    {
+      "agency": "Monongalia County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 20,
+      "city": "Morgantown",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Monongalia County",
+      "decision_date": null,
+      "decision_summary": "In November 2025 the Monongalia County Commission approved Sheriff Todd Forbes' request to spend up to $180,000 of opioid settlement funds over three years for up to 20 Flock ALPR cameras. The system is operational: the sheriff's office credits a Flock camera with locating a missing 9-year-old in Aug 2026, and the commission rejected resident calls to cancel the program in July 2026.",
+      "id": "wv-monongalia-county-so",
+      "notes": "Approval month (Nov 2025) known but day unknown, so decision_date null per methodology. Annual cost not reported as a yearly figure; $180,000 is the three-year total - do not derive $60k/yr as reported. Atlas 'as of July 2026' is consistent. One WVU student was arrested ~Aug 2026 for vandalizing a Flock camera.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Monongalia County Sheriff's Office Says Flock Camera Helped Locate Missing 9-Year-Old",
+          "url": "https://www.connect-clarksburg.com/monongalia-county-sheriffs-office-says-flock-camera-helped-locate-missing-9-year-old/",
+          "date": null,
+          "verified": false
+        },
+        {
+          "title": "Residents push back on Mon County Flock Camera use",
+          "url": "https://www.thedaonline.com/news/morgantown/residents-push-back-on-mon-county-flock-camera-use/article_1b6f1749-9816-49ca-9da3-2831a405c329.html",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "License to Track: Lawmakers question Flock Safety over data security and privacy concerns",
+          "url": "https://wvpress.org/breaking-news/license-to-track-lawmakers-question-flock-safety-over-data-security-and-privacy-concerns/",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "WV",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Marion County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": 41,
+      "city": "Fairmont",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Marion County",
+      "decision_date": null,
+      "decision_summary": "Times West Virginian (~late Jul 2026) reports the Marion County Sheriff's Office operates 41 Flock Safety license plate reader cameras; Sheriff Roger Cunningham publicly defended continued use, noting 30-day retention, VPN+2FA access, and termination warnings for misuse.",
+      "id": "wv-marion-county-so",
+      "notes": "Flock transparency portal (inaccessible, HTTP 403) reportedly listed 20 cameras as of Sept 2025; the sheriff's office stated 41 in ~July 2026 - used the newer, fetched figure. Camera deployment postdates a 2022 shooting investigation cited as motivation; no contract date or cost found.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Marion County Sheriff's Office dispels myths about Flock cameras",
+          "url": "https://wvpress.org/breaking-news/marion-county-sheriffs-office-dispels-myths-about-flock-cameras/",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "WV",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/marion-county-wv-so"
+    },
+    {
+      "agency": "Birmingham Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Birmingham",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Jefferson County",
+      "decision_date": null,
+      "decision_summary": "City Council approved an amendment in July 2025 to the Alabama Power surveillance-camera agreement, adding 100 cameras (including Flock LPR cameras) to the 330 from the 2024 deal. Combined amended agreement totals $9.7M over a five-year arrangement, with an estimated $2M/year cost per Council President O'Quinn (GovTech/TNS, alpolitics.com).",
+      "id": "al-birmingham-pd",
+      "notes": "Camera count nulled: the 430 figure is the combined fixed-camera fleet under the Alabama Power agreement (330 from 2024 + 100 added 2025); the mix includes Flock LPRs plus other camera types and the Flock-only share is not separated. Cost nulled: $2M/yr is an estimate for the bundled agreement (installation, maintenance, software, connectivity, power for ALL camera types), not a Flock ALPR figure. Decision date month-precision only (July 2025).",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "With $9.7M Pact, Birmingham, Ala., Adds 100 Security Cameras",
+          "url": "https://www.govtech.com/public-safety/with-9-7m-pact-birmingham-ala-adds-100-security-cameras",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "City of Birmingham approves amendment to camera agreement with Alabama Power, expands network by 100 cameras",
+          "url": "https://europesays.com/2100775/",
+          "date": "2025-07-08",
+          "verified": false
+        },
+        {
+          "title": "Birmingham surveillance camera expansion cost report",
+          "url": "https://alpolitics.com/",
+          "date": null,
+          "verified": true
+        },
+        {
+          "title": "Birmingham approves 3 Flock Safety cameras trial summary",
+          "url": "https://citizenportal.ai/",
+          "date": null,
+          "verified": false
+        }
+      ],
+      "state": "AL",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Huntsville Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Huntsville",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Madison County",
+      "decision_date": null,
+      "decision_summary": "HPD confirmed to WAFF 48 News in August 2026 that Flock cameras are in active use: fewer than 10% of officers have access, searches require case numbers, audits occur daily, and 28 stolen vehicles were recovered.",
+      "id": "al-huntsville-pd",
+      "notes": "Active use firmly confirmed by WAFF reporting (Aug and Sep 2026 articles, including a Sept 2026 community forum on the cameras). Camera count of 2 comes from the EFF Atlas lead (April 2024) and is not independently verified; nulled per methodology (Atlas is a lead, not a citation). No cost, contract start/end, or renewal date found in fetched sources.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Huntsville police detail privacy safeguards for Flock cameras",
+          "url": "https://gray-waff-prod.gtv-cdn.com/2026/08/27/huntsville-police-detail-privacy-safeguards-flock-cameras/",
+          "date": "2026-08-27",
+          "verified": true
+        },
+        {
+          "title": "Huntsville Flock camera forum put access, oversight questions before police",
+          "url": "https://gray-waff-prod.gtv-cdn.com/2026/09/16/huntsville-flock-camera-forum-put-access-oversight-questions-before-police/",
+          "date": "2026-09-16",
+          "verified": true
+        },
+        {
+          "title": "Huntsville police detail privacy safeguards for Flock cameras",
+          "url": "https://citizenportal.ai/articles/6169089/Huntsville/Madison-County/Alabama/Huntsville-police-detail-privacy-safeguards-for-Flock-cameras",
+          "date": "2026-08-28",
+          "verified": false
+        }
+      ],
+      "state": "AL",
+      "status": "active",
+      "transparency_portal": "https://transparency.flocksafety.com/huntsville-al-pd"
+    },
+    {
+      "agency": "Jefferson County Sheriff's Office",
+      "agency_type": "sheriff",
+      "annual_cost_usd": null,
+      "cameras": null,
+      "city": "Birmingham",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Jefferson County",
+      "decision_date": null,
+      "decision_summary": "The Sheriff's Office published an official statement describing FLOCK cameras added in Center Point and deputies recovering two stolen vehicles in one day (August 2) through the system.",
+      "id": "al-jefferson-county-so",
+      "notes": "Official agency statement confirms active operational use of Flock. WBRC reporting from Feb 2021 described JCSO use, indicating the deployment dates to at least 2021. No camera count, cost, contract start/end, or renewal date found in fetched sources.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "FLOCK Cameras in Center Point Prove Effective",
+          "url": "https://jeffcosheriffal.com/flock-cameras-in-center-point-prove-effective/",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "AL",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Decatur Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 40,
+      "city": "Decatur",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Morgan County",
+      "decision_date": null,
+      "decision_summary": "WAFF reported in July 2026 that more than 40 Flock cameras were operating in Decatur and had been in place for about three years. The Decatur Daily (March 2025) confirmed DPD uses Flock cameras to solve crimes.",
+      "id": "al-decatur-pd",
+      "notes": "WAFF phrasing is 'more than 40'; cameras=40 is the reported lower bound, July 2026. The EFF Atlas lead lists 44 as of Sept 2025 (unverified, not used). No cost, contract start/end, or renewal date found. Not to be confused with Decatur, Illinois records or Decatur AL's separate Axon contract.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Decatur residents push back against Flock cameras",
+          "url": "https://gray-waff-prod.gtv-cdn.com/2026/07/31/decatur-residents-push-back-against-flock-cameras/",
+          "date": "2026-07-31",
+          "verified": true
+        },
+        {
+          "title": "Decatur police officer under investigation for alleged misuse of Flock safety cameras",
+          "url": "https://gray-waff-prod.gtv-cdn.com/2026/09/15/decatur-officer-reassigned-under-investigation-license-plate-reader-misuse/",
+          "date": "2026-09-15",
+          "verified": true
+        },
+        {
+          "title": "License Plate Readers Help Police in Alabama Cities Solve Crimes",
+          "url": "https://www.govtech.com/public-safety/license-plate-readers-help-police-in-alabama-cities-solve-crimes",
+          "date": null,
+          "verified": true
+        }
+      ],
+      "state": "AL",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Ridgeland Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": null,
+      "cameras": 20,
+      "city": "Ridgeland",
+      "confidence": "medium",
+      "contract_end": null,
+      "contract_start": null,
+      "county": "Madison County",
+      "decision_date": "2021-10-19",
+      "decision_summary": "Ridgeland Board of Aldermen approved an agreement with Flock Safety on 2021-10-19 adding 12 ALPR cameras to the 8 the department already had from its initial 2020 partnership, for $33,000 for the new cameras.",
+      "id": "ms-ridgeland-pd",
+      "notes": "Camera count (20) reflects the 2021 authorized total (8 + 12); current fleet size is not established and may be larger. The $33,000 was the expansion purchase figure, not necessarily recurring annual cost, so annual_cost_usd is left null. 2026 reporting (Clarion Ledger camera map; EFF public-records report) shows Flock cameras still active in the Ridgeland/Jackson area. Per-camera pricing of $2,500 plus a $250 implementation fee was reported but annual recurring cost was not confirmed.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Ridgeland adds 12 license plate reader cameras",
+          "url": "https://thebeatofthecapital.com/2021/10/26/ridgeland-adds-12-license-plate-reader-cameras/",
+          "date": "2021-10-26",
+          "verified": true
+        },
+        {
+          "title": "Where Flock cameras are located in Jackson MS: Can license plate readers issue tickets?",
+          "url": "https://www.clarionledger.com/story/news/2026/09/01/where-flock-cameras-are-located-in-jackson-ms-can-license-plate-readers-issue-tickets/91338937007/",
+          "date": "2026-09-01",
+          "verified": true
+        },
+        {
+          "title": "Public Records & Research",
+          "url": "https://www.eff.org/pages/public-records-research",
+          "date": "2026-04-17",
+          "verified": false
+        }
+      ],
+      "state": "MS",
+      "status": "active",
       "transparency_portal": null
     }
   ]

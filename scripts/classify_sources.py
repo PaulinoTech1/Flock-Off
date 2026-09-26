@@ -45,8 +45,52 @@ VERIFIED_NEWS = {
     "cvillerightnow.com",
     # Broadcaster CDN hosts (content is republished TV-station reporting).
     "gray-whns-prod.gtv-cdn.com",
+    "gray-waff-prod.gtv-cdn.com",  # WAFF 48 Huntsville (Gray)
+    "gray-wbay-prod.gtv-cdn.com",  # WBAY Green Bay (Gray)
+    "gray-wpta-prod.gtv-cdn.com",  # WPTA Fort Wayne (Gray)
     "cmg-cmg-tv-10070-prod.cdn.arcpublishing.com",
     "gmg-wsls-prod.cdn.arcpublishing.com",
+    # Wave 1 additions (2026-09-26), reviewed in git.
+    "949tnt.iheart.com",  # iHeart; precedent: other iheart.com hosts
+    "star64.tv",  # WSTR Star 64 Cincinnati (Sinclair)
+    "wncy.com",  # WNCY Green Bay (Midwest Communications)
+    "wvlt.tv",  # WVLT Knoxville (Gray)
+    "wuot.org",  # WUOT Knoxville (NPR)
+    "weku.org",  # WEKU Richmond KY (NPR)
+    "wrn.com",  # Wisconsin Radio Network
+    "wcsufm.org",  # WCSU-FM 88.9 Wilberforce OH, NPR member station (verified 2026-09-26)
+    "wcia.com",  # WCIA Champaign (Nexstar)
+    "fox11online.com",  # WLUK Fox 11 Green Bay
+    "fox6now.com",  # WITI Fox 6 Milwaukee
+    "tmj4.com",  # TMJ4 Milwaukee (Scripps)
+    "indystar.com", "jsonline.com", "jconline.com",  # Gannett
+    "beaconjournal.com", "cincinnati.com", "dispatch.com",
+    "courierpress.com", "postcrescent.com", "sheboyganpress.com",
+    "thenorthwestern.com", "greenbaypressgazette.com", "hollandsentinel.com",
+    "htrnews.com", "mansfieldnewsjournal.com", "clarionledger.com",
+    "commercialappeal.com", "clevescene.com",  # alt-weekly
+    "knoxnews.com",  # Knox News (Gannett)
+    "cnhinews.com",  # CNHI News Indiana
+    "fitchburgstar.com", "gopresstimes.com",  # WI local papers
+    "akronjewishnews.com",  # community paper
+    "shepherdexpress.com",  # Milwaukee alt-weekly
+    "thebeatofthecapital.com",  # Jackson MS radio news
+    "theindianalawyer.com",  # legal news
+    "route-fifty.com",  # GovExec
+    "indianacapitalchronicle.com", "kentuckylantern.com",  # States Newsroom
+    "ipm.org",  # Indiana Public Media (NPR)
+    "signalakron.org", "civiclex.org", "mirrorindy.org",  # nonprofit newsrooms
+    "capitolcitynow.com",  # Springfield IL (WTAX)
+    "alpolitics.com",  # Alabama Political News
+    "boropulse.com",  # Murfreesboro Pulse
+    "basedinlafayette.com",  # veteran-journalist local newsletter
+    "unraveledpress.com",  # investigative outlet
+    "illinoispress.org",  # IL Press Assoc (carries Pioneer Press reprint)
+    "wvpress.org",  # WV Press Association
+    # Established student papers w/ editorial process (precedent: breezejmu.org).
+    "dailyillini.com", "idsnews.com", "lanthorn.com",
+    "louisvillecardinal.com", "purdueexponent.org", "thedaonline.com",
+    "irishrover.net", "washtenawvoice.com",
 }
 
 # Primary / official records: government domains, agency sites, official docs.
@@ -62,6 +106,26 @@ VERIFIED_PRIMARY = {
     "tompkinscountyny.gov",  # official Tompkins County NY site
     "meetings.cvilledata.org",  # civic mirror hosting official Harrisonburg council docs
     "legistarweb-production.s3.amazonaws.com",  # Legistar official document store
+    # Wave 1 additions (2026-09-26), reviewed in git.
+    "apps.troymi.gov",  # City of Troy MI
+    "champaignil.gov",  # City of Champaign IL
+    "chestertonin.org",  # Town of Chesterton IN
+    "cityofypsilanti.com",  # City of Ypsilanti MI
+    "cityoffortwayne.in.gov",  # City of Fort Wayne IN
+    "vernonhills.org",  # Village of Vernon Hills IL
+    "docs.southbendin.gov",  # City of South Bend IN document store
+    "collierville.granicus.com",  # Town of Collierville TN docs
+    "legistar1.granicus.com",  # City of Appleton WI memo
+    "content.govdelivery.com",  # City of Evanston IL official statement
+    "department-test3.countyofdane.com",  # Dane County WI press release
+    "cdn.euclidlibrary.org",  # Euclid public library hosting council docs
+    "jeffcosheriffal.com",  # Jefferson County Sheriff AL
+    "johnsoncitytn.civicweb.net",  # Johnson City TN agenda docs
+    "johnsoncitytn.org",  # City of Johnson City TN
+    "millingtontn.gov",  # City of Millington TN
+    "kypublicnotices.newzgroup.com",  # KY legal notices
+    "portal.ksba.org",  # KSBA meeting attachments (signed order form)
+    "usi.edu",  # University of Southern Indiana
 }
 
 # Explicitly NOT counted toward the evidence bar. Listed here so the choice
@@ -81,6 +145,31 @@ UNVERIFIED = {
     # Unknown or unverifiable outlets (revisit if they establish a masthead).
     "gov1.com", "washingtonsun.com", "nexfinitynews.com", "newscord.org",
     "piratemedia1.com",
+    "loraindaily.com",  # unconfirmed outlet
+    "quincycurrent.com",  # unconfirmed hyperlocal
+    "myhuntleynews.com",  # unconfirmed hyperlocal
+    "voicenews.com",  # unconfirmed hyperlocal
+    "connect-clarksburg.com",  # unconfirmed local
+    "bellevilleareaindependent.com",  # unconfirmed community paper
+    "themidwesterner.news",  # unconfirmed
+    "archynewsy.com",  # unknown provenance
+    "webpronews.com",  # blog / syndicated
+    "techtimes.com", "apbweb.com", "officer.com",  # trade press, per-source false
+    "wyrz.org",  # low-power radio, per-source false
+    "edition.pagesuite.com",  # e-edition hosting platform
+    "internewscast.com", "europesays.com",  # reprint sites
+    "newslocker.com",  # news aggregator
+    "heartlandpost.com",  # aggregator
+    "newsroom.theredemptionproject.news",  # newsletter
+    "kenoshacountyeye.com",  # local blog
+    "derekeder.com",  # personal blog (trustee's own account; primary-ish but blog)
+    "ocdeez.github.io",  # citizen mirror of public docs
+    "flocksafety.com",  # vendor: subject of the tracker, not independent
+    "eff.org",  # advocacy (cited as lead)
+    "aclu-wi.org",  # advocacy
+    "alprwatch.org",  # advocacy / FOIA archive
+    "eyesoffindiana.org", "deflockmonroe.com",  # advocacy
+    "tiktok.com",  # platform (precedent: youtube.com)
 }
 
 
