@@ -1,0 +1,436 @@
+[
+  {
+    "id": "ok-oklahoma-city-pd",
+    "agency": "Oklahoma City Police Department",
+    "agency_type": "municipal_police",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "status": "active",
+    "cameras": 90,
+    "annual_cost_usd": 270000,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-08-18",
+    "decision_summary": "City Council voted 5-3 to renew the Flock contract for one year at $270,000 with new restrictions on federal data sharing, audits, and retention. The prior agreement had expired 2026-06-30. Council had delayed the vote from Aug 4 over privacy concerns.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08",
+        "publisher": "City of Oklahoma City",
+        "title": "Flock Safety license plate reader (LPR) usage in Oklahoma City",
+        "url": "https://www.okc.gov/Services/Public-Safety/Police/Flock-Safety-license-plate-reader-LPR-usage-in-Oklahoma-City",
+        "verified": true
+      },
+      {
+        "date": "2026-08-18",
+        "publisher": "News9",
+        "title": "Get the Flock Out: OKC renews camera contract with new privacy guardrails",
+        "url": "https://www.news9.com/oklahoma-city-news/get-the-flock-out-okc-renews-camera-contract-with-new-privacy-guardrails",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "News9",
+        "title": "OKC Police seek new restrictions on federal access to Flock camera data",
+        "url": "https://www.news9.com/oklahoma-city-news/okc-police-seek-new-restrictions-on-federal-access-to-flock-camera-data",
+        "verified": true
+      },
+      {
+        "date": "2026-08-18",
+        "publisher": "The Oklahoman",
+        "title": "OKC City Council renews Flock Safety contract in contentious meeting",
+        "url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/18/okc-council-renews-flock-safety-contract-in-contentious-meeting/91356272007/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-03",
+        "publisher": "The Oklahoman",
+        "title": "OKC City Council to vote on Flock contract renewal",
+        "url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/03/okc-stalls-vote-flock-cameras-renewal/91159028007/",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "One of the strongest OK records. 90 readers confirmed on the official city page (contract began 2023). Renewal explicitly dated 2026-08-18 by two independent outlets. Contract end of the renewed term not explicitly stated in cited sources, left null rather than inferred. Cost detail: One-year renewal value $270,000 approved Aug 2026. Original 2023 contract value and per-camera cost not in cited sources."
+  },
+  {
+    "id": "ok-tulsa-pd",
+    "agency": "Tulsa Police Department",
+    "agency_type": "municipal_police",
+    "city": "Tulsa",
+    "state": "OK",
+    "status": "active",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Tulsa PD has used Flock LPRs since summer 2022 and remains an active user as of 2026, including use in protest investigations and a public transparency portal with 30-day retention.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": null,
+        "publisher": "Tulsa Police Department",
+        "title": "Flock Safety",
+        "url": "https://www.tulsapolice.org/flock-safety",
+        "verified": true
+      },
+      {
+        "date": "2026-03-13",
+        "publisher": "Tulsa Flyer",
+        "title": "Flock cameras used to investigate protests",
+        "url": "https://tulsaflyer.org/2026/03/13/government/post/flock-cameras-used-investigate-protests/",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "News9",
+        "title": "Flock updates privacy, transparency safeguards; recommends seven-day data retention limit",
+        "url": "https://www.news9.com/oklahoma-city-news/flock-updates-privacy-transparency-safeguards-recommends-seven-day-data-retention-limit",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Official department page confirms use since summer 2022. Camera count, cost, contract dates, and portal URL not in cited sources. Cost detail: No contract value or camera count found in cited sources."
+  },
+  {
+    "id": "ok-tulsa-county-so",
+    "agency": "Tulsa County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "city": null,
+    "state": "OK",
+    "status": "active",
+    "cameras": 25,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "County commissioners approved a 25-camera pilot in June 2022; Sheriff Vic Regalado later inked a contract and the office was still actively using Flock as of Aug 2026 while reviewing a seven-day retention recommendation.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2022-06-22",
+        "publisher": "The Oklahoma Eagle / News on 6",
+        "title": "Tulsa County Sheriff's Office to install 25 license plate reading cameras",
+        "url": "https://theokeagle.com/2022/06/22/tulsa-county-sheriffs-office-to-install-25-license-plate-reading-cameras-2/",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "News9",
+        "title": "Flock updates privacy, transparency safeguards; recommends seven-day data retention limit",
+        "url": "https://www.news9.com/oklahoma-city-news/flock-updates-privacy-transparency-safeguards-recommends-seven-day-data-retention-limit",
+        "verified": true
+      },
+      {
+        "date": "2022-06",
+        "publisher": "KTUL (via vimarsana mirror)",
+        "title": "Tulsa County Sheriff Inks Contract For License Plate Readers",
+        "url": "https://vimarsana.com/newscast/newson6-com/ktul-channel-8-news/tulsa-county-sheriff-inks-contract-for-license-plate-readers/",
+        "verified": false
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Exact transition from free pilot to paid contract and current contract terms not verified. News9 Aug 2026 reporting confirms continued active use. Medium confidence, not high, until a current contract or official statement is found. Cost detail: Free-trial pilot of 25 cameras in 2022. Current paid-contract terms not found in cited sources."
+  },
+  {
+    "id": "ok-norman-pd",
+    "agency": "Norman Police Department",
+    "agency_type": "municipal_police",
+    "city": "Norman",
+    "state": "OK",
+    "status": "rejected",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Norman's nine-member City Council declined Flock after two presentations over three years, with privacy, data security, 30-day retention, and federal access cited as deal breakers. No contract was signed.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08",
+        "publisher": "404 Media",
+        "title": "The Mayor Who Said No When Flock Came To Town",
+        "url": "https://www.404media.co/the-mayor-who-said-no-when-flock-came-to-town/",
+        "verified": true
+      },
+      {
+        "date": null,
+        "publisher": "Reclaim the Net",
+        "title": "Norman, Oklahoma City Council says no to Flock license plate readers",
+        "url": "https://reclaimthenet.org/norman-oklahoma-flock-license-plate-readers-county-sheriff",
+        "verified": false
+      },
+      {
+        "date": "2025-08",
+        "publisher": "CitizenPortal (AI-generated)",
+        "title": "Norman council studies Flock license plate readers amid privacy and legal questions",
+        "url": "https://citizenportal.ai/articles/6494495/Norman/Cleveland-County/Oklahoma/Norman-council-studies-Flock-license-plate-readers-amid-privacy-and-legal-questions",
+        "verified": false
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "404 Media is the strong anchor. Reclaim the Net largely republishes the same reporting, so it is not counted as independent. Exact decision date not established; the rejection unfolded across two study sessions over three years."
+  },
+  {
+    "id": "ok-bartlesville-pd",
+    "agency": "Bartlesville Police Department",
+    "agency_type": "municipal_police",
+    "city": "Bartlesville",
+    "state": "OK",
+    "status": "active",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "City Council approved the Flock system in August 2024; it has been installed and operational since September 2024, with a public FAQ and a transparency portal reporting 30-day retention.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2025-01-16",
+        "publisher": "City of Bartlesville",
+        "title": "Police Department hosts Flock Safety camera forum",
+        "url": "https://www.cityofbartlesville.org/police-department-hosts-flock-safety-camera-forum-2/",
+        "verified": true
+      },
+      {
+        "date": "2024-12",
+        "publisher": "City of Bartlesville",
+        "title": "Flock cameras FAQ",
+        "url": "https://www.cityofbartlesville.org/wp-content/uploads/2024/12/Flock-cameras-FAQ.pdf",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "News9",
+        "title": "Flock updates privacy, transparency safeguards; recommends seven-day data retention limit",
+        "url": "https://www.news9.com/oklahoma-city-news/flock-updates-privacy-transparency-safeguards-recommends-seven-day-data-retention-limit",
+        "verified": true
+      },
+      {
+        "date": "2025-01",
+        "publisher": "City of Bartlesville (hosted on campaign site)",
+        "title": "Flock Regulation Ordinance (final clean copy)",
+        "url": "https://www.aaronforward4.com/s/Flock-Regulation-Ordinance-Final-clean-copy.pdf",
+        "verified": false
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Two official city sources (forum article + FAQ PDF) plus independent News9 coverage of the transparency portal. City page and FAQ are the same government source; News9 provides independence. Cost detail: Cost and camera count not in cited sources. An ordinance passed in Bartlesville regulates use, audits, and data-sharing limits."
+  },
+  {
+    "id": "ok-muskogee-pd",
+    "agency": "Muskogee Police Department",
+    "agency_type": "municipal_police",
+    "city": "Muskogee",
+    "state": "OK",
+    "status": "active",
+    "cameras": 10,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Muskogee PD is an active Flock user with 10 license plate readers as of early 2026, a public transparency portal, and 30-day retention.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-01-12",
+        "publisher": "CitizenPortal (AI-generated)",
+        "title": "Muskogee police brief council on recent shootings",
+        "url": "https://citizenportal.ai/articles/7274821/Oklahoma/Muskogee-police-brief-council-on-recent-shootings-NAACP-launches-Safe-Storage-Saves-Lives-campaign",
+        "verified": false
+      },
+      {
+        "date": "2026-08",
+        "publisher": "News9",
+        "title": "Flock updates privacy, transparency safeguards; recommends seven-day data retention limit",
+        "url": "https://www.news9.com/oklahoma-city-news/flock-updates-privacy-transparency-safeguards-recommends-seven-day-data-retention-limit",
+        "verified": true
+      },
+      {
+        "date": null,
+        "publisher": "Finding Flock",
+        "title": "Finding Flock cancellation tracker",
+        "url": "https://findingflock.com",
+        "verified": false
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Camera count (10) and chief's Jan 2026 statement come only from an AI-generated CitizenPortal summary, an unverified lead. News9 confirms active use and a public portal. Needs a Muskogee Phoenix article or official minutes to reach high confidence."
+  },
+  {
+    "id": "ok-guthrie-pd",
+    "agency": "Guthrie Police Department",
+    "agency_type": "municipal_police",
+    "city": "Guthrie",
+    "state": "OK",
+    "status": "cancelled",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Guthrie, described as Oklahoma's first Flock adopter, discontinued the system. The police chief told Flock in Feb 2025 the city would not renew and later confirmed to News9 that the department acted on privacy concerns and discontinued use.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2025-10-16",
+        "publisher": "Oklahoma House of Representatives",
+        "title": "House interim study examines Flock camera privacy issues",
+        "url": "https://www.okhouse.gov/posts/news-20251016_3",
+        "verified": true
+      },
+      {
+        "date": "2025-10",
+        "publisher": "News9",
+        "title": "Oklahoma lawmakers examine privacy issues with Flock cameras",
+        "url": "https://www.news9.com/oklahoma-politics-statewide/oklahoma-lawmakers-examine-privacy-issues-with-flock-cameras",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "publisher": "Sooner Sentinel (Substack)",
+        "title": "The Government Is Watching",
+        "url": "https://soonersentinel.substack.com/p/the-government-is-watching",
+        "verified": false
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Two strong verified sources confirm discontinuation, but fewer than three independent verified citations, so medium confidence and non-verified tier. Exact non-renewal date and camera count unresolved. Cost detail: An unverified Substack report claims continuation would have cost about $35,000/year; not confirmed. Cost left null per no-approximation rule."
+  },
+  {
+    "id": "ok-tahlequah-pd",
+    "agency": "Tahlequah Police Department",
+    "agency_type": "municipal_police",
+    "city": "Tahlequah",
+    "state": "OK",
+    "status": "cancelled",
+    "cameras": 6,
+    "annual_cost_usd": 21900,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-09-08",
+    "decision_summary": "Council voted not to renew the $21,900 Flock contract after poor performance: three of six cameras vandalized, one never worked, two operational. Cameras to be removed.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-09",
+        "publisher": "CNHI Oklahoma",
+        "title": "Tahlequah council to weigh Flock camera renewal",
+        "url": "https://www.cnhinews.com/oklahoma/news/article_0e3e40ec-0e00-5fbe-bb5e-4c7a110680ec.html",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "publisher": "CNHI Oklahoma",
+        "title": "Tahlequah police chief recommends dropping Flock cameras",
+        "url": "https://www.cnhinews.com/oklahoma/news/article_ce058b56-5212-5443-baf7-583231f60ce6.html",
+        "verified": true
+      },
+      {
+        "date": "2025-07-08",
+        "publisher": "CitizenPortal (AI-generated)",
+        "title": "City Council approves $21,900 contract for Flock Safety license plate readers",
+        "url": "https://citizenportal.ai/articles/5330760/Oklahoma/Telecoid-City-Council-approves-21900-contract-for-Flock-Safety-license-plate-readers?loc=OK&source=bluesky",
+        "verified": false
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "The two CNHI stories are the same outlet, so they are not independent of each other; combined with only one other lead source, this stays medium confidence. The vote date 2026-09-08 is inferred from the Sept 15 removal report referencing the Sept 8 council meeting; an official agenda item would firm it up. Cost detail: Original one-year contract $21,900 approved 2025-07-08. Auto-renewal in July 2026 was never paid before the non-renewal vote."
+  },
+  {
+    "id": "ok-coweta-pd",
+    "agency": "Coweta Police Department",
+    "agency_type": "municipal_police",
+    "city": "Coweta",
+    "state": "OK",
+    "status": "cancelled",
+    "cameras": 2,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Police Chief Mike Bell ended the city's Flock relationship in mid-August 2026 after residents raised privacy concerns about the two cameras in use.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08",
+        "publisher": "News on 6 (via YouTube)",
+        "title": "Coweta Police Chief explains decision to remove license plate reading cameras",
+        "url": "https://www.youtube.com/shorts/KoW0y3Ln26U",
+        "verified": false
+      },
+      {
+        "date": "2026-08",
+        "publisher": "American Political Report",
+        "title": "Oklahoma police chief cancels city's Flock Safety contract after citizens raise privacy concerns",
+        "url": "https://americanpoliticalreport.com/oklahoma-police-chief-cancels-citys-flock-safety-contract-after-citizens-raise-privacy-concerns/",
+        "verified": false
+      },
+      {
+        "date": "2026-08",
+        "publisher": "News9",
+        "title": "Flock updates privacy, transparency safeguards; recommends seven-day data retention limit",
+        "url": "https://www.news9.com/oklahoma-city-news/flock-updates-privacy-transparency-safeguards-recommends-seven-day-data-retention-limit",
+        "verified": true
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Sourcing is weaker than ideal: the core evidence is a News on 6 video segment (only the YouTube short is reachable; newson6.com article blocked to fetchers), an unverified republication, and a News9 related-story mention. Medium confidence. An official city statement or the full News on 6 article would strengthen this."
+  },
+  {
+    "id": "ok-latimer-county-so",
+    "agency": "Latimer County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "city": null,
+    "state": "OK",
+    "status": "cancelled",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-07-21",
+    "decision_summary": "Sheriff Adam Woodruff terminated the department's Flock agreement on July 21, 2026, citing constitutional privacy concerns, and pledged no Flock or comparable cameras while he serves as sheriff.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-07",
+        "publisher": "News9",
+        "title": "Flock camera technology won't be used in Latimer County, sheriff says",
+        "url": "https://www.news9.com/oklahoma-city-news/flock-camera-technology-wont-be-used-in-latimer-county",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "The Oklahoman",
+        "title": "OKC City Council to vote on police contract for Flock cameras",
+        "url": "https://www.oklahoman.com/story/news/local/2026/08/03/okc-council-will-vote-on-police-contract-for-flock-cameras/90958514007/",
+        "verified": true
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Two independent verified outlets. Status set to cancelled because The Oklahoman reports the sheriff terminated the department's Flock agreement (not merely declined a proposal). Only two verified citations, so medium confidence, not high."
+  }
+]

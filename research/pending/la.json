@@ -1,0 +1,324 @@
+[
+  {
+    "agency": "Baton Rouge Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": null,
+    "city": "Baton Rouge",
+    "confidence": "high",
+    "decision_date": null,
+    "decision_summary": "BRPD has used Flock ALPR cameras for at least five years, publicly defending their use amid nationwide privacy concerns; WBRZ independently confirmed active use in solved cases.",
+    "id": "la-baton-rouge-pd",
+    "notes": "BRPD has used Flock cameras for at least five years as of Aug 2026 (WAFB). Camera count, contract dates, and cost not found in public reporting. Extra: {\"vendor\": \"Flock Safety\", \"verified\": true}",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-08-10",
+        "publisher": "WAFB",
+        "title": "Baton Rouge police defend Flock cameras as privacy concerns mount nationwide",
+        "url": "https://gray-wafb-prod.gtv-cdn.com/2026/08/10/baton-rouge-police-defend-flock-cameras-privacy-concerns-mount-nationwide/",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "publisher": "WBRZ",
+        "title": "Baton Rouge police credit license plate cameras with helping solve crimes",
+        "url": "https://d3nqdp0e3r32g8.cloudfront.net/news/baton-rouge-police-credit-license-plate-cameras-with-helping-solve-crimes",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "Red Eye BR",
+        "title": "What the Flock?",
+        "url": "https://www.redeyebr.com/what-the-flock/",
+        "verified": true
+      }
+    ],
+    "state": "LA",
+    "status": "active",
+    "last_verified": "2026-09-25",
+    "contract_start": null,
+    "contract_end": null,
+    "transparency_portal": null
+  },
+  {
+    "agency": "East Baton Rouge Parish Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "annual_cost_usd": null,
+    "cameras": null,
+    "city": "Baton Rouge",
+    "confidence": "medium",
+    "decision_date": null,
+    "decision_summary": "EBRSO is an active Flock user; WBRZ confirmed use in a 2026 school-bus shooting case and a Flock press release describes the agency's growing network of Flock cameras.",
+    "id": "la-east-baton-rouge-so",
+    "notes": "EBRSO credited Flock LPRs in solving a May 2026 school-bus shooting case (WBRZ). Flock's own July 2026 press release describes a growing EBRSO network of license plate readers including Flock cameras. Camera count, contract dates, and cost not found in public reporting. Extra: {\"vendor\": \"Flock Safety\", \"verified\": true}",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-09",
+        "publisher": "WBRZ",
+        "title": "Baton Rouge police credit license plate cameras with helping solve crimes",
+        "url": "https://d3nqdp0e3r32g8.cloudfront.net/news/baton-rouge-police-credit-license-plate-cameras-with-helping-solve-crimes",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "Red Eye BR",
+        "title": "What the Flock?",
+        "url": "https://www.redeyebr.com/what-the-flock/",
+        "verified": true
+      },
+      {
+        "date": "2026-07-28",
+        "publisher": "Flock Safety (GlobeNewswire paid placement)",
+        "title": "Flock LPR Helps East Baton Rouge Deputies Arrest Three Suspects in School Bus Shooting Within Minutes",
+        "url": "https://pr.chestercounty.com/article/Flock-LPR-Helps-East-Baton-Rouge-Deputies-Arrest-Three-Suspects-in-School-Bus-Shooting-Within-Minutes/6a68c4cd0b3f8c67775208a0",
+        "verified": false
+      }
+    ],
+    "state": "LA",
+    "status": "active",
+    "last_verified": "2026-09-25",
+    "contract_start": null,
+    "contract_end": null,
+    "transparency_portal": null
+  },
+  {
+    "agency": "Jefferson Parish Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "annual_cost_usd": null,
+    "cameras": null,
+    "city": "Gretna",
+    "confidence": "high",
+    "decision_date": null,
+    "decision_summary": "JPSO is an active Flock user; a deputy was fired in Aug 2026 for 3,200+ unauthorized Flock searches tracking an ex-fiancee, prompting scrutiny of the agency's Flock use.",
+    "id": "la-jefferson-parish-so",
+    "notes": "In Aug 2026 a JPSO deputy was fired after 3,200+ unauthorized Flock searches used to track an ex-fiancee's vehicle over several years (WVUE; confirmed by Louisiana First). Sheriff Lopinto stated the agency had no policy for the new tech. Camera count, contract dates, and cost not found. Louisiana First's article intro mislabels the location as Jefferson Davis Parish, but the named agency is Jefferson Parish Sheriff's Office. Extra: {\"vendor\": \"Flock Safety\", \"verified\": true}",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-08-19",
+        "publisher": "WVUE (Fox 8)",
+        "title": "Jefferson Parish deputy fired for misusing Flock camera to track ex-fiancee's vehicle, Lopinto says",
+        "url": "https://gray-wafb-prod.gtv-cdn.com/2026/08/19/jefferson-parish-deputy-fired-misusing-flock-camera-track-ex-fiancees-vehicle-lopinto-says/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-20",
+        "publisher": "Louisiana First News (KLFY)",
+        "title": "Louisiana deputy fired for allegedly tracking ex-fiancee via Flock cameras",
+        "url": "https://www.louisianafirstnews.com/news/louisiana-news/louisiana-deputy-fired-for-allegedly-tracking-ex-fiancee-via-flock-cameras/",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "Classic Rock 105.1 (Townsquare)",
+        "title": "Deputy Fired Using Flock Cameras to Track Ex-Fiance",
+        "url": "https://classicrock1051.com/ixp/34/p/deputy-fired-using-flock-cameras-track-ex-fiance/",
+        "verified": true
+      }
+    ],
+    "state": "LA",
+    "status": "active",
+    "last_verified": "2026-09-25",
+    "contract_start": null,
+    "contract_end": null,
+    "transparency_portal": null
+  },
+  {
+    "agency": "Kenner Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": 55,
+    "city": "Kenner",
+    "confidence": "high",
+    "decision_date": "2022-12",
+    "decision_summary": "City Council approved a two-year, $294,250 Flock ALPR contract in Dec 2022, growing the network to 55 cameras; still reported active in 2026.",
+    "id": "la-kenner-pd",
+    "notes": "City Council approved a two-year Flock contract totaling $294,250 in Dec 2022 (GovTech/Tribune News Service); annual figure not published and not derived here. The city's 2023 newsletter confirms the $294,250 system. Shreveport Times lists 55 ALPRs as of July 2026, and Aug 2026 news of police warning after a Flock camera was destroyed indicates the deployment remains active, suggesting renewal; renewal terms not found. Extra: {\"vendor\": \"Flock Safety\", \"verified\": true}",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2022-12",
+        "publisher": "GovTech (Tribune News Service)",
+        "title": "Kenner, La., to More Than Double License Plate Reader Network",
+        "url": "https://www.govtech.com/public-safety/kenner-la-to-more-than-double-license-plate-reader-network",
+        "verified": true
+      },
+      {
+        "date": "2023",
+        "publisher": "City of Kenner (official)",
+        "title": "End of Year District 3 Newsletter 2023",
+        "url": "https://kenner.la.us/DocumentCenter/View/1381/End-Of-Year-District-3-Newsletter---2023-PDF",
+        "verified": true
+      },
+      {
+        "date": "2026-07-17",
+        "publisher": "Shreveport Times (USA Today Network)",
+        "title": "Where are Flock cameras in Louisiana? See sheriff, police that have them",
+        "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/17/where-are-flock-cameras-in-louisiana-see-sheriff-police-that-have-them/90943464007/",
+        "verified": true
+      }
+    ],
+    "state": "LA",
+    "status": "active",
+    "last_verified": "2026-09-25",
+    "contract_start": null,
+    "contract_end": null,
+    "transparency_portal": null
+  },
+  {
+    "agency": "Central Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": 11,
+    "city": "Central",
+    "confidence": "medium",
+    "decision_date": "2022-04-12",
+    "decision_summary": "City Council approved nine Flock devices at $2,500 each in April 2022; the department now has 11 cameras and publishes a public Flock transparency portal.",
+    "id": "la-central-pd",
+    "notes": "City Council approved nine Flock devices at $2,500 each on 2022-04-12 (Governing); total contract cost not stated and not derived here. Atlas of Surveillance / Shreveport Times reported 11 cameras as of July 2026. Central also launched a public-facing Flock transparency portal for police camera data (citizenportal.ai). Extra: {\"vendor\": \"Flock Safety\", \"verified\": true}",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2022-04",
+        "publisher": "Governing",
+        "title": "Advocates Worry as Central, La., Police Increase Surveillance",
+        "url": "https://www.governing.com/security/advocates-worry-as-central-la-police-increase-surveillance",
+        "verified": true
+      },
+      {
+        "date": "2026-07-17",
+        "publisher": "Shreveport Times (USA Today Network)",
+        "title": "Where are Flock cameras in Louisiana? See sheriff, police that have them",
+        "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/17/where-are-flock-cameras-in-louisiana-see-sheriff-police-that-have-them/90943464007/",
+        "verified": true
+      },
+      {
+        "date": "2026",
+        "publisher": "citizenportal.ai",
+        "title": "City announces public-facing Flock transparency portal for police camera data",
+        "url": "https://citizenportal.ai/articles/6207367/Central/East-Baton-Rouge-Parish/Louisiana/City-announces-public-facing-Flock-transparency-portal-for-police-camera-data",
+        "verified": true
+      }
+    ],
+    "state": "LA",
+    "status": "active",
+    "last_verified": "2026-09-25",
+    "contract_start": null,
+    "contract_end": null,
+    "transparency_portal": null
+  },
+  {
+    "agency": "Lafayette Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": null,
+    "city": "Lafayette",
+    "confidence": "high",
+    "decision_date": null,
+    "decision_summary": "Lafayette PD is an active Flock user; Aug 2026 arrests of two men who tore down a Flock camera confirmed the deployment, amid an ongoing local privacy debate.",
+    "id": "la-lafayette-pd",
+    "notes": "In Aug 2026 two men were arrested for tearing down a Lafayette Flock camera (KLFY), confirming active deployment; local commentary reports regular police use and a privacy debate. Camera count, contract dates, and cost not found in public reporting. Extra: {\"vendor\": \"Flock Safety\", \"verified\": true}",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-08-06",
+        "publisher": "KLFY (Louisiana First News)",
+        "title": "Two men accused of tearing down Flock camera in Louisiana",
+        "url": "https://www.louisianafirstnews.com/news/two-men-accused-of-tearing-down-flock-camera-in-louisiana/",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "Classic Rock 105.1 (Townsquare)",
+        "title": "Lafayette Flock Camera Arrests, Privacy Debate",
+        "url": "https://classicrock1051.com/ixp/34/p/lafayette-flock-camera-arrests-privacy-debate/",
+        "verified": true
+      },
+      {
+        "date": "2026-07-17",
+        "publisher": "Shreveport Times (USA Today Network)",
+        "title": "Where are Flock cameras in Louisiana? See sheriff, police that have them",
+        "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/17/where-are-flock-cameras-in-louisiana-see-sheriff-police-that-have-them/90943464007/",
+        "verified": true
+      }
+    ],
+    "state": "LA",
+    "status": "active",
+    "last_verified": "2026-09-25",
+    "contract_start": null,
+    "contract_end": null,
+    "transparency_portal": null
+  },
+  {
+    "agency": "Lafourche Parish Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "annual_cost_usd": null,
+    "cameras": 54,
+    "city": "Thibodaux",
+    "confidence": "high",
+    "decision_date": null,
+    "decision_summary": "Lafourche Parish Sheriff's Office operates 54 Flock cameras, used daily per its public information officer; two independent Gannett outlets confirmed the count.",
+    "id": "la-lafourche-parish-so",
+    "notes": "LPSO operates 54 Flock cameras; its public information officer says the system is used daily (Houma Today, 2026-08-03). Shreveport Times independently lists 54 cameras as of July 2026. Contract dates and cost not found in public reporting. Extra: {\"vendor\": \"Flock Safety\", \"verified\": true}",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-08-03",
+        "publisher": "Houma Today / Courier (Gannett)",
+        "title": "Terrebonne, Lafourche examine use of Flock cameras",
+        "url": "https://www.houmatoday.com/story/news/local/2026/08/03/terrebonne-lafourche-officials-look-into-flock-cameras/91113258007/",
+        "verified": true
+      },
+      {
+        "date": "2026-07-17",
+        "publisher": "Shreveport Times (USA Today Network)",
+        "title": "Where are Flock cameras in Louisiana? See sheriff, police that have them",
+        "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/17/where-are-flock-cameras-in-louisiana-see-sheriff-police-that-have-them/90943464007/",
+        "verified": true
+      }
+    ],
+    "state": "LA",
+    "status": "active",
+    "last_verified": "2026-09-25",
+    "contract_start": null,
+    "contract_end": null,
+    "transparency_portal": null
+  },
+  {
+    "agency": "Terrebonne Parish Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "annual_cost_usd": null,
+    "cameras": 39,
+    "city": "Houma",
+    "confidence": "medium",
+    "decision_date": null,
+    "decision_summary": "Terrebonne Parish Sheriff's Office operates 39 Flock cameras and spent $465,000 in opioid-settlement funds on them; Flock presented to the parish council in May 2023.",
+    "id": "la-terrebonne-parish-so",
+    "notes": "TPSO has 39 Flock cameras installed throughout the parish (Houma Today, 2026-08-03); the agency spent $465,000 in opioid-settlement funds on Flock cameras (investigative reporting, Sept 2026). A Flock presentation to the Terrebonne Parish Council occurred May 2023. Contract dates and annual cost not found; the $465,000 is a one-time expenditure, not an annual cost. Extra: {\"vendor\": \"Flock Safety\", \"verified\": true}",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-08-03",
+        "publisher": "Houma Today / Courier (Gannett)",
+        "title": "Terrebonne, Lafourche examine use of Flock cameras",
+        "url": "https://www.houmatoday.com/story/news/local/2026/08/03/terrebonne-lafourche-officials-look-into-flock-cameras/91113258007/",
+        "verified": true
+      },
+      {
+        "date": "2026-09-13",
+        "publisher": "Akron News Reporter",
+        "title": "A state gave sheriffs 20% of its opioid settlement cash. We followed the money",
+        "url": "https://www.akronnewsreporter.com/2026/09/13/follow-opioid-settlement-cash/",
+        "verified": true
+      }
+    ],
+    "state": "LA",
+    "status": "active",
+    "last_verified": "2026-09-25",
+    "contract_start": null,
+    "contract_end": null,
+    "transparency_portal": null
+  }
+]

@@ -1,0 +1,387 @@
+[
+  {
+    "id": "or-eugene-pd",
+    "agency": "Eugene Police Department",
+    "agency_type": "municipal_police",
+    "city": "Eugene",
+    "state": "OR",
+    "status": "cancelled",
+    "cameras": 57,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2025-12-05",
+    "decision_summary": "Department announced termination of its Flock Safety contract on Dec 5, 2025, after an unauthorized camera reactivation during a city pause. City later ordered cameras removed and data deleted.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2025-12-05",
+        "publisher": "Lookout Eugene-Springfield",
+        "title": "Eugene announces termination of Flock contract",
+        "url": "https://lookouteugene-springfield.com/story/justice/2025/12/05/eugene-announces-termination-of-flock-contract/",
+        "verified": true
+      },
+      {
+        "date": "2025-12-16",
+        "publisher": "Lookout Eugene-Springfield",
+        "title": "Timeline: The brief, troubled history of Flock cameras in Eugene, Springfield",
+        "url": "https://lookouteugene-springfield.com/story/justice/2025/12/16/timeline-the-brief-troubled-history-of-flock-cameras-in-eugene-springfield/",
+        "verified": true
+      },
+      {
+        "date": "2026-06",
+        "publisher": "Daily Emerald",
+        "title": "City Council looks to develop surveillance technology policy by end of 2026",
+        "url": "https://dailyemerald.com/189945/community-news/city-council-looks-to-develop-surveillance-technology-policy-by-end-of-2026/",
+        "verified": true
+      },
+      {
+        "date": "2025-12-15",
+        "publisher": "Citizen Portal (AI-generated meeting summary)",
+        "title": "Eugene police report: six new hires, Flock contract terminated and deputy chief to retire",
+        "url": "https://citizenportal.ai/articles/7199555/Eugene/Lane-County/Oregon/Eugene-police-report-six-new-hires-Flock-contract-terminated-and-deputy-chief-to-retire",
+        "verified": false
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "One of Oregon's highest-profile Flock exits. 57 cameras confirmed. Termination date firm across sources. Contract value and start date left null (conflicting reports on signing year). Cost detail: Two-year contract value reported around $342,000 in earlier research but the exact figure could not be re-verified against a live citation in this session, left null."
+  },
+  {
+    "id": "or-springfield-pd",
+    "agency": "Springfield Police Department",
+    "agency_type": "municipal_police",
+    "city": "Springfield",
+    "state": "OR",
+    "status": "cancelled",
+    "cameras": 25,
+    "annual_cost_usd": 77000,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2025-12-05",
+    "decision_summary": "Department announced an end to its Flock Safety deal on Dec 5, 2025, citing concerns about the system's ability to meet operational needs, data security requirements, and community expectations. Cameras, installed in September 2025 and never formally activated, were covered pending removal; Flock began removing them in January 2026.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2025-12-05",
+        "publisher": "Lookout Eugene-Springfield",
+        "title": "Eugene announces termination of Flock contract",
+        "url": "https://lookouteugene-springfield.com/story/justice/2025/12/05/eugene-announces-termination-of-flock-contract/",
+        "verified": true
+      },
+      {
+        "date": "2025-12-16",
+        "publisher": "Lookout Eugene-Springfield",
+        "title": "Timeline: The brief, troubled history of Flock cameras in Eugene, Springfield",
+        "url": "https://lookouteugene-springfield.com/story/justice/2025/12/16/timeline-the-brief-troubled-history-of-flock-cameras-in-eugene-springfield/",
+        "verified": true
+      },
+      {
+        "date": "2026-01-21",
+        "publisher": "Register-Guard",
+        "title": "Flock Safety removes license plate reader cameras in Springfield",
+        "url": "https://www.registerguard.com/story/news/local/2026/01/21/flock-safety-removes-license-plate-cameras-springfield/88286152007/",
+        "verified": true
+      },
+      {
+        "date": "2026-01-21",
+        "publisher": "Lookout Eugene-Springfield",
+        "title": "Flock Safety removing Springfield cameras, police say",
+        "url": "https://lookouteugene-springfield.com/story/justice/2026/01/21/flock-safety-removing-springfield-cameras-police-say/",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Termination date firm across three independent outlets. Cameras were briefly activated without authorization on Nov 7, 2025 after a Flock repair. Cost detail: $77,000 per year funded by a state grant."
+  },
+  {
+    "id": "or-lane-county-so",
+    "agency": "Lane County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "city": "Eugene",
+    "state": "OR",
+    "status": "cancelled",
+    "cameras": 22,
+    "annual_cost_usd": 66000,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2025-12-10",
+    "decision_summary": "Sheriff's office announced on Dec 10, 2025 it was ending its Flock Safety contract. 22 planned cameras were never installed.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2025-12-10",
+        "publisher": "Lookout Eugene-Springfield",
+        "title": "Lane County Sheriff's Office suspends Flock Safety contract",
+        "url": "https://lookouteugene-springfield.com/story/latest-news/2025/12/10/lane-county-sheriffs-office-suspends-flock-safety-contract/",
+        "verified": true
+      },
+      {
+        "date": "2025-12-16",
+        "publisher": "Lookout Eugene-Springfield",
+        "title": "Timeline: The brief, troubled history of Flock cameras in Eugene, Springfield",
+        "url": "https://lookouteugene-springfield.com/story/justice/2025/12/16/timeline-the-brief-troubled-history-of-flock-cameras-in-eugene-springfield/",
+        "verified": true
+      },
+      {
+        "date": "2026-06",
+        "publisher": "Government Technology",
+        "title": "Flock Safety Suspension Costs Oregon City $7,000",
+        "url": "https://www.govtech.com/public-safety/flock-safety-suspension-costs-oregon-city-7-000",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "KOIN 6 (YouTube)",
+        "title": "Targeted and vandalized: Oregon sheriff's office ends Flock camera contract",
+        "url": "https://www.youtube.com/watch?v=ppkKszL8hII",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "The KOIN broadcast segment could not be fully reviewed in this session; it is included as an established-outlet lead on the same event, not as the primary citation. Cost detail: $66,000 was the year-one cost of a two-year contract; total contract value not in cited sources."
+  },
+  {
+    "id": "or-albany-pd",
+    "agency": "Albany Police Department",
+    "agency_type": "municipal_police",
+    "city": "Albany",
+    "state": "OR",
+    "status": "cancelled",
+    "cameras": 4,
+    "annual_cost_usd": 14000,
+    "contract_start": null,
+    "contract_end": "2026-06-29",
+    "renewal_date": null,
+    "decision_date": "2026-05-28",
+    "decision_summary": "City council voted to end the Flock contract (reported 4-2 vote; one source dates the vote May 27); formal termination letter made the cancellation effective June 29, 2026. The single operating camera had been switched off in February 2026 after reports that federal and out-of-state agencies searched Oregon Flock networks.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-06",
+        "publisher": "Government Technology (via Albany Democrat-Herald / TNS)",
+        "title": "Flock Safety Suspension Costs Oregon City $7,000",
+        "url": "https://www.govtech.com/public-safety/flock-safety-suspension-costs-oregon-city-7-000",
+        "verified": true
+      },
+      {
+        "date": null,
+        "publisher": "Hasso Hering Today",
+        "title": "Council votes to end Flock camera contract",
+        "url": "https://hh-today.com/council-votes-to-end-flock-camera-contract/",
+        "verified": true
+      },
+      {
+        "date": null,
+        "publisher": "Albany Records Project",
+        "title": "Albany council cancels Flock contract",
+        "url": "https://albanyrecordsproject.com/articles/albany-council-cancels-flock-contract",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Vote date has a one-day discrepancy across sources (May 27 vs May 28); effective termination date June 29 is firm. Cost detail: $14,000 per year; early-termination fee around $7,000. Four cameras contracted, only one ever deployed (on Ellsworth Street; it was later stolen)."
+  },
+  {
+    "id": "or-woodburn-pd",
+    "agency": "Woodburn Police Department",
+    "agency_type": "municipal_police",
+    "city": "Woodburn",
+    "state": "OR",
+    "status": "cancelled",
+    "cameras": 23,
+    "annual_cost_usd": 84000,
+    "contract_start": "2025-03-03",
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-06-23",
+    "decision_summary": "City confirmed cancellation in June 2026 and Flock cameras were removed; council had first suspended use in November 2025 after discovering federal immigration agencies ran more than 6,000 searches of the city's Flock data, in violation of Oregon law.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-06-24",
+        "publisher": "Statesman Journal",
+        "title": "Flock license-plate reader cameras removed in Woodburn, Oregon",
+        "url": "https://www.statesmanjournal.com/story/news/local/2026/06/24/flock-license-plate-reader-cameras-removed-in-woodburn-oregon/90662372007/",
+        "verified": true
+      },
+      {
+        "date": null,
+        "publisher": "Ashland Daily Tidings",
+        "title": "Oregon town shuts down license-plate camera network after federal agencies run more than 6,000 searches",
+        "url": "https://www.dailytidings.com/oregon-town-shuts-down-license-plate-camera-network-after-federal-agencies-run-more-than-6000-searches/",
+        "verified": true
+      },
+      {
+        "date": "2026-02-03",
+        "publisher": "City of Woodburn (official Q&A document)",
+        "title": "Flock Public Q and A",
+        "url": "https://woodburn-or.gov/DocumentCenter/View/3299/Flock-Public-Q-and-A-FINAL-2-3-26",
+        "verified": true
+      },
+      {
+        "date": "2026-06",
+        "publisher": "Government Technology",
+        "title": "Flock Safety Suspension Costs Oregon City $7,000",
+        "url": "https://www.govtech.com/public-safety/flock-safety-suspension-costs-oregon-city-7-000",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Strongest Oregon record on federal-access concerns. One report dates council termination to end of April 2026 with removal completed May 13; the city-confirmed cancellation date used here is June 23, 2026. Cost detail: First-year cost $96,000; recurring annual cost $84,000. Cameras operated March 3, 2025 through November 11, 2025."
+  },
+  {
+    "id": "or-bend-pd",
+    "agency": "Bend Police Department",
+    "agency_type": "municipal_police",
+    "city": "Bend",
+    "state": "OR",
+    "status": "expired",
+    "cameras": 4,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-01",
+    "decision_summary": "City allowed the Flock contract to expire and directed it not be renewed; cameras were switched off in January 2026 while privacy and data-sharing protections are reviewed.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-01-09",
+        "publisher": "Citizen Portal (AI-generated meeting summary)",
+        "title": "Council liaison updates: immigration policy, ALPR cameras turned off, and electrification work",
+        "url": "https://citizenportal.ai/articles/7277191/Bend/Deschutes-County/Oregon/Council-liaison-updates-immigration-policy-ALPR-cameras-turned-off-and-electrification-work",
+        "verified": false
+      },
+      {
+        "date": "2026-06",
+        "publisher": "Government Technology",
+        "title": "Flock Safety Suspension Costs Oregon City $7,000",
+        "url": "https://www.govtech.com/public-safety/flock-safety-suspension-costs-oregon-city-7-000",
+        "verified": true
+      },
+      {
+        "date": "2026-02",
+        "publisher": "Ashland Daily Tidings",
+        "title": "Oregon Lawmakers Remove Privacy Safeguards From License Plate Camera Bill After Heavy Lobbying",
+        "url": "https://www.dailytidings.com/oregon-lawmakers-remove-privacy-safeguards-from-license-plate-camera-bill-after-heavy-lobbying/",
+        "verified": true
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Status mapped as expired rather than cancelled because sources describe the contract lapsing with a council directive not to renew. Exact decision date and expiration date not in cited sources. Cost detail: Contract reported at nearly $20,000 per year (KTVZ via Daily Tidings); treated as approximate, left null."
+  },
+  {
+    "id": "or-florence-pd",
+    "agency": "Florence Police Department",
+    "agency_type": "municipal_police",
+    "city": "Florence",
+    "state": "OR",
+    "status": "active",
+    "cameras": 6,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-02-02",
+    "decision_summary": "City council voted 3-2 on Feb 2, 2026 to retain the Flock camera system after community input; the six cameras remain active.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-02-03",
+        "publisher": "Lookout Eugene-Springfield",
+        "title": "Flock Safety to remain in Florence after close vote",
+        "url": "https://lookouteugene-springfield.com/story/justice/2026/02/03/flock-safety-to-remain-in-florence-after-close-vote/",
+        "verified": true
+      },
+      {
+        "date": "2026-02",
+        "publisher": "Siuslaw News",
+        "title": "Council votes to keep Flock cameras",
+        "url": "https://www.thesiuslawnews.com/news/council-votes-to-keep-flock-cameras/article_c8a3c463-cf09-4fa3-b468-85c32c116213.html",
+        "verified": true
+      },
+      {
+        "date": "2026-02",
+        "publisher": "Siuslaw News",
+        "title": "Council votes 3-2 to keep Flock cameras",
+        "url": "https://www.thesiuslawnews.com/news/council-votes-3-2-to-keep-flock-cameras/article_524d684c-ecaa-483b-ad4f-a6da9794a7f3.html",
+        "verified": true
+      },
+      {
+        "date": "2026-02-03",
+        "publisher": "KCFM Radio",
+        "title": "Flock cameras approved, city manager evaluation, OCF grant cycle",
+        "url": "https://kcfmradio.com/2026/02/03/flock-cameras-approved-city-manager-evaluation-ocf-grant-cycle/",
+        "verified": true
+      },
+      {
+        "date": "2026-01-22",
+        "publisher": "City of Florence (council work session minutes)",
+        "title": "City Council Work Session final action minutes",
+        "url": "https://www.subluceo.com/source/5899fa9d-cd24-438f-a2a4-6107032d40f9",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "One of the few Oregon agencies to keep Flock after public debate. Cost and contract dates not in cited sources."
+  },
+  {
+    "id": "or-talent-pd",
+    "agency": "Talent Police Department",
+    "agency_type": "municipal_police",
+    "city": "Talent",
+    "state": "OR",
+    "status": "pending",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2025-12-22",
+    "decision_summary": "City council voted Dec 22, 2025 to keep the Flock ALPR program offline and stop sharing stored data with partner agencies while a surveillance policy is developed. As of April 20, 2026 the city records clerk confirmed cameras were off since December 2025 and Talent PD was in the process of terminating its contract.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-04-20",
+        "publisher": "City of Talent (public records response via MuckRock)",
+        "title": "Talent Police Department Flock Camera policy, invoice, map, and contracts",
+        "url": "https://www.muckrock.com/foi/talent-6725/talent-police-department-flock-camera-policy-invoice-map-and-contracts-208246/",
+        "verified": true
+      },
+      {
+        "date": "2026-01-12",
+        "publisher": "Citizen Portal (AI-generated meeting summary)",
+        "title": "Talent council orders pause on Flock ALPR, directs staff to draft surveillance policy and to stop data sharing",
+        "url": "https://citizenportal.ai/articles/7304465/Talent/Jackson-County/Oregon/Talent-council-orders-pause-on-Flock-ALPR-directs-staff-to-draft-surveillance-policy-and-to-stop-data-sharing?loc=OR&source=bluesky",
+        "verified": false
+      },
+      {
+        "date": "2026-06",
+        "publisher": "Government Technology",
+        "title": "Flock Safety Suspension Costs Oregon City $7,000",
+        "url": "https://www.govtech.com/public-safety/flock-safety-suspension-costs-oregon-city-7-000",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "publisher": "Oregon Journalism Project (via Prineville Review)",
+        "title": "Left and Right unite as Oregonians turn against Flock camera network",
+        "url": "https://prinevillereview.com/left-and-right-unite-as-oregonians-turn-against-flock-camera-network/",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Status is pending because termination was confirmed as in-process but not confirmed complete. Camera count and costs not in cited sources."
+  }
+]

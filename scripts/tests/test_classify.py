@@ -34,9 +34,11 @@ class TestClassify(unittest.TestCase):
         self.assertEqual((ok, reason), (False, "unverified-unlisted"))
 
     def test_counts(self):
-        self.assertEqual(len(cs.VERIFIED_NEWS()), 115)
-        self.assertEqual(len(cs.VERIFIED_PRIMARY()), 33)
-        self.assertEqual(len(cs.UNVERIFIED()), 49)
+        # Updated 2026-09-26: Wave 2 domain triage (TX/CA/CO/AZ/WA/OR/MO/KS/LA/OK
+        # research wave) added 62 verified-news, 30 verified-primary, 5 unverified.
+        self.assertEqual(len(cs.VERIFIED_NEWS()), 177)
+        self.assertEqual(len(cs.VERIFIED_PRIMARY()), 63)
+        self.assertEqual(len(cs.UNVERIFIED()), 54)
 
 
 class TestStampSource(unittest.TestCase):

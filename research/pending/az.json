@@ -1,0 +1,422 @@
+[
+  {
+    "agency": "Scottsdale Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": 370000,
+    "cameras": 85,
+    "city": "Scottsdale",
+    "confidence": "high",
+    "contract_end": "2028-06",
+    "contract_start": "2023-06-21",
+    "decision_date": "2026-08-28",
+    "decision_summary": "City Council voted to keep the 85-camera Flock system while ordering an independent review and added safeguards, bucking the statewide cancellation wave.",
+    "id": "az-scottsdale-pd",
+    "last_verified": "2026-09-25",
+    "notes": "$370k/yr and $1.2M five-year term from contract records obtained by Scottsdale Progress; azcentral reports expiry June 2028. No misuse complaints found in quarterly audits per SPD.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-08-28",
+        "title": "Scottsdale keeps Flock cameras but orders independent review, safeguards",
+        "url": "https://www.azcentral.com/story/news/local/scottsdale/2026/08/28/scottsdale-chooses-oversight-over-removal-of-flock-cameras/91512992007/",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "title": "Scottsdale keeps cameras on despite 'Flock fury'",
+        "url": "https://www.scottsdale.org/city_news/scottsdale-keeps-cameras-on-despite-flock-fury/article_9670e344-0d7a-47fb-b7a8-d9f51747d359.html",
+        "verified": true
+      },
+      {
+        "date": "2026-08-16",
+        "title": "These metro Phoenix cities are using Flock cameras after audit fallout",
+        "url": "https://www.azcentral.com/story/news/local/phoenix/2026/08/16/these-metro-phoenix-cities-use-flock-safety-cameras/91275430007/",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "active",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Tempe Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": 33,
+    "city": "Tempe",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": "2026-08-26",
+    "decision_summary": "City turned off all 33 Flock cameras and announced it will end its contract and not seek a replacement vendor, citing misuse risk despite finding no misuse in its own monthly audits.",
+    "id": "az-tempe-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Annual cost disputed: Scottsdale Progress reports ~$100k/yr average; Fortune via Startup Fortune reports $80k contract. Left null. Tempe also pursuing a first-in-Arizona ALPR ban ordinance (Sept 2026).",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-08-26",
+        "title": "Tempe turns off Flock license plate reader system, ends program (City of Tempe news release)",
+        "url": "https://mailchi.mp/tempe/tempe-turns-off-flock-license-plate-reader-system-ends-program",
+        "verified": true
+      },
+      {
+        "date": "2026-08-26",
+        "title": "Tempe, Cave Creek become latest Valley cities to remove Flock cameras",
+        "url": "https://www.azcentral.com/story/news/local/tempe/2026/08/26/tempe-removes-flock-cameras-privacy-concerns/91476662007/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-28",
+        "title": "'We needed to get rid of these': City turns off Flock cameras, cites misuse concerns",
+        "url": "https://gray-kolo-prod.gtv-cdn.com/2026/08/28/we-needed-get-rid-these-city-turns-off-flock-cameras-cites-misuse-concerns/",
+        "verified": true
+      },
+      {
+        "date": "2026-09-11",
+        "title": "Tempe aims to be first AZ city to ban automated license plate readers",
+        "url": "https://www.azcentral.com/story/news/metro-phoenix/2026/09/11/tempe-to-become-first-az-city-ban-flock-like-cameras/91691228007/",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Chandler Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": 153000,
+    "cameras": 40,
+    "city": "Chandler",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": "2024-03",
+    "decision_date": "2026-08-07",
+    "decision_summary": "City terminated its $153,000 Flock contract after a routine audit found an officer used the system to track a family member; the officer resigned before the investigation concluded.",
+    "id": "az-chandler-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Pilot began March 2024 with 14 cameras, expanded to 40 in May 2025. A May 2026 council vote on a $153,400 renewal was delayed to Aug 13 but never happened.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-08-07",
+        "title": "Misuse of Chandler Flock data leads to termination of traffic cameras",
+        "url": "https://www.azcentral.com/story/news/local/chandler-breaking/2026/08/07/chandler-arizona-discontinues-flock-cameras/91218403007/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-13",
+        "title": "Chandler police officer accused of misusing Flock system resigns",
+        "url": "https://www.azcentral.com/story/news/local/chandler/2026/08/13/chandler-az-officer-accused-of-misusing-flock-system-resigns/91294425007/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-16",
+        "title": "These metro Phoenix cities are using Flock cameras after audit fallout",
+        "url": "https://www.azcentral.com/story/news/local/phoenix/2026/08/16/these-metro-phoenix-cities-use-flock-safety-cameras/91275430007/",
+        "verified": true
+      },
+      {
+        "date": "2026-09-03",
+        "title": "594 agencies run 3.8M searches of Prescott PD's ALPRs, half without case number",
+        "url": "https://journalaz.com/2026/09/03/594-agencies-run-3-8m-searches-of-prescott-pds-alprs-half-without-case-number/",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Surprise Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": 28,
+    "city": "Surprise",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": "2023-12",
+    "decision_date": "2026-08-13",
+    "decision_summary": "City canceled its Flock contract and asked for camera removal days after suspending use over an audit 'anomaly' later determined to be a technical error, not officer misuse.",
+    "id": "az-surprise-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Use began December 2023. City notified Flock Aug 13; councilmember confirmed cancellation Aug 14. No cost figures found in reporting.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-08-12",
+        "title": "Surprise the latest to suspend Flock cameras, place officer on leave",
+        "url": "https://www.azcentral.com/story/news/local/surprise/2026/08/12/surprise-suspends-flock-safety-cameras/91280900007/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-14",
+        "title": "Surprise cancels Flock contract, asks company to remove its cameras",
+        "url": "https://www.azcentral.com/story/news/local/surprise/2026/08/14/surprise-cancels-flock-camera-contract-after-anomaly-found/91314065007/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-26",
+        "title": "Flock 'anomaly' in Surprise linked to tech error, not officer misuse",
+        "url": "https://www.azcentral.com/story/news/local/surprise/2026/08/26/tech-error-led-to-flock-anomaly-not-police-officer-misuse/91482625007/",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Pinal County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "annual_cost_usd": null,
+    "cameras": null,
+    "city": "Pinal County",
+    "confidence": "high",
+    "contract_end": "2026-09-30",
+    "contract_start": null,
+    "decision_date": "2026-08",
+    "decision_summary": "Sheriff Ross Teeple ended the county's Flock contract over unanswered privacy concerns, later testifying before a U.S. Senate subcommittee about an 'AI-driven surveillance state.'",
+    "id": "az-pinal-county-so",
+    "last_verified": "2026-09-25",
+    "notes": "Non-renewal confirmed Aug 2026; contract expired end of September 2026 covering unincorporated areas. Camera count not reported. Teeple testified Sept 23, 2026 before the Senate Judiciary Subcommittee on Crime and Terrorism.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-09-24",
+        "title": "Arizona sheriff ends Flock camera contract, warns of 'AI-driven surveillance state'",
+        "url": "https://www.thecooldown.com/green-tech/arizona-sheriff-ends-flock-camera-contract/",
+        "verified": true
+      },
+      {
+        "date": "2026-09-24",
+        "title": "Sheriff Ross Teeple testifies before Senate subcommittee on Flock camera technology",
+        "url": "https://pinaltoday.com/sheriff-ross-teeple-testifies-before-senate-subcommittee-on-flock-camera-technology",
+        "verified": true
+      },
+      {
+        "date": "2026-09-24",
+        "title": "Flock surveillance cameras raise constitutional questions, bipartisan US senators say",
+        "url": "https://kentuckylantern.com/2026/09/24/repub/flock-surveillance-cameras-raise-constitutional-questions-bipartisan-us-senators-say/",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Sedona Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": 11,
+    "city": "Sedona",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": "2025-03",
+    "decision_date": "2025-09-09",
+    "decision_summary": "City Council unanimously voted to sever the Flock contract and remove 11 cameras installed in June 2025 without prior public notice, after Flock disclosed federal data-sharing pilots.",
+    "id": "az-sedona-pd",
+    "last_verified": "2026-09-25",
+    "notes": "First Arizona city to fully terminate. Two-year contract via cooperative purchasing agreement with Tempe. First-year cost $51,146 reported only by consumerrights.wiki (unverified); left null. Mayor Scott Jablow later resigned.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2025-09",
+        "title": "Sedona Council Terminates License Plate Reader Program",
+        "url": "https://azfreenews.com/2025/09/sedona-council-terminates-license-plate-reader-program/",
+        "verified": true
+      },
+      {
+        "date": "2025-10-05",
+        "title": "Sedona rejects license plate readers, ends contract with Flock Safety",
+        "url": "https://www.beaconjournal.com/story/news/local/arizona/2025/10/05/sedona-removes-flock-safety-license-plate-readers/86268179007/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-14",
+        "title": "Cottonwood residents fight Flock cameras",
+        "url": "https://journalaz.com/2026/08/14/cottonwood-residents-fight-flock-cameras/",
+        "verified": true
+      },
+      {
+        "date": "2025-09-10",
+        "title": "Sedona City Council tells staff to get Flock out of town (Councilmember Pete Furman)",
+        "url": "https://sedonapete.com/2025/09/10/sedona-city-council-tells-staff-to-get-flock-out-of-town/",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Flagstaff Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": 32,
+    "city": "Flagstaff",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": "2025-12-16",
+    "decision_summary": "City Council unanimously voted to end the Flock contract; all 32 cameras were deactivated immediately and slated for physical removal by Feb 5, 2026.",
+    "id": "az-flagstaff-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Cameras deployed summer 2024. Annual cost $143,100 reported only by consumerrights.wiki (unverified); city FY25-26 amendment funded $112,000 plus fees per council presentation. Police had shortened retention to 14 days and barred immigration-enforcement use before the vote.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-01",
+        "title": "Flagstaff deactivates all 32 flock safety cameras after unanimous city council vote",
+        "url": "https://www.theflagstaffpost.com/flagstaff-deactivates-all-32-flock-safety-cameras-after-unanimous-city-council-vote/",
+        "verified": true
+      },
+      {
+        "date": "2026-02",
+        "title": "Flock Safety Cameras to Be Removed From City Streets",
+        "url": "https://www.signalsaz.com/articles/flock-safety-cameras-to-be-removed-from-city-streets/",
+        "verified": true
+      },
+      {
+        "date": "2026-01-15",
+        "title": "City's break with Flock Safety highlights growing AI privacy debate",
+        "url": "https://www.securitysystemsnews.com/article/city-s-break-with-flock-safety-highlights-growing-ai-privacy-debate",
+        "verified": true
+      },
+      {
+        "date": "2025-12-17",
+        "title": "Flagstaff City Council Votes to Cancel Flock Safety Camera Contract",
+        "url": "https://flagscanner.com/flagstaff-city-council-votes-to-cancel-flock-safety-camera-contract/",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Cottonwood Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": null,
+    "city": "Cottonwood",
+    "confidence": "medium",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": "2026-09-04",
+    "decision_summary": "City shut off and bagged its Flock cameras Sept 4, 2026 amid community discord; a Sept 22 council work session could take no formal action, leaving the final decision pending.",
+    "id": "az-cottonwood-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Status is suspended-pending-decision, not a confirmed termination; re-check after council acts. Camera count not reported. 4,335 Flock searches logged in the year before shutdown per JournalAZ.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-09-04",
+        "title": "City of Cottonwood suspends Flock cameras, effective immediately",
+        "url": "https://journalaz.com/2026/09/04/city-of-cottonwood-suspends-flock-cameras-effective-immediately/",
+        "verified": true
+      },
+      {
+        "date": "2026-09-18",
+        "title": "4,335 searches in, CPD shuts off and bags Flock",
+        "url": "https://journalaz.com/2026/09/18/4335-searches-in-cpd-shuts-off-and-bags-flock/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-14",
+        "title": "Cottonwood residents fight Flock cameras",
+        "url": "https://journalaz.com/2026/08/14/cottonwood-residents-fight-flock-cameras/",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "title": "2 more Arizona communities drop Flock license plate cameras",
+        "url": "https://fox10phoenix.com/news/2-more-arizona-communities-drop-flock-license-plate-cameras",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "pending",
+    "transparency_portal": null
+  },
+  {
+    "agency": "University of Arizona Police Department",
+    "agency_type": "university_police",
+    "annual_cost_usd": 160000,
+    "cameras": 62,
+    "city": "Tucson",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": "2025-02-25",
+    "decision_date": "2025-02",
+    "decision_summary": "UA signed a five-year $870,000 Flock contract for 62 campus ALPR cameras; community groups continue to press for cancellation over data-sharing concerns.",
+    "id": "az-university-of-arizona-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Total contract value $870k per records obtained by Tucson Spotlight; annual recurring reported as ~$160k. Contract auto-renews yearly unless canceled 30 days out. External agencies need UAPD approval or court order for data access per UAPD.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2025-11-12",
+        "title": "UA approved $870K Flock Safety deal for campus surveillance",
+        "url": "https://www.tucsonspotlight.org/ua-approved-870k-flock-safety-deal-for-campus-surveillance/",
+        "verified": true
+      },
+      {
+        "date": "2025-11-14",
+        "title": "FACT BRIEF: Did the University of Arizona spend over $800,000 on surveillance cameras accessible by federal law enforcement?",
+        "url": "https://azcir.org/news/2025/11/14/did-university-of-arizona-spend-over-800000-on-surveillance-cameras-accessible-by-federal-law-enforcement-yes/",
+        "verified": true
+      },
+      {
+        "date": "2025-09",
+        "title": "Groups Ask University of Arizona to Not Use Certain Cameras",
+        "url": "https://www.govtech.com/education/higher-ed/groups-ask-university-of-arizona-to-not-use-certain-cameras",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "active",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Queen Creek Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": null,
+    "cameras": 62,
+    "city": "Queen Creek",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": "2026-09-02",
+    "decision_summary": "Town Council unanimously criminalized misuse of the town's Flock system (up to 6 months jail, $2,500 fine) while keeping the contract, the first Arizona city with such penalties.",
+    "id": "az-queen-creek-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Camera count 62 per Sept 2026 reporting; azcentral's Aug 16 list said 47, suggesting expansion. Town is also testing 15 Axon ALPR cameras separately.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-09-04",
+        "title": "Queen Creek could become first AZ city to criminalize Flock camera misuse",
+        "url": "https://www.azcentral.com/story/news/metro-phoenix/2026/09/04/queen-creek-license-plate-reader-misuse-crime/91584262007/",
+        "verified": true
+      },
+      {
+        "date": "2026-06-02",
+        "title": "Queen Creek considers license plate readers, police drones, and body cameras in single consent vote",
+        "url": "https://poliscopic.com/articles/2026-06-02-queen-creek-considers-license-plate-readers-police-drones-body-cameras-single-consent-vote",
+        "verified": true
+      },
+      {
+        "date": "2026-08-16",
+        "title": "These metro Phoenix cities are using Flock cameras after audit fallout",
+        "url": "https://www.azcentral.com/story/news/local/phoenix/2026/08/16/these-metro-phoenix-cities-use-flock-safety-cameras/91275430007/",
+        "verified": true
+      }
+    ],
+    "state": "AZ",
+    "status": "active",
+    "transparency_portal": null
+  }
+]

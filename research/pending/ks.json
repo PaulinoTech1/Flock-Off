@@ -1,0 +1,401 @@
+[
+  {
+    "id": "ks-wichita-pd",
+    "agency": "Wichita Police Department",
+    "agency_type": "municipal_police",
+    "city": "Wichita",
+    "state": "KS",
+    "status": "active",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Wichita PD operates one of the largest Flock LPR networks in Kansas (sources variously describe 191 or about 200 cameras). In October 2024 the city council approved adding 31 Flock devices: 10 under a five-year agreement and 21 under a two-year agreement including a Raven gunshot-detection component. In July 2026 resident Mason Grimmett sued the city via the Kansas Justice Institute, alleging the warrantless network violates the Kansas Constitution.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2024-10",
+        "publisher": "City of Wichita (legistarweb/Graniucs PDF)",
+        "title": "City of Wichita agenda report re: Flock LPR devices (Item VI-7)",
+        "url": "https://wichitaks.granicus.com/services/legistar/download/pdf/2912126/Agenda_Report_VI-7.pdf",
+        "verified": true
+      },
+      {
+        "date": "2024-10",
+        "publisher": "City of Wichita (legistarweb/Graniucs PDF)",
+        "title": "Flock Group Inc. Law Enforcement Agreement - Wichita PD",
+        "url": "https://wichitaks.granicus.com/services/legistar/download/pdf/2900778/KS_-_Wichita_PD_-_Law_Enforcement_Agreement_-___8_.pdf",
+        "verified": true
+      },
+      {
+        "date": "2024-10",
+        "publisher": "City of Wichita (legistarweb/Graniucs PDF)",
+        "title": "Flock Group Inc. order form - Wichita 10-camera package",
+        "url": "https://wichitaks.granicus.com/services/legistar/download/pdf/2900779/Wichita-10Falcons.pdf",
+        "verified": true
+      },
+      {
+        "date": "2026-07-31",
+        "publisher": "Reason",
+        "title": "Kansas Lawsuit: ALPRs Turn a License Plate Into the Functional Equivalent of a GPS Tracking Device",
+        "url": "https://reason.com/2026/07/31/kansas-lawsuit-alprs-turn-a-license-plate-into-the-functional-equivalent-of-a-gps-tracking-device/",
+        "verified": true
+      },
+      {
+        "date": "2026-08-27",
+        "publisher": "CJOnline (Topeka Capital-Journal)",
+        "title": "Can I find out if I've been recorded by a Flock camera? How to check for license plate in database",
+        "url": "https://www.cjonline.com/story/news/local/2026/08/27/can-i-find-out-if-ive-been-recorded-by-a-flock-camera-how-to-check-for-license-plate-in-database/91466124007/",
+        "verified": true
+      },
+      {
+        "date": "2024-10-15",
+        "publisher": "Ranson Financial",
+        "title": "Wichita City Council to Consider Gunshot-Detecting Devices, Water Plant Agreement",
+        "url": "https://ransonfinancial.com/2024/10/15/wichita-city-council-to-consider-gunshot-detecting-devices-water-plant-agreement/",
+        "verified": false
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Camera count deliberately left null: cited sources disagree (191 per advocacy source, about 200 per news sources, 31-camera expansion documented in primary docs) and scope (city-owned vs network-accessible) is unresolved. Exact decision/approval date of the October 2024 council vote not confirmed in cited sources. Cost detail: Oct 2024 council package: 10-camera five-year agreement totaling $151,500 ($30,000 annual payments + $1,500 implementation fee); 21-camera/Raven two-year package at $186,150 year one and $183,000 recurring. Total network cost not stated as a single annual figure; left null rather than derived."
+  },
+  {
+    "id": "ks-gardner-pd",
+    "agency": "Gardner Police Department",
+    "agency_type": "municipal_police",
+    "city": "Gardner",
+    "state": "KS",
+    "status": "cancelled",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-08-17",
+    "decision_summary": "On 2026-08-17 the Gardner City Council decided to end its Flock agreement, amid community privacy pressure. Cameras were to be turned off and the agreement not renewed.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08-31",
+        "publisher": "CJOnline (Topeka Capital-Journal)",
+        "title": "Kansas residents challenge police surveillance from Flock cameras",
+        "url": "https://www.cjonline.com/story/news/politics/government/2026/08/31/kansas-residents-challenge-police-surveillance-from-flock-cameras/91495686007/",
+        "verified": true
+      },
+      {
+        "date": "2026-09-23",
+        "publisher": "Iowa Public Radio",
+        "title": "There is little state regulation of Flock cameras in Iowa. That could soon change",
+        "url": "https://www.iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change",
+        "verified": true
+      },
+      {
+        "date": "2026-08-21",
+        "publisher": "NBC Palm Springs (syndicated)",
+        "title": "Wellsville, Kansas police department ends Flock camera program after community privacy concerns",
+        "url": "https://www.nbcpalmsprings.com/ca-us-and-world/2026/08/21/wellsville-kansas-police-department-ends-flock-camera-program-after-community-privacy-concerns",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Terminal claim supported by three independent established news sources. Official city council minutes not yet located; exact camera count and contract dates unknown. Cost detail: No contract value or camera count found in cited sources."
+  },
+  {
+    "id": "ks-wellsville-pd",
+    "agency": "Wellsville Police Department",
+    "agency_type": "municipal_police",
+    "city": "Wellsville",
+    "state": "KS",
+    "status": "cancelled",
+    "cameras": 2,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-08-20",
+    "decision_summary": "On 2026-08-20 Wellsville Police Chief Danny Hackler announced termination of the department's Flock agreements, which had been in place since October 2023. The department had two actual cameras (a camera map had shown three); cameras were to be covered and staff access removed.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08-21",
+        "publisher": "NBC Palm Springs (syndicated)",
+        "title": "Wellsville, Kansas police department ends Flock camera program after community privacy concerns",
+        "url": "https://www.nbcpalmsprings.com/ca-us-and-world/2026/08/21/wellsville-kansas-police-department-ends-flock-camera-program-after-community-privacy-concerns",
+        "verified": true
+      },
+      {
+        "date": "2026-08-27",
+        "publisher": "CJOnline (Topeka Capital-Journal)",
+        "title": "Can I find out if I've been recorded by a Flock camera? How to check for license plate in database",
+        "url": "https://www.cjonline.com/story/news/local/2026/08/27/can-i-find-out-if-ive-been-recorded-by-a-flock-camera-how-to-check-for-license-plate-in-database/91466124007/",
+        "verified": true
+      },
+      {
+        "date": "2026-09-23",
+        "publisher": "Iowa Public Radio",
+        "title": "There is little state regulation of Flock cameras in Iowa. That could soon change",
+        "url": "https://www.iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Terminal claim supported by three independent established news sources. Official chief statement or city record not yet located; contract start/end dates beyond the reported October 2023 start not confirmed. Cost detail: No contract value found in cited sources."
+  },
+  {
+    "id": "ks-salina-pd",
+    "agency": "Salina Police Department",
+    "agency_type": "municipal_police",
+    "city": "Salina",
+    "state": "KS",
+    "status": "active",
+    "cameras": 24,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-06-01",
+    "decision_summary": "On 2026-06-01 the Salina City Commission voted 4-1 to renew the Flock Safety contract for three years covering 22 fixed and 2 portable ALPRs, despite public opposition over privacy. The prior contract dated to 2023 and expired in April 2026.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-06",
+        "publisher": "Salina Post",
+        "title": "FLOCK cameras contract renewed within Salina for 3 more years",
+        "url": "https://salinapost.com/posts/d902070a-cc14-4b63-ac30-a19ef2b8ee3f",
+        "verified": true
+      },
+      {
+        "date": "2026-06-01",
+        "publisher": "salina311",
+        "title": "4 To 1 Vote: Salina City Commission Approves Flock Camera Renewal After Privacy, Safety and Data Debate",
+        "url": "https://www.salina311.com/stories/2026-06-01-4-to-1-vote-salina-city-commission-approves-flock-camera-renewal-after-privacy-safety-and-data-debate/",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "publisher": "Salina Post",
+        "title": "Salina Police share information on Flock cameras to local media for the community",
+        "url": "https://salinapost.com/posts/c5f80797-64e7-4ffe-b729-3332334ec4ae",
+        "verified": true
+      },
+      {
+        "date": "2026-09-20",
+        "publisher": "salina311",
+        "title": "SPD Releases New Details on Flock Camera's Role in Homicide Suspect Arrest",
+        "url": "https://www.salina311.com/stories/2026-09-20-spd-releases-new-details-on-flock-cameras-role-in-homicide-suspect-arrest/",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Renewal date confirmed by two independent local outlets (Salina Post and salina311). Contract end date of the renewed term not stated in cited sources; left null rather than inferred. Cost detail: June 2026 three-year renewal: $198,000 for 22 fixed ALPRs and $21,000 for 2 portable ALPRs (three-year totals). Prior 2023 contract ($169,950 fixed + $18,000 portable) expired April 2026. Annual figures left null rather than derived from multi-year totals."
+  },
+  {
+    "id": "ks-derby-pd",
+    "agency": "Derby Police Department",
+    "agency_type": "municipal_police",
+    "city": "Derby",
+    "state": "KS",
+    "status": "active",
+    "cameras": 16,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2021-10-26",
+    "decision_summary": "The Derby City Council approved Flock LPR funding in 2021; a two-month free trial was to begin in November 2021 with 7 cameras. Local reporting later described 16 cameras (9 purchased in 2021, 7 added in 2022). In 2026 two Derby Flock cameras were cut down and vandalism charges were filed.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2021-10-26",
+        "publisher": "City of Derby (civicweb)",
+        "title": "Flock License Plate Reader Cameras - Consent Agenda Item, City Council",
+        "url": "https://derby.civicweb.net/document/21142/Flock%20License%20Plate%20Reader%20Cameras.pdf?handle=D1F9EFA8485941DC8A177D0D117C152B",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "1025 The River",
+        "title": "Flock cameras vandalized in Derby",
+        "url": "https://www.1025theriver.com/local/flock-cameras-vandalized/",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "1025 The River",
+        "title": "Charges filed against man accused of vandalizing Derby Flock cameras",
+        "url": "https://www.1025theriver.com/local/charges-filed-against-man-accused-of-vandalizing-derby-flock-cameras/",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "publisher": "Brightgram (aggregator repost of KWCH)",
+        "title": "Flock cameras vandalized in Derby, police investigating",
+        "url": "https://brightgram.com/wichita-ks/10511520/flock-cameras-vandalized-in-derby-police-investigating/",
+        "verified": false
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Primary city council consent agenda confirms the 2021 Flock procurement. Current 16-camera count rests on local radio reporting; the KWCH vandalism story was seen only via an aggregator repost. Renewal history and current contract dates unknown. Cost detail: Oct 2021 consent agenda: $36,750 for the first two years of use (7 cameras, reduced from 10 after vendor change), with recurring cost of approximately $2,500 per camera annually beginning in 2024. Later expansion to 16 cameras reported by local radio; post-expansion cost not found."
+  },
+  {
+    "id": "ks-park-city-pd",
+    "agency": "Park City Police Department",
+    "agency_type": "municipal_police",
+    "city": "Park City",
+    "state": "KS",
+    "status": "active",
+    "cameras": 14,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Park City PD has used Flock Safety ALPRs since 2021 (5 Falcon cameras on the initial order form). The EFF Atlas of Surveillance describes 14 Flock ALPRs in operation as of July 2025, and a 2025 council meeting summary describes approval of three additional stationary readers.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2021-07-08",
+        "publisher": "Flock Group Inc. (via legistarweb S3)",
+        "title": "Flock Group Inc. Services Agreement Order Form - City of Park City KS",
+        "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/1005584/Flock_Safety-Contract_Park_City_PD_KS__1___1_.pdf",
+        "verified": true
+      },
+      {
+        "date": "2025-07",
+        "publisher": "EFF Atlas of Surveillance",
+        "title": "Park City, KS | Atlas of Surveillance",
+        "url": "https://www.atlasofsurveillance.org/search?locale=zh-hans&location=Park+City%2C+KS",
+        "verified": false
+      },
+      {
+        "date": "2025-02",
+        "publisher": "Citizen Portal (AI-generated meeting summary)",
+        "title": "Park City council approves Champtown infrastructure contract, North Park engineering agreement and three license-plate readers",
+        "url": "https://citizenportal.ai/articles/6310008/Park-City/Sedgwick-County/Kansas/Park-City-council-approves-Champtown-infrastructure-contract-North-Park-engineering-agreement-and-three-licenseplate-readers",
+        "verified": false
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Only the 2021 order form is a primary/verified source. The 14-camera count and the 3-camera expansion rest on advocacy (EFF Atlas) and AI-generated meeting-summary sources; treat the current count as a lead-grade figure pending official confirmation. Cost detail: 2021 Flock order form: $13,125 year one ($12,500 recurring annually) for 5 Falcon cameras. A 2025 council vote reportedly added 3 stationary readers on a 24-month lease ($10,950 first year including $650/unit installation, $9,000 second year) per an AI-generated meeting summary; exact execution not confirmed."
+  },
+  {
+    "id": "ks-harvey-county-so",
+    "agency": "Harvey County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "city": "Newton",
+    "state": "KS",
+    "status": "active",
+    "cameras": 4,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "The Harvey County Sheriff's Office operates four Flock cameras to monitor vehicles, per February 2026 reporting. In June 2026 Newton Police and the sheriff's office used a Flock LPR alert from a Chase County camera to intercept three homicide suspects on I-135.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-02-09",
+        "publisher": "Kansas Press Association (Newton Kansan)",
+        "title": "'A Great Crime-Fighting Tool': Flock cameras boost sheriff's office",
+        "url": "https://kspress.com/news/2026/02/09/‘a-great-crime-fighting-tool’-flock-cameras-boost-sheriff’s-office",
+        "verified": true
+      },
+      {
+        "date": "2026-07-17",
+        "publisher": "GlobeNewswire (vendor-issued Flock Safety release)",
+        "title": "Flock LPR Alert Leads to Arrest of Three Homicide Suspects on Kansas Interstate",
+        "url": "https://www.globenewswire.com/news-release/2026/07/17/3329299/0/en/Flock-LPR-Alert-Leads-to-Arrest-of-Three-Homicide-Suspects-on-Kansas-Interstate.html",
+        "verified": false
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Only one established-outlet citation located (Kansas Press Association/Newton Kansan); second source is a vendor-issued press release, so the record is lead-grade pending a second independent outlet or official record. Cost detail: No contract value found in cited sources."
+  },
+  {
+    "id": "ks-riley-county-pd",
+    "agency": "Riley County Police Department",
+    "agency_type": "county_police",
+    "city": "Manhattan",
+    "state": "KS",
+    "status": "active",
+    "cameras": 11,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Riley County PD began implementing camera technology in 2024, installing 11 ALPRs in partnership with Flock Safety around Manhattan's perimeter, per the agency's Law Board agenda. In 2026 RCPD officials defended the system at a city commission meeting amid privacy debate, crediting ALPRs with over 150 positive case outcomes.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2025-05-19",
+        "publisher": "Riley County Police Department (Law Board agenda)",
+        "title": "Riley County Law Enforcement Agency Law Board Meeting",
+        "url": "https://www.rileycountypolice.org/AgendaCenter/ViewFile/Agenda/_05192025-90",
+        "verified": true
+      },
+      {
+        "date": "2026-06",
+        "publisher": "B104.7 / News Radio KMAN",
+        "title": "Manhattan Flock cameras spark privacy debate",
+        "url": "https://b1047.com/manhattan-flock-cameras-spark-privacy-debate/",
+        "verified": true
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Primary government source confirms the Flock partnership and camera count. Second verified citation is local radio/news coverage of the 2026 commission debate. Contract dates and cost unknown; a third independent citation is needed for the verified tier. Cost detail: No contract value found in cited sources."
+  },
+  {
+    "id": "ks-kansas-city-kansas-pd",
+    "agency": "Kansas City, Kansas Police Department",
+    "agency_type": "municipal_police",
+    "city": "Kansas City",
+    "state": "KS",
+    "status": "active",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "KCKPD operates Flock surveillance cameras in Kansas City, Kansas, per KCTV reporting. A KCUR investigation found data from Kansas City, Kansas Flock cameras was searched more than a million times in 30 days, mostly by out-of-state police departments via freeform national-database searches.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "date": "2026-08-10",
+        "publisher": "KCTV",
+        "title": "Kansas City, Kansas detective charged after Wyandotte County DA investigation",
+        "url": "https://gray-kctv-prod.gtv-cdn.com/2026/08/10/kansas-city-kansas-detective-charged-after-wyandotte-county-da-investigation/",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "publisher": "KCUR (YouTube Shorts)",
+        "title": "Data from Kansas City Flock cameras was searched over a million times in 30 days. Who was looking?",
+        "url": "https://www.youtube.com/shorts/FTz_Z_9tP3Q",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "publisher": "Eventbrite",
+        "title": "What the Flock: Cameras in Wyandotte County - What do we know? Community Qs",
+        "url": "https://www.eventbrite.com/e/what-the-flock-cameras-in-wyandotte-county-what-do-we-know-community-qs-tickets-1999112707924",
+        "verified": false
+      }
+    ],
+    "confidence": "low",
+    "last_verified": "2026-09-25",
+    "notes": "Low confidence: Flock use by KCKPD is confirmed by KCTV and KCUR, but no procurement record, camera count, cost, or contract dates were located. The KCUR finding is currently only sourced from the station's own video description; the full written investigation should be located before upgrade. Cost detail: No contract value, camera count, or contract dates found in cited sources."
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "agency": "Olympia Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": 45000,
+    "cameras": 15,
+    "city": "Olympia",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": "2024-03",
+    "decision_date": "2025-12-02",
+    "decision_summary": "Interim Chief Shelby Parker recommended suspending the 2-year Flock pilot over privacy and public-records concerns; OPD asked Flock to deactivate the system on Dec 2, 2025 and staff hooded all 15 cameras on Dec 3. The cameras were later uninstalled and the pilot never resumed.",
+    "id": "wa-olympia-pd",
+    "last_verified": "2026-09-25",
+    "notes": "City framed it as a suspension, but cameras were uninstalled Dec 2025 and the 24-month pilot term has lapsed with no renewal; treated as cancelled. Contract total $98,550 per The Olympian vs $90,000 on the order form (difference likely tax/fees); annual figure $45,000 taken from the order form.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2025-12",
+        "title": "License Plate Cameras to Be Turned Off in Olympia, Wash.",
+        "url": "https://www.govtech.com/gov-experience/license-plate-cameras-to-be-turned-off-in-olympia-wash",
+        "verified": true
+      },
+      {
+        "date": "2026-01",
+        "title": "Wash. Bill Would Regulate Automated License Plate Readers",
+        "url": "https://www.govtech.com/em/safety/wash-bill-would-regulate-automated-license-plate-readers",
+        "verified": true
+      },
+      {
+        "date": "2024-03",
+        "title": "Flock Safety Order Form - WA Olympia PD (24-month, 15 Falcon cameras)",
+        "url": "https://alprwatch.org/pub/muckrock/data/199260-flock-email-metadata-and-contracts/FLOCK_ALPR.pdf",
+        "verified": true
+      },
+      {
+        "date": "2026-01",
+        "title": "Olympia and Redmond halt Flock safety camera use amid privacy and data-access concerns",
+        "url": "https://washingtonretail.org/olympia-and-redmond-halt-flock-safety-camera-use-amid-privacy-and-data-access-concerns-2/",
+        "verified": false
+      }
+    ],
+    "state": "WA",
+    "status": "cancelled",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Everett Police Department",
+    "agency_type": "municipal_police",
+    "annual_cost_usd": 250000,
+    "cameras": 71,
+    "city": "Everett",
+    "confidence": "high",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": "2024-05",
+    "decision_summary": "City Council approved a Flock contract in late May 2024 (71 leased ALPR cameras, grant-funded two-year agreement). After a Feb 2026 court ruling made Flock images public records, the mayor paused all 71 cameras; the network was reactivated in April 2026 once SB 6002 exempted ALPR data from disclosure.",
+    "id": "wa-everett-pd",
+    "last_verified": "2026-09-25",
+    "notes": "Reactivation (April 2026) is reported by Tygart Media and Seattle Red (both blogs); no major-outlet confirmation found, but the contract was never terminated and the June 2026 Tribune settlement story treats the program as ongoing. Camera count 71 per Tribune and mayor's statement; a 2024 advocacy scorecard said 74.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2024-07",
+        "title": "Public monitoring cameras coming to Everett",
+        "url": "http://www.snoho.com/news/2024/jul/10/public-monitoring-cameras-coming-to-everett/",
+        "verified": true
+      },
+      {
+        "date": "2026-06",
+        "title": "Everett settles Flock cameras records lawsuit",
+        "url": "http://www.snoho.com/news/2026/jun/10/everett-settles-flock-cameras-records-lawsuit/",
+        "verified": true
+      },
+      {
+        "date": "2025-11",
+        "title": "Flock Safety search audits, network sharing, and general order (Everett PD records release)",
+        "url": "https://www.muckrock.com/foi/everett-251/flock-safety-search-audits-network-sharing-and-general-order-197346/",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "title": "Everett Flock Cameras: SB 6002 and the 2026 Reactivation",
+        "url": "https://tygartmedia.com/everett-flock-cameras-sb-6002/",
+        "verified": false
+      },
+      {
+        "date": "2026-02",
+        "title": "Mayor Puts Use Of Flock Automated License Plate Readers On Pause In Everett Washington",
+        "url": "https://seenineverett.com/mayor-puts-use-of-flock-automated-license-plate-readers-on-pause-in-everett-washington/",
+        "verified": false
+      }
+    ],
+    "state": "WA",
+    "status": "active",
+    "transparency_portal": null
+  },
+  {
+    "agency": "Chelan County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "annual_cost_usd": null,
+    "cameras": 12,
+    "city": "Chelan County",
+    "confidence": "medium",
+    "contract_end": null,
+    "contract_start": null,
+    "decision_date": null,
+    "decision_summary": "Sheriff Mike Morrison deployed Flock cameras under a two-year trial funded by a Washington Auto Theft Prevention Authority grant; as of Sept 2026 the cameras are operational for stolen-vehicle and missing-person cases, though Morrison says he is 'not convinced that we keep this technology' over vendor transparency concerns.",
+    "id": "wa-chelan-county-so",
+    "last_verified": "2026-09-25",
+    "notes": "Camera count (12) and two-year trial framing come from single/less-established sources; contract start date unknown. KOZI reported an $85,000 WATPA grant in Aug 2024 with cameras expected by Jan 2025, but Q13 reporting suggests they were not yet operational during the mid-2025 Decker manhunt.",
+    "renewal_date": null,
+    "sources": [
+      {
+        "date": "2026-09",
+        "title": "Sheriff: License plate readers could save lives, but abuse would cost deputy their job",
+        "url": "http://www.cashmerevalleyrecord.com/stories/sheriff-license-plate-readers-could-save-lives-but-abuse-would-cost-deputy-their-job,188848",
+        "verified": true
+      },
+      {
+        "date": "2024-08",
+        "title": "Chelan County Sheriff to use license plate identifying cameras to assist in crime investigations",
+        "url": "https://www.kozi.com/post/chelan-county-sheriff-to-use-license-plate-identifying-cameras-to-assist-in-crime-investigations",
+        "verified": true
+      },
+      {
+        "date": "2026-08",
+        "title": "Washington law enforcement expands Flock camera use amid concerns",
+        "url": "https://q13fox.com/news/washington-expands-flock-camera-use",
+        "verified": true
+      },
+      {
+        "date": "2026-09",
+        "title": "Washington cities spend millions on Flock cameras. Do they solve crime?",
+        "url": "https://www.brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime/",
+        "verified": false
+      }
+    ],
+    "state": "WA",
+    "status": "active",
+    "transparency_portal": null
+  },
+  {
+    "id": "wa-redmond-pd",
+    "agency": "Redmond Police Department",
+    "agency_type": "municipal_police",
+    "city": "Redmond",
+    "state": "WA",
+    "status": "cancelled",
+    "cameras": 24,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-07-21",
+    "decision_summary": "Redmond cameras ran only four months (installed Aug 2025, disabled Nov 2025 after ICE arrests near camera locations and privacy backlash); the city council unanimously voted to terminate the Flock contract on July 21, 2026. Launch was funded by $7,500 city general fund plus ~$95,000 Dept. of Commerce and $44,100 WATPA state grants; termination created no repayment obligation.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "title": "Flock cameras cost Washington taxpayers millions as backlash grows",
+        "url": "https://www.omakchronicle.com/news/state/flock-cameras-cost-washington-taxpayers-millions-as-backlash-grows/article_88a9ba00-78ac-51be-8642-eed75a7e9f72.html",
+        "date": "2026-09",
+        "verified": true
+      },
+      {
+        "title": "Washington cities spend millions on Flock cameras. Do they solve crime?",
+        "url": "https://www.brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime/",
+        "date": "2026-09",
+        "verified": false
+      },
+      {
+        "title": "Washington state cities turn off license plate reader cameras amid ruling on data access",
+        "url": "https://www.geekwire.com/2025/washington-state-cities-turn-off-license-plate-reader-cameras-amid-ruling-on-data-access/",
+        "date": "2025-11",
+        "verified": true
+      },
+      {
+        "title": "Redmond City Council Regular Meeting Minutes (Nov 18, 2025) - public comment on FLOCK cameras",
+        "url": "https://redmond.granicus.com/DocumentViewer.php?file=redmond_ee6e4cc93d61f9c52c60b636cd0d460b.pdf&view=1",
+        "date": "2025-11-18",
+        "verified": true
+      },
+      {
+        "title": "City of Renton Public Safety Committee Agenda (Nov 24, 2025) - notes Redmond and Lynnwood each used about two dozen Flock cameras",
+        "url": "https://renton.civicweb.net/document/305496/Public%20Safety%20Committee%20-%2024%20Nov%202025.pdf?handle=04A9B10E6C4B9E96B6518DED96953E",
+        "date": "2025-11-24",
+        "verified": true
+      },
+      {
+        "title": "Redmond City Council May 26, 2026 study session: state grants closed, termination vote scheduled",
+        "url": "https://citizenportal.ai/articles/8086514/washington/king-county/redmond/washington/king-county/redmond/washington/king-county/redmond/washington/king-county/redmond/Redmond/King-County/Washington/Staff-state-grants-for-paused-ALPR-program-are-closed-council-moves-to-schedule-action-to-end-vendor-contract",
+        "date": "2026-05",
+        "verified": false
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Brushwood Media Network marked unverified (small outlet of uncertain stature); 4 remaining verified citations. Camera count 24 comes from a WA Retail Association repost (unverified) but is corroborated by an official Renton committee document saying 'about two dozen' cameras. No annual subscription figure published; costs cited are launch/grant funding."
+  },
+  {
+    "id": "wa-lynnwood-pd",
+    "agency": "Lynnwood Police Department",
+    "agency_type": "municipal_police",
+    "city": "Lynnwood",
+    "state": "WA",
+    "status": "cancelled",
+    "cameras": 25,
+    "annual_cost_usd": null,
+    "contract_start": "2025-01",
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-02-23",
+    "decision_summary": "City Council voted 7-0 on Feb 23, 2026 to terminate the two-year Flock contract after a UW report found out-of-state agencies accessed Lynnwood's network in ways suggesting immigration-enforcement use, prompting De-Flock Lynnwood activism. The 25-camera, $171,153.50 contract was approved Jan 2025 and mostly covered by a Washington Auto Theft Prevention Authority grant ($38,000 city police budget share).",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "title": "Lynnwood becomes one of the 1st in the state to terminate Flock contract",
+        "url": "https://www.newsbeep.com/408507/",
+        "date": "2026-02-23",
+        "verified": false
+      },
+      {
+        "title": "Edmonds cancels contract with Flock license plate reader system",
+        "url": "https://myedmondsnews.com/2026/05/edmonds-cancels-contract-with-flock-license-plate-reader-system/",
+        "date": "2026-05",
+        "verified": true
+      },
+      {
+        "title": "Flock Safety tightens safeguards as states, cities question surveillance network",
+        "url": "https://myedmondsnews.com/2026/08/flock-safety-tightens-safeguards-as-states-cities-question-surveillance-network/",
+        "date": "2026-08",
+        "verified": true
+      },
+      {
+        "title": "City of Lynnwood PD ALPR Program - Waiver Request & Contract Approval (official procurement document: 25 cameras, $171,153.50, 2-year)",
+        "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3078028/PD_ALPR_Program_-_Waiver_Request___Contract_Approval_final.pdf",
+        "date": "2024-10-30",
+        "verified": true
+      },
+      {
+        "title": "KING 5: Lynnwood City Council votes to end Flock Safety camera contract (25-camera network launched June 2025)",
+        "url": "https://www.youtube.com/watch?v=CGAHyMhca_4",
+        "date": null,
+        "verified": false
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Exact vote date (Feb 23, 2026) comes from a NewsBeep wire copy and corroborating aggregator copies, not a verified outlet; consistent with My Edmonds News (Feb 2026), KOMO's 'Monday night' report (Feb 23, 2026 was a Monday), and camera network launch June 2025 (KING 5). Contract start Jan 2025 and cost split also from the wire copy; the official procurement doc independently confirms 25 cameras and $171,153.50 two-year total. annual_cost_usd left null because only the two-year total is published."
+  },
+  {
+    "id": "wa-mill-creek-pd",
+    "agency": "Mill Creek Police Department",
+    "agency_type": "municipal_police",
+    "city": "Mill Creek",
+    "state": "WA",
+    "status": "active",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": "2024-11-01",
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "Program is active: service agreement entered Nov 1, 2024; first camera installed Sept 29, 2025 and validated Oct 1, 2025; national lookup disabled Oct 1, 2025; network access restricted since Oct 27, 2025 to Snohomish County law enforcement agencies with signed data-sharing agreements. City reports no federal agency access and no immigration-enforcement use.",
+    "transparency_portal": "https://transparency.flocksafety.com/mill-creek-wa-pd",
+    "sources": [
+      {
+        "title": "Flock Safety Cameras | City of Mill Creek",
+        "url": "https://millcreekwa.gov/topics/flock-safety-cameras",
+        "date": null,
+        "verified": true
+      },
+      {
+        "title": "Flock Safety - Mill Creek WA PD Transparency Portal",
+        "url": "https://transparency.flocksafety.com/mill-creek-wa-pd",
+        "date": "2026-07-24",
+        "verified": true
+      },
+      {
+        "title": "Wash. Bill Would Regulate Automated License Plate Readers",
+        "url": "https://www.govtech.com/em/safety/wash-bill-would-regulate-automated-license-plate-readers",
+        "date": "2026-01",
+        "verified": true
+      },
+      {
+        "title": "Mill Creek police defend Flock camera program as residents raise privacy and data-sharing concerns",
+        "url": "https://citizenportal.ai/articles/7346398/washington/snohomish-county/mill-creek/washington/snohomish-county/mill-creek/washington/snohomish-county/mill-creek/Mill-Creek/Snohomish-County/Washington/Mill-Creek-police-defend-Flock-camera-program-as-residents-raise-privacy-and-data-sharing-concerns",
+        "date": "2026-01-27",
+        "verified": false
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Active status confirmed by the Flock transparency portal (updated Jul 24, 2026) and the city's Flock page. Camera count and cost could not be found in any source. Sharing-partner list has a mild conflict between the official city page ('Snohomish County agencies' generally) and the lead source (Everett/Lake Stevens/Mukilteo only); the three named agencies may be the only ones with signed data-sharing agreements."
+  },
+  {
+    "id": "wa-kent-pd",
+    "agency": "Kent Police Department",
+    "agency_type": "municipal_police",
+    "city": "Kent",
+    "state": "WA",
+    "status": "active",
+    "cameras": null,
+    "annual_cost_usd": null,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": "2025-02-05",
+    "decision_date": "2025-02-05",
+    "decision_summary": "Kent City Council voted Feb 5, 2025 to renew the Flock Safety ALPR contract after police said cameras in use since early 2023 helped solve homicides, stolen-vehicle and missing-person cases. In Nov 2025 the department disabled the national-lookup/federal-query feature and restricted access to Washington agencies after a UW report flagged data-sharing vulnerabilities. Cameras were still in use as of Aug 2026.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "title": "Council renews Flock Safety ALPR contract after police report cases solved",
+        "url": "https://citizenportal.ai/articles/6352674/Kent/King-County/Washington/Council-renews-Flock-Safety-ALPR-contract-after-police-report-cases-solved",
+        "date": "2025-02-05",
+        "verified": false
+      },
+      {
+        "title": "Kent police defend Flock license-plate readers, announce tighter controls after UW report",
+        "url": "https://citizenportal.ai/articles/7225344/Kent/King-County/Washington/Kent-police-defend-Flock-licenseplate-readers-announce-tighter-controls-after-UW-report",
+        "date": "2025-11-18",
+        "verified": false
+      },
+      {
+        "title": "Kent Police change access to Flock cameras after UW report - Center for Human Rights",
+        "url": "https://jsis.washington.edu/humanrights/2025/10/24/kent-police-change-access-to-flock-cameras-after-uw-report/",
+        "date": "2025-10-24",
+        "verified": true
+      },
+      {
+        "title": "License Plate Readers Proliferate in Washington, Bringing Concerns over ICE Overreach",
+        "url": "https://www.theurbanist.org/license-plate-readers-proliferate-in-washington-ice-overreach/",
+        "date": null,
+        "verified": false
+      },
+      {
+        "title": "Damages done to Covington Police Flock cameras over 2 months",
+        "url": "https://www.issaquahreporter.com/2026/08/28/damages-done-to-covington-police-flock-cameras-over-2-months/",
+        "date": "2026-08-28",
+        "verified": true
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Renewal date (2025-02-05) is single-sourced to an AI-generated citizenportal.ai meeting summary; no established outlet or city document corroborates it, so treat the date as provisional. The Urbanist (advocacy outlet) used only as a lead. UWCHR (Oct 2025) confirms Kent restricted access after its report; Issaquah Reporter (Aug 2026) confirms Kent cameras still operational. No cost or contract-end date found; no per-agency Flock transparency portal located."
+  },
+  {
+    "id": "wa-renton-pd",
+    "agency": "Renton Police Department",
+    "agency_type": "municipal_police",
+    "city": "Renton",
+    "state": "WA",
+    "status": "active",
+    "cameras": 24,
+    "annual_cost_usd": 88240,
+    "contract_start": null,
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-05-04",
+    "decision_summary": "Renton began a Flock trial in 2024 on a two-year contract at $88,240/yr with 24 cameras. After UW researchers found Border Patrol queries of Renton's system in 2025, the department locked down outside access. The city cycled the cameras off (Mar 31, 2026) and back on (Apr 21, 2026); on May 4, 2026 the council voted 4-3 to pause them again, and in Aug 2026 the cameras were physically covered while the council reviews the contract and researches third-party auditing.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "title": "Some sanctuary states discover feds mining local license plate data",
+        "url": "https://www.knkx.org/2025-11-07/some-sanctuary-states-discover-feds-mining-local-license-plate-data",
+        "date": "2025-11-07",
+        "verified": true
+      },
+      {
+        "title": "Leaving the Door Wide Open: Flock Surveillance Systems Expose Washington Data to Immigration Enforcement",
+        "url": "https://jsis.washington.edu/humanrights/publication/9480/",
+        "date": "2025-10",
+        "verified": true
+      },
+      {
+        "title": "City of Renton Agenda - Public Safety Committee Meeting (Flock cameras: began contracting 2024, trial period, two-year contract $88,240/yr)",
+        "url": "https://renton.civicweb.net/document/305496/Public%20Safety%20Committee%20-%2024%20Nov%202025.pdf?handle=04A9B10E6A6C4B9E96B6518DED96953E",
+        "date": "2025-11-24",
+        "verified": true
+      },
+      {
+        "title": "Council Puts Flock Cameras on Hold - Again",
+        "url": "https://rentonsignal.com/2026/05/06/council-puts-flock-cameras-on-hold-again/",
+        "date": "2026-05-06",
+        "verified": true
+      },
+      {
+        "title": "Damages done to Covington Police Flock cameras over 2 months",
+        "url": "https://www.issaquahreporter.com/2026/08/28/damages-done-to-covington-police-flock-cameras-over-2-months/",
+        "date": "2026-08-28",
+        "verified": true
+      },
+      {
+        "title": "Washington cities spend millions on Flock cameras. Do they solve crime?",
+        "url": "https://www.brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime/",
+        "date": "2026-09",
+        "verified": false
+      },
+      {
+        "title": "Renton council extends pause on Flock ALPR cameras, orders contract review and third-party audit study",
+        "url": "https://citizenportal.ai/articles/8571657/washington/king-county/renton/renton-council-extends-pause-on-flock-alpr-cameras-orders-contract-review-and-thirdparty-audit-study",
+        "date": "2026-07-20",
+        "verified": false
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Camera count (24) from an Issaquah PD city government presentation (Feb 2025) and a KOMO News segment description; contract cost ($88,240/yr, 2-year, began 2024) from the Renton Public Safety Committee agenda (government document). Status is active-but-paused: contract not cancelled; cameras covered and idle while council reviews. No exact contract start/end dates found."
+  },
+  {
+    "id": "wa-spokane-county-so",
+    "agency": "Spokane County Sheriff's Office",
+    "agency_type": "county_sheriff",
+    "city": "Spokane County",
+    "state": "WA",
+    "status": "active",
+    "cameras": 46,
+    "annual_cost_usd": null,
+    "contract_start": "2023-12",
+    "contract_end": null,
+    "renewal_date": null,
+    "decision_date": "2026-04",
+    "decision_summary": "Sheriff John Nowels deactivated the 46-camera Flock network in April 2026, citing gross-misdemeanor risk under SB 6002 (Driver Privacy Act); the office said it was assessing how to keep using ALPR within the new law and working with vendors on a redeployment path. The underlying five-year contract (Dec 2023) was not confirmed terminated; no reactivation had been reported as of Sept 2026.",
+    "transparency_portal": "https://transparency.flocksafety.com/-spokane-county-wa-so",
+    "sources": [
+      {
+        "title": "Stanwood reactivates Flock cameras as Spokane County joins Pierce County in shutting them down",
+        "url": "http://cmg-cmg-tv-10090-prod.cdn.arcpublishing.com/news/local/stanwood-reactivates-flock-cameras-spokane-county-joins-pierce-county-shutting-them-down/A7O7L5NXUNGYBJILWMIBGXOGSY/",
+        "date": "2026-04",
+        "verified": true
+      },
+      {
+        "title": "Federal aid is supercharging local WA police surveillance tech",
+        "url": "https://www.investigatewest.org/federal-aid-is-supercharging-local-wa-police-surveillance-tech/",
+        "date": "2023-07",
+        "verified": true
+      },
+      {
+        "title": "Flock Safety - Spokane County WA SO Transparency Portal",
+        "url": "https://transparency.flocksafety.com/-spokane-county-wa-so",
+        "date": "2026-07",
+        "verified": true
+      },
+      {
+        "title": "Spokane County's $806K Flock Camera Deal - Documents Reveal Policy Gaps",
+        "url": "https://medium.com/@IamRonBurgandy/spokane-countys-806k-deal-for-flock-license-plate-cameras-what-public-records-reveal-249a6c31fc5d",
+        "date": "2025-10",
+        "verified": false
+      },
+      {
+        "title": "Spokane sheriff shuts down Flock cameras, cites SB 6002 risk",
+        "url": "https://seattlered.com/legislature/spokane-sheriff-shuts-down-flock-cameras-sb-6002/4117761",
+        "date": "2026-04",
+        "verified": false
+      },
+      {
+        "title": "Spokane County Sheriff's Office deactivates license plate readers amid new state privacy law",
+        "url": "https://www.youtube.com/watch?v=fWoY-dK-2UI",
+        "date": "2026-04",
+        "verified": false
+      }
+    ],
+    "confidence": "medium",
+    "last_verified": "2026-09-25",
+    "notes": "Status is active-with-dark-network, not cancelled: SCSO framed the shutdown as a deactivation pending an SB 6002-compliant redeployment, and the five-year contract (Dec 2023, ~Dec 2028) was never confirmed terminated. The $806,200 five-year total (sole-source, ARPA-funded) comes from an anonymous Medium writeup of a records release; no official primary contract source was found, so annual_cost_usd is left null rather than derived. Deactivation date inferred from the April 2026 CMG article ('announced Wednesday' -> 2026-04-01). Portal slug has an unusual leading hyphen; treat the URL as needing a live check."
+  },
+  {
+    "id": "wa-spokane-pd",
+    "agency": "Spokane Police Department",
+    "agency_type": "municipal_police",
+    "city": "Spokane",
+    "state": "WA",
+    "status": "active",
+    "cameras": 30,
+    "annual_cost_usd": 91000,
+    "contract_start": "2025-01-28",
+    "contract_end": "2026-01-28",
+    "renewal_date": null,
+    "decision_date": null,
+    "decision_summary": "City of Spokane PD migrated fixed ALPR to Flock in 2025: 28 fixed Falcon cameras plus 2 Falcon Flex, funded by a $100,000 WATPA grant ($119,028 first year, $91,000/year after). The 12-month term ran Jan 2025-Jan 2026; Aug 2026 reporting still describes the city as an active Flock partner, implying renewal or extension.",
+    "transparency_portal": null,
+    "sources": [
+      {
+        "title": "February 3, 2025 Public Safety and Community Health Meeting agenda - WATPA Grant Flock ALPR Purchase (City of Spokane)",
+        "url": "https://static.spokanecity.org/documents/bcc/committees/public-safety-and-community-health/agendas/2025/02/psch-agenda-2025-02-03.pdf",
+        "date": "2025-02",
+        "verified": true
+      },
+      {
+        "title": "Spokane Police Department Policy Manual - Automated License Plate Readers policy",
+        "url": "https://static.spokanecity.org/documents/police/accountability/police-policy-manual-2026-03-30.pdf",
+        "date": "2026-03",
+        "verified": true
+      },
+      {
+        "title": "Where to find nearly 2,000 Flock cameras in Washington",
+        "url": "https://www.kitsapsun.com/story/news/2026/08/17/flock-cameras-in-washington-state-where-to-find-them-near-me/91336758007/",
+        "date": "2026-08",
+        "verified": true
+      }
+    ],
+    "confidence": "high",
+    "last_verified": "2026-09-25",
+    "notes": "Camera count 30 = city-funded count (28 fixed Falcon + 2 Falcon Flex) per the Feb 2025 agenda; DeFlock's crowdsourced map cited by the Kitsap Sun (Aug 2026) estimates ~100 for the City of Spokane, which likely overcounts or reflects expansion - discrepancy noted. The 12-month term (2025-01-28 to 2026-01-28) has passed, but Aug 2026 reporting still describes the city as an active Flock partner, implying renewal/extension; no official renewal source found."
+  }
+]

@@ -196,6 +196,69 @@ classify:
     - wuot.org  # WUOT Knoxville (NPR)
     - wvlt.tv  # WVLT Knoxville (Gray)
     - wvpress.org  # WV Press Association
+    # Wave 2 additions (2026-09-26): TX/CA/CO/AZ/WA/OR/MO/KS/LA/OK research wave, reviewed in git.
+    - 404media.co  # independent tech newsroom
+    - 9news.com  # KUSA Denver (Tegna)
+    - azcentral.com  # Arizona Republic (Gannett)
+    - azcir.org  # Arizona Center for Investigative Reporting (nonprofit)
+    - castlerocknewspress.net  # Colorado Community Media
+    - cjonline.com  # Topeka Capital-Journal (Gannett)
+    - collegian.com  # Colorado State student paper
+    - coloradoan.com  # Fort Collins Coloradoan (Gannett)
+    - dailycal.org  # UC Berkeley student paper
+    - dailytidings.com  # Ashland Daily Tidings
+    - elpasoheraldpost.com  # El Paso Herald-Post
+    - elpasotimes.com  # El Paso Times (Gannett)
+    - fox10phoenix.com  # KSAZ Phoenix (Fox)
+    - fox26houston.com  # KRIV Houston (Fox)
+    - fox4news.com  # KDFW Dallas (Fox)
+    - geekwire.com  # established tech news
+    - houmatoday.com  # Houma Courier (Gannett)
+    - insider.govtech.com  # Government Technology (trade press)
+    - investigatewest.org  # InvestigateWest (nonprofit investigative)
+    - iowapublicradio.org  # Iowa Public Radio (NPR)
+    - journalaz.com  # Journal AZ (Verde Valley)
+    - kitsapsun.com  # Kitsap Sun (Gannett)
+    - kjluradio.com  # KJLU Jefferson City
+    - knkx.org  # KNKX Seattle/Tacoma (NPR)
+    - kprcradio.iheart.com  # KPRC Houston (iHeart; precedent: other iheart hosts)
+    - kqed.org  # KQED Bay Area (NPR)
+    - krps.org  # Kansas public radio
+    - ksmu.org  # KSMU Missouri State (NPR)
+    - lookout.co  # Lookout Santa Cruz
+    - lookouteugene-springfield.com  # Lookout Eugene-Springfield
+    - louisianafirstnews.com  # Louisiana First News (Nexstar)
+    - military.com  # Military.com (established national outlet)
+    - nbcpalmsprings.com  # NBC Palm Springs
+    - news-leader.com  # Springfield News-Leader (Gannett)
+    - news9.com  # KWTV Oklahoma City
+    - oklahoman.com  # The Oklahoman (Gannett)
+    - padailypost.com  # Palo Alto Daily Post
+    - paloaltoonline.com  # Embarcadero Media
+    - parkerchronicle.net  # Colorado Community Media
+    - q13fox.com  # KCPQ Seattle (Fox)
+    - radio.kttz.org  # Texas Tech Public Media (NPR)
+    - reason.com  # Reason magazine
+    - recordnet.com  # Stockton Record (Gannett)
+    - registerguard.com  # Register-Guard Eugene (Gannett)
+    - sacurrent.com  # San Antonio Current (alt-weekly)
+    - salinapost.com  # Eagle Radio Salina
+    - sanjosespotlight.com  # San Jose Spotlight (nonprofit)
+    - securitysystemsnews.com  # trade press
+    - securitytoday.com  # trade press
+    - shreveporttimes.com  # Shreveport Times (Gannett)
+    - statesmanjournal.com  # Statesman Journal Salem (Gannett)
+    - texasobserver.org  # Texas Observer
+    - thebatt.com  # Texas A&M student paper
+    - thecamarilloacorn.com  # Camarillo Acorn
+    - thedailytexan.com  # UT Austin student paper
+    - themaneater.com  # Mizzou student paper
+    - thesiuslawnews.com  # Siuslaw News (Florence OR)
+    - theurbanist.org  # The Urbanist Seattle
+    - tucsonspotlight.org  # Tucson Spotlight (nonprofit)
+    - universitystar.com  # Texas State student paper
+    - vcstar.com  # Ventura County Star (Gannett)
+    - yampavalleybugle.com  # Yampa Valley Bugle (nonprofit investigative)
   verified_primary:
     # Established student papers w/ editorial process (precedent: breezejmu.org).
     # Wave 1 additions (2026-09-26), reviewed in git.
@@ -232,6 +295,37 @@ classify:
     - transparency.flocksafety.com  # vendor portal: primary evidence of deployment
     - usi.edu  # University of Southern Indiana
     - vernonhills.org  # Village of Vernon Hills IL
+    # Wave 2 additions (2026-09-26): TX/CA/CO/AZ/WA/OR/MO/KS/LA/OK research wave, reviewed in git.
+    - agendas.fresno.gov  # City of Fresno agendas
+    - berkeleyca.gov  # City of Berkeley
+    - blog.cstx.gov  # City of College Station official blog
+    - cityofbartlesville.org  # City of Bartlesville
+    - cityofdallas.legistar.com  # City of Dallas Legistar
+    - denver.legistar1.com  # City of Denver Legistar
+    - derby.civicweb.net  # City of Derby KS CivicWeb
+    - englewoodgov.civicweb.net  # City of Englewood CO CivicWeb
+    - epcsheriffsoffice.com  # El Paso County Sheriff
+    - fortworthtexas.gov  # City of Fort Worth
+    - fountain.colorado.gov  # City of Fountain CO
+    - fresno.granicusideas.com  # City of Fresno Granicus
+    - hawley.senate.gov  # U.S. Senator Hawley
+    - jsis.washington.edu  # UW Jackson School (hosts UW Center for Human Rights report)
+    - kenner.la.us  # City of Kenner
+    - millcreekwa.gov  # City of Mill Creek WA
+    - mountainview.gov  # City of Mountain View
+    - muckrock.com  # hosts primary FOIA records responses
+    - okc.gov  # Oklahoma City
+    - okhouse.gov  # Oklahoma House
+    - redmond.granicus.com  # City of Redmond WA Granicus
+    - renton.civicweb.net  # City of Renton CivicWeb
+    - rileycountypolice.org  # Riley County PD
+    - scottsdale.org  # City of Scottsdale
+    - services.austintexas.gov  # City of Austin
+    - static.spokanecity.org  # City of Spokane document store
+    - thorntonpd.org  # Thornton PD
+    - tulsapolice.org  # Tulsa PD
+    - wichitaks.granicus.com  # City of Wichita Granicus
+    - woodburn-or.gov  # City of Woodburn OR
   unverified:
     # Advocacy organizations: reputable, but advocacy. Leads, not citations.
     # Social / video / self-publishing platforms.
@@ -287,3 +381,9 @@ classify:
     - webpronews.com  # blog / syndicated
     - wyrz.org  # low-power radio, per-source false
     - youtube.com
+    # Wave 2 additions (2026-09-26): TX/CA/CO/AZ/WA/OR/MO/KS/LA/OK research wave, reviewed in git.
+    - einpresswire.com  # press-release wire
+    - fresnoalliance.com  # advocacy
+    - globenewswire.com  # press-release wire
+    - reclaimthenet.org  # advocacy-leaning
+    - washingtonretail.org  # trade association
