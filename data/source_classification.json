@@ -1,7 +1,7 @@
 {
   "generated": "2026-09-25",
   "criteria": "docs/METHODOLOGY.md#evidence-tiers",
-  "classifier": "scripts/classify_sources.py",
+  "classifier": "scripts/flockoff.py classify",
   "verified_news": [
     "607newsnow.com",
     "949tnt.iheart.com",
@@ -205,7 +205,5 @@
     "wyrz.org",
     "youtube.com"
   ],
-  "unverified_unlisted_seen": [
-    "github.com"
-  ]
+  "unverified_unlisted_seen": []
 }

@@ -5,7 +5,7 @@ review per week. Automation finds candidates; a human makes every call.
 
 ## What runs every Monday morning
 
-1. **Deterministic checks** (`scripts/weekly_monitor.py`): pressure windows
+1. **Deterministic checks** (`python3 scripts/flockoff.py monitor`): pressure windows
    (active contracts renewing within 90 days), active contracts missing a
    renewal date, stale records (unverified > 180 days), low-confidence leads.
 2. **Portal spot-checks**: up to 10 active records with a transparency portal
@@ -33,7 +33,7 @@ review per week. Automation finds candidates; a human makes every call.
      citations and flags articles that materially changed since they were
      fingerprinted. Bot-blocked pages are "unverifiable," never "probably fine."
    - The fingerprint baseline (`data/source_fingerprints.json`) advances when
-     a maintainer runs `python3 scripts/source_fingerprints.py --refresh`
+     a maintainer runs `python3 scripts/flockoff.py fingerprints refresh`
      (or `--keys k1,k2` for specific citations) and pushes the result.
 
 ## The one-hour workflow
@@ -63,8 +63,21 @@ review per week. Automation finds candidates; a human makes every call.
 | Low-confidence leads | Single-source records | Corroborate or leave flagged; never cite as confirmed |
 | Possible duplicate sources (cross-URL) | Same article cited under different URLs (simhash) | Same agency: drop the redundant citation. Cross-agency: informational |
 | Sources changed since citation | Cited article materially changed since fingerprinted | Re-verify the citation; refresh the fingerprint baseline after review |
-| Source key hygiene | Missing/stale/duplicate `source_key` | Backfill with `scripts/source_keys.py`, dedupe, push |
-| Monitor health | What broke this run | Fix the check or accept the gap explicitly |
+| Source key hygiene | Missing/stale/duplicate `source_key` | Backfill with `python3 scripts/flockoff.py keys backfill`, dedupe, push |
+| Monitor health | What broke this run | Each item carries an error code; look it up in `docs/ERRORS.md` and follow its Fix line |
+
+## Configuration and error codes
+
+All tunables live in `config/flock-off.yaml`: fetch politeness, dedup
+normalization, fingerprint thresholds, monitor windows, upstream URLs, and
+the source-classification domain lists. Change behavior there, not in code.
+The file is validated on every load (`python3 scripts/flockoff.py config
+validate`); a bad value fails fast naming the exact key and constraint.
+
+Failures are reported as stable codes (`E_*` error, `W_*` warning, `I_*`
+info), documented with remediations in `docs/ERRORS.md`. The single entry
+point for everything is `python3 scripts/flockoff.py` (`keys check`,
+`keys backfill`, `fingerprints refresh`, `classify --check`, `monitor`).
 
 ## Escape hatches
 

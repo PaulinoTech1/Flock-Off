@@ -6,7 +6,7 @@ skew results) and prints a markdown digest of items needing human review.
 The news sweep and portal spot-checks are done by the monitor worker; this
 script covers everything computable from the dataset itself.
 
-Usage: python3 weekly_monitor.py
+Usage: python3 scripts/flockoff.py monitor [local-dataset-fallback]
 """
 from __future__ import annotations
 
@@ -22,25 +22,21 @@ import urllib.request
 from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-try:
-    from source_keys import check as check_source_keys
-    from source_keys import canonical_url
-    from source_fingerprints import (
-        NEAR_DUP_DISTANCE, UPDATE_DISTANCE, PAIR_MIN_LEN, MIN_TEXT_LEN,
-        fetch_page, extract_text, simhash64, content_hash, hamming,
-    )
-    _fp_import_ok = True
-except ImportError:
-    check_source_keys = None
-    _fp_import_ok = False
+from flockoff_config import ConfigError, load_config  # noqa: E402
+from flockoff_errors import fmt  # noqa: E402
+from source_keys import check as check_source_keys  # noqa: E402
+from source_keys import canonical_url  # noqa: E402
+import source_fingerprints as sfp  # noqa: E402
 
-FINGERPRINTS_URL = "https://raw.githubusercontent.com/PaulinoTech1/Flock-Off/main/data/source_fingerprints.json"
-UPDATE_PROBE_SAMPLE = 20
-UPDATE_PROBE_DELAY = 1.5
+_cfg_cache: dict | None = None
 
-DATASET_URL = "https://raw.githubusercontent.com/PaulinoTech1/Flock-Off/main/data/agencies.json"
-STALE_DAYS = 180
-RENEWAL_WINDOW_DAYS = 90
+
+def _cfg() -> dict:
+    """Load (once) the validated pipeline config."""
+    global _cfg_cache
+    if _cfg_cache is None:
+        _cfg_cache = load_config()
+    return _cfg_cache
 
 # --- Upstream discovery feeds: 100% free, no key, no account, no recurring
 # cost. Anything paywalled (e.g. GovSpend) is out by policy; see
@@ -53,8 +49,6 @@ COVERED_STATES = {
     "OH", "MI", "IN", "IL", "WI",
     "WV", "KY", "TN", "AL", "MS",
 }
-FINDING_FLOCK_TRACKER_URL = "https://www.findingflock.com/learn/flock-contract-cancellations"
-ATLAS_CSV_URL = "https://www.atlasofsurveillance.org/download.csv?vendor=Flock+Safety"
 FF_ACTION_TO_STATUS = {
     "canceled": "cancelled",
     "non-renewal": "cancelled",
@@ -148,7 +142,7 @@ def check_finding_flock_tracker(agencies: list[dict]) -> tuple[list[str], list[s
 
     Returns (candidate_lines, mismatch_lines); raises on fetch/parse failure.
     """
-    html = fetch_text(FINDING_FLOCK_TRACKER_URL, timeout=60, max_bytes=2_000_000)
+    html = fetch_text(_cfg()["urls"]["finding_flock_tracker"], timeout=60, max_bytes=2_000_000)
     parser = _TrackerTableParser()
     parser.feed(html)
     if not parser.rows:
@@ -174,7 +168,7 @@ def check_finding_flock_tracker(agencies: list[dict]) -> tuple[list[str], list[s
             candidates.append(
                 f"- **{place}** ({state}): {action} on {date}. "
                 f"Research: confirm Flock vendor, find primary record. "
-                f"Tracker source: {source_url or FINDING_FLOCK_TRACKER_URL}"
+                f"Tracker source: {source_url or _cfg()['urls']['finding_flock_tracker']}"
             )
             continue
         expected = FF_ACTION_TO_STATUS.get(action.strip().lower())
@@ -183,7 +177,7 @@ def check_finding_flock_tracker(agencies: list[dict]) -> tuple[list[str], list[s
                 mismatches.append(
                     f"- **{m['agency']}** ({state}): dataset says "
                     f"{m.get('status')}, Finding Flock reports {action} on {date}. "
-                    f"Source: {source_url or FINDING_FLOCK_TRACKER_URL}"
+                    f"Source: {source_url or _cfg()['urls']['finding_flock_tracker']}"
                 )
     return candidates, mismatches
 
@@ -193,7 +187,7 @@ def check_atlas_csv(agencies: list[dict]) -> list[str]:
 
     Returns candidate lines; raises on fetch/parse failure.
     """
-    text = fetch_text(ATLAS_CSV_URL, timeout=120, max_bytes=15_000_000)
+    text = fetch_text(_cfg()["urls"]["atlas_csv"], timeout=120, max_bytes=15_000_000)
     reader = csv.DictReader(io.StringIO(text))
     known = {(norm_name(a.get("agency")), a.get("state")) for a in agencies}
     seen: set[tuple[str, str]] = set()
@@ -240,7 +234,7 @@ def days_since(date_str: str | None, today: datetime.date) -> int | None:
 def load_dataset() -> dict:
     """Fetch from GitHub main; fall back to a local path given as argv[1]."""
     try:
-        with urllib.request.urlopen(DATASET_URL, timeout=120) as resp:
+        with urllib.request.urlopen(_cfg()["urls"]["dataset"], timeout=120) as resp:
             data = json.load(resp)
         return data, "github-main"
     except Exception as exc:  # noqa: BLE001 - reported, then fallback
@@ -250,11 +244,16 @@ def load_dataset() -> dict:
                     return json.load(f), f"local-fallback:{sys.argv[1]} (fetch failed: {exc})"
             except OSError:
                 pass
-        print(f"## Monitor health\n\nFAILED to fetch dataset: {exc}\n")
+        print(f"## Monitor health\n\n{fmt('E_DS_FETCH', str(exc))}\n")
         sys.exit(1)
 
 
 def main() -> None:
+    try:
+        _cfg()
+    except ConfigError as exc:
+        print(str(exc), file=sys.stderr)
+        sys.exit(2)
     today = datetime.date.today()
     data, provenance = load_dataset()
 
@@ -272,7 +271,7 @@ def main() -> None:
         a for a in agencies
         if a.get("status") == "active"
         and (du := days_until(a.get("renewal_date"), today)) is not None
-        and 0 <= du <= RENEWAL_WINDOW_DAYS
+        and 0 <= du <= _cfg()["monitor"]["renewal_window_days"]
     ]
     renewals.sort(key=lambda a: a["renewal_date"] or "")
     lines.append("## Pressure windows (active, renewal within 90 days)")
@@ -301,10 +300,10 @@ def main() -> None:
     stale = [
         (days_since(a.get("last_verified"), today), a)
         for a in agencies
-        if (ds := days_since(a.get("last_verified"), today)) is not None and ds > STALE_DAYS
+        if (ds := days_since(a.get("last_verified"), today)) is not None and ds > _cfg()["monitor"]["stale_days"]
     ]
     stale.sort(key=lambda t: t[0] or 0, reverse=True)
-    lines.append(f"## Stale records (unverified > {STALE_DAYS} days, oldest first)")
+    lines.append(f"## Stale records (unverified > {_cfg()['monitor']['stale_days']} days, oldest first)")
     if stale:
         for ds, a in stale[:10]:
             src = (a.get("sources") or [{}])[0].get("url", "no source")
@@ -335,12 +334,12 @@ def main() -> None:
         ff_candidates, ff_mismatches = check_finding_flock_tracker(agencies)
     except Exception as exc:  # noqa: BLE001 - reported under Monitor health
         ff_candidates, ff_mismatches = [], []
-        health_notes.append(f"Finding Flock tracker check failed: {exc}")
+        health_notes.append(fmt("W_UPSTREAM_FF", str(exc)))
     try:
         atlas_candidates = check_atlas_csv(agencies)
     except Exception as exc:  # noqa: BLE001 - reported under Monitor health
         atlas_candidates = []
-        health_notes.append(f"Atlas of Surveillance CSV check failed: {exc}")
+        health_notes.append(fmt("W_UPSTREAM_ATLAS", str(exc)))
 
     lines.append("## Upstream candidates: Finding Flock cancellation tracker")
     if ff_candidates:
@@ -379,35 +378,27 @@ def main() -> None:
         })
 
     # Source key hygiene: missing/stale dedup keys, intra-agency duplicates.
-    if not _fp_import_ok:
-        health_notes.append("source_keys.py unavailable; dedup-key check skipped")
+    key_problems = check_source_keys(data)
+    lines.append("## Source key hygiene (dedup)")
+    if key_problems:
+        lines.append(f"- {len(key_problems)} problem(s):")
+        for p in key_problems[:15]:
+            lines.append(f"  - {p}")
+        if len(key_problems) > 15:
+            lines.append(f"  - ...and {len(key_problems) - 15} more")
     else:
-        key_problems = check_source_keys(data)
-        lines.append("## Source key hygiene (dedup)")
-        if key_problems:
-            lines.append(f"- {len(key_problems)} problem(s):")
-            for p in key_problems[:15]:
-                lines.append(f"  - {p}")
-            if len(key_problems) > 15:
-                lines.append(f"  - ...and {len(key_problems) - 15} more")
-        else:
-            lines.append("- none: all citations carry valid keys, no intra-agency duplicates")
-        lines.append("")
+        lines.append("- none: all citations carry valid keys, no intra-agency duplicates")
+    lines.append("")
 
     # Layers 2+3: content fingerprints (read-only; baseline advances via
-    # scripts/source_fingerprints.py --refresh + push).
+    # python3 scripts/flockoff.py fingerprints refresh + push).
     fps = None
-    if _fp_import_ok:
-        try:
-            with urllib.request.urlopen(FINGERPRINTS_URL, timeout=120) as resp:
-                fps = json.load(resp)
-        except Exception:  # noqa: BLE001 - reported below
-            fps = None
-    if not _fp_import_ok:
-        health_notes.append("source_fingerprints.py unavailable; content checks skipped")
-    elif fps is None:
-        health_notes.append("source_fingerprints.json not on GitHub main; "
-                             "run scripts/source_fingerprints.py --refresh and push")
+    try:
+        with urllib.request.urlopen(_cfg()["urls"]["fingerprints"], timeout=120) as resp:
+            fps = json.load(resp)
+    except Exception as exc:  # noqa: BLE001 - reported below
+        fps = None
+        health_notes.append(fmt("E_FP_FETCH", str(exc)))
     else:
         def _fp_for(src):
             try:
@@ -423,7 +414,7 @@ def main() -> None:
                 key, fp = _fp_for(src)
                 if not fp or fp.get("fetch_status") != "ok" or not fp.get("simhash"):
                     continue
-                if fp.get("text_len", 0) < PAIR_MIN_LEN:
+                if fp.get("text_len", 0) < sfp.pair_min_len():
                     continue
                 cands.append((agency["id"], src.get("title", ""), src["url"],
                               key, int(fp["simhash"], 16)))
@@ -432,7 +423,7 @@ def main() -> None:
             for j in range(i + 1, len(cands)):
                 if cands[i][3] == cands[j][3]:
                     continue  # same canonical URL: legitimate reuse, not a dup
-                if hamming(cands[i][4], cands[j][4]) <= NEAR_DUP_DISTANCE:
+                if sfp.hamming(cands[i][4], cands[j][4]) <= sfp.near_dup_distance():
                     pairs.append((cands[i], cands[j]))
         lines.append("## Possible duplicate sources (cross-URL)")
         if pairs:
@@ -460,30 +451,30 @@ def main() -> None:
                                    src["url"], key, fp))
         ok_entries.sort(key=lambda t: t[3])
         week = int(today.strftime("%V"))
-        start = (week * UPDATE_PROBE_SAMPLE) % len(ok_entries) if ok_entries else 0
+        start = (week * _cfg()["monitor"]["update_probe_sample"]) % len(ok_entries) if ok_entries else 0
         sample = [ok_entries[(start + i) % len(ok_entries)]
-                  for i in range(min(UPDATE_PROBE_SAMPLE, len(ok_entries)))]
+                  for i in range(min(_cfg()["monitor"]["update_probe_sample"], len(ok_entries)))]
         changed, probe_blocked, probe_err = [], 0, 0
         for agency_id, title, url, key, fp in sample:
-            time.sleep(UPDATE_PROBE_DELAY)
-            fetch_status, _, html = fetch_page(url)
+            time.sleep(_cfg()["monitor"]["update_probe_delay"])
+            fetch_status, _, html = sfp.fetch_page(url)
             if fetch_status != "ok" or not html:
                 if fetch_status == "blocked":
                     probe_blocked += 1
                 else:
                     probe_err += 1
                 continue
-            _, text = extract_text(html)
-            if len(text) < MIN_TEXT_LEN:
+            _, text = sfp.extract_text(html)
+            if len(text) < sfp.min_text_len():
                 continue
-            new_hash = content_hash(text)
+            new_hash = sfp.content_hash(text)
             if new_hash == fp.get("content_hash"):
                 continue
-            new_sh = simhash64(text)
-            dist = hamming(new_sh, int(fp["simhash"], 16)) if new_sh else 64
+            new_sh = sfp.simhash64(text)
+            dist = sfp.hamming(new_sh, int(fp["simhash"], 16)) if new_sh else 64
             old_len = fp.get("text_len", 0) or 1
             len_change = abs(len(text) - old_len) / old_len
-            if dist >= UPDATE_DISTANCE or len_change > 0.5:
+            if dist >= sfp.update_distance() or len_change > 0.5:
                 changed.append((agency_id, title, url, fp.get("fetched_at"), dist))
         lines.append("## Sources changed since citation")
         if changed:
@@ -497,11 +488,10 @@ def main() -> None:
         else:
             lines.append(f"- none in this week's probe sample ({len(sample)} checked)")
         lines.append("")
-        if probe_blocked or probe_err:
-            health_notes.append(
-                f"update probe: {probe_blocked} blocked, {probe_err} fetch errors "
-                f"(of {len(sample)} sampled)"
-            )
+        if probe_blocked:
+            health_notes.append(fmt("W_PROBE_BLOCKED", f"{probe_blocked} of {len(sample)} sampled"))
+        if probe_err:
+            health_notes.append(fmt("W_PROBE_ERROR", f"{probe_err} of {len(sample)} sampled"))
         missing_fp = 0
         for agency in agencies:
             for src in agency.get("sources", []):
@@ -509,10 +499,7 @@ def main() -> None:
                 if fp is None:
                     missing_fp += 1
         if missing_fp:
-            health_notes.append(
-                f"{missing_fp} citations lack fingerprints; "
-                f"run scripts/source_fingerprints.py --refresh and push"
-            )
+            health_notes.append(fmt("W_FP_MISSING_KEYS", f"{missing_fp} citations"))
 
     bar_met = sum(1 for a in terminal if independent_citations(a) >= 3)
     lines.append("## Dataset stats")

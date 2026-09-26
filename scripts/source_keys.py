@@ -19,32 +19,44 @@ Deliberately NOT handled here (Layers 2/3 territory):
   - articles whose content changed after citation (needs content re-fetch)
 
 Usage:
-  python3 scripts/source_keys.py          # backfill missing/stale source_key fields
-  python3 scripts/source_keys.py --check  # exit 1 on missing/stale key, or on a
-                                          # duplicate key within one agency's sources
+  python3 scripts/flockoff.py keys backfill   # fill missing/stale source_key fields
+  python3 scripts/flockoff.py keys check      # exit 1 on missing/stale key, or on a
+                                             # duplicate key within one agency's sources
+  (legacy: python3 scripts/source_keys.py [--check])
+
+Normalization lists (tracking params, host prefixes) come from
+config/flock-off.yaml and are validated on load.
 """
 from __future__ import annotations
 
 import json
+import os
 import sys
 import urllib.parse
 
-DATA_PATH = "data/agencies.json"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from flockoff_config import ConfigError, load_config  # noqa: E402
+from flockoff_errors import fmt  # noqa: E402
 
-# Exact tracking params to drop; plus any param starting with these prefixes.
-TRACKING_PARAMS = {
-    "fbclid", "gclid", "gclsrc", "msclkid", "mc_cid", "mc_eid",
-    "_hsenc", "_hsmi", "igshid", "yclid", "srsltid",
-    "vero_conv", "vero_id",
-}
-TRACKING_PREFIXES = ("utm_", "pk_", "piwik_", "matomo_")
+_cfg_cache: dict | None = None
 
-HOST_PREFIXES = ("www.", "m.", "amp.")
+
+def _cfg() -> dict:
+    """Load (once) the validated pipeline config."""
+    global _cfg_cache
+    if _cfg_cache is None:
+        _cfg_cache = load_config()
+    return _cfg_cache
+
+
+def _dedup() -> dict:
+    return _cfg()["dedup"]
 
 
 def _is_tracking(name: str) -> bool:
+    d = _dedup()
     n = name.lower()
-    return n in TRACKING_PARAMS or n.startswith(TRACKING_PREFIXES)
+    return n in d["tracking_params"] or n.startswith(tuple(d["tracking_prefixes"]))
 
 
 def canonical_url(url: str) -> str:
@@ -53,7 +65,7 @@ def canonical_url(url: str) -> str:
         raise ValueError(f"unexpected scheme in source URL: {url!r}")
     host = parts.hostname or ""
     host = host.lower()
-    for prefix in HOST_PREFIXES:
+    for prefix in _dedup()["host_prefixes"]:
         if host.startswith(prefix):
             host = host[len(prefix):]
             break
@@ -102,25 +114,32 @@ def check(data) -> list[str]:
             try:
                 expected = canonical_url(url)
             except ValueError as e:
-                problems.append(f"{agency['id']}: {e}")
+                problems.append(fmt("E_KEY_BADURL", f"{agency['id']}: {e}"))
                 continue
             if src.get("source_key") != expected:
-                problems.append(
-                    f"{agency['id']}: source_key missing/stale for {url[:80]} "
-                    f"(expected {expected[:80]})"
-                )
+                code = "E_KEY_MISSING" if "source_key" not in src else "E_KEY_STALE"
+                problems.append(fmt(
+                    code,
+                    f"{agency['id']}: key problem for {url[:80]} "
+                    f"(expected {expected[:80]})"))
             if expected in seen:
-                problems.append(
+                problems.append(fmt(
+                    "E_KEY_DUP",
                     f"{agency['id']}: duplicate source_key {expected[:100]} "
-                    f"(also used by {seen[expected][:60]})"
-                )
+                    f"(also used by {seen[expected][:60]})"))
             else:
                 seen[expected] = src.get("title", url)[:60]
     return problems
 
 
 def main(argv: list[str]) -> None:
-    with open(DATA_PATH, encoding="utf-8") as f:
+    try:
+        cfg = _cfg()
+    except ConfigError as exc:
+        print(str(exc), file=sys.stderr)
+        sys.exit(2)
+    data_path = cfg["paths"]["data"]
+    with open(data_path, encoding="utf-8") as f:
         data = json.load(f)
     if "--check" in argv:
         problems = check(data)
@@ -133,7 +152,7 @@ def main(argv: list[str]) -> None:
         print(f"OK: {n} citations, keys valid, no intra-agency duplicates")
         return
     fixed = backfill(data)
-    with open(DATA_PATH, "w", encoding="utf-8") as f:
+    with open(data_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
         f.write("\n")
     print(f"backfilled {fixed} source_key fields")

@@ -73,7 +73,7 @@ maintain. The weekly monitor diffs both approved feeds against the dataset;
 see `docs/MONITOR.md`.
 
 Verification is stamped per citation (`sources[].verified`) by
-`scripts/classify_sources.py`, an explicit domain map reviewed in git.
+`config/flock-off.yaml` (section `classify`), an explicit domain map reviewed in git.
 Unknown domains fail closed to unverified, and the weekly monitor flags
 newly added sources until they are classified. The full domain
 classification is published verbatim on the tracker page itself

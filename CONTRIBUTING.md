@@ -9,8 +9,8 @@ Flock-Off stays small on purpose: static tracker page, no build, minimal serverl
 3. **Data stays upstream.** Camera corrections go to DeFlock/OpenStreetMap, not into this repo. We consume; we don't fork the dataset.
 4. **Accessibility is a feature.** Every UI change must work with keyboard only, screen reader labels where it matters, and `prefers-reduced-motion` respected.
 5. **Honest copy.** Never imply coverage is complete. "Known cameras" not "cameras." "No known cameras nearby" not "all clear."
-6. **Evidence tiers for data.** Terminal-status records (cancelled/rejected/expired) show verified (3+ independent verified citations) or pending validation\* (fewer); new source domains must be classified in `scripts/classify_sources.py` (unknown domains fail closed to unverified).
-7. **No duplicate citations.** Every source carries a `source_key` (see `scripts/source_keys.py`); run `python3 scripts/source_keys.py --check` before pushing. The same key twice in one agency's sources is a reject.
+6. **Evidence tiers for data.** Terminal-status records (cancelled/rejected/expired) show verified (3+ independent verified citations) or pending validation\* (fewer); new source domains must be classified in `config/flock-off.yaml` (section `classify`; unknown domains fail closed to unverified).
+7. **No duplicate citations.** Every source carries a `source_key`; run `python3 scripts/flockoff.py keys check` before pushing. The same key twice in one agency's sources is a reject.
 
 ## Local dev
 

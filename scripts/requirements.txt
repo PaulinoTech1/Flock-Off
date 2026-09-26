@@ -1,0 +1,4 @@
+# Maintenance script dependencies.
+# Scripts are otherwise stdlib-only; PyYAML is the single exception,
+# used only for config/flock-off.yaml (Boss decision 2026-09-26).
+pyyaml>=6,<7

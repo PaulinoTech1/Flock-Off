@@ -24,11 +24,12 @@ human review; the threshold is tuned for recall, the human loop is the
 precision filter.
 
 Usage:
-  python3 scripts/source_fingerprints.py --refresh [--max N]
-      [--max-age-days 60] [--keys k1,k2]
-    Refresh fingerprints: new keys, entries older than --max-age-days, and
-    non-ok entries. --keys limits to specific source_keys (comma-separated).
-    --max caps how many fetches this run performs (politeness).
+  python3 scripts/flockoff.py fingerprints refresh [--max N]
+      [--max-age-days D] [--keys k1,k2]
+    Refresh fingerprints: new keys, entries older than --max-age-days
+    (default from config), and non-ok entries. --keys limits to specific
+    source_keys (comma-separated). --max caps how many fetches this run
+    performs (politeness).
 """
 from __future__ import annotations
 
@@ -45,18 +46,64 @@ from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from source_keys import canonical_url  # noqa: E402
+from flockoff_config import ConfigError, load_config  # noqa: E402
 
-DATA_PATH = "data/agencies.json"
-FINGERPRINTS_PATH = "data/source_fingerprints.json"
+_cfg_cache: dict | None = None
 
-USER_AGENT = "Flock-Off/1.0 (+https://flock-off.vercel.app) citation-audit"
-FETCH_DELAY = 1.5
-FETCH_TIMEOUT = 12
-MAX_BYTES = 300_000
-MIN_TEXT_LEN = 200      # below this the fingerprint is "thin", excluded from pairing
-PAIR_MIN_LEN = 800      # simhash pairing needs enough text to be meaningful
-NEAR_DUP_DISTANCE = 3   # Hamming distance (of 64) for near-duplicate
-UPDATE_DISTANCE = 8     # Hamming distance that counts as a material rewrite
+
+def _cfg() -> dict:
+    """Load (once) the validated pipeline config."""
+    global _cfg_cache
+    if _cfg_cache is None:
+        _cfg_cache = load_config()
+    return _cfg_cache
+
+
+# Config-backed tunables (config/flock-off.yaml). Accessors, not constants,
+# so a config change takes effect without code edits. Callers in other
+# modules must use these, never import ALL-CAPS names.
+def data_path() -> str:
+    return _cfg()["paths"]["data"]
+
+
+def fingerprints_path() -> str:
+    return _cfg()["paths"]["fingerprints"]
+
+
+def user_agent() -> str:
+    return _cfg()["fetch"]["user_agent"]
+
+
+def fetch_delay() -> float:
+    return _cfg()["fetch"]["delay_seconds"]
+
+
+def fetch_timeout() -> float:
+    return _cfg()["fetch"]["timeout_seconds"]
+
+
+def max_bytes() -> int:
+    return _cfg()["fetch"]["max_bytes"]
+
+
+def min_text_len() -> int:
+    return _cfg()["fingerprints"]["min_text_len"]
+
+
+def pair_min_len() -> int:
+    return _cfg()["fingerprints"]["pair_min_len"]
+
+
+def near_dup_distance() -> int:
+    return _cfg()["fingerprints"]["near_dup_distance"]
+
+
+def update_distance() -> int:
+    return _cfg()["fingerprints"]["update_distance"]
+
+
+def default_max_age_days() -> int:
+    return _cfg()["fingerprints"]["max_age_days"]
 
 
 class _TextExtractor(HTMLParser):
@@ -101,7 +148,7 @@ class _TextExtractor(HTMLParser):
 
 def extract_text(html: str) -> tuple[str, str]:
     ext = _TextExtractor()
-    ext.feed(html[:MAX_BYTES])
+    ext.feed(html[:max_bytes()])
     title = re.sub(r"\s+", " ", " ".join(ext.title_chunks)).strip()
     body = ext.article_chunks if len(" ".join(ext.article_chunks)) > 200 else ext.chunks
     text = re.sub(r"\s+", " ", " ".join(body)).strip()
@@ -111,16 +158,16 @@ def extract_text(html: str) -> tuple[str, str]:
 def fetch_page(url: str) -> tuple[str, str | None, str | None]:
     """Return (status, final_url, html). status: ok|blocked|error|non_html."""
     req = urllib.request.Request(url, headers={
-        "User-Agent": USER_AGENT,
+        "User-Agent": user_agent(),
         "Accept": "text/html,application/xhtml+xml",
     })
     try:
-        with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT) as resp:
+        with urllib.request.urlopen(req, timeout=fetch_timeout()) as resp:
             ctype = resp.headers.get("Content-Type", "")
             final_url = resp.geturl()
             if "html" not in ctype and "text" not in ctype:
                 return "non_html", final_url, None
-            raw = resp.read(MAX_BYTES + 1)
+            raw = resp.read(max_bytes() + 1)
     except urllib.error.HTTPError as e:
         if e.code in (401, 402, 403, 429):
             return "blocked", None, None
@@ -171,7 +218,7 @@ def fingerprint_url(url: str, today: str) -> dict:
         title, text = extract_text(html)
         rec["title"] = title or None
         rec["text_len"] = len(text)
-        if len(text) >= MIN_TEXT_LEN:
+        if len(text) >= min_text_len():
             rec["content_hash"] = content_hash(text)
             sh = simhash64(text)
             rec["simhash"] = format(sh, "016x") if sh is not None else None
@@ -187,7 +234,8 @@ def iter_citations(data):
             yield agency["id"], src.get("title", ""), src["url"], key
 
 
-def load_fingerprints(path: str = FINGERPRINTS_PATH) -> dict:
+def load_fingerprints(path: str | None = None) -> dict:
+    path = path or fingerprints_path()
     try:
         with open(path, encoding="utf-8") as f:
             return json.load(f)
@@ -195,14 +243,18 @@ def load_fingerprints(path: str = FINGERPRINTS_PATH) -> dict:
         return {}
 
 
-def save_fingerprints(fps: dict, path: str = FINGERPRINTS_PATH) -> None:
+def save_fingerprints(fps: dict, path: str | None = None) -> None:
+    path = path or fingerprints_path()
     with open(path, "w", encoding="utf-8") as f:
         json.dump(fps, f, indent=2, ensure_ascii=False, sort_keys=True)
         f.write("\n")
 
 
 def refresh(data: dict, fps: dict, max_n: int | None = None,
-            max_age_days: int = 60, only_keys: set[str] | None = None) -> dict:
+            max_age_days: int | None = None,
+            only_keys: set[str] | None = None) -> dict:
+    if max_age_days is None:
+        max_age_days = default_max_age_days()
     today = datetime.date.today()
     today_s = today.isoformat()
     stats = {"fetched": 0, "ok": 0, "blocked": 0, "error": 0,
@@ -229,7 +281,7 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
         if max_n is not None and stats["fetched"] >= max_n:
             stats["skipped"] += 1
             continue
-        time.sleep(FETCH_DELAY)
+        time.sleep(fetch_delay())
         rec = fingerprint_url(url, today_s)
         fps[key] = rec
         stats["fetched"] += 1
@@ -242,8 +294,13 @@ def main(argv: list[str]) -> None:
     if "--refresh" not in argv:
         print(__doc__)
         return
+    try:
+        _cfg()
+    except ConfigError as exc:
+        print(str(exc), file=sys.stderr)
+        sys.exit(2)
     max_n = None
-    max_age = 60
+    max_age = default_max_age_days()
     only_keys = None
     for i, a in enumerate(argv):
         if a == "--max" and i + 1 < len(argv):
@@ -252,7 +309,7 @@ def main(argv: list[str]) -> None:
             max_age = int(argv[i + 1])
         if a == "--keys" and i + 1 < len(argv):
             only_keys = set(argv[i + 1].split(","))
-    with open(DATA_PATH, encoding="utf-8") as f:
+    with open(data_path(), encoding="utf-8") as f:
         data = json.load(f)
     fps = load_fingerprints()
     print(f"refreshing fingerprints ({len(fps)} existing)...")
