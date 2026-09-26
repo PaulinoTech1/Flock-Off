@@ -466,9 +466,9 @@ def main() -> None:
         changed, probe_blocked, probe_err = [], 0, 0
         for agency_id, title, url, key, fp in sample:
             time.sleep(UPDATE_PROBE_DELAY)
-            status, _, html = fetch_page(url)
-            if status != "ok" or not html:
-                if status == "blocked":
+            fetch_status, _, html = fetch_page(url)
+            if fetch_status != "ok" or not html:
+                if fetch_status == "blocked":
                     probe_blocked += 1
                 else:
                     probe_err += 1
