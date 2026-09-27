@@ -1,5 +1,6 @@
 "use strict";
 const { CODES } = require("./_errors.js");
+const { argon2, randomBytes, createHash, timingSafeEqual: nodeTimingSafeEqual } = require("crypto");
 /* POST /api/report — regulated write path for historical Flock contract reports.
  *
  * QUARANTINE MODEL: submissions land in reports-pending/, never directly in
@@ -9,15 +10,20 @@ const { CODES } = require("./_errors.js");
  * Design constraints (per operator policy):
  *  - TEXT ONLY: accepts application/json bodies only, max 32 KB; the stored
  *    blob is canonical JSON re-serialized server-side (no raw passthrough).
+ *  - NO EXECUTABLE CODE: all string fields are scanned for script injection
+ *    patterns (<script, javascript:, event handlers). Rejected if found.
  *  - REGULATED ENTRY: strict schema validation; agency_id must be a known
- *    tracker record (list injected at deploy time); source_url and
- *    downloaded_at are mandatory on every report.
+ *    tracker record (list injected at deploy time); source_url,
+ *    downloaded_at, and description are mandatory on every report.
  *  - AUTHENTICATED: REPORT_WRITE_KEY is mandatory. Requests without a
  *    matching x-report-key are rejected (constant-time compare).
  *  - RATE LIMITED: 10 writes / subnet-bucket / hour, 500 writes / day globally
  *    (in-memory per function instance: best-effort on serverless, documented
  *    in docs/BLOB_REPORTS.md). Buckets are keyed by a daily-rotated salted
  *    hash of the /24 (or /48) subnet: raw IPs are never stored.
+ *  - DEDUPLICATION: content is hashed with Argon2id (server pepper). Before
+ *    storing, pending blobs are checked for matching content hash. Duplicates
+ *    are rejected with 409.
  *  - REPUTATION SIGNAL: per-bucket submission outcomes are counted in the
  *    blob store under the same daily-rotated pseudonym. A bucket with a
  *    poor decision history only flags the quarantined tip for closer human
@@ -37,8 +43,22 @@ const BLOB_API = "https://vercel.com/api/blob";
 const API_VERSION = "12"; // pinned to the @vercel/blob protocol version verified 2026-09-25
 const MAX_BODY = 32 * 1024;
 const STATUSES = new Set(["active", "pending", "cancelled", "rejected", "expired"]);
-const TOP_KEYS = new Set(["agency_id", "source_url", "downloaded_at", "report"]);
+const TOP_KEYS = new Set(["agency_id", "source_url", "downloaded_at", "description", "report"]);
 const REPORT_KEYS = new Set(["status", "cameras", "annual_cost_usd", "renewal_date", "notes"]);
+
+// Patterns that indicate executable code. Rejected in all string fields.
+const EXECUTABLE_PATTERNS = [
+  /<script/i,
+  /<\/script/i,
+  /javascript:/i,
+  /data:text\/html/i,
+  /on\w+\s*=/i,  // event handlers: onclick=, onerror=, etc.
+  /<iframe/i,
+  /<object/i,
+  /<embed/i,
+  /eval\s*\(/i,
+  /Function\s*\(/i,
+];
 
 /* Valid agency ids, injected at deploy time from data/agencies.json. */
 const AGENCY_IDS = new Set(/*__AGENCY_IDS__*/[]);
@@ -132,6 +152,75 @@ function isValidPastDate(s) {
   return d.getTime() <= Date.now() + 24 * 3600 * 1000;
 }
 
+// Scan all string values recursively for executable code patterns.
+// Returns array of violation descriptions, empty if clean.
+function scanForExecutable(obj, path = "") {
+  const violations = [];
+  if (typeof obj === "string") {
+    for (const pattern of EXECUTABLE_PATTERNS) {
+      if (pattern.test(obj)) {
+        violations.push(`${path}: contains executable code pattern`);
+        break;
+      }
+    }
+  } else if (Array.isArray(obj)) {
+    obj.forEach((v, i) => violations.push(...scanForExecutable(v, `${path}[${i}]`)));
+  } else if (obj !== null && typeof obj === "object") {
+    for (const [k, v] of Object.entries(obj)) {
+      violations.push(...scanForExecutable(v, path ? `${path}.${k}` : k));
+    }
+  }
+  return violations;
+}
+
+// Hash content with Argon2id using server pepper. Returns hex string.
+// Used for deduplication: same content + same pepper = same hash.
+function hashContent(canonicalJson, pepper) {
+  return new Promise((resolve, reject) => {
+    const salt = createHash("sha256").update(pepper).digest(); // deterministic salt from pepper
+    const params = {
+      message: canonicalJson,
+      nonce: salt,
+      parallelism: 1,
+      memory: 19456,  // 19 MiB
+      passes: 2,
+      tagLength: 32,
+    };
+    argon2("argon2id", params, (err, hash) => {
+      if (err) reject(err);
+      else resolve(hash.toString("hex"));
+    });
+  });
+}
+
+// Check if a report with this content hash already exists in pending.
+// Returns true if duplicate found.
+async function isDuplicate(contentHash, token) {
+  try {
+    const res = await fetch(
+      `${BLOB_API}/?prefix=${encodeURIComponent("reports-pending/")}&limit=100`,
+      { headers: { authorization: `Bearer ${token}`, "x-api-version": API_VERSION } }
+    );
+    if (!res.ok) return false; // fail-open: if we can't check, allow submission
+    const data = await res.json();
+    const blobs = data.blobs || [];
+    // Fetch each pending blob and compare content hashes
+    for (const blob of blobs.slice(0, 50)) { // limit to 50 for performance
+      try {
+        const r = await fetch(blob.url);
+        if (!r.ok) continue;
+        const existing = await r.json();
+        if (existing.content_hash === contentHash) return true;
+      } catch {
+        continue;
+      }
+    }
+    return false;
+  } catch {
+    return false; // fail-open
+  }
+}
+
 function validate(body) {
   const errors = [];
   if (body === null || typeof body !== "object" || Array.isArray(body)) {
@@ -148,6 +237,12 @@ function validate(body) {
   }
   if (!isValidPastDate(body.downloaded_at)) {
     errors.push("downloaded_at must be an ISO date not in the future");
+  }
+  if (typeof body.description !== "string" || body.description.trim().length < 10) {
+    errors.push("description is required (min 10 chars, describe what this report documents)");
+  }
+  if (typeof body.description === "string" && body.description.length > 2000) {
+    errors.push("description must be under 2000 chars");
   }
   const r = body.report;
   if (r === null || typeof r !== "object" || Array.isArray(r)) {
@@ -288,10 +383,41 @@ module.exports = async (req, res) => {
   const errors = validate(body);
   if (errors.length) return send(res, 400, CODES.REPORT_400_003(errors));
 
+  // Data sanitization: reject any executable code patterns in string fields
+  const execViolations = scanForExecutable(body);
+  if (execViolations.length) {
+    return send(res, 400, CODES.REPORT_400_003(
+      ["Executable code detected in submission: " + execViolations.slice(0, 3).join("; ")]
+    ));
+  }
+
   const receivedAt = new Date().toISOString();
   const stamp = receivedAt.replace(/[^0-9A-Za-z]/g, "-");
   const rand = Math.random().toString(36).slice(2, 8);
   const pathname = `reports-pending/${body.agency_id}/${stamp}-${rand}.json`;
+
+  // Canonical record: re-serialized server-side; tied to source + download time.
+  // Build canonical form first (for hashing), then compute Argon2id content hash.
+  const canonicalBody = {
+    agency_id: body.agency_id,
+    source_url: body.source_url,
+    downloaded_at: body.downloaded_at,
+    description: body.description.trim(),
+    report: body.report,
+  };
+  const canonicalJson = JSON.stringify(canonicalBody);
+
+  // Deduplication: hash with Argon2id + server pepper, check pending blobs.
+  // Uses REPORT_WRITE_KEY as pepper (already required, never logged).
+  let contentHash;
+  try {
+    contentHash = await hashContent(canonicalJson, writeKey);
+  } catch (e) {
+    return send(res, 500, CODES.REPORT_500_001());
+  }
+  if (await isDuplicate(contentHash, token)) {
+    return send(res, 409, CODES.REPORT_409_001());
+  }
 
   // Canonical record: re-serialized server-side; tied to source + download time.
   // status "pending": invisible to GET /api/history until promoted.
@@ -308,8 +434,10 @@ module.exports = async (req, res) => {
     agency_id: body.agency_id,
     source_url: body.source_url,
     downloaded_at: body.downloaded_at,
+    description: body.description.trim(),
     received_at: receivedAt,
     report: body.report,
+    content_hash: contentHash,  // Argon2id hash for deduplication
     _signals: {
       bucket,
       day,

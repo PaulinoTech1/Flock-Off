@@ -36,6 +36,8 @@ Format: `{ENDPOINT}_{HTTP_STATUS}_{SEQ}`
 | REPORT_400_002 | 400 | Malformed JSON | Validate payload before sending |
 | REPORT_400_003 | 400 | Validation failed | Fix listed field errors, resubmit |
 | REPORT_502_001 | 502 | Blob write failed | Check BLOB_READ_WRITE_TOKEN and Vercel Blob status |
+| REPORT_409_001 | 409 | Duplicate report | Identical report already in pending queue; no action needed |
+| REPORT_500_001 | 500 | Content hashing failed | Retry the submission |
 
 ## GET /api/pending
 

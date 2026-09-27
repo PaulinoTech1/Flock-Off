@@ -31,12 +31,18 @@ public    ──GET  /api/history ──> lists reports/ only (approved records)
   anywhere (see "Submission signals" below).
 - Strict schema validation: allowlisted fields, correct types, `agency_id`
   must be a known tracker record (list injected at deploy time).
-- `source_url` (http/https) and `downloaded_at` (ISO date, not in the future)
-  are mandatory.
+- `source_url` (http/https), `downloaded_at` (ISO date, not in the future),
+  and `description` (min 10 chars, max 2000) are mandatory.
+- Data sanitization: all string fields are scanned for executable code
+  patterns (`<script`, `javascript:`, event handlers, `eval(`, etc.).
+  Submissions containing these are rejected with 400.
+- Deduplication: content is hashed with Argon2id (server pepper from
+  REPORT_WRITE_KEY). Before storing, pending blobs are checked for matching
+  content hash. Duplicates are rejected with 409.
 - The stored blob is re-serialized server-side from validated fields only
-  (`status`, `agency_id`, `source_url`, `downloaded_at`, `received_at`,
-  `report`, plus the internal `_signals` block). No raw request bytes are
-  ever persisted.
+  (`status`, `agency_id`, `source_url`, `downloaded_at`, `description`,
+  `received_at`, `report`, `content_hash`, plus the internal `_signals`
+  block). No raw request bytes are ever persisted.
 - Response: `201 { ok, status: "pending_review", pathname, url, received_at }`.
 
 ## Submission signals (privacy-preserving rate/reputation)

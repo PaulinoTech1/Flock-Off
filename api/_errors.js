@@ -61,6 +61,10 @@ const CODES = {
     "Fix the listed field errors and resubmit."), details }),
   REPORT_502_001: () => err("REPORT_502_001", "could not write to history store",
     "The blob store write failed. Verify BLOB_READ_WRITE_TOKEN and check Vercel Blob status."),
+  REPORT_409_001: () => err("REPORT_409_001", "duplicate report",
+    "An identical report already exists in the pending queue. No action needed."),
+  REPORT_500_001: () => err("REPORT_500_001", "content hashing failed",
+    "The server could not hash the report content. Retry the submission."),
 
   // pending.js
   PENDING_405_001: () => err("PENDING_405_001", "method not allowed",
