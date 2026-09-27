@@ -18,9 +18,9 @@ on:
   workflow_dispatch:
     inputs:
       max_sources:
-        description: "Cap on sources to fetch (blank for default)"
+        description: "Cap on sources to fetch (default 25 per run for contained failures)"
         required: false
-        default: ""
+        default: "25"
       dry_run:
         description: "Validate only, do not upload snapshots"
         required: false
@@ -54,11 +54,16 @@ jobs:
 
       - name: Refresh fingerprints and archive snapshots
         run: |
+          # Default batch size is 25: if a run fails, only 25 sources
+          # are in flight and the failure is contained and debuggable.
+          # Fresh fingerprints are skipped, so each run advances
+          # through the next 25 stale sources.
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.max_sources }}" ]; then
-            python3 scripts/flockoff.py fingerprints refresh --max ${{ inputs.max_sources }}
+            MAX="${{ inputs.max_sources }}"
           else
-            python3 scripts/flockoff.py fingerprints refresh
+            MAX="25"
           fi
+          python3 scripts/flockoff.py fingerprints refresh --max "$MAX"
         # Fail-open: blob warnings do not fail the job. Only a hard
         # fingerprint crash fails. Check the logs for
         # "blob_archive: WARNING" lines to confirm uploads.
