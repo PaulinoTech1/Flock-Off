@@ -60,8 +60,8 @@ const App = (() => {
     status.textContent = "Fetching dataset and manifest…";
     try {
       const [dataRes, manRes] = await Promise.all([
-        fetch("data/agencies.json"),
-        fetch("data/integrity/manifest.json"),
+        fetch(Utils.PATHS.agencies),
+        fetch(Utils.PATHS.manifest),
       ]);
       if (!dataRes.ok) throw new Error(`dataset HTTP ${dataRes.status}`);
       if (!manRes.ok) throw new Error(`manifest HTTP ${manRes.status}`);

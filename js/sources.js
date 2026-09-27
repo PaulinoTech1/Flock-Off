@@ -6,11 +6,8 @@
 "use strict";
 
 const SourcesTab = (() => {
+  const { esc, el, fetchJson, PATHS } = Utils;
   let entries = [];
-
-  function el(id) {
-    return document.getElementById(id);
-  }
 
   function publisherOf(url) {
     try {
@@ -49,14 +46,6 @@ const SourcesTab = (() => {
       x.title.localeCompare(y.title)
     );
     return list;
-  }
-
-  function esc(s) {
-    return String(s ?? "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
   }
 
   function card(e) {
@@ -110,9 +99,7 @@ const SourcesTab = (() => {
     el("src-filter-type").addEventListener("change", render);
     el("src-filter-search").addEventListener("input", debounce(render, 250));
     try {
-      const res = await fetch("data/agencies.json");
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const json = await res.json();
+      const json = await fetchJson(PATHS.agencies);
       entries = aggregate(json.agencies || []);
       const v = entries.filter((e) => e.verified).length;
       el("sources-stats").textContent =

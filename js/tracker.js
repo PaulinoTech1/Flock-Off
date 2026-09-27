@@ -33,15 +33,13 @@ const TrackerTab = (() => {
     };
   }
 
-  const el = (id) => document.getElementById(id);
+  const { esc, el, fetchJson, PATHS } = Utils;
   const usd = (n) =>
     n == null ? "—" : new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
 
   async function init() {
     try {
-      const res = await fetch("data/agencies.json");
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const json = await res.json();
+      const json = await fetchJson(PATHS.agencies);
       agencies = json.agencies || [];
       meta = json.meta || {};
     } catch (err) {
@@ -52,19 +50,15 @@ const TrackerTab = (() => {
     }
     el("coverage-note").textContent = meta.coverage_note || "";
     try {
-      const cres = await fetch("data/source_classification.json");
-      if (cres.ok) classification = await cres.json();
+      classification = await fetchJson(PATHS.classification);
     } catch { /* transparency list degrades to a repo link */ }
     // Build-computed evidence tiers (scripts/evidence.py). Attached per
     // record; evidence() fails closed to pending when absent.
     try {
-      const eres = await fetch("data/evidence.json");
-      if (eres.ok) {
-        const evMap = (await eres.json()).agencies || {};
+      const evMap = (await fetchJson(PATHS.evidence)).agencies || {};
         for (const a of agencies) {
           if (evMap[a.id]) a._evidence = evMap[a.id];
         }
-      }
     } catch { /* evidence() fails closed to pending */ }
     buildStateFilter();
     for (const id of ["filter-state", "filter-status", "filter-sort", "filter-evidence"]) {
@@ -419,11 +413,6 @@ const TrackerTab = (() => {
       col("Verified: primary and official records", primary) +
       col("Not counted: leads only", leads) +
       `</div>`;
-  }
-
-  function esc(s) {
-    return String(s ?? "").replace(/[&<>"']/g, (c) =>
-      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
 
   return { init };
