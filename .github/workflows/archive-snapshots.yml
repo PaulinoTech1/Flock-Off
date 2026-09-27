@@ -43,7 +43,12 @@ jobs:
           python-version: "3.12"
 
       - name: Validate config
-        run: python3 scripts/flockoff.py config validate
+        run: |
+          echo "Python: $(python3 --version)"
+          echo "PWD: $(pwd)"
+          echo "Scripts dir: $(ls scripts/ | head -5)"
+          echo "Config exists: $(test -f config/flock-off.yaml && echo yes || echo NO)"
+          python3 scripts/flockoff.py config validate
 
       - name: Run test suite
         run: python3 scripts/flockoff.py test
