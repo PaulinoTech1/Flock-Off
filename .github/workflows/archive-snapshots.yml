@@ -53,11 +53,11 @@ jobs:
 
       - name: Refresh fingerprints and archive snapshots
         run: |
-          ARGS="fingerprints refresh"
-          if [ -n "${{ inputs.max_sources }}" ]; then
-            ARGS="$ARGS --max ${{ inputs.max_sources }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.max_sources }}" ]; then
+            python3 scripts/flockoff.py fingerprints refresh --max ${{ inputs.max_sources }}
+          else
+            python3 scripts/flockoff.py fingerprints refresh
           fi
-          python3 scripts/flockoff.py $ARGS
         # Fail-open: blob warnings do not fail the job. Only a hard
         # fingerprint crash fails. Check the logs for
         # "blob_archive: WARNING" lines to confirm uploads.
