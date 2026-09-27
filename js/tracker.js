@@ -176,28 +176,26 @@ const TrackerTab = (() => {
 
   function rowFor(a) {
     const tr = document.createElement("tr");
-    tr.tabIndex = 0;
-    tr.setAttribute("role", "button");
-    tr.setAttribute("aria-label", `Details for ${a.agency}`);
     const open = () => openDrawer(a, tr);
-    // Badge links (methodology) must not open the drawer.
-    tr.addEventListener("click", (e) => { if (e.target.closest("a")) return; open(); });
-    tr.addEventListener("keydown", (e) => {
-      if (e.target.closest("a")) return;
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
-    });
+    // Whole-row click opens the drawer for mouse users; keyboard users get
+    // the agency-name button (no nested interactives, valid table semantics).
+    tr.addEventListener("click", (e) => { if (e.target.closest("a, button")) return; open(); });
     const ev = evidence(a);
     const evBadge = ev.tier === "verified"
       ? ' <a class="badge-link" href="#learn-evidence" title="Verified: 1+ primary record and 2+ independent news sources. What does this mean?"><span class="badge badge-ok">verified</span></a>'
       : ev.tier === "pending"
       ? " " + pendingBadge() : "";
     tr.innerHTML =
-      `<td><strong>${esc(a.agency)}</strong><br><span class="muted">${esc(a.city || "")}</span></td>` +
+      `<td><button class="row-open" aria-label="Details for ${esc(a.agency)}"><strong>${esc(a.agency)}</strong></button><br><span class="muted">${esc(a.city || "")}</span></td>` +
       `<td>${esc(a.state)}</td>` +
       `<td><span class="badge badge-${a.status}">${STATUS_LABEL[a.status] || a.status}</span>${evBadge}</td>` +
       `<td>${a.cameras ?? "—"}</td>` +
       `<td>${usd(a.annual_cost_usd)}</td>` +
       `<td>${renewalCell(a)}</td>`;
+    tr.querySelector(".row-open").addEventListener("click", (e) => {
+      e.stopPropagation();
+      open();
+    });
     return tr;
   }
 

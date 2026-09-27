@@ -13,6 +13,8 @@ const App = (() => {
       if (btn) {
         btn.setAttribute("aria-selected", String(t === name));
         btn.classList.toggle("active", t === name);
+        // Roving tabindex: only the selected tab is in the Tab order.
+        btn.tabIndex = t === name ? 0 : -1;
       }
     }
     if (location.hash !== `#${name}`) history.replaceState(null, "", `#${name}`);

@@ -114,7 +114,7 @@ def _render_rows(agencies: list, ev_by_id: dict) -> str:
         else:
             badge = ""
         rows.append(
-            "<tr><td><strong>{agency}</strong><br><span class=\"muted\">{city}</span></td>"
+            "<tr><td><button class=\"row-open\" aria-label=\"Details for {agency}\"><strong>{agency}</strong></button><br><span class=\"muted\">{city}</span></td>"
             "<td>{state}</td><td>{status}{badge}</td><td>{cameras}</td><td>{cost}</td><td>{renewal}</td></tr>".format(
                 agency=_esc(a.get("agency", "")),
                 city=_esc(a.get("city") or ""),
