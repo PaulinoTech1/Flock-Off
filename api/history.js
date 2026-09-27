@@ -6,7 +6,7 @@ const { CODES } = require("./_errors.js");
  * Returns metadata only (pathname, url, size, uploadedAt); report payloads
  * are fetched from their public blob URLs. No auth required to read.
  *
- * Requires BLOB_READ_WRITE_TOKEN env (set in the Vercel dashboard).
+ * Requires REPORTS_BLOB_READ_WRITE_TOKEN env (set in the Vercel dashboard).
  */
 
 const BLOB_API = "https://vercel.com/api/blob";
@@ -37,7 +37,7 @@ module.exports = async (req, res) => {
     res.setHeader("Allow", "GET");
     return send(res, 405, CODES.HISTORY_405_001());
   }
-  const token = process.env.BLOB_READ_WRITE_TOKEN;
+  const token = process.env.REPORTS_BLOB_READ_WRITE_TOKEN;
   if (!token) return send(res, 503, CODES.HISTORY_503_001());
 
   const q = req.query || {};

@@ -155,7 +155,7 @@ module.exports = async (req, res) => {
     res.setHeader("Allow", "POST");
     return send(res, 405, CODES.PROMOTE_405_001());
   }
-  const token = process.env.BLOB_READ_WRITE_TOKEN;
+  const token = process.env.REPORTS_BLOB_READ_WRITE_TOKEN;
   const adminKey = process.env.REPORT_ADMIN_KEY;
   if (!token || !adminKey) return send(res, 503, CODES.PROMOTE_503_001());
   if (!timingSafeEqual(req.headers["x-admin-key"], adminKey)) {

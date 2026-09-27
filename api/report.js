@@ -33,7 +33,7 @@ const { argon2, randomBytes, createHash, timingSafeEqual: nodeTimingSafeEqual } 
  *    endpoint exists. Promotion copies to reports/ and deletes the pending
  *    blob; the approved copy is never mutated.
  *
- * Requires BLOB_READ_WRITE_TOKEN and REPORT_WRITE_KEY env (set in the Vercel
+ * Requires REPORTS_BLOB_READ_WRITE_TOKEN and REPORT_WRITE_KEY env (set in the Vercel
  * dashboard; the function never logs them).
  */
 
@@ -347,7 +347,7 @@ module.exports = async (req, res) => {
     res.setHeader("Allow", "POST");
     return send(res, 405, CODES.REPORT_405_001());
   }
-  const token = process.env.BLOB_READ_WRITE_TOKEN;
+  const token = process.env.REPORTS_BLOB_READ_WRITE_TOKEN;
   if (!token) return send(res, 503, CODES.HISTORY_503_001());
 
   const writeKey = process.env.REPORT_WRITE_KEY;

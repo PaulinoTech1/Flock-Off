@@ -136,7 +136,7 @@ first). The drawer renders these; it never sees the quarantine prefix.
 
 | Variable              | Purpose                                  |
 |-----------------------|------------------------------------------|
-| `BLOB_READ_WRITE_TOKEN` | Blob store access (read/write/delete)  |
+| `REPORTS_BLOB_READ_WRITE_TOKEN` | Blob store access (read/write/delete)  |
 | `REPORT_WRITE_KEY`    | Shared submitter secret                  |
 | `REPORT_ADMIN_KEY`    | Reviewer secret (promotion + queue)       |
 
