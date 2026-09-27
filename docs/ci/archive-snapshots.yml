@@ -18,7 +18,11 @@ on:
   workflow_dispatch:
     inputs:
       max_sources:
-        description: "Cap on sources to fetch (blank for default)"
+        description: "Sources per batch (default 25)"
+        required: false
+        default: "25"
+      batches:
+        description: "Number of batches to run (blank for 1)"
         required: false
         default: ""
       dry_run:
@@ -30,7 +34,7 @@ on:
 jobs:
   archive:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     env:
       ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
     steps:
@@ -54,10 +58,38 @@ jobs:
 
       - name: Refresh fingerprints and archive snapshots
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.max_sources }}" ]; then
-            python3 scripts/flockoff.py fingerprints refresh --max ${{ inputs.max_sources }}
+          # Batch mode: run N batches of M sources each.
+          # Fresh fingerprints are skipped, so each batch advances
+          # through the next M stale sources. Failed batches are
+          # recorded and reported at the end without stopping the run.
+          BATCH_SIZE="${{ inputs.max_sources }}"
+          BATCH_SIZE=${BATCH_SIZE:-25}
+          NUM_BATCHES="${{ inputs.batches }}"
+          NUM_BATCHES=${NUM_BATCHES:-1}
+          # Scheduled runs default to a single batch of 25.
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            NUM_BATCHES=1
+          fi
+          echo "Running $NUM_BATCHES batch(es) of $BATCH_SIZE sources"
+          FAILED_BATCHES=""
+          for i in $(seq 1 "$NUM_BATCHES"); do
+            echo ""
+            echo "=============== BATCH $i/$NUM_BATCHES ==============="
+            if python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE"; then
+              echo "BATCH $i: SUCCESS"
+            else
+              echo "BATCH $i: FAILED"
+              FAILED_BATCHES="$FAILED_BATCHES $i"
+            fi
+          done
+          echo ""
+          echo "=============== BATCH SUMMARY ==============="
+          echo "Completed $NUM_BATCHES batch(es) of $BATCH_SIZE sources"
+          if [ -z "$FAILED_BATCHES" ]; then
+            echo "All batches succeeded."
           else
-            python3 scripts/flockoff.py fingerprints refresh
+            echo "FAILED batches:$FAILED_BATCHES"
+            exit 1
           fi
         # Fail-open: blob warnings do not fail the job. Only a hard
         # fingerprint crash fails. Check the logs for
