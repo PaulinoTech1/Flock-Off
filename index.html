@@ -34,13 +34,13 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <noscript>
-    <p style="padding:1rem">Flock-Off needs JavaScript for the interactive tracker. The project and methodology are documented in <a href="https://github.com/PaulinoTech1/Flock-Off">the repo README</a>.</p>
+    <p class="noscript-note">Flock-Off needs JavaScript for the interactive tracker. The project and methodology are documented in <a href="https://github.com/PaulinoTech1/Flock-Off">the repo README</a>.</p>
   </noscript>
 
   <header class="top">
@@ -55,6 +55,7 @@
       <button id="nav-map" role="tab" aria-selected="false" aria-controls="tab-map">Map</button>
       <button id="nav-tools" role="tab" aria-selected="false" aria-controls="tab-tools">Tools</button>
       <button id="nav-learn" role="tab" aria-selected="false" aria-controls="tab-learn">Learn</button>
+      <button id="nav-legal" role="tab" aria-selected="false" aria-controls="tab-legal">Legal</button>
     </div>
   </nav>
 
@@ -124,15 +125,15 @@
         </table>
       </div>
 
-      <p class="status">Every record is sourced and confidence-rated. Claims with 3+ independent verified citations are marked verified; the rest are marked pending validation*. <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/METHODOLOGY.md#evidence-tiers">Evidence tiers</a>. *Pending validation = fewer than 3 independent verified citations; shown while awaiting corroboration. Spot an error or a missing contract? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>
+      <p class="status">Every record is sourced and confidence-rated. Terminal claims (cancelled / rejected / expired) are marked <strong>verified</strong> only with 1+ primary record and 2+ independent news sources; the rest are marked <strong>pending validation*</strong>. <a href="#learn-evidence">What the badges mean</a> · <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/METHODOLOGY.md#evidence-tiers">Evidence tiers</a>. *Pending validation = does not yet meet the evidence bar; shown while awaiting corroboration. Spot an error or a missing contract? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>
 
       <section id="priorities" aria-label="Research priorities"></section>
 
       <section id="how-it-works" aria-labelledby="how-heading">
         <h2 id="how-heading">How this tracker works</h2>
         <div class="panel">
-          <h3>Evidence tiers</h3>
-          <p>Cancelled, rejected, or expired claims are <strong>verified</strong> only with 3+ independent citations from verified sources. Everything else is marked <strong>pending validation*</strong>, with its exact citation count shown per record. <span class="muted">* Fewer than 3 independent verified citations; shown while awaiting corroboration.</span></p>
+          <h3 id="learn-evidence">Evidence tiers</h3>
+          <p>Cancelled, rejected, or expired claims are <strong>verified</strong> only with <strong>1+ primary record</strong> (government/procurement document, court record, official statement, transparency portal) <strong>and 2+ independent news sources</strong>. Everything else is marked <strong>pending validation*</strong>, with its exact citation counts shown per record. News-only claims stay pending indefinitely, no matter how many outlets repeat the story. <span class="muted">* Does not yet meet the evidence bar; shown while awaiting corroboration.</span> Records not re-verified in 180 days drop to pending validation* automatically until re-confirmed. "Verified" here means "meets this evidence bar," not "absolute truth": read the underlying sources and decide for yourself.</p>
           <h3>Source transparency</h3>
           <p><strong id="src-verified-count">–</strong> verified citations and <strong id="src-unverified-count">–</strong> unverified leads across the dataset. Every citation is classified by an explicit, version-controlled domain list (<a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/scripts/classify_sources.py">scripts/classify_sources.py</a>); unknown domains fail closed to unverified. Advocacy organizations, social and video platforms, aggregators, and AI summaries count as leads, never as citations.</p>
           <details>
@@ -171,33 +172,19 @@
       <p id="sources-status" class="status" role="status" aria-live="polite">Loading…</p>
 
       <div id="sources-list" class="sources-list"><!--PRE_RENDER_SOURCES--></div>
-
-      <p class="status">Source classification is explicit and version-controlled (<a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/scripts/classify_sources.py">scripts/classify_sources.py</a>); unknown domains fail closed to leads. Raw data: <a href="data/agencies.json">agencies.json</a>.</p>
-    </section>
-
-    <section id="tab-map" class="tab" role="tabpanel" aria-labelledby="nav-map" hidden>
-      <h2>Camera map</h2>
-      <p>Crowdsourced ALPR camera locations near the map center, from OpenStreetMap. Pan to your area, or use your location. Note: using the map sends your IP and the viewed area to the Overpass API and OpenStreetMap tile servers, like any online map; your precise location never leaves your device.</p>
-      <div class="map-wrap">
-        <div id="map" role="application" aria-label="Map of reported ALPR cameras"></div>
-      </div>
-      <div class="map-controls">
-        <button id="locate-btn" class="secondary" type="button">Use my location</button>
-        <button id="refresh-btn" class="secondary" type="button">Refresh cameras</button>
-      </div>
-      <p id="map-status" class="status" role="status" aria-live="polite">Loading…</p>
-      <div class="legend" aria-label="Map legend">
-        <span><span class="dot flock"></span>Flock Safety</span>
-        <span><span class="dot other"></span>Other vendor</span>
-        <span><span class="dot unknown"></span>Unidentified ALPR</span>
-        <span><span class="dot you"></span>You</span>
-      </div>
     </section>
 
     <section id="tab-tools" class="tab" role="tabpanel" aria-labelledby="nav-tools" hidden>
       <h2>Anti-Flock tool directory</h2>
       <p>The existing ecosystem, in one place. Each tool below does something this tracker doesn't.</p>
       <div id="tools-grid" class="tools-grid"></div>
+      <h2>Verify data integrity</h2>
+      <div class="panel">
+        <p>Every dataset release ships a signed manifest (<a href="data/integrity/manifest.json">manifest.json</a>) with the SHA-256 of <a href="data/agencies.json">agencies.json</a>, a timestamp, and the commit it was taken at. This check recomputes the hash <strong>in your browser</strong> and compares it, so you can confirm the JSON you received matches what the maintainer released.</p>
+        <p class="muted">Honest scope: a matching hash proves the file matches the published release. It does not prove the hosting origin itself is uncompromised. For full provenance, check the manifest signature against the maintainer's published key and the <a href="data/audit/log.jsonl">public audit log</a> of dataset changes.</p>
+        <button id="verify-integrity-btn" type="button">Verify now</button>
+        <p id="verify-integrity-status" class="status" role="status"></p>
+      </div>
     </section>
 
     <section id="tab-learn" class="tab learn" role="tabpanel" aria-labelledby="nav-learn" hidden>
@@ -228,6 +215,7 @@
       <ul>
         <li>Flock-Off is for <strong>awareness and lawful civic action</strong>: mapping, records requests, public pressure, contract fights.</li>
         <li>Do not touch, disable, or vandalize cameras. That carries criminal liability and shifts the debate from privacy policy to property damage.</li>
+        <li><strong>Violence is never acceptable, under any circumstances.</strong> See the <a href="#legal">Legal</a> tab for our full position and the verbatim laws behind it.</li>
       </ul>
 
       <h3 id="learn-privacy">Privacy</h3>
@@ -236,6 +224,106 @@
         <li><strong>Tips are public documents.</strong> If you submit a contract tip, what you type (agency, source link, notes) is stored and, once approved, shown publicly. Submit only public information. The form asks for no name, email, or private details, and none is stored.</li>
         <li><strong>The map talks to third parties.</strong> Camera data comes from the Overpass API and map tiles from OpenStreetMap, so using the map tab sends them your IP address and the area you view, the same as loading any online map. Your precise location, when you tap "Use my location", only centers the map on your device and is never sent anywhere.</li>
         <li><strong>Hosting.</strong> The site runs on Vercel, which keeps standard server request logs (IP, page, time) to operate the service; that cannot be switched off. Nothing is added on top: our code keeps no visitor logs, and the report endpoint uses your IP only in memory for rate limiting, never writing it to storage.</li>
+      </ul>
+    </section>
+
+    <section id="tab-legal" class="tab learn" role="tabpanel" aria-labelledby="nav-legal" hidden>
+      <h2>Legal</h2>
+
+      <h3>Violence is never acceptable</h3>
+      <p>Flock-Off is a transparency project. We document public contracts between police agencies and Flock Safety so communities can debate them, file records requests, pack council meetings, and vote. That is the entire playbook.</p>
+      <p><strong>Violence is not acceptable under any circumstances.</strong> Not against people, not against cameras, not against property, not as retaliation, not as protest. Specifically:</p>
+      <ul>
+        <li>Do not damage, disable, deface, steal, or tamper with cameras or any related equipment.</li>
+        <li>Do not threaten, harass, stalk, or dox any person, including Flock Safety employees, police officers, elected officials, or private citizens.</li>
+        <li>Do not use information on this site to facilitate any of the above.</li>
+      </ul>
+      <p>Anyone who commits violence or vandalism in the name of this cause is acting against this project, not for it. We will not defend it, excuse it, or characterize it as activism. Change the contract, not the hardware.</p>
+
+      <h3>The law that protects this publication</h3>
+      <p>Publishing truthful information about government contracts and matters of public concern is protected speech. Six authorities, quoted verbatim:</p>
+
+      <p><strong>1. The First Amendment to the United States Constitution</strong></p>
+      <blockquote>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</blockquote>
+      <p class="cited-by">Source: National Archives transcription of the Bill of Rights, <a href="https://www.archives.gov/founding-docs/bill-of-rights-transcript" target="_blank" rel="noopener noreferrer">archives.gov/founding-docs/bill-of-rights-transcript</a></p>
+
+      <p><strong>2. <em>New York Times Co. v. United States</em>, 403 U.S. 713, 714 (1971) (per curiam)</strong></p>
+      <p>The Supreme Court refused to block publication of the Pentagon Papers, holding:</p>
+      <blockquote>"Any system of prior restraints of expression comes to this Court bearing a heavy presumption against its constitutional validity."</blockquote>
+      <p class="cited-by">Source: opinion text, <a href="https://www.law.cornell.edu/supremecourt/text/403/713" target="_blank" rel="noopener noreferrer">law.cornell.edu/supremecourt/text/403/713</a></p>
+
+      <p><strong>3. <em>Bartnicki v. Vopper</em>, 532 U.S. 514 (2001)</strong></p>
+      <p>The Court held the First Amendment protects publishing truthful information about a matter of public concern:</p>
+      <blockquote>"Parallel reasoning requires the conclusion that a stranger's illegal conduct does not suffice to remove the First Amendment shield from speech about a matter of public concern."</blockquote>
+      <p class="cited-by">Source: opinion syllabus, <a href="https://www.law.cornell.edu/supremecourt/text/532/514" target="_blank" rel="noopener noreferrer">law.cornell.edu/supremecourt/text/532/514</a></p>
+
+      <p><strong>4. <em>Cox Broadcasting Corp. v. Cohn</em>, 420 U.S. 469, 495 (1975)</strong></p>
+      <p>The Court held that states may not punish the publication of truthful information contained in official records open to public inspection:</p>
+      <blockquote>"the States may not impose sanctions on the publication of truthful information contained in official court records open to public inspection."</blockquote>
+      <p class="cited-by">Sources: opinion text, <a href="https://www.law.cornell.edu/supremecourt/text/420/469" target="_blank" rel="noopener noreferrer">law.cornell.edu/supremecourt/text/420/469</a> and <a href="https://supreme.justia.com/cases/federal/us/420/469/" target="_blank" rel="noopener noreferrer">supreme.justia.com/cases/federal/us/420/469</a></p>
+
+      <p><strong>5. <em>The Florida Star v. B.J.F.</em>, 491 U.S. 524, 524-525 (1989)</strong></p>
+      <p>The Court held that truthful, lawfully obtained information about a matter of public significance cannot be punished absent a state interest of the highest order:</p>
+      <blockquote>"if a newspaper lawfully obtains truthful information about a matter of public significance then state officials may not constitutionally punish publication of the information, absent a need to further a state interest of the highest order."</blockquote>
+      <p class="cited-by">Sources: official U.S. Reports PDF, <a href="https://www.govinfo.gov/content/pkg/USREPORTS-491/pdf/USREPORTS-491-524.pdf" target="_blank" rel="noopener noreferrer">govinfo.gov</a> and <a href="https://www.law.cornell.edu/supremecourt/text/491/524" target="_blank" rel="noopener noreferrer">law.cornell.edu/supremecourt/text/491/524</a></p>
+
+      <p><strong>6. <em>Smith v. Daily Mail Publishing Co.</em>, 443 U.S. 97, 102 (1979)</strong></p>
+      <p>The Court stated the core rule later called the "Daily Mail principle":</p>
+      <blockquote>"Our recent decisions demonstrate that state action to punish the publication of truthful information seldom can satisfy constitutional standards."</blockquote>
+      <p class="cited-by">Sources: <a href="https://supreme.justia.com/cases/federal/us/443/97/" target="_blank" rel="noopener noreferrer">supreme.justia.com/cases/federal/us/443/97</a> and <a href="https://caselaw.findlaw.com/court/us-supreme-court/443/97.html" target="_blank" rel="noopener noreferrer">caselaw.findlaw.com/court/us-supreme-court/443/97</a></p>
+
+      <p>These protections cover the <em>publication</em> of truthful, lawfully obtained information. They do not create a right to obtain government records in the first place, and each case was decided on its own facts rather than as blanket immunity. Flock-Off stays inside these holdings by publishing only information gathered lawfully: public records requests, open meetings, and published documents. No hacking, no evasion of access controls.</p>
+
+      <h3>When courts have ordered takedowns, and why those cases are different</h3>
+      <p>The protection for publishing truthful information is strong, but it is not absolute. Courts have ordered published material removed in narrow circumstances. Each of those cases turned on something this project does not do:</p>
+
+      <p><strong>7. <em>United States v. Progressive, Inc.</em>, 467 F. Supp. 990, 996 (W.D. Wis. 1979)</strong></p>
+      <p>A federal court enjoined a magazine from publishing technical details of hydrogen bomb design, holding the article fell "within the extremely narrow exception to the rule against prior restraint." The restraint rested on the Atomic Energy Act's criminal prohibition on disclosing nuclear "Restricted Data" found to pose grave, direct, immediate, and irreparable harm to the United States. <strong>Why it is different:</strong> no federal statute prohibits publishing public-records information about police contracts, and no court has found such publication a national-security harm.</p>
+      <p class="cited-by">Source: opinion text, <a href="https://law.justia.com/cases/federal/district-courts/FSupp/467/990/1376343/" target="_blank" rel="noopener noreferrer">law.justia.com/cases/federal/district-courts/FSupp/467/990/1376343</a></p>
+
+      <p><strong>8. <em>Universal City Studios, Inc. v. Corley</em>, 273 F.3d 429, 435 (2d Cir. 2001)</strong></p>
+      <p>The Second Circuit affirmed a permanent injunction barring the posting of, and knowingly linking to, the DeCSS DVD-decryption program under the DMCA's anti-trafficking provisions:</p>
+      <blockquote>"The injunction primarily bars the Appellants from posting DeCSS on their web site and from knowingly linking their web site to any other web site on which DeCSS is posted. We affirm."</blockquote>
+      <p><strong>Why it is different:</strong> the injunction targeted distribution of a functional circumvention tool built to defeat copyright protection, not the republication of truthful facts drawn from public records.</p>
+      <p class="cited-by">Source: opinion text, <a href="https://law.justia.com/cases/federal/appellate-courts/F3/273/429/506315/" target="_blank" rel="noopener noreferrer">law.justia.com/cases/federal/appellate-courts/F3/273/429/506315</a></p>
+
+      <p><strong>9. <em>DVD Copy Control Assn. v. Bunner</em>, 31 Cal. 4th 864, 884 (2003)</strong></p>
+      <p>A trial court ordered a website operator to remove posted DeCSS code on trade-secret grounds. The California Supreme Court held that such an injunction, when proper under trade-secret law, is no First Amendment violation:</p>
+      <blockquote>"Because the injunction is content neutral and was issued because of Bunner's prior unlawful conduct, we conclude it is not a prior restraint and therefore does not violate the First Amendment."</blockquote>
+      <p>The full story matters: on remand the injunction was reversed for failure of proof under trade-secret law, so the removal order did not ultimately stand. <strong>Why it is different:</strong> the entire theory was misappropriation of proprietary trade secrets the defendant knew were improperly acquired. Information drawn from public government records cannot be anyone's trade secret.</p>
+      <p class="cited-by">Source: filed opinion PDF, <a href="http://www.techlawjournal.com/courts2003/dvdcca_bunner/20030825.pdf" target="_blank" rel="noopener noreferrer">techlawjournal.com/courts2003/dvdcca_bunner/20030825.pdf</a></p>
+
+      <p><strong>10. <em>Harper &amp; Row v. Nation Enterprises</em>, 471 U.S. 539, 545 (1985)</strong></p>
+      <p>This is the canonical case where a publisher lost, stated precisely: the relief was damages ($12,500), not a takedown order. <em>The Nation</em> published 300 to 400 words of verbatim excerpts from President Ford's unpublished memoir to scoop a licensed serialization, and the Court held the magazine "effectively arrogated to itself the right of first publication, an important marketable subsidiary right." <strong>Why it is different:</strong> the case was about verbatim copying of unpublished copyrighted expression. Facts are not copyrightable, and a tracker republishing facts from public records asserts no right of first publication.</p>
+      <p class="cited-by">Source: opinion text, <a href="https://www.law.cornell.edu/supremecourt/text/471/539" target="_blank" rel="noopener noreferrer">law.cornell.edu/supremecourt/text/471/539</a></p>
+
+      <h3>Flock Safety vs. DeFlock: the closest real-world test</h3>
+      <p>DeFlock is a crowdsourced map of ALPR cameras. On January 30, 2025, Flock Safety's outside counsel sent its creator a cease-and-desist letter. The letter did not allege hacking, trespass, or terms-of-service violations, and it did not challenge the mapping itself. It asserted trademark dilution by blurring and tarnishment (15 U.S.C. &sect; 1125(c)) and false advertising (Lanham Act &sect; 43(a)), demanding the creator stop using the name "DeFlock." Notably, the letter itself conceded the key point:</p>
+      <blockquote>"While Flock does not object to the free dissemination of truthful information, your use of the Flock Marks as part of your brand DEFLOCK is being wrongfully used to make false statements about Flock and its products and is damaging both its reputation and the goodwill associated with the Flock Marks."</blockquote>
+      <p>On February 14, 2025, the Electronic Frontier Foundation responded on the creator's behalf:</p>
+      <blockquote>"The claims alleged in your letter are groundless, and Mr. Freeman will not be complying with your demands."</blockquote>
+      <p>The EFF's grounds: federal anti-dilution law expressly carves out noncommercial use and criticism or commentary on the mark owner (15 U.S.C. &sect; 1125(c)(3)); dilution requires a "famous," household-name mark; and false-advertising law applies only to "commercial advertising or promotion," which a noncommercial camera map is not.</p>
+      <p><strong>The outcome, stated precisely:</strong> DeFlock was not vindicated by a court order; after the EFF's rebuttal, no lawsuit followed and the site stayed up. And the dispute was about the project's name and branding, never about the lawfulness of publishing camera locations.</p>
+      <p class="cited-by">Sources: cease-and-desist letter, <a href="https://www.eff.org/files/2025/02/26/2025_01_31_deflock_cd_ex-3.pdf" target="_blank" rel="noopener noreferrer">eff.org (PDF)</a>; EFF response letter, <a href="https://www.eff.org/files/2025/02/26/eff_ltr_to_s._matz_flock_safety_re_deflock.pdf" target="_blank" rel="noopener noreferrer">eff.org (PDF)</a>; reporting by 404 Media, <a href="https://www.404media.co/flock-threatens-open-source-developer-mapping-its-surveillance-cameras/" target="_blank" rel="noopener noreferrer">404media.co</a></p>
+
+      <h3>The law that prohibits violence, vandalism, and threats</h3>
+
+      <p><strong>1. Destruction of government property: 18 U.S.C. &sect; 1361</strong></p>
+      <blockquote>Whoever willfully injures or commits any depredation against any property of the United States, or of any department or agency thereof, or any property which has been or is being manufactured or constructed for the United States, or any department or agency thereof, or attempts to commit any of the foregoing offenses, shall be punished as follows: If the damage or attempted damage to such property exceeds the sum of $1,000, by a fine under this title or imprisonment for not more than ten years, or both; if the damage or attempted damage to such property does not exceed the sum of $1,000, by a fine under this title or by imprisonment for not more than one year, or both.</blockquote>
+      <p class="cited-by">Source: <a href="https://www.law.cornell.edu/uscode/text/18/1361" target="_blank" rel="noopener noreferrer">law.cornell.edu/uscode/text/18/1361</a></p>
+      <p>Note: most Flock cameras are owned by Flock Safety or by state and local agencies rather than the federal government, so this specific statute may not cover a given camera. Every state separately criminalizes vandalism and destruction of property under its own criminal mischief, malicious destruction, or vandalism statutes. Whatever a given camera's ownership, damaging it is a crime under the applicable state law.</p>
+
+      <p><strong>2. Threats transmitted online: 18 U.S.C. &sect; 875(c)</strong></p>
+      <blockquote>Whoever transmits in interstate or foreign commerce any communication containing any threat to kidnap any person or any threat to injure the person of another, shall be fined under this title or imprisoned not more than five years, or both.</blockquote>
+      <p class="cited-by">Source: <a href="https://www.law.cornell.edu/uscode/text/18/875" target="_blank" rel="noopener noreferrer">law.cornell.edu/uscode/text/18/875</a></p>
+      <p>Federal courts have treated internet transmissions as satisfying the interstate-commerce element in section 875(c) prosecutions. Whether any given message violates the statute depends on its content and context, but posting threats online in connection with this cause can be a federal crime.</p>
+
+      <h3>Disclaimers</h3>
+      <ul>
+        <li>This page is informational, not legal advice. No attorney-client relationship is created by reading it.</li>
+        <li>Flock-Off is an independent community research project. It is not affiliated with, endorsed by, or connected to Flock Safety, Inc. or any law enforcement agency.</li>
+        <li>Contract data is community-researched from public sources. We work for accuracy, but records change and mistakes happen; verify before acting on any entry. See the methodology.</li>
+        <li>Statute and opinion texts are transcribed verbatim from the sources cited. Laws change; consult the cited sources for current text.</li>
       </ul>
     </section>
   </main>
@@ -253,11 +341,12 @@
       Contract data is community-researched and sourced per record; see the methodology.
       Camera data: © OpenStreetMap contributors (ODbL) via the DeFlock community.
       No account, no cookies, no analytics. Tips you submit are stored as public documents; no private information is collected. <a href="#learn-privacy">Privacy details</a>.
+      Violence is never acceptable: <a href="#legal">read the legal page</a>.
       <span id="year"></span> · <a href="https://github.com/PaulinoTech1/Flock-Off">Source on GitHub</a>
     </p>
   </footer>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="vendor/leaflet/leaflet.js"></script>
   <script src="js/config.js"></script>
   <script src="js/data.js"></script>
   <script src="js/tracker.js"></script>

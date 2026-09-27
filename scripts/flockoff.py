@@ -6,6 +6,7 @@ Replaces remembering four scripts and their flags:
     python3 scripts/flockoff.py keys check
     python3 scripts/flockoff.py keys backfill
     python3 scripts/flockoff.py fingerprints refresh [--max N] [--max-age-days D] [--keys k1,k2]
+    python3 scripts/flockoff.py fingerprints drift [--max N] [--keys k1,k2]
     python3 scripts/flockoff.py classify [--check]
     python3 scripts/flockoff.py monitor [local-dataset-fallback]
     python3 scripts/flockoff.py config validate
@@ -54,12 +55,17 @@ def cmd_keys(args, _cfg) -> None:
 
 def cmd_fingerprints(args, _cfg) -> None:
     import source_fingerprints
-    argv = ["--refresh"]
-    if args.max is not None:
+    if getattr(args, "fp_cmd", None) == "drift":
+        argv = ["--drift"]
+    elif getattr(args, "fp_cmd", None) == "backfill-archive":
+        argv = ["--backfill-archive"]
+    else:
+        argv = ["--refresh"]
+        if getattr(args, "max_age_days", None) is not None:
+            argv += ["--max-age-days", str(args.max_age_days)]
+    if getattr(args, "max", None) is not None:
         argv += ["--max", str(args.max)]
-    if args.max_age_days is not None:
-        argv += ["--max-age-days", str(args.max_age_days)]
-    if args.keys:
+    if getattr(args, "keys", None):
         argv += ["--keys", args.keys]
     source_fingerprints.main(argv)
 
@@ -87,6 +93,90 @@ def cmd_test(args, _cfg) -> None:
         sys.exit(1)
 
 
+def cmd_release(args, cfg) -> None:
+    """One-command release: pre-flight checks, sign the manifest, push.
+
+    Streamlined path for the weekly review: after quarantined items are
+    approved and applied, this validates the tree, signs the release
+    manifest with the pipeline key ($FLOCK_OFF_SIGNING_KEY), and pushes.
+    The push helper re-runs the full release gate (including signature
+    verification) before anything leaves the machine.
+
+    --dry-run does everything except the push, for rehearsal.
+    """
+    import subprocess
+
+    # The signing key lives outside the repo; pick it up from the standard
+    # env file when it is not already in the environment.
+    if not os.environ.get("FLOCK_OFF_SIGNING_KEY"):
+        env_file = os.path.expanduser("~/.config/flock-off/release.env")
+        if os.path.isfile(env_file):
+            for line in open(env_file, encoding="utf-8"):
+                line = line.strip()
+                if line.startswith("export FLOCK_OFF_SIGNING_KEY="):
+                    val = line.split("=", 1)[1].strip().strip("\"'")
+                    val = val.replace("$HOME", os.path.expanduser("~"))
+                    os.environ["FLOCK_OFF_SIGNING_KEY"] = val
+
+    # 1. Pre-flight: same checks the push gate enforces, failed fast here
+    #    so a broken tree never reaches the signing step. The subcommands
+    #    signal via sys.exit; a zero exit means "passed", anything else
+    #    aborts the release.
+    def _preflight(fn, p_args, name):
+        # Recursion guard: test_release.py exercises `release --dry-run`
+        # via subprocess; without this, the inner release would re-run the
+        # suite that is already running it.
+        if name == "test" and os.environ.get("FLOCKOFF_RELEASE_SELFTEST"):
+            print("release: pre-flight test step skipped (self-test)")
+            return
+        try:
+            fn(p_args, cfg)
+        except SystemExit as e:
+            if e.code not in (0, None):
+                raise SystemExit(
+                    f"release: pre-flight {name} failed (exit {e.code})")
+    _preflight(cmd_test,
+               argparse.Namespace(pattern="test_*.py", verbose=False), "test")
+    _preflight(cmd_keys, argparse.Namespace(check=True), "keys check")
+    _preflight(cmd_classify, argparse.Namespace(check=True), "classify check")
+    print("release: pre-flight checks passed")
+
+    # 2. Sign the manifest with the pipeline key.
+    import sign_manifest
+    sign_argv = ["--sign"]
+    if args.key:
+        sign_argv += ["--key", args.key]
+    sign_manifest.main(sign_argv)
+
+    # 3. Verify the signature we just produced, against the published key.
+    #    sign_manifest signals via sys.exit; swallow the zero exit.
+    pubkey = os.path.join(cfg["_repo_root"], "data", "integrity", "pubkey.pub")
+    if not os.path.isfile(pubkey):
+        sys.exit("release: refusing to continue: data/integrity/pubkey.pub "
+                 "is not published; see docs/RELEASE_SIGNING.md")
+    try:
+        sign_manifest.main(["--verify", "--pubkey", pubkey])
+    except SystemExit as e:
+        if e.code not in (0, None):
+            raise SystemExit(f"release: signature verification failed "
+                             f"(exit {e.code})")
+    print("release: manifest signed and verified")
+
+    if args.dry_run:
+        print("release: --dry-run, stopping before push "
+              f"(message would be: {args.message!r})")
+        return
+
+    # 4. Push. The helper runs release_gate() again (fail-closed) first.
+    helper = os.path.expanduser("~/workspace/flock-off-deploy/github_push.py")
+    if not os.path.isfile(helper):
+        sys.exit(f"release: push helper not found: {helper}")
+    r = subprocess.run([sys.executable, helper, args.message])
+    if r.returncode != 0:
+        sys.exit(f"release: push failed (exit {r.returncode})")
+    print("release: pushed")
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="flockoff.py",
@@ -112,6 +202,17 @@ def build_parser() -> argparse.ArgumentParser:
     r.add_argument("--max-age-days", type=int, default=None)
     r.add_argument("--keys", default=None,
                    help="comma-separated source_keys to refresh")
+    d = fsub.add_parser("drift",
+                        help="fatal pre-push gate: fail on unreviewed drift")
+    d.add_argument("--max", type=int, default=None,
+                   help="cap how many sources to re-fetch")
+    d.add_argument("--keys", default=None,
+                   help="comma-separated source_keys to check")
+    b = fsub.add_parser("backfill-archive",
+                        help="snapshot extracted text for sources missing "
+                             "an archive file")
+    b.add_argument("--max", type=int, default=None,
+                   help="cap how many sources to fetch")
 
     cl = sub.add_parser("classify", help="source evidence-tier classification")
     cl.add_argument("--check", action="store_true",
@@ -126,6 +227,15 @@ def build_parser() -> argparse.ArgumentParser:
                    help="unittest discovery pattern")
     t.add_argument("-v", "--verbose", action="store_true",
                    help="verbose test output")
+
+    r = sub.add_parser("release",
+                       help="one-command release: pre-flight, sign, push")
+    r.add_argument("--message", default="Update Flock-Off dataset",
+                   help="commit message for the push")
+    r.add_argument("--key", default=None,
+                   help="signing key path (default: $FLOCK_OFF_SIGNING_KEY)")
+    r.add_argument("--dry-run", action="store_true",
+                   help="validate and sign, but do not push")
     return p
 
 
@@ -139,9 +249,12 @@ def main() -> None:
         ("keys", "check"): lambda a, c: cmd_keys(argparse.Namespace(check=True), c),
         ("keys", "backfill"): lambda a, c: cmd_keys(argparse.Namespace(check=False), c),
         ("fingerprints", "refresh"): cmd_fingerprints,
+        ("fingerprints", "drift"): cmd_fingerprints,
+        ("fingerprints", "backfill-archive"): cmd_fingerprints,
         ("classify", None): cmd_classify,
         ("monitor", None): cmd_monitor,
         ("test", None): cmd_test,
+        ("release", None): cmd_release,
     }
     key = (args.command,
            getattr(args, "config_cmd", None)

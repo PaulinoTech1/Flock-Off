@@ -19,7 +19,8 @@ BUILD_SCRIPT = os.path.join(REPO_ROOT, "scripts", "vercel_build.py")
 
 def _copy_repo():
     tmp = tempfile.mkdtemp(prefix="flockoff-build-")
-    for name in ("index.html", "api", "data", "scripts", "js", "css"):
+    for name in ("index.html", "api", "data", "scripts", "js", "css",
+                 "config", "vendor"):
         src = os.path.join(REPO_ROOT, name)
         dst = os.path.join(tmp, name)
         if os.path.isdir(src):

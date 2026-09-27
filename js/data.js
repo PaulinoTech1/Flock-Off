@@ -66,8 +66,72 @@ out tags center;`;
   }
 
   async function fetchAround(lat, lon, km) {
-    return fetchInBbox(bboxAround(lat, lon, km));
+    try {
+      const cams = await fetchInBbox(bboxAround(lat, lon, km));
+      SnapCache.put(lat, lon, km, cams); // fire-and-forget; best effort
+      return { cams, live: true };
+    } catch (err) {
+      // Degrade to the last successful snapshot for this map cell, if any,
+      // instead of showing a blank map. The caller labels it as cached.
+      const snap = await SnapCache.get(lat, lon, km).catch(() => null);
+      if (snap && Array.isArray(snap.cams)) {
+        return { cams: snap.cams, live: false, cachedAt: snap.fetchedAt, error: err.message };
+      }
+      throw err;
+    }
   }
+
+  // ---- Local snapshot cache (IndexedDB) ----
+  // Last-successful Overpass snapshot per map cell. Pure fallback cache:
+  // no tracking, no exfiltration, entries are overwritten on each success.
+  const SnapCache = (() => {
+    const DB = "flockoff-map";
+    const STORE = "snapshots";
+    // 0.1-degree cells (~11 km); matches the default fetch radius scale.
+    const cellKey = (lat, lon, km) => `snap:${lat.toFixed(1)}:${lon.toFixed(1)}:${km}`;
+    function openDb() {
+      return new Promise((resolve, reject) => {
+        if (!("indexedDB" in window)) return reject(new Error("no indexedDB"));
+        const req = indexedDB.open(DB, 1);
+        req.onupgradeneeded = () => req.result.createObjectStore(STORE);
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject(req.error || new Error("open failed"));
+      });
+    }
+    async function put(lat, lon, km, cams) {
+      let db = null;
+      try {
+        db = await openDb();
+        await new Promise((resolve, reject) => {
+          const tx = db.transaction(STORE, "readwrite");
+          tx.objectStore(STORE).put(
+            { cams, fetchedAt: new Date().toISOString() },
+            cellKey(lat, lon, km)
+          );
+          tx.oncomplete = () => resolve();
+          tx.onerror = () => reject(tx.error || new Error("put failed"));
+        });
+      } catch {
+        /* cache is best-effort; live data already succeeded */
+      } finally {
+        if (db) db.close();
+      }
+    }
+    async function get(lat, lon, km) {
+      const db = await openDb();
+      try {
+        return await new Promise((resolve, reject) => {
+          const tx = db.transaction(STORE, "readonly");
+          const q = tx.objectStore(STORE).get(cellKey(lat, lon, km));
+          q.onsuccess = () => resolve(q.result || null);
+          q.onerror = () => reject(q.error || new Error("get failed"));
+        });
+      } finally {
+        db.close();
+      }
+    }
+    return { put, get };
+  })();
 
   // Haversine distance in meters.
   function distM(aLat, aLon, bLat, bLon) {

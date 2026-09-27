@@ -1,0 +1,1412 @@
+# Domain promotion approvals for the verified tiers.
+#
+# Every domain in classify.verified_news / classify.verified_primary must have
+# an entry here. A NEW domain is promoted only after:
+#   1. at least one full weekly monitor cycle in classify.pending_classify, and
+#   2. an approval entry below naming the approver, date, and rationale.
+# The human-approval side is the maintainer's responsibility; the test suite
+# (scripts/tests/test_domains.py) enforces that the entry EXISTS.
+#
+# Domains below dated 2026-09-26 were grandfathered: they were already in the
+# verified corpus, reviewed in git history, before the quarantine rule existed.
+approvals:
+  404media.co:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  607newsnow.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  949tnt.iheart.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  94hjy.iheart.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  9news.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  aacounty.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  agendas.fresno.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  akronjewishnews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  alpolitics.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  amestrib.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  apps.troymi.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  ayer.ma.us:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  azcentral.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  azcir.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  b101.iheart.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  b985.fm:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  basedinlafayette.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  beaconjournal.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  berkeleyca.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  blog.cstx.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  blueridgenow.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  boropulse.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  breezejmu.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  buffalocounty.ne.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  capecodtimes.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  capitolcitynow.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cardinalpine.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  carscoops.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  castlerocknewspress.net:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  ccxmedia.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cdn.euclidlibrary.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cdnsm5-hosted.civiclive.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cedarrapidsgazette-ia.newsmemory.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cfpublic.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  champaignil.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  chestertonin.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cincinnati.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  citizen-times.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cityofbartlesville.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cityofdallas.legistar.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cityoffortwayne.in.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cityofkearney.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cityofypsilanti.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  civiclex.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cjonline.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  clarionledger.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  clevescene.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cmg-cmg-tv-10070-prod.cdn.arcpublishing.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cms6.revize.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cnhinews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cnn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  coastalabc.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  collegian.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  collierville.granicus.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  coloradoan.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  commercialappeal.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  compassvermont.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  content.govdelivery.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  coralville.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cornellsun.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  courierpress.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  cvillerightnow.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  d33gy59ovltp76.cloudfront.net:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  dailycal.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  dailyillini.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  dailytidings.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  delawareonline.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  delmarvanow.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  denver.legistar1.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  department-test3.countyofdane.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  derby.civicweb.net:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  desmoinesregister.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  dispatch.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  docs.southbendin.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  draperutah.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  dropsitenews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  ebpd.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  elpasoheraldpost.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  elpasotimes.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  elnuevodia.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "Boss decision 2026-09-26: El Nuevo Dia, Puerto Rico's newspaper of record; largest circulation; GFR Media"
+  englewoodgov.civicweb.net:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  epcsheriffsoffice.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fitchburgstar.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  flatwaterfreepress.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  floridatoday.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fortworthtexas.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fountain.colorado.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fox10phoenix.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fox11online.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fox26houston.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fox29.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fox4news.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fox5atlanta.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fox5dc.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fox6now.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fox9.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  foxnews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  fresno.granicusideas.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  geekwire.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  gmg-wsls-prod.cdn.arcpublishing.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  go.boarddocs.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  gopresstimes.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  governing.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  govtech.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  gray-waff-prod.gtv-cdn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  gray-wbay-prod.gtv-cdn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  gray-whns-prod.gtv-cdn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  gray-wowt-prod.gtv-cdn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  gray-wpta-prod.gtv-cdn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  greenbaypressgazette.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  grotonma.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  hallcountyne.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  harrisonburgva.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  hawley.senate.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  heraldnews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  highlandscurrent.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  hollandsentinel.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  houmatoday.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  htrnews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  idsnews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  illinoispress.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  indianacapitalchronicle.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  indystar.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  insider.govtech.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  investigatewest.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  iowapublicradio.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  ipm.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  irishrover.net:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  jalopnik.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  jconline.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  jeffcosheriffal.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  johnsoncitytn.civicweb.net:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  johnsoncitytn.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  journalaz.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  jsis.washington.edu:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  jsonline.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  karmactive.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  kearney.granicus.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  kenner.la.us:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  kentuckylantern.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  kitsapsun.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  kjluradio.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  knkx.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  knoxnews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  kprcradio.iheart.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  kqed.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  krps.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  ksmu.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  kypublicnotices.newzgroup.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  lanthorn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  latintimes.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  lcsun-news.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  legistar1.granicus.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  legistarweb-production.s3.amazonaws.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  littlerock.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  littlevillagemag.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  live-township-of-north-brunswick.pantheonsite.io:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  lonepeakpolice.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  lookout.co:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  lookouteugene-springfield.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  louisianafirstnews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  louisvillecardinal.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  mansfieldnewsjournal.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  mccmeetingspublic.blob.core.usgovcloudapi.net:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  meetings.cvilledata.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  military.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  millcreekwa.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  millingtontn.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  mirrorindy.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  montco.today:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  mountainview.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  muckrock.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  nbcpalmsprings.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  nebraskapublicmedia.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  newpineplainsherald.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  news-leader.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  news.thepalmbayer.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  news9.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  newsleader.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  ogdencity.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  okc.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  okhouse.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  oklahoman.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  opengovernment.ny.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  origin.volusiasheriff.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  padailypost.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  paloaltoonline.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  parkerchronicle.net:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  pbn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  phillyvoice.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  police1.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  portal.ksba.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  postcrescent.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  providencejournal.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  provo.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  psucollegian.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  publicopiniononline.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  publicradioeast.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  purdueexponent.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  q13fox.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  qni.ogdencity.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  radio.kttz.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  reason.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  recordnet.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  redmond.granicus.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  registerguard.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  renton.civicweb.net:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  resources.finalsite.net:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  reviewjournal.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  rgj.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  ricentral.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  rileycountypolice.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  route-fifty.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  sacurrent.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  salinapost.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  sanjosespotlight.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  sarpy.civicweb.net:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  scottsbluff.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  scottsdale.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  securitysystemsnews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  securitytoday.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  services.austintexas.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  sheboyganpress.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  shepherdexpress.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  shreveporttimes.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  signalakron.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  southportland-gov.community.diligentoneplatform.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  star64.tv:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  starnewsonline.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  statesmanjournal.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  static.spokanecity.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  stjohntradewinds.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "Boss decision 2026-09-26: St. John Tradewinds, community newspaper for St. John USVI since 1972"
+  stoughton.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  swtimes.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  talkbusiness.net:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  texasobserver.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  tfid.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thebatt.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thebeatofthecapital.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thecamarilloacorn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thecooldown.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thedailycatch.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thedailytexan.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thedaonline.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  theindianalawyer.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  theithacan.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  themaneater.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thenorthwestern.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thesiuslawnews.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  theurbanist.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  thorntonpd.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  tmj4.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  tompkinscountyny.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  transparency.flocksafety.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  tucsonspotlight.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  tulsapolice.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  universitystar.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  unraveledpress.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  urbandale.civicweb.net:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  usi.edu:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  vcstar.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  vernonhills.org:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  waltontribune.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wamc.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  washingtonexaminer.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  washtenawvoice.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wcia.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wcsufm.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  weku.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  whro.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wichitaks.granicus.com:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wncw.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wncy.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  woodburn-or.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wrn.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wsyr.iheart.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wuot.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wvlt.tv:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  wvpress.org:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"
+  yampavalleybugle.com:
+    tier: verified_news
+    approved_by: Alexander
+    date: 2026-09-26
+    rationale: "grandfathered: in the verified corpus before the quarantine rule (2026-09-26)"

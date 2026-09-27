@@ -79,7 +79,7 @@ class TestConfigThresholds(unittest.TestCase):
         mon = wm._cfg()["monitor"]
         self.assertEqual(mon["stale_days"], 180)
         self.assertEqual(mon["renewal_window_days"], 90)
-        self.assertEqual(mon["update_probe_sample"], 20)
+        self.assertEqual(mon["update_probe_sample"], 60)
         self.assertEqual(mon["update_probe_delay"], 1.5)
 
 

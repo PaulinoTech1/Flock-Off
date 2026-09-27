@@ -30,6 +30,15 @@ Usage:
     (default from config), and non-ok entries. --keys limits to specific
     source_keys (comma-separated). --max caps how many fetches this run
     performs (politeness).
+
+  python3 scripts/flockoff.py fingerprints drift [--keys k1,k2] [--max N]
+    Fatal drift gate (pre-push / CI): re-fetch previously fingerprinted
+    sources and fail (exit 1) if any shows Hamming distance >=
+    fingerprints.update_distance against its stored simhash AND has no
+    human re-review recorded in data/fingerprint_reviews.json. Read-only:
+    never rewrites the fingerprint baseline. A human reviews drift, then
+    either accepts it (records a review + runs refresh to advance the
+    baseline) or rejects it (replaces the source).
 """
 from __future__ import annotations
 
@@ -68,6 +77,32 @@ def data_path() -> str:
 
 def fingerprints_path() -> str:
     return _cfg()["paths"]["fingerprints"]
+
+
+def archive_dir() -> str:
+    """Directory holding per-source extracted-text snapshots."""
+    return _cfg()["paths"]["archive"]
+
+
+def archive_filename(key: str) -> str:
+    """Stable archive filename for a source key."""
+    return hashlib.sha256(key.encode()).hexdigest() + ".txt"
+
+
+def write_archive(key: str, text: str, directory: str | None = None) -> str:
+    """Write the extracted text snapshot for a source key.
+
+    Returns the archive filename. The file holds exactly the text the
+    simhash/content_hash were computed from, so git history of the
+    archive dir is a permanent evidence record even if the source
+    later changes or disappears.
+    """
+    directory = directory or archive_dir()
+    os.makedirs(directory, exist_ok=True)
+    filename = archive_filename(key)
+    with open(os.path.join(directory, filename), "w", encoding="utf-8") as f:
+        f.write(text)
+    return filename
 
 
 def user_agent() -> str:
@@ -202,7 +237,13 @@ def content_hash(text: str) -> str:
     return hashlib.sha256(text.encode()).hexdigest()
 
 
-def fingerprint_url(url: str, today: str) -> dict:
+def fingerprint_url(url: str, today: str,
+                    archive_directory: str | None = None,
+                    key: str | None = None) -> dict:
+    """Fingerprint one URL. Also writes the extracted-text snapshot to the
+    source archive under the canonical source key (defaults to the URL).
+    archive_directory overrides the configured dir; tests use it to avoid
+    touching the real archive."""
     status, final_url, html = fetch_page(url)
     rec: dict = {
         "url": url,
@@ -213,11 +254,15 @@ def fingerprint_url(url: str, today: str) -> dict:
         "text_len": 0,
         "fetched_at": today,
         "fetch_status": status,
+        "archive": None,
     }
     if status == "ok" and html:
         title, text = extract_text(html)
         rec["title"] = title or None
         rec["text_len"] = len(text)
+        if text:
+            rec["archive"] = write_archive(key or url, text,
+                                           archive_directory)
         if len(text) >= min_text_len():
             rec["content_hash"] = content_hash(text)
             sh = simhash64(text)
@@ -248,6 +293,102 @@ def save_fingerprints(fps: dict, path: str | None = None) -> None:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(fps, f, indent=2, ensure_ascii=False, sort_keys=True)
         f.write("\n")
+
+
+def reviews_path() -> str:
+    return os.path.join(os.path.dirname(fingerprints_path()),
+                        "fingerprint_reviews.json")
+
+
+def load_reviews(path: str | None = None) -> dict:
+    path = path or reviews_path()
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def save_reviews(reviews: dict, path: str | None = None) -> None:
+    path = path or reviews_path()
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(reviews, f, indent=2, ensure_ascii=False, sort_keys=True)
+        f.write("\n")
+
+
+def is_rereviewed(key: str, fp: dict, reviews: dict) -> bool:
+    """A drift is re-reviewed when a human recorded a decision at or after
+    the fingerprint baseline it drifted from was captured."""
+    rev = reviews.get(key)
+    if not rev:
+        return False
+    try:
+        return rev.get("reviewed_at", "") >= fp.get("fetched_at", "")
+    except TypeError:
+        return False
+
+
+def drift_check(fps: dict, reviews: dict, keys: set[str] | None = None,
+                max_n: int | None = None) -> tuple[list[dict], dict]:
+    """Re-fetch previously fingerprinted sources and compare against the
+    stored baseline. Read-only: never rewrites fps.
+
+    Returns (drifted, stats). Each drifted entry has key, url, agency_ids,
+    distance, and text_len_change. A source counts as drifted when the live
+    simhash is at Hamming distance >= fingerprints.update_distance from the
+    stored simhash AND no human re-review covers the baseline.
+    """
+    threshold = update_distance()
+    today_s = datetime.date.today().isoformat()
+    drifted: list[dict] = []
+    stats = {"checked": 0, "drifted": 0, "rereviewed": 0,
+             "blocked": 0, "error": 0, "skipped_no_baseline": 0}
+    # Map key -> agency ids for reporting (needs the dataset; fps records
+    # carry no agency link, so callers pass keys scoped from changed records
+    # and the CLI resolves agency ids separately).
+    candidates = [k for k, fp in fps.items()
+                  if fp.get("fetch_status") == "ok" and fp.get("simhash")
+                  and (keys is None or k in keys)]
+    for key in candidates:
+        if max_n is not None and stats["checked"] >= max_n:
+            break
+        fp = fps[key]
+        stats["checked"] += 1
+        if is_rereviewed(key, fp, reviews):
+            stats["rereviewed"] += 1
+            continue
+        time.sleep(fetch_delay())
+        status, _final, html = fetch_page(fp.get("url") or key)
+        if status == "error":
+            # One retry: transient network failures should not block a push,
+            # but a persistently unreachable source must not pass silently.
+            time.sleep(fetch_delay())
+            status, _final, html = fetch_page(fp.get("url") or key)
+        if status != "ok" or not html:
+            stats["blocked" if status == "blocked" else "error"] += 1
+            print(f"  [{status}] {key[:70]}", flush=True)
+            continue
+        _title, text = extract_text(html)
+        new_sh = simhash64(text)
+        if new_sh is None:
+            stats["error"] += 1
+            continue
+        dist = hamming(new_sh, int(fp["simhash"], 16))
+        if dist >= threshold:
+            stats["drifted"] += 1
+            old_len = fp.get("text_len") or 0
+            drifted.append({
+                "key": key,
+                "url": fp.get("url") or key,
+                "distance": dist,
+                "threshold": threshold,
+                "baseline_fetched_at": fp.get("fetched_at"),
+                "checked_at": today_s,
+                "text_len_change": (len(text) - old_len) / old_len if old_len else None,
+            })
+        print(f"  [{'DRIFT' if dist >= threshold else 'ok'} d={dist}] {key[:70]}",
+              flush=True)
+    return drifted, stats
 
 
 def refresh(data: dict, fps: dict, max_n: int | None = None,
@@ -282,7 +423,7 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
             stats["skipped"] += 1
             continue
         time.sleep(fetch_delay())
-        rec = fingerprint_url(url, today_s)
+        rec = fingerprint_url(url, today_s, key=key)
         fps[key] = rec
         stats["fetched"] += 1
         stats[rec["fetch_status"]] = stats.get(rec["fetch_status"], 0) + 1
@@ -290,8 +431,58 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
     return stats
 
 
+def read_archive(key: str, directory: str | None = None) -> str | None:
+    """Return the archived extracted text for a source key, or None."""
+    directory = directory or archive_dir()
+    path = os.path.join(directory, archive_filename(key))
+    try:
+        with open(path, encoding="utf-8") as f:
+            return f.read()
+    except OSError:
+        return None
+
+
+def backfill_archive(data: dict, fps: dict,
+                     max_n: int | None = None) -> dict:
+    """Populate missing source-archive snapshots.
+
+    For each source key with no archive file, re-fetch and, on a clean
+    ok result, write the archive and update the baseline (same
+    accept-current-content semantics as refresh()). Non-ok fetches are
+    left completely untouched so a backfill can never manufacture a
+    drift-gate fatal out of a blocked or errored source.
+    Returns stats.
+    """
+    today_s = datetime.date.today().isoformat()
+    stats = {"fetched": 0, "archived": 0, "skipped": 0, "non_ok": 0}
+    seen: set[str] = set()
+    for agency_id, title, url, key in iter_citations(data):
+        if key in seen:
+            stats["skipped"] += 1
+            continue
+        seen.add(key)
+        if read_archive(key) is not None:
+            stats["skipped"] += 1
+            continue
+        if max_n is not None and stats["fetched"] >= max_n:
+            stats["skipped"] += 1
+            continue
+        time.sleep(fetch_delay())
+        rec = fingerprint_url(url, today_s, key=key)
+        stats["fetched"] += 1
+        if rec["fetch_status"] == "ok" and rec["archive"]:
+            fps[key] = rec
+            stats["archived"] += 1
+        else:
+            stats["non_ok"] += 1
+        print(f"  [{rec['fetch_status']}] {agency_id}: {url[:70]}",
+              flush=True)
+    return stats
+
+
 def main(argv: list[str]) -> None:
-    if "--refresh" not in argv:
+    if "--refresh" not in argv and "--drift" not in argv \
+            and "--backfill-archive" not in argv:
         print(__doc__)
         return
     try:
@@ -299,6 +490,23 @@ def main(argv: list[str]) -> None:
     except ConfigError as exc:
         print(str(exc), file=sys.stderr)
         sys.exit(2)
+    if "--drift" in argv:
+        _main_drift(argv)
+        return
+    if "--backfill-archive" in argv:
+        fps = load_fingerprints()
+        with open(data_path(), encoding="utf-8") as f:
+            data = json.load(f)
+        max_n = None
+        for i, a in enumerate(argv):
+            if a == "--max" and i + 1 < len(argv):
+                max_n = int(argv[i + 1])
+        stats = backfill_archive(data, fps, max_n=max_n)
+        save_fingerprints(fps)
+        print(f"done: {stats['fetched']} fetched, {stats['archived']} "
+              f"archived, {stats['non_ok']} non-ok left untouched, "
+              f"{stats['skipped']} skipped")
+        return
     max_n = None
     max_age = default_max_age_days()
     only_keys = None
@@ -316,6 +524,56 @@ def main(argv: list[str]) -> None:
     stats = refresh(data, fps, max_n=max_n, max_age_days=max_age, only_keys=only_keys)
     save_fingerprints(fps)
     print(f"done: {stats['fetched']} fetched ({stats}), {len(fps)} keys total")
+
+
+def _main_drift(argv: list[str]) -> None:
+    max_n = None
+    only_keys = None
+    for i, a in enumerate(argv):
+        if a == "--max" and i + 1 < len(argv):
+            max_n = int(argv[i + 1])
+        if a == "--keys" and i + 1 < len(argv):
+            only_keys = set(argv[i + 1].split(","))
+    fps = load_fingerprints()
+    reviews = load_reviews()
+    # key -> agency ids, for the failure report
+    with open(data_path(), encoding="utf-8") as f:
+        data = json.load(f)
+    owners: dict[str, list[str]] = {}
+    for agency_id, _title, _url, key in iter_citations(data):
+        owners.setdefault(key, [])
+        if agency_id not in owners[key]:
+            owners[key].append(agency_id)
+    print(f"drift check: {len(fps)} baselines, "
+          f"{len(only_keys) if only_keys else 'all'} scoped...")
+    drifted, stats = drift_check(fps, reviews, keys=only_keys, max_n=max_n)
+    for d in drifted:
+        d["agency_ids"] = owners.get(d["key"], [])
+    print(f"done: {stats['checked']} checked, {stats['drifted']} drifted, "
+          f"{stats['rereviewed']} re-reviewed, "
+          f"{stats['blocked']} blocked, {stats['error']} error")
+    unverifiable = stats["blocked"] + stats["error"]
+    if unverifiable:
+        print(f"\nFATAL: {unverifiable} source(s) could not be re-fetched, so "
+              "the gate cannot confirm they still support their citations. "
+              "A source that cannot be verified is not a verified source.",
+              file=sys.stderr)
+        print("Either replace the source, or verify it by another means and "
+              "record a review in data/fingerprint_reviews.json with "
+              "reviewed_at at or after the baseline's fetched_at.",
+              file=sys.stderr)
+        sys.exit(1)
+    if drifted:
+        print("\nFATAL: unreviewed drift detected "
+              f"(threshold {update_distance()}):", file=sys.stderr)
+        for d in drifted:
+            print(f"  - {d['key'][:80]} d={d['distance']} "
+                  f"agencies={','.join(d['agency_ids'])}", file=sys.stderr)
+        print("Review each drift, then either accept (record a review in "
+              "data/fingerprint_reviews.json and refresh the baseline) or "
+              "reject (replace the source).", file=sys.stderr)
+        sys.exit(1)
+    print("no unreviewed drift")
 
 
 if __name__ == "__main__":

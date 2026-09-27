@@ -17,6 +17,10 @@ paths:
   data: data/agencies.json
   fingerprints: data/source_fingerprints.json
   classification: data/source_classification.json
+  # Per-source extracted-text snapshots. One <sha256(key)>.txt per source,
+  # written on every successful fetch; git history of this dir is the
+  # permanent evidence record even if the source later changes or dies.
+  archive: data/source_archive
 
 urls:
   dataset: https://raw.githubusercontent.com/PaulinoTech1/Flock-Off/main/data/agencies.json
@@ -71,7 +75,7 @@ fingerprints:
 monitor:
   renewal_window_days: 90
   stale_days: 180
-  update_probe_sample: 20   # citations re-fetched per weekly run (rotating)
+  update_probe_sample: 60   # citations re-fetched per weekly run (rotating)
   update_probe_delay: 1.5   # seconds between probe fetches
 
 # Source classification domains (scripts/classify_sources.py).
@@ -209,6 +213,7 @@ classify:
     - dailytidings.com  # Ashland Daily Tidings
     - elpasoheraldpost.com  # El Paso Herald-Post
     - elpasotimes.com  # El Paso Times (Gannett)
+    - elnuevodia.com  # El Nuevo Dia (Puerto Rico newspaper of record; GFR Media)
     - fox10phoenix.com  # KSAZ Phoenix (Fox)
     - fox26houston.com  # KRIV Houston (Fox)
     - fox4news.com  # KDFW Dallas (Fox)
@@ -248,6 +253,7 @@ classify:
     - securitytoday.com  # trade press
     - shreveporttimes.com  # Shreveport Times (Gannett)
     - statesmanjournal.com  # Statesman Journal Salem (Gannett)
+    - stjohntradewinds.com  # St. John Tradewinds (St. John USVI community paper, est. 1972)
     - texasobserver.org  # Texas Observer
     - thebatt.com  # Texas A&M student paper
     - thecamarilloacorn.com  # Camarillo Acorn
@@ -366,6 +372,12 @@ classify:
     - scottsbluff.org  # City of Scottsbluff NE
     - tfid.org  # City of Twin Falls ID
     - urbandale.civicweb.net  # City of Urbandale CivicWeb
+  pending_classify:
+    # Quarantine for domains proposed for verified_news / verified_primary.
+    # A domain sits here for at least one weekly monitor cycle and may be
+    # promoted only with an entry in config/domain_approvals.yaml naming the
+    # approver, date, and rationale. Domains here classify as unverified.
+    []
   unverified:
     # Advocacy organizations: reputable, but advocacy. Leads, not citations.
     # Social / video / self-publishing platforms.

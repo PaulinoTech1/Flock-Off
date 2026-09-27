@@ -1,0 +1,380 @@
+{
+  "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/349627/alamogordo-police-department-and-otero-county-sheriffs-department-partner": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384346/alamogordo-city-commission-moves-forward-2-year-flock-camera-contract": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://5bgazette.com/government_policy/carey-slams-the-door-on-flock-city-votes-to-ban-plate-readers-on-its-own/article_4ada6117-a6cb-4c1d-907b-30db13800404.html": {
+    "decision": "accept",
+    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://5bgazette.com/government_policy/the-flock-is-flying-away-from-neighboring-jurisdictions-while-blaine-county-is-still-mulling-the/article_207b2292-97cc-4922-b2ca-62ad7d570e25.html": {
+    "decision": "accept",
+    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://alpolitics.com/": {
+    "decision": "accept",
+    "note": "Drift d=24 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://arkatechnews.com/state-news-spotlight-privacy-concerns-fuel-fight-against-flock-in-arkansas": {
+    "decision": "accept",
+    "note": "Drift d=11 (threshold 8) reviewed; same article live, content churn. Dynamic page per Boss standing rule 2026-09-26: keep as long as relevant info remains, declared dynamic.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://azfreenews.com/2025/09/sedona-council-terminates-license-plate-reader-program": {
+    "decision": "accept",
+    "note": "Drift d=35 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://b985.fm/ixp/490/p/south-portland-flock-camera-privacy-concerns": {
+    "decision": "accept",
+    "note": "Drift d=10 (threshold 8) reviewed; same story live, page measures d=15/6/10 across hours. Dynamic page per Boss standing rule 2026-09-26: keep as long as relevant info remains, declared dynamic.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://carscoops.com/2026/02/flock-safety-alpr-contract-termination": {
+    "decision": "accept",
+    "note": "Drift d=30 (threshold 8) reviewed; re-fetch shows text identical to baseline, d=30 was a transient fetch artifact. Same article live. Dynamic page per Boss standing rule 2026-09-26: keep as long as relevant info remains, declared dynamic.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://carscoops.com/2026/02/flock-safety-las-vegas-cameras": {
+    "decision": "accept",
+    "note": "Drift d=28 (threshold 8) reviewed; re-fetch at d=0 identical to baseline, d=28 was a transient fetch artifact. Same article live. Dynamic page per Boss standing rule 2026-09-26: keep as long as relevant info remains, declared dynamic.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://ccxmedia.org/news/crystal-police-remove-flock-automatic-license-plate-readers-after-community-backlash": {
+    "decision": "accept",
+    "note": "Source fetch failed twice at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://ccxmedia.org/news/plymouth-latest-city-to-discontinue-flock-safety-surveillance": {
+    "decision": "accept",
+    "note": "Source fetch failed twice at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://citizenportal.ai/articles/7086489/Tennessee/Council-approves-expanded-park-cameras-Axon-body-camera-amendment-and-pedestriantraffic-safety-grants": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://citizenportal.ai/articles/9830765/north-carolina/henderson-county/hendersonville/residents-press-council-to-cancel-flock-cameras-as-police-chief-defends-license-plate-readers": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://cmg-cmg-tv-10070-prod.cdn.arcpublishing.com/news/local/fdot-orders-license-plate-reading-cameras-removed-state-rights-of-way-halts-new-permits/XBT4JV2XJBCMVCPATCMBUWEU3A": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://coastalabc.com/news/local/these-2-towns-rejected-rhode-island-state-police-request-install-flock-cameras-automatic-license-plate-readers-portsmouth-warren-july-31-2026": {
+    "decision": "accept",
+    "note": "Drift d=10 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://coastalabc.com/newsletter-daily/glocesters-town-council-to-discuss-flock-cameras-as-opposition-rises-privacy-concerns-aug-6-2026": {
+    "decision": "accept",
+    "note": "Drift d=9 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://compuserve.com/pf/story/0022/20260420/9692753.htm": {
+    "decision": "accept",
+    "note": "Drift d=14 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://cun.news/texas-police-surveillance-cell-trackers-license-plate-readers": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://cybernews.com/ai-news/police-arrest-viral-protestor-with-flock": {
+    "decision": "accept",
+    "note": "Drift d=9 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://d33gy59ovltp76.cloudfront.net/news/from-illinois-to-doral-how-flocks-cameras-became-an-immigration-enforcement-flashpoint": {
+    "decision": "accept",
+    "note": "Drift d=21 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://d3nqdp0e3r32g8.cloudfront.net/news/baton-rouge-police-credit-license-plate-cameras-with-helping-solve-crimes": {
+    "decision": "accept",
+    "note": "Drift d=18 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://dailycal.org/news/city/city-council-to-vote-on-controversial-flock-safety-contract/article_da4ee75a-f326-43c8-b33c-b79c2a36b8e7.html": {
+    "decision": "accept",
+    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://factinface.com/news/272625-two_arrested_in_springfield_after_city_council_stalls_public_review_of_flock_surveillance_cameras": {
+    "decision": "accept",
+    "note": "Drift d=14 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://fox11online.com/news/local/officials-vote-not-to-move-forward-with-contract-for-flock-cameras-in-menominee-michigan": {
+    "decision": "accept",
+    "note": "Drift d=14 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://gmg-ksat-prod.cdn.arcpublishing.com/news/local/2026/08/11/flock-cameras-what-automated-license-plate-readers-are-and-why-theyre-controversial-in-south-texas": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois": {
+    "decision": "accept",
+    "note": "Drift d=13 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; same article live, minor content churn accepted per Boss explicit authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://kjan.com/news/local-news/another-iowa-town-blinds-flock-cameras-though-some-crimes-may-go-unsolved": {
+    "decision": "accept",
+    "note": "Drift d=14 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://krna.com/ixp/675/p/indianola-police-flock-cameras": {
+    "decision": "accept",
+    "note": "Drift d=16 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://krna.com/ixp/679/p/flock-camera-vandalism-iowa": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; same article live, page measures d=8/15 across fetches. Dynamic page per Boss standing rule 2026-09-26: keep as long as relevant info remains, declared dynamic.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing": {
+    "decision": "accept",
+    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://lonepeakpolice.com/flock-safety": {
+    "decision": "accept",
+    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://mandatory.com/culture/1830228-flock-camera-thefts-force-police-department-give-up-minnesota": {
+    "decision": "accept",
+    "note": "Drift d=11 (threshold 8) reviewed; page still live with same article, content churn accepted per Boss explicit authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://medium.com/@IamRonBurgandy/spokane-countys-806k-deal-for-flock-license-plate-cameras-what-public-records-reveal-249a6c31fc5d": {
+    "decision": "accept",
+    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://medium.com/@iwan.steinmann/week-3-cna-4cb0e2f95099": {
+    "decision": "accept",
+    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://minneapolimedia.town.news/g/coon-rapids-mn/n/379970/minneapolimedia-news-columbia-heights-ends-flock-safety-contract-after": {
+    "decision": "accept",
+    "note": "Drift d=19 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://myedmondsnews.com/2026/05/edmonds-cancels-contract-with-flock-license-plate-reader-system": {
+    "decision": "accept",
+    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://newslocker.com/en-us/region/fort-wayne/flock-dropped-by-noble-county-authorities-after-pushback-for-now": {
+    "decision": "accept",
+    "note": "Drift d=17 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://newslocker.com/en-us/region/fort-wayne/prosecutor-orders-local-law-enforcement-to-remove-and-disable-entire-flock-network-in-kosciusko-county": {
+    "decision": "accept",
+    "note": "Drift d=17 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://parkerchronicle.net/news/article_01bdde33-6b4a-4c71-89f9-1ca64415be1c.html": {
+    "decision": "accept",
+    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://phillyvoice.com/flock-cameras-philadelphia-pennsylvania-lawmakers": {
+    "decision": "accept",
+    "note": "Drift d=30 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://reason.com/2025/07/29/an-arkansas-town-agrees-to-remove-a-license-plate-camera-aimed-at-a-couples-home": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://reportwire.org/pushback-against-flock-cameras-comes-to-denver-suburb-the-latest-colorado-city-to-enter-debate": {
+    "decision": "accept",
+    "note": "Source fetch failed twice at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://reviewjournal.com/crime/las-vegas-sheriff-defends-license-plate-reader-cameras-as-privacy-debate-intensifies-3858170": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://reviewjournal.com/local/education/memo-school-district-police-can-use-flocks-southern-nevada-camera-network-3869846": {
+    "decision": "accept",
+    "note": "Drift d=9 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://reviewjournal.com/news/politics-and-government/nevada/silver-state-not-surveillance-state-nevada-lawmaker-proposes-ban-on-tech-behind-flock-cameras-3887877": {
+    "decision": "accept",
+    "note": "Drift d=14 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://rockymountainvoice.com/2026/07/16/douglas-county-replaces-flock-cameras-with-22-8-million-axon-public-safety-system": {
+    "decision": "accept",
+    "note": "Drift d=12 (threshold 8) reviewed; same article live, minor content churn accepted per Boss explicit authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://rockymountainvoice.com/2026/09/14/englewood-drops-flock-cameras-amid-privacy-and-surveillance-concerns": {
+    "decision": "accept",
+    "note": "Drift d=19 (threshold 8) reviewed; same article live, content churn accepted per Boss explicit authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://sacurrent.com/news/there-are-more-than-10000-flock-cameras-in-texas-gina-hinojosa-blames-gov-greg-abbott": {
+    "decision": "accept",
+    "note": "Drift d=9 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://securitytoday.com/articles/2021/03/16/high-tech-cameras-agree-with-fort-worth.aspx?admgarea=ht.government": {
+    "decision": "accept",
+    "note": "Drift d=11 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://star64.tv/newsletter-daily/monroe-city-council-votes-end-flock-safety-contract-amid-privacy-concerns-license-plate-readers-tech-technology-surveillance-backlash-private-cost-price-recording-safety-government-cincinnati": {
+    "decision": "accept",
+    "note": "Drift d=8 (threshold 8) reviewed; same article live, now measuring d=6 under threshold. Dynamic page per Boss standing rule 2026-09-26: keep as long as relevant info remains, declared dynamic.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://theinnovationattorney.substack.com/p/why-is-flock-safety-losing-municipal": {
+    "decision": "accept",
+    "note": "Drift d=9 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://thesiuslawnews.com/news/council-votes-3-2-to-keep-flock-cameras/article_524d684c-ecaa-483b-ad4f-a6da9794a7f3.html": {
+    "decision": "accept",
+    "note": "Drift d=13 (threshold 8) per release-gate fetch; gate observed article content with churn (d=13, not a block page). Independent re-fetch bot-blocked twice, article text not personally confirmed. Accepted per Boss explicit authorization 2026-09-26 with that caveat.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://theurbanist.org/license-plate-readers-proliferate-in-washington-ice-overreach": {
+    "decision": "accept",
+    "note": "Drift d=13 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://triarkradio.com/local-news/city-of-cabot-suspends-flock-cameras-mayor-provides-friday-update": {
+    "decision": "accept",
+    "note": "Drift d=12 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://tricityrecordnm.com/articles/tri-cities/new-mexico-legislation-limits-use-of-flock-cameras-and-data": {
+    "decision": "accept",
+    "note": "Drift d=10 (threshold 8) reviewed; same article live, minor content churn accepted per Boss explicit authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://tygartmedia.com/everett-flock-cameras-sb-6002": {
+    "decision": "accept",
+    "note": "Drift d=10 (threshold 8) reviewed; page still live with same article, content churn accepted per Boss explicit authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://universitystar.com/34089/news/city-council-decided-against-flock-safety-contract-renewal": {
+    "decision": "accept",
+    "note": "Drift d=9 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://washingtonexaminer.com/policy/technology/4672621/flock-controversial-camera-contracts-canceled-23-states": {
+    "decision": "accept",
+    "note": "Drift d=18 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract": {
+    "decision": "accept",
+    "note": "Drift d=10 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://wvpress.org/breaking-news/license-to-track-lawmakers-question-flock-safety-over-data-security-and-privacy-concerns": {
+    "decision": "accept",
+    "note": "Drift d=9 (threshold 8) reviewed; same article live ('License to Track: Lawmakers question Flock Safety over data security and privacy concerns'), ~6 chars of sidebar churn only. Accepted per Boss explicit authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://wvpress.org/breaking-news/marion-county-sheriffs-office-dispels-myths-about-flock-cameras": {
+    "decision": "accept",
+    "note": "Drift d=10 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
+    "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  }
+}

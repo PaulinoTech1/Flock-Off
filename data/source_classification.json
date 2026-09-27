@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25",
+  "generated": "2026-09-26",
   "criteria": "docs/METHODOLOGY.md#evidence-tiers",
   "classifier": "scripts/flockoff.py classify",
   "verified_news": [
@@ -54,6 +54,7 @@
     "desmoinesregister.com",
     "dispatch.com",
     "dropsitenews.com",
+    "elnuevodia.com",
     "elpasoheraldpost.com",
     "elpasotimes.com",
     "fitchburgstar.com",
@@ -161,6 +162,7 @@
     "star64.tv",
     "starnewsonline.com",
     "statesmanjournal.com",
+    "stjohntradewinds.com",
     "swtimes.com",
     "talkbusiness.net",
     "texasobserver.org",
@@ -392,6 +394,7 @@
     "eventbrite.com",
     "factinface.com",
     "flagscanner.com",
+    "footnote4a.org",
     "fresnoland.org",
     "github.com",
     "gmg-ksat-prod.cdn.arcpublishing.com",
@@ -401,6 +404,7 @@
     "gray-wafb-prod.gtv-cdn.com",
     "guessingheadlights.com",
     "haussamen.com",
+    "heavyweather.media",
     "hh-today.com",
     "idahopolitics.org",
     "insiderutah.com",

@@ -53,6 +53,10 @@ def UNVERIFIED() -> set[str]:
     return set(_domains()["unverified"])
 
 
+def PENDING_CLASSIFY() -> set[str]:
+    return set(_domains().get("pending_classify") or [])
+
+
 def DATA_PATH() -> str:
     return _cfg()["paths"]["data"]
 
@@ -67,6 +71,11 @@ def classify(url: str) -> tuple[bool, str]:
         return True, "verified-news"
     if host in VERIFIED_PRIMARY():
         return True, "verified-primary"
+    if host in PENDING_CLASSIFY():
+        # Quarantine: proposed for a verified tier, not yet approved.
+        # Classifies as unverified until domain_approvals.yaml records
+        # the promotion with approver, date, and rationale.
+        return False, "quarantine-pending"
     if host in UNVERIFIED():
         return False, "unverified-listed"
     return False, "unverified-unlisted"
@@ -99,7 +108,8 @@ def main(argv: list[str] | None = None) -> None:
         sys.exit(2)
     data_path = cfg["paths"]["data"]
     with open(data_path, encoding="utf-8") as f:
-        data = json.load(f)
+        raw_before = f.read()
+    data = json.loads(raw_before)
 
     unlisted: set[str] = set()
     changed = 0
@@ -127,9 +137,16 @@ def main(argv: list[str] | None = None) -> None:
         print(f"sources missing verified flag: {missing}")
         sys.exit(1 if missing else 0)
 
-    with open(data_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-        f.write("\n")
+    # Only touch the dataset when the bytes actually change. An unconditional
+    # rewrite (e.g. key reordering by stamp_source) invalidates the integrity
+    # manifest and audit tip even when no flag changed.
+    new_raw = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
+    if new_raw == raw_before:
+        print(f"no changes; {data_path} untouched")
+    else:
+        with open(data_path, "w", encoding="utf-8") as f:
+            f.write(new_raw)
+        print(f"stamped {changed} source flags in {data_path}")
 
     # Publish the classification itself so the site can show it verbatim.
     from datetime import date
@@ -145,7 +162,6 @@ def main(argv: list[str] | None = None) -> None:
     with open(cfg["paths"]["classification"], "w", encoding="utf-8") as f:
         json.dump(classification, f, indent=2, ensure_ascii=False)
         f.write("\n")
-    print(f"stamped {changed} source flags in {data_path}")
     print(f"wrote {cfg['paths']['classification']}")
 
 

@@ -13,9 +13,15 @@
  *    downloaded_at are mandatory on every report.
  *  - AUTHENTICATED: REPORT_WRITE_KEY is mandatory. Requests without a
  *    matching x-report-key are rejected (constant-time compare).
- *  - RATE LIMITED: 10 writes / IP / hour, 500 writes / day globally
+ *  - RATE LIMITED: 10 writes / subnet-bucket / hour, 500 writes / day globally
  *    (in-memory per function instance: best-effort on serverless, documented
- *    in docs/BLOB_REPORTS.md).
+ *    in docs/BLOB_REPORTS.md). Buckets are keyed by a daily-rotated salted
+ *    hash of the /24 (or /48) subnet: raw IPs are never stored.
+ *  - REPUTATION SIGNAL: per-bucket submission outcomes are counted in the
+ *    blob store under the same daily-rotated pseudonym. A bucket with a
+ *    poor decision history only flags the quarantined tip for closer human
+ *    review; nothing is auto-rejected. See api/_signals.js for the privacy
+ *    model and its honest limitations.
  *  - APPEND-ONLY: pathnames embed the server receive timestamp; no update
  *    endpoint exists. Promotion copies to reports/ and deletes the pending
  *    blob; the approved copy is never mutated.
@@ -23,6 +29,8 @@
  * Requires BLOB_READ_WRITE_TOKEN and REPORT_WRITE_KEY env (set in the Vercel
  * dashboard; the function never logs them).
  */
+
+const signals = require("./_signals");
 
 const BLOB_API = "https://vercel.com/api/blob";
 const API_VERSION = "12"; // pinned to the @vercel/blob protocol version verified 2026-09-25
@@ -35,19 +43,29 @@ const REPORT_KEYS = new Set(["status", "cameras", "annual_cost_usd", "renewal_da
 const AGENCY_IDS = new Set(/*__AGENCY_IDS__*/[]);
 
 // ---- rate limiting (per-instance, best effort on serverless) ----
-const ipBuckets = new Map();
+// Buckets are keyed by signals.bucketHash(ip, day): a daily-rotated salted
+// hash of the /24 (IPv4) or /48 (IPv6) subnet. Raw IPs never enter storage.
+// The map is dropped on day rollover because yesterday's hashes are useless
+// under today's salt (and must not be joinable across days).
+const bucketState = new Map();
+let bucketDay = "";
 let globalDay = "";
 let globalCount = 0;
 
 function rateLimited(ip) {
   const now = Date.now();
-  let b = ipBuckets.get(ip);
+  const day = signals.dayUTC();
+  if (day !== bucketDay) {
+    bucketDay = day;
+    bucketState.clear();
+  }
+  const bucket = signals.bucketHash(ip, day);
+  let b = bucketState.get(bucket);
   if (!b || now > b.reset) {
     b = { count: 0, reset: now + 3600 * 1000 };
-    ipBuckets.set(ip, b);
+    bucketState.set(bucket, b);
   }
   b.count += 1;
-  const day = new Date().toISOString().slice(0, 10);
   if (day !== globalDay) {
     globalDay = day;
     globalCount = 0;
@@ -174,6 +192,60 @@ async function blobPut(pathname, jsonText, token) {
   return res.json();
 }
 
+// Reputation counters live at signals-rep/<day>/<bucket>.json, keyed by the
+// same daily-rotated pseudonym as rate limiting. All helpers are
+// best-effort: a signal failure must never block or fail a submission.
+async function repBlob(day, bucket, token) {
+  try {
+    const prefix = signals.repPath(day, bucket);
+    const res = await fetch(
+      `${BLOB_API}/?prefix=${encodeURIComponent(prefix)}&limit=5`,
+      { headers: { authorization: `Bearer ${token}`, "x-api-version": API_VERSION } }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    const hit = (data.blobs || []).find((b) => b.pathname === prefix);
+    if (!hit || !hit.url) return null;
+    const r = await fetch(hit.url);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch {
+    return null;
+  }
+}
+
+async function repUpdate(day, bucket, field, token) {
+  try {
+    const cur = (await repBlob(day, bucket, token)) || {};
+    const next = {
+      day,
+      bucket,
+      submitted: (cur.submitted | 0) + (field === "submitted" ? 1 : 0),
+      approved: (cur.approved | 0) + (field === "approved" ? 1 : 0),
+      rejected: (cur.rejected | 0) + (field === "rejected" ? 1 : 0),
+    };
+    await blobPut(signals.repPath(day, bucket), JSON.stringify(next), token);
+  } catch {
+    /* reputation is advisory; never fail the main operation */
+  }
+}
+
+// Sum this bucket's decisions over today + yesterday. Fail-open: on any
+// error the submission proceeds unflagged.
+async function reputationSummary(ip, token) {
+  try {
+    const today = signals.dayUTC();
+    const yday = signals.yesterdayUTC();
+    const [t, y] = await Promise.all([
+      repBlob(today, signals.bucketHash(ip, today), token),
+      repBlob(yday, signals.bucketHash(ip, yday), token),
+    ]);
+    return signals.summarize([t, y]);
+  } catch {
+    return { submitted: 0, approved: 0, rejected: 0 };
+  }
+}
+
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
@@ -221,6 +293,14 @@ module.exports = async (req, res) => {
 
   // Canonical record: re-serialized server-side; tied to source + download time.
   // status "pending": invisible to GET /api/history until promoted.
+  // _signals carries the privacy-preserving bucket pseudonym (never an IP)
+  // so promotion-time decisions can update reputation; reputation_flag only
+  // asks the human reviewer to look closer, it changes no outcome by itself.
+  const ip = clientIp(req);
+  const day = signals.dayUTC();
+  const bucket = signals.bucketHash(ip, day);
+  const repSummary = await reputationSummary(ip, token);
+  await repUpdate(day, bucket, "submitted", token);
   const record = {
     status: "pending",
     agency_id: body.agency_id,
@@ -228,6 +308,11 @@ module.exports = async (req, res) => {
     downloaded_at: body.downloaded_at,
     received_at: receivedAt,
     report: body.report,
+    _signals: {
+      bucket,
+      day,
+      reputation_flag: signals.reputationFlag(repSummary),
+    },
   };
 
   try {

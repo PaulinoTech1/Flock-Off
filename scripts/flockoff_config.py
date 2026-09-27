@@ -89,6 +89,9 @@ SCHEMA = [
      lambda v: all(isinstance(x, str) for x in v), "must be a list of strings"),
     ("classify.unverified", list, lambda v: all(isinstance(x, str) for x in v),
      "must be a list of strings"),
+    ("classify.pending_classify", list,
+     lambda v: all(isinstance(x, str) for x in v),
+     "must be a list of strings (quarantine for proposed verified domains)"),
 ]
 
 

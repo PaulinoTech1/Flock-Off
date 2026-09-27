@@ -67,6 +67,12 @@ pseudonymization with daily rotation, not anonymization. What it guarantees:
 no IP database accumulates, and a compromised day-bucket cannot be linked to
 any other day's traffic.
 
+Counter increments are read-modify-write and not atomic: concurrent review
+decisions can lose increments. That is acceptable because the counters are
+advisory reviewer aids, never thresholds that gate anything; exactness is
+not required. Rate limiting is per serverless instance and best-effort, not
+a global guarantee.
+
 POST /api/promote takes `{ "url": ..., "action": "approve" }` or
 `{ "url": ..., "action": "reject" }` (admin key required). `"reject"` deletes
 the pending blob without approving it and records the rejection against the

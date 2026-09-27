@@ -63,16 +63,24 @@ const MapTab = (() => {
     const c = map.getCenter();
     status.textContent = "Loading cameras near map center...";
     try {
-      const cams = await CameraData.fetchAround(
+      const res = await CameraData.fetchAround(
         c.lat, c.lng, FLOCKOFF_CONFIG.cameraFetchRadiusKm
       );
       lastFetch = Date.now();
-      render(cams);
-      status.textContent =
-        `${cams.length} camera${cams.length === 1 ? "" : "s"} in view. ` +
+      render(res.cams);
+      const n = res.cams.length;
+      const base =
+        `${n} camera${n === 1 ? "" : "s"} in view. ` +
         "Crowdsourced data: missing cameras are expected, wrong ones should be corrected on DeFlock.";
+      status.textContent = res.live
+        ? base
+        : `Live camera data unavailable (${res.error || "network error"}). ` +
+          `Showing last successful snapshot from ${res.cachedAt || "an earlier visit"}; ` +
+          `it may be out of date. ` + base;
     } catch (err) {
-      status.textContent = `Could not load camera data (${err.message}). Tiles still work; try Refresh.`;
+      status.textContent =
+        `Could not load camera data (${err.message}). No cached snapshot for this area yet. ` +
+        "Tiles still work; try Refresh, or pan to an area you have loaded before.";
     }
   }
 

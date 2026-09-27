@@ -1,1 +1,23 @@
-{"buildCommand":"python3 scripts/vercel_build.py","outputDirectory":"public"}
+{
+  "buildCommand": "python3 scripts/vercel_build.py",
+  "headers": [
+    {
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'sha256-8EPehLK7rNBCW0YpMmRlkcborNYAsax84H0gdfxb0/M='; style-src 'self'; img-src 'self' https://tile.openstreetmap.org; connect-src 'self' https://overpass-api.de https://data.dontgetflocked.com https://nominatim.openstreetmap.org https://router.project-osrm.org; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ],
+      "source": "/(.*)"
+    }
+  ],
+  "outputDirectory": "public"
+}

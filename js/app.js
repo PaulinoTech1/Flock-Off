@@ -2,7 +2,7 @@
 "use strict";
 
 const App = (() => {
-  const TABS = ["tracker", "sources", "map", "tools", "learn"];
+  const TABS = ["tracker", "sources", "map", "tools", "learn", "legal"];
 
   function show(name) {
     if (!TABS.includes(name)) name = "map";
@@ -37,6 +37,35 @@ const App = (() => {
     }
   }
 
+  // Data-integrity check: recompute SHA-256(agencies.json) in-browser and
+  // compare against the release manifest. Honest about scope: proves the
+  // file matches the published release, not that the origin is clean.
+  async function verifyIntegrity() {
+    const status = document.getElementById("verify-integrity-status");
+    status.textContent = "Fetching dataset and manifest…";
+    try {
+      const [dataRes, manRes] = await Promise.all([
+        fetch("data/agencies.json"),
+        fetch("data/integrity/manifest.json"),
+      ]);
+      if (!dataRes.ok) throw new Error(`dataset HTTP ${dataRes.status}`);
+      if (!manRes.ok) throw new Error(`manifest HTTP ${manRes.status}`);
+      const buf = await dataRes.arrayBuffer();
+      const digest = await crypto.subtle.digest("SHA-256", buf);
+      const hex = [...new Uint8Array(digest)]
+        .map((b) => b.toString(16).padStart(2, "0")).join("");
+      const man = await manRes.json();
+      const match = hex === man.agencies_sha256;
+      const sig = man.signature
+        ? "Signed by the maintainer (signature present; verify against the published key)."
+        : "Not signed with the maintainer key yet (unsigned release).";
+      status.textContent = match
+        ? `✓ Hash matches the release manifest (${hex.slice(0, 16)}…). Released ${man.timestamp || "unknown time"} at commit ${(man.commit || "unknown").slice(0, 12)}. ${sig}`
+        : `✗ HASH MISMATCH: computed ${hex.slice(0, 16)}… but the manifest says ${String(man.agencies_sha256).slice(0, 16)}…. Treat this dataset as suspect and open an issue.`;
+    } catch (err) {
+      status.textContent = `Could not verify (${err.message}).`;
+    }
+  }
   // Deep links: "#learn-privacy" opens the Learn tab, then scrolls to the anchor.
   function showFromHash() {
     const raw = location.hash.replace("#", "") || "tracker";
@@ -72,6 +101,8 @@ const App = (() => {
     });
     window.addEventListener("hashchange", showFromHash);
     renderDirectory();
+    const vib = document.getElementById("verify-integrity-btn");
+    if (vib) vib.addEventListener("click", verifyIntegrity);
     document.getElementById("year").textContent = new Date().getFullYear();
     showFromHash();
     TrackerTab.init();

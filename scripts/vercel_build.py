@@ -23,6 +23,8 @@ import urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+import evidence as evidence_mod  # noqa: E402
 
 STATUS_LABEL = {
     "active": "Active",
@@ -99,17 +101,26 @@ def _prerender_sources(agencies: list) -> str:
     return "\n".join(cards)
 
 
-def _render_rows(agencies: list) -> str:
+def _render_rows(agencies: list, ev_by_id: dict) -> str:
     rows = []
     for a in agencies:
         renewal = a.get("renewal_date") or a.get("decision_date") or a.get("contract_end") or "—"
+        ev = ev_by_id.get(a.get("id"), {})
+        tier = ev.get("tier", "na")
+        if tier == "verified":
+            badge = ' <span class="badge badge-ok">verified</span>'
+        elif tier == "pending":
+            badge = ' <span class="badge badge-evpending">pending validation*</span>'
+        else:
+            badge = ""
         rows.append(
             "<tr><td><strong>{agency}</strong><br><span class=\"muted\">{city}</span></td>"
-            "<td>{state}</td><td>{status}</td><td>{cameras}</td><td>{cost}</td><td>{renewal}</td></tr>".format(
+            "<td>{state}</td><td>{status}{badge}</td><td>{cameras}</td><td>{cost}</td><td>{renewal}</td></tr>".format(
                 agency=_esc(a.get("agency", "")),
                 city=_esc(a.get("city") or ""),
                 state=_esc(a.get("state", "")),
                 status=_esc(STATUS_LABEL.get(a.get("status"), a.get("status") or "")),
+                badge=badge,
                 cameras="—" if a.get("cameras") is None else _esc(str(a["cameras"])),
                 cost=_usd(a.get("annual_cost_usd")),
                 renewal=_esc(renewal),
@@ -127,6 +138,16 @@ def main() -> None:
     if not agencies:
         sys.exit("build failed: agencies.json contains no agencies")
 
+    # Evidence tiers (docs/METHODOLOGY.md): computed once here so the
+    # pre-render, the public evidence.json, and the test suite all share
+    # one implementation (scripts/evidence.py).
+    try:
+        primary, news, _ = evidence_mod.load_classify_lists(
+            ROOT / "config" / "flock-off.yaml")
+    except OSError as exc:
+        sys.exit(f"build failed: cannot read config/flock-off.yaml: {exc}")
+    ev_by_id = {a["id"]: evidence_mod.compute(a, primary, news) for a in agencies}
+
     index_path = ROOT / "index.html"
     html = index_path.read_text(encoding="utf-8")
     rows_marker = "<!--PRE_RENDER_ROWS-->"
@@ -135,7 +156,7 @@ def main() -> None:
         sys.exit("build failed: pre-render rows marker missing from index.html")
     if src_marker not in html:
         sys.exit("build failed: pre-render sources marker missing from index.html")
-    html = html.replace(rows_marker, _render_rows(agencies))
+    html = html.replace(rows_marker, _render_rows(agencies, ev_by_id))
     html = html.replace(src_marker, _prerender_sources(agencies))
     index_path.write_text(html, encoding="utf-8")
 
@@ -163,7 +184,24 @@ def main() -> None:
     )
     shutil.copytree(ROOT, public, ignore=ignore)
 
-    print(f"build ok: pre-rendered {len(agencies)} agencies, injected {len(ids)} agency ids")
+    # Public derived evidence file: per-agency tier + counts, so the client
+    # and the pre-render share the build's computation instead of
+    # reimplementing the rule in JS. data/agencies.json itself is untouched
+    # (the release manifest hashes it byte-identical).
+    ev_public = {
+        aid: {k: ev[k] for k in ("tier", "terminal", "primary",
+                                 "news_independent", "meets_bar",
+                                 "acknowledged_pending", "stale",
+                                 "stale_downgraded")}
+        for aid, ev in ev_by_id.items()
+    }
+    (public / "data" / "evidence.json").write_text(
+        json.dumps({"agencies": ev_public}, indent=2) + "\n", encoding="utf-8")
+
+    n_verified = sum(1 for ev in ev_by_id.values() if ev["tier"] == "verified")
+    n_pending = sum(1 for ev in ev_by_id.values() if ev["tier"] == "pending")
+    print(f"build ok: pre-rendered {len(agencies)} agencies, injected {len(ids)} agency ids, "
+          f"evidence: {n_verified} verified / {n_pending} pending validation*")
 
 
 if __name__ == "__main__":

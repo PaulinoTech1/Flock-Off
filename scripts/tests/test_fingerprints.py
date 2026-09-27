@@ -78,13 +78,21 @@ class TestConfigAccessors(unittest.TestCase):
 class TestFingerprintUrl(unittest.TestCase):
     def setUp(self):
         self._orig = fp.fetch_page
+        import tempfile
+        self._tmp = tempfile.mkdtemp(prefix="flockoff-archive-test-")
+        self.addCleanup(__import__("shutil").rmtree, self._tmp,
+                        ignore_errors=True)
 
     def tearDown(self):
         fp.fetch_page = self._orig
 
+    def _fp(self, url, today="2026-01-01", key=None):
+        return fp.fingerprint_url(url, today,
+                                  archive_directory=self._tmp, key=key)
+
     def test_thin_page(self):
         fp.fetch_page = lambda url: ("ok", url, "<html><body><p>tiny</p></body></html>")
-        rec = fp.fingerprint_url("https://example.com/", "2026-01-01")
+        rec = self._fp("https://example.com/")
         self.assertEqual(rec["fetch_status"], "thin")
         self.assertIsNone(rec["simhash"])
         self.assertIsNone(rec["content_hash"])
@@ -92,7 +100,7 @@ class TestFingerprintUrl(unittest.TestCase):
     def test_ok_page(self):
         body = "<html><body>" + "<p>substantive paragraph of text</p>" * 40 + "</body></html>"
         fp.fetch_page = lambda url: ("ok", url, body)
-        rec = fp.fingerprint_url("https://example.com/", "2026-01-01")
+        rec = self._fp("https://example.com/")
         self.assertEqual(rec["fetch_status"], "ok")
         self.assertIsNotNone(rec["simhash"])
         self.assertIsNotNone(rec["content_hash"])
@@ -100,9 +108,41 @@ class TestFingerprintUrl(unittest.TestCase):
 
     def test_blocked_page(self):
         fp.fetch_page = lambda url: ("blocked", url, None)
-        rec = fp.fingerprint_url("https://example.com/", "2026-01-01")
+        rec = self._fp("https://example.com/")
         self.assertEqual(rec["fetch_status"], "blocked")
         self.assertIsNone(rec["simhash"])
+
+    def test_archive_written_on_ok(self):
+        body = "<html><head><title>T</title></head><body>" + "<p>substantive paragraph of text</p>" * 40 + "</body></html>"
+        fp.fetch_page = lambda url: ("ok", url, body)
+        rec = self._fp("https://example.com/canonical-key")
+        self.assertIsNotNone(rec["archive"])
+        archived = fp.read_archive("https://example.com/canonical-key",
+                                   directory=self._tmp)
+        self.assertIsNotNone(archived)
+        self.assertIn("substantive paragraph of text", archived)
+        # archive content is exactly what content_hash covers
+        self.assertEqual(fp.content_hash(archived), rec["content_hash"])
+
+    def test_archive_keyed_by_canonical_key(self):
+        body = "<html><body>" + "<p>substantive paragraph of text</p>" * 40 + "</body></html>"
+        fp.fetch_page = lambda url: ("ok", url, body)
+        rec = self._fp("https://example.com/some-url", key="canonical-key")
+        self.assertEqual(rec["archive"], fp.archive_filename("canonical-key"))
+        self.assertIsNotNone(fp.read_archive("canonical-key",
+                                             directory=self._tmp))
+
+    def test_no_archive_on_blocked(self):
+        fp.fetch_page = lambda url: ("blocked", url, None)
+        rec = self._fp("https://example.com/")
+        self.assertIsNone(rec["archive"])
+        self.assertIsNone(fp.read_archive("https://example.com/",
+                                          directory=self._tmp))
+
+    def test_archive_filename_stable(self):
+        self.assertEqual(fp.archive_filename("k"), fp.archive_filename("k"))
+        self.assertNotEqual(fp.archive_filename("k"), fp.archive_filename("k2"))
+        self.assertTrue(fp.archive_filename("k").endswith(".txt"))
 
 
 if __name__ == "__main__":

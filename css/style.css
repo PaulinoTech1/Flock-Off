@@ -265,6 +265,14 @@ input[type="text"] {
 .learn h3 { margin-top: 1.4rem; }
 .learn ul { padding-left: 1.2rem; }
 .learn li { margin-bottom: 0.5rem; }
+.learn blockquote {
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent, #4da3ff);
+  background: rgba(255, 255, 255, 0.03);
+  font-style: italic;
+}
+.learn blockquote + .cited-by { margin-top: -0.25rem; }
 
 a { color: var(--accent); }
 
@@ -476,3 +484,5 @@ summary {
 dl.detail { display: grid; grid-template-columns: auto 1fr; gap: 0.3rem 1rem; }
 dl.detail dt { color: var(--muted); }
 dl.detail dd { margin: 0; }
+
+.noscript-note { padding: 1rem; }
