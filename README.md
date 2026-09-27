@@ -74,6 +74,10 @@ Flock-Off is for awareness and lawful civic action: contract research, records r
 
 See `CONTRIBUTING.md`.
 
+## Maintainer
+
+Flock-Off is built and maintained by a single developer with a full-time job. Reviews, corrections, and updates happen as time and focus allow. Mistakes are mine to catch, and I do catch them. If you spot an error or a stale record, open an issue with a source link. That's how this gets better.
+
 ## Roadmap
 
 See `ROADMAP.md`.
