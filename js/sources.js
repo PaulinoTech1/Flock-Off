@@ -78,13 +78,16 @@ const SourcesTab = (() => {
   function render() {
     const type = el("src-filter-type").value;
     const q = el("src-filter-search").value.trim().toLowerCase();
+    const tokens = q.split(/\s+/).filter(Boolean);
     const shown = entries.filter((e) => {
       if (type === "verified" && !e.verified) return false;
       if (type === "lead" && e.verified) return false;
-      if (q) {
-        const hay = [e.title, e.publisher, e.url,
-          ...e.agencies.map((a) => a.agency)].join(" ").toLowerCase();
-        if (!hay.includes(q)) return false;
+      if (tokens.length) {
+        const hay = [e.title, e.publisher, e.url, e.date || "",
+          ...e.agencies.map((a) => a.agency),
+          ...e.agencies.map((a) => a.state)].join(" ").toLowerCase();
+        // Every token must partially match somewhere (AND of substrings).
+        if (!tokens.every((t) => hay.includes(t))) return false;
       }
       return true;
     });
