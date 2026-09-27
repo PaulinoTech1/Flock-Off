@@ -80,7 +80,17 @@ nav.tabs button.active {
 nav.tabs button:focus-visible,
 button:focus-visible,
 a:focus-visible,
-input:focus-visible {
+input:focus-visible,
+.row-open:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+/* Fallback for Safari < 15.4 without :focus-visible */
+nav.tabs button:focus,
+button:focus,
+a:focus,
+input:focus,
+.row-open:focus {
   outline: 3px solid var(--accent);
   outline-offset: 2px;
 }
@@ -364,7 +374,6 @@ tbody tr:hover { background: #1b2029; }
 }
 .row-open strong { font-weight: 700; }
 .row-open:hover strong { text-decoration: underline; }
-.row-open:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 
 .badge {
   display: inline-block;
