@@ -860,11 +860,13 @@
     "url": "https://buffalocounty.ne.gov/county-offices/sheriff/flock-safety-system"
   },
   "https://capecodtimes.com/story/news/public-safety/2026/09/05/barnstable-flock-cameras-removed/91611060007": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetch_status": "blocked",
+    "fetched_at": "2026-09-27",
     "final_url": null,
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.capecodtimes.com/story/news/public-safety/2026/09/05/barnstable-flock-cameras-removed/91611060007/"
@@ -3270,11 +3272,13 @@
     "url": "https://heavyweather.media/former-puerto-rico-public-safety-chief-has-exclusive-contract-with-flock-court-records-say/"
   },
   "https://heraldnews.com/story/news/2026/07/29/tiverton-town-council-oks-purchase-of-more-flock-surveillance-cameras/91081209007": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-09-27",
     "final_url": null,
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.heraldnews.com/story/news/2026/07/29/tiverton-town-council-oks-purchase-of-more-flock-surveillance-cameras/91081209007/"
@@ -4730,11 +4734,13 @@
     "url": "https://www.newslocker.com/en-us/region/fort-wayne/prosecutor-orders-local-law-enforcement-to-remove-and-disable-entire-flock-network-in-kosciusko-county/"
   },
   "https://newspub.live/northeast/new-hampshire/as-states-seek-to-rein-in-flock-license-plate-cameras-new-hampshire-is-considered-a-model-the-boston-globe": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-09-27",
     "final_url": null,
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://newspub.live/northeast/new-hampshire/as-states-seek-to-rein-in-flock-license-plate-cameras-new-hampshire-is-considered-a-model-the-boston-globe/"
@@ -5110,21 +5116,25 @@
     "url": "https://www.prismnews.com/local/douglas-co/douglas-county-sheriff-shifts-surveillance-system-from"
   },
   "https://providencejournal.com/story/news/crime/2026/07/31/license-plate-reading-flock-cameras-already-in-use-by-rhode-island-state-police/91088862007": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-09-27",
     "final_url": null,
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.providencejournal.com/story/news/crime/2026/07/31/license-plate-reading-flock-cameras-already-in-use-by-rhode-island-state-police/91088862007/"
   },
   "https://providencejournal.com/story/news/crime/2026/08/03/vandals-target-cranston-camera-as-resistance-to-flock-grows-in-ri/91116402007": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-09-27",
     "final_url": null,
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.providencejournal.com/story/news/crime/2026/08/03/vandals-target-cranston-camera-as-resistance-to-flock-grows-in-ri/91116402007/"
@@ -5420,11 +5430,13 @@
     "url": "https://reportwire.org/pushback-against-flock-cameras-comes-to-denver-suburb-the-latest-colorado-city-to-enter-debate/"
   },
   "https://resources.finalsite.net/images/v1761753101/putnamctus/uv0v8sucfql7nza6eqp5/MayorandBoardofSelectmensMinutesOctober202025.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-09-27",
     "final_url": "https://resources.finalsite.net/images/v1761753101/putnamctus/uv0v8sucfql7nza6eqp5/MayorandBoardofSelectmensMinutesOctober202025.pdf",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://resources.finalsite.net/images/v1761753101/putnamctus/uv0v8sucfql7nza6eqp5/MayorandBoardofSelectmensMinutesOctober202025.pdf"
@@ -5470,11 +5482,13 @@
     "url": "https://www.rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007/"
   },
   "https://riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-09-27",
     "final_url": "https://www.riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf"
@@ -5960,11 +5974,13 @@
     "url": "https://stjohntradewinds.com/lawmakers-meet-with-vipd-on-real-time-crime-centers-and-technology-upgrades/"
   },
   "https://stoughton.org/DocumentCenter/View/6337/Amended-Motion-for-STM-Article-15---Police-Department-Capital-submitted-by-Noah-Beit-Aharon-Precinct-6-on-April-28-2026": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-09-27",
     "final_url": "https://stoughton.org/DocumentCenter/View/6337/Amended-Motion-for-STM-Article-15---Police-Department-Capital-submitted-by-Noah-Beit-Aharon-Precinct-6-on-April-28-2026",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://stoughton.org/DocumentCenter/View/6337/Amended-Motion-for-STM-Article-15---Police-Department-Capital-submitted-by-Noah-Beit-Aharon-Precinct-6-on-April-28-2026"
@@ -7272,11 +7288,13 @@
     "url": "https://www.youtube.com/watch?v=7EnIagLPwEo"
   },
   "https://youtube.com/watch?v=9RRqBtry1CU": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-09-27",
     "final_url": null,
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=9RRqBtry1CU"
@@ -7382,11 +7400,13 @@
     "url": "https://www.youtube.com/watch?v=sznL25CDjuo"
   },
   "https://youtube.com/watch?v=vTZA2DP1MNI": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-09-27",
+    "final_url": "https://www.youtube.com/watch?v=vTZA2DP1MNI",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=vTZA2DP1MNI"

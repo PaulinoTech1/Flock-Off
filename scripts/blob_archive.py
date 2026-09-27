@@ -213,6 +213,14 @@ def snapshot_exists(pathname: str, token=None) -> bool:
         return False
 
 
+def _ascii_header(value: str, max_len: int = 200) -> str:
+    """Sanitize a string for use as an HTTP header value: ASCII only,
+    truncated, no control characters. Prevents encoding failures on
+    non-ASCII source keys."""
+    cleaned = "".join(c for c in value if 32 <= ord(c) < 127)
+    return cleaned[:max_len] or "unknown"
+
+
 def put_snapshot(snapshot: dict, token=None) -> str | None:
     """Upload a built snapshot to the blob archive. Returns the blob
     pathname, or None if skipped/failed. Never raises: failures are
@@ -240,8 +248,8 @@ def put_snapshot(snapshot: dict, token=None) -> str | None:
         "x-vercel-blob-access": "private",
         "x-content-type": "application/json; charset=utf-8",
         "x-add-random-suffix": "0",
-        "x-source-key": snapshot["source_key"][:200],
-        "x-accurate-to": snapshot["accurate_to"],
+        "x-source-key": _ascii_header(snapshot["source_key"]),
+        "x-accurate-to": _ascii_header(snapshot["accurate_to"], 10),
     }
     body = canonical_json(snapshot)
     try:

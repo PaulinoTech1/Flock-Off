@@ -278,20 +278,29 @@ def fingerprint_url(url: str, today: str,
             # Best-effort: never breaks fingerprinting on failure.
             try:
                 import blob_archive as _ba
-                snap = _ba.build_snapshot(
-                    source_key=key or url,
-                    url=url,
-                    text=text,
-                    final_url=final_url,
-                    title=title or None,
-                    content_hash=rec["content_hash"],
-                    simhash=rec["simhash"],
-                    accurate_to=today,
-                    fetched_at=today,
-                )
-                rec["snapshot_path"] = _ba.put_snapshot(snap)
-            except Exception:
-                pass
+            except ImportError as _ie:
+                import sys as _sys
+                print(f"blob_archive: WARNING: cannot import blob_archive: "
+                      f"{_ie}", file=_sys.stderr)
+                _ba = None
+            if _ba is not None:
+                try:
+                    from datetime import datetime, timezone as _tz
+                    _fetched_at = datetime.now(_tz.utc).isoformat()
+                    snap = _ba.build_snapshot(
+                        source_key=key or url,
+                        url=url,
+                        text=text,
+                        final_url=final_url,
+                        title=title or None,
+                        content_hash=rec["content_hash"],
+                        simhash=rec["simhash"],
+                        accurate_to=today,
+                        fetched_at=_fetched_at,
+                    )
+                    rec["snapshot_path"] = _ba.put_snapshot(snap)
+                except Exception:
+                    pass
         else:
             rec["fetch_status"] = "thin"
     return rec
