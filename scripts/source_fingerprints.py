@@ -245,9 +245,10 @@ def fingerprint_url(url: str, today: str,
     archive_directory overrides the configured dir; tests use it to avoid
     touching the real archive.
 
-    The raw HTML is also archived to Vercel Blob (content-addressed) via
-    blob_archive.put_snapshot, best-effort: a blob failure never breaks
-    fingerprinting. The raw snapshot hash is stored as raw_snapshot_hash.
+    A structured JSON snapshot (text + metadata + integrity block) is also
+    archived to Vercel Blob via blob_archive, best-effort: a blob failure
+    never breaks fingerprinting. The blob pathname is stored as
+    snapshot_path.
     """
     status, final_url, html = fetch_page(url)
     rec: dict = {
@@ -260,19 +261,9 @@ def fingerprint_url(url: str, today: str,
         "fetched_at": today,
         "fetch_status": status,
         "archive": None,
-        "raw_snapshot_hash": None,
+        "snapshot_path": None,
     }
     if status == "ok" and html:
-        # Raw HTML snapshot to blob (forensic original for drift review).
-        # Best-effort: never breaks fingerprinting on failure.
-        try:
-            import blob_archive as _ba
-            try:
-                rec["raw_snapshot_hash"] = _ba.put_snapshot(html, url, today)
-            except Exception:
-                pass
-        except ImportError:
-            pass
         title, text = extract_text(html)
         rec["title"] = title or None
         rec["text_len"] = len(text)
@@ -283,6 +274,24 @@ def fingerprint_url(url: str, today: str,
             rec["content_hash"] = content_hash(text)
             sh = simhash64(text)
             rec["simhash"] = format(sh, "016x") if sh is not None else None
+            # JSON snapshot to blob (forensic copy for drift review).
+            # Best-effort: never breaks fingerprinting on failure.
+            try:
+                import blob_archive as _ba
+                snap = _ba.build_snapshot(
+                    source_key=key or url,
+                    url=url,
+                    text=text,
+                    final_url=final_url,
+                    title=title or None,
+                    content_hash=rec["content_hash"],
+                    simhash=rec["simhash"],
+                    accurate_to=today,
+                    fetched_at=today,
+                )
+                rec["snapshot_path"] = _ba.put_snapshot(snap)
+            except Exception:
+                pass
         else:
             rec["fetch_status"] = "thin"
     return rec

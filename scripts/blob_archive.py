@@ -1,21 +1,51 @@
-"""Raw HTML snapshot archive in Vercel Blob.
+"""Source snapshot archive in Vercel Blob.
 
-Stores the exact, undoctored HTML of fetched sources so that when drift
-is detected, the original page can be pulled up for forensic comparison.
-The git archive (data/source_archive/) holds extracted text; this holds
-the raw bytes.
+Stores structured JSON snapshots of fetched sources: extracted text plus
+discoverability metadata plus integrity validation. When drift is detected,
+the original snapshot can be pulled up and cryptographically verified
+against tampering.
 
-Design:
-  - Content-addressed: snapshots/<sha256-of-raw-html>.html
-  - Identical content is never uploaded twice (checked before PUT)
-  - Private blobs: retrieval requires ARCHIVE_BLOB_READ_WRITE_TOKEN
-  - Fail-open with loud logging: a blob outage must not break the monitor.
-    The git text archive is the primary record; this is the forensic backup.
+Snapshot schema (v1):
+  {
+    "schema_version": 1,
+    "source_key": "<canonical source key>",
+    "agency_id": "<agency slug or null>",
+    "url": "<requested URL>",
+    "final_url": "<URL after redirects>",
+    "fetched_at": "<ISO 8601 UTC>",
+    "accurate_to": "<YYYY-MM-DD the data represents>",
+    "title": "<page title or null>",
+    "text": "<extracted text, no images or binary>",
+    "content_hash": "<sha256 of text>",
+    "simhash": "<16-hex simhash or null>",
+    "fetch_status": "ok",
+    "meta": {
+      "content_type": "text/html",
+      "text_len": 1234,
+      "word_count": 200
+    },
+    "integrity": {
+      "algorithm": "sha256",
+      "payload_hash": "<sha256 of canonical JSON of all fields above>"
+    }
+  }
+
+Integrity model:
+  payload_hash covers every field except the integrity block itself,
+  serialized as canonical JSON (sorted keys, no whitespace). To verify:
+  re-serialize, re-hash, compare. A mismatch means the snapshot was
+  altered after capture. This validates the archive copy, not the live
+  source: drift (live source changing) is detected separately by the
+  fingerprint pipeline.
+
+Storage:
+  snapshots/<accurate_to>/<payload_hash>.json
+  Date-prefixed for discoverability; content-addressed for deduplication.
+  Private blobs. No images, no binary, text only.
 
 Env:
   ARCHIVE_BLOB_READ_WRITE_TOKEN: token for the source-archive blob store.
-    Must be set for uploads/downloads. Absence disables archiving silently
-    (with a stderr warning) rather than failing.
+    Absence disables archiving with a stderr warning, never a failure.
 """
 
 import hashlib
@@ -24,11 +54,13 @@ import os
 import sys
 import urllib.request
 import urllib.parse
+from datetime import datetime, timezone
 
 BLOB_API = "https://vercel.com/api/blob"
 API_VERSION = "12"  # pinned to the @vercel/blob protocol version verified 2026-09-25
 TOKEN_ENV = "ARCHIVE_BLOB_READ_WRITE_TOKEN"
-MAX_SNAPSHOT_BYTES = 10 * 1024 * 1024  # 10 MB cap per raw snapshot
+SCHEMA_VERSION = 1
+MAX_TEXT_CHARS = 500_000  # 500K char cap on extracted text per snapshot
 
 
 def _token():
@@ -39,13 +71,107 @@ def _warn(msg):
     print(f"blob_archive: WARNING: {msg}", file=sys.stderr)
 
 
-def snapshot_hash(html: str) -> str:
-    """SHA256 of the raw HTML. Used as the content-addressed blob key."""
-    return hashlib.sha256(html.encode("utf-8")).hexdigest()
+def _utcnow_iso():
+    return datetime.now(timezone.utc).isoformat()
 
 
-def snapshot_pathname(content_hash: str) -> str:
-    return f"snapshots/{content_hash}.html"
+def canonical_json(obj) -> str:
+    """Deterministic serialization for hashing: sorted keys, compact."""
+    return json.dumps(obj, sort_keys=True, separators=(",", ":"),
+                      ensure_ascii=True)
+
+
+def payload_hash(snapshot: dict) -> str:
+    """SHA256 of the canonical JSON of all fields except 'integrity'."""
+    body = {k: v for k, v in snapshot.items() if k != "integrity"}
+    return hashlib.sha256(canonical_json(body).encode("utf-8")).hexdigest()
+
+
+def build_snapshot(source_key: str, url: str, text: str,
+                   agency_id: str | None = None,
+                   final_url: str | None = None,
+                   title: str | None = None,
+                   content_hash: str | None = None,
+                   simhash: str | None = None,
+                   content_type: str | None = None,
+                   accurate_to: str | None = None,
+                   fetched_at: str | None = None) -> dict:
+    """Build a v1 snapshot dict with integrity block. Raises ValueError
+    on missing required fields or oversized text."""
+    if not source_key or not isinstance(source_key, str):
+        raise ValueError("source_key is required")
+    if not url or not isinstance(url, str):
+        raise ValueError("url is required")
+    if not isinstance(text, str):
+        raise ValueError("text must be a string")
+    if len(text) > MAX_TEXT_CHARS:
+        raise ValueError(
+            f"text too large: {len(text)} chars exceeds {MAX_TEXT_CHARS}")
+    if accurate_to is not None:
+        # Validate YYYY-MM-DD
+        try:
+            datetime.strptime(accurate_to, "%Y-%m-%d")
+        except ValueError:
+            raise ValueError("accurate_to must be YYYY-MM-DD")
+
+    fetched_at = fetched_at or _utcnow_iso()
+    accurate_to = accurate_to or fetched_at[:10]
+    words = text.split()
+
+    snapshot = {
+        "schema_version": SCHEMA_VERSION,
+        "source_key": source_key,
+        "agency_id": agency_id,
+        "url": url,
+        "final_url": final_url or url,
+        "fetched_at": fetched_at,
+        "accurate_to": accurate_to,
+        "title": title,
+        "text": text,
+        "content_hash": content_hash,
+        "simhash": simhash,
+        "fetch_status": "ok",
+        "meta": {
+            "content_type": content_type or "text/html",
+            "text_len": len(text),
+            "word_count": len(words),
+        },
+    }
+    snapshot["integrity"] = {
+        "algorithm": "sha256",
+        "payload_hash": payload_hash(snapshot),
+    }
+    return snapshot
+
+
+def verify_snapshot(snapshot: dict) -> tuple[bool, str]:
+    """Verify a snapshot's integrity block. Returns (ok, message).
+    Never raises on malformed input: returns (False, reason)."""
+    if not isinstance(snapshot, dict):
+        return False, "snapshot is not a JSON object"
+    if snapshot.get("schema_version") != SCHEMA_VERSION:
+        return False, (f"unsupported schema_version: "
+                       f"{snapshot.get('schema_version')}")
+    integ = snapshot.get("integrity")
+    if not isinstance(integ, dict):
+        return False, "missing integrity block"
+    if integ.get("algorithm") != "sha256":
+        return False, f"unsupported algorithm: {integ.get('algorithm')}"
+    expected = integ.get("payload_hash")
+    if not isinstance(expected, str) or len(expected) != 64:
+        return False, "malformed payload_hash"
+    actual = payload_hash(snapshot)
+    if actual != expected:
+        return False, (f"payload_hash mismatch: expected {expected[:16]}..., "
+                       f"computed {actual[:16]}... (snapshot was altered)")
+    return True, "integrity OK"
+
+
+def snapshot_pathname(snapshot: dict) -> str:
+    """Blob path: snapshots/<accurate_to>/<payload_hash>.json"""
+    phash = snapshot["integrity"]["payload_hash"]
+    date = snapshot["accurate_to"]
+    return f"snapshots/{date}/{phash}.json"
 
 
 def _api_request(method, path, token, data=None, headers=None):
@@ -70,12 +196,11 @@ def _api_request(method, path, token, data=None, headers=None):
         return None, str(e)
 
 
-def snapshot_exists(content_hash: str, token=None) -> bool:
-    """Check whether a snapshot is already stored. Never raises."""
+def snapshot_exists(pathname: str, token=None) -> bool:
+    """Check whether a snapshot path is already stored. Never raises."""
     token = token or _token()
     if not token:
         return False
-    pathname = snapshot_pathname(content_hash)
     params = urllib.parse.urlencode({"prefix": pathname, "limit": "1"})
     try:
         status, body = _api_request("GET", f"/?{params}", token)
@@ -88,65 +213,63 @@ def snapshot_exists(content_hash: str, token=None) -> bool:
         return False
 
 
-def put_snapshot(html: str, url: str, fetched_at: str, token=None) -> str | None:
-    """Upload raw HTML to the blob archive. Returns the content hash, or
-    None if archiving was skipped or failed. Never raises: failures are
-    logged to stderr and the caller continues without the snapshot.
+def put_snapshot(snapshot: dict, token=None) -> str | None:
+    """Upload a built snapshot to the blob archive. Returns the blob
+    pathname, or None if skipped/failed. Never raises: failures are
+    logged to stderr and the caller continues.
 
-    Skips upload when:
-      - ARCHIVE_BLOB_READ_WRITE_TOKEN is not set
-      - the HTML exceeds MAX_SNAPSHOT_BYTES
-      - an identical snapshot already exists (deduplication)
+    The snapshot is integrity-verified before upload. Refuses to store
+    a snapshot that fails its own verification.
     """
+    ok, msg = verify_snapshot(snapshot)
+    if not ok:
+        _warn(f"refusing to upload snapshot that fails verification: {msg}")
+        return None
     token = token or _token()
     if not token:
-        _warn(f"{TOKEN_ENV} not set; skipping raw snapshot for {url}")
-        return None
-    if len(html.encode("utf-8")) > MAX_SNAPSHOT_BYTES:
-        _warn(f"raw HTML too large ({len(html)} chars); skipping snapshot for {url}")
+        _warn(f"{TOKEN_ENV} not set; skipping snapshot for "
+              f"{snapshot.get('source_key')}")
         return None
 
-    chash = snapshot_hash(html)
-    if snapshot_exists(chash, token):
-        return chash  # already archived; deduplication
+    pathname = snapshot_pathname(snapshot)
+    if snapshot_exists(pathname, token):
+        return pathname  # already archived; deduplication
 
-    pathname = snapshot_pathname(chash)
     params = urllib.parse.urlencode({"pathname": pathname})
     headers = {
         "x-vercel-blob-access": "private",
-        "x-content-type": "text/html; charset=utf-8",
+        "x-content-type": "application/json; charset=utf-8",
         "x-add-random-suffix": "0",
-        # Provenance metadata, retrievable via blob head/list
-        "x-source-url": url[:500],
-        "x-fetched-at": fetched_at,
+        "x-source-key": snapshot["source_key"][:200],
+        "x-accurate-to": snapshot["accurate_to"],
     }
+    body = canonical_json(snapshot)
     try:
-        status, body = _api_request(
-            "PUT", f"/?{params}", token, data=html, headers=headers
+        status, resp_body = _api_request(
+            "PUT", f"/?{params}", token, data=body, headers=headers
         )
         if status != 200:
-            _warn(f"blob PUT failed for {url}: HTTP {status}: {body[:200]}")
+            _warn(f"blob PUT failed for {snapshot.get('source_key')}: "
+                  f"HTTP {status}: {resp_body[:200]}")
             return None
-        return chash
+        return pathname
     except Exception as e:
-        _warn(f"blob PUT exception for {url}: {e}")
+        _warn(f"blob PUT exception for {snapshot.get('source_key')}: {e}")
         return None
 
 
-def get_snapshot(content_hash: str, token=None) -> str | None:
-    """Download a raw HTML snapshot by content hash. Returns the HTML string,
-    or None if not found or on error. Raises ValueError on malformed hash."""
-    if not content_hash or not isinstance(content_hash, str):
-        raise ValueError("content_hash must be a non-empty string")
-    if len(content_hash) != 64 or not all(
-        c in "0123456789abcdef" for c in content_hash
-    ):
-        raise ValueError("content_hash must be a 64-char lowercase hex sha256")
+def _valid_hash(s: str) -> bool:
+    return (isinstance(s, str) and len(s) == 64
+            and all(c in "0123456789abcdef" for c in s))
+
+
+def get_snapshot_by_path(pathname: str, token=None) -> dict | None:
+    """Download and integrity-verify a snapshot by blob pathname.
+    Returns the snapshot dict, or None if not found. Raises on
+    integrity failure, missing token, or transport errors."""
     token = token or _token()
     if not token:
         raise ValueError(f"{TOKEN_ENV} is not set")
-
-    pathname = snapshot_pathname(content_hash)
     params = urllib.parse.urlencode({"prefix": pathname, "limit": "1"})
     status, body = _api_request("GET", f"/?{params}", token)
     if status != 200:
@@ -155,44 +278,90 @@ def get_snapshot(content_hash: str, token=None) -> str | None:
     blobs = data.get("blobs", [])
     hit = next((b for b in blobs if b.get("pathname") == pathname), None)
     if not hit or not hit.get("url"):
-        return None  # not archived
+        return None
 
-    # Private blob: fetch with the token
     req = urllib.request.Request(
         hit["url"], headers={"authorization": f"Bearer {token}"}
     )
     try:
         with urllib.request.urlopen(req, timeout=60) as resp:
-            raw = resp.read(MAX_SNAPSHOT_BYTES + 1)
-            if len(raw) > MAX_SNAPSHOT_BYTES:
-                raise RuntimeError("snapshot exceeds size cap")
-            return raw.decode("utf-8", errors="replace")
+            raw = resp.read(2 * 1024 * 1024)  # 2 MB cap on download
+            snapshot = json.loads(raw.decode("utf-8"))
     except urllib.error.HTTPError as e:
         if e.code == 404:
             return None
         raise RuntimeError(f"snapshot download failed: HTTP {e.code}")
+    ok, msg = verify_snapshot(snapshot)
+    if not ok:
+        raise RuntimeError(f"snapshot integrity check failed: {msg}")
+    return snapshot
+
+
+def list_snapshots(date: str | None = None, limit: int = 100,
+                   cursor: str | None = None, token=None) -> dict:
+    """List snapshot pathnames, optionally filtered by accurate_to date.
+    Returns the raw blob list response dict."""
+    token = token or _token()
+    if not token:
+        raise ValueError(f"{TOKEN_ENV} is not set")
+    prefix = f"snapshots/{date}/" if date else "snapshots/"
+    params = urllib.parse.urlencode(
+        {"prefix": prefix, "limit": str(min(limit, 1000))})
+    if cursor:
+        params += "&" + urllib.parse.urlencode({"cursor": cursor})
+    status, body = _api_request("GET", f"/?{params}", token)
+    if status != 200:
+        raise RuntimeError(f"blob list failed: HTTP {status}")
+    return json.loads(body)
 
 
 def main():
-    """CLI: python3 scripts/blob_archive.py get <content_hash> [output_file]"""
-    if len(sys.argv) < 3 or sys.argv[1] != "get":
-        print("usage: python3 scripts/blob_archive.py get <content_hash> [output_file]")
+    """CLI:
+      get <pathname> [output_file]   download + verify a snapshot
+      verify <file>                  verify a local snapshot file
+      list [--date YYYY-MM-DD]        list snapshot pathnames
+    """
+    if len(sys.argv) < 2:
+        print("usage: blob_archive.py {get|verify|list} ...", file=sys.stderr)
         sys.exit(2)
-    chash = sys.argv[2]
+    cmd = sys.argv[1]
     try:
-        html = get_snapshot(chash)
+        if cmd == "get" and len(sys.argv) >= 3:
+            snap = get_snapshot_by_path(sys.argv[2])
+            if snap is None:
+                print(f"snapshot not found: {sys.argv[2]}", file=sys.stderr)
+                sys.exit(1)
+            out = (canonical_json(snap) if len(sys.argv) == 3
+                   else None)
+            if out is None:
+                with open(sys.argv[3], "w", encoding="utf-8") as f:
+                    f.write(canonical_json(snap))
+                print(f"wrote snapshot to {sys.argv[3]} "
+                      f"(integrity verified)")
+            else:
+                sys.stdout.write(out)
+        elif cmd == "verify" and len(sys.argv) >= 3:
+            with open(sys.argv[2], encoding="utf-8") as f:
+                snap = json.load(f)
+            ok, msg = verify_snapshot(snap)
+            print(f"{'OK' if ok else 'FAIL'}: {msg}")
+            sys.exit(0 if ok else 1)
+        elif cmd == "list":
+            date = None
+            if "--date" in sys.argv:
+                date = sys.argv[sys.argv.index("--date") + 1]
+            data = list_snapshots(date=date)
+            for b in data.get("blobs", []):
+                print(b.get("pathname"))
+            if data.get("hasMore"):
+                print(f"... more available (cursor: {data.get('cursor')})",
+                      file=sys.stderr)
+        else:
+            print(f"unknown command: {cmd}", file=sys.stderr)
+            sys.exit(2)
     except (ValueError, RuntimeError) as e:
         print(f"error: {e}", file=sys.stderr)
         sys.exit(1)
-    if html is None:
-        print(f"snapshot not found: {chash}", file=sys.stderr)
-        sys.exit(1)
-    if len(sys.argv) > 3:
-        with open(sys.argv[3], "w", encoding="utf-8") as f:
-            f.write(html)
-        print(f"wrote {len(html)} chars to {sys.argv[3]}")
-    else:
-        sys.stdout.write(html)
 
 
 if __name__ == "__main__":

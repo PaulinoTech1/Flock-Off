@@ -54,13 +54,14 @@ def cmd_keys(args, _cfg) -> None:
 
 
 def cmd_snapshot(args, _cfg) -> None:
-    """Retrieve a raw HTML snapshot from the blob archive by source key or
-    content hash. Used in drift review to pull up the exact original page."""
+    """Retrieve a JSON snapshot from the blob archive by source key or
+    blob pathname. Integrity-verified on download. Used in drift review
+    to pull up the exact original page content."""
     import blob_archive
     import json as _json
 
-    chash = args.hash
-    if not chash:
+    pathname = args.path
+    if not pathname:
         # Look up the source key in the fingerprint database
         fp_path = os.path.join("data", "source_fingerprints.json")
         try:
@@ -74,27 +75,32 @@ def cmd_snapshot(args, _cfg) -> None:
             print(f"error: no fingerprint record for key: {args.key}",
                   file=sys.stderr)
             sys.exit(1)
-        chash = rec.get("raw_snapshot_hash")
-        if not chash:
-            print(f"error: no raw snapshot archived for key: {args.key} "
+        pathname = rec.get("snapshot_path")
+        if not pathname:
+            print(f"error: no blob snapshot archived for key: {args.key} "
                   f"(fetch_status={rec.get('fetch_status')})", file=sys.stderr)
             sys.exit(1)
-        print(f"snapshot hash: {chash}", file=sys.stderr)
+        print(f"snapshot path: {pathname}", file=sys.stderr)
 
     try:
-        html = blob_archive.get_snapshot(chash)
+        snap = blob_archive.get_snapshot_by_path(pathname)
     except (ValueError, RuntimeError) as e:
         print(f"error: {e}", file=sys.stderr)
         sys.exit(1)
-    if html is None:
-        print(f"snapshot not found in blob archive: {chash}", file=sys.stderr)
+    if snap is None:
+        print(f"snapshot not found in blob archive: {pathname}",
+              file=sys.stderr)
         sys.exit(1)
+    # get_snapshot_by_path already verified integrity; report it
+    print(f"integrity: OK (payload_hash "
+          f"{snap['integrity']['payload_hash'][:16]}...)", file=sys.stderr)
+    out = blob_archive.canonical_json(snap)
     if args.output:
         with open(args.output, "w", encoding="utf-8") as f:
-            f.write(html)
-        print(f"wrote {len(html)} chars to {args.output}")
+            f.write(out)
+        print(f"wrote {len(out)} chars to {args.output}")
     else:
-        sys.stdout.write(html)
+        sys.stdout.write(out)
 
 
 def cmd_fingerprints(args, _cfg) -> None:
@@ -267,12 +273,13 @@ def build_parser() -> argparse.ArgumentParser:
                    help="local agencies.json fallback if the GitHub fetch fails")
 
     s = sub.add_parser("snapshot",
-                       help="retrieve a raw HTML snapshot from the blob archive")
+                       help="retrieve a JSON snapshot from the blob archive")
     s.add_argument("--key", default=None,
-                   help="source key: look up its raw_snapshot_hash in "
+                   help="source key: look up its snapshot_path in "
                         "data/source_fingerprints.json")
-    s.add_argument("--hash", default=None,
-                   help="raw snapshot content hash directly (64-char hex)")
+    s.add_argument("--path", default=None,
+                   help="blob snapshot pathname directly "
+                        "(snapshots/<date>/<hash>.json)")
     s.add_argument("-o", "--output", default=None,
                    help="write to file instead of stdout")
 
