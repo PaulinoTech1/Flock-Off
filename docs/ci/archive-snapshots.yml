@@ -46,12 +46,10 @@ jobs:
         run: pip install pyyaml
 
       - name: Validate config
-        continue-on-error: true
         run: |
           python3 scripts/flockoff.py config validate
 
       - name: Run test suite
-        continue-on-error: true
         run: python3 scripts/flockoff.py test
 
       - name: Refresh fingerprints and archive snapshots
@@ -71,3 +69,18 @@ jobs:
           echo "=== Checking for blob warnings in logs ==="
           echo "If no blob_archive WARNING lines appeared above,"
           echo "snapshots uploaded successfully."
+
+      - name: Verify blob uploads
+        if: always()
+        run: |
+          echo "=== Snapshots archived today ==="
+          TODAY=$(date -u +%Y-%m-%d)
+          COUNT=$(python3 scripts/blob_archive.py list --date "$TODAY" 2>&1 | grep -c "^snapshots/" || true)
+          echo "Snapshots for $TODAY: $COUNT"
+          echo ""
+          echo "=== Sample paths (first 10) ==="
+          python3 scripts/blob_archive.py list --date "$TODAY" 2>&1 | grep "^snapshots/" | head -10
+          echo ""
+          echo "=== Total snapshots in store ==="
+          TOTAL=$(python3 scripts/blob_archive.py list 2>&1 | grep -c "^snapshots/" || true)
+          echo "Total snapshots: $TOTAL"
