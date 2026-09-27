@@ -37,6 +37,7 @@ const MapTab = (() => {
   }
 
   function init() {
+    if (!document.getElementById("map")) return; // map tab not present
     const cfg = FLOCKOFF_CONFIG;
     map = L.map("map", { zoomControl: true }).setView(cfg.defaultCenter, cfg.defaultZoom);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {

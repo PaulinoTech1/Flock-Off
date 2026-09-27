@@ -2,15 +2,18 @@
 "use strict";
 
 const App = (() => {
-  const TABS = ["tracker", "sources", "map", "tools", "learn", "legal"];
+  const TABS = ["tracker", "sources", "tools", "learn", "legal"];
 
   function show(name) {
-    if (!TABS.includes(name)) name = "map";
+    if (!TABS.includes(name)) name = "tracker";
     for (const t of TABS) {
-      document.getElementById(`tab-${t}`).hidden = t !== name;
+      const panel = document.getElementById(`tab-${t}`);
+      if (panel) panel.hidden = t !== name;
       const btn = document.getElementById(`nav-${t}`);
-      btn.setAttribute("aria-selected", String(t === name));
-      btn.classList.toggle("active", t === name);
+      if (btn) {
+        btn.setAttribute("aria-selected", String(t === name));
+        btn.classList.toggle("active", t === name);
+      }
     }
     if (location.hash !== `#${name}`) history.replaceState(null, "", `#${name}`);
   }

@@ -16,6 +16,9 @@ const TrackerTab = (() => {
     rejected: "Proposal rejected",
     expired: "Expired",
   };
+  const TERMINAL_STATUS = new Set(["cancelled", "rejected", "expired"]);
+  // Evidence bar per docs/METHODOLOGY.md: 1 verified-primary + 2 independent verified-news.
+  const EVIDENCE_BAR = 2;
 
   // Evidence tiers (docs/METHODOLOGY.md): computed at build time by
   // scripts/evidence.py and published as data/evidence.json, so the page,
@@ -142,6 +145,11 @@ const TrackerTab = (() => {
     else if (sort === "city") rows.sort((a, b) => (a.city || "").localeCompare(b.city || "") || a.agency.localeCompare(b.agency));
     else if (sort === "cameras") rows.sort((a, b) => (b.cameras || 0) - (a.cameras || 0));
     else if (sort === "cost") rows.sort((a, b) => (b.annual_cost_usd || 0) - (a.annual_cost_usd || 0));
+    else if (sort === "evidence") rows.sort((a, b) => {
+      const ta = evidence(a).tier === "verified" ? 0 : 1;
+      const tb = evidence(b).tier === "verified" ? 0 : 1;
+      return ta - tb || a.agency.localeCompare(b.agency);
+    });
     else rows.sort((a, b) => a.agency.localeCompare(b.agency));
     return rows;
   }
