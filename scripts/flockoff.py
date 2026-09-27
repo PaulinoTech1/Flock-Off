@@ -53,6 +53,50 @@ def cmd_keys(args, _cfg) -> None:
     source_keys.main(["--check"] if args.check else [])
 
 
+def cmd_snapshot(args, _cfg) -> None:
+    """Retrieve a raw HTML snapshot from the blob archive by source key or
+    content hash. Used in drift review to pull up the exact original page."""
+    import blob_archive
+    import json as _json
+
+    chash = args.hash
+    if not chash:
+        # Look up the source key in the fingerprint database
+        fp_path = os.path.join("data", "source_fingerprints.json")
+        try:
+            with open(fp_path, encoding="utf-8") as f:
+                fps = _json.load(f)
+        except (OSError, _json.JSONDecodeError) as e:
+            print(f"error: cannot read {fp_path}: {e}", file=sys.stderr)
+            sys.exit(1)
+        rec = (fps.get("sources") or {}).get(args.key)
+        if not rec:
+            print(f"error: no fingerprint record for key: {args.key}",
+                  file=sys.stderr)
+            sys.exit(1)
+        chash = rec.get("raw_snapshot_hash")
+        if not chash:
+            print(f"error: no raw snapshot archived for key: {args.key} "
+                  f"(fetch_status={rec.get('fetch_status')})", file=sys.stderr)
+            sys.exit(1)
+        print(f"snapshot hash: {chash}", file=sys.stderr)
+
+    try:
+        html = blob_archive.get_snapshot(chash)
+    except (ValueError, RuntimeError) as e:
+        print(f"error: {e}", file=sys.stderr)
+        sys.exit(1)
+    if html is None:
+        print(f"snapshot not found in blob archive: {chash}", file=sys.stderr)
+        sys.exit(1)
+    if args.output:
+        with open(args.output, "w", encoding="utf-8") as f:
+            f.write(html)
+        print(f"wrote {len(html)} chars to {args.output}")
+    else:
+        sys.stdout.write(html)
+
+
 def cmd_fingerprints(args, _cfg) -> None:
     import source_fingerprints
     if getattr(args, "fp_cmd", None) == "drift":
@@ -222,6 +266,16 @@ def build_parser() -> argparse.ArgumentParser:
     m.add_argument("local_dataset", nargs="?",
                    help="local agencies.json fallback if the GitHub fetch fails")
 
+    s = sub.add_parser("snapshot",
+                       help="retrieve a raw HTML snapshot from the blob archive")
+    s.add_argument("--key", default=None,
+                   help="source key: look up its raw_snapshot_hash in "
+                        "data/source_fingerprints.json")
+    s.add_argument("--hash", default=None,
+                   help="raw snapshot content hash directly (64-char hex)")
+    s.add_argument("-o", "--output", default=None,
+                   help="write to file instead of stdout")
+
     t = sub.add_parser("test", help="run the stdlib test suite (scripts/tests/)")
     t.add_argument("--pattern", default="test_*.py",
                    help="unittest discovery pattern")
@@ -253,6 +307,7 @@ def main() -> None:
         ("fingerprints", "backfill-archive"): cmd_fingerprints,
         ("classify", None): cmd_classify,
         ("monitor", None): cmd_monitor,
+        ("snapshot", None): cmd_snapshot,
         ("test", None): cmd_test,
         ("release", None): cmd_release,
     }

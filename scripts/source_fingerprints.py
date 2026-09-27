@@ -243,7 +243,12 @@ def fingerprint_url(url: str, today: str,
     """Fingerprint one URL. Also writes the extracted-text snapshot to the
     source archive under the canonical source key (defaults to the URL).
     archive_directory overrides the configured dir; tests use it to avoid
-    touching the real archive."""
+    touching the real archive.
+
+    The raw HTML is also archived to Vercel Blob (content-addressed) via
+    blob_archive.put_snapshot, best-effort: a blob failure never breaks
+    fingerprinting. The raw snapshot hash is stored as raw_snapshot_hash.
+    """
     status, final_url, html = fetch_page(url)
     rec: dict = {
         "url": url,
@@ -255,8 +260,19 @@ def fingerprint_url(url: str, today: str,
         "fetched_at": today,
         "fetch_status": status,
         "archive": None,
+        "raw_snapshot_hash": None,
     }
     if status == "ok" and html:
+        # Raw HTML snapshot to blob (forensic original for drift review).
+        # Best-effort: never breaks fingerprinting on failure.
+        try:
+            import blob_archive as _ba
+            try:
+                rec["raw_snapshot_hash"] = _ba.put_snapshot(html, url, today)
+            except Exception:
+                pass
+        except ImportError:
+            pass
         title, text = extract_text(html)
         rec["title"] = title or None
         rec["text_len"] = len(text)
