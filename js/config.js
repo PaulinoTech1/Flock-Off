@@ -1,36 +1,9 @@
-/* Flock-Off configuration: endpoints and tunables.
+/* Flock-Off configuration: curated tool directory.
  * Everything here is a public, unauthenticated endpoint. No keys, no accounts.
  */
 "use strict";
 
 const FLOCKOFF_CONFIG = {
-  // Primary camera data: OpenStreetMap nodes tagged as ALPR (DeFlock's source).
-  overpassUrl: "https://overpass-api.de/api/interpreter",
-  // Secondary bulk source: FlockHopper/DeFlock OSM-derived GeoJSON feed.
-  // Updated daily. Tens of MB for the full US file; use regional slices when offered.
-  bulkFeeds: {
-    us: "https://data.dontgetflocked.com/cameras.geojson.gz",
-    ca: "https://data.dontgetflocked.com/cameras-ca.geojson.gz",
-  },
-  // Routing (demo server; self-host OSRM for production use).
-  osrmUrl: "https://router.project-osrm.org/route/v1/driving",
-  // Geocoding (Nominatim usage policy: max 1 req/s, no heavy use).
-  nominatimUrl: "https://nominatim.openstreetmap.org/search",
-
-  // Map
-  defaultCenter: [42.2626, -71.8023], // Worcester, MA
-  defaultZoom: 12,
-  cameraFetchRadiusKm: 8,   // Overpass bbox half-size around map center
-  maxBboxDegrees: 0.6,      // Overpass guard: refuse larger boxes
-
-  // Radar
-  radarWarnM: 150,
-  radarAlertM: 75,
-  radarCacheKm: 10,
-
-  // Route exposure analysis
-  routeExposureM: 60, // camera within this distance of the route counts as "on route"
-
   // Curated directory of existing anti-Flock tools (Tools tab)
   directory: [
     {

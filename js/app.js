@@ -123,7 +123,6 @@ const App = (() => {
     showFromHash();
     TrackerTab.init();
     SourcesTab.init();
-    MapTab.init();
   }
 
   return { init };

@@ -63,5 +63,6 @@ Client errors are logged to the browser console with codes:
 |------|-------|---------|
 | CLIENT_TRACKER_001 | tracker.js | Contract data failed to load |
 | CLIENT_SOURCES_001 | sources.js | Source index failed to load |
-| CLIENT_MAP_001 | map.js | Camera data failed to load |
 | CLIENT_INTEGRITY_001 | app.js | Manifest verification failed |
+| CLIENT_UNHANDLED_001 | app.js | Unhandled JS error |
+| CLIENT_UNHANDLED_002 | app.js | Unhandled promise rejection |
