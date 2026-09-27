@@ -1,6 +1,16 @@
 /* App shell: tab navigation (hash-routed), tool directory rendering, footer year. */
 "use strict";
 
+// Global error trap: nothing fails silently. Unhandled errors and rejected
+// promises are logged with a code so they show up in the console and in any
+// error-monitoring the maintainer wires up later.
+window.addEventListener("error", (e) => {
+  console.error("[CLIENT_UNHANDLED_001]", e.message, "at", e.filename + ":" + e.lineno);
+});
+window.addEventListener("unhandledrejection", (e) => {
+  console.error("[CLIENT_UNHANDLED_002]", e.reason);
+});
+
 const App = (() => {
   const TABS = ["tracker", "sources", "tools", "learn", "legal"];
 
@@ -68,7 +78,8 @@ const App = (() => {
         ? `✓ Hash matches the release manifest (${hex.slice(0, 16)}…). Released ${man.timestamp || "unknown time"} at commit ${(man.commit || "unknown").slice(0, 12)}. ${sig}`
         : `✗ HASH MISMATCH: computed ${hex.slice(0, 16)}… but the manifest says ${String(man.agencies_sha256).slice(0, 16)}…. Treat this dataset as suspect and open an issue.`;
     } catch (err) {
-      status.textContent = `Could not verify (${err.message}).`;
+      console.error("[CLIENT_INTEGRITY_001]", err);
+      status.textContent = `Could not verify (${err.message}). [CLIENT_INTEGRITY_001] Check data/integrity/manifest.json exists and is reachable.`;
     }
   }
   // Deep links: "#learn-privacy" opens the Learn tab, then scrolls to the anchor.

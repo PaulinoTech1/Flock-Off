@@ -1,4 +1,5 @@
 "use strict";
+const { CODES } = require("./_errors.js");
 /* POST /api/promote — human-review gate for the quarantine model.
  *
  * Takes a pending report's public blob URL, verifies it is genuinely a
@@ -152,48 +153,48 @@ async function repUpdateFromPending(pending, field, token) {
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
-    return send(res, 405, { error: "method not allowed" });
+    return send(res, 405, CODES.PROMOTE_405_001());
   }
   const token = process.env.BLOB_READ_WRITE_TOKEN;
   const adminKey = process.env.REPORT_ADMIN_KEY;
-  if (!token || !adminKey) return send(res, 503, { error: "promotion not configured" });
+  if (!token || !adminKey) return send(res, 503, CODES.PROMOTE_503_001());
   if (!timingSafeEqual(req.headers["x-admin-key"], adminKey)) {
-    return send(res, 401, { error: "missing or invalid admin key" });
+    return send(res, 401, CODES.PROMOTE_401_001());
   }
   const ct = req.headers["content-type"] || "";
   if (!ct.includes("application/json")) {
-    return send(res, 415, { error: "content-type must be application/json" });
+    return send(res, 415, CODES.PROMOTE_415_001());
   }
 
   let raw;
   try {
     raw = await readBody(req);
   } catch {
-    return send(res, 400, { error: "unreadable body" });
+    return send(res, 400, CODES.PROMOTE_400_001());
   }
   let body;
   try {
     body = JSON.parse(raw);
   } catch {
-    return send(res, 400, { error: "malformed JSON" });
+    return send(res, 400, CODES.PROMOTE_400_002());
   }
   const u = validPendingUrl(body && body.url);
-  if (!u) return send(res, 400, { error: "url must be a reports-pending/ blob URL" });
+  if (!u) return send(res, 400, CODES.PROMOTE_400_003());
 
   // Fetch the pending submission and confirm it is what it claims to be.
   let pending;
   try {
     const r = await fetch(u.toString());
-    if (!r.ok) return send(res, 400, { error: "could not fetch pending blob" });
+    if (!r.ok) return send(res, 400, CODES.PROMOTE_400_004());
     pending = await r.json();
   } catch {
-    return send(res, 400, { error: "pending blob is not valid JSON" });
+    return send(res, 400, CODES.PROMOTE_400_005());
   }
   if (!pending || pending.status !== "pending" ||
       typeof pending.agency_id !== "string" ||
       typeof pending.source_url !== "string" ||
       typeof pending.downloaded_at !== "string") {
-    return send(res, 400, { error: "blob is not a pending report" });
+    return send(res, 400, CODES.PROMOTE_400_006());
   }
 
   // Explicit action, fail closed: there is no default path. A missing,
@@ -201,7 +202,7 @@ module.exports = async (req, res) => {
   // a malformed review request can never fall through to approval.
   const action = body && body.action;
   if (action !== "approve" && action !== "reject") {
-    return send(res, 400, { error: 'action must be "approve" or "reject"' });
+    return send(res, 400, CODES.PROMOTE_400_007());
   }
 
   // Rejection path: delete the pending blob, record the decision against the

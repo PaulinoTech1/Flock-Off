@@ -79,9 +79,10 @@ const MapTab = (() => {
           `Showing last successful snapshot from ${res.cachedAt || "an earlier visit"}; ` +
           `it may be out of date. ` + base;
     } catch (err) {
+      console.error("[CLIENT_MAP_001]", err);
       status.textContent =
-        `Could not load camera data (${err.message}). No cached snapshot for this area yet. ` +
-        "Tiles still work; try Refresh, or pan to an area you have loaded before.";
+        `Could not load camera data (${err.message}). [CLIENT_MAP_001] No cached snapshot for this area yet. ` +
+        "Tiles still work; try Refresh, or pan to an area you have loaded before. If this persists, check the Overpass API status.";
     }
   }
 

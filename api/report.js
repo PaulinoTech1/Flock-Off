@@ -1,4 +1,5 @@
 "use strict";
+const { CODES } = require("./_errors.js");
 /* POST /api/report — regulated write path for historical Flock contract reports.
  *
  * QUARANTINE MODEL: submissions land in reports-pending/, never directly in
@@ -249,42 +250,43 @@ async function reputationSummary(ip, token) {
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
-    return send(res, 405, { error: "method not allowed" });
+    return send(res, 405, CODES.REPORT_405_001());
   }
   const token = process.env.BLOB_READ_WRITE_TOKEN;
-  if (!token) return send(res, 503, { error: "history store not configured" });
+  if (!token) return send(res, 503, CODES.HISTORY_503_001());
 
   const writeKey = process.env.REPORT_WRITE_KEY;
-  if (!writeKey) return send(res, 503, { error: "report submission not configured" });
+  if (!writeKey) return send(res, 503, CODES.REPORT_503_001());
   if (!timingSafeEqual(req.headers["x-report-key"], writeKey)) {
-    return send(res, 401, { error: "missing or invalid write key" });
+    return send(res, 401, CODES.REPORT_401_001());
   }
 
   const ct = req.headers["content-type"] || "";
   if (!ct.includes("application/json")) {
-    return send(res, 415, { error: "content-type must be application/json" });
+    return send(res, 415, CODES.REPORT_415_001());
   }
 
   if (rateLimited(clientIp(req))) {
     res.setHeader("Retry-After", "3600");
-    return send(res, 429, { error: "rate limit exceeded" });
+    return send(res, 429, CODES.REPORT_429_001());
   }
 
   let raw;
   try {
     raw = await readBody(req);
   } catch (e) {
-    return send(res, e.code === 413 ? 413 : 400, { error: e.code === 413 ? "body exceeds 32 KB" : "unreadable body" });
+    return send(res, e.code === 413 ? 413 : 400,
+      e.code === 413 ? CODES.REPORT_413_001() : CODES.REPORT_400_001());
   }
   let body;
   try {
     body = JSON.parse(raw);
   } catch {
-    return send(res, 400, { error: "malformed JSON" });
+    return send(res, 400, CODES.REPORT_400_002());
   }
 
   const errors = validate(body);
-  if (errors.length) return send(res, 400, { error: "validation failed", details: errors });
+  if (errors.length) return send(res, 400, CODES.REPORT_400_003(errors));
 
   const receivedAt = new Date().toISOString();
   const stamp = receivedAt.replace(/[^0-9A-Za-z]/g, "-");
@@ -325,6 +327,6 @@ module.exports = async (req, res) => {
       received_at: receivedAt,
     });
   } catch (e) {
-    return send(res, 502, { error: "could not write to history store" });
+    return send(res, 502, CODES.REPORT_502_001());
   }
 };

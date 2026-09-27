@@ -1,4 +1,5 @@
 "use strict";
+const { CODES } = require("./_errors.js");
 /* GET /api/pending — reviewer queue for the quarantine model.
  *
  * Lists reports-pending/ blobs with each submission's full record so a human
@@ -31,13 +32,13 @@ function timingSafeEqual(a, b) {
 module.exports = async (req, res) => {
   if (req.method !== "GET") {
     res.setHeader("Allow", "GET");
-    return send(res, 405, { error: "method not allowed" });
+    return send(res, 405, CODES.PENDING_405_001());
   }
   const token = process.env.BLOB_READ_WRITE_TOKEN;
   const adminKey = process.env.REPORT_ADMIN_KEY;
-  if (!token || !adminKey) return send(res, 503, { error: "review queue not configured" });
+  if (!token || !adminKey) return send(res, 503, CODES.PENDING_503_001());
   if (!timingSafeEqual(req.headers["x-admin-key"], adminKey)) {
-    return send(res, 401, { error: "missing or invalid admin key" });
+    return send(res, 401, CODES.PENDING_401_001());
   }
 
   let listing;
@@ -45,10 +46,10 @@ module.exports = async (req, res) => {
     const r = await fetch(`${BLOB_API}/?prefix=${encodeURIComponent("reports-pending/")}&limit=50`, {
       headers: { authorization: `Bearer ${token}`, "x-api-version": API_VERSION },
     });
-    if (!r.ok) return send(res, 502, { error: "could not list pending reports" });
+    if (!r.ok) return send(res, 502, CODES.PENDING_502_001());
     listing = await r.json();
   } catch {
-    return send(res, 502, { error: "could not list pending reports" });
+    return send(res, 502, CODES.PENDING_502_001());
   }
 
   const items = [];

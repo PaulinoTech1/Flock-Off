@@ -120,8 +120,9 @@ const SourcesTab = (() => {
         `${v} verified citations, ${entries.length - v} leads.`;
       render();
     } catch (err) {
+      console.error("[CLIENT_SOURCES_001]", err);
       el("sources-status").textContent =
-        `Could not load sources (${err.message}). The pre-rendered list below may be stale.`;
+        `Could not load sources (${err.message}). [CLIENT_SOURCES_001] The pre-rendered list below may be stale. Check the build output for source index errors.`;
     }
   }
 

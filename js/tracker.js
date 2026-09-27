@@ -45,7 +45,9 @@ const TrackerTab = (() => {
       agencies = json.agencies || [];
       meta = json.meta || {};
     } catch (err) {
-      el("tracker-status").textContent = `Could not load contract data (${err.message}).`;
+      console.error("[CLIENT_TRACKER_001]", err);
+      el("tracker-status").textContent =
+        `Could not load contract data (${err.message}). [CLIENT_TRACKER_001] Check data/agencies.json exists and is valid JSON.`;
       return;
     }
     el("coverage-note").textContent = meta.coverage_note || "";

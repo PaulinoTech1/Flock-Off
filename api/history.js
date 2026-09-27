@@ -1,4 +1,5 @@
 "use strict";
+const { CODES } = require("./_errors.js");
 /* GET /api/history — read-only listing of historical reports for one agency.
  *
  * Query: ?agency_id=<id>&limit=<1..200, default 50>&cursor=<opaque>
@@ -34,15 +35,15 @@ async function blobList(prefix, limit, cursor, token) {
 module.exports = async (req, res) => {
   if (req.method !== "GET") {
     res.setHeader("Allow", "GET");
-    return send(res, 405, { error: "method not allowed" });
+    return send(res, 405, CODES.HISTORY_405_001());
   }
   const token = process.env.BLOB_READ_WRITE_TOKEN;
-  if (!token) return send(res, 503, { error: "history store not configured" });
+  if (!token) return send(res, 503, CODES.HISTORY_503_001());
 
   const q = req.query || {};
   const agencyId = typeof q.agency_id === "string" ? q.agency_id : "";
   if (!/^[a-z0-9-]{1,80}$/.test(agencyId)) {
-    return send(res, 400, { error: "agency_id is required (a-z, 0-9, dashes)" });
+    return send(res, 400, CODES.HISTORY_400_001());
   }
   let limit = parseInt(q.limit, 10);
   if (!Number.isFinite(limit) || limit < 1) limit = 50;
@@ -63,6 +64,6 @@ module.exports = async (req, res) => {
       hasMore: !!data.hasMore,
     });
   } catch (e) {
-    return send(res, 502, { error: "could not read history store" });
+    return send(res, 502, CODES.HISTORY_502_001());
   }
 };
