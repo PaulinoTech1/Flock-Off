@@ -3,8 +3,9 @@ const { CODES } = require("./_errors.js");
 /* GET /api/history — read-only listing of historical reports for one agency.
  *
  * Query: ?agency_id=<id>&limit=<1..200, default 50>&cursor=<opaque>
- * Returns metadata only (pathname, url, size, uploadedAt); report payloads
- * are fetched from their public blob URLs. No auth required to read.
+ * Returns full report records (proxied from private blobs). No auth required
+ * to read approved reports. Blob URLs are never exposed; all content goes
+ * through this endpoint.
  *
  * Requires REPORTS_BLOB_READ_WRITE_TOKEN env (set in the Vercel dashboard).
  */
@@ -52,14 +53,34 @@ module.exports = async (req, res) => {
 
   try {
     const data = await blobList(`reports/${agencyId}/`, limit, cursor, token);
+    // Fetch each report's content via authenticated requests (private blobs).
+    // Strip internal fields before returning to the public.
+    const reports = [];
+    for (const b of (data.blobs || [])) {
+      try {
+        const r = await fetch(b.url, {
+          headers: { authorization: `Bearer ${token}` },
+        });
+        if (!r.ok) continue;
+        const text = await r.text();
+        if (text.length > 64 * 1024) continue;
+        const record = JSON.parse(text);
+        // Only return approved reports; strip internal signals
+        if (record.status !== "approved") continue;
+        const { _signals, content_hash, ...publicRecord } = record;
+        reports.push({
+          pathname: b.pathname,
+          size: b.size,
+          uploadedAt: b.uploadedAt,
+          ...publicRecord,
+        });
+      } catch {
+        continue;
+      }
+    }
     return send(res, 200, {
       agency_id: agencyId,
-      reports: (data.blobs || []).map((b) => ({
-        pathname: b.pathname,
-        url: b.url,
-        size: b.size,
-        uploadedAt: b.uploadedAt,
-      })),
+      reports,
       cursor: data.cursor || null,
       hasMore: !!data.hasMore,
     });

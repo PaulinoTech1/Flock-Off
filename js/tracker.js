@@ -331,12 +331,20 @@ const TrackerTab = (() => {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       const reps = data.reports || [];
-      box.innerHTML = reps.length === 0
-        ? `<p class="muted">No historical reports filed yet for this agency.</p>`
-        : `<ul>${reps.map((r) =>
-            `<li><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(new Date(r.uploadedAt).toISOString().slice(0, 10))}</a> ` +
-            `<span class="muted">(${(r.size / 1024).toFixed(1)} KB JSON)</span></li>`).join("")}</ul>` +
-          `<p class="muted">Append-only archive. Each report is tied to its source and download date; see the raw JSON.</p>`;
+      if (reps.length === 0) {
+        box.innerHTML = `<p class="muted">No historical reports filed yet for this agency.</p>`;
+        return;
+      }
+      box.innerHTML = `<ul>${reps.map((r) => {
+        const date = r.downloaded_at ? esc(r.downloaded_at.slice(0, 10)) : "unknown date";
+        const desc = r.description ? esc(r.description.slice(0, 200)) : "";
+        const status = r.report && r.report.status ? esc(r.report.status) : "";
+        return `<li><strong>${date}</strong>${status ? ` <span class="muted">(${status})</span>` : ""}` +
+          (desc ? `<br><span>${desc}</span>` : "") +
+          (r.source_url ? `<br><a href="${esc(r.source_url)}" target="_blank" rel="noopener noreferrer" class="muted">Source</a>` : "") +
+          `</li>`;
+      }).join("")}</ul>` +
+        `<p class="muted">Append-only archive. Each report is tied to its source and download date.</p>`;
     } catch (e) {
       box.innerHTML = `<p class="muted">Report history unavailable.</p>`;
     }

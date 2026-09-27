@@ -2,10 +2,13 @@
 const { CODES } = require("./_errors.js");
 /* POST /api/promote — human-review gate for the quarantine model.
  *
- * Takes a pending report's public blob URL, verifies it is genuinely a
- * pending submission, copies it into the public reports/ tree stamped as
+ * Takes a pending report's blob URL, verifies it is genuinely a
+ * pending submission, copies it into the reports/ tree stamped as
  * approved, then deletes the pending blob. The approved copy is never
  * mutated afterwards (append-only archive).
+ *
+ * All blobs are private. URLs are only used as identifiers; content is
+ * always fetched with the blob token, never via public URLs.
  *
  * Auth: REPORT_ADMIN_KEY is mandatory (constant-time compare against the
  * x-admin-key header). This key must differ from REPORT_WRITE_KEY: submitters
@@ -93,7 +96,7 @@ async function blobPut(pathname, jsonText, token) {
     headers: {
       authorization: `Bearer ${token}`,
       "x-api-version": API_VERSION,
-      "x-vercel-blob-access": "public",
+      "x-vercel-blob-access": "private",
       "x-content-type": "application/json",
       "x-add-random-suffix": "0",
     },
@@ -134,7 +137,9 @@ async function repUpdateFromPending(pending, field, token) {
         const data = await list.json();
         const hit = (data.blobs || []).find((b) => b.pathname === prefix);
         if (hit && hit.url) {
-          const r = await fetch(hit.url);
+          const r = await fetch(hit.url, {
+            headers: { authorization: `Bearer ${token}` },
+          });
           if (r.ok) cur = await r.json();
         }
       }
@@ -182,9 +187,12 @@ module.exports = async (req, res) => {
   if (!u) return send(res, 400, CODES.PROMOTE_400_003());
 
   // Fetch the pending submission and confirm it is what it claims to be.
+  // Private blobs require the token in the Authorization header.
   let pending;
   try {
-    const r = await fetch(u.toString());
+    const r = await fetch(u.toString(), {
+      headers: { authorization: `Bearer ${token}` },
+    });
     if (!r.ok) return send(res, 400, CODES.PROMOTE_400_004());
     pending = await r.json();
   } catch {
@@ -245,7 +253,6 @@ module.exports = async (req, res) => {
       ok: true,
       warning: "approved copy written but pending blob could not be deleted; remove it from the dashboard",
       approved_pathname: stored.pathname || approvedPath,
-      approved_url: stored.url,
       approved_at: approvedAt,
     });
   }
@@ -256,7 +263,6 @@ module.exports = async (req, res) => {
     ok: true,
     action: "approved",
     approved_pathname: stored.pathname || approvedPath,
-    approved_url: stored.url,
     approved_at: approvedAt,
   });
 };

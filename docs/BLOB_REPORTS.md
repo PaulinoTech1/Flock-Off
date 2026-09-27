@@ -1,9 +1,10 @@
 # Historical reports (Vercel Blob) — quarantine model
 
 Text-only, heavily regulated archive of historical Flock contract reports,
-stored as canonical JSON blobs. **Nothing untrusted reaches the public
-archive directly**: submissions land in a quarantine prefix and are published
-only after human review.
+stored as canonical JSON blobs in a **private** Vercel Blob store.
+**Nothing untrusted reaches the public archive directly**: submissions land
+in a quarantine prefix and are published only after human review. Blob URLs
+are never exposed; all content is proxied through the API endpoints.
 
 ## Flow
 

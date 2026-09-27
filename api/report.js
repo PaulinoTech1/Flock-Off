@@ -275,7 +275,7 @@ async function blobPut(pathname, jsonText, token) {
     headers: {
       authorization: `Bearer ${token}`,
       "x-api-version": API_VERSION,
-      "x-vercel-blob-access": "public",
+      "x-vercel-blob-access": "private",
       "x-content-type": "application/json",
       "x-add-random-suffix": "0",
     },

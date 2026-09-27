@@ -57,7 +57,10 @@ module.exports = async (req, res) => {
     let record = null;
     let note = null;
     try {
-      const r = await fetch(b.url);
+      // Private blobs require the token in the Authorization header
+      const r = await fetch(b.url, {
+        headers: { authorization: `Bearer ${token}` },
+      });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const text = await r.text();
       if (text.length > 64 * 1024) throw new Error("body too large");
@@ -67,7 +70,6 @@ module.exports = async (req, res) => {
     }
     items.push({
       pathname: b.pathname,
-      url: b.url,
       size: b.size,
       uploadedAt: b.uploadedAt,
       record,
