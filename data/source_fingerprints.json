@@ -7402,9 +7402,9 @@
   "https://youtube.com/watch?v=vTZA2DP1MNI": {
     "archive": null,
     "content_hash": null,
-    "fetch_status": "thin",
+    "fetch_status": "blocked",
     "fetched_at": "2026-09-27",
-    "final_url": "https://www.youtube.com/watch?v=vTZA2DP1MNI",
+    "final_url": null,
     "simhash": null,
     "snapshot_path": null,
     "text_len": 0,
