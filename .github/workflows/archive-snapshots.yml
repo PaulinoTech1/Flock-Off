@@ -30,6 +30,10 @@ on:
         required: false
         type: boolean
         default: false
+      maintenance:
+        description: "Maintenance task: delete-dry-run or delete-confirm (deletes example.com test pollution)"
+        required: false
+        default: 
 
 jobs:
   archive:
@@ -54,7 +58,33 @@ jobs:
       - name: Run test suite
         run: python3 scripts/flockoff.py test
 
+      - name: Maintenance task
+        if: ${{ inputs.maintenance != '' }}
+        env:
+          ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
+        run: |
+          # Maintenance mode: blob cleanup tasks. Does not run batches.
+          TASK="${{ inputs.maintenance }}"
+          echo "=== Maintenance task: $TASK ==="
+          if [ "$TASK" = "delete-dry-run" ]; then
+            python3 scripts/blob_archive.py delete \
+              --prefix "example.com" \
+              --reason "test pollution cleanup (maintenance dry-run)" \
+              --dry-run
+          elif [ "$TASK" = "delete-confirm" ]; then
+            python3 scripts/blob_archive.py delete \
+              --prefix "example.com" \
+              --reason "test pollution cleanup (maintenance confirmed)" \
+              --yes
+          else
+            echo "Unknown maintenance task: $TASK" >&2
+            echo "Valid: delete-dry-run, delete-confirm" >&2
+            exit 1
+          fi
+          echo "=== Maintenance complete ==="
+
       - name: Refresh fingerprints and archive snapshots
+        if: ${{ inputs.maintenance == '' }}
         env:
           ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
         run: |
