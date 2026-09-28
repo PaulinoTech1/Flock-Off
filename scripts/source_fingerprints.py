@@ -298,9 +298,24 @@ def fingerprint_url(url: str, today: str,
                         accurate_to=today,
                         fetched_at=_fetched_at,
                     )
-                    rec["snapshot_path"] = _ba.put_snapshot(snap)
-                except Exception:
-                    pass
+                    _snap_path = _ba.put_snapshot(snap)
+                    rec["snapshot_path"] = _snap_path
+                    # E_SNAP_FAIL: snapshot build/upload failed loudly.
+                    # put_snapshot returns None on failure (never raises).
+                    rec["snapshot_status"] = "uploaded" if _snap_path else "failed"
+                    if not _snap_path:
+                        import sys as _sys2
+                        print(f"blob_archive: E_SNAP_FAIL: upload returned None "
+                              f"for {key or url} (see stderr warnings above)",
+                              file=_sys2.stderr)
+                except Exception as _e:
+                    import sys as _sys3
+                    import traceback as _tb
+                    print(f"blob_archive: E_SNAP_FAIL: exception during "
+                          f"snapshot build/upload for {key or url}: {_e}",
+                          file=_sys3.stderr)
+                    _tb.print_exc(file=_sys3.stderr)
+                    rec["snapshot_status"] = "failed"
         else:
             rec["fetch_status"] = "thin"
     return rec
@@ -433,7 +448,8 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
     today = datetime.date.today()
     today_s = today.isoformat()
     stats = {"fetched": 0, "ok": 0, "blocked": 0, "error": 0,
-             "non_html": 0, "thin": 0, "skipped": 0}
+             "non_html": 0, "thin": 0, "skipped": 0,
+             "snap_attempted": 0, "snap_uploaded": 0, "snap_failed": 0}
     seen: set[str] = set()
     for agency_id, title, url, key in iter_citations(data):
         if only_keys is not None and key not in only_keys:
@@ -461,7 +477,22 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
         fps[key] = rec
         stats["fetched"] += 1
         stats[rec["fetch_status"]] = stats.get(rec["fetch_status"], 0) + 1
+        # Snapshot accounting: loud counters for blob upload outcomes.
+        _snap_status = rec.get("snapshot_status")
+        if _snap_status:
+            stats["snap_attempted"] += 1
+            if _snap_status == "uploaded":
+                stats["snap_uploaded"] += 1
+            else:
+                stats["snap_failed"] += 1
         print(f"  [{rec['fetch_status']}] {agency_id}: {url[:70]}", flush=True)
+    # End-of-run snapshot summary: never silent about upload outcomes.
+    print(f"\nSnapshot summary: attempted={stats['snap_attempted']} "
+          f"uploaded={stats['snap_uploaded']} "
+          f"failed={stats['snap_failed']}", flush=True)
+    if stats["snap_failed"] > 0:
+        print(f"WARNING: {stats['snap_failed']} snapshot(s) failed to upload. "
+              f"See E_SNAP_FAIL messages above.", flush=True)
     return stats
 
 

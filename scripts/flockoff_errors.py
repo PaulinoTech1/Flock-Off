@@ -79,6 +79,22 @@ REGISTRY: dict[str, tuple[str, str, str]] = {
         "source URL has an unexpected scheme",
         "fix the URL in data/agencies.json (http/https only)",
     ),
+    # --- blob snapshot archive ----------------------------------------------
+    "E_SNAP_FAIL": (
+        "error",
+        "source snapshot build or blob upload failed",
+        "check the E_SNAP_FAIL stderr lines for the source key and cause; "
+        "common causes: ARCHIVE_BLOB_READ_WRITE_TOKEN missing/invalid, "
+        "blob API error, snapshot integrity failure. "
+        "See docs/ERRORS.md#e_snap_fail",
+    ),
+    "E_VERIFY_FAIL": (
+        "error",
+        "blob archive verification step failed",
+        "the blob list command errored or returned zero snapshots for a run "
+        "that reported uploads; check token, API status, and store. "
+        "See docs/ERRORS.md#e_verify_fail",
+    ),
     # --- upstream discovery feeds (weekly monitor) --------------------------
     "W_UPSTREAM_FF": (
         "warning",

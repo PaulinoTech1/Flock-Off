@@ -79,6 +79,25 @@ article cited twice.
 A source URL uses a scheme other than http/https.
 **Fix:** correct the URL in `data/agencies.json`.
 
+## Blob snapshot archive
+
+### E_SNAP_FAIL
+A source snapshot failed to build or upload to the blob archive. The
+failing source key and cause are printed to stderr. Common causes:
+`ARCHIVE_BLOB_READ_WRITE_TOKEN` missing or invalid (must be a repository
+secret, not an environment secret), blob API errors, or snapshot
+integrity verification failure.
+**Fix:** check the stderr lines for the specific source and cause; verify
+the token is set as a repository secret under Settings > Secrets and
+variables > Actions.
+
+### E_VERIFY_FAIL
+The archive workflow's verification step failed: either the blob list
+command errored, or it returned zero snapshots for a run that reported
+uploads. A listing failure is never reported as a clean zero.
+**Fix:** check the token, the Vercel blob API status, and that the token
+belongs to the store being inspected.
+
 ## Upstream discovery feeds
 
 ### W_UPSTREAM_FF
