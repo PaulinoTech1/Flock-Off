@@ -323,11 +323,66 @@ def list_snapshots(date: str | None = None, limit: int = 100,
     return json.loads(body)
 
 
+DELETION_LOG = os.path.join(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))), "data", "blob_deletions.jsonl")
+
+
+def _log_deletion(pathname: str, reason: str, source_key: str | None = None):
+    """Append a deletion record to the audit trail. Never raises."""
+    try:
+        os.makedirs(os.path.dirname(DELETION_LOG), exist_ok=True)
+        record = {
+            "deleted_at": _utcnow_iso(),
+            "pathname": pathname,
+            "source_key": source_key,
+            "reason": reason,
+            "deleted_by": os.environ.get("USER", "manual"),
+        }
+        with open(DELETION_LOG, "a", encoding="utf-8") as f:
+            f.write(json.dumps(record) + "\n")
+    except Exception as e:
+        _warn(f"failed to write deletion audit log: {e}")
+
+
+def delete_snapshot(pathname: str, token=None, reason: str = "") -> bool:
+    """Delete a single snapshot from the blob store. Returns True on
+    success. Logs the deletion to the audit trail. Raises on API errors
+    (unlike put_snapshot, deletion failures are never silent)."""
+    token = token or _token()
+    if not token:
+        raise ValueError(f"{TOKEN_ENV} is not set")
+    if not reason:
+        raise ValueError("deletion reason is required for audit trail")
+
+    # Fetch source_key for the audit trail before deleting
+    source_key = None
+    try:
+        snap = get_snapshot_by_path(pathname, token)
+        if snap:
+            source_key = snap.get("source_key")
+    except Exception:
+        pass  # audit trail gets pathname only; deletion still proceeds
+
+    status, body = _api_request(
+        "DELETE", f"/{urllib.parse.quote(pathname, safe='/')}", token)
+    if status not in (200, 204):
+        raise RuntimeError(
+            f"blob DELETE failed for {pathname}: HTTP {status}: {body[:200]}")
+
+    _log_deletion(pathname, reason, source_key)
+    return True
+
+
 def main():
     """CLI:
       get <pathname> [output_file]   download + verify a snapshot
       verify <file>                  verify a local snapshot file
       list [--date YYYY-MM-DD]        list snapshot pathnames
+      delete --path <pathname> --reason <text> [--yes]
+                                     delete one snapshot (audit-logged)
+      delete --prefix <text> --reason <text> [--yes] [--dry-run]
+                                     delete all snapshots whose pathname
+                                     contains <text> (audit-logged)
     """
     if len(sys.argv) < 2:
         print("usage: blob_archive.py {get|verify|list} ...", file=sys.stderr)
@@ -364,6 +419,68 @@ def main():
             if data.get("hasMore"):
                 print(f"... more available (cursor: {data.get('cursor')})",
                       file=sys.stderr)
+        elif cmd == "delete":
+            import argparse as _ap
+            _p = _ap.ArgumentParser(prog="blob_archive.py delete")
+            _p.add_argument("--path", help="exact blob pathname to delete")
+            _p.add_argument("--prefix",
+                            help="delete all pathnames containing this text")
+            _p.add_argument("--reason", required=True,
+                            help="reason for deletion (audit trail)")
+            _p.add_argument("--yes", action="store_true",
+                            help="confirm deletion (required)")
+            _p.add_argument("--dry-run", action="store_true",
+                            help="list what would be deleted, do nothing")
+            _a = _p.parse_args(sys.argv[2:])
+            if not _a.path and not _a.prefix:
+                print("delete: need --path or --prefix", file=sys.stderr)
+                sys.exit(2)
+            if _a.path and _a.prefix:
+                print("delete: use --path or --prefix, not both",
+                      file=sys.stderr)
+                sys.exit(2)
+            # Resolve targets
+            targets = []
+            if _a.path:
+                targets = [_a.path]
+            else:
+                data = list_snapshots()
+                # Paginate to get all blobs
+                while True:
+                    for b in data.get("blobs", []):
+                        pn = b.get("pathname", "")
+                        if _a.prefix in pn:
+                            targets.append(pn)
+                    if not data.get("hasMore"):
+                        break
+                    data = list_snapshots(cursor=data.get("cursor"))
+            if not targets:
+                print("delete: no matching snapshots found")
+                sys.exit(0)
+            print(f"delete: {len(targets)} snapshot(s) match:")
+            for t in targets[:20]:
+                print(f"  {t}")
+            if len(targets) > 20:
+                print(f"  ... and {len(targets) - 20} more")
+            if _a.dry_run:
+                print("dry-run: nothing deleted")
+                sys.exit(0)
+            if not _a.yes:
+                print("delete: add --yes to confirm deletion",
+                      file=sys.stderr)
+                sys.exit(2)
+            _ok, _fail = 0, 0
+            for t in targets:
+                try:
+                    delete_snapshot(t, reason=_a.reason)
+                    print(f"  deleted: {t}")
+                    _ok += 1
+                except Exception as e:
+                    print(f"  FAILED: {t}: {e}", file=sys.stderr)
+                    _fail += 1
+            print(f"delete complete: {_ok} deleted, {_fail} failed")
+            print(f"audit trail: {DELETION_LOG}")
+            sys.exit(0 if _fail == 0 else 1)
         else:
             print(f"unknown command: {cmd}", file=sys.stderr)
             sys.exit(2)
