@@ -133,7 +133,7 @@ jobs:
           echo "snapshots uploaded successfully."
 
       - name: Verify blob uploads
-        if: always()
+        if: ${{ always() && inputs.maintenance == '' }}
         env:
           ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
         run: |
