@@ -486,6 +486,18 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
             else:
                 stats["snap_failed"] += 1
         print(f"  [{rec['fetch_status']}] {agency_id}: {url[:70]}", flush=True)
+        # Track per-source hit/miss for batch reporting.
+        # Hit (1): fetched ok AND snapshot uploaded. Miss (0): anything else.
+        hit = 1 if (rec['fetch_status'] == 'ok' and rec.get('snapshot_status') == 'uploaded') else 0
+        if 'hitmiss' not in stats:
+            stats['hitmiss'] = []
+        stats['hitmiss'].append({
+            'source_key': key,
+            'agency_id': agency_id,
+            'url': url,
+            'fetch_status': rec['fetch_status'],
+            'hit': hit,
+        })
     # End-of-run snapshot summary: never silent about upload outcomes.
     print(f"\nSnapshot summary: attempted={stats['snap_attempted']} "
           f"uploaded={stats['snap_uploaded']} "
@@ -493,6 +505,15 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
     if stats["snap_failed"] > 0:
         print(f"WARNING: {stats['snap_failed']} snapshot(s) failed to upload. "
               f"See E_SNAP_FAIL messages above.", flush=True)
+    # Write per-source hit/miss report for workflow consumption.
+    if 'hitmiss' in stats:
+        import json as _json
+        with open('/tmp/hitmiss.json', 'w') as _f:
+            _json.dump(stats['hitmiss'], _f, indent=2)
+        # Also print compact hit/miss list to stdout.
+        print("\nHit/miss report (1=hit, 0=miss):", flush=True)
+        for _r in stats['hitmiss']:
+            print(f"  {_r['hit']} {_r['source_key'][:80]}", flush=True)
     return stats
 
 
