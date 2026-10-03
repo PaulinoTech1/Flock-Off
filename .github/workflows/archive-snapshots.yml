@@ -34,6 +34,10 @@ on:
         description: "Maintenance task: delete-dry-run or delete-confirm (deletes example.com test pollution)"
         required: false
         default: 
+      keys:
+          description: "Comma-separated source_keys to archive (skips batch selection)"
+          required: false
+          default: ""
 
 jobs:
   archive:
