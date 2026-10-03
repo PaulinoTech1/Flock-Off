@@ -1,7 +1,7 @@
 {
-  "agencies_sha256": "7db59c39cfa04f07e5c879a70b4d4c2c7de63b3fbc4078bdfd05ce159bf6a6bb",
-  "timestamp": "2026-10-03T19:25:11+00:00",
-  "commit": null,
-  "signer": null,
-  "signature": null
+  "agencies_sha256": "29773ebcac4acb63363b1a3f847c2ade4c2ef2e3e9b26b121259d662b56767fc",
+  "timestamp": "2026-10-03T19:58:17+00:00",
+  "commit": "36e44644",
+  "signer": "SHA256:pYEX5C8BJbFD1+7i9B1fzd+rjY4QHfcfTHM6QKW6Dng",
+  "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgzkPLbbYAZxWrD750sO/JSnes64\n4ZTKe/Quh/t+GpWlEAAAARZmxvY2stb2ZmLWRhdGFzZXQAAAAAAAAABnNoYTUxMgAAAFMA\nAAALc3NoLWVkMjU1MTkAAABAjKDxv467YYSL31Ju+6HwPsjvRZrUOsVqmO7POg6Jgl4fQE\nTOf0MgAN6qBoQfGVtIsdavn1kC0WtjbyHf7OQjCA==\n-----END SSH SIGNATURE-----\n"
 }
