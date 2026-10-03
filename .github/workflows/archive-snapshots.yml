@@ -35,9 +35,9 @@ on:
         required: false
         default: 
       keys:
-          description: "Comma-separated source_keys to archive (skips batch selection)"
-          required: false
-          default: ""
+        description: "Comma-separated source_keys to archive (skips batch selection)"
+        required: false
+        default: ""
 
 jobs:
   archive:
@@ -109,10 +109,15 @@ jobs:
           for i in $(seq 1 "$NUM_BATCHES"); do
             echo ""
             echo "=============== BATCH $i/$NUM_BATCHES ==============="
-            if [ -n "${{ inputs.keys }}" ]; then
-          python3 scripts/flockoff.py fingerprints refresh --keys "${{ inputs.keys }}"
-          elif python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE"; then
-
+            if [ -n "${{ inputs.keys }}" ] && [ "$i" -eq 1 ]; then
+              echo "Using explicit source keys (skipping batch selection)"
+              if python3 scripts/flockoff.py fingerprints refresh --keys "${{ inputs.keys }}"; then
+                echo "BATCH $i: SUCCESS"
+              else
+                echo "BATCH $i: FAILED"
+                FAILED_BATCHES="$FAILED_BATCHES $i"
+              fi
+            elif python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE"; then
               echo "BATCH $i: SUCCESS"
             else
               echo "BATCH $i: FAILED"
