@@ -9,15 +9,15 @@ are never exposed; all content is proxied through the API endpoints.
 ## Flow
 
 ```
-submitter ──POST /api/report (REPORT_WRITE_KEY)──> reports-pending/<agency>/<stamp>-<rand>.json
-reviewer  ──GET  /api/pending (REPORT_ADMIN_KEY)──> queue of submissions with full records
-reviewer  ──POST /api/promote (REPORT_ADMIN_KEY)──> reports/<agency>/<file>.json  (status: approved)
+submitter ──POST /api/report (FLOCKOFF_REPORT_WRITE_KEY)──> reports-pending/<agency>/<stamp>-<rand>.json
+reviewer  ──GET  /api/pending (FLOCKOFF_REPORT_ADMIN_KEY)──> queue of submissions with full records
+reviewer  ──POST /api/promote (FLOCKOFF_REPORT_ADMIN_KEY)──> reports/<agency>/<file>.json  (status: approved)
                                                          + pending blob deleted
 public    ──GET  /api/history ──> lists reports/ only (approved records)
 ```
 
-- `REPORT_WRITE_KEY` gates **submission**. Share only with trusted submitters.
-- `REPORT_ADMIN_KEY` gates **review and promotion**. Keep it to yourself; it
+- `FLOCKOFF_REPORT_WRITE_KEY` gates **submission**. Share only with trusted submitters.
+- `FLOCKOFF_REPORT_ADMIN_KEY` gates **review and promotion**. Keep it to yourself; it
   must differ from the write key so submitters cannot approve their own reports.
 - Both keys are mandatory. If either is unset, its endpoint fails closed
   (503/401).
@@ -38,7 +38,7 @@ public    ──GET  /api/history ──> lists reports/ only (approved records)
   patterns (`<script`, `javascript:`, event handlers, `eval(`, etc.).
   Submissions containing these are rejected with 400.
 - Deduplication: content is hashed with Argon2id (server pepper from
-  REPORT_WRITE_KEY). Before storing, pending blobs are checked for matching
+  FLOCKOFF_REPORT_WRITE_KEY). Before storing, pending blobs are checked for matching
   content hash. Duplicates are rejected with 409.
 - The stored blob is re-serialized server-side from validated fields only
   (`status`, `agency_id`, `source_url`, `downloaded_at`, `description`,
@@ -138,8 +138,8 @@ first). The drawer renders these; it never sees the quarantine prefix.
 | Variable              | Purpose                                  |
 |-----------------------|------------------------------------------|
 | `REPORTS_BLOB_READ_WRITE_TOKEN` | Blob store access (read/write/delete)  |
-| `REPORT_WRITE_KEY`    | Shared submitter secret                  |
-| `REPORT_ADMIN_KEY`    | Reviewer secret (promotion + queue)       |
+| `FLOCKOFF_REPORT_WRITE_KEY`    | Shared submitter secret                  |
+| `FLOCKOFF_REPORT_ADMIN_KEY`    | Reviewer secret (promotion + queue)       |
 
 ## Invariants
 

@@ -15,7 +15,7 @@ const { argon2, randomBytes, createHash, timingSafeEqual: nodeTimingSafeEqual } 
  *  - REGULATED ENTRY: strict schema validation; agency_id must be a known
  *    tracker record (list injected at deploy time); source_url,
  *    downloaded_at, and description are mandatory on every report.
- *  - AUTHENTICATED: REPORT_WRITE_KEY is mandatory. Requests without a
+ *  - AUTHENTICATED: FLOCKOFF_REPORT_WRITE_KEY is mandatory. Requests without a
  *    matching x-report-key are rejected (constant-time compare).
  *  - RATE LIMITED: 10 writes / subnet-bucket / hour, 500 writes / day globally
  *    (in-memory per function instance: best-effort on serverless, documented
@@ -33,7 +33,7 @@ const { argon2, randomBytes, createHash, timingSafeEqual: nodeTimingSafeEqual } 
  *    endpoint exists. Promotion copies to reports/ and deletes the pending
  *    blob; the approved copy is never mutated.
  *
- * Requires REPORTS_BLOB_READ_WRITE_TOKEN and REPORT_WRITE_KEY env (set in the Vercel
+ * Requires REPORTS_BLOB_READ_WRITE_TOKEN and FLOCKOFF_REPORT_WRITE_KEY env (set in the Vercel
  * dashboard; the function never logs them).
  */
 
@@ -350,7 +350,7 @@ module.exports = async (req, res) => {
   const token = process.env.REPORTS_BLOB_READ_WRITE_TOKEN;
   if (!token) return send(res, 503, CODES.HISTORY_503_001());
 
-  const writeKey = process.env.REPORT_WRITE_KEY;
+  const writeKey = process.env.FLOCKOFF_REPORT_WRITE_KEY;
   if (!writeKey) return send(res, 503, CODES.REPORT_503_001());
   if (!timingSafeEqual(req.headers["x-report-key"], writeKey)) {
     return send(res, 401, CODES.REPORT_401_001());
@@ -408,7 +408,7 @@ module.exports = async (req, res) => {
   const canonicalJson = JSON.stringify(canonicalBody);
 
   // Deduplication: hash with Argon2id + server pepper, check pending blobs.
-  // Uses REPORT_WRITE_KEY as pepper (already required, never logged).
+  // Uses FLOCKOFF_REPORT_WRITE_KEY as pepper (already required, never logged).
   let contentHash;
   try {
     contentHash = await hashContent(canonicalJson, writeKey);

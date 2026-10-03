@@ -10,8 +10,8 @@ Format: `{ENDPOINT}_{HTTP_STATUS}_{SEQ}`
 | Code | HTTP | Meaning | Action |
 |------|------|---------|--------|
 | PROMOTE_405_001 | 405 | Wrong method | Use POST with JSON body `{url, action}` |
-| PROMOTE_503_001 | 503 | Missing env config | Set REPORT_ADMIN_KEY and REPORTS_BLOB_READ_WRITE_TOKEN in Vercel Production, redeploy |
-| PROMOTE_401_001 | 401 | Bad admin key | Check x-admin-key header matches REPORT_ADMIN_KEY |
+| PROMOTE_503_001 | 503 | Missing env config | Set FLOCKOFF_REPORT_ADMIN_KEY and REPORTS_BLOB_READ_WRITE_TOKEN in Vercel Production, redeploy |
+| PROMOTE_401_001 | 401 | Bad admin key | Check x-admin-key header matches FLOCKOFF_REPORT_ADMIN_KEY |
 | PROMOTE_415_001 | 415 | Wrong content type | Set Content-Type: application/json |
 | PROMOTE_400_001 | 400 | Unreadable body | Retry with valid JSON payload |
 | PROMOTE_400_002 | 400 | Malformed JSON | Validate payload before sending |
@@ -26,8 +26,8 @@ Format: `{ENDPOINT}_{HTTP_STATUS}_{SEQ}`
 | Code | HTTP | Meaning | Action |
 |------|------|---------|--------|
 | REPORT_405_001 | 405 | Wrong method | Use POST with JSON body |
-| REPORT_503_001 | 503 | Missing env config | Set REPORT_WRITE_KEY and REPORTS_BLOB_READ_WRITE_TOKEN in Vercel Production, redeploy |
-| REPORT_401_001 | 401 | Bad write key | Check x-report-key header matches REPORT_WRITE_KEY |
+| REPORT_503_001 | 503 | Missing env config | Set FLOCKOFF_REPORT_WRITE_KEY and REPORTS_BLOB_READ_WRITE_TOKEN in Vercel Production, redeploy |
+| REPORT_401_001 | 401 | Bad write key | Check x-report-key header matches FLOCKOFF_REPORT_WRITE_KEY |
 | REPORT_415_001 | 415 | Wrong content type | Set Content-Type: application/json |
 | REPORT_429_001 | 429 | Subnet rate limited | Wait 1 hour; limit is 10/hour per /24 subnet |
 | REPORT_429_002 | 429 | Daily cap hit | Wait until UTC midnight; investigate if recurring |
@@ -44,7 +44,7 @@ Format: `{ENDPOINT}_{HTTP_STATUS}_{SEQ}`
 | Code | HTTP | Meaning | Action |
 |------|------|---------|--------|
 | PENDING_405_001 | 405 | Wrong method | Use GET with x-admin-key header |
-| PENDING_503_001 | 503 | Missing env config | Set REPORT_ADMIN_KEY and REPORTS_BLOB_READ_WRITE_TOKEN in Vercel Production, redeploy |
+| PENDING_503_001 | 503 | Missing env config | Set FLOCKOFF_REPORT_ADMIN_KEY and REPORTS_BLOB_READ_WRITE_TOKEN in Vercel Production, redeploy |
 | PENDING_401_001 | 401 | Bad admin key | Check x-admin-key header |
 | PENDING_502_001 | 502 | Blob list failed | Check REPORTS_BLOB_READ_WRITE_TOKEN and Vercel Blob status |
 

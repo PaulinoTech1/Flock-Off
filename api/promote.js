@@ -10,8 +10,8 @@ const { CODES } = require("./_errors.js");
  * All blobs are private. URLs are only used as identifiers; content is
  * always fetched with the blob token, never via public URLs.
  *
- * Auth: REPORT_ADMIN_KEY is mandatory (constant-time compare against the
- * x-admin-key header). This key must differ from REPORT_WRITE_KEY: submitters
+ * Auth: FLOCKOFF_REPORT_ADMIN_KEY is mandatory (constant-time compare against the
+ * x-admin-key header). This key must differ from FLOCKOFF_REPORT_WRITE_KEY: submitters
  * must not be able to approve their own reports.
  *
  * Body: { "url": "<pending blob url>", "action": "approve" | "reject" }
@@ -161,7 +161,7 @@ module.exports = async (req, res) => {
     return send(res, 405, CODES.PROMOTE_405_001());
   }
   const token = process.env.REPORTS_BLOB_READ_WRITE_TOKEN;
-  const adminKey = process.env.REPORT_ADMIN_KEY;
+  const adminKey = process.env.FLOCKOFF_REPORT_ADMIN_KEY;
   if (!token || !adminKey) return send(res, 503, CODES.PROMOTE_503_001());
   if (!timingSafeEqual(req.headers["x-admin-key"], adminKey)) {
     return send(res, 401, CODES.PROMOTE_401_001());

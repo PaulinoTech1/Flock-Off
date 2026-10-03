@@ -7,7 +7,7 @@ const { CODES } = require("./_errors.js");
  * A body that fails to fetch or parse is returned with record: null rather
  * than failing the whole listing.
  *
- * Auth: REPORT_ADMIN_KEY is mandatory (constant-time compare against the
+ * Auth: FLOCKOFF_REPORT_ADMIN_KEY is mandatory (constant-time compare against the
  * x-admin-key header).
  */
 
@@ -35,7 +35,7 @@ module.exports = async (req, res) => {
     return send(res, 405, CODES.PENDING_405_001());
   }
   const token = process.env.REPORTS_BLOB_READ_WRITE_TOKEN;
-  const adminKey = process.env.REPORT_ADMIN_KEY;
+  const adminKey = process.env.FLOCKOFF_REPORT_ADMIN_KEY;
   if (!token || !adminKey) return send(res, 503, CODES.PENDING_503_001());
   if (!timingSafeEqual(req.headers["x-admin-key"], adminKey)) {
     return send(res, 401, CODES.PENDING_401_001());

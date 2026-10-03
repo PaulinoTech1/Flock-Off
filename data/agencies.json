@@ -13746,6 +13746,42 @@
       "confidence": "medium",
       "decision_summary": null,
       "transparency_portal": null
+    },
+    {
+      "id": "ny-tompkins-county-so",
+      "agency": "Tompkins County Sheriff's Office",
+      "agency_type": "county_sheriff",
+      "city": "Ithaca",
+      "state": "NY",
+      "status": "terminated",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": "2026-05-28",
+      "renewal_date": null,
+      "decision_date": "2026-04-14",
+      "decision_summary": "Tompkins County Legislature voted 12-1 on April 14, 2026 to terminate the county's Flock Safety contract before its May 28 auto-renewal. Only Legislator Brown (R-Newfield, Enfield) opposed. Reasons: community concerns, lack of confidence in the vendor, inconsistency with county values. The Sheriff has submitted a GIVE grant application for the next cycle that does not involve Flock. County-level contract, separate from the City of Ithaca PD.",
+      "confidence": "high",
+      "last_verified": "2026-10-03",
+      "notes": "County-level record; the City of Ithaca PD (ny-ithaca-pd) terminated separately on 2026-03-04. An April 7 motion directed staff to draft the termination resolution; the April 14 special meeting passed it 12-1.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Highlights of the 4/7/26 and 4/14/26 Legislature meetings (Tompkins County, official)",
+          "url": "https://www.tompkinscountyny.gov/News-articles/Highlights-of-the-4726-regular-and-41426-special-Tompkins-County-Legislature-meetings",
+          "date": "2026-04-14",
+          "verified": true,
+          "source_key": "https://www.tompkinscountyny.gov/News-articles/Highlights-of-the-4726-regular-and-41426-special-Tompkins-County-Legislature-meetings"
+        },
+        {
+          "title": "Tompkins County ends Flock Safety camera contract in 12-1 vote (WYDC TV)",
+          "url": "https://www.wydc-tv.com/news/local/tompkins-county-ends-flock-safety-camera-contract-in-12-1-vote/article_505c13ab-d243-401e-84ce-019f70dd0485.html",
+          "date": "2026-04-14",
+          "verified": false,
+          "source_key": "https://www.wydc-tv.com/news/local/tompkins-county-ends-flock-safety-camera-contract-in-12-1-vote/article_505c13ab-d243-401e-84ce-019f70dd0485.html",
+          "notes": "Domain pending verified_news approval; usable as lead, not as citation toward the verified bar."
+        }
+      ]
     }
   ]
 }

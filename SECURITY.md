@@ -36,9 +36,9 @@ limited to the map tile and geocoding providers and is disclosed in the
 UI (Overpass API, OpenStreetMap tiles, Nominatim, OSRM).
 
 **Writing requires keys.** Report submission (`/api/report`) requires
-`REPORT_WRITE_KEY` (constant-time compared `x-report-key` header).
+`FLOCKOFF_REPORT_WRITE_KEY` (constant-time compared `x-report-key` header).
 Quarantine review (`/api/promote`, `/api/pending`) requires
-`REPORT_ADMIN_KEY`. If either key is unset in the environment, the
+`FLOCKOFF_REPORT_ADMIN_KEY`. If either key is unset in the environment, the
 endpoint answers 503 and changes nothing. There is no guest or fallback
 write path.
 
