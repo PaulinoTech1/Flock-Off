@@ -109,7 +109,10 @@ jobs:
           for i in $(seq 1 "$NUM_BATCHES"); do
             echo ""
             echo "=============== BATCH $i/$NUM_BATCHES ==============="
-            if python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE"; then
+            if [ -n "${{ inputs.keys }}" ]; then
+          python3 scripts/flockoff.py fingerprints refresh --keys "${{ inputs.keys }}"
+          elif python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE"; then
+
               echo "BATCH $i: SUCCESS"
             else
               echo "BATCH $i: FAILED"
