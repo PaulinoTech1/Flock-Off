@@ -144,6 +144,43 @@ jobs:
           echo "If no blob_archive WARNING lines appeared above,"
           echo "snapshots uploaded successfully."
 
+      - name: Report per-source hit/miss
+        if: always()
+        run: |
+          echo "=== Per-source hit/miss report ==="
+          echo "1=hit (archived), 0=miss (blocked/error/thin)"
+          echo ""
+          if [ -f /tmp/hitmiss.json ]; then
+            python3 -c "
+          import json
+          with open('/tmp/hitmiss.json') as f:
+              results = json.load(f)
+          hits = sum(1 for r in results if r['hit'] == 1)
+          misses = len(results) - hits
+          print(f'Total: {len(results)}, Hits: {hits}, Misses: {misses}')
+          print('')
+          for r in results:
+              status = 'HIT ' if r['hit'] == 1 else 'MISS'
+              print(f\"[{status}] {r['fetch_status']:8} {r['source_key'][:70]}\")
+          print('')
+          # Blocked sources list for manual scraping
+          blocked = [r for r in results if r['fetch_status'] == 'blocked']
+          if blocked:
+              print(f'=== BLOCKED SOURCES ({len(blocked)}) ===')
+              for r in blocked:
+                  print(r['source_key'])
+              # Save to file for download
+              with open('/tmp/blocked_sources.txt', 'w') as f:
+                  for r in blocked:
+                      f.write(r['source_key'] + '\n')
+              print('')
+              print('Blocked list saved to /tmp/blocked_sources.txt')
+          "
+          else
+            echo "No hit/miss report found (/tmp/hitmiss.json missing)"
+            echo "This happens when using --keys mode or if refresh did not run"
+          fi
+
       - name: Verify blob uploads
         if: ${{ always() && inputs.maintenance == '' }}
         env:
