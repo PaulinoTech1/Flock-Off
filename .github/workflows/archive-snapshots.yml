@@ -93,8 +93,10 @@ jobs:
           ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
         run: |
           # Batch mode: run N batches of M sources each.
-          # Fresh fingerprints are skipped, so each batch advances
-          # through the next M stale sources. Failed batches are
+          # Non-ok sources (blocked/error/non_html/thin) are quarantined
+          # (config fingerprints.quarantine_days), so each batch advances
+          # through the next M sources instead of re-fetching the same
+          # dead sources every run. Failed batches are
           # recorded and reported at the end without stopping the run.
           BATCH_SIZE="${{ inputs.max_sources }}"
           BATCH_SIZE=${BATCH_SIZE:-25}
@@ -223,5 +225,8 @@ jobs:
             echo "E_VERIFY_FAIL: zero snapshots listed for today. If the refresh"
             echo "reported uploads, the listing and upload are inconsistent."
             echo "This is a failure, not a clean zero."
+            exit 1
+          fi
+
             exit 1
           fi
