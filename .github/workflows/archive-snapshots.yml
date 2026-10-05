@@ -227,6 +227,3 @@ jobs:
             echo "This is a failure, not a clean zero."
             exit 1
           fi
-
-            exit 1
-          fi
