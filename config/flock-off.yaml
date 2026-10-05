@@ -28,9 +28,11 @@ urls:
   finding_flock_tracker: https://www.findingflock.com/learn/flock-contract-cancellations
   atlas_csv: https://www.atlasofsurveillance.org/download.csv?vendor=Flock+Safety
 
-# Polite, honest fetching. One shared identity for every script that touches
-# someone else's server. Never evade bot protection: blocked pages are
-# recorded as "blocked" and excluded, not retried through disguises.
+# Polite fetching via scripts/fetch_client.py: a browser-like client (Chrome
+# TLS impersonation where curl_cffi is installed, stdlib fallback otherwise)
+# so sites don't 403 us for looking like a script. Presented bot challenges
+# are still recorded as "blocked" and excluded, never evaded or retried
+# through disguises. One shared session per run; honest delays always.
 fetch:
   user_agent: "Flock-Off/1.0 (+https://flock-off.vercel.app) citation-audit"
   delay_seconds: 1.5
@@ -70,6 +72,13 @@ fingerprints:
   near_dup_distance: 3    # hamming distance (of 64) at or below: near-duplicate
   update_distance: 8      # hamming distance at or above: material rewrite
   max_age_days: 60        # refresh entries older than this
+  # Non-ok sources are quarantined instead of retried every run.
+  # Prevents the archiver from re-fetching the same dead sources forever.
+  quarantine_days:
+    blocked: 30           # bot-challenged: retry monthly, never evade
+    error: 7              # transient fetch failure: retry weekly
+    non_html: 30          # content type unlikely to change
+    thin: 30              # page may grow, but not overnight
 
 # Weekly monitor windows and pacing.
 monitor:
@@ -381,7 +390,7 @@ classify:
   unverified:
     # Advocacy organizations: reputable, but advocacy. Leads, not citations.
     # Social / video / self-publishing platforms.
-    # Aggregators and AI-generated summaries.
+    # Aggregators (AI-generated summaries are excluded entirely, not listed here).
     # Activist / personal blogs.
     # Unknown or unverifiable outlets (revisit if they establish a masthead).
     - aclu-wi.org  # advocacy
@@ -391,7 +400,6 @@ classify:
     - atlasofsurveillance.org  # EFF: approved discovery feed, records are leads.
     - bellevilleareaindependent.com  # unconfirmed community paper
     - brief.news
-    - citizenportal.ai
     - connect-clarksburg.com  # unconfirmed local
     - dankennedy.net
     - deflockmonroe.com
@@ -450,4 +458,12 @@ classify:
     - newsini.com  # aggregator
     - radiofreehubcity.com  # indie outlet, editorial bar unconfirmed
     - squatchrocks.com  # blog
-    - summed.news  # AI summaries
+
+  excluded:
+    # AI-generated summaries. Not citations, not leads, not invalid sources:
+    # disregarded entirely. Known weakness, explicitly not handled: no
+    # editorial accountability, hallucination/fabrication risk on dates, vote
+    # counts, and quotes, no corrections process. Policy: Boss 2026-10-04.
+    - citizenportal.ai
+    - summed.news
+    - openutah.org  # AI-generated meeting summaries

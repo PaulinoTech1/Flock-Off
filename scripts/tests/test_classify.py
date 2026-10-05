@@ -33,6 +33,14 @@ class TestClassify(unittest.TestCase):
         ok, reason = cs.classify("https://totally-random-blog.example/")
         self.assertEqual((ok, reason), (False, "unverified-unlisted"))
 
+    def test_ai_summaries_excluded(self):
+        # Boss policy 2026-10-04: AI-generated summaries are excluded
+        # entirely, not usable even as leads.
+        ok, reason = cs.classify("https://citizenportal.ai/articles/123")
+        self.assertEqual((ok, reason), (False, "excluded"))
+        ok, reason = cs.classify("https://summed.news/article/xyz")
+        self.assertEqual((ok, reason), (False, "excluded"))
+
     def test_counts(self):
         # Updated 2026-09-26: Wave 2 domain triage (TX/CA/CO/AZ/WA/OR/MO/KS/LA/OK
         # research wave) added 62 verified-news, 30 verified-primary, 5 unverified.
@@ -40,9 +48,13 @@ class TestClassify(unittest.TestCase):
         # research wave) added 18 verified-news, 20 verified-primary, 11 unverified.
         # Updated 2026-09-26: territory tier approvals (Boss decision) promoted
         # elnuevodia.com and stjohntradewinds.com to verified-news.
+        # Updated 2026-10-04: AI-summary domains (citizenportal.ai, summed.news)
+        # moved from unverified to the new excluded tier (Boss policy).
+        # Updated 2026-10-04: openutah.org added (AI-generated meeting summaries).
         self.assertEqual(len(cs.VERIFIED_NEWS()), 197)
         self.assertEqual(len(cs.VERIFIED_PRIMARY()), 83)
-        self.assertEqual(len(cs.UNVERIFIED()), 65)
+        self.assertEqual(len(cs.UNVERIFIED()), 63)
+        self.assertEqual(len(cs.EXCLUDED()), 3)
 
 
 class TestStampSource(unittest.TestCase):
@@ -98,3 +110,33 @@ class TestDatasetConsistency(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestExcludedDomains(unittest.TestCase):
+    """AI-generated summaries are excluded entirely: a citation on an
+    excluded domain is a hard fail, same as a feed-domain citation
+    (Boss policy 2026-10-04, docs/METHODOLOGY.md)."""
+
+    @classmethod
+    def setUpClass(cls):
+        with open(os.path.join(REPO_ROOT := os.path.dirname(
+                os.path.dirname(os.path.dirname(
+                    os.path.abspath(__file__)))),
+                "data", "agencies.json"), encoding="utf-8") as f:
+            cls.data = json.load(f)["agencies"]
+
+    @staticmethod
+    def _host(url):
+        import urllib.parse
+        try:
+            return urllib.parse.urlparse(url).netloc.lower().replace("www.", "")
+        except Exception:
+            return ""
+
+    def test_no_excluded_domain_cited(self):
+        bad = []
+        for a in self.data:
+            for s in a.get("sources") or []:
+                if self._host(s.get("url", "")) in cs.EXCLUDED():
+                    bad.append((a["id"], s["url"]))
+        self.assertEqual(bad, [], f"excluded-domain citations: {bad}")

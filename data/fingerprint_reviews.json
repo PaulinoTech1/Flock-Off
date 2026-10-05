@@ -376,5 +376,65 @@
     "note": "Drift d=10 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
+  },
+  "https://epcsheriffsoffice.com/flock-safety-cameras-assist-in-arrest-of-attempted-murder-suspect": {
+    "decision": "accept",
+    "note": "Drift reviewed 2026-10-04: re-fetched live page; still the El Paso County Sheriff's Office release on Flock cameras assisting an arrest (title and Flock/arrest confirmed). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://reclaimthenet.org/norman-oklahoma-flock-license-plate-readers-county-sheriff": {
+    "decision": "accept",
+    "note": "Drift reviewed 2026-10-04: re-fetched live page; still reports Norman council rejecting Flock (Norman/Flock/council confirmed). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime": {
+    "decision": "accept",
+    "note": "Drift reviewed 2026-10-04: re-fetched live page; still the 'Washington cities spend millions on Flock cameras' article (Redmond/Flock/millions confirmed in text). Content drift is site churn, cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://geekwire.com/2025/washington-state-cities-turn-off-license-plate-reader-cameras-amid-ruling-on-data-access": {
+    "decision": "accept",
+    "note": "Blocked on direct fetch 2026-10-04; verified by another means: GeekWire article 'Washington state cities turn off license plate reader cameras amid ruling on data access' (Nov 18, 2025, Kurt Schlosser) confirmed via indexed content matching the cited claim (Redmond et al. turned cameras off after the Skagit County ruling).",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://bonnevillecountynews.com/idaho-falls-police-defend-license-plate-cameras-amid-privacy-lawsuit-threats-and-contract-dispute": {
+    "decision": "accept",
+    "note": "Blocked on direct fetch 2026-10-04; verified by another means: article 'Idaho Falls Police Defend License Plate Cameras Amid Privacy Lawsuit Threats and Contract Dispute' confirmed via indexed content (AI-training clause dispute, chief defending cameras). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://nbcpalmsprings.com/ca-us-and-world/2026/06/20/deflock-idaho-files-tort-claims-against-cities-over-flock-safety-camera-ai-data-use": {
+    "decision": "accept",
+    "note": "Error on direct fetch 2026-10-04; verified by another means: 'Deflock Idaho Files Tort Claims Against Cities Over Flock Safety Camera AI Data Use' confirmed via indexed content (tort claims served on Caldwell/Wilder, planned for Idaho Falls/Twin Falls). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://muckrock.com/foi/talent-6725/talent-police-department-flock-camera-policy-invoice-map-and-contracts-208246": {
+    "decision": "accept",
+    "note": "Blocked on direct fetch 2026-10-04; verified by another means: MuckRock FOIA request 'Talent Police Department Flock Camera policy, invoice, map, and contracts' confirmed via indexed records content, including the city clerk's 2026-04-20 response (cameras off Dec 2025, contract termination in process). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://omakchronicle.com/news/state/flock-cameras-cost-washington-taxpayers-millions-as-backlash-grows/article_88a9ba00-78ac-51be-8642-eed75a7e9f72.html": {
+    "decision": "accept",
+    "note": "Blocked on direct fetch 2026-10-04; verified by another means: 'Washington cities spend millions on Flock cameras. Do they solve crime?' confirmed as a Center Square syndicated copy via indexed content (same article as the brushwoodmedianetwork citation). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://cnhinews.com/oklahoma/news/article_0e3e40ec-0e00-5fbe-bb5e-4c7a110680ec.html": {
+    "decision": "accept",
+    "note": "Error on direct fetch 2026-10-04; verified by another means: cnhinews.com Tahlequah Flock articles confirmed via indexed content (chief recommending non-renewal; Sept 8 council agenda). Cited claims hold.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://cnhinews.com/oklahoma/news/article_ce058b56-5212-5443-baf7-583231f60ce6.html": {
+    "decision": "accept",
+    "note": "Error on direct fetch 2026-10-04; verified by another means: cnhinews.com Tahlequah Flock articles confirmed via indexed content (chief recommending non-renewal; Sept 8 council agenda). Cited claims hold.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
   }
 }

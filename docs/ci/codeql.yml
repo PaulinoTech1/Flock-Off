@@ -1,0 +1,56 @@
+name: "CodeQL"
+
+# Advanced CodeQL setup: static analysis for the Python pipeline
+# (scripts/) and the JavaScript frontend + API routes (js/, api/).
+# Results land in the repo Security tab as code scanning alerts.
+#
+# NOTE: This file cannot be pushed via the Git Data API (GitHub blocks
+# .github/workflows/** in git/trees). Add it manually via the GitHub web UI:
+# repo > Actions > New workflow > set up a workflow yourself, name it
+# codeql.yml. (Same procedure as archive-snapshots.yml.)
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    # Weekly Monday 13:00 UTC, independent of the data pipelines.
+    - cron: "0 13 * * 1"
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      # Required for the analyze step to upload results.
+      security-events: write
+      packages: read
+      actions: read
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ "javascript", "python" ]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          # Default queries + security-extended for the JS frontend,
+          # which faces the public internet.
+          queries: security-extended
+
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:${{ matrix.language }}"

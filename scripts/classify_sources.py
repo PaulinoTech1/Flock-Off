@@ -9,9 +9,13 @@ monitor until classified in the config.
 Criteria live in docs/METHODOLOGY.md ("Evidence bar"). In short:
   verified   = primary/official record, or established news outlet with an
                editorial process (bylines, corrections, masthead).
-  unverified = advocacy orgs, social/video platforms, aggregators, AI
-               summaries, personal blogs, unknown outlets. Usable as leads,
+  unverified = advocacy orgs, social/video platforms, aggregators,
+               personal blogs, unknown outlets. Usable as leads,
                never as citations toward the evidence bar.
+  excluded   = AI-generated summaries. Not citations, not leads, not even
+               invalid sources: disregarded entirely (Boss policy
+               2026-10-04). A citation on an excluded domain is a hard
+               fail, same as a feed-domain citation.
 
 Usage: python3 scripts/flockoff.py classify [--check]
   --check: exit 1 if any source lacks a verified flag (CI / monitor use).
@@ -53,6 +57,10 @@ def UNVERIFIED() -> set[str]:
     return set(_domains()["unverified"])
 
 
+def EXCLUDED() -> set[str]:
+    return set(_domains().get("excluded") or [])
+
+
 def PENDING_CLASSIFY() -> set[str]:
     return set(_domains().get("pending_classify") or [])
 
@@ -76,6 +84,9 @@ def classify(url: str) -> tuple[bool, str]:
         # Classifies as unverified until domain_approvals.yaml records
         # the promotion with approver, date, and rationale.
         return False, "quarantine-pending"
+    if host in EXCLUDED():
+        # AI-generated summaries: excluded entirely, not even as leads.
+        return False, "excluded"
     if host in UNVERIFIED():
         return False, "unverified-listed"
     return False, "unverified-unlisted"
@@ -157,6 +168,7 @@ def main(argv: list[str] | None = None) -> None:
         "verified_news": sorted(VERIFIED_NEWS()),
         "verified_primary": sorted(VERIFIED_PRIMARY()),
         "unverified_listed": sorted(UNVERIFIED()),
+        "excluded": sorted(EXCLUDED()),
         "unverified_unlisted_seen": sorted(unlisted),
     }
     with open(cfg["paths"]["classification"], "w", encoding="utf-8") as f:

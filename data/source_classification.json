@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26",
+  "generated": "2026-10-04",
   "criteria": "docs/METHODOLOGY.md#evidence-tiers",
   "classifier": "scripts/flockoff.py classify",
   "verified_news": [
@@ -296,7 +296,6 @@
     "bellevilleareaindependent.com",
     "bleedingheartland.com",
     "brief.news",
-    "citizenportal.ai",
     "connect-clarksburg.com",
     "dankennedy.net",
     "deflockmonroe.com",
@@ -340,7 +339,6 @@
     "reclaimthenet.org",
     "riaclu.org",
     "squatchrocks.com",
-    "summed.news",
     "techtimes.com",
     "thefreethoughtproject.com",
     "theinnovationattorney.substack.com",
@@ -352,6 +350,10 @@
     "webpronews.com",
     "wyrz.org",
     "youtube.com"
+  ],
+  "excluded": [
+    "citizenportal.ai",
+    "summed.news"
   ],
   "unverified_unlisted_seen": [
     "1025theriver.com",
@@ -381,6 +383,7 @@
     "classicrock1051.com",
     "cmg-cmg-tv-10090-prod.cdn.arcpublishing.com",
     "compuserve.com",
+    "coralspringsflnews.com",
     "core-docs.s3.us-east-1.amazonaws.com",
     "croftoncommunity.org",
     "cun.news",
@@ -395,6 +398,7 @@
     "factinface.com",
     "flagscanner.com",
     "footnote4a.org",
+    "fortune.com",
     "fresnoland.org",
     "github.com",
     "gmg-ksat-prod.cdn.arcpublishing.com",
@@ -420,18 +424,21 @@
     "krny.com",
     "kspress.com",
     "lasvegasnewsroom.com",
+    "lenaweevoice.com",
     "mailchi.mp",
     "mandatory.com",
     "mbatchelo0.wixsite.com",
     "minneapolimedia.town.news",
+    "monroenews.com",
     "myedmondsnews.com",
     "mymetmedia.com",
     "newmexicoconservativenews.com",
-    "newsbeep.com",
     "nmsuroundup.com",
     "omakchronicle.com",
     "operanewsapp.com",
+    "palmbeachpost.com",
     "panhandlepost.com",
+    "peshtigotimes.com",
     "pinaltoday.com",
     "poliscopic.com",
     "postgoo.com",
@@ -459,9 +466,12 @@
     "swoknews.com",
     "techspot.com",
     "thecommercedispatch.substack.com",
+    "thedetroit.org",
     "theflagstaffpost.com",
     "theokeagle.com",
     "theperrynews.com",
+    "thepostathens.com",
+    "therecord.media",
     "threeriverspublishing.com",
     "triarkradio.com",
     "tricityrecordnm.com",
@@ -471,6 +481,8 @@
     "universe.byu.edu",
     "utahn.com",
     "vimarsana.com",
-    "whitecountycitizen.com"
+    "wctv.tv",
+    "whitecountycitizen.com",
+    "wydc-tv.com"
   ]
 }

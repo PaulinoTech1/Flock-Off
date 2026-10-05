@@ -141,6 +141,12 @@ def default_max_age_days() -> int:
     return _cfg()["fingerprints"]["max_age_days"]
 
 
+def quarantine_days(status: str) -> int:
+    """Days to quarantine a non-ok fingerprint before retrying it."""
+    q = _cfg()["fingerprints"].get("quarantine_days") or {}
+    return int(q.get(status, 30))
+
+
 class _TextExtractor(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
@@ -191,7 +197,33 @@ def extract_text(html: str) -> tuple[str, str]:
 
 
 def fetch_page(url: str) -> tuple[str, str | None, str | None]:
-    """Return (status, final_url, html). status: ok|blocked|error|non_html."""
+    """Return (status, final_url, html). status: ok|blocked|error|non_html.
+
+    Delegates to scripts/fetch_client.py: a browser-like client (Chrome
+    TLS impersonation via curl_cffi where installed, stdlib fallback
+    otherwise). Presented bot challenges are still recorded as "blocked":
+    unverifiable, never evaded.
+    """
+    return _fetch_client().fetch(url)
+
+
+_client = None
+
+
+def _fetch_client():
+    """One shared browser-like session per process (cookie jar persists)."""
+    global _client
+    if _client is None:
+        import fetch_client as _fc
+        _client = _fc.FetchClient(timeout=fetch_timeout(),
+                                  max_bytes=max_bytes())
+    return _client
+
+
+def _fetch_page_urllib_legacy(url: str) -> tuple[str, str | None, str | None]:
+    """Original naive fetcher, kept for reference. Do not use: bare urllib
+    with two headers is a well-known bot signal and gets 403s from sites
+    that serve normal browsers fine."""
     req = urllib.request.Request(url, headers={
         "User-Agent": user_agent(),
         "Accept": "text/html,application/xhtml+xml",
@@ -285,8 +317,8 @@ def fingerprint_url(url: str, today: str,
                 _ba = None
             if _ba is not None:
                 try:
-                    from datetime import datetime, timezone as _tz
-                    _fetched_at = datetime.now(_tz.utc).isoformat()
+                    from datetime import datetime as _dt, timezone as _tz
+                    _fetched_at = _dt.now(_tz.utc).isoformat()
                     snap = _ba.build_snapshot(
                         source_key=key or url,
                         url=url,
@@ -318,6 +350,12 @@ def fingerprint_url(url: str, today: str,
                     rec["snapshot_status"] = "failed"
         else:
             rec["fetch_status"] = "thin"
+    if rec["fetch_status"] != "ok":
+        # Quarantine non-ok sources so refresh() skips them until the
+        # quarantine expires instead of re-fetching them every run.
+        _retry_after = datetime.date.fromisoformat(today) + datetime.timedelta(
+            days=quarantine_days(rec["fetch_status"]))
+        rec["retry_after"] = _retry_after.isoformat()
     return rec
 
 
@@ -465,7 +503,22 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
                 age = (today - datetime.date.fromisoformat(fp["fetched_at"])).days
             except (KeyError, ValueError):
                 age = max_age_days + 1
-            needs = fp.get("fetch_status") != "ok" or age > max_age_days
+            if fp.get("fetch_status") == "ok":
+                needs = age > max_age_days
+            else:
+                # Non-ok sources are quarantined after each failed attempt:
+                # skip until retry_after instead of re-fetching them every
+                # run (which stalled the blob backfill on the same dead
+                # sources). Records written before quarantine existed have
+                # no retry_after and are retried once, then quarantined.
+                retry_after = fp.get("retry_after")
+                if retry_after is None:
+                    needs = True
+                else:
+                    try:
+                        needs = today >= datetime.date.fromisoformat(retry_after)
+                    except ValueError:
+                        needs = True
         if not needs:
             stats["skipped"] += 1
             continue
@@ -486,18 +539,6 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
             else:
                 stats["snap_failed"] += 1
         print(f"  [{rec['fetch_status']}] {agency_id}: {url[:70]}", flush=True)
-        # Track per-source hit/miss for batch reporting.
-        # Hit (1): fetched ok AND snapshot uploaded. Miss (0): anything else.
-        hit = 1 if (rec['fetch_status'] == 'ok' and rec.get('snapshot_status') == 'uploaded') else 0
-        if 'hitmiss' not in stats:
-            stats['hitmiss'] = []
-        stats['hitmiss'].append({
-            'source_key': key,
-            'agency_id': agency_id,
-            'url': url,
-            'fetch_status': rec['fetch_status'],
-            'hit': hit,
-        })
     # End-of-run snapshot summary: never silent about upload outcomes.
     print(f"\nSnapshot summary: attempted={stats['snap_attempted']} "
           f"uploaded={stats['snap_uploaded']} "
@@ -505,15 +546,6 @@ def refresh(data: dict, fps: dict, max_n: int | None = None,
     if stats["snap_failed"] > 0:
         print(f"WARNING: {stats['snap_failed']} snapshot(s) failed to upload. "
               f"See E_SNAP_FAIL messages above.", flush=True)
-    # Write per-source hit/miss report for workflow consumption.
-    if 'hitmiss' in stats:
-        import json as _json
-        with open('/tmp/hitmiss.json', 'w') as _f:
-            _json.dump(stats['hitmiss'], _f, indent=2)
-        # Also print compact hit/miss list to stdout.
-        print("\nHit/miss report (1=hit, 0=miss):", flush=True)
-        for _r in stats['hitmiss']:
-            print(f"  {_r['hit']} {_r['source_key'][:80]}", flush=True)
     return stats
 
 

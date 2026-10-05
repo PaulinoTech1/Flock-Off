@@ -147,3 +147,115 @@ class TestFingerprintUrl(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestRefreshQuarantine(unittest.TestCase):
+    """Non-ok fingerprints are quarantined, not retried every run."""
+
+    def setUp(self):
+        self._orig_fetch = fp.fetch_page
+        self._orig_delay = fp.fetch_delay
+        fp.fetch_delay = lambda: 0
+        self.calls = 0
+
+    def tearDown(self):
+        fp.fetch_page = self._orig_fetch
+        fp.fetch_delay = self._orig_delay
+
+    def _data(self, n=3):
+        return {"agencies": [{
+            "id": "agency-%d" % i,
+            "sources": [{"url": "https://example.com/%d" % i,
+                         "source_key": "key-%d" % i,
+                         "title": "t"}],
+        } for i in range(n)]}
+
+    def test_blocked_record_gets_retry_after(self):
+        fp.fetch_page = lambda url: ("blocked", url, None)
+        rec = fp.fingerprint_url("https://example.com/", "2026-10-04",
+                                 key="k")
+        self.assertEqual(rec["fetch_status"], "blocked")
+        self.assertEqual(rec["retry_after"], "2026-11-03")  # +30d
+
+    def test_error_quarantine_is_shorter(self):
+        fp.fetch_page = lambda url: ("error", url, None)
+        rec = fp.fingerprint_url("https://example.com/", "2026-10-04",
+                                 key="k")
+        self.assertEqual(rec["retry_after"], "2026-10-11")  # +7d
+
+    def test_ok_record_has_no_retry_after(self):
+        body = "<html><body>" + "<p>substantive paragraph of text</p>" * 40
+        fp.fetch_page = lambda url: ("ok", url, body)
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            rec = fp.fingerprint_url("https://example.com/", "2026-10-04",
+                                     archive_directory=tmp, key="k")
+        self.assertEqual(rec["fetch_status"], "ok")
+        self.assertNotIn("retry_after", rec)
+
+    def test_quarantined_sources_are_skipped(self):
+        data = self._data(2)
+        import datetime as _dt
+        _today = _dt.date.today().isoformat()
+        fps = {
+            "key-0": {"fetch_status": "blocked", "fetched_at": _today,
+                      "retry_after": "2099-01-01"},
+            "key-1": {"fetch_status": "ok", "fetched_at": _today,
+                      "content_hash": "x"},
+        }
+        fp.fetch_page = lambda url: (_ for _ in ()).throw(
+            AssertionError("quarantined source must not be fetched"))
+        stats = fp.refresh(data, fps, max_n=25, max_age_days=60)
+        # key-0 quarantined (skipped); key-1 fresh-ok (skipped).
+        self.assertEqual(stats["fetched"], 0)
+        self.assertIn("key-0", fps)
+
+    def test_expired_quarantine_is_retried(self):
+        data = self._data(1)
+        fps = {"key-0": {"fetch_status": "blocked",
+                         "fetched_at": "2026-09-01",
+                         "retry_after": "2026-10-01"}}
+        fp.fetch_page = lambda url: ("blocked", url, None)
+        stats = fp.refresh(data, fps, max_n=25, max_age_days=60)
+        self.assertEqual(stats["fetched"], 1)
+        self.assertEqual(stats["blocked"], 1)
+        # Re-failed source gets a fresh quarantine window.
+        self.assertGreater(fps["key-0"]["retry_after"], "2026-10-01")
+
+    def test_legacy_record_without_retry_after_retried_once(self):
+        data = self._data(1)
+        fps = {"key-0": {"fetch_status": "blocked",
+                         "fetched_at": "2026-09-01"}}
+        fp.fetch_page = lambda url: ("blocked", url, None)
+        stats = fp.refresh(data, fps, max_n=25, max_age_days=60)
+        self.assertEqual(stats["fetched"], 1)
+        self.assertIn("retry_after", fps["key-0"])
+
+
+class TestFetchClient(unittest.TestCase):
+    def test_challenge_title_detected(self):
+        import fetch_client as fc
+        html = "<html><head><title>Just a moment...</title></head><body>cloudflare ray</body></html>"
+        self.assertTrue(fc._looks_like_challenge(html))
+
+    def test_normal_page_not_challenge(self):
+        import fetch_client as fc
+        html = "<html><head><title>City votes to end Flock contract</title></head><body>council voted</body></html>"
+        self.assertFalse(fc._looks_like_challenge(html))
+
+    def test_blocked_codes(self):
+        import fetch_client as fc
+        for code in (401, 402, 403, 429):
+            self.assertTrue(fc._sniff_blocked(code, "<html></html>"))
+        self.assertFalse(fc._sniff_blocked(200, "<html><body>news</body></html>"))
+        self.assertFalse(fc._sniff_blocked(404, "<html><body>not found</body></html>"))
+
+    def test_challenge_on_200_is_blocked(self):
+        import fetch_client as fc
+        html = "<html><head><title>Just a moment...</title></head><body>cloudflare</body></html>"
+        self.assertTrue(fc._sniff_blocked(200, html))
+
+    def test_backend_reports(self):
+        import fetch_client as fc
+        c = fc.FetchClient()
+        self.assertIn(c.backend, ("curl_cffi", "urllib"))

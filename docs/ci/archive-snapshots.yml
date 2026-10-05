@@ -30,6 +30,14 @@ on:
         required: false
         type: boolean
         default: false
+      maintenance:
+        description: "Maintenance task: delete-dry-run or delete-confirm (deletes example.com test pollution)"
+        required: false
+        default: 
+      keys:
+        description: "Comma-separated source_keys to archive (skips batch selection)"
+        required: false
+        default: ""
 
 jobs:
   archive:
@@ -45,7 +53,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install pyyaml
+        run: pip install -r scripts/requirements.txt
 
       - name: Validate config
         run: |
@@ -54,13 +62,41 @@ jobs:
       - name: Run test suite
         run: python3 scripts/flockoff.py test
 
+      - name: Maintenance task
+        if: ${{ inputs.maintenance != '' }}
+        env:
+          ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
+        run: |
+          # Maintenance mode: blob cleanup tasks. Does not run batches.
+          TASK="${{ inputs.maintenance }}"
+          echo "=== Maintenance task: $TASK ==="
+          if [ "$TASK" = "delete-dry-run" ]; then
+            python3 scripts/blob_archive.py delete \
+              --prefix "example.com" \
+              --reason "test pollution cleanup (maintenance dry-run)" \
+              --dry-run
+          elif [ "$TASK" = "delete-confirm" ]; then
+            python3 scripts/blob_archive.py delete \
+              --prefix "example.com" \
+              --reason "test pollution cleanup (maintenance confirmed)" \
+              --yes
+          else
+            echo "Unknown maintenance task: $TASK" >&2
+            echo "Valid: delete-dry-run, delete-confirm" >&2
+            exit 1
+          fi
+          echo "=== Maintenance complete ==="
+
       - name: Refresh fingerprints and archive snapshots
+        if: ${{ inputs.maintenance == '' }}
         env:
           ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
         run: |
           # Batch mode: run N batches of M sources each.
-          # Fresh fingerprints are skipped, so each batch advances
-          # through the next M stale sources. Failed batches are
+          # Non-ok sources (blocked/error/non_html/thin) are quarantined
+          # (config fingerprints.quarantine_days), so each batch advances
+          # through the next M sources instead of re-fetching the same
+          # dead sources every run. Failed batches are
           # recorded and reported at the end without stopping the run.
           BATCH_SIZE="${{ inputs.max_sources }}"
           BATCH_SIZE=${BATCH_SIZE:-25}
@@ -75,7 +111,15 @@ jobs:
           for i in $(seq 1 "$NUM_BATCHES"); do
             echo ""
             echo "=============== BATCH $i/$NUM_BATCHES ==============="
-            if python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE"; then
+            if [ -n "${{ inputs.keys }}" ] && [ "$i" -eq 1 ]; then
+              echo "Using explicit source keys (skipping batch selection)"
+              if python3 scripts/flockoff.py fingerprints refresh --keys "${{ inputs.keys }}"; then
+                echo "BATCH $i: SUCCESS"
+              else
+                echo "BATCH $i: FAILED"
+                FAILED_BATCHES="$FAILED_BATCHES $i"
+              fi
+            elif python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE"; then
               echo "BATCH $i: SUCCESS"
             else
               echo "BATCH $i: FAILED"
@@ -102,8 +146,45 @@ jobs:
           echo "If no blob_archive WARNING lines appeared above,"
           echo "snapshots uploaded successfully."
 
-      - name: Verify blob uploads
+      - name: Report per-source hit/miss
         if: always()
+        run: |
+          echo "=== Per-source hit/miss report ==="
+          echo "1=hit (archived), 0=miss (blocked/error/thin)"
+          echo ""
+          if [ -f /tmp/hitmiss.json ]; then
+            python3 -c "
+          import json
+          with open('/tmp/hitmiss.json') as f:
+              results = json.load(f)
+          hits = sum(1 for r in results if r['hit'] == 1)
+          misses = len(results) - hits
+          print(f'Total: {len(results)}, Hits: {hits}, Misses: {misses}')
+          print('')
+          for r in results:
+              status = 'HIT ' if r['hit'] == 1 else 'MISS'
+              print(f\"[{status}] {r['fetch_status']:8} {r['source_key'][:70]}\")
+          print('')
+          # Blocked sources list for manual scraping
+          blocked = [r for r in results if r['fetch_status'] == 'blocked']
+          if blocked:
+              print(f'=== BLOCKED SOURCES ({len(blocked)}) ===')
+              for r in blocked:
+                  print(r['source_key'])
+              # Save to file for download
+              with open('/tmp/blocked_sources.txt', 'w') as f:
+                  for r in blocked:
+                      f.write(r['source_key'] + '\n')
+              print('')
+              print('Blocked list saved to /tmp/blocked_sources.txt')
+          "
+          else
+            echo "No hit/miss report found (/tmp/hitmiss.json missing)"
+            echo "This happens when using --keys mode or if refresh did not run"
+          fi
+
+      - name: Verify blob uploads
+        if: ${{ always() && inputs.maintenance == '' }}
         env:
           ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
         run: |

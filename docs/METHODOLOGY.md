@@ -73,8 +73,25 @@ shown while awaiting corroboration.
 
 - Advocacy organizations and campaign sites, including ones we agree with.
 - Social media, video platforms, self-publishing platforms.
-- News aggregators and AI-generated summaries.
+- News aggregators.
 - Personal blogs and outlets with no verifiable editorial process.
+
+**Excluded** (not citations, not leads, not even invalid sources: disregarded
+entirely):
+
+- AI-generated summaries (e.g. citizenportal.ai, summed.news).
+
+Rationale, documented as a known weakness the project explicitly does not
+handle: AI summaries carry no editorial accountability. There is no byline,
+no masthead, no corrections process, and no way to distinguish a faithful
+summary from a fabricated one. Dates, vote counts, and quotes in
+AI-generated text can be invented wholesale, and a summary that looks
+corroborating may be derived from the same single article it appears to
+confirm. Evaluating whether any given AI summary is trustworthy would
+require the same primary-source verification the summary claims to replace,
+so the project does not evaluate them at all. They are dropped on sight,
+never tracked, never counted for or against a record. Policy: Boss,
+2026-10-04.
 
 **Independent** means distinct publishers. Three outlets quoting the same press
 release, or syndicated copies of one wire story, count once. Automation
@@ -166,23 +183,6 @@ Ranked by what most improves the tracker's trustworthiness:
 6. Terminal statuses (cancelled, rejected, expired) are verified only with 1+ verified-primary source and 2+ independent verified-news sources; anything else carries `"validation": "pending"` and shows pending validation\*. News-only terminal claims stay pending indefinitely.
 7. Corrections win over pride. A wrong record is worse than a missing one; fix upstream facts first, then the JSON.
 8. Citations are deduplicated in three layers: (1) every source carries a stable `source_key`, the canonical form of its URL, and the same key twice in one agency's sources is a reject; (2) content simhashes flag near-duplicate articles cited under different URLs for human review, never auto-merged; (3) re-fetched articles that materially changed since citation are flagged for re-verification. Bot-blocked pages are "unverifiable," never "probably fine."
-
-## Source archiving
-
-Snapshots of cited sources are archived to blob storage so records survive link rot. The archiver fetches each source, extracts the article text, and uploads a JSON snapshot.
-
-**Finding (2026-10-03):** Automated batches run from GitHub Actions (Azure datacenter IPs) see a ~68% block rate. Sources return HTTP 401/403/429 to datacenter IPs regardless of user agent. This is IP-based blocking, not a header or politeness problem. Auto-selected batches stall; targeted runs against known-good sources succeed.
-
-**Policy:** Bot-blocked pages are marked "unverifiable" and are never evaded. No residential proxies, no browser-fingerprint rotation, no user-agent spoofing, no CAPTCHA solvers. Evasion is a ToS/CFAA gray area and bad tradecraft. The block is the source's answer; we record it and move on.
-
-**Approved alternative archival paths** (do not cross the evasion line):
-
-1. **Wayback Machine** — fetch the already-archived public copy from web.archive.org. Consulting a public archive is not evading the source's block.
-2. **Residential fetch** — a human fetches from a non-datacenter IP (normal browsing, not evasion).
-3. **RSS/Atom feeds** — where the publisher offers a feed, it is the intended machine-readable channel.
-4. **Common Crawl** — public crawl data, same logic as Wayback.
-
-**Batch reporting:** Each archive batch reports per-source hit/miss (1 = fetched and uploaded, 0 = blocked/error/thin). Blocked sources are collected into a list for alternative archival. Individual source failures never stall the batch.
 
 ## What we don't track
 

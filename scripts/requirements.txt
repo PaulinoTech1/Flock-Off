@@ -2,3 +2,7 @@
 # Scripts are otherwise stdlib-only; PyYAML is the single exception,
 # used only for config/flock-off.yaml (Boss decision 2026-09-26).
 pyyaml>=6,<7
+# Browser-like TLS impersonation for scripts/fetch_client.py (Boss decision
+# 2026-10-04): the naive urllib fetcher was 403-blocked as a bot by sites
+# that serve normal browsers. stdlib fallback keeps working without it.
+curl-cffi>=0.13
