@@ -436,5 +436,11 @@
     "note": "Error on direct fetch 2026-10-04; verified by another means: cnhinews.com Tahlequah Flock articles confirmed via indexed content (chief recommending non-renewal; Sept 8 council agenda). Cited claims hold.",
     "reviewed_at": "2026-10-04",
     "reviewed_by": "Constantine (agent)"
+  },
+  "https://iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change": {
+    "decision": "accept",
+    "note": "Drift d=37 reviewed 2026-10-04: article 'There is little state regulation of Flock cameras in Iowa. That could soon change.' confirmed live via indexed content. Cited claim (Iowa ALPR regulatory context) holds; drift is site churn.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
   }
 }

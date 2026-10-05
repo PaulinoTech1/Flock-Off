@@ -353,6 +353,7 @@
   ],
   "excluded": [
     "citizenportal.ai",
+    "openutah.org",
     "summed.news"
   ],
   "unverified_unlisted_seen": [
@@ -376,7 +377,6 @@
     "brightgram.com",
     "brushwoodmedianetwork.com",
     "cashmerevalleyrecord.com",
-    "cedarcity.openutah.org",
     "citydesk.org",
     "cityofwoodland.gov",
     "civiclensnetwork.com",
@@ -410,7 +410,6 @@
     "haussamen.com",
     "heavyweather.media",
     "hh-today.com",
-    "idahopolitics.org",
     "insiderutah.com",
     "iowastartingline.com",
     "issaquahreporter.com",
@@ -483,6 +482,7 @@
     "vimarsana.com",
     "wctv.tv",
     "whitecountycitizen.com",
+    "wthd.net",
     "wydc-tv.com"
   ]
 }

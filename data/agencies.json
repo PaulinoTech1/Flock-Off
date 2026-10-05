@@ -8069,11 +8069,11 @@
       "confidence": "medium",
       "contract_end": null,
       "contract_start": null,
-      "decision_date": null,
-      "decision_summary": "Police department temporarily disabled its Flock cameras in mid-August 2026 pending a public hearing on two competing ordinances: one to repeal the camera-enabling ordinance and one to formalize rules for their use.",
+      "decision_date": "2026-09-28",
+      "decision_summary": "City Council passed Bill 7266 on 2026-09-28, terminating the Flock Safety contract and banning automated license-plate readers within city limits; all seven cameras to be removed and tracking data deleted. The council chose full termination over a competing proposal to keep five cameras under tighter rules.",
       "id": "mo-louisiana-pd",
       "last_verified": "2026-09-25",
-      "notes": "Permanent outcome is unresolved, hence pending. The seven-camera count and the June 2025 approval / March 2026 installation chronology come from a single unverified local-news repost; the temporary disable is confirmed by IPR and a KHQA broadcast clip.",
+      "notes": "Permanent outcome is unresolved, hence pending. The seven-camera count and the June 2025 approval / March 2026 installation chronology come from a single unverified local-news repost; the temporary disable is confirmed by IPR and a KHQA broadcast clip. Termination vote 2026-09-28 per RiverNewsLive (unverified local outlet); the KHQA TV reporting it references was not independently retrieved.",
       "renewal_date": null,
       "sources": [
         {
@@ -8097,11 +8097,20 @@
           "date": "2026-08",
           "verified": false,
           "source_key": "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-police-disable-flock-cameras-ahead-of-public-hearing"
+        },
+        {
+          "title": "Louisiana City Council votes to terminate Flock camera contract",
+          "url": "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-city-council-votes-to-terminate-flock-camera-contract",
+          "date": "2026-09-30",
+          "verified": false,
+          "source_key": "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-city-council-votes-to-terminate-flock-camera-contract",
+          "publisher": "RiverNewsLive"
         }
       ],
       "state": "MO",
-      "status": "pending",
-      "transparency_portal": null
+      "status": "cancelled",
+      "transparency_portal": null,
+      "validation": "pending"
     },
     {
       "agency": "Parkville Police Department",
@@ -13917,6 +13926,104 @@
       "confidence": "medium",
       "last_verified": "2026-10-04",
       "notes": "Distinct from Hamilton County, TN (Sheriff Austin Garrett paused 70 Flock/Motorola cameras 2026-08-31; separate record pending).",
+      "validation": "pending"
+    },
+    {
+      "id": "ny-newburgh-city",
+      "agency": "City of Newburgh",
+      "agency_type": "municipal_government",
+      "city": "Newburgh",
+      "state": "NY",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-29",
+      "decision_summary": "City Council voted on 2026-09-29 to end the Flock Safety contract; the resolution directs the city to discontinue routine camera use within 14 days and take all legal steps to dissolve the contract. The contract began 2026-08-06 (renewed 2026-01-01); audit logs showed thousands of outside-agency accesses, including a Texas search tied to abortion.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Newburgh City Council votes to end Flock contract",
+          "url": "https://www.wamc.org/news/2026-09-29/newburgh-city-council-votes-to-end-flock-contract",
+          "date": "2026-09-29",
+          "verified": true,
+          "source_key": "https://wamc.org/news/2026-09-29/newburgh-city-council-votes-to-end-flock-contract",
+          "publisher": "WAMC"
+        },
+        {
+          "title": "Dutchess to End Flock Camera Use",
+          "url": "https://highlandscurrent.org/2026/09/25/dutchess-to-end-flock-camera-use/",
+          "date": "2026-09-25",
+          "verified": true,
+          "source_key": "https://highlandscurrent.org/2026/09/25/dutchess-to-end-flock-camera-use",
+          "publisher": "Highlands Current"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-04",
+      "notes": "Prior cancellation attempts failed in May and August 2026; the Sept 29 resolution passed. Contract value discussed ~$390,000 (grant-funded).",
+      "validation": "pending"
+    },
+    {
+      "id": "mi-south-lyon-city",
+      "agency": "City of South Lyon",
+      "agency_type": "municipal_government",
+      "city": "South Lyon",
+      "state": "MI",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-29",
+      "decision_summary": "City Council voted 5-2 on 2026-09-29 to reject renewing the Flock Safety agreement; cameras to be covered/removed.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "South Lyon ends Flock Safety contract, orders cameras covered",
+          "url": "https://www.youtube.com/watch?v=N1vrkTOHd90",
+          "date": "2026-09-29",
+          "verified": false,
+          "source_key": "https://youtube.com/watch?v=N1vrkTOHd90",
+          "publisher": "WDIV Local 4 News"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-04",
+      "notes": "",
+      "validation": "pending"
+    },
+    {
+      "id": "mi-sturgis-dps",
+      "agency": "Sturgis Department of Public Safety",
+      "agency_type": "municipal_police",
+      "city": "Sturgis",
+      "state": "MI",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-29",
+      "decision_summary": "City Commission announced (week of 2026-09-22) that Sturgis Flock cameras will not be used after 2026; Director of Public Safety Ryan Banaszak confirmed the discontinuation.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Sturgis Police Not Keeping Flock Cameras",
+          "url": "http://www.wthd.net/news.php?article=128952",
+          "date": "2026-09-29",
+          "verified": false,
+          "source_key": "https://wthd.net/news.php?article=128952",
+          "publisher": "WTHD"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-04",
+      "notes": "Exact commission vote date unpinned; using report date. Non-renewal/expiration rather than mid-contract termination.",
       "validation": "pending"
     }
   ]

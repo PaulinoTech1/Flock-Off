@@ -76,10 +76,11 @@ shown while awaiting corroboration.
 - News aggregators.
 - Personal blogs and outlets with no verifiable editorial process.
 
-**Excluded** (not citations, not leads, not even invalid sources: disregarded
-entirely):
+**Excluded** (not citations, not leads, not even invalid sources: never cited,
+never tracked, never counted for or against a record):
 
-- AI-generated summaries (e.g. citizenportal.ai, summed.news).
+- AI-generated summaries (e.g. citizenportal.ai, summed.news, openutah.org
+  meeting summaries).
 
 Rationale, documented as a known weakness the project explicitly does not
 handle: AI summaries carry no editorial accountability. There is no byline,
@@ -89,9 +90,14 @@ AI-generated text can be invented wholesale, and a summary that looks
 corroborating may be derived from the same single article it appears to
 confirm. Evaluating whether any given AI summary is trustworthy would
 require the same primary-source verification the summary claims to replace,
-so the project does not evaluate them at all. They are dropped on sight,
-never tracked, never counted for or against a record. Policy: Boss,
-2026-10-04.
+so the project does not evaluate them at all. Policy: Boss, 2026-10-04.
+
+One narrow exception: an AI summary may *inspire* further research. If a
+summary points at a real-world event (a vote, a hearing, a filing), the
+researcher may go find an independent human-reported or primary source for
+that event and cite *that*. The summary itself is still never cited, never
+a lead, never evidence. The resulting record must stand entirely on the
+independent source. Policy refinement: Boss, 2026-10-04.
 
 **Independent** means distinct publishers. Three outlets quoting the same press
 release, or syndicated copies of one wire story, count once. Automation
