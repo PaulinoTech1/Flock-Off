@@ -1,6 +1,28 @@
 name: Source snapshot archiver
 
 # CHANGELOG
+# 2026-10-05 (v4): Free-tier-safe rework. Vercel Blob free tier caps advanced
+#   operations (list/copy) at 2,000/month. The old "Verify blob uploads" step
+#   burned 2 list calls per run (~1,440/month from the hourly backfill cron
+#   alone), which got the store suspended for 30 days (HTTP 403
+#   store_suspended, starting 2026-10-05 ~17:08 EDT). Changes:
+#   - REMOVED both blob list calls. Upload verification now uses each batch's
+#     own "Snapshot summary:" accounting line. Zero blob API calls per run.
+#   - ADDED "Persist fingerprint updates": commits data/source_fingerprints.json
+#     back to main so quarantine/retry_after and snapshot_path survive the
+#     runner. Previously these died with the runner, so every batch
+#     reprocessed the same sources instead of advancing.
+#   - Honest failure signal: if uploads were attempted but none succeeded,
+#     the run now FAILS (fixes the false-green where SUCCESS printed with
+#     0 uploads). Partial success (some uploaded) still passes with a warning.
+#   - Job summary carries attempted/uploaded/failed for the backfill cron,
+#     which reads it via the GitHub API (no blob calls).
+# 2026-10-06 (v4 pre-push fixes): commit-before-rebase ordering in the
+#   persist step (rebase refuses a dirty index), explicit
+#   permissions: contents: write, and removal of the snapshot_exists()
+#   LIST pre-check in scripts/blob_archive.py (deterministic PUT paths
+#   overwrite safely; one LIST per snapshot was the remaining
+#   advanced-operation burn).
 # 2026-10-04 (v3): Fix unconditional failure in "Verify blob uploads".
 #   Removed stray `exit 1` / `fi` after the final COUNT check, which made
 #   the step fail on every run even when uploads succeeded (18 straight
@@ -33,11 +55,14 @@ on:
       maintenance:
         description: "Maintenance task: delete-dry-run or delete-confirm (deletes example.com test pollution)"
         required: false
-        default: 
+        default:
       keys:
         description: "Comma-separated source_keys to archive (skips batch selection)"
         required: false
         default: ""
+
+permissions:
+  contents: write
 
 jobs:
   archive:
@@ -98,6 +123,8 @@ jobs:
           # through the next M sources instead of re-fetching the same
           # dead sources every run. Failed batches are
           # recorded and reported at the end without stopping the run.
+          # Each batch's "Snapshot summary:" line is saved for the verify
+          # step (batch-local accounting; zero blob API calls).
           BATCH_SIZE="${{ inputs.max_sources }}"
           BATCH_SIZE=${BATCH_SIZE:-25}
           NUM_BATCHES="${{ inputs.batches }}"
@@ -107,25 +134,29 @@ jobs:
             NUM_BATCHES=1
           fi
           echo "Running $NUM_BATCHES batch(es) of $BATCH_SIZE sources"
+          : > /tmp/snap_summary.txt
           FAILED_BATCHES=""
+          set +e
           for i in $(seq 1 "$NUM_BATCHES"); do
             echo ""
             echo "=============== BATCH $i/$NUM_BATCHES ==============="
             if [ -n "${{ inputs.keys }}" ] && [ "$i" -eq 1 ]; then
               echo "Using explicit source keys (skipping batch selection)"
-              if python3 scripts/flockoff.py fingerprints refresh --keys "${{ inputs.keys }}"; then
-                echo "BATCH $i: SUCCESS"
-              else
-                echo "BATCH $i: FAILED"
-                FAILED_BATCHES="$FAILED_BATCHES $i"
-              fi
-            elif python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE"; then
-              echo "BATCH $i: SUCCESS"
+              python3 scripts/flockoff.py fingerprints refresh --keys "${{ inputs.keys }}" > /tmp/batch_$i.log 2>&1
             else
-              echo "BATCH $i: FAILED"
+              python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE" > /tmp/batch_$i.log 2>&1
+            fi
+            BATCH_EXIT=$?
+            cat /tmp/batch_$i.log
+            grep "Snapshot summary:" /tmp/batch_$i.log | tail -1 >> /tmp/snap_summary.txt || true
+            if [ "$BATCH_EXIT" -ne 0 ]; then
+              echo "BATCH $i: FAILED (exit $BATCH_EXIT)"
               FAILED_BATCHES="$FAILED_BATCHES $i"
+            else
+              echo "BATCH $i: SUCCESS"
             fi
           done
+          set -e
           echo ""
           echo "=============== BATCH SUMMARY ==============="
           echo "Completed $NUM_BATCHES batch(es) of $BATCH_SIZE sources"
@@ -135,9 +166,9 @@ jobs:
             echo "FAILED batches:$FAILED_BATCHES"
             exit 1
           fi
-        # Fail-open: blob warnings do not fail the job. Only a hard
-        # fingerprint crash fails. Check the logs for
-        # "blob_archive: WARNING" lines to confirm uploads.
+        # Note: a hard fingerprint crash fails the batch (non-zero exit).
+        # Blob upload outcomes are judged by the verify step below using
+        # batch-local accounting, honestly: attempted-but-zero-uploaded fails.
 
       - name: Report snapshot status
         if: always()
@@ -183,47 +214,74 @@ jobs:
             echo "This happens when using --keys mode or if refresh did not run"
           fi
 
-      - name: Verify blob uploads
+      - name: Verify uploads from batch accounting
+        # Free-tier-safe replacement for the old "Verify blob uploads" step,
+        # which burned 2 blob LIST calls (advanced operations) per run and
+        # exhausted the 2,000/month free-tier cap. This step makes ZERO blob
+        # API calls: it sums the per-batch "Snapshot summary:" lines the
+        # refresh script already prints.
         if: ${{ always() && inputs.maintenance == '' }}
-        env:
-          ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
         run: |
-          echo "=== Snapshots archived today ==="
-          TODAY=$(date -u +%Y-%m-%d)
-          # E_VERIFY_FAIL: blob listing errors are fatal, not zero.
-          # A failed listing must never be reported as "0 snapshots".
-          LIST_OUT=$(python3 scripts/blob_archive.py list --date "$TODAY" 2>&1)
-          LIST_EXIT=$?
-          if [ $LIST_EXIT -ne 0 ]; then
-            echo "E_VERIFY_FAIL: blob list command failed (exit $LIST_EXIT)"
-            echo "$LIST_OUT"
-            exit 1
+          echo "=== Snapshot accounting (no blob API calls) ==="
+          python3 - <<'EOF'
+          import re, sys
+          attempted = uploaded = failed = 0
+          try:
+              with open('/tmp/snap_summary.txt') as f:
+                  for line in f:
+                      m = re.search(r'attempted=(\d+)\s+uploaded=(\d+)\s+failed=(\d+)', line)
+                      if m:
+                          attempted += int(m.group(1))
+                          uploaded += int(m.group(2))
+                          failed += int(m.group(3))
+          except FileNotFoundError:
+              pass
+          print(f"attempted={attempted} uploaded={uploaded} failed={failed}")
+          with open('/tmp/snap_totals.txt', 'w') as f:
+              f.write(f"{attempted} {uploaded} {failed}\n")
+          # Job summary for the backfill cron (read via GitHub API).
+          with open('/tmp/snap_summary.md', 'w') as f:
+              f.write("### Snapshot archiver result\n")
+              f.write(f"- attempted: {attempted}\n- uploaded: {uploaded}\n- failed: {failed}\n")
+          if attempted > 0 and uploaded == 0:
+              print("E_SNAP_FAIL: uploads were attempted but none succeeded.", file=sys.stderr)
+              print("Failing honestly instead of printing SUCCESS on 0 uploads.", file=sys.stderr)
+              sys.exit(1)
+          if failed > 0:
+              print(f"WARNING: {failed} snapshot(s) failed to upload (partial success).")
+          if attempted == 0:
+              print("No uploads attempted this run (sources blocked/thin/quarantined).")
+          EOF
+          cat /tmp/snap_summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Persist fingerprint updates
+        # Commits quarantine/retry_after and snapshot_path updates back to
+        # main so the next batch advances instead of reprocessing the same
+        # sources. Previously these updates died with the runner.
+        if: ${{ always() && inputs.maintenance == '' }}
+        run: |
+          git config user.name "flock-off-archiver"
+          git config user.email "flock-off-archiver@users.noreply.github.com"
+          git fetch origin main
+          git add data/source_fingerprints.json data/fingerprint_reviews.json
+          if git diff --cached --quiet; then
+            echo "No fingerprint changes to persist."
+            exit 0
           fi
-          COUNT=$(echo "$LIST_OUT" | grep -c "^snapshots/" || true)
-          echo "Snapshots for $TODAY: $COUNT"
-          echo ""
-          echo "=== Sample paths (first 10) ==="
-          echo "$LIST_OUT" | grep "^snapshots/" | head -10
-          echo ""
-          echo "=== Total snapshots in store ==="
-          TOTAL_OUT=$(python3 scripts/blob_archive.py list 2>&1)
-          TOTAL_EXIT=$?
-          if [ $TOTAL_EXIT -ne 0 ]; then
-            echo "E_VERIFY_FAIL: total blob list command failed (exit $TOTAL_EXIT)"
-            echo "$TOTAL_OUT"
-            exit 1
+          # Commit BEFORE rebasing: git rebase refuses to run with staged
+          # changes, so the old add-then-rebase order always failed here.
+          git commit -m "Archive snapshots: fingerprint updates (pre-rebase)"
+          if ! git rebase origin/main; then
+            git rebase --abort
+            echo "WARNING: rebase onto origin/main failed, skipping persist (next run will retry)."
+            exit 0
           fi
-          # Note: list defaults to 100 results without pagination.
-          # TOTAL is a floor, not an exact count, when it hits 100.
-          TOTAL=$(echo "$TOTAL_OUT" | grep -c "^snapshots/" || true)
-          echo "Total snapshots: $TOTAL"
-          if [ "$TOTAL" -eq 100 ]; then
-            echo "WARNING: hit 100-result list cap; actual total may be higher."
-          fi
-          echo ""
-          if [ "$COUNT" -eq 0 ]; then
-            echo "E_VERIFY_FAIL: zero snapshots listed for today. If the refresh"
-            echo "reported uploads, the listing and upload are inconsistent."
-            echo "This is a failure, not a clean zero."
-            exit 1
-          fi
+          ARCHIVED_TOTAL=$(python3 -c "
+          import json
+          fps = json.load(open('data/source_fingerprints.json'))
+          print(sum(1 for r in fps.values() if r.get('snapshot_path')))
+          ")
+          echo "Total sources archived (snapshot_path set): $ARCHIVED_TOTAL"
+          git commit --amend -m "Archive snapshots: update fingerprints $(date -u +%Y-%m-%dT%H:%M:%SZ) (archived_total=$ARCHIVED_TOTAL)"
+          git push origin HEAD:main
+          echo "Fingerprint updates persisted."
