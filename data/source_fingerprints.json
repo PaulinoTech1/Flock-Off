@@ -186,11 +186,14 @@
     "url": "https://www.aaronforward4.com/s/Flock-Regulation-Ordinance-Final-clean-copy.pdf"
   },
   "https://abc17news.b-cdn.net/abc17news.com/2024/09/Council-Memo.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://abc17news.b-cdn.net/abc17news.com/2024/09/Council-Memo.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://abc17news.b-cdn.net/abc17news.com/2024/09/Council-Memo.pdf"
@@ -1544,23 +1547,29 @@
     "url": "https://civiclex.org/weekly-posts/council-approves-five-year-lease-extension-for-flock-cameras"
   },
   "https://cjonline.com/story/news/local/2026/08/27/can-i-find-out-if-ive-been-recorded-by-a-flock-camera-how-to-check-for-license-plate-in-database/91466124007": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "fb283dacecd134ff1ceca9406d71fbc0304d3404a8ca8e39101fbf4e25c0a56e.txt",
+    "content_hash": "997af758862c98fb3db1e1e5a53db5c9d3d96329d6f0c136fff4e023521d80be",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.cjonline.com/story/news/local/2026/08/27/can-i-find-out-if-ive-been-recorded-by-a-flock-camera-how-to-check-for-license-plate-in-database/91466124007/",
+    "simhash": "80c4df16d1688a57",
+    "snapshot_path": "snapshots/2026-10-06/6c94c345c4316a21a92103f0260a748f7fd4cee6999c3c35ec3eb2dcf21583a6.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4465,
+    "title": "Can I find out if I've been recorded by a flock camera? How to check",
     "url": "https://www.cjonline.com/story/news/local/2026/08/27/can-i-find-out-if-ive-been-recorded-by-a-flock-camera-how-to-check-for-license-plate-in-database/91466124007/"
   },
   "https://cjonline.com/story/news/politics/government/2026/08/31/kansas-residents-challenge-police-surveillance-from-flock-cameras/91495686007": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "eb7a83d73627012451a3df90d61c4578e5c335d15be0b35321d1e02c21891a3d.txt",
+    "content_hash": "5ed129e325c554de5f7aed95645fb04372a0614e7d8b6abadc58a78d77e05b72",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.cjonline.com/story/news/politics/government/2026/08/31/kansas-residents-challenge-police-surveillance-from-flock-cameras/91495686007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "d399ed5481a53601",
+    "snapshot_path": "snapshots/2026-10-06/e42d709ff2237bcd69845e5b218ed13bcfed42b352177e8f39d7515b0b7d10df.json",
+    "snapshot_status": "uploaded",
+    "text_len": 604,
+    "title": "Kansas police are increasing surveillance. Do residents want it?",
     "url": "https://www.cjonline.com/story/news/politics/government/2026/08/31/kansas-residents-challenge-police-surveillance-from-flock-cameras/91495686007/"
   },
   "https://clarionledger.com/story/news/2026/09/01/where-flock-cameras-are-located-in-jackson-ms-can-license-plate-readers-issue-tickets/91338937007": {
@@ -1577,11 +1586,14 @@
     "url": "https://www.clarionledger.com/story/news/2026/09/01/where-flock-cameras-are-located-in-jackson-ms-can-license-plate-readers-issue-tickets/91338937007/"
   },
   "https://classicrock1051.com/ixp/34/p/deputy-fired-using-flock-cameras-track-ex-fiance": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-10-13",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://classicrock1051.com/ixp/34/p/deputy-fired-using-flock-cameras-track-ex-fiance/"
@@ -2041,11 +2053,14 @@
     "url": "https://department-test3.countyofdane.com/PressDetail/11832"
   },
   "https://derby.civicweb.net/document/21142/Flock%20License%20Plate%20Reader%20Cameras.pdf?handle=D1F9EFA8485941DC8A177D0D117C152B": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://derby.civicweb.net/document/21142/Flock%20License%20Plate%20Reader%20Cameras.pdf?handle=D1F9EFA8485941DC8A177D0D117C152B",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://derby.civicweb.net/document/21142/Flock%20License%20Plate%20Reader%20Cameras.pdf?handle=D1F9EFA8485941DC8A177D0D117C152B"
@@ -3464,13 +3479,16 @@
     "url": "https://www.hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007/"
   },
   "https://houmatoday.com/story/news/local/2026/08/03/terrebonne-lafourche-officials-look-into-flock-cameras/91113258007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "4582d28e1aa5599e47d879b10a073639fd4c0efe5b6b76de85eef046d8b6f58e.txt",
+    "content_hash": "02ddb9b74d04482fea0e96f1d08ee4eb515c5ec5ef183203057522fa23a18133",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.houmatoday.com/story/news/local/2026/08/03/terrebonne-lafourche-officials-look-into-flock-cameras/91113258007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "9de6f694a93e923b",
+    "snapshot_path": "snapshots/2026-10-06/adccc9a10ea24f86c7e30d832cfa898ed281a52206fecbb5a6610153954e6d8a.json",
+    "snapshot_status": "uploaded",
+    "text_len": 431,
+    "title": "Terrebonne, Lafourche officials look into Flock cameras",
     "url": "https://www.houmatoday.com/story/news/local/2026/08/03/terrebonne-lafourche-officials-look-into-flock-cameras/91113258007/"
   },
   "https://idahopolitics.org/flock-license-plate-readers-spread-across-idaho-cities-sparking-legal-challenges-and-privacy-debate": {
@@ -3904,11 +3922,14 @@
     "url": "https://kearney.granicus.com/MetaViewer.php?view_id=1&clip_id=526&meta_id=43147"
   },
   "https://kenner.la.us/DocumentCenter/View/1381/End-Of-Year-District-3-Newsletter---2023-PDF": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://kenner.la.us/DocumentCenter/View/1381/End-Of-Year-District-3-Newsletter---2023-PDF",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://kenner.la.us/DocumentCenter/View/1381/End-Of-Year-District-3-Newsletter---2023-PDF"
@@ -4004,13 +4025,16 @@
     "url": "https://www.kjan.com/news/local-news/another-iowa-town-blinds-flock-cameras-though-some-crimes-may-go-unsolved/"
   },
   "https://kjluradio.com/newsroom/city-of-columbia-to-hold-public-hearing-on-use-of-flock-safety-cameras/article_7c80b87a-a13b-47b4-993e-bdecd8be05f4.html": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "95da1929bba54de27f7ad03f7c0d887afb8115fb5913f6ef83a136657bd0ba5f.txt",
+    "content_hash": "c503cce05ee5b2e8ffcc5d26f64513dcf9a58136cae70eb47a57680184937036",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.kjluradio.com/newsroom/city-of-columbia-to-hold-public-hearing-on-use-of-flock-safety-cameras/article_7c80b87a-a13b-47b4-993e-bdecd8be05f4.html",
+    "simhash": "9a5a051a326be47f",
+    "snapshot_path": "snapshots/2026-10-06/c35eb240868c65383318587786eaa3b2adf3f4a51174d06db4b20b15636cdd26.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3981,
+    "title": "City of Columbia to hold public hearing on use of Flock Safety cameras | Newsroom | kjluradio.com",
     "url": "https://www.kjluradio.com/newsroom/city-of-columbia-to-hold-public-hearing-on-use-of-flock-safety-cameras/article_7c80b87a-a13b-47b4-993e-bdecd8be05f4.html"
   },
   "https://kjluradio.com/newsroom/governor-mike-kehoe-becomes-first-in-nation-to-issue-executive-order-on-flock-cameras/article_1ae3e0ea-edfe-4aec-af09-218e7b049262.html": {
@@ -4034,11 +4058,14 @@
     "url": "https://www.kjluradio.com/newsroom/pulaski-county-sheriff-says-he-will-end-use-of-flock-safety-cameras/article_7c89469e-d84c-49c6-90cd-9cafe5206922.html"
   },
   "https://kjluradio.com/newsroom/senator-josh-hawley-launching-investigation-into-flock-cameras/article_e6674592-628f-4230-8562-f922cb759cb5.html": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.kjluradio.com/newsroom/senator-josh-hawley-launching-investigation-into-flock-cameras/article_e6674592-628f-4230-8562-f922cb759cb5.html"
@@ -4190,13 +4217,16 @@
     "url": "https://www.ksmu.org/news/2026-08-21/willard-police-department-decides-not-to-renew-its-contract-with-flock-safety"
   },
   "https://kspress.com/news/2026/02/09/‘a-great-crime-fighting-tool’-flock-cameras-boost-sheriff’s-office": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "45fd48577a22009375769e24da44adfd7d84766f80316317861609bc3c4b947a.txt",
+    "content_hash": "a2d1ebdbda05e01907290b994f44d9f5a9065c7626159bdddbebf9f758566b75",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://kspress.com/news/2026/02/09/%E2%80%98a-great-crime-fighting-tool%E2%80%99-flock-cameras-boost-sheriff%E2%80%99s-office",
+    "simhash": "5b33e981c5dda041",
+    "snapshot_path": "snapshots/2026-10-06/11a945a6056f9e966a4e4db9e1874e6f858fd1833145d6b57128a4ad2ddb7b13.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2488,
+    "title": "| Kansas Press Association",
     "url": "https://kspress.com/news/2026/02/09/‘a-great-crime-fighting-tool’-flock-cameras-boost-sheriff’s-office"
   },
   "https://kypublicnotices.newzgroup.com/KYLegals/2026/70229-2026-01-29_1004.pdf": {
@@ -4276,11 +4306,14 @@
     "url": "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf"
   },
   "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/1005584/Flock_Safety-Contract_Park_City_PD_KS__1___1_.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/1005584/Flock_Safety-Contract_Park_City_PD_KS__1___1_.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/1005584/Flock_Safety-Contract_Park_City_PD_KS__1___1_.pdf"
@@ -4462,21 +4495,27 @@
     "url": "https://loraindaily.com/sheriff-ends-flock-camera-program/"
   },
   "https://louisianafirstnews.com/news/louisiana-news/louisiana-deputy-fired-for-allegedly-tracking-ex-fiancee-via-flock-cameras": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.louisianafirstnews.com/news/louisiana-news/louisiana-deputy-fired-for-allegedly-tracking-ex-fiancee-via-flock-cameras/"
   },
   "https://louisianafirstnews.com/news/two-men-accused-of-tearing-down-flock-camera-in-louisiana": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.louisianafirstnews.com/news/two-men-accused-of-tearing-down-flock-camera-in-louisiana/"
@@ -4534,12 +4573,28 @@
     "title": "Mansfield police share Flock camera data, but not with ICE",
     "url": "https://www.mansfieldnewsjournal.com/story/news/crime/2026/06/12/flock-cameras-are-used-locally-to-fight-crime/90402150007/"
   },
-  "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-police-disable-flock-cameras-ahead-of-public-hearing": {
+  "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-city-council-votes-to-terminate-flock-camera-contract": {
+    "archive": "0e654637170a24774ff4d645122697577fae1917f6c3ffebe49793a7e096fd0a.txt",
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
-    "final_url": "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-police-disable-flock-cameras-ahead-of-public-hearing",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-city-council-votes-to-terminate-flock-camera-contract",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
+    "text_len": 81,
+    "title": "LOUISIANA CITY COUNCIL VOTES TO TERMINATE FLOCK CAMERA CONTRACT",
+    "url": "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-city-council-votes-to-terminate-flock-camera-contract"
+  },
+  "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-police-disable-flock-cameras-ahead-of-public-hearing": {
+    "archive": "2333a0e96fabadb3076f2a29f40b52783c6fc16a1ed5a93fb206111063b1cb7e.txt",
+    "content_hash": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-police-disable-flock-cameras-ahead-of-public-hearing",
+    "retry_after": "2026-11-05",
+    "simhash": null,
+    "snapshot_path": null,
     "text_len": 81,
     "title": "LOUISIANA POLICE DISABLE FLOCK CAMERAS AHEAD OF PUBLIC HEARING",
     "url": "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-police-disable-flock-cameras-ahead-of-public-hearing"
@@ -4823,23 +4878,29 @@
     "url": "https://www.newpineplainsherald.org/dutchess-orders-removal-of-flock-cameras-after-officials-abandon-program/"
   },
   "https://news-leader.com/story/news/local/ozarks/2026/08/21/willard-police-ending-flock-contract-privacy-concerns/91408851007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "85700deaff6964d6895f5ad9d74197a87eedc19c395d52fca614724475cf802c.txt",
+    "content_hash": "aee6d3a8df2254fa26aadeb9137ed54587a597f6b6d0864276cf8c3206fb273b",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.news-leader.com/story/news/local/ozarks/2026/08/21/willard-police-ending-flock-contract-privacy-concerns/91408851007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "899de31c1f2887d9",
+    "snapshot_path": "snapshots/2026-10-06/913f00c96c80818371c2f087ae9312c0f2d5e1273006e191017f9fd5b64e8a30.json",
+    "snapshot_status": "uploaded",
+    "text_len": 544,
+    "title": "Willard police won't renew Flock contract amid community opposition",
     "url": "https://www.news-leader.com/story/news/local/ozarks/2026/08/21/willard-police-ending-flock-contract-privacy-concerns/91408851007/"
   },
   "https://news-leader.com/story/news/local/ozarks/2026/09/22/springfield-council-stalls-flock-camera-report-crowd-erupts/91827433007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "f33c52ccda757df54ac9ef4e755fb36d6cd9f8648fb39b88d9c8cd003ac8d853.txt",
+    "content_hash": "91b422f94d78f088f76af4a33f0e167ad90040f2d04760e4bfc93c2bb2f08d58",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.news-leader.com/story/news/local/ozarks/2026/09/22/springfield-council-stalls-flock-camera-report-crowd-erupts/91827433007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "f522e9d9bc5bfc89",
+    "snapshot_path": "snapshots/2026-10-06/4b4afe005f2ca72dd77c9f9f61a076a133f08ade7e6bea7b343ad597a04b9863.json",
+    "snapshot_status": "uploaded",
+    "text_len": 544,
+    "title": "Springfield council stalls Flock camera report, crowd erupts",
     "url": "https://www.news-leader.com/story/news/local/ozarks/2026/09/22/springfield-council-stalls-flock-camera-report-crowd-erupts/91827433007/"
   },
   "https://news.thepalmbayer.com/news/this-week-in-palm-bay-episode-24-september-21-2026": {
@@ -5075,13 +5136,16 @@
     "url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/03/okc-stalls-vote-flock-cameras-renewal/91159028007/"
   },
   "https://oklahoman.com/story/news/local/oklahoma-city/2026/08/18/okc-council-renews-flock-safety-contract-in-contentious-meeting/91356272007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "d707c6bec012a91642a2b476cf9da41e57cee796a8ff056ba6ea30f8355e9bc4.txt",
+    "content_hash": "9289834e163d8962db7f94b1808bcc110d4d6ff3c3bcd9c8517c5626e25a647f",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/18/okc-council-renews-flock-safety-contract-in-contentious-meeting/91356272007/",
+    "simhash": "8ae7ce289ccd5b81",
+    "snapshot_path": "snapshots/2026-10-06/db62ee85b11a1b9ff1d2ac5dda5b5cecb71a30e75401d0cb1c03971fc4d02e31.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9802,
+    "title": "OKC council renews Flock Safety contract in contentious meeting",
     "url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/18/okc-council-renews-flock-safety-contract-in-contentious-meeting/91356272007/"
   },
   "https://omakchronicle.com/news/state/flock-cameras-cost-washington-taxpayers-millions-as-backlash-grows/article_88a9ba00-78ac-51be-8642-eed75a7e9f72.html": {
@@ -5780,11 +5844,14 @@
     "url": "https://www.ricentral.com/east_greenwich_pendulum/under-aclu-pressure-nk-officials-kill-contract-with-flock-cameras/article_465d83b3-57cf-4b22-b956-071471c3db6c.html"
   },
   "https://rileycountypolice.org/AgendaCenter/ViewFile/Agenda/_05192025-90": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.rileycountypolice.org/AgendaCenter/ViewFile/Agenda/_05192025-90",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.rileycountypolice.org/AgendaCenter/ViewFile/Agenda/_05192025-90"
@@ -6083,13 +6150,16 @@
     "url": "https://shepherdexpress.com/news/issue-of-the-month/flock-cameras-in-milwaukee-the-writing-is-on-the-wall/"
   },
   "https://shreveporttimes.com/story/news/local/louisiana/2026/07/17/where-are-flock-cameras-in-louisiana-see-sheriff-police-that-have-them/90943464007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "a8604c9e7a1d776e0bd8d53c6aad553f7513cf5aa9f2bc870b9d79508d2998d7.txt",
+    "content_hash": "e51a033fda98e10b8bee65726fb79f80c1002154e0339bca4cb72fb14dbae96c",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/17/where-are-flock-cameras-in-louisiana-see-sheriff-police-that-have-them/90943464007/",
+    "simhash": "81bbf84d17994fd7",
+    "snapshot_path": "snapshots/2026-10-06/3053c8be2a7355fdbace37a3bc84c5ae1c6243f6242530bdb8e05d80ed58b5b5.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2678,
+    "title": "Where are flock cameras in Louisiana? See Sheriff, police that have them",
     "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/17/where-are-flock-cameras-in-louisiana-see-sheriff-police-that-have-them/90943464007/"
   },
   "https://signalakron.org/akron-police-flock-camera-program-review-independent-auditor-anthony-finnell": {
@@ -6298,11 +6368,14 @@
     "url": "https://summed.news/article/idaho-jerome-county-sheriff-cancels-flock-camera-contract-redirects-funds-to-deputy-1f496b27"
   },
   "https://swoknews.com/ap/national/missouri-governor-issues-executive-order-for-flock-other-cameras-see-new-rules/article_797d10d1-2515-550a-adc4-8f14a79c958e.html": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.swoknews.com/ap/national/missouri-governor-issues-executive-order-for-flock-other-cameras-see-new-rules/article_797d10d1-2515-550a-adc4-8f14a79c958e.html"
@@ -7419,11 +7492,14 @@
     "url": "https://wichitaks.granicus.com/services/legistar/download/pdf/2900778/KS_-_Wichita_PD_-_Law_Enforcement_Agreement_-___8_.pdf"
   },
   "https://wichitaks.granicus.com/services/legistar/download/pdf/2900779/Wichita-10Falcons.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
-    "final_url": "https://granicus-aasmp-peak-files.s3.amazonaws.com/uploads/attachment/pdf/2900779/Wichita-10Falcons.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATHOFOHMMEOCNXD2W%2F20260926%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260926T034811Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=5a3d6430da6ee45a9ab13d207c3324ea793009d849a03e6619c9f155b2032fee",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://granicus-aasmp-peak-files.s3.amazonaws.com/uploads/attachment/pdf/2900779/Wichita-10Falcons.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATHOFOHMMEOCNXD2W%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261006T205538Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=80960ad269b67432cbb0d5ef746ef1b533ab24f5b07e134e14ef269586395831",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://wichitaks.granicus.com/services/legistar/download/pdf/2900779/Wichita-10Falcons.pdf"
@@ -7576,11 +7652,14 @@
     "url": "https://www.yampavalleybugle.com/post/routt-county-sheriff-to-cancel-flock-contract-after-records-show-local-cameras-were-included-in-8-mi"
   },
   "https://youtube.com/shorts/FTz_Z_9tP3Q": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.youtube.com/shorts/FTz_Z_9tP3Q",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/shorts/FTz_Z_9tP3Q"
@@ -7609,11 +7688,14 @@
     "url": "https://www.youtube.com/shorts/eXP2lOH27Zs"
   },
   "https://youtube.com/shorts/lTyB6wgQBGk": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.youtube.com/shorts/lTyB6wgQBGk",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/shorts/lTyB6wgQBGk"
@@ -7685,11 +7767,14 @@
     "url": "https://www.youtube.com/watch?v=Ox5y7n4ZTfE"
   },
   "https://youtube.com/watch?v=Siapjqp3fSY": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.youtube.com/watch?v=Siapjqp3fSY",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=Siapjqp3fSY"
