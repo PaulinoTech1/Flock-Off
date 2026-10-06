@@ -350,11 +350,14 @@
     "url": "https://apbweb.com/2021/09/plainfield-police-install-digital-license-plate-readers-to-fight-crime/"
   },
   "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116"
@@ -680,13 +683,16 @@
     "url": "https://batesvilletribune.com/flock-cameras-quietly-expand-in-batesville-as-residents-elsewhere-push-back/"
   },
   "https://beaconjournal.com/story/news/2022/06/10/akron-city-council-approves-license-plate-reading-cameras-flock-security-fight-crime/7583684001": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "c67a8328ff3c9de24c1e61de442b3b89d9886bb1414842aef013bc54a544a24b.txt",
+    "content_hash": "d6916340e861d1c03f1594a00efe616bf44cab99ac14d7670bc57445eff2f00e",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.beaconjournal.com/story/news/2022/06/10/akron-city-council-approves-license-plate-reading-cameras-flock-security-fight-crime/7583684001/",
+    "simhash": "e314c45971adcda0",
+    "snapshot_path": "snapshots/2026-10-06/306d0624f2e883f3d9c98549c2cfaa34c85d7d0e9b8386093015311da4e0e71e.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2853,
+    "title": "Akron City Council approves purchasing license-plate reading cameras",
     "url": "https://www.beaconjournal.com/story/news/2022/06/10/akron-city-council-approves-license-plate-reading-cameras-flock-security-fight-crime/7583684001/"
   },
   "https://beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007": {
@@ -956,11 +962,14 @@
     "url": "https://ccxmedia.org/news/plymouth-latest-city-to-discontinue-flock-safety-surveillance/"
   },
   "https://cdn.euclidlibrary.org/cdn/ecc/2022/20220420_SAF/agenda.pdf": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://cdn.euclidlibrary.org/cdn/ecc/2022/20220420_SAF/agenda.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://cdn.euclidlibrary.org/cdn/ecc/2022/20220420_SAF/agenda.pdf"
@@ -1026,23 +1035,29 @@
     "url": "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers/"
   },
   "https://chestertonin.org/DocumentCenter/View/34569/Chesterton-Town-Council-votes-to-discontinue-contract-with-Flock-Safety-license-plate-readers": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://chestertonin.org/DocumentCenter/View/34569/Chesterton-Town-Council-votes-to-discontinue-contract-with-Flock-Safety-license-plate-readers",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://chestertonin.org/DocumentCenter/View/34569/Chesterton-Town-Council-votes-to-discontinue-contract-with-Flock-Safety-license-plate-readers"
   },
   "https://cincinnati.com/story/news/crime/2026/08/23/flock-cameras-spread-ohio-northern-kentucky-backlash/90912929007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "e4af0b83520acbe49931ddbb5dcc4e463224efa56a21ab6612910ae53eca2091.txt",
+    "content_hash": "c1e68001753351e87fe13b38f695ec720de10ae587f44c5825a8fb3394c9388e",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.cincinnati.com/story/news/crime/2026/08/23/flock-cameras-spread-ohio-northern-kentucky-backlash/90912929007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "418213e891108758",
+    "snapshot_path": "snapshots/2026-10-06/83b9dd5f3aedb84d4915f8fc9a727cf37f6279f24b97ef1cc8eb1bca1375b061.json",
+    "snapshot_status": "uploaded",
+    "text_len": 483,
+    "title": "Flock cameras are surging in Cincinnati area. So is backlash",
     "url": "https://www.cincinnati.com/story/news/crime/2026/08/23/flock-cameras-spread-ohio-northern-kentucky-backlash/90912929007/"
   },
   "https://citizen-times.com/story/news/local/2026/08/26/asheville-city-council-votes-to-end-flock-camera-contract/91405585007": {
@@ -1439,11 +1454,14 @@
     "url": "https://www.cityofwoodland.gov/1704/Automated-License-Plate-Readers-ALPR"
   },
   "https://cityofypsilanti.com/Archive/ViewFile/Item/743": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743"
@@ -1739,13 +1757,16 @@
     "url": "https://www.courierpress.com/story/news/local/2026/07/22/isp-flock-safety-camera-damaged-on-i-69-evansville/91002066007/"
   },
   "https://courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "7b24e199d0641fa247ae40af399a12570600b42842cb0c5a5dc55e60e65edad2.txt",
+    "content_hash": "4e6286d013733bb78962bdf20cefa625c73c7569c1cbab93b2d75cbc8ec20f3a",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007/",
+    "simhash": "aa23fd7df320d2fa",
+    "snapshot_path": "snapshots/2026-10-06/794d3320d808f2023b68cdb7e45b82a40d205d9668a48a2febb355312af44a55.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5008,
+    "title": "Flock Safety's contract with Evansville police expires in 2026",
     "url": "https://www.courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007/"
   },
   "https://croftoncommunity.org/_files/ugd/c759a7_a277ea517b98421f9c2ad3185e831004.pdf": {
@@ -2032,23 +2053,29 @@
     "url": "https://disa.org/usa/minnesota/article_ba8bca36-c7e9-11f0-b0ab-9d2e6ee6bd90.html"
   },
   "https://dispatch.com/story/news/local/2026/07/10/columbus-immigration-searches-flock-cameras-audit/90880977007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "c6c1528e1979ce01c91ccf24dccc439e13e2311e7984226c761e48e30b196f0d.txt",
+    "content_hash": "8ce710cd98d1a33735899942c06eaa5d70c4df23b308b890b6b05792a3f6c1cd",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.dispatch.com/story/news/local/2026/07/10/columbus-immigration-searches-flock-cameras-audit/90880977007/",
+    "simhash": "819ea7aa954f8583",
+    "snapshot_path": "snapshots/2026-10-06/60836edac018cd85f85cf5d5b812b8356e03e1c83ab0ecc475d08731bce4c3a5.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5967,
+    "title": "Audit finds Columbus Flock data in possible immigration-related searches",
     "url": "https://www.dispatch.com/story/news/local/2026/07/10/columbus-immigration-searches-flock-cameras-audit/90880977007/"
   },
   "https://dispatch.com/story/news/local/reynoldsburg/2026/09/09/flock-cameras-to-be-bagged-in-reynoldsburg-as-city-ends-use/91676029007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "8407ed8428662780514cae71311a1532af8eef1ec597018c3f8133a4b849b028.txt",
+    "content_hash": "842811f4a956ced9a93520cd8ed053e37259be8cf90b06c89064b89312d94996",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.dispatch.com/story/news/local/reynoldsburg/2026/09/09/flock-cameras-to-be-bagged-in-reynoldsburg-as-city-ends-use/91676029007/",
+    "simhash": "0bca8912aedc789d",
+    "snapshot_path": "snapshots/2026-10-06/bf435c657be3a0eaf377b5bfbf4b901aa7ee5ac902cdbda06a6c62ba5f69d272.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3059,
+    "title": "Flock cameras to be bagged in Reynoldsburg as city ends use",
     "url": "https://www.dispatch.com/story/news/local/reynoldsburg/2026/09/09/flock-cameras-to-be-bagged-in-reynoldsburg-as-city-ends-use/91676029007/"
   },
   "https://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx": {
@@ -2372,13 +2399,16 @@
     "url": "https://www.flocksafety.com/blog/shelby-county-policing-technology"
   },
   "https://floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "67638328b97d6418d45bbccaa687979f0463be23aaaa06efb7d33a8a019e44f3.txt",
+    "content_hash": "e47cad7950b02e4b54a9a34efaa0139038e8b71d98f18c429ea69e4a784b5c74",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007/",
+    "simhash": "26e6966a1cebd553",
+    "snapshot_path": "snapshots/2026-10-06/5fe62e50f18ae60abbfa446175b66f1f1483e5099bf9e35551c4c452551f68f7.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6158,
+    "title": "Brevard sheriff, police halt use of Flock tag readers after FDOT order",
     "url": "https://www.floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007/"
   },
   "https://footnote4a.org/news/vumacam-flock": {
@@ -2390,6 +2420,19 @@
     "text_len": 11357,
     "title": "Flock Goes Global: How a $7.5 Billion Surveillance Company Found Its International Partner in South Africa's Most Controversial Camera Network | Footnote4a",
     "url": "https://footnote4a.org/news/vumacam-flock"
+  },
+  "https://fortune.com/2026/06/03/why-are-ohio-city-workers-covering-flock-cameras-immigration-enforcement-data-sharing-policy-violations": {
+    "archive": "50909cde25702d69ac9b48255b5ba1c82fd0e5324b69174bec2f864e86de4e95.txt",
+    "content_hash": "a048517df53df559c062b88c89bc3916e2fc4db32ec78b8987ab149cdc967d69",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://fortune.com/2026/06/03/why-are-ohio-city-workers-covering-flock-cameras-immigration-enforcement-data-sharing-policy-violations/",
+    "simhash": "f291f56992441154",
+    "snapshot_path": "snapshots/2026-10-06/e8c372aaf1ed6cd3171ea95b51d501cec714864791d1011c0c18a6a619a37ee7.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8933,
+    "title": "Dayton is covering Flock cameras with trash bags after officials found data use violated policy | Fortune Down Arrow Button Icon Down Arrow Button Icon Google source logo LinkedIn icon Twitter icon Right Arrow Button Icon Google source logo Fortune Secondary Logo Facebook icon Twitter icon LinkedIn icon Instagram icon TikTok icon YouTube icon",
+    "url": "https://fortune.com/2026/06/03/why-are-ohio-city-workers-covering-flock-cameras-immigration-enforcement-data-sharing-policy-violations/"
   },
   "https://fortworthtexas.gov/files/assets/public/v/1/communications/documents/city-council-presentations/2024/06-04-2024/briefing-on-police-technology.pdf": {
     "content_hash": null,
@@ -3315,13 +3358,16 @@
     "url": "https://highlandscurrent.org/2026/09/25/beacon-police-chief-explains-camera-system/"
   },
   "https://hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "589375207849dd3b36567d505a4a7aad895d12054a3a368638c1500656cd4882.txt",
+    "content_hash": "a15794cb3c611fa1904080f1427b370232edc038dffda89ea392d2b74e6b0663",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "54499abc69d03205",
+    "snapshot_path": "snapshots/2026-10-06/d4ca6e3fb895f3cba677d0b3741bf01787fd022e8aad430c63b74d752287e50a.json",
+    "snapshot_status": "uploaded",
+    "text_len": 541,
+    "title": "DeBoer details Flock camera usage for Ottawa County Board",
     "url": "https://www.hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007/"
   },
   "https://houmatoday.com/story/news/local/2026/08/03/terrebonne-lafourche-officials-look-into-flock-cameras/91113258007": {
@@ -3365,13 +3411,16 @@
     "url": "https://indianacapitalchronicle.com/2023/02/01/indiana-lawmakers-want-to-crack-down-on-data-privacy-what-about-license-plate-readers/"
   },
   "https://indystar.com/story/news/crime/2026/08/10/what-is-a-flock-camera-and-why-are-people-cutting-them-down/91195834007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "6bb1cb437b0303ef69a33c4672ff08e79398d15691d054d8a21232475a3354e3.txt",
+    "content_hash": "ae618331667d2e3979de03d82d1a3ef2bd8f51765eea9ffe484fe00b4e28fc55",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.indystar.com/story/news/crime/2026/08/10/what-is-a-flock-camera-and-why-are-people-cutting-them-down/91195834007/",
+    "simhash": "0e3aecc88acf9020",
+    "snapshot_path": "snapshots/2026-10-06/f7d512adab7b22babec35dccc9931bc9c94feab5c14439d96a6894dd68ea3d59.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6213,
+    "title": "What is a Flock camera, and why are people cutting them down?",
     "url": "https://www.indystar.com/story/news/crime/2026/08/10/what-is-a-flock-camera-and-why-are-people-cutting-them-down/91195834007/"
   },
   "https://indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007": {
@@ -4115,11 +4164,14 @@
     "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3078028/PD_ALPR_Program_-_Waiver_Request___Contract_Approval_final.pdf"
   },
   "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3942354/Trumble_-_RESOLUTION_TO_END_THE_CITY_S_RELATIONSHIP_WITH_FLOCK_SAFETY_-_final_2_26.pdf": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
     "final_url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3942354/Trumble_-_RESOLUTION_TO_END_THE_CITY_S_RELATIONSHIP_WITH_FLOCK_SAFETY_-_final_2_26.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3942354/Trumble_-_RESOLUTION_TO_END_THE_CITY_S_RELATIONSHIP_WITH_FLOCK_SAFETY_-_final_2_26.pdf"
@@ -4338,13 +4390,16 @@
     "url": "https://www.mandatory.com/culture/1830228-flock-camera-thefts-force-police-department-give-up-minnesota"
   },
   "https://mansfieldnewsjournal.com/story/news/crime/2026/06/12/flock-cameras-are-used-locally-to-fight-crime/90402150007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "4dbfc1c76c12e12517f79f961e608b21656e1698c069c12ae3d1e5404efa936b.txt",
+    "content_hash": "330e1cd83a1e452f470b19977c52d8b028c4a56cf4a5ce3e272798d0bd83e5d5",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.mansfieldnewsjournal.com/story/news/crime/2026/06/12/flock-cameras-are-used-locally-to-fight-crime/90402150007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "8ad1a0a0ba02c5a2",
+    "snapshot_path": "snapshots/2026-10-06/f9b88d8f442616e3c465244add1d59ffaa2f7bebe4b6d46b832da287022bbf7e.json",
+    "snapshot_status": "uploaded",
+    "text_len": 345,
+    "title": "Mansfield police share Flock camera data, but not with ICE",
     "url": "https://www.mansfieldnewsjournal.com/story/news/crime/2026/06/12/flock-cameras-are-used-locally-to-fight-crime/90402150007/"
   },
   "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-police-disable-flock-cameras-ahead-of-public-hearing": {
@@ -4388,31 +4443,40 @@
     "url": "https://medium.com/@iwan.steinmann/week-3-cna-4cb0e2f95099"
   },
   "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15710541-Memorandum.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15710541-Memorandum.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15710541-Memorandum.pdf"
   },
   "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15723134-Resolution.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15723134-Resolution.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1422203-city-council-meeting-2026-07-28/attachments/15723134-Resolution.pdf"
   },
   "https://meetings.cvilledata.org/meetings/harrisonburg/1425067-city-council-meeting-2026-08-11/attachments/15742880-Minutes.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://meetings.cvilledata.org/meetings/harrisonburg/1425067-city-council-meeting-2026-08-11/attachments/15742880-Minutes.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1425067-city-council-meeting-2026-08-11/attachments/15742880-Minutes.pdf"
@@ -5957,13 +6021,16 @@
     "url": "https://www.starnewsonline.com/story/news/crime/2026/09/08/wrightsville-beach-nc-officer-out-after-flock-misuse-investigation/91661963007/"
   },
   "https://starnewsonline.com/story/news/crime/2026/09/09/former-wrightsville-beach-nc-police-officer-charged-with-flock-misuse/91677027007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "901aa240eaf251adf7cdef3c1d84b18c7107288905f812fe348bdf5dd76d9e03.txt",
+    "content_hash": "4b4cf3f704eb98ea560b75680c3ef2298e3f83dbb2c31a67f105e507f8bcbceb",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.starnewsonline.com/story/news/crime/2026/09/09/former-wrightsville-beach-nc-police-officer-charged-with-flock-misuse/91677027007/",
+    "simhash": "b393fc6c423a8a69",
+    "snapshot_path": "snapshots/2026-10-06/d3533853c19f3b8867ba82a32b7a15db7635a3317be5f83649357240e3d8a23e.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2798,
+    "title": "Former Wrightsville Beach, NC, police officer charged with Flock misuse",
     "url": "https://www.starnewsonline.com/story/news/crime/2026/09/09/former-wrightsville-beach-nc-police-officer-charged-with-flock-misuse/91677027007/"
   },
   "https://starnewsonline.com/story/news/local/2026/09/08/new-hanover-county-cancels-flock-contract-in-wilmington-nc/91656600007": {
@@ -6567,11 +6634,14 @@
     "url": "https://www.tmj4.com/news/local-news/in-your-community/racine-county/racine-common-council-votes-to-end-flock-safety-contract-cameras-to-stay-up-for-30-more-days"
   },
   "https://tompkinscountyny.gov/files/assets/county/v/1/sheriffs-office/documents/community-statement-from-tcso-re-give-flock-safety-1.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/sheriffs-office/documents/community-statement-from-tcso-re-give-flock-safety-1.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/sheriffs-office/documents/community-statement-from-tcso-re-give-flock-safety-1.pdf"
@@ -6597,11 +6667,14 @@
     "url": "https://transparency.flocksafety.com/caldwell-id-pd-"
   },
   "https://transparency.flocksafety.com/euclid-oh-pd": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://transparency.flocksafety.com/euclid-oh-pd"
@@ -6900,23 +6973,29 @@
     "url": "https://vimarsana.com/newscast/newson6-com/ktul-channel-8-news/tulsa-county-sheriff-inks-contract-for-license-plate-readers/"
   },
   "https://voicenews.com/2023/05/11/license-plate-readers-helping-police-fight-crime-in-new-baltimore": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "1dc24b72b6405758471577f2521beb49a397f1682fbc62f4f7b6fb211c7a7d52.txt",
+    "content_hash": "7d65dc125b4623347b84a32ae24e72eba165b05f1d26004ea94c63133f58b9ca",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.macombdaily.com/2023/05/11/license-plate-readers-helping-police-fight-crime-in-new-baltimore/",
+    "simhash": "dd1461c9c3ebb637",
+    "snapshot_path": "snapshots/2026-10-06/cf7f68de81c4a7bdecf9b805b47ad5238042189e3c61573bfbb4d4ee81b3bce9.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6859,
+    "title": "License plate readers helping police fight crime in New Baltimore – Macomb Daily",
     "url": "https://www.voicenews.com/2023/05/11/license-plate-readers-helping-police-fight-crime-in-new-baltimore/"
   },
   "https://voicenews.com/2023/09/29/license-plate-readers-an-invaluable-tool-for-chesterfield-township-police": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "d55ea98faaea46d4f79a4672a710ec78f52c8a71fb0ff52b0621b012275e9835.txt",
+    "content_hash": "b48ec448f8b85666168aa09ac236b73113776745f1066cbe155e23d941d6aa5a",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.macombdaily.com/2023/09/29/license-plate-readers-an-invaluable-tool-for-chesterfield-township-police/",
+    "simhash": "ee57a94230664832",
+    "snapshot_path": "snapshots/2026-10-06/e7accbca0c74573fb48bcf580e644e80e8495d986977a14ccf4588bebb6339ab.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3557,
+    "title": "License plate readers ‘an invaluable tool’ for Chesterfield Township police – Macomb Daily",
     "url": "https://www.voicenews.com/2023/09/29/license-plate-readers-an-invaluable-tool-for-chesterfield-township-police/"
   },
   "https://waltontribune.com/news/three-gwinnett-pd-officers-fired-and-charged-in-connection-with-alleged-misuse-of-flock-cameras/article_d6092fd8-3247-5b13-b502-e06aac47a87c.html": {
@@ -7364,11 +7443,14 @@
     "url": "https://www.youtube.com/watch?v=CGAHyMhca_4"
   },
   "https://youtube.com/watch?v=L-KcNG3lf4g": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.youtube.com/watch?v=L-KcNG3lf4g",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=L-KcNG3lf4g"
@@ -7414,11 +7496,14 @@
     "url": "https://www.youtube.com/watch?v=YWUBejcUmkw"
   },
   "https://youtube.com/watch?v=dFN-CMtnkWQ": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.youtube.com/watch?v=dFN-CMtnkWQ",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=dFN-CMtnkWQ"
