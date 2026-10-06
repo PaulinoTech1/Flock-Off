@@ -140,23 +140,29 @@
     "url": "https://94hjy.iheart.com/content/2026-08-04-narragansett-to-stop-using-flock-cameras/"
   },
   "https://9news.com/article/news/local/coloradan-stopped-by-police-data-errors-flock-alerts/73-593a3772-f43d-46b1-8744-af888b9bd7f2": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "7538107c2fd826c46195cde1faf989bf4fb66891958e13654b33e708108b1846.txt",
+    "content_hash": "fa6a3c706355b257e13f5af414251bb7b61f24e38d99fac9ccea8e67bae61c27",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.9news.com/article/news/local/coloradan-stopped-by-police-data-errors-flock-alerts/73-593a3772-f43d-46b1-8744-af888b9bd7f2",
+    "simhash": "27c116be52449c08",
+    "snapshot_path": "snapshots/2026-10-06/fcb3849817a343797ac038ee4f64b69bf168e0e592c25f47eb318e9254739325.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5980,
+    "title": "Not a one-off: More Coloradans stopped by police after data errors triggered Flock alerts | 9news.com",
     "url": "https://www.9news.com/article/news/local/coloradan-stopped-by-police-data-errors-flock-alerts/73-593a3772-f43d-46b1-8744-af888b9bd7f2"
   },
   "https://9news.com/article/news/local/colorado-news/thornton-police-complaint-officer-ran-20000-flock-searches/73-cf59c995-f38b-4b5b-a883-ee36a5b06c50": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "1b962a00204fa3212812ff90f3367ca31a77033aea60a8a74e939ba486d905ff.txt",
+    "content_hash": "f150be641e57843bc6419f7a461106b0f5f1745cdcd819b148e946a1f20d22e8",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.9news.com/article/news/local/colorado-news/thornton-police-complaint-officer-ran-20000-flock-searches/73-cf59c995-f38b-4b5b-a883-ee36a5b06c50",
+    "simhash": "e85cfca101293118",
+    "snapshot_path": "snapshots/2026-10-06/288fcbf7fb58dfb27797e264af00f723092521de5a3b729a8711eab9429f5615.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5172,
+    "title": "Thornton Police looking into complaint that officer ran nearly 20,000 Flock searches | 9news.com",
     "url": "https://www.9news.com/article/news/local/colorado-news/thornton-police-complaint-officer-ran-20000-flock-searches/73-cf59c995-f38b-4b5b-a883-ee36a5b06c50"
   },
   "https://aacounty.org/police-department/about-us/calendar/police-hearing-board-february-19": {
@@ -230,11 +236,14 @@
     "url": "https://www.aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance/"
   },
   "https://agendas.fresno.gov/api/v1/attachments/cmq0gq83x25k8peeiia47sczk/file": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://agendas.fresno.gov/api/v1/attachments/cmq0gq83x25k8peeiia47sczk/file",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://agendas.fresno.gov/api/v1/attachments/cmq0gq83x25k8peeiia47sczk/file"
@@ -613,13 +622,16 @@
     "url": "https://www.azcentral.com/story/news/local/tempe/2026/08/26/tempe-removes-flock-cameras-privacy-concerns/91476662007/"
   },
   "https://azcentral.com/story/news/metro-phoenix/2026/09/04/queen-creek-license-plate-reader-misuse-crime/91584262007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "68eb48050e967a326fdf59aa05f08613c0ae6ed776051a2725157c0f727da2e8.txt",
+    "content_hash": "feca5bc6672f589de7ae557d4a7a61dd51d65ff4ce1436e2ed7ad08501d1a236",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.azcentral.com/story/news/metro-phoenix/2026/09/04/queen-creek-license-plate-reader-misuse-crime/91584262007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "ad8380bfa82d3c2d",
+    "snapshot_path": "snapshots/2026-10-06/a7a34989843d08bc307db942e995d728215e36fd09ce51963fe23644f8a258fc.json",
+    "snapshot_status": "uploaded",
+    "text_len": 566,
+    "title": "Queen Creek targets license plate reader misuse as a crime",
     "url": "https://www.azcentral.com/story/news/metro-phoenix/2026/09/04/queen-creek-license-plate-reader-misuse-crime/91584262007/"
   },
   "https://azcentral.com/story/news/metro-phoenix/2026/09/11/tempe-to-become-first-az-city-ban-flock-like-cameras/91691228007": {
@@ -785,11 +797,14 @@
     "url": "https://bellevilleareaindependent.com/will-pay-for-license-plate-recognition-cameras-in-its-district/"
   },
   "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-03-24%20Annotated%20Agenda%20-%20Council.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-03-24%20Annotated%20Agenda%20-%20Council.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-03-24%20Annotated%20Agenda%20-%20Council.pdf"
@@ -1695,23 +1710,29 @@
     "url": "https://collierville.granicus.com/services/legistar/download/pdf/4055509/FY26_CCPA__20_000.pdf"
   },
   "https://coloradoan.com/story/news/local/2026/07/23/fort-collins-police-services-flock-safety-cameras-have-been-removed/91021962007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "e7e755f40605e480d17b0252e859125558beaa4e0b25bf55d99d1931215532fa.txt",
+    "content_hash": "771c1ec07cb0dd1372b5e685b5a34b5d043cca58454039f67762b133a7387c05",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.coloradoan.com/story/news/local/2026/07/23/fort-collins-police-services-flock-safety-cameras-have-been-removed/91021962007/",
+    "simhash": "27cb16c2ede71eea",
+    "snapshot_path": "snapshots/2026-10-06/7bc43cea11a4d5af9a114bb6d25ee152c18509c9bfa1b084d1cfc7ff5fb58571.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1201,
+    "title": "Fort Collins Police Services' Flock Safety cameras have been removed",
     "url": "https://www.coloradoan.com/story/news/local/2026/07/23/fort-collins-police-services-flock-safety-cameras-have-been-removed/91021962007/"
   },
   "https://coloradoan.com/story/news/local/fort-collins/2026/09/17/fort-collins-police-to-discuss-responsible-technology-use-sept-17/91790862007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "66280460226cdf5fb63c838212c200bc387ed4bb7ab43b8016f5af7cd28a09be.txt",
+    "content_hash": "1368275be31c997fd80e475301325277d6a2db83e6388d75191ff3068255776f",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.coloradoan.com/story/news/local/fort-collins/2026/09/17/fort-collins-police-to-discuss-responsible-technology-use-sept-17/91790862007/",
+    "simhash": "793b1b247c8b3493",
+    "snapshot_path": "snapshots/2026-10-06/3a8aa578ea0f133c6970d5e25e771b1d2c895e7b8d956c214682b577130c1d6d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2290,
+    "title": "Fort Collins police to discuss 'responsible technology use' Sept. 17",
     "url": "https://www.coloradoan.com/story/news/local/fort-collins/2026/09/17/fort-collins-police-to-discuss-responsible-technology-use-sept-17/91790862007/"
   },
   "https://commercialappeal.com/story/news/local/2026/08/18/flock-cameras-memphis-where-how-to-look-up-searches/91340875007": {
@@ -1987,11 +2008,14 @@
     "url": "https://www.delmarvanow.com/story/news/local/maryland/2026/08/07/salisbury-police-chief-naacp-sound-off-on-use-of-flock-safety-cameras/91202133007/"
   },
   "https://denver.legistar1.com/denver/attachments/f31b1d7b-3fc3-4b2c-b88e-b825fb3bca04.pdf": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://denver.legistar1.com/denver/attachments/f31b1d7b-3fc3-4b2c-b88e-b825fb3bca04.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://denver.legistar1.com/denver/attachments/f31b1d7b-3fc3-4b2c-b88e-b825fb3bca04.pdf"
@@ -2236,11 +2260,14 @@
     "url": "https://www.elnuevodia.com/noticias/seguridad/notas/persecucion-o-seguridad-el-debate-entre-beneficios-y-peligros-de-los-lectores-automaticos-de-tablillas-en-puerto-rico/"
   },
   "https://elpaso-journal.com/post/flock-cameras-bring-public-safety-and-privacy-debate-to-fountain": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.elpaso-journal.com/post/flock-cameras-bring-public-safety-and-privacy-debate-to-fountain",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "Flock Cameras Bring Public Safety and Privacy Debate to Fountain",
     "url": "https://www.elpaso-journal.com/post/flock-cameras-bring-public-safety-and-privacy-debate-to-fountain"
@@ -2276,11 +2303,14 @@
     "url": "https://www.elpasotimes.com/story/news/politics/local/2026/09/15/el-paso-city-council-orders-flock-camera-removal-bans-alpr-contracts/91778242007/"
   },
   "https://englewoodgov.civicweb.net/document/464269/Discussion%20with%20Council%20reference%20contracts%20for.pdf?handle=EC8535D70AA04227AA0BCBE5FDF66045": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://englewoodgov.civicweb.net/document/464269/Discussion%20with%20Council%20reference%20contracts%20for.pdf?handle=EC8535D70AA04227AA0BCBE5FDF66045",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://englewoodgov.civicweb.net/document/464269/Discussion%20with%20Council%20reference%20contracts%20for.pdf?handle=EC8535D70AA04227AA0BCBE5FDF66045"
@@ -2502,13 +2532,16 @@
     "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/communications/documents/city-council-presentations/2024/06-04-2024/briefing-on-police-technology.pdf"
   },
   "https://fountain.colorado.gov/government/fountain-police-department": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "8313eccdc45b6fd0822b450be8a811a86d31df56c5b043e1eb8e2e686d1f13f5.txt",
+    "content_hash": "69b1f5fd8b9ac8703343828f360d2aea1a6dfb80508880db6aa0023258785cc9",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://fountain.colorado.gov/government/fountain-police-department",
+    "simhash": "58b2ceaadd648a05",
+    "snapshot_path": "snapshots/2026-10-06/a31261d0501e96ccb4398a00bf0df0de31ff8f6f3577508f53a25cc7e58139c0.json",
+    "snapshot_status": "uploaded",
+    "text_len": 12403,
+    "title": "Fountain Police Department | City of Fountain",
     "url": "https://fountain.colorado.gov/government/fountain-police-department"
   },
   "https://fox10phoenix.com/news/2-more-arizona-communities-drop-flock-license-plate-cameras": {
@@ -4644,13 +4677,16 @@
     "url": "http://montco.today/2026/08/abington-police-drop-flock-cameras-data-security/"
   },
   "https://mountainview.gov/Home/Components/News/News/1211/284": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "ad723258925ac7943c96003a16117f2268bfe0c1af4aa4d084fdb5a1b816823c.txt",
+    "content_hash": "4054bded63e89132ca2d848d2af06d492c21158c4404cfa2a3f442ee3ffcbdee",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.mountainview.gov/Home/Components/News/News/1211/284",
+    "simhash": "c310a073d0f15c62",
+    "snapshot_path": "snapshots/2026-10-06/7a2f78e0ff26469a0dfb3af5ee59d12592ef252fa03d40033ac8e458b36cddd0.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1396,
+    "title": "City Council Terminates ALPR Contract with Flock Safety | City News | Mountain View, CA",
     "url": "https://www.mountainview.gov/Home/Components/News/News/1211/284"
   },
   "https://muckrock.com/foi/everett-251/flock-safety-search-audits-network-sharing-and-general-order-197346": {
@@ -4704,11 +4740,14 @@
     "url": "https://www.myhuntleynews.com/2023/04/24/huntley-police-present-new-tech-at-village-board-meeting/"
   },
   "https://mymetmedia.com/denver-drops-flock-hires-axon-as-new-license-plate-camera-vendor": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-10-13",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.mymetmedia.com/denver-drops-flock-hires-axon-as-new-license-plate-camera-vendor/"
@@ -5099,11 +5138,14 @@
     "url": "https://padailypost.com/2026/02/24/mountain-view-council-votes-to-get-rid-of-license-plate-cameras/"
   },
   "https://paloaltoonline.com/city-government/2026/02/25/city-council-terminates-mountain-views-license-plate-camera-contract": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.paloaltoonline.com/city-government/2026/02/25/city-council-terminates-mountain-views-license-plate-camera-contract/",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "City Council terminates Mountain View’s license plate camera contract - Palo Alto Online",
     "url": "https://www.paloaltoonline.com/city-government/2026/02/25/city-council-terminates-mountain-views-license-plate-camera-contract/"
@@ -5308,11 +5350,14 @@
     "url": "https://prinevillereview.com/left-and-right-unite-as-oregonians-turn-against-flock-camera-network/"
   },
   "https://prismnews.com/local/douglas-co/douglas-county-sheriff-shifts-surveillance-system-from": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-10-13",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.prismnews.com/local/douglas-co/douglas-county-sheriff-shifts-surveillance-system-from"
@@ -5540,33 +5585,42 @@
     "url": "https://reclaimthenet.org/norman-oklahoma-flock-license-plate-readers-county-sheriff"
   },
   "https://recordnet.com/story/news/politics/government/2026/03/30/stockton-city-council-flock-police-drone-surveillance-expansion/89382772007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "504ac6a69d1f2c0908898e05b8c6413655f58260ae11ee54f7ea78c4c29355f1.txt",
+    "content_hash": "550cf306afcaea18df63a7b68c7e3fbb65bad7976e9ef315775120d02bc5b749",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.recordnet.com/story/news/politics/government/2026/03/30/stockton-city-council-flock-police-drone-surveillance-expansion/89382772007/",
+    "simhash": "b0fa880a0f16cb97",
+    "snapshot_path": "snapshots/2026-10-06/8ebb770791b620bb9bca9e288ba76391b2b16923755e62a6dd4a5256ae50e99b.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5631,
+    "title": "Stockton to consider $3.15M Flock drone expansion amid scrutiny",
     "url": "https://www.recordnet.com/story/news/politics/government/2026/03/30/stockton-city-council-flock-police-drone-surveillance-expansion/89382772007/"
   },
   "https://recordnet.com/story/news/politics/government/2026/04/02/stockton-police-flock-drone-program-public-raises-surveillance-concerns/89414806007": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "c8c1259917984bd9548dc131ff6faf2a292327c6a86bc2cd33723aaa5bae02db.txt",
+    "content_hash": "1c3aa1a3636b0fb2cdc07503cb39ef70dea9dbf662938946d054e8856ae184bd",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.recordnet.com/story/news/politics/government/2026/04/02/stockton-police-flock-drone-program-public-raises-surveillance-concerns/89414806007/",
+    "simhash": "31bfa147ba1ed511",
+    "snapshot_path": "snapshots/2026-10-06/8666c30def43c9a7ded99dc4381fffcd7b7607cfb9946d1ede8c6f9ef8652c31.json",
+    "snapshot_status": "uploaded",
+    "text_len": 12567,
+    "title": "Public raises surveillance concerns as Stockton OKs police drone program",
     "url": "https://www.recordnet.com/story/news/politics/government/2026/04/02/stockton-police-flock-drone-program-public-raises-surveillance-concerns/89414806007/"
   },
   "https://recordnet.com/story/news/politics/government/2026/09/01/stockton-pushed-to-end-flock-contract-privacy-concerns/91361717007": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "0c02a16b7fec5a7ac09fe0ff94b85bd311517a270d5532eb449eaefc7e26cbe4.txt",
+    "content_hash": "a6285d680f24b6db4f7585fd3d2aa2f069944487c0702e8f79989a9af988f641",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.recordnet.com/story/news/politics/government/2026/09/01/stockton-pushed-to-end-flock-contract-privacy-concerns/91361717007/",
+    "simhash": "1765bd6b05003310",
+    "snapshot_path": "snapshots/2026-10-06/d05f0de8b1089ca8c1895d1b9a6aed4d875b2d79a93403d082db48ce033a4893.json",
+    "snapshot_status": "uploaded",
+    "text_len": 10038,
+    "title": "Stockton residents push council to end Flock contract over privacy concerns",
     "url": "https://www.recordnet.com/story/news/politics/government/2026/09/01/stockton-pushed-to-end-flock-contract-privacy-concerns/91361717007/"
   },
   "https://redeyebr.com/what-the-flock": {
@@ -6684,11 +6738,14 @@
     "url": "https://www.theurbanist.org/license-plate-readers-proliferate-in-washington-ice-overreach/"
   },
   "https://thorntonpd.org/s/PowerPoint-ALPR.pdf": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
-    "final_url": "https://static1.squarespace.com/static/602c10c3610d6f1042ed33e8/t/69dea4f4f4473570de33bbad/1776198901905/PowerPoint+-+ALPR.pdf",
+    "fetch_status": "error",
+    "fetched_at": "2026-10-06",
+    "final_url": null,
+    "retry_after": "2026-10-13",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.thorntonpd.org/s/PowerPoint-ALPR.pdf"
@@ -7084,13 +7141,16 @@
     "url": "https://utahn.com/your-license-plate-logged-where-flock-safety-stands-in-utah/"
   },
   "https://vcstar.com/story/news/local/communities/camarillo/2026/08/27/camarillo-council-criticism-flock-cameras/91482788007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "91d35f2f69e50aaaf2d57ef3923a3608fc7e21eb9211331a216feac228984239.txt",
+    "content_hash": "5c15a0c00e676db30df256c4e600fdd4251a338f19c20d1b2e64b123f97090fc",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.vcstar.com/story/news/local/communities/camarillo/2026/08/27/camarillo-council-criticism-flock-cameras/91482788007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "527e59284013c765",
+    "snapshot_path": "snapshots/2026-10-06/9da1a60508b6987578d9d02ee4216682a316417e06fb4724c6a7f72ee55b3074.json",
+    "snapshot_status": "uploaded",
+    "text_len": 465,
+    "title": "Camarillo council hears concerns over license plate cameras",
     "url": "https://www.vcstar.com/story/news/local/communities/camarillo/2026/08/27/camarillo-council-criticism-flock-cameras/91482788007/"
   },
   "https://vernonhills.org/963/Automated-License-Plate-Readers": {
@@ -7346,11 +7406,14 @@
     "url": "https://www.whro.org/virginia-center-for-investigative-journalism/2026-09-10/small-virginia-town-de-flocks"
   },
   "https://wichitaks.granicus.com/services/legistar/download/pdf/2900778/KS_-_Wichita_PD_-_Law_Enforcement_Agreement_-___8_.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
-    "final_url": "https://granicus-aasmp-peak-files.s3.amazonaws.com/uploads/attachment/pdf/2900778/KS_-_Wichita_PD_-_Law_Enforcement_Agreement_-___8_.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATHOFOHMMEOCNXD2W%2F20260926%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260926T034808Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f6365e6952f62468205abf00f84c80c981e12a9354050892b581e7b15a664be9",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://granicus-aasmp-peak-files.s3.amazonaws.com/uploads/attachment/pdf/2900778/KS_-_Wichita_PD_-_Law_Enforcement_Agreement_-___8_.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATHOFOHMMEOCNXD2W%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261006T195526Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e4ce594386690672a0fb9182b60e4a97ce26f192a3480d18e788bd946a3b7a6e",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://wichitaks.granicus.com/services/legistar/download/pdf/2900778/KS_-_Wichita_PD_-_Law_Enforcement_Agreement_-___8_.pdf"
@@ -7366,11 +7429,14 @@
     "url": "https://wichitaks.granicus.com/services/legistar/download/pdf/2900779/Wichita-10Falcons.pdf"
   },
   "https://wichitaks.granicus.com/services/legistar/download/pdf/2912126/Agenda_Report_VI-7.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
-    "final_url": "https://granicus-aasmp-peak-files.s3.amazonaws.com/uploads/attachment/pdf/2912126/Agenda_Report_VI-7.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATHOFOHMMEOCNXD2W%2F20260926%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260926T034805Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6dda4ed3d66ea46d56a8752474c2ab80ea5d36593bb6ac052c287d31dc3e730f",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://granicus-aasmp-peak-files.s3.amazonaws.com/uploads/attachment/pdf/2912126/Agenda_Report_VI-7.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATHOFOHMMEOCNXD2W%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261006T195524Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=917551c2fc0e5348c8454cec06b7d387466040036180676339dcb8415c9f40c4",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://wichitaks.granicus.com/services/legistar/download/pdf/2912126/Agenda_Report_VI-7.pdf"
@@ -7497,11 +7563,14 @@
     "url": "https://wyrz.org/plainfield-police-department-deploys-innovative-license-plate-reader-cameras-to-help-solve-and-reduce-crime/"
   },
   "https://yampavalleybugle.com/post/routt-county-sheriff-to-cancel-flock-contract-after-records-show-local-cameras-were-included-in-8-mi": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.yampavalleybugle.com/post/routt-county-sheriff-to-cancel-flock-contract-after-records-show-local-cameras-were-included-in-8-mi",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "Routt County Sheriff to cancel Flock contract after records show local cameras were included in 8 million searches",
     "url": "https://www.yampavalleybugle.com/post/routt-county-sheriff-to-cancel-flock-contract-after-records-show-local-cameras-were-included-in-8-mi"
@@ -7626,11 +7695,14 @@
     "url": "https://www.youtube.com/watch?v=Siapjqp3fSY"
   },
   "https://youtube.com/watch?v=TF5AJULxgWw": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.youtube.com/watch?v=TF5AJULxgWw",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=TF5AJULxgWw"
@@ -7679,11 +7751,14 @@
     "url": "https://www.youtube.com/watch?v=ppkKszL8hII"
   },
   "https://youtube.com/watch?v=sznL25CDjuo": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.youtube.com/watch?v=sznL25CDjuo",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=sznL25CDjuo"
