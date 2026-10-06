@@ -921,11 +921,14 @@
     "url": "https://www.brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime/"
   },
   "https://buffalocounty.ne.gov/Portals/0/Buffalo%20Co%20SO%20Policy%201346%20Automated%20License%20Plate%20Readers.pdf": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://buffalocounty.ne.gov/Portals/0/Buffalo%20Co%20SO%20Policy%201346%20Automated%20License%20Plate%20Readers.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://buffalocounty.ne.gov/Portals/0/Buffalo%20Co%20SO%20Policy%201346%20Automated%20License%20Plate%20Readers.pdf"
@@ -1047,11 +1050,14 @@
     "url": "https://cdn.euclidlibrary.org/cdn/ecc/2022/20220420_SAF/agenda.pdf"
   },
   "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_10879634/File/Government/Public Notices/ALPR Letter.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-10-13",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_10879634/File/Government/Public Notices/ALPR Letter.pdf"
@@ -1502,21 +1508,27 @@
     "url": "http://www.cityoffortwayne.in.gov/m/newsflash/Home/Detail/716"
   },
   "https://cityofkearney.org/Archive/ViewFile/Item/11780": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://cityofkearney.org/Archive/ViewFile/Item/11780",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://cityofkearney.org/Archive/ViewFile/Item/11780"
   },
   "https://cityofkearney.org/Archive/ViewFile/Item/8715": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://cityofkearney.org/Archive/ViewFile/Item/8715",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://cityofkearney.org/Archive/ViewFile/Item/8715"
@@ -1657,11 +1669,14 @@
     "url": "http://cmg-cmg-tv-10090-prod.cdn.arcpublishing.com/news/local/stanwood-reactivates-flock-cameras-spokane-county-joins-pierce-county-shutting-them-down/A7O7L5NXUNGYBJILWMIBGXOGSY/"
   },
   "https://cms6.revize.com/revize/scottsbluffne/POLICE%20DEPT/30.14%20Automated%20License%20Plate%20Readers%20ALPR-ks.pdf?t=202406271557520&t=202406271557520": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://cms6.revize.com/revize/scottsbluffne/POLICE%20DEPT/30.14%20Automated%20License%20Plate%20Readers%20ALPR-ks.pdf?t=202406271557520&t=202406271557520",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://cms6.revize.com/revize/scottsbluffne/POLICE%20DEPT/30.14%20Automated%20License%20Plate%20Readers%20ALPR-ks.pdf?t=202406271557520&t=202406271557520"
@@ -1835,11 +1850,14 @@
     "url": "https://www.coralville.org/AgendaCenter/ViewFile/Minutes/_02242026-1949"
   },
   "https://core-docs.s3.us-east-1.amazonaws.com/documents/asset/uploaded_file/5042/GIPD/4856824/Automatic_License_Plate_Re.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://core-docs.s3.us-east-1.amazonaws.com/documents/asset/uploaded_file/5042/GIPD/4856824/Automatic_License_Plate_Re.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://core-docs.s3.us-east-1.amazonaws.com/documents/asset/uploaded_file/5042/GIPD/4856824/Automatic_License_Plate_Re.pdf"
@@ -1881,11 +1899,14 @@
     "url": "https://www.courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007/"
   },
   "https://croftoncommunity.org/_files/ugd/c759a7_a277ea517b98421f9c2ad3185e831004.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.croftoncommunity.org/_files/ugd/c759a7_a277ea517b98421f9c2ad3185e831004.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.croftoncommunity.org/_files/ugd/c759a7_a277ea517b98421f9c2ad3185e831004.pdf"
@@ -2034,13 +2055,16 @@
     "url": "https://www.delawareonline.com/story/news/local/2026/08/06/wilmington-discontinues-use-of-flock-cameras/91187957007/"
   },
   "https://delmarvanow.com/story/news/local/maryland/2026/08/07/salisbury-police-chief-naacp-sound-off-on-use-of-flock-safety-cameras/91202133007": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "73fbfe6b3e3bd01256dcc2744160c379639883001a3f1884cba49616f8e13dd9.txt",
+    "content_hash": "3894a7ed768d7486067c9d04ad217868adcdde3e4d55aec9ca174e03dec82688",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.delmarvanow.com/story/news/local/maryland/2026/08/07/salisbury-police-chief-naacp-sound-off-on-use-of-flock-safety-cameras/91202133007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "b50d09ea1de61feb",
+    "snapshot_path": "snapshots/2026-10-06/a8d4edfd75bec8f3788963e68b823cd7d393d10377940a5e8aea40ff6b5a7979.json",
+    "snapshot_status": "uploaded",
+    "text_len": 656,
+    "title": "Salisbury police chief, NAACP sound off on use of Flock Safety cameras",
     "url": "https://www.delmarvanow.com/story/news/local/maryland/2026/08/07/salisbury-police-chief-naacp-sound-off-on-use-of-flock-safety-cameras/91202133007/"
   },
   "https://denver.legistar1.com/denver/attachments/f31b1d7b-3fc3-4b2c-b88e-b825fb3bca04.pdf": {
@@ -2175,11 +2199,14 @@
     "url": "http://diggingdeeper.net/2025/10/24/plate-reader-strikes-again/"
   },
   "https://disa.org/usa/minnesota/article_ba8bca36-c7e9-11f0-b0ab-9d2e6ee6bd90.html": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-10-13",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://disa.org/usa/minnesota/article_ba8bca36-c7e9-11f0-b0ab-9d2e6ee6bd90.html"
@@ -2244,13 +2271,16 @@
     "url": "https://www.dropsitenews.com/p/nyclu-lawsuit-surveillance-camera-location-public-record-flock"
   },
   "https://easternprogress.com/fulcher-signs-on-to-bill-limiting-federal-agents-access-to-flock-other-surveillance-data/article_75d10137-7caf-5c01-be84-9fb08402c593.html": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "c6f39a4dc20814c456c9bed6dd977af4a232d90c18594b126ec3c12184c5b0b1.txt",
+    "content_hash": "cc3e70107e2cf54bd031e04b417b206455b09ad3bbb4622379306c70973ff6bd",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.easternprogress.com/fulcher-signs-on-to-bill-limiting-federal-agents-access-to-flock-other-surveillance-data/article_75d10137-7caf-5c01-be84-9fb08402c593.html",
+    "simhash": "9f0ae1972c411fb9",
+    "snapshot_path": "snapshots/2026-10-06/d67d3ae68783015b1ecbecf3e1334892f9b45011f2c71ec3a9ee2da622cd20f7.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7662,
+    "title": "Fulcher signs on to bill limiting federal agents’ access to Flock, other surveillance data | | easternprogress.com",
     "url": "https://www.easternprogress.com/fulcher-signs-on-to-bill-limiting-federal-agents-access-to-flock-other-surveillance-data/article_75d10137-7caf-5c01-be84-9fb08402c593.html"
   },
   "https://ebpd.org/east-bridgewater-police-department-to-terminate-contract-with-flock-safety": {
@@ -2921,21 +2951,27 @@
     "url": "https://gmg-wsls-prod.cdn.arcpublishing.com/topic/Flock_Safety/"
   },
   "https://go.boarddocs.com/md/tofhmd/Board.nsf/files/DEWLR457C030/$file/MD%20-%20Forest%20Heights%20PD%20-%20Law%20Enforcement%20Agreement%20-%20%20(2)%20(1)%20(1).pdf": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://go.boarddocs.com/md/tofhmd/Board.nsf/files/DEWLR457C030/$file/MD%20-%20Forest%20Heights%20PD%20-%20Law%20Enforcement%20Agreement%20-%20%20(2)%20(1)%20(1).pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://go.boarddocs.com/md/tofhmd/Board.nsf/files/DEWLR457C030/$file/MD%20-%20Forest%20Heights%20PD%20-%20Law%20Enforcement%20Agreement%20-%20%20(2)%20(1)%20(1).pdf"
   },
   "https://go.boarddocs.com/md/tofhmd/Board.nsf/files/DEWLR757C3C8/$file/Town Council Staff Report-GOCCP-Flock.pdf": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://go.boarddocs.com/md/tofhmd/Board.nsf/files/DEWLR757C3C8/$file/Town%20Council%20Staff%20Report-GOCCP-Flock.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://go.boarddocs.com/md/tofhmd/Board.nsf/files/DEWLR757C3C8/$file/Town Council Staff Report-GOCCP-Flock.pdf"
@@ -3444,11 +3480,14 @@
     "url": "https://guessingheadlights.com/flock-camera-helps-troopers-locate-teen-and-stolen-car-most-effective-tool-ive-used-in-my-career/"
   },
   "https://hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf?t=202412021324290": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-06",
+    "final_url": "http://files.hallcountyne.gov/Documents/Government/Sheriff/Flock%20Safety%20System/ALPR_Policy.pdf?t=202412021324290",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf?t=202412021324290"
@@ -3963,11 +4002,14 @@
     "url": "https://kcfmradio.com/2026/02/03/flock-cameras-approved-city-manager-evaluation-ocf-grant-cycle/"
   },
   "https://kearney.granicus.com/MetaViewer.php?clip_id=526&meta_id=43147&view_id=1": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://kearney.granicus.com/MetaViewer.php?view_id=1&clip_id=526&meta_id=43147",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://kearney.granicus.com/MetaViewer.php?view_id=1&clip_id=526&meta_id=43147"
@@ -4320,13 +4362,16 @@
     "url": "https://lasvegasnewsroom.com/2026/08/27/clark-county-school-district-police-access-flock-license-plate-cameras/"
   },
   "https://lcsun-news.com/story/news/education/2026/09/17/flock-cameras-las-cruces/91792151007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "83555f4923663e0420af245a433bedf04711c6df5bf577f7af9aa47549067bbd.txt",
+    "content_hash": "e0a81997f342abe6a7806df99a5051f1243cb1da059ad0900e0d136d004b0f2c",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.lcsun-news.com/story/news/education/2026/09/17/flock-cameras-las-cruces/91792151007/",
+    "simhash": "86ab021aae5d9a4a",
+    "snapshot_path": "snapshots/2026-10-06/58d4031d3dc53f3e73472b30fe9eb0238a13ae861af474aa85a611e9385a0ea7.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3636,
+    "title": "Las Cruces police reveal camera usage in new portal",
     "url": "https://www.lcsun-news.com/story/news/education/2026/09/17/flock-cameras-las-cruces/91792151007/"
   },
   "https://lcsun-news.com/story/news/local/las-cruces/2026/09/21/las-cruces-restricts-police-surveillance-technology/91814555007": {
@@ -4669,11 +4714,14 @@
     "url": "https://mbatchelo0.wixsite.com/rivernewslive-1/post/louisiana-police-disable-flock-cameras-ahead-of-public-hearing"
   },
   "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columbhtmn-meet-58b52135de1f43089d7974a55fb7def8/ITEM-Attachment-001-ff4c4d1fffa24182b6263fa8bd698d28.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columbhtmn-meet-58b52135de1f43089d7974a55fb7def8/ITEM-Attachment-001-ff4c4d1fffa24182b6263fa8bd698d28.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columbhtmn-meet-58b52135de1f43089d7974a55fb7def8/ITEM-Attachment-001-ff4c4d1fffa24182b6263fa8bd698d28.pdf"
@@ -5587,21 +5635,27 @@
     "url": "https://www.publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-recognition-cameras-from-unincorporated-areas"
   },
   "https://published.pdf.pagesuite.com/fea9d757-caf1-44de-a806-73630a1ba0bf/d6868dc7-925a-49e9-863d-9f8135d68d78/51f0d15a-da51-4869-a117-f430fab1a93f/721107fc-1d5c-49ae-8f41-cf4a5ac5a7dc/8a5aa49b-eeaf-46e8-a0e6-59b7d99f203b/lowres.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://published.pdf.pagesuite.com/fea9d757-caf1-44de-a806-73630a1ba0bf/d6868dc7-925a-49e9-863d-9f8135d68d78/51f0d15a-da51-4869-a117-f430fab1a93f/721107fc-1d5c-49ae-8f41-cf4a5ac5a7dc/8a5aa49b-eeaf-46e8-a0e6-59b7d99f203b/lowres.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://published.pdf.pagesuite.com/fea9d757-caf1-44de-a806-73630a1ba0bf/d6868dc7-925a-49e9-863d-9f8135d68d78/51f0d15a-da51-4869-a117-f430fab1a93f/721107fc-1d5c-49ae-8f41-cf4a5ac5a7dc/8a5aa49b-eeaf-46e8-a0e6-59b7d99f203b/lowres.pdf"
   },
   "https://published.pdf.pagesuite.com/fea9d757-caf1-44de-a806-73630a1ba0bf/d6868dc7-925a-49e9-863d-9f8135d68d78/6aff557d-37ed-424f-9ef0-a22eac0dd9ad/677371f9-cb5a-4ed8-90b4-3d06c1b91e5a/a399e7df-22cf-4e86-90d1-3e026e8385b5/lowres.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://published.pdf.pagesuite.com/fea9d757-caf1-44de-a806-73630a1ba0bf/d6868dc7-925a-49e9-863d-9f8135d68d78/6aff557d-37ed-424f-9ef0-a22eac0dd9ad/677371f9-cb5a-4ed8-90b4-3d06c1b91e5a/a399e7df-22cf-4e86-90d1-3e026e8385b5/lowres.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://published.pdf.pagesuite.com/fea9d757-caf1-44de-a806-73630a1ba0bf/d6868dc7-925a-49e9-863d-9f8135d68d78/6aff557d-37ed-424f-9ef0-a22eac0dd9ad/677371f9-cb5a-4ed8-90b4-3d06c1b91e5a/a399e7df-22cf-4e86-90d1-3e026e8385b5/lowres.pdf"
@@ -6107,21 +6161,27 @@
     "url": "https://sanjosespotlight.com/san-jose-again-attempts-to-tighten-controls-on-license-plate-readers/"
   },
   "https://sarpy.civicweb.net/document/81906/Resolution%202023-231%20-%20Flock%20Safety%20Agreement%20and%20M.pdf?handle=3836CED6AD5143F19AC4159C4A256CC3": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://sarpy.civicweb.net/document/81906/Resolution%202023-231%20-%20Flock%20Safety%20Agreement%20and%20M.pdf?handle=3836CED6AD5143F19AC4159C4A256CC3",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://sarpy.civicweb.net/document/81906/Resolution%202023-231%20-%20Flock%20Safety%20Agreement%20and%20M.pdf?handle=3836CED6AD5143F19AC4159C4A256CC3"
   },
   "https://sarpy.civicweb.net/document/82441": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://sarpy.civicweb.net/document/82441/",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://sarpy.civicweb.net/document/82441/"
@@ -6440,11 +6500,14 @@
     "url": "https://stoughton.org/DocumentCenter/View/6337/Amended-Motion-for-STM-Article-15---Police-Department-Capital-submitted-by-Noah-Beit-Aharon-Precinct-6-on-April-28-2026"
   },
   "https://subluceo.com/source/0cfb21ac-11d8-4874-ac49-ba8247583c96": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-10-13",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.subluceo.com/source/0cfb21ac-11d8-4874-ac49-ba8247583c96"
@@ -6609,11 +6672,14 @@
     "url": "https://tfid.org/899/Automated-License-Plate-Reader-ALPR"
   },
   "https://tfid.org/DocumentCenter/View/8284/TFPD-Automated-License-Plate-Reader-Policy-8192026?bidId=": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://tfid.org/DocumentCenter/View/8284/TFPD-Automated-License-Plate-Reader-Policy-8192026?bidId=",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://tfid.org/DocumentCenter/View/8284/TFPD-Automated-License-Plate-Reader-Policy-8192026?bidId="
@@ -7148,11 +7214,14 @@
     "url": "https://transparency.flocksafety.com/ogden-city-ut-pd"
   },
   "https://transparency.flocksafety.com/salisbury-pd-md": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://transparency.flocksafety.com/salisbury-pd-md"
@@ -7849,11 +7918,14 @@
     "url": "https://www.youtube.com/watch?v=2-oXsYJ1zJs"
   },
   "https://youtube.com/watch?v=7EnIagLPwEo": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.youtube.com/watch?v=7EnIagLPwEo",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=7EnIagLPwEo"
@@ -7898,11 +7970,14 @@
     "url": "https://www.youtube.com/watch?v=L-KcNG3lf4g"
   },
   "https://youtube.com/watch?v=Ox5y7n4ZTfE": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.youtube.com/watch?v=Ox5y7n4ZTfE",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=Ox5y7n4ZTfE"
