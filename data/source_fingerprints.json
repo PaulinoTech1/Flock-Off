@@ -176,11 +176,14 @@
     "url": "https://www.aacounty.org/police-department/about-us/calendar/police-hearing-board-february-19"
   },
   "https://aaronforward4.com/s/Flock-Regulation-Ordinance-Final-clean-copy.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://static1.squarespace.com/static/66c502782b94fd09d625122a/t/6a74008a6392102034bf1797/1785987210651/Flock+Regulation+Ordinance+-+Final+%28clean+copy%29.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.aaronforward4.com/s/Flock-Regulation-Ordinance-Final-clean-copy.pdf"
@@ -318,11 +321,14 @@
     "url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf"
   },
   "https://alprwatch.org/pub/muckrock/data/199260-flock-email-metadata-and-contracts/FLOCK_ALPR.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://alprwatch.org/pub/muckrock/data/199260-flock-email-metadata-and-contracts/FLOCK_ALPR.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://alprwatch.org/pub/muckrock/data/199260-flock-email-metadata-and-contracts/FLOCK_ALPR.pdf"
@@ -1454,11 +1460,14 @@
     "url": "https://www.cityofbartlesville.org/police-department-hosts-flock-safety-camera-forum-2/"
   },
   "https://cityofbartlesville.org/wp-content/uploads/2024/12/Flock-cameras-FAQ.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.cityofbartlesville.org/wp-content/uploads/2024/12/Flock-cameras-FAQ.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.cityofbartlesville.org/wp-content/uploads/2024/12/Flock-cameras-FAQ.pdf"
@@ -1649,11 +1658,14 @@
     "url": "https://cms6.revize.com/revize/scottsbluffne/POLICE%20DEPT/30.14%20Automated%20License%20Plate%20Readers%20ALPR-ks.pdf?t=202406271557520&t=202406271557520"
   },
   "https://cnhinews.com/oklahoma/news/article_0e3e40ec-0e00-5fbe-bb5e-4c7a110680ec.html": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.cnhinews.com/oklahoma/news/article_0e3e40ec-0e00-5fbe-bb5e-4c7a110680ec.html"
@@ -2288,33 +2300,42 @@
     "url": "https://www.elpaso-journal.com/post/flock-cameras-bring-public-safety-and-privacy-debate-to-fountain"
   },
   "https://elpasoheraldpost.com/2026/09/15/breaking-news-city-council-unanimously-votes-to-order-flock-to-remove-cameras-within-60-days": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://elpasoheraldpost.com/2026/09/15/breaking-news-city-council-unanimously-votes-to-order-flock-to-remove-cameras-within-60-days/",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "Breaking News: City Council Unanimously Votes to Order Flock to Remove Cameras Within 60 Days - El Paso Herald Post",
     "url": "https://elpasoheraldpost.com/2026/09/15/breaking-news-city-council-unanimously-votes-to-order-flock-to-remove-cameras-within-60-days/"
   },
   "https://elpasotimes.com/story/news/2026/09/03/el-paso-police-halt-flock-cameras-after-gov-abbott-bans-state-funding/91595119007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "865fb08c7fc81839a1334c4aeb8fe36c171e57b8b424270b49f0e34cf29c0cde.txt",
+    "content_hash": "bedea6e6329b65514bcc4e14278e72441083324e1e398429ad807f820a9307f7",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.elpasotimes.com/story/news/2026/09/03/el-paso-police-halt-flock-cameras-after-gov-abbott-bans-state-funding/91595119007/",
+    "simhash": "31101cc69d219f7a",
+    "snapshot_path": "snapshots/2026-10-06/e58a4f38ab16e9f98a8dbcdaa854de1ede78ecfa5209c94f83178cdfbd4ee011.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3662,
+    "title": "El Paso police halt Flock cameras after Gov. Abbott bans state funding",
     "url": "https://www.elpasotimes.com/story/news/2026/09/03/el-paso-police-halt-flock-cameras-after-gov-abbott-bans-state-funding/91595119007/"
   },
   "https://elpasotimes.com/story/news/politics/local/2026/09/15/el-paso-city-council-orders-flock-camera-removal-bans-alpr-contracts/91778242007": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "43433a8b5344242e9777e4f06e4554eef52fd626b7fc31e196e852a17e42cd33.txt",
+    "content_hash": "99b12737ff5dd6d2f1a98513fc5feaea06f58be3e9625b2c020344a431312eba",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.elpasotimes.com/story/news/politics/local/2026/09/15/el-paso-city-council-orders-flock-camera-removal-bans-alpr-contracts/91778242007/",
+    "simhash": "68745e156a5d5947",
+    "snapshot_path": "snapshots/2026-10-06/d03da7f760d6c621cbec85b99e97125f190ccebc24a41c3e37010b0d11c26ebd.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3614,
+    "title": "El Paso City Council orders Flock camera removal, bans ALPR contracts",
     "url": "https://www.elpasotimes.com/story/news/politics/local/2026/09/15/el-paso-city-council-orders-flock-camera-removal-bans-alpr-contracts/91778242007/"
   },
   "https://englewoodgov.civicweb.net/document/464269/Discussion%20with%20Council%20reference%20contracts%20for.pdf?handle=EC8535D70AA04227AA0BCBE5FDF66045": {
@@ -2537,11 +2558,14 @@
     "url": "https://fortune.com/2026/06/03/why-are-ohio-city-workers-covering-flock-cameras-immigration-enforcement-data-sharing-policy-violations/"
   },
   "https://fortworthtexas.gov/files/assets/public/v/1/communications/documents/city-council-presentations/2024/06-04-2024/briefing-on-police-technology.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.fortworthtexas.gov/files/assets/public/v/1/communications/documents/city-council-presentations/2024/06-04-2024/briefing-on-police-technology.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.fortworthtexas.gov/files/assets/public/v/1/communications/documents/city-council-presentations/2024/06-04-2024/briefing-on-police-technology.pdf"
@@ -4107,11 +4131,14 @@
     "url": "https://www.knoxnews.com/story/news/politics/2026/07/31/knox-county-sheriffs-office-deal-with-flock-safety-is-for-10-years/91075175007/"
   },
   "https://kozi.com/post/chelan-county-sheriff-to-use-license-plate-identifying-cameras-to-assist-in-crime-investigations": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.kozi.com/post/chelan-county-sheriff-to-use-license-plate-identifying-cameras-to-assist-in-crime-investigations",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "Chelan County Sheriff to use license plate identifying cameras to assist in crime investigations",
     "url": "https://www.kozi.com/post/chelan-county-sheriff-to-use-license-plate-identifying-cameras-to-assist-in-crime-investigations"
@@ -4319,11 +4346,14 @@
     "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/1005584/Flock_Safety-Contract_Park_City_PD_KS__1___1_.pdf"
   },
   "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3078028/PD_ALPR_Program_-_Waiver_Request___Contract_Approval_final.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3078028/PD_ALPR_Program_-_Waiver_Request___Contract_Approval_final.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3078028/PD_ALPR_Program_-_Waiver_Request___Contract_Approval_final.pdf"
@@ -4775,11 +4805,14 @@
     "url": "https://myedmondsnews.com/2026/05/edmonds-cancels-contract-with-flock-license-plate-reader-system/"
   },
   "https://myedmondsnews.com/2026/08/flock-safety-tightens-safeguards-as-states-cities-question-surveillance-network": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://myedmondsnews.com/2026/08/flock-safety-tightens-safeguards-as-states-cities-question-surveillance-network/"
@@ -5116,23 +5149,29 @@
     "url": "https://www.okhouse.gov/posts/news-20251016_3"
   },
   "https://oklahoman.com/story/news/local/2026/08/03/okc-council-will-vote-on-police-contract-for-flock-cameras/90958514007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "b2b505e67cdea0efd098358a338ba71f7de81feff42e6ec47ee74c749caf63b7.txt",
+    "content_hash": "92e54a49e6247292e6f0ee9f4abf5fbd69874a48c243b63f94313211594a6881",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.oklahoman.com/story/news/local/2026/08/03/okc-council-will-vote-on-police-contract-for-flock-cameras/90958514007/",
+    "simhash": "c3ba906a98779576",
+    "snapshot_path": "snapshots/2026-10-06/7148e2286372def1ee8313b23ccc350a5a151d595392b2ba037dfa0a2bcd7f94.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7572,
+    "title": "OKC Council will vote on police contract for Flock cameras",
     "url": "https://www.oklahoman.com/story/news/local/2026/08/03/okc-council-will-vote-on-police-contract-for-flock-cameras/90958514007/"
   },
   "https://oklahoman.com/story/news/local/oklahoma-city/2026/08/03/okc-stalls-vote-flock-cameras-renewal/91159028007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "2cce9b8cbbb591dad1d1185d56eaa6c07a5abd45b948334fc5ccbec964f5da22.txt",
+    "content_hash": "b7d8951b43d13f6dae1a9ba063b97f2f0c4350f089e9098a50b6a2897e8bdf1b",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/03/okc-stalls-vote-flock-cameras-renewal/91159028007/",
+    "simhash": "eb5a22c818ff1284",
+    "snapshot_path": "snapshots/2026-10-06/4aa92820917403b6ecc8fce103abca3fac322cca319574cd31379d7c64c5e366.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4556,
+    "title": "OKC stalls vote on Flock cameras contract as controversy grows",
     "url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/03/okc-stalls-vote-flock-cameras-renewal/91159028007/"
   },
   "https://oklahoman.com/story/news/local/oklahoma-city/2026/08/18/okc-council-renews-flock-safety-contract-in-contentious-meeting/91356272007": {
@@ -5698,23 +5737,29 @@
     "url": "https://www.redeyebr.com/what-the-flock/"
   },
   "https://redmond.granicus.com/DocumentViewer.php?file=redmond_ee6e4cc93d61f9c52c60b636cd0d460b.pdf&view=1": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://redmond.granicus.com/DocumentViewer.php?file=redmond_ee6e4cc93d61f9c52c60b636cd0d460b.pdf&view=1",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://redmond.granicus.com/DocumentViewer.php?file=redmond_ee6e4cc93d61f9c52c60b636cd0d460b.pdf&view=1"
   },
   "https://registerguard.com/story/news/local/2026/01/21/flock-safety-removes-license-plate-cameras-springfield/88286152007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "f884e6a93ce5a3dc3ff2f3fcac89dbc866a60fe228325f8097db738c920335f3.txt",
+    "content_hash": "2381430a034ceea3407f63fcbb41c4720a4e60b3293114b5d0213b4177221d64",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.registerguard.com/story/news/local/2026/01/21/flock-safety-removes-license-plate-cameras-springfield/88286152007/",
+    "simhash": "726fb1aa3faa1897",
+    "snapshot_path": "snapshots/2026-10-06/bc265eaf24f91cdf18ecaf5ad47192aefd8835108f593017a2a54f03ee96eebf.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1440,
+    "title": "Flock Safety removes license plate cameras in Springfield",
     "url": "https://www.registerguard.com/story/news/local/2026/01/21/flock-safety-removes-license-plate-cameras-springfield/88286152007/"
   },
   "https://renton.civicweb.net/document/305496/Public%20Safety%20Committee%20-%2024%20Nov%202025.pdf?handle=04A9B10E6A6C4B9E96B6518DED96953E": {
@@ -5728,11 +5773,14 @@
     "url": "https://renton.civicweb.net/document/305496/Public%20Safety%20Committee%20-%2024%20Nov%202025.pdf?handle=04A9B10E6A6C4B9E96B6518DED96953E"
   },
   "https://renton.civicweb.net/document/305496/Public%20Safety%20Committee%20-%2024%20Nov%202025.pdf?handle=04A9B10E6C4B9E96B6518DED96953E": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
-    "final_url": "https://renton.civicweb.net/user/signin/?url=%2fglobal%2faccessdenied.aspx",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://renton.civicweb.net/user/signin/?url=%2Fglobal%2Faccessdenied.aspx",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://renton.civicweb.net/document/305496/Public%20Safety%20Committee%20-%2024%20Nov%202025.pdf?handle=04A9B10E6C4B9E96B6518DED96953E"
@@ -6117,11 +6165,14 @@
     "url": "https://seenineverett.com/mayor-puts-use-of-flock-automated-license-plate-readers-on-pause-in-everett-washington/"
   },
   "https://services.austintexas.gov/edims/document.cfm?id=452741": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://services.austintexas.gov/edims/document.cfm?id=452741",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://services.austintexas.gov/edims/document.cfm?id=452741"
@@ -6285,13 +6336,16 @@
     "url": "https://www.starnewsonline.com/story/news/local/2026/09/08/new-hanover-county-cancels-flock-contract-in-wilmington-nc/91656600007/"
   },
   "https://statesmanjournal.com/story/news/local/2026/06/24/flock-license-plate-reader-cameras-removed-in-woodburn-oregon/90662372007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "99c611cabcaa8f82a7c7163f1048a4d38a63217f43b09ff06d36721e0f227418.txt",
+    "content_hash": "91a8e63840a97e16b4388511f905ea5e88fec057a6dc1deffb5ed8cbb8ee483f",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.statesmanjournal.com/story/news/local/2026/06/24/flock-license-plate-reader-cameras-removed-in-woodburn-oregon/90662372007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "ff25320c25fef8bc",
+    "snapshot_path": "snapshots/2026-10-06/09aa0bfd5ad7a3d52dfe923e7488ffa05bb7b7ad3ad049521971cb7759bc2e93.json",
+    "snapshot_status": "uploaded",
+    "text_len": 273,
+    "title": "Flock license plate reader cameras removed in Woodburn, Oregon",
     "url": "https://www.statesmanjournal.com/story/news/local/2026/06/24/flock-license-plate-reader-cameras-removed-in-woodburn-oregon/90662372007/"
   },
   "https://static.spokanecity.org/documents/bcc/committees/public-safety-and-community-health/agendas/2025/02/psch-agenda-2025-02-03.pdf": {
@@ -6348,11 +6402,14 @@
     "url": "https://www.subluceo.com/source/0cfb21ac-11d8-4874-ac49-ba8247583c96"
   },
   "https://subluceo.com/source/5899fa9d-cd24-438f-a2a4-6107032d40f9": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-10-13",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.subluceo.com/source/5899fa9d-cd24-438f-a2a4-6107032d40f9"
@@ -6791,11 +6848,14 @@
     "url": "https://www.thesiuslawnews.com/news/council-votes-3-2-to-keep-flock-cameras/article_524d684c-ecaa-483b-ad4f-a6da9794a7f3.html"
   },
   "https://thesiuslawnews.com/news/council-votes-to-keep-flock-cameras/article_c8a3c463-cf09-4fa3-b468-85c32c116213.html": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.thesiuslawnews.com/news/council-votes-to-keep-flock-cameras/article_c8a3c463-cf09-4fa3-b468-85c32c116213.html"
@@ -7114,11 +7174,14 @@
     "url": "https://tulsaflyer.org/2026/03/13/government/post/flock-cameras-used-investigate-protests/"
   },
   "https://tulsapolice.org/flock-safety": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.tulsapolice.org/flock-safety",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "Flock Safety Information | Tulsa Police",
     "url": "https://www.tulsapolice.org/flock-safety"
@@ -7237,11 +7300,14 @@
     "url": "http://vernonhills.org/963/Automated-License-Plate-Readers"
   },
   "https://vimarsana.com/newscast/newson6-com/ktul-channel-8-news/tulsa-county-sheriff-inks-contract-for-license-plate-readers": {
+    "archive": "03ed2f59c50fc169d3dbcd3ba4c113a7fcf5313b90fbda4eb7335746fec55ff0.txt",
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://vimarsana.com/page-404.html",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 76,
     "title": "Vimarsana.Com | Raise Your Voice & Share Your Opinion - 404",
     "url": "https://vimarsana.com/newscast/newson6-com/ktul-channel-8-news/tulsa-county-sheriff-inks-contract-for-license-plate-readers/"
@@ -7538,11 +7604,14 @@
     "url": "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract/"
   },
   "https://woodburn-or.gov/DocumentCenter/View/3299/Flock-Public-Q-and-A-FINAL-2-3-26": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://woodburn-or.gov/DocumentCenter/View/3299/Flock-Public-Q-and-A-FINAL-2-3-26",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://woodburn-or.gov/DocumentCenter/View/3299/Flock-Public-Q-and-A-FINAL-2-3-26"
@@ -7665,11 +7734,14 @@
     "url": "https://www.youtube.com/shorts/FTz_Z_9tP3Q"
   },
   "https://youtube.com/shorts/KoW0y3Ln26U": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.youtube.com/shorts/KoW0y3Ln26U",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/shorts/KoW0y3Ln26U"
@@ -7826,11 +7898,14 @@
     "url": "https://www.youtube.com/watch?v=fWoY-dK-2UI"
   },
   "https://youtube.com/watch?v=ppkKszL8hII": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.youtube.com/watch?v=ppkKszL8hII",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=ppkKszL8hII"
