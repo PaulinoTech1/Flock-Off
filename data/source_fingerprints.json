@@ -280,21 +280,27 @@
     "url": "https://alpolitics.com/"
   },
   "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2021-40_Resolution_Authorizing_a_Lease_Agreement_Between_the_City_of_Decatur_and_Flock_Safety_for_the_Deployment_of_60_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2021-40_Resolution_Authorizing_a_Lease_Agreement_Between_the_City_of_Decatur_and_Flock_Safety_for_the_Deployment_of_60_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2021-40_Resolution_Authorizing_a_Lease_Agreement_Between_the_City_of_Decatur_and_Flock_Safety_for_the_Deployment_of_60_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf"
   },
   "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf"
@@ -696,13 +702,16 @@
     "url": "https://www.beaconjournal.com/story/news/2022/06/10/akron-city-council-approves-license-plate-reading-cameras-flock-security-fight-crime/7583684001/"
   },
   "https://beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "5353f96cb5bd75fb8037de7c9fed978c05336ac6029e3c9993def8c0e6796a2f.txt",
+    "content_hash": "be614d1b5feab57791ce0bce8a88bafd5d9ae076c828897eb347209091d49f0b",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "617458c91a4c3e50",
+    "snapshot_path": "snapshots/2026-10-06/d78bbdac6b79f2a27d6133cdaf6a845e2387c73d4fd49a38a6459e3c24793455.json",
+    "snapshot_status": "uploaded",
+    "text_len": 632,
+    "title": "Vanderburgh County Sheriff's Office to install license plate cameras",
     "url": "https://www.beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007/"
   },
   "https://beaconjournal.com/story/news/local/2025/09/24/coralville-flock-contract-license-plate-camera-privacy-concerns/86315808007": {
@@ -1025,13 +1034,16 @@
     "url": "https://www.cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them"
   },
   "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "af1428ba1f795b445ffd66c9ffce61e323790567e0d08b803a7adb8989ea89a9.txt",
+    "content_hash": "8076016f9edf90ba3ceb0599cb868cc39eea27f74b8864c59b4f2e2627a08d7d",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers/",
+    "simhash": "79f9b2f21d046eee",
+    "snapshot_path": "snapshots/2026-10-06/2b8ecc8847ed0f4a3d83315114de0829afb5756681ecddc6f908e39b5a53ac47.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2109,
+    "title": "Champaign Police Installing Automated License Plate Readers - City of ChampaignCity of Champaign",
     "url": "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers/"
   },
   "https://chestertonin.org/DocumentCenter/View/34569/Chesterton-Town-Council-votes-to-discontinue-contract-with-Flock-Safety-license-plate-readers": {
@@ -1747,13 +1759,16 @@
     "url": "https://www.cornellsun.com/article/2026/03/common-council-votes-to-end-ithaca-s-contract-with-flock-safety-keep-free-gaza-on-green-street-mural"
   },
   "https://courierpress.com/story/news/local/2026/07/22/isp-flock-safety-camera-damaged-on-i-69-evansville/91002066007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "fd0681f29fd2881a2dd7498b74430cefb6e80553db4e196c999eaa272a71733d.txt",
+    "content_hash": "2a2fb3910e1d7a583741b61ea37aa50bc57a71878c700ccc1ccfa74b7d78db24",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.courierpress.com/story/news/local/2026/07/22/isp-flock-safety-camera-damaged-on-i-69-evansville/91002066007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "53eef68ffce0e993",
+    "snapshot_path": "snapshots/2026-10-06/a22f3fa0773d99f1d51c09276f4612a29b84d44c447853c0f796f129d9a6e35d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 478,
+    "title": "ISP Flock Safety Camera Damaged on I-69 Evansville",
     "url": "https://www.courierpress.com/story/news/local/2026/07/22/isp-flock-safety-camera-damaged-on-i-69-evansville/91002066007/"
   },
   "https://courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007": {
@@ -2079,13 +2094,16 @@
     "url": "https://www.dispatch.com/story/news/local/reynoldsburg/2026/09/09/flock-cameras-to-be-bagged-in-reynoldsburg-as-city-ends-use/91676029007/"
   },
   "https://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx": {
+    "archive": "a953578db79e03b9b3f54b6354dc9b1f79e3c2c5fc9f4566d08f738f2895a72b.txt",
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
-    "final_url": "http://docs.southbendin.gov:80/WebLink/DocView.aspx?dbid=0&id=382551&page=18&cr=1",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://docs.southbendin.gov:443/WebLink/DocView.aspx?dbid=0&id=382551&page=18&cr=1",
+    "retry_after": "2026-11-05",
     "simhash": null,
-    "text_len": 106,
-    "title": "Error",
+    "snapshot_path": null,
+    "text_len": 96,
+    "title": null,
     "url": "http://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx"
   },
   "https://draperutah.gov/media/ya4nigvm/police-letterhead-flock-camera-chief-letter.pdf": {
@@ -3391,13 +3409,16 @@
     "url": "https://idahopolitics.org/flock-license-plate-readers-spread-across-idaho-cities-sparking-legal-challenges-and-privacy-debate/"
   },
   "https://illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "cf455b2e27224e6d1d2484671b0ea0f5a7391f1e544f60b36be947cf4ce18c71.txt",
+    "content_hash": "ab29e0865422ad73147b601c77c8e279fb86d6bc31ca97b36bbfb500ceed4c7d",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx",
+    "simhash": "c2873080b9d5dc67",
+    "snapshot_path": "snapshots/2026-10-06/7a849a0e8729d3cb22c0ff43ea3708e69b964a5edfc8444bb3148cce73a95584.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8817,
+    "title": "Impact: Evanston shuts off license plate readers after report of Illinois data shared with feds - IllinoisPress > Home",
     "url": "https://www.illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx"
   },
   "https://indianacapitalchronicle.com/2023/02/01/indiana-lawmakers-want-to-crack-down-on-data-privacy-what-about-license-plate-readers": {
@@ -3424,13 +3445,16 @@
     "url": "https://www.indystar.com/story/news/crime/2026/08/10/what-is-a-flock-camera-and-why-are-people-cutting-them-down/91195834007/"
   },
   "https://indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "c6abcdd8b37b20fa9dc956f937071dfc6dcf6a10b0d01225ada5a8e75f2d43a6.txt",
+    "content_hash": "06be65fc5104fa1d9a396fec399d02762f9183089c33083ab1b96cbdbada2bca",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "181c76f2d32f6143",
+    "snapshot_path": "snapshots/2026-10-06/60c6855b191c2ce53e1c5bd214e74fd024edbfe763126f060354735bb48e9b70.json",
+    "snapshot_status": "uploaded",
+    "text_len": 293,
+    "title": "Flock cameras need guardrails, not a ban | Opinion",
     "url": "https://www.indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007/"
   },
   "https://insider.govtech.com/california/news/berkeley-delays-vote-on-2m-flock-safety-deal-after-public-backlash": {
@@ -3604,33 +3628,42 @@
     "url": "https://www.jalopnik.com/2177234/troy-new-york-town-torn-apart-police-using-flock-cameras-safety-concerns/"
   },
   "https://jconline.com/story/news/local/2026/09/24/west-lafayette-citizens-voice-concerns-during-police-chiefs-flock-talk-what-are-flock-cameras/91908852007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "5ea1ac7e156cd9cff564428951867918cd1e7dafa4cb42cb50267296ca6fd3fa.txt",
+    "content_hash": "dd6cae8188863bb8dc5f977cdd85e5b4a741f5be560ec5b547ded3c57ad9f990",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.jconline.com/story/news/local/2026/09/24/west-lafayette-citizens-voice-concerns-during-police-chiefs-flock-talk-what-are-flock-cameras/91908852007/",
+    "simhash": "6d118c72cbcd007b",
+    "snapshot_path": "snapshots/2026-10-06/364ebb3a25deeeb1d0722a38fc487d39133e2ac49f85bf9c7ee084538d70cb3c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7928,
+    "title": "West Lafayette citizens voice concerns during police chief's Flock talk",
     "url": "https://www.jconline.com/story/news/local/2026/09/24/west-lafayette-citizens-voice-concerns-during-police-chiefs-flock-talk-what-are-flock-cameras/91908852007/"
   },
   "https://jconline.com/story/news/local/lafayette/2026/06/02/lafayette-residents-voice-concerns-over-flock-safety-cameras/90369141007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "cc5e120f1ff752efa91faf3a40c1330ab73d2145aa16e3f0f49addf83f1c899b.txt",
+    "content_hash": "09674474c3c1bba759c59311bbcf7aa42e4aa0b643c1a101d3867f876afebf07",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.jconline.com/story/news/local/lafayette/2026/06/02/lafayette-residents-voice-concerns-over-flock-safety-cameras/90369141007/",
+    "simhash": "ae8afb4afa63d141",
+    "snapshot_path": "snapshots/2026-10-06/b0f95fc160db89e2c6d8037aea58401e8ce53cfd358bc1be8c666dac6da2aec0.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5212,
+    "title": "Lafayette residents voice concerns over Flock Safety cameras",
     "url": "https://www.jconline.com/story/news/local/lafayette/2026/06/02/lafayette-residents-voice-concerns-over-flock-safety-cameras/90369141007/"
   },
   "https://jconline.com/story/news/local/purdue/2026/09/14/flock-cameras-new-chauncey-plan-spark-debate-in-west-lafayette/91760390007": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "ee3e53e61fc45dc1a4311026b101077cff9305aa9be7dfa8f47e2a30ebc82e99.txt",
+    "content_hash": "975ebf8bab4125b2b19f993dcc6e7e952ea441977d9494fa9c977b5e7d60bff3",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.jconline.com/story/news/local/purdue/2026/09/14/flock-cameras-new-chauncey-plan-spark-debate-in-west-lafayette/91760390007/",
+    "simhash": "39d4a1f9a7252ec5",
+    "snapshot_path": "snapshots/2026-10-06/921a647d5d97196b6ae2f765b0ac51e2a7aafd44166a7584f5b3d6b9b61c2822.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7951,
+    "title": "Flock cameras, New Chauncey plan spark debate in West Lafayette",
     "url": "https://www.jconline.com/story/news/local/purdue/2026/09/14/flock-cameras-new-chauncey-plan-spark-debate-in-west-lafayette/91760390007/"
   },
   "https://jeffcosheriffal.com/flock-cameras-in-center-point-prove-effective": {
@@ -3734,13 +3767,16 @@
     "url": "https://jsis.washington.edu/humanrights/publication/9480/"
   },
   "https://jsonline.com/story/news/crime/2026/09/04/wisconsin-police-agencies-are-suspending-flock-use-over-data-concerns/91616870007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "99cde6c8f1aee825da4bfc3172b29d283560168d393d926e3550c31762f7d679.txt",
+    "content_hash": "ea2ac66d292f58467111f7826a5935dba3e7d12236354ae9c6b614de24132186",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.jsonline.com/story/news/crime/2026/09/04/wisconsin-police-agencies-are-suspending-flock-use-over-data-concerns/91616870007/",
+    "simhash": "002526452c86056f",
+    "snapshot_path": "snapshots/2026-10-06/e84594c3dc9931e91e3f0558cdc5f7325cb67fa2a9321f6b54ea582f5a43abc9.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5669,
+    "title": "Wisconsin police agencies are suspending Flock use over data concerns",
     "url": "https://www.jsonline.com/story/news/crime/2026/09/04/wisconsin-police-agencies-are-suspending-flock-use-over-data-concerns/91616870007/"
   },
   "https://jsonline.com/story/news/local/milwaukee/2026/09/04/what-to-know-about-flock-cameras-and-how-milwaukee-police-use-them/91582638007": {
@@ -4134,11 +4170,14 @@
     "url": "https://www.lcsun-news.com/story/opinion/2026/03/29/ensuring-privacy-in-alrp-use/89303419007/"
   },
   "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf"
@@ -5137,13 +5176,16 @@
     "url": "https://portal.ksba.org/public/Meeting/Attachments/DisplayAttachment.aspx?AttachmentID=784808"
   },
   "https://postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "ec10035951367fa03f5f9f5f84a7aaa09af0324e78d38c757c23cc4f0d05ef78.txt",
+    "content_hash": "714c97c4d3c3e62cb822aab5b5d5e8279c83c2020bc965668e8465dceec5032a",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "75bc96293509e2f8",
+    "snapshot_path": "snapshots/2026-10-06/79ce5f480680939bc0bb354ff950fff7dc0114d654b1c1b226ce451f28f3bd55.json",
+    "snapshot_status": "uploaded",
+    "text_len": 362,
+    "title": "Appleton asks Flock Safety to disable surveillance cameras by June 30",
     "url": "https://www.postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007/"
   },
   "https://postgoo.com/posts/6a9f6abcb5221344e09c9d3c?type=article": {
@@ -5895,13 +5937,16 @@
     "url": "https://services.austintexas.gov/edims/document.cfm?id=452741"
   },
   "https://sheboyganpress.com/story/news/local/2026/09/08/sheboygan-flock-safety-cameras-contract-ended-data-dispute/91663620007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "8b4ba14f683d3f1bb626c1d526b68511af3bd584c4a3eff27ca2849d8eb124d8.txt",
+    "content_hash": "8b245de4131886095b7678e33878fa22baaf4c6631b21997435d49be41f62bc2",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.sheboyganpress.com/story/news/local/2026/09/08/sheboygan-flock-safety-cameras-contract-ended-data-dispute/91663620007/",
+    "simhash": "13732c1eae0190e3",
+    "snapshot_path": "snapshots/2026-10-06/f92da05756e1883dc26dd0530c5e51c8cc2bfaf79eb2517bed57f1daf4456e6e.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4480,
+    "title": "Sheboygan is latest Wisconsin community to drop Flock Safety",
     "url": "https://www.sheboyganpress.com/story/news/local/2026/09/08/sheboygan-flock-safety-cameras-contract-ended-data-dispute/91663620007/"
   },
   "https://shepherdexpress.com/news/issue-of-the-month/flock-cameras-in-milwaukee-the-writing-is-on-the-wall": {
@@ -6493,23 +6538,29 @@
     "url": "https://www.themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state/"
   },
   "https://thenorthwestern.com/story/news/local/oshkosh/2026/04/22/oshkosh-flock-cameras-contract-rescind-resolution-after-renewal-vote/89737022007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "fa15a1edc796acee894a0f31f99141870d40d234c13292b2e90346a66fb1095d.txt",
+    "content_hash": "fd46cc5f1b9f0a142a12659a4c009992c24f4b0d40f08bf581663dec604d4c30",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.thenorthwestern.com/story/news/local/oshkosh/2026/04/22/oshkosh-flock-cameras-contract-rescind-resolution-after-renewal-vote/89737022007/",
+    "simhash": "80092d8228d99365",
+    "snapshot_path": "snapshots/2026-10-06/9c4a01feaff315aa81ae35af9cf81c7be073a29121beae015d6558b04bbd7589.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5146,
+    "title": "Oshkosh may rescind Flock cameras contract after renewal vote",
     "url": "https://www.thenorthwestern.com/story/news/local/oshkosh/2026/04/22/oshkosh-flock-cameras-contract-rescind-resolution-after-renewal-vote/89737022007/"
   },
   "https://thenorthwestern.com/story/news/local/oshkosh/2026/09/04/winnebago-county-flock-safety-license-plate-readers-suspended/91614453007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "9e5394bd9db269fd3ef3847da229b3bf38947d3cbf25a0774a6601877abe165f.txt",
+    "content_hash": "9e038f4bb15dfdf32c732ae396c4bca73f92e488a52a54a5f9a1a63e39e07439",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-06",
+    "final_url": "https://www.thenorthwestern.com/story/news/local/oshkosh/2026/09/04/winnebago-county-flock-safety-license-plate-readers-suspended/91614453007/",
+    "simhash": "cc5ead37ce3145bf",
+    "snapshot_path": "snapshots/2026-10-06/728a0eb6e84ac510d1745db4b16cb7d2f7a10ea708c700459e79cd807db24a62.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4491,
+    "title": "Winnebago County agencies pause Flock Safety license plate readers",
     "url": "https://www.thenorthwestern.com/story/news/local/oshkosh/2026/09/04/winnebago-county-flock-safety-license-plate-readers-suspended/91614453007/"
   },
   "https://theokeagle.com/2022/06/22/tulsa-county-sheriffs-office-to-install-25-license-plate-reading-cameras-2": {
@@ -6584,11 +6635,14 @@
     "url": "https://www.threeriverspublishing.com/stories/gov-kehoe-orders-privacy-protections-for-use-of-flock-police-cameras,294791"
   },
   "https://tiktok.com/@wlukfox11/video/7631973302319320333": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.tiktok.com/@wlukfox11/video/7631973302319320333",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "TikTok - Make Your Day",
     "url": "https://www.tiktok.com/@wlukfox11/video/7631973302319320333"
@@ -6680,21 +6734,27 @@
     "url": "https://transparency.flocksafety.com/euclid-oh-pd"
   },
   "https://transparency.flocksafety.com/greenfield-in-pd": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://transparency.flocksafety.com/greenfield-in-pd"
   },
   "https://transparency.flocksafety.com/hendricks-county-in-so": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetch_status": "blocked",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://transparency.flocksafety.com/hendricks-county-in-so"
@@ -6710,11 +6770,14 @@
     "url": "https://transparency.flocksafety.com/johnson-city-tn-pd"
   },
   "https://transparency.flocksafety.com/johnson-county-in-so": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetch_status": "blocked",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://transparency.flocksafety.com/johnson-county-in-so"
@@ -6783,11 +6846,14 @@
     "url": "https://transparency.flocksafety.com/shelby-county-tn-so"
   },
   "https://transparency.flocksafety.com/warrick-co-in-so": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://transparency.flocksafety.com/warrick-co-in-so"
@@ -7069,11 +7135,14 @@
     "url": "https://www.washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal/"
   },
   "https://wcia.com/news/decatur-city-council-approves-license-plate-reading-cameras": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.wcia.com/news/decatur-city-council-approves-license-plate-reading-cameras/"
@@ -7099,11 +7168,14 @@
     "url": "https://www.wcia.com/news/rantoul-police-looking-to-fill-blind-spots-with-new-license-plate-readers/amp/"
   },
   "https://wcia.com/news/village-installing-license-plate-reader-cameras": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": null,
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.wcia.com/news/village-installing-license-plate-reader-cameras/"
@@ -7380,11 +7452,14 @@
     "url": "https://www.youtube.com/shorts/KoW0y3Ln26U"
   },
   "https://youtube.com/shorts/eXP2lOH27Zs": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-06",
     "final_url": "https://www.youtube.com/shorts/eXP2lOH27Zs",
+    "retry_after": "2026-11-05",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/shorts/eXP2lOH27Zs"
