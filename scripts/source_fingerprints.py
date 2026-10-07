@@ -564,15 +564,27 @@ def backfill_archive(data: dict, fps: dict,
                      max_n: int | None = None) -> dict:
     """Populate missing source-archive snapshots.
 
-    For each source key with no archive file, re-fetch and, on a clean
+    For each source key with no archive snapshot, re-fetch and, on a clean
     ok result, write the archive and update the baseline (same
-    accept-current-content semantics as refresh()). Non-ok fetches are
-    left completely untouched so a backfill can never manufacture a
-    drift-gate fatal out of a blocked or errored source.
+    accept-current-content semantics as refresh()).
+
+    Cross-run advancement: the runner's checkout does not carry the local
+    archive files (the workflow persists only the fingerprints JSON), so
+    selection consults the persisted baseline, not the local archive dir
+    alone. Keys with a snapshot_path are done; keys quarantined after a
+    non-ok attempt wait out their retry_after instead of being re-hit
+    every run.
+
+    Non-ok fetches are recorded with their quarantine but never promoted
+    to an ok baseline, so a backfill can never manufacture a drift-gate
+    fatal out of a blocked or errored source (drift_check only examines
+    ok baselines carrying a simhash).
     Returns stats.
     """
-    today_s = datetime.date.today().isoformat()
-    stats = {"fetched": 0, "archived": 0, "skipped": 0, "non_ok": 0}
+    today = datetime.date.today()
+    today_s = today.isoformat()
+    stats = {"fetched": 0, "archived": 0, "skipped": 0, "non_ok": 0,
+             "snap_attempted": 0, "snap_uploaded": 0, "snap_failed": 0}
     seen: set[str] = set()
     for agency_id, title, url, key in iter_citations(data):
         if key in seen:
@@ -582,19 +594,57 @@ def backfill_archive(data: dict, fps: dict,
         if read_archive(key) is not None:
             stats["skipped"] += 1
             continue
+        existing = fps.get(key) or {}
+        # Already archived by an earlier batch. snapshot_path is the
+        # persisted cross-run signal: local archive files do not survive
+        # the runner, only the fingerprints JSON is committed back.
+        if existing.get("snapshot_path"):
+            stats["skipped"] += 1
+            continue
+        # Quarantined after a non-ok attempt: wait out retry_after.
+        retry_after = existing.get("retry_after")
+        if retry_after:
+            try:
+                if today < datetime.date.fromisoformat(retry_after):
+                    stats["skipped"] += 1
+                    continue
+            except ValueError:
+                pass
         if max_n is not None and stats["fetched"] >= max_n:
             stats["skipped"] += 1
             continue
         time.sleep(fetch_delay())
         rec = fingerprint_url(url, today_s, key=key)
         stats["fetched"] += 1
+        # Snapshot accounting: same loud counters as refresh(), so the
+        # workflow's "Verify uploads from batch accounting" step sees
+        # backfill batches too (failed uploads turn the run red).
+        _snap = rec.get("snapshot_status")
+        if _snap:
+            stats["snap_attempted"] += 1
+            if _snap == "uploaded":
+                stats["snap_uploaded"] += 1
+            else:
+                stats["snap_failed"] += 1
         if rec["fetch_status"] == "ok" and rec["archive"]:
             fps[key] = rec
             stats["archived"] += 1
         else:
+            # Persist the non-ok record so its quarantine (retry_after)
+            # survives the runner and the next batch skips it. Never
+            # clobber an existing ok baseline with a non-ok record.
+            if existing.get("fetch_status") != "ok":
+                fps[key] = rec
             stats["non_ok"] += 1
         print(f"  [{rec['fetch_status']}] {agency_id}: {url[:70]}",
               flush=True)
+    # End-of-run snapshot summary: never silent about upload outcomes.
+    print(f"\nSnapshot summary: attempted={stats['snap_attempted']} "
+          f"uploaded={stats['snap_uploaded']} "
+          f"failed={stats['snap_failed']}", flush=True)
+    if stats["snap_failed"] > 0:
+        print(f"WARNING: {stats['snap_failed']} snapshot(s) failed to upload. "
+              f"See E_SNAP_FAIL messages above.", flush=True)
     return stats
 
 
