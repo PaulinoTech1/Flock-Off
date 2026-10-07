@@ -829,11 +829,14 @@
     "url": "https://bellevilleareaindependent.com/vbt-approves-license-plate-recognition-project/"
   },
   "https://bellevilleareaindependent.com/will-pay-for-license-plate-recognition-cameras-in-its-district": {
+    "archive": "52bbaab05dc3b30482c2cbd0dc72eaa28cb6e3f9df9ad5124a1542be20238699.txt",
     "content_hash": "d1d03116eef79911043078f47f343851d3ef33d2cf7366daf36072c219e5ff93",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://bellevilleareaindependent.com/will-pay-for-license-plate-recognition-cameras-in-its-district/",
     "simhash": "528da3a432659ae6",
+    "snapshot_path": "snapshots/2026-10-07/2351003c00043772eb0e99378fa808a575115903388d8f54505fa337c15c1779.json",
+    "snapshot_status": "uploaded",
     "text_len": 2532,
     "title": "VBT DDA will pay for license plate recognition cameras in its district | The Belleville Independent",
     "url": "https://bellevilleareaindependent.com/will-pay-for-license-plate-recognition-cameras-in-its-district/"
@@ -2541,11 +2544,14 @@
     "url": "https://epcsheriffsoffice.com/flock-safety-cameras-assist-in-arrest-of-attempted-murder-suspect/"
   },
   "https://europesays.com/poland/25025": {
+    "archive": "fcbe005043e17e8bb9383294fcf50269fd621df1876a58e3fb1a5a0a96579079.txt",
     "content_hash": "948654906189e9d6ed97b05609e2521ed55c558414c08a33f7f6cde0fe717614",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.europesays.com/poland/25025/",
     "simhash": "942a32318410aa87",
+    "snapshot_path": "snapshots/2026-10-07/db4f3bf200d45a0a7afb780fbcfab366d383c4624bba26b2cd7b51adfa7caf0d.json",
+    "snapshot_status": "uploaded",
     "text_len": 6109,
     "title": "Flock funding defeated as nearly 200 show up at Kosciusko Courthouse in opposition - Poland",
     "url": "https://www.europesays.com/poland/25025/"
@@ -3308,11 +3314,14 @@
     "url": "https://www.govtech.com/public-safety/flock-safety-suspension-costs-oregon-city-7-000"
   },
   "https://govtech.com/public-safety/grand-rapids-mich-residents-pack-meeting-over-flock-safety": {
+    "archive": "876fc48f2429f7f104e66de240f5d694fbf3240099f228f17edc946db5c6c21c.txt",
     "content_hash": "ee75c07558bf8fc13aa538d883e4197599fb8502ab6443afa111639c07184bd2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.govtech.com/public-safety/grand-rapids-mich-residents-pack-meeting-over-flock-safety",
     "simhash": "f3404a1d8631c968",
+    "snapshot_path": "snapshots/2026-10-07/a8f168d2bf0a62db36664c3c4e0c271bc82536a94dc14cc23a02b03471a98175.json",
+    "snapshot_status": "uploaded",
     "text_len": 4332,
     "title": "Grand Rapids, Mich., Residents Pack Meeting Over Flock Safety",
     "url": "https://www.govtech.com/public-safety/grand-rapids-mich-residents-pack-meeting-over-flock-safety"
@@ -3361,11 +3370,14 @@
     "url": "https://www.govtech.com/public-safety/lorain-ohio-council-approves-license-plate-reader-network"
   },
   "https://govtech.com/public-safety/michigan-bills-would-regulate-automatic-license-plate-readers": {
+    "archive": "07156ff397b70528d3399b8f2d8d7e30895790a7708be3516e12e0c5e79d45cb.txt",
     "content_hash": "bfe2ad6bd970d49b840796e40d2eb9e1843e51acf35db785560fcd0a08092c80",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.govtech.com/public-safety/michigan-bills-would-regulate-automatic-license-plate-readers",
     "simhash": "4200d65da388aa6f",
+    "snapshot_path": "snapshots/2026-10-07/8877bb998dea9621760bcf9381b766fd26966163227f45a7d2f3e9b71e3edfde.json",
+    "snapshot_status": "uploaded",
     "text_len": 7405,
     "title": "Michigan Bills Would Regulate Automatic License Plate Readers",
     "url": "https://www.govtech.com/public-safety/michigan-bills-would-regulate-automatic-license-plate-readers"
@@ -3587,41 +3599,53 @@
     "url": "https://gray-wowt-prod.gtv-cdn.com/2026/08/10/what-cost-city-ord-weighs-public-safety-privacy-after-vote-remove-flock-cameras/"
   },
   "https://gray-wpta-prod.gtv-cdn.com/2026/08/26/activist-says-work-isnt-finished-after-fort-wayne-city-council-votes-defund-flock-license-plate-cameras": {
+    "archive": "c59f98c12a4b2eddb52ccd930bca189bbe830ffd6df59232844c3caad4a40ce2.txt",
     "content_hash": "0e4319edb30c914cfd9644753305ed9347c4fc0d1c4d02cfc6432dbc19ff5d4e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://gray-wpta-prod.gtv-cdn.com/2026/08/26/activist-says-work-isnt-finished-after-fort-wayne-city-council-votes-defund-flock-license-plate-cameras/",
     "simhash": "a24f42db188db394",
+    "snapshot_path": "snapshots/2026-10-07/bdec39a76db903e92bf42f37049a07f6198d86964f362b49ea9f2e7958fb786a.json",
+    "snapshot_status": "uploaded",
     "text_len": 3033,
     "title": "Activist says work isn’t finished after Fort Wayne City Council votes to defund Flock license plate cameras",
     "url": "https://gray-wpta-prod.gtv-cdn.com/2026/08/26/activist-says-work-isnt-finished-after-fort-wayne-city-council-votes-defund-flock-license-plate-cameras/"
   },
   "https://gray-wpta-prod.gtv-cdn.com/2026/08/28/flock-fallout-mayor-explains-decision-remove-fort-waynes-36-cameras": {
+    "archive": "95036e4ba360abeccf0484fc7f7d80389e48a4db4099ff5e29c6ae0448784780.txt",
     "content_hash": "7438a1b56fd00156161e2af83a95fbfc707a455fbe7b41f35495caf3ae19faa2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://gray-wpta-prod.gtv-cdn.com/2026/08/28/flock-fallout-mayor-explains-decision-remove-fort-waynes-36-cameras/",
     "simhash": "84c025d97cef29e4",
+    "snapshot_path": "snapshots/2026-10-07/a9aaf91a9d49f244276ab8cc5e93217c2858f46eb0e95faf1a9ea01377c5a999.json",
+    "snapshot_status": "uploaded",
     "text_len": 3754,
     "title": "Flock Fallout: Mayor explains decision to remove Fort Wayne’s 36 cameras",
     "url": "https://gray-wpta-prod.gtv-cdn.com/2026/08/28/flock-fallout-mayor-explains-decision-remove-fort-waynes-36-cameras/"
   },
   "https://gray-wpta-prod.gtv-cdn.com/2026/09/04/flock-camera-fight-divides-communities-beyond-fort-wayne": {
+    "archive": "a149b883544b2645c861ddb49f2fa51d85d7d1b47cde9a903c8e648e8c8c7866.txt",
     "content_hash": "2eb2d8b2151345c808a0182cd12f0c92872a4fa744659688781c5a1c5ba6378f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/04/flock-camera-fight-divides-communities-beyond-fort-wayne/",
     "simhash": "447c4b37257073dc",
+    "snapshot_path": "snapshots/2026-10-07/70699030a52b67920bb66c07ddf4d046de22ccbfea2f50d15c488895fdca3374.json",
+    "snapshot_status": "uploaded",
     "text_len": 2948,
     "title": "Flock camera fight divides communities beyond Fort Wayne",
     "url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/04/flock-camera-fight-divides-communities-beyond-fort-wayne/"
   },
   "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system": {
+    "archive": "b4ba5ebfb208117e76cdc8189aa39f474c8bea89248a2f7d4619daf7d4beaff9.txt",
     "content_hash": "df2a573628719ff27f41a52a903f40bd0d13669138ba572c07c8b51baa6dfc69",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system/",
     "simhash": "8fc7a079af12f640",
+    "snapshot_path": "snapshots/2026-10-07/58d035204157e49f2db0d8c38ac477acc8e3f908c0c75712aa5105b8d55915ce.json",
+    "snapshot_status": "uploaded",
     "text_len": 4921,
     "title": "Noble County drops Flock cameras amid ongoing debate across Indiana",
     "url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system/"
@@ -3946,41 +3970,53 @@
     "url": "https://www.ipm.org/2021-12-29/indiana-police-agencies-trying-out-license-plate-cameras"
   },
   "https://ipm.org/news/2026-05-21/bloomingtons-flock-contract-may-have-ended-but-other-cameras-still-active": {
+    "archive": "3108330b97d9b1c944da86989827792246f1108ed6d5e6b823e119978fe1a7b5.txt",
     "content_hash": "08e9946496ed2dad3a72d5d0a32c94973b7795b025e29981243058d9058a31c8",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.ipm.org/news/2026-05-21/bloomingtons-flock-contract-may-have-ended-but-other-cameras-still-active",
     "simhash": "9474130286a0d59f",
+    "snapshot_path": "snapshots/2026-10-07/67b83e38472dd42cde51acd0261be1c15725231e04abcd1482341d77aef4b8f9.json",
+    "snapshot_status": "uploaded",
     "text_len": 3066,
     "title": "Bloomington’s Flock contract may have ended, but other cameras still active",
     "url": "https://www.ipm.org/news/2026-05-21/bloomingtons-flock-contract-may-have-ended-but-other-cameras-still-active"
   },
   "https://ipm.org/news/2026-07-26/monroe-county-cancels-contract-with-flock-safety": {
+    "archive": "e38e6cf166cf9c6ae3c1a36c6c53fac5260d9e8575995123585841010ca76ea9.txt",
     "content_hash": "56fbeead5a6723020c380babb0d50584fb40d260270173067dc0579ff9fe55ae",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.ipm.org/news/2026-07-26/monroe-county-cancels-contract-with-flock-safety",
     "simhash": "550033715f41f500",
+    "snapshot_path": "snapshots/2026-10-07/4549057adf7acab7a8645662573cf8122274905f681d6b67fb178bb588d567da.json",
+    "snapshot_status": "uploaded",
     "text_len": 2319,
     "title": "Monroe County cancels contract with Flock Safety",
     "url": "https://www.ipm.org/news/2026-07-26/monroe-county-cancels-contract-with-flock-safety"
   },
   "https://ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments": {
+    "archive": "fa5f3e9a047a955bf6631784408d6bd3d2d9370dfd6297f12b76b620b0427fb2.txt",
     "content_hash": "2ba623cac9036e0eeee882da957bb976733f3accf54314a55a57fa07110b51ad",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments",
     "simhash": "13bc592c8ee6b5b3",
+    "snapshot_path": "snapshots/2026-10-07/f9f8b0d767f207f6cddd387477da86e7ecaf8cc4af493b712f3f7b9120be9b0a.json",
+    "snapshot_status": "uploaded",
     "text_len": 2433,
     "title": "Flock camera poles cut down near site of ICE detainments",
     "url": "https://www.ipm.org/news/2026-09-08/flock-camera-poles-cut-down-near-site-of-ice-detainments"
   },
   "https://ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts": {
+    "archive": "4857ebe152c4b446b79e9b2e64c5d194637ecf8ec5c396b564ae9f422eab4889.txt",
     "content_hash": "229979ab64832ff8e6130bad8923edeabfd8775ba61c2455d5c7895d069c7492",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts",
     "simhash": "ee2a99419007a34f",
+    "snapshot_path": "snapshots/2026-10-07/1a17ca142311bfe86c078fb007f7e8ee3c991bd0bcec4585d1ff0bde1f876ca8.json",
+    "snapshot_status": "uploaded",
     "text_len": 5219,
     "title": "Indiana sees surge of cities, counties ending Flock camera contracts",
     "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts"
@@ -4563,12 +4599,15 @@
     "url": "https://kypublicnotices.newzgroup.com/KYLegals/2026/70229-2026-01-29_1004.pdf"
   },
   "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing": {
-    "content_hash": "4c73e5f7a2710abf9b32dd2c7dd27f85ddf499b97ca96f6ebfebc2f809c01973",
+    "archive": "3bd2580f67d4fc297b255c198b7f4fa28244fc7798e420b0af0df86a26498df6.txt",
+    "content_hash": "d1ac649131f8c4ada570cdec94b2d9458e02a15067cddf5c524d1efd8bf8cdbb",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing/",
-    "simhash": "917fb85332a6bd86",
-    "text_len": 8647,
+    "simhash": "917db87776a2ad86",
+    "snapshot_path": "snapshots/2026-10-07/1791ddebd14bde5442300fdd3b1ab82df75c0321338a4351a943e46b2e86b77f.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8623,
     "title": "What to know before the Grand Rapids City Commission hosts Flock hearing – Grand Valley Lanthorn",
     "url": "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing/"
   },
@@ -5388,22 +5427,28 @@
     "url": "https://www.newsleader.com/story/politics/2026/09/10/flock-camera-vandalism-prompts-augusta-county-to-revisit-lpr-contract/91689439007/"
   },
   "https://newslocker.com/en-us/region/fort-wayne/flock-dropped-by-noble-county-authorities-after-pushback-for-now": {
-    "content_hash": "551f1363df2783efbf4a1737cb0eb4597fe8a0a88a0b085a96f42bed64101968",
+    "archive": "b105e6cb3306cff1d7f582e53a4cd7e3f3fa69c96b0b9c83d25feb841330ce52.txt",
+    "content_hash": "8e35d119fefaf177e888e4c66f77e919c7983f17dbdc7ecb7af54c199037fc50",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.newslocker.com/en-us/region/fort-wayne/flock-dropped-by-noble-county-authorities-after-pushback-for-now/",
-    "simhash": "178ac4f9b50f6713",
-    "text_len": 22918,
+    "simhash": "468a8cb1bd8d2e50",
+    "snapshot_path": "snapshots/2026-10-07/42bb1d5471bef9f310229b03b65756676b0b98bb91d1c7be6c78398216bb9a2f.json",
+    "snapshot_status": "uploaded",
+    "text_len": 21872,
     "title": "Flock dropped by Noble County authorities after pushback, for now - Fort Wayne news - NewsLocker",
     "url": "https://www.newslocker.com/en-us/region/fort-wayne/flock-dropped-by-noble-county-authorities-after-pushback-for-now/"
   },
   "https://newslocker.com/en-us/region/fort-wayne/prosecutor-orders-local-law-enforcement-to-remove-and-disable-entire-flock-network-in-kosciusko-county": {
-    "content_hash": "add6f775a81c38096e03e866898c5d3097094e9bef63e7d4ce7d148afbe47cca",
+    "archive": "af01f60a820836cb5dee3b4ab86c1c08ed00859a1a55c909c1838ac4ffbd7b49.txt",
+    "content_hash": "8e81d492ec6ed7316c827ca53b688b135e040c5d9ee7455c57e42127a5d3f621",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.newslocker.com/en-us/region/fort-wayne/prosecutor-orders-local-law-enforcement-to-remove-and-disable-entire-flock-network-in-kosciusko-county/",
-    "simhash": "178ac4b9b50f6713",
-    "text_len": 23037,
+    "simhash": "56888c39bd8d2f52",
+    "snapshot_path": "snapshots/2026-10-07/9ab5dc9dd9cc2285a620d321c547ba5a8e462fadfa8f8c91e6c08e44fcc0bb48.json",
+    "snapshot_status": "uploaded",
+    "text_len": 21913,
     "title": "Prosecutor orders local law enforcement to remove and disable entire Flock network in Kosciusko County - Fort Wayne news - NewsLocker",
     "url": "https://www.newslocker.com/en-us/region/fort-wayne/prosecutor-orders-local-law-enforcement-to-remove-and-disable-entire-flock-network-in-kosciusko-county/"
   },
@@ -5467,12 +5512,15 @@
     "url": "https://ocdeez.github.io/magistrate-monitor/archive/files/july-21-2026-regular-meeting/2026-07-20/all-in-one-document.pdf"
   },
   "https://officer.com/command-hq/technology/traffic/lpr-license-plate-recognition/news/55403871/grand-rapids-police-launch-flock-transparency-portal-showing-license-plate-reader-usage": {
-    "content_hash": "8d50ccd6000e907015e4ba65aa871d06656e98de9f802462dfe94da1a9bc40f5",
+    "archive": "4e012caf079f101ccc189e057f7b5f1b5c47f50d24906f460b8be0277c79fbd1.txt",
+    "content_hash": "77c97d16e1a14848e2e4ac99426f359d2ca44590cf6998112ac8d83a78a6b0dc",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.officer.com/command-hq/technology/traffic/lpr-license-plate-recognition/news/55403871/grand-rapids-police-launch-flock-transparency-portal-showing-license-plate-reader-usage",
-    "simhash": "9871ba71c42d20cd",
-    "text_len": 7790,
+    "simhash": "9871b311cc2d00dd",
+    "snapshot_path": "snapshots/2026-10-07/e9ed7c6a56f6c0782f7d46c5942b18fde5f64e6e5cc733aa2085583b9f27cac9.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7786,
     "title": "Grand Rapids Police Launch Flock Transparency Portal Showing License Plate Reader Usage | Officer",
     "url": "https://www.officer.com/command-hq/technology/traffic/lpr-license-plate-recognition/news/55403871/grand-rapids-police-launch-flock-transparency-portal-showing-license-plate-reader-usage"
   },
@@ -5713,12 +5761,15 @@
     "url": "https://pinaltoday.com/sheriff-ross-teeple-testifies-before-senate-subcommittee-on-flock-camera-technology"
   },
   "https://piratemedia1.com/theeastcarolinian/article_4caa430a-e61d-4369-af40-86e56b59d4ac.html": {
-    "content_hash": "df44fd7a1e8baba0428b08010fedbaf7c8c2e7b50b280dc3993694815ec0e7ba",
+    "archive": "88817f0c6013a4fdaf5324672e1b76bd1538a08e8708cb88509da764bb19ecae.txt",
+    "content_hash": "5659408950024ca9c599e2392e29b2eee57ce15be232d94c0b01732f724eef46",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.piratemedia1.com/theeastcarolinian/article_4caa430a-e61d-4369-af40-86e56b59d4ac.html",
-    "simhash": "0b0e01a5b7e183be",
-    "text_len": 4250,
+    "simhash": "cf0e43ed32e080b6",
+    "snapshot_path": "snapshots/2026-10-07/0978982b150a920f75618fc43504185ea119c9e96a8ae443ff24ce6b83f60eb1.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4255,
     "title": "Greenville to reject Flock cameras | The East Carolinian | piratemedia1.com",
     "url": "https://www.piratemedia1.com/theeastcarolinian/article_4caa430a-e61d-4369-af40-86e56b59d4ac.html"
   },
@@ -7251,11 +7302,14 @@
     "url": "http://thefreethoughtproject.com/government-surveillance/cities-are-ditching-flock-immediately-replacing-it-with-axon-license-plate-readers"
   },
   "https://theindianalawyer.com/articles/license-plate-camera-systems-have-given-some-rogue-officers-a-tool-for-stalking": {
+    "archive": "810e7e13efc73a3ef9df971eaf9e48b8f8a41dfc7ad8d42948ee8a11513f411c.txt",
     "content_hash": "71beacf98c629bca949cf9831444aeaebf1ddc4af10610a5ce5f0107341f63b9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.theindianalawyer.com/articles/license-plate-camera-systems-have-given-some-rogue-officers-a-tool-for-stalking",
     "simhash": "f8917b91e319051b",
+    "snapshot_path": "snapshots/2026-10-07/5029920f123f0925d41f24e051137b5c33c92714737961e344396d42504b5fa4.json",
+    "snapshot_status": "uploaded",
     "text_len": 34585,
     "title": "License plate camera systems have given some rogue officers a tool for stalking - The Indiana Lawyer",
     "url": "https://www.theindianalawyer.com/articles/license-plate-camera-systems-have-given-some-rogue-officers-a-tool-for-stalking"
@@ -7294,12 +7348,15 @@
     "url": "https://themaneater.com/122229/news/columbia-city-council-adopts-flock-safety-surveillance-ordinance/"
   },
   "https://themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state": {
-    "content_hash": "5bc49c8d54a1943b14ceca6391fbf462a346a8fef2b46dd2b2cc1296a1d1ae63",
+    "archive": "276658265252b460b7b130ccf9fe9c78a5c1fcceab2a568e7d7d61e1eeaa81af.txt",
+    "content_hash": "7b1abc27296652182a27c884edddfc8028f957165d1a1e95189eaafae808ab17",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state/",
-    "simhash": "f566b04dd5c85bfe",
-    "text_len": 8355,
+    "simhash": "f566b04dd5c95bfe",
+    "snapshot_path": "snapshots/2026-10-07/d9155f8e53b5f5220575438043c6fb99f6c388f4bd80b8881505079b8a58076b.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8381,
     "title": "Bipartisan effort to protect privacy as Flock cameras spread across state - The Midwesterner Facebook Facebook",
     "url": "https://www.themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state/"
   },
@@ -7833,11 +7890,14 @@
     "url": "https://urbandale.civicweb.net/document/35459/Professional%20Services%20Agreement%20-%20Automated%20Lic.pdf?handle=19EF686CDA154D40A9FDC715FC61F6FF"
   },
   "https://usi.edu/news/releases/2024/01/vanderburgh-county-sheriff-s-office-to-install-three-flock-safety-cameras-on-usi-campus": {
+    "archive": "4126095180d43e5b075adfd22f762b3845d1c73b2fe13f5bceca3e9d18c221eb.txt",
     "content_hash": "1b98b6736df3b373274b6a422cd65353d72c791830bf6e7aedbdb8f55fc55eaf",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.usi.edu/news/releases/2024/01/vanderburgh-county-sheriff-s-office-to-install-three-flock-safety-cameras-on-usi-campus",
     "simhash": "60d20ddc20b18561",
+    "snapshot_path": "snapshots/2026-10-07/f994edd6487195c8ec29eb6380113633b13d9a28a2a163011164952541489bc3.json",
+    "snapshot_status": "uploaded",
     "text_len": 3489,
     "title": "Vanderburgh County Sheriff’s Office to install three Flock Safety cameras on USI campus - University of Southern Indiana",
     "url": "https://www.usi.edu/news/releases/2024/01/vanderburgh-county-sheriff-s-office-to-install-three-flock-safety-cameras-on-usi-campus"
