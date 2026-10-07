@@ -264,12 +264,15 @@
     "url": "https://agendas.fresno.gov/api/v1/attachments/cmq0gq83x25k8peeiia47sczk/file"
   },
   "https://akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html": {
-    "content_hash": "be5ead5f2a86405a7246815694bbbbd3198a45f7407f176a7242309798e90594",
+    "archive": "21f9acaf8e2b4113133764a31c0eb5b49d1424b7ee7cc09430a69b5f3b8f18c6.txt",
+    "content_hash": "45479fd7a3fe8ab0d34fae8d01206b64e865a578b1bace1dc5b0d430cf48bd15",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html",
-    "simhash": "fc0272a1450406da",
-    "text_len": 6587,
+    "simhash": "fc0a52a14504265b",
+    "snapshot_path": "snapshots/2026-10-07/91790382c00f5b3f4b2749495e5333f8bc1c6a4dc6faeb77565bdb2d76fe8771.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6674,
     "title": "Candidates for Ohio attorney general address Flock cameras controversy, make proposals | Local News | akronjewishnews.com",
     "url": "https://www.akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html"
   },
@@ -813,11 +816,14 @@
     "url": "https://www.beaconjournal.com/story/news/local/arizona/2025/10/05/sedona-removes-flock-safety-license-plate-readers/86268179007/"
   },
   "https://bellevilleareaindependent.com/vbt-approves-license-plate-recognition-project": {
+    "archive": "3f21b835c5a1dfe01d493749fcd950ef27b3bf0521053721e8267191fe07ca11.txt",
     "content_hash": "42c25dfc68a4c40c75f1432c4f6b3e2933400cbd6dde79138e379d6bbc279fc2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://bellevilleareaindependent.com/vbt-approves-license-plate-recognition-project/",
     "simhash": "670f318f0d1b48bc",
+    "snapshot_path": "snapshots/2026-10-07/6046fa9b1742bd69f14ad3be8bf8448e990261868bbb201ad7e5ad4d38b3751a.json",
+    "snapshot_status": "uploaded",
     "text_len": 11085,
     "title": "VBT approves license plate recognition project | The Belleville Independent",
     "url": "https://bellevilleareaindependent.com/vbt-approves-license-plate-recognition-project/"
@@ -899,11 +905,14 @@
     "url": "https://boropulse.com/2026/08/flock-cameras-raise-privacy-questions-murfreesboro-now-operates-over-100-license-plate-readers-documenting-the-movement-of-vehicles/"
   },
   "https://breezejmu.org/news/state/virginia-localities-rethink-flock-camera-use/article_eacd2cb8-c4e8-504a-a544-c72569bbec26.html": {
+    "archive": "55053d1befa85646274a6e969469d339d629fa1754e5c20ed5405522461ed8f9.txt",
     "content_hash": "fa1355349d0c4e14293d636e151838bc70ea94f07b6b412e88a96d22eff500f3",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.breezejmu.org/news/state/virginia-localities-rethink-flock-camera-use/article_eacd2cb8-c4e8-504a-a544-c72569bbec26.html",
     "simhash": "8c3a8273359e38d1",
+    "snapshot_path": "snapshots/2026-10-07/8ec0aee933069406b6fac0e9f448e168a948f2856aaf14c0cec3093b5cb8f318.json",
+    "snapshot_status": "uploaded",
     "text_len": 3864,
     "title": "Virginia localities rethink Flock camera use | News | breezejmu.org",
     "url": "https://www.breezejmu.org/news/state/virginia-localities-rethink-flock-camera-use/article_eacd2cb8-c4e8-504a-a544-c72569bbec26.html"
@@ -1682,11 +1691,14 @@
     "url": "https://classicrock1051.com/ixp/34/p/lafayette-flock-camera-arrests-privacy-debate/"
   },
   "https://clevescene.com/news/cleveland-city-council-warily-approves-flock-safety-renewal": {
+    "archive": "9de2b13e510a669954afb558779f176177c2e0c3c14e8c2fd49d5963903a73ca.txt",
     "content_hash": "70fdf4aeb1400db2ac0c9d206265c844088d04a06f11f1a108da3bf0edd9c07f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.clevescene.com/news/cleveland-city-council-warily-approves-flock-safety-renewal/",
     "simhash": "85099e728004fa19",
+    "snapshot_path": "snapshots/2026-10-07/db8e45a8643f98cdb163a745b55a3db13ca676de95b2f331422c4f6870787315.json",
+    "snapshot_status": "uploaded",
     "text_len": 6927,
     "title": "Cleveland City Council Warily Approves Flock Safety Renewal - Cleveland Scene",
     "url": "https://www.clevescene.com/news/cleveland-city-council-warily-approves-flock-safety-renewal/"
@@ -2019,12 +2031,15 @@
     "url": "https://cybernews.com/ai-news/police-arrest-viral-protestor-with-flock/"
   },
   "https://d33gy59ovltp76.cloudfront.net/news/from-illinois-to-doral-how-flocks-cameras-became-an-immigration-enforcement-flashpoint": {
-    "content_hash": "ff2187e5665e6ea7b7fd40127cb103cdda6e6dad210b8c2c45d8160c0dcfb635",
+    "archive": "555014ae82bff73d2998f03a40de804484bf2d23677fdc795e06de7636f418d5.txt",
+    "content_hash": "a14cfff927c61d0b3bbe8f230e430f1cdcd42a486acc459d124869fd207fc189",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://d33gy59ovltp76.cloudfront.net/news/from-illinois-to-doral-how-flocks-cameras-became-an-immigration-enforcement-flashpoint",
-    "simhash": "cdac40dedbe38ffd",
-    "text_len": 16150,
+    "simhash": "e1be4326f24585ac",
+    "snapshot_path": "snapshots/2026-10-07/c99eca1e683571f8c53f4a1755cf554cc8c626a71364cbe2fee1bb3048bd0e1e.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6888,
     "title": "From Illinois to Doral: How Flock's Cameras Became an…",
     "url": "https://d33gy59ovltp76.cloudfront.net/news/from-illinois-to-doral-how-flocks-cameras-became-an-immigration-enforcement-flashpoint"
   },
@@ -2102,11 +2117,14 @@
     "url": "http://dankennedy.net/2025/08/04/in-a-village-without-a-newspaper-a-small-digital-outlet-was-keeping-tabs-and-asking-questions/"
   },
   "https://deflockmonroe.com/": {
+    "archive": "d20b36067b09b2f4b9aa50d22aa07aa27ad965626cea967622e25b7d440bbd65.txt",
     "content_hash": "17abb35d5dbb38d9bf75ccf31bbdcaa408b5e6a93c880863124adf3371550e90",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://deflockmonroe.com/",
     "simhash": "ed935a154ffd4750",
+    "snapshot_path": "snapshots/2026-10-07/278e5344226edacb119dd7a0c043fe91ac36b04569cedabb18b05515a9d072c9.json",
+    "snapshot_status": "uploaded",
     "text_len": 10948,
     "title": "Deflock Monroe — End the Flock Safety camera contract",
     "url": "https://deflockmonroe.com/"
@@ -2386,11 +2404,14 @@
     "url": "https://ebpd.org/east-bridgewater-police-department-to-terminate-contract-with-flock-safety/"
   },
   "https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?appcode=SNSFEE&guid=5667c99a-30a1-46fc-b1fd-8dd6285b4a8a&pbid=6553bde4-6f9f-4e22-9ccc-4f84dc38dcd6&share=true": {
+    "archive": "b397865065505373b804c0d3bb11a932ab71dba245a80d9a42a63e271b5b02f4.txt",
     "content_hash": "84b522fd9cb03815183b37a71600ce0055e570d5f6912fd5938722cafbc3c57b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?guid=5667c99a-30a1-46fc-b1fd-8dd6285b4a8a&pbid=6553bde4-6f9f-4e22-9ccc-4f84dc38dcd6&share=true&appcode=SNSFEE",
     "simhash": "96093595456fc903",
+    "snapshot_path": "snapshots/2026-10-07/8f30a3b16983eecece6aa324d5cdcababbc75ffc0d3257ae2062154ef77960d0.json",
+    "snapshot_status": "uploaded",
     "text_len": 3741,
     "title": "Flock cameras covered as Dayton suspends program - Springfield News Sun",
     "url": "http://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?guid=5667c99a-30a1-46fc-b1fd-8dd6285b4a8a&pbid=6553bde4-6f9f-4e22-9ccc-4f84dc38dcd6&share=true&appcode=SNSFEE"
@@ -2755,12 +2776,15 @@
     "url": "https://fox10phoenix.com/news/2-more-arizona-communities-drop-flock-license-plate-cameras"
   },
   "https://fox11online.com/news/local/officials-vote-not-to-move-forward-with-contract-for-flock-cameras-in-menominee-michigan": {
-    "content_hash": "9a40f8237c7b81aed022fc6719e5647455507c0499d7976f0819646efa50da9c",
+    "archive": "0a3a7602e9eeb8ae6f8c43de8f6aa031e1b6b19b6ef0eaa68052cb1c5421893a.txt",
+    "content_hash": "41c763c78a3711aac38d0c964560c410f590fb4f70bc6af53455f53bac5d669b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://fox11online.com/news/local/officials-vote-not-to-move-forward-with-contract-for-flock-cameras-in-menominee-michigan",
-    "simhash": "de7163bae7124ab7",
-    "text_len": 4201,
+    "simhash": "ea626b98fe1a24e6",
+    "snapshot_path": "snapshots/2026-10-07/0a9dccbe34b13c47f880e58390ddb068b5efb44c0a1584e5a543bd577cee0c36.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4542,
     "title": "Officials vote not to move forward with contract for Flock cameras in Menominee, Michigan Close Search Search User Icon Comment on this story Share story facebook icon twitter icon",
     "url": "https://fox11online.com/news/local/officials-vote-not-to-move-forward-with-contract-for-flock-cameras-in-menominee-michigan"
   },
@@ -3192,11 +3216,14 @@
     "url": "https://www.govtech.com/policy/nevada-lawmaker-proposes-ban-of-tech-behind-flock-cameras"
   },
   "https://govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts": {
+    "archive": "27d737a97f8abe6316fa32c4b7f88b1d254331e08321132e5ef793eeece933b7.txt",
     "content_hash": "302e05b4786a0c79dad8765b56d60cf3e6f988d4adb3b8cf39bfe0f6ba28c48c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts",
     "simhash": "ca0c6a9d9b013818",
+    "snapshot_path": "snapshots/2026-10-07/c82e148f1d96df913114ffd26e8c48f99faf0d72275b89dc864b133eeb1ec564.json",
+    "snapshot_status": "uploaded",
     "text_len": 5465,
     "title": "3 Ohio Cities Approve Automated License Plate Reader Pacts",
     "url": "https://www.govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts"
@@ -3212,11 +3239,14 @@
     "url": "https://www.govtech.com/public-safety/More-Chicago-Suburbs-Deploy-Automatic-License-Plate-Scanners.html"
   },
   "https://govtech.com/public-safety/after-outcry-bay-city-mich-rejects-license-plate-readers": {
+    "archive": "7be108752c4351985c2d274435e01cbf876c43e3239ad7b78a70c09a852557bb.txt",
     "content_hash": "3e4c99d4ee7b7dc44ac6b3b0829634b6a13cb11cd546f7fae7d6c98904c98787",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.govtech.com/public-safety/after-outcry-bay-city-mich-rejects-license-plate-readers",
     "simhash": "1b717c19a53acc9d",
+    "snapshot_path": "snapshots/2026-10-07/01b57a025cfe9128ec6e54eee5a216148f45a2df415d4e19543d656d6d65ab92.json",
+    "snapshot_status": "uploaded",
     "text_len": 7374,
     "title": "After Outcry, Bay City, Mich., Rejects License Plate Readers",
     "url": "https://www.govtech.com/public-safety/after-outcry-bay-city-mich-rejects-license-plate-readers"
@@ -3318,11 +3348,14 @@
     "url": "https://www.govtech.com/public-safety/license-plate-readers-help-police-in-alabama-cities-solve-crimes"
   },
   "https://govtech.com/public-safety/lorain-ohio-council-approves-license-plate-reader-network": {
+    "archive": "bfa85cbdd26ef35ea943bda4d5dc88874604688e08c7f692f7c4a6083d59b158.txt",
     "content_hash": "ebdfeabdc69669e47f4dc09d2ee42cbeb12f99ae30d90c44fe87e621d22c1251",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.govtech.com/public-safety/lorain-ohio-council-approves-license-plate-reader-network",
     "simhash": "0274214d2475a5cc",
+    "snapshot_path": "snapshots/2026-10-07/e53d1bb0404d486c43d2740a35d6f7161fa4ad218db7f1b5340a5d593e4cc874.json",
+    "snapshot_status": "uploaded",
     "text_len": 3144,
     "title": "Lorain, Ohio, Council Approves License Plate Reader Network",
     "url": "https://www.govtech.com/public-safety/lorain-ohio-council-approves-license-plate-reader-network"
@@ -4806,12 +4839,15 @@
     "url": "https://lookouteugene-springfield.com/story/latest-news/2025/12/10/lane-county-sheriffs-office-suspends-flock-safety-contract/"
   },
   "https://loraindaily.com/sheriff-ends-flock-camera-program": {
-    "content_hash": "644a887b8ea9cb2fefc8732524e162ec253cc3ff4ab29b1da8ec60d806a6d08f",
+    "archive": "9c7c7466ee3539b58bd44f535d6b4d4eac7224fd84989f18b1cf6843c59c5ba8.txt",
+    "content_hash": "a44ebfa9dd69248691f28d90caf7f1ad073d1243d32eefd0a48dfff3c56bb6b5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://loraindaily.com/sheriff-ends-flock-camera-program/",
-    "simhash": "2389d41bddf305c5",
-    "text_len": 3346,
+    "simhash": "2389d41bd5f205c5",
+    "snapshot_path": "snapshots/2026-10-07/6128eb901151b811a659bf68c5355b38e4d5c8e21498544836aa97126aeb1305.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3158,
     "title": "Sheriff ends Flock camera program - Lorain Daily",
     "url": "https://loraindaily.com/sheriff-ends-flock-camera-program/"
   },
@@ -5733,12 +5769,15 @@
     "url": "https://www.police1.com/law-enforcement-policies/florida-bans-alprs-from-all-state-roads"
   },
   "https://police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes": {
-    "content_hash": "d77fb2ad77c6218340ee3d29752f13ddc8da041660b76ee13f841c8400382c01",
+    "archive": "1790dd03421ee81ac76b1f85810927ec8fcf62ba9f36174de3fec20b39f728ff.txt",
+    "content_hash": "5a5f89359aa6641a2fbb61c3cd3ed8c9abd9e76507e9adca1c30873681847a97",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes",
-    "simhash": "545985a5141a2079",
-    "text_len": 5047,
+    "simhash": "445847350cc81869",
+    "snapshot_path": "snapshots/2026-10-07/de52fd6016cbd9ad9b8cba9c5d95fcce7a8a2c55f9422d278fc04ea81a29d997.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5188,
     "title": "Lorain Police credit Flock system for capture of murder suspect in less than 30 minutes",
     "url": "https://www.police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes"
   },
@@ -6636,11 +6675,14 @@
     "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/17/where-are-flock-cameras-in-louisiana-see-sheriff-police-that-have-them/90943464007/"
   },
   "https://signalakron.org/akron-police-flock-camera-program-review-independent-auditor-anthony-finnell": {
+    "archive": "b2300fd1b2e367bfc2947988361eef4855078831c763944884cafc5421fe5abb.txt",
     "content_hash": "0f991ae0116bb5daa6578ea12e047aaa9b45f6f1454a1af803d9be16a927ef65",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://signalakron.org/akron-police-flock-camera-program-review-independent-auditor-anthony-finnell/",
     "simhash": "2d06092999fd3d17",
+    "snapshot_path": "snapshots/2026-10-07/34f62802895c6060ff67902896531af8f125e318ffeb2a359ded536a05e4db8b.json",
+    "snapshot_status": "uploaded",
     "text_len": 6542,
     "title": "How are Akron Police using Flock cameras? Auditor wants to know x linkedin",
     "url": "https://signalakron.org/akron-police-flock-camera-program-review-independent-auditor-anthony-finnell/"
@@ -6709,13 +6751,16 @@
     "url": "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras/"
   },
   "https://star64.tv/newsletter-daily/monroe-city-council-votes-end-flock-safety-contract-amid-privacy-concerns-license-plate-readers-tech-technology-surveillance-backlash-private-cost-price-recording-safety-government-cincinnati": {
-    "content_hash": "7651fd8a947669935b797523173fd24f2b1c57f25b7b12eabcf950dbaf61600f",
+    "archive": "19a1563ebe6427a1cfc2684b7fb9c9d79930e23a63ca48ca537509dc25eb4534.txt",
+    "content_hash": "f9ac56251431c8689139b6e649b8e6b791fac95d50e9fb6388228ee63d9e1996",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://star64.tv/newsletter-daily/monroe-city-council-votes-end-flock-safety-contract-amid-privacy-concerns-license-plate-readers-tech-technology-surveillance-backlash-private-cost-price-recording-safety-government-cincinnati",
-    "simhash": "407ecd5e034d5939",
-    "text_len": 5790,
-    "title": "Local city council unanimously votes to end contract with Flock amid privacy concerns Search Search Share story facebook icon",
+    "simhash": "426ecf4e036dd939",
+    "snapshot_path": "snapshots/2026-10-07/a2b6aa30bba9d5879bd66efd1d5d29ba2f55e02def99331d10a1c8b0e7c60f92.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5791,
+    "title": "Local city council unanimously votes to end contract with Flock amid privacy concerns Search Search User Icon Share story facebook icon",
     "url": "https://star64.tv/newsletter-daily/monroe-city-council-votes-end-flock-safety-contract-amid-privacy-concerns-license-plate-readers-tech-technology-surveillance-backlash-private-cost-price-recording-safety-government-cincinnati"
   },
   "https://starnewsonline.com/story/news/crime/2026/09/08/wrightsville-beach-nc-officer-out-after-flock-misuse-investigation/91661963007": {
@@ -7226,12 +7271,15 @@
     "url": "https://theinnovationattorney.substack.com/p/why-is-flock-safety-losing-municipal"
   },
   "https://theithacan.org/66799/news/presence-of-flock-cameras-in-ithaca-raises-surveillance-concerns": {
-    "content_hash": "88d0ad94be369c5b36bd20a34efd38a8021ee24c1c5c116eeba47e1575f34cdc",
+    "archive": "36bf996e4e69cb6b3ceadec5b933884759c56f01d81f7751c085fbb4ed87a166.txt",
+    "content_hash": "fbf3c7ec5c9cf486ff913894d6cc3a33cedd5b4aaaa914ba2a7b2de65ad80bd4",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://theithacan.org/66799/news/presence-of-flock-cameras-in-ithaca-raises-surveillance-concerns/",
-    "simhash": "ec3e4910c6e6e4ab",
-    "text_len": 10662,
+    "simhash": "ec3e4930cee6e4eb",
+    "snapshot_path": "snapshots/2026-10-07/037c30ff77e400aeab2f1151c9d76e3121a8b2d06eafe3af182cc62e68490356.json",
+    "snapshot_status": "uploaded",
+    "text_len": 10739,
     "title": "Presence of Flock cameras in Ithaca raises surveillance concerns - The Ithacan",
     "url": "https://theithacan.org/66799/news/presence-of-flock-cameras-in-ithaca-raises-surveillance-concerns/"
   },
@@ -7955,12 +8003,15 @@
     "url": "https://www.washingtonsun.com/metro/dc-flock-cameras?redirected=notus_org"
   },
   "https://washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal": {
-    "content_hash": "ded405671e1b83a5fb11c025d7b39b683d7493d82cce88f34c04bc74e7affaea",
+    "archive": "ac9c01796994c510c0a1d3458f834b42380d7fcde91472b1508733abf52a83a9.txt",
+    "content_hash": "bfc7eca2652f360845dc7a9890912a977799c971fb98bfbffb28143f55d1d94b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal/",
-    "simhash": "a4b4e55cbfe2ee5e",
-    "text_len": 6121,
+    "simhash": "a434a554bee6ae5e",
+    "snapshot_path": "snapshots/2026-10-07/7ec64d496e5517e04d1ecf8a3b977368280119a577ee9de6b36c70fd3f517f15.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6101,
     "title": "Ypsilanti Township residents cry for halt on surveillance proposal - The Washtenaw Voice",
     "url": "https://www.washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal/"
   },
@@ -8011,11 +8062,14 @@
     "url": "https://www.wcia.com/news/village-installing-license-plate-reader-cameras/"
   },
   "https://wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns": {
+    "archive": "b4d12fb5586ebad3bd2716d519bd78286572aa4017639973a784894ec80e6d3f.txt",
     "content_hash": "ee64f3c4fcda7ed3879adace68b79d47e7bacedf66338eee9afa06e31f843a2b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns",
     "simhash": "e10ebafcd7013ee4",
+    "snapshot_path": "snapshots/2026-10-07/b39eb7c3f0b48dea197d928173dfe704ef2e9a28a2ff6ee63cbe41bc3318443c.json",
+    "snapshot_status": "uploaded",
     "text_len": 4859,
     "title": "Ohio cities take different approaches to Flock camera privacy concerns",
     "url": "https://www.wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns"
@@ -8044,11 +8098,14 @@
     "url": "https://www.webpronews.com/axon-joins-the-license-plate-tracking-frenzy-as-cities-swap-vendors-but-keep-the-cameras/"
   },
   "https://webpronews.com/dayton-pulls-plug-on-flock-cameras-after-7100-immigration-searches-slip-through": {
+    "archive": "f3cf0c42471f3600e14ee0fe618cebeb4b97b003d921f4079cc9a1b0acd699ac.txt",
     "content_hash": "07cd30a038bead5be877364e2b143d9b381b7e151639c4425d23f79ef6f7b8aa",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.webpronews.com/dayton-pulls-plug-on-flock-cameras-after-7100-immigration-searches-slip-through/",
     "simhash": "a991c37d0b76b4c5",
+    "snapshot_path": "snapshots/2026-10-07/26fd748363b1e68e9eb23881e5bc6cfb566d49af74a45adab5f5cccd16050ad7.json",
+    "snapshot_status": "uploaded",
     "text_len": 10255,
     "title": "Dayton Pulls Plug on Flock Cameras After 7,100 Immigration Searches Slip Through",
     "url": "https://www.webpronews.com/dayton-pulls-plug-on-flock-cameras-after-7100-immigration-searches-slip-through/"
@@ -8172,12 +8229,15 @@
     "url": "https://www.wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there"
   },
   "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract": {
-    "content_hash": "f429ee3f95ce4d5365bd2123a57a621ab1916a28ec62afdfcfccd499d64569a5",
+    "archive": "1e8c695f2cb24ce74568dd276ca6c873b0d2692d1da48fba97e3c67c5180a754.txt",
+    "content_hash": "5ed2cd9a0e3f6a96aac3bb332f4e823bec90410a5179408fbd026c47fc501d58",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract/",
-    "simhash": "f09e12ad7b402fd4",
-    "text_len": 2582,
+    "simhash": "be8f92ad35404d5c",
+    "snapshot_path": "snapshots/2026-10-07/68023c6375291b9185809e161eb777a511e39b0cc718b5c43a5505bc527e43c9.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2718,
     "title": "Kaukauna ends Flock Safety camera contract | Y100 WNCY | Your Home For Country & Fun | Green Bay, WI",
     "url": "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract/"
   },
