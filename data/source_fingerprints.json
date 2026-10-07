@@ -713,11 +713,14 @@
     "url": "https://b985.fm/ixp/490/p/south-portland-flock-camera-privacy-concerns/"
   },
   "https://barchart.com/story/news/905682/license-plate-reader-cameras-abound-in-nevada-the-state-has-no-laws-to-regulate-them": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.barchart.com/story/news/905682/license-plate-reader-cameras-abound-in-nevada-the-state-has-no-laws-to-regulate-them",
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.barchart.com/story/news/905682/license-plate-reader-cameras-abound-in-nevada-the-state-has-no-laws-to-regulate-them"
@@ -1705,11 +1708,14 @@
     "url": "https://www.cnhinews.com/oklahoma/news/article_ce058b56-5212-5443-baf7-583231f60ce6.html"
   },
   "https://cnn.com/2026/03/06/us/three-women-killed-utah-manhunt-wwk-hnk?cid=external-feeds_iluminar_meta": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.cnn.com/2026/03/06/us/three-women-killed-utah-manhunt-wwk-hnk?cid=external-feeds_iluminar_meta",
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.cnn.com/2026/03/06/us/three-women-killed-utah-manhunt-wwk-hnk?cid=external-feeds_iluminar_meta"
@@ -2251,11 +2257,14 @@
     "url": "http://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx"
   },
   "https://draperutah.gov/media/ya4nigvm/police-letterhead-flock-camera-chief-letter.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.draperutah.gov/media/ya4nigvm/police-letterhead-flock-camera-chief-letter.pdf",
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.draperutah.gov/media/ya4nigvm/police-letterhead-flock-camera-chief-letter.pdf"
@@ -2314,31 +2323,40 @@
     "url": "https://www.einpresswire.com/article/938840554/st-charles-county-cuts-ties-with-flock-cameras"
   },
   "https://elnuevodia.com/noticias/seguridad/fotogalerias/asi-lucen-y-operan-las-camaras-de-flock-instaladas-para-leer-tablillas-en-puerto-rico": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.elnuevodia.com/noticias/seguridad/fotogalerias/asi-lucen-y-operan-las-camaras-de-flock-instaladas-para-leer-tablillas-en-puerto-rico/",
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "Así lucen y operan las cámaras de Flock instaladas para leer tablillas en Puerto Rico - El Nuevo Día",
     "url": "https://www.elnuevodia.com/noticias/seguridad/fotogalerias/asi-lucen-y-operan-las-camaras-de-flock-instaladas-para-leer-tablillas-en-puerto-rico/"
   },
   "https://elnuevodia.com/noticias/seguridad/notas/alexis-torres-responde-si-han-dado-acceso-a-ice-a-las-camaras-de-flock-no-ha-habido-ninguna-solicitud-de-informacion": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.elnuevodia.com/noticias/seguridad/notas/alexis-torres-responde-si-han-dado-acceso-a-ice-a-las-camaras-de-flock-no-ha-habido-ninguna-solicitud-de-informacion/",
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "¿Qué dice Alexis Torres sobre el acceso de ICE a los datos de las cámaras Flock en Puerto Rico? - El Nuevo Día",
     "url": "https://www.elnuevodia.com/noticias/seguridad/notas/alexis-torres-responde-si-han-dado-acceso-a-ice-a-las-camaras-de-flock-no-ha-habido-ninguna-solicitud-de-informacion/"
   },
   "https://elnuevodia.com/noticias/seguridad/notas/persecucion-o-seguridad-el-debate-entre-beneficios-y-peligros-de-los-lectores-automaticos-de-tablillas-en-puerto-rico": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "thin",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.elnuevodia.com/noticias/seguridad/notas/persecucion-o-seguridad-el-debate-entre-beneficios-y-peligros-de-los-lectores-automaticos-de-tablillas-en-puerto-rico/",
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": "El debate entre beneficios y peligros de los lectores automáticos de tablillas en Puerto Rico - El Nuevo Día",
     "url": "https://www.elnuevodia.com/noticias/seguridad/notas/persecucion-o-seguridad-el-debate-entre-beneficios-y-peligros-de-los-lectores-automaticos-de-tablillas-en-puerto-rico/"
@@ -2659,6 +2677,19 @@
     "text_len": 4201,
     "title": "Officials vote not to move forward with contract for Flock cameras in Menominee, Michigan Close Search Search User Icon Comment on this story Share story facebook icon twitter icon",
     "url": "https://fox11online.com/news/local/officials-vote-not-to-move-forward-with-contract-for-flock-cameras-in-menominee-michigan"
+  },
+  "https://fox11online.com/newsletter-daily/manitowoc-ending-flock-camera-contract-in-2027": {
+    "archive": "5658384637ec7dac08192ee6fce4f11121282fec76c48403b8608ee878b69b99.txt",
+    "content_hash": "f760e11abf8505e690e61bfe782cbda14cffaf8390a48ca9a869fd60f8eb7fc6",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://fox11online.com/newsletter-daily/manitowoc-ending-flock-camera-contract-in-2027",
+    "simhash": "18c2904fca301104",
+    "snapshot_path": "snapshots/2026-10-07/5d2cc4ef29f33db7ef615bf4d8d4b4872f18419eb9d6cdfcb7f24c2e49e71018.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2687,
+    "title": "Manitowoc ending Flock Camera contract in 2027 Close Search Search User Icon Comment on this story Share story facebook icon twitter icon",
+    "url": "https://fox11online.com/newsletter-daily/manitowoc-ending-flock-camera-contract-in-2027"
   },
   "https://fox26houston.com/news/flock-cameras-city-manvel-unanimously-approves-remove-cameras": {
     "content_hash": "cc79f6286cf11eed4aab816a6cfc8bb0623c4196a97232665167956be0b99e2c",
@@ -3047,11 +3078,14 @@
     "url": "https://www.govtech.com/gov-experience/license-plate-cameras-to-be-turned-off-in-olympia-wash"
   },
   "https://govtech.com/policy/nevada-lawmaker-proposes-ban-of-tech-behind-flock-cameras": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": null,
+    "retry_after": "2026-10-14",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.govtech.com/policy/nevada-lawmaker-proposes-ban-of-tech-behind-flock-cameras"
@@ -3493,11 +3527,14 @@
     "url": "https://www.hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf?t=202412021324290"
   },
   "https://haussamen.com/wp-content/uploads/2026/02/NM-Las-Cruces-PD-FlockOSLPRLive-Video-Law-Enforcement-Agreement-9122024.pdf": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://haussamen.com/wp-content/uploads/2026/02/NM-Las-Cruces-PD-FlockOSLPRLive-Video-Law-Enforcement-Agreement-9122024.pdf",
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://haussamen.com/wp-content/uploads/2026/02/NM-Las-Cruces-PD-FlockOSLPRLive-Video-Law-Enforcement-Agreement-9122024.pdf"
@@ -3580,6 +3617,19 @@
     "text_len": 431,
     "title": "Terrebonne, Lafourche officials look into Flock cameras",
     "url": "https://www.houmatoday.com/story/news/local/2026/08/03/terrebonne-lafourche-officials-look-into-flock-cameras/91113258007/"
+  },
+  "https://htrnews.com/story/news/local/2026/09/25/manitowoc-drops-flock-safety-camera-contract/91941211007": {
+    "archive": "1767841293e89ce7e1fda735bb1feb5481108522c533888187cec93467841072.txt",
+    "content_hash": "dfc47486ebe92fd6fae3d64b8cda99e943c41d52c218aaae40e77a8d8a4c7256",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.htrnews.com/story/news/local/2026/09/25/manitowoc-drops-flock-safety-camera-contract/91941211007/",
+    "simhash": "571cf08fd35a021e",
+    "snapshot_path": "snapshots/2026-10-07/a41aaf0d25e368ce9acc7736e45d183b6089789d1b4ac8329782b8ccbf3418d8.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3479,
+    "title": "Manitowoc drops Flock Safety camera contract",
+    "url": "https://www.htrnews.com/story/news/local/2026/09/25/manitowoc-drops-flock-safety-camera-contract/91941211007/"
   },
   "https://idahopolitics.org/flock-license-plate-readers-spread-across-idaho-cities-sparking-legal-challenges-and-privacy-debate": {
     "content_hash": "0f30191b9781a4379443e4c25671e429f4254df150c04aee06480c112cfd4e26",
@@ -4375,23 +4425,29 @@
     "url": "https://www.lcsun-news.com/story/news/education/2026/09/17/flock-cameras-las-cruces/91792151007/"
   },
   "https://lcsun-news.com/story/news/local/las-cruces/2026/09/21/las-cruces-restricts-police-surveillance-technology/91814555007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "e6642bf7ca661f50f2666c5fb49a8df0ccede476094ed0c2e3ee2bff74e2c0af.txt",
+    "content_hash": "145ee3411df958ea890d7fb3d2afbd5db251d582232f13e2d5031b4a68c1b960",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.lcsun-news.com/story/news/local/las-cruces/2026/09/21/las-cruces-restricts-police-surveillance-technology/91814555007/",
+    "simhash": "3e885898e57cc26a",
+    "snapshot_path": "snapshots/2026-10-07/d462394f2c458a4ad01d08e60d1c080d9bb785acca2311f01153321829d7196f.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3925,
+    "title": "Las Cruces restricts police surveillance technology",
     "url": "https://www.lcsun-news.com/story/news/local/las-cruces/2026/09/21/las-cruces-restricts-police-surveillance-technology/91814555007/"
   },
   "https://lcsun-news.com/story/opinion/2026/03/29/ensuring-privacy-in-alrp-use/89303419007": {
-    "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "4cc5dd601a1de05cef8aee95bbd4f2fa54be1fb158622881882eb32104d1d65e.txt",
+    "content_hash": "d959fad81767a46ca2ca64ec87b63e4420bec147095bf272f9a81cfc2d8c1ccb",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.lcsun-news.com/story/opinion/2026/03/29/ensuring-privacy-in-alrp-use/89303419007/",
+    "simhash": "70eac3b5f37592eb",
+    "snapshot_path": "snapshots/2026-10-07/1c6d3e669d09b1a7130033d830112876da7963f4856fc1dd48158b4935360e86.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5043,
+    "title": "Ensuring privacy in ALRP use",
     "url": "https://www.lcsun-news.com/story/opinion/2026/03/29/ensuring-privacy-in-alrp-use/89303419007/"
   },
   "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf": {
@@ -4445,6 +4501,19 @@
     "text_len": 0,
     "title": null,
     "url": "https://legistarweb-production.s3.amazonaws.com/uploads/attachment/pdf/3942354/Trumble_-_RESOLUTION_TO_END_THE_CITY_S_RELATIONSHIP_WITH_FLOCK_SAFETY_-_final_2_26.pdf"
+  },
+  "https://lenaweevoice.com/2026/09/21/city-of-adrian-to-discontinue-flock-cameras": {
+    "archive": "661f2d97e3bdc2aa3986572eefcad8ee38aa3369369f451bab25b619505a31df.txt",
+    "content_hash": "86b35931f62c06cbdb3ea16d2d6ee82933e84832a560e29760949f7ed681f96a",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://lenaweevoice.com/2026/09/21/city-of-adrian-to-discontinue-flock-cameras/",
+    "simhash": "1926ef2fb10db85e",
+    "snapshot_path": "snapshots/2026-10-07/b541caf2c40d7e0533d1fb52e43a4e9020e17c1a2ce58c7dc97a81bf108a1251.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2612,
+    "title": "City of Adrian to discontinue Flock cameras | The Lenawee Voice",
+    "url": "https://lenaweevoice.com/2026/09/21/city-of-adrian-to-discontinue-flock-cameras/"
   },
   "https://littlerock.gov/city-administration/board-of-directors/meeting-agenda/AGENDA - WEB - 10-21-2025/BC - Flock License Plate.pdf": {
     "archive": null,
@@ -5206,11 +5275,14 @@
     "url": "https://www.officer.com/command-hq/technology/traffic/lpr-license-plate-recognition/news/55403871/grand-rapids-police-launch-flock-transparency-portal-showing-license-plate-reader-usage"
   },
   "https://ogdencity.gov/DocumentCenter/View/13470/LPR-RFP_ROA": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "error",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": null,
+    "retry_after": "2026-10-14",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://ogdencity.gov/DocumentCenter/View/13470/LPR-RFP_ROA"
@@ -5383,6 +5455,19 @@
     "title": "Flock Safety - Providence Business News",
     "url": "https://pbn.com/tag/flock-safety/"
   },
+  "https://peshtigotimes.com/stories/city-of-marinette-votes-to-end-contract-with-flock-safety,355384": {
+    "archive": null,
+    "content_hash": null,
+    "fetch_status": "blocked",
+    "fetched_at": "2026-10-07",
+    "final_url": null,
+    "retry_after": "2026-11-06",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "http://www.peshtigotimes.com/stories/city-of-marinette-votes-to-end-contract-with-flock-safety,355384"
+  },
   "https://phillyvoice.com/flock-cameras-philadelphia-pennsylvania-lawmakers": {
     "content_hash": "34dd1ccf8d5f2db45f1a66639befe3449ccc516f84b709478693720187f8688a",
     "fetch_status": "ok",
@@ -5432,6 +5517,19 @@
     "text_len": 6013,
     "title": "Man dismantles Flock cameras, drops them off at Bernalillo County Sheriff’s Office",
     "url": "https://www.police1.com/arrests-sentencing/man-shows-up-at-n-m-sheriffs-office-with-truck-full-of-dismantled-alpr-cameras"
+  },
+  "https://police1.com/investigations/2-mich-officers-threaten-to-leave-department-after-city-votes-down-lpr-contract": {
+    "archive": "d590d44f2ff5a1f37fdb888ff22eb3e1dc0ac2a0e223df97e0a57aa98420cec9.txt",
+    "content_hash": "3562c730510d6f6f55d10be69530af7739f3939217c06bf80b6d680833e41aa8",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.police1.com/investigations/2-mich-officers-threaten-to-leave-department-after-city-votes-down-lpr-contract",
+    "simhash": "37226f147c744925",
+    "snapshot_path": "snapshots/2026-10-07/fd310723147ddee7ae283b2673f117f4eeb62654e5558f43ae85db50159e5da4.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7263,
+    "title": "2 Michigan officers threaten to leave department after city votes down LPR contract",
+    "url": "https://www.police1.com/investigations/2-mich-officers-threaten-to-leave-department-after-city-votes-down-lpr-contract"
   },
   "https://police1.com/law-enforcement-policies/florida-bans-alprs-from-all-state-roads": {
     "content_hash": "6ffa756301063e6b7e7e97bcb5faf5ee1bc28344cd19e0b1273756740a127464",
@@ -5691,11 +5789,14 @@
     "url": "https://q13fox.com/news/washington-expands-flock-camera-use"
   },
   "https://qni.ogdencity.com/DocumentCenter/View/35296/Public-Safety-ALPR-RFP_QandADoc2": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "non_html",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://qni.ogdencity.com/DocumentCenter/View/35296/Public-Safety-ALPR-RFP_QandADoc2",
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://qni.ogdencity.com/DocumentCenter/View/35296/Public-Safety-ALPR-RFP_QandADoc2"
@@ -5945,13 +6046,16 @@
     "url": "https://www.reviewjournal.com/news/politics-and-government/nevada/silver-state-not-surveillance-state-nevada-lawmaker-proposes-ban-on-tech-behind-flock-cameras-3887877/"
   },
   "https://rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007": {
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
-    "simhash": null,
-    "text_len": 0,
-    "title": null,
+    "archive": "c762f3389e3e1b748a7f200566cea9e2186a203077f2792727400b60e08aae6b.txt",
+    "content_hash": "04e06ccf0574c8ca2977f3cfdaba9f219551ef230b71ac6ec0ac4a3bef8484c7",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "d47713b3dacf4723",
+    "snapshot_path": "snapshots/2026-10-07/d266ddef4e0fce3b60dc2404671bcb201ce84ec9816126a2b2b616cb0d4523bd.json",
+    "snapshot_status": "uploaded",
+    "text_len": 579,
+    "title": "License plate reader camera debate: Solving crime vs. privacy concerns",
     "url": "https://www.rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007/"
   },
   "https://riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf": {
@@ -6477,11 +6581,14 @@
     "url": "https://static.spokanecity.org/documents/police/accountability/police-policy-manual-2026-03-30.pdf"
   },
   "https://stjohntradewinds.com/lawmakers-meet-with-vipd-on-real-time-crime-centers-and-technology-upgrades": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": null,
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://stjohntradewinds.com/lawmakers-meet-with-vipd-on-real-time-crime-centers-and-technology-upgrades/"
@@ -6834,6 +6941,19 @@
     "title": "Residents push back on Mon County Flock Camera use | Morgantown News | thedaonline.com",
     "url": "https://www.thedaonline.com/news/morgantown/residents-push-back-on-mon-county-flock-camera-use/article_1b6f1749-9816-49ca-9da3-2831a405c329.html"
   },
+  "https://thedetroit.org/news/eastpointe-ends-flock-safety-contract-after-employees-misused-license-plate-reader-system": {
+    "archive": "02781be96607663c7e8efc5852e1774e39272e1675df2d2c8537cd65f258c08e.txt",
+    "content_hash": "d7845d1068adff69b1020ae7c15294092479b5d29e3d36945185e7c73a245916",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://thedetroit.org/news/eastpointe-ends-flock-safety-contract-after-employees-misused-license-plate-reader-system",
+    "simhash": "dbb4852d90ca9abc",
+    "snapshot_path": "snapshots/2026-10-07/a82b36203d903f88df7781441c642dc5e33cf803638a91891228f67da77a243d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3782,
+    "title": "Eastpointe ends Flock Safety contract after employees misused license plate reader system | The Detroit",
+    "url": "https://thedetroit.org/news/eastpointe-ends-flock-safety-contract-after-employees-misused-license-plate-reader-system"
+  },
   "https://theflagstaffpost.com/flagstaff-deactivates-all-32-flock-safety-cameras-after-unanimous-city-council-vote": {
     "content_hash": "a2a0de298e2a263e425ba888e33e1b9ebdd8a34f2474af791b7870ca51031abb",
     "fetch_status": "ok",
@@ -7063,6 +7183,19 @@
     "title": "Racine Common Council votes to end Flock Safety contract",
     "url": "https://www.tmj4.com/news/local-news/in-your-community/racine-county/racine-common-council-votes-to-end-flock-safety-contract-cameras-to-stay-up-for-30-more-days"
   },
+  "https://tompkinscountyny.gov/News-articles/Highlights-of-the-4726-regular-and-41426-special-Tompkins-County-Legislature-meetings": {
+    "archive": "6ffa1e1d90df5d5d5619026b2e4e01893375ead8857c3f3fdcee4e7e0b4eb777.txt",
+    "content_hash": "07980facfb18a9be872aff37cb40c770177162f71a51b968aeb6272f4749c121",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.tompkinscountyny.gov/News-articles/Highlights-of-the-4726-regular-and-41426-special-Tompkins-County-Legislature-meetings",
+    "simhash": "a65c345a0c88048a",
+    "snapshot_path": "snapshots/2026-10-07/6a35bdcf60cb0091c7d670ae1fb2e57d6a009c9a799cc3db60603109199c91dc.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2946,
+    "title": "Highlights of the 4/7/26 and 4/14/26 Legislature meetings | Tompkins County",
+    "url": "https://www.tompkinscountyny.gov/News-articles/Highlights-of-the-4726-regular-and-41426-special-Tompkins-County-Legislature-meetings"
+  },
   "https://tompkinscountyny.gov/files/assets/county/v/1/sheriffs-office/documents/community-statement-from-tcso-re-give-flock-safety-1.pdf": {
     "archive": null,
     "content_hash": null,
@@ -7168,11 +7301,14 @@
     "url": "https://transparency.flocksafety.com/johnson-county-in-so"
   },
   "https://transparency.flocksafety.com/lone-peak-ut-pd": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": null,
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://transparency.flocksafety.com/lone-peak-ut-pd"
@@ -7204,11 +7340,14 @@
     "url": "https://transparency.flocksafety.com/newport-news-va-pd"
   },
   "https://transparency.flocksafety.com/ogden-city-ut-pd": {
+    "archive": null,
     "content_hash": null,
     "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": null,
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://transparency.flocksafety.com/ogden-city-ut-pd"
@@ -7832,6 +7971,19 @@
     "title": "Marion County Sheriff's Office dispels myths about Flock cameras - West Virginia Press Association",
     "url": "https://wvpress.org/breaking-news/marion-county-sheriffs-office-dispels-myths-about-flock-cameras/"
   },
+  "https://wydc-tv.com/news/local/tompkins-county-ends-flock-safety-camera-contract-in-12-1-vote/article_505c13ab-d243-401e-84ce-019f70dd0485.html": {
+    "archive": null,
+    "content_hash": null,
+    "fetch_status": "blocked",
+    "fetched_at": "2026-10-07",
+    "final_url": null,
+    "retry_after": "2026-11-06",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.wydc-tv.com/news/local/tompkins-county-ends-flock-safety-camera-contract-in-12-1-vote/article_505c13ab-d243-401e-84ce-019f70dd0485.html"
+  },
   "https://wyrz.org/plainfield-police-department-deploys-innovative-license-plate-reader-cameras-to-help-solve-and-reduce-crime": {
     "content_hash": "de87116f33c56a9902b13d325c34f53b3bebb96143cb44253b1b4328e3fefe8d",
     "fetch_status": "ok",
@@ -7908,11 +8060,14 @@
     "url": "https://www.youtube.com/shorts/lTyB6wgQBGk"
   },
   "https://youtube.com/watch?v=2-oXsYJ1zJs": {
+    "archive": null,
     "content_hash": null,
-    "fetch_status": "blocked",
-    "fetched_at": "2026-09-25",
-    "final_url": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.youtube.com/watch?v=2-oXsYJ1zJs",
+    "retry_after": "2026-11-06",
     "simhash": null,
+    "snapshot_path": null,
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=2-oXsYJ1zJs"
