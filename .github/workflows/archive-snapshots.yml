@@ -8,6 +8,9 @@ name: Source snapshot archiver
 #   store_suspended, starting 2026-10-05 ~17:08 EDT). Changes:
 #   - REMOVED both blob list calls. Upload verification now uses each batch's
 #     own "Snapshot summary:" accounting line. Zero blob API calls per run.
+#   - FIX 2026-10-07: batch step runs `fingerprints backfill-archive`
+#     (targets sources missing an archive file) instead of `refresh`
+#     (re-fetches only stale ok sources), un-stalling the bulk backfill
 #   - ADDED "Persist fingerprint updates": commits data/source_fingerprints.json
 #     back to main so quarantine/retry_after and snapshot_path survive the
 #     runner. Previously these died with the runner, so every batch
@@ -112,7 +115,7 @@ jobs:
           fi
           echo "=== Maintenance complete ==="
 
-      - name: Refresh fingerprints and archive snapshots
+      - name: Backfill-archive fingerprints and snapshot archives
         if: ${{ inputs.maintenance == '' }}
         env:
           ARCHIVE_BLOB_READ_WRITE_TOKEN: ${{ secrets.ARCHIVE_BLOB_READ_WRITE_TOKEN }}
@@ -144,7 +147,7 @@ jobs:
               echo "Using explicit source keys (skipping batch selection)"
               python3 scripts/flockoff.py fingerprints refresh --keys "${{ inputs.keys }}" > /tmp/batch_$i.log 2>&1
             else
-              python3 scripts/flockoff.py fingerprints refresh --max "$BATCH_SIZE" > /tmp/batch_$i.log 2>&1
+              python3 scripts/flockoff.py fingerprints backfill-archive --max "$BATCH_SIZE" > /tmp/batch_$i.log 2>&1
             fi
             BATCH_EXIT=$?
             cat /tmp/batch_$i.log
