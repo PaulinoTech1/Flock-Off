@@ -379,11 +379,14 @@
     "url": "https://www.amestrib.com/story/news/county-news/2026/08/13/story-county-sheriffs-office-flock-cameras-license-plate-readers-iowa-state/91276634007/"
   },
   "https://apbweb.com/2021/09/plainfield-police-install-digital-license-plate-readers-to-fight-crime": {
+    "archive": "545e92b798f8790805c2bfff10e6e5a91bdaf4d20056d073f13905781a1f0647.txt",
     "content_hash": "eb60745c64707ee6e5b011e557f3a099bf7f2d0015541a34fe2f4883bc3ed87b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://apbweb.com/2021/09/plainfield-police-install-digital-license-plate-readers-to-fight-crime/",
     "simhash": "21f0ee8ca7958cf0",
+    "snapshot_path": "snapshots/2026-10-07/5628dc12dfb2a75570ff06018c4ff9c4f56778dc708d544d148df449b13db68b.json",
+    "snapshot_status": "uploaded",
     "text_len": 3615,
     "title": "Plainfield police install digital license plate readers to fight crime - American Police Beat Magazine",
     "url": "https://apbweb.com/2021/09/plainfield-police-install-digital-license-plate-readers-to-fight-crime/"
@@ -744,12 +747,15 @@
     "url": "https://www.barchart.com/story/news/905682/license-plate-reader-cameras-abound-in-nevada-the-state-has-no-laws-to-regulate-them"
   },
   "https://basedinlafayette.com/p/wlpd-chief-defends-deployment-of": {
-    "content_hash": "f263dc75146b5fbd5e57bb13441c36c45a5cabb370615dc56910a979d250941e",
+    "archive": "a71b452e56be24df972a071b73d3930932cecdd4726727a6979221645c45e781.txt",
+    "content_hash": "bcba5653b1b77954a349d08dbec59c96b122440d86c9423f75296299e7188c37",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.basedinlafayette.com/p/wlpd-chief-defends-deployment-of",
-    "simhash": "5f8bf35164814907",
-    "text_len": 18091,
+    "simhash": "6f8af35164814b07",
+    "snapshot_path": "snapshots/2026-10-07/e067b5ea41b09202e1541f159922a418ce4ae60c8e255d0aace0ffe2d3aeff66.json",
+    "snapshot_status": "uploaded",
+    "text_len": 18092,
     "title": "WLPD chief defends deployment of Flock cameras to skeptical standing room crowd",
     "url": "https://www.basedinlafayette.com/p/wlpd-chief-defends-deployment-of"
   },
@@ -990,11 +996,14 @@
     "url": "https://www.capecodtimes.com/story/news/public-safety/2026/09/05/barnstable-flock-cameras-removed/91611060007/"
   },
   "https://capitolcitynow.com/news/248842-springfield-city-council-approves-flock-license-plate-reader-contract-with-changes": {
+    "archive": "6f0a1bd9a7c53863cbf4fcaf8cd542d6e772c220b45cc99054f8be8a65c6dce9.txt",
     "content_hash": "f24e94965aaa3b7adc2ab4ca28f6242c5561dae1f4ab4461141f2a9d9690224d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://capitolcitynow.com/news/248842-springfield-city-council-approves-flock-license-plate-reader-contract-with-changes/",
     "simhash": "cb2446bb1a4aa948",
+    "snapshot_path": "snapshots/2026-10-07/770f292b80379796e4a26ac7872f46d55856d07ba8edc6e934ef03735f88481c.json",
+    "snapshot_status": "uploaded",
     "text_len": 2460,
     "title": "Springfield City Council approves Flock license plate reader contract, with changes - Capitol City Now",
     "url": "https://capitolcitynow.com/news/248842-springfield-city-council-approves-flock-license-plate-reader-contract-with-changes/"
@@ -1900,11 +1909,14 @@
     "url": "https://www.connect-clarksburg.com/monongalia-county-sheriffs-office-says-flock-camera-helped-locate-missing-9-year-old/"
   },
   "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/3efa81d": {
+    "archive": "e49e184286905235304688571566c063d5e848743b19a04c87c0f00c8ca6ad2d.txt",
     "content_hash": "0e5b8a538025732724b8d4be28fafbf8f636a15995da01a608c76af41cb2f314",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/3efa81d",
     "simhash": "572c08d89217e85b",
+    "snapshot_path": "snapshots/2026-10-07/e6722b7d69be27d7e2833606ca5ffcf60e8499e979f54e22618f494c1639082b.json",
+    "snapshot_status": "uploaded",
     "text_len": 1306,
     "title": "Statement: Evanston Deactivates Flock Cameras and Terminates Contract",
     "url": "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/3efa81d"
@@ -2077,12 +2089,15 @@
     "url": "https://dailyemerald.com/189945/community-news/city-council-looks-to-develop-surveillance-technology-policy-by-end-of-2026/"
   },
   "https://dailyillini.com/news-stories/world-news/state-news/2026/07/28/illinois-police-double-down-on-license-plate-readers": {
-    "content_hash": "0db663d044c427e1bba2dc786b004a025ac07b257dd6d93e392b83434aed956e",
+    "archive": "c0e54d88ccb3f040ede582cddc43350290fbd2fed1e53ff98bf75f916affe4ea.txt",
+    "content_hash": "b0b9fbc9ccafb39af61bbb521ffbd95869eec395c95850ff11ecdf80f512bc66",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://dailyillini.com/news-stories/world-news/state-news/2026/07/28/illinois-police-double-down-on-license-plate-readers/",
-    "simhash": "69c8c29952e6e2bb",
-    "text_len": 5693,
+    "simhash": "e8c842995266e2bf",
+    "snapshot_path": "snapshots/2026-10-07/2d636e6c44e45548c84794b73de75c35e8280c91613b62436f01e450cc73711f.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5687,
     "title": "Illinois police double down on license plate readers - The Daily Illini",
     "url": "https://dailyillini.com/news-stories/world-news/state-news/2026/07/28/illinois-police-double-down-on-license-plate-readers/"
   },
@@ -2218,12 +2233,15 @@
     "url": "https://derby.civicweb.net/document/21142/Flock%20License%20Plate%20Reader%20Cameras.pdf?handle=D1F9EFA8485941DC8A177D0D117C152B"
   },
   "https://derekeder.com/blog/why-i-voted-to-cancel-flock": {
-    "content_hash": "c8f506cc2314abf10144c3658999d56d53e8e26f7aac19ca0b3ad2d736bb51bf",
+    "archive": "2763d8edd091cb7fd858f7c0cf06a035c8bcdd2f655355bfb98317177a40eda3.txt",
+    "content_hash": "73b302ccec185bfbda22f0348eb4c4b62bd5fe69f64f2db5c9c84e2836db2ad8",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://derekeder.com/blog/why-i-voted-to-cancel-flock",
     "simhash": "e02d607791d4eacd",
-    "text_len": 9694,
+    "snapshot_path": "snapshots/2026-10-07/3494e75e1e6dae8927506c3f0b8fd406bdbb7dca3ba73673ab31f0de12af5fd7.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9626,
     "title": "Why I voted to cancel Oak Park's contract with Flock (and so should you) - Derek Eder",
     "url": "https://derekeder.com/blog/why-i-voted-to-cancel-flock"
   },
@@ -2567,13 +2585,16 @@
     "url": "https://www.eventbrite.com/e/what-the-flock-cameras-in-wyandotte-county-what-do-we-know-community-qs-tickets-1999112707924"
   },
   "https://eyesoffindiana.org/counties/johnson": {
-    "content_hash": "6ac1fb30ffb78d083faca7c8efd1e81fb684aada47a18039f747d5cb1503af4c",
+    "archive": "04863a9f582a8b185dfa2aee108bd76328cfea35a1162a64d53a2157b849d152.txt",
+    "content_hash": "ad24fc235da3427cedc68b2521f13df4c8f9b551de4f6231afbe5d9e6a1f1f64",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://eyesoffindiana.org/counties/johnson",
-    "simhash": "1072fc517b761837",
-    "text_len": 8329,
-    "title": "Flock Safety & ALPR Cameras in Johnson County, Indiana (132 Mapped)",
+    "simhash": "1072fc537b721067",
+    "snapshot_path": "snapshots/2026-10-07/a4b3f95183305e0546d92588abbc55f9d1e4cd46d1c3ec1cb61fcdc4ff44ae9e.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8327,
+    "title": "Flock Safety & ALPR Cameras in Johnson County, Indiana (134 Mapped)",
     "url": "https://eyesoffindiana.org/counties/johnson"
   },
   "https://eyesoffma.com/wins": {
@@ -3235,11 +3256,14 @@
     "url": "https://www.govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts"
   },
   "https://govtech.com/public-safety/More-Chicago-Suburbs-Deploy-Automatic-License-Plate-Scanners.html": {
+    "archive": "a836c7fedb6b09f85a4c42f0a3b3d8f2491bc261248db2688c23327844e78a19.txt",
     "content_hash": "90305fe3a3c42f8adbbd6ebeabfd48acd6fca691b0a86f75c08e663debfa4a00",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.govtech.com/public-safety/More-Chicago-Suburbs-Deploy-Automatic-License-Plate-Scanners.html",
     "simhash": "130dcf550190b6fb",
+    "snapshot_path": "snapshots/2026-10-07/342050d062b96b4946eea9059af72082609bd0f87dcdfd508308bcd62f1537c5.json",
+    "snapshot_status": "uploaded",
     "text_len": 7367,
     "title": "More Chicago Suburbs Deploy Automatic License Plate Scanners",
     "url": "https://www.govtech.com/public-safety/More-Chicago-Suburbs-Deploy-Automatic-License-Plate-Scanners.html"
@@ -3844,11 +3868,14 @@
     "url": "https://www.illinoispress.org/Home/tabid/105/ArticleID/2981/Impact-Evanston-shuts-off-license-plate-readers-after-report-of-Illinois-data-shared-with-feds.aspx"
   },
   "https://indianacapitalchronicle.com/2023/02/01/indiana-lawmakers-want-to-crack-down-on-data-privacy-what-about-license-plate-readers": {
+    "archive": "35e096458fa0aa7bbf1d8e4153cec279e01747b9e08a039bb3dfe703c1b19da0.txt",
     "content_hash": "2733c54edffea90b147cf822349533d947fe213a915c0c774381e56fc837d899",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://indianacapitalchronicle.com/2023/02/01/indiana-lawmakers-want-to-crack-down-on-data-privacy-what-about-license-plate-readers/",
     "simhash": "cac89418a1097323",
+    "snapshot_path": "snapshots/2026-10-07/5c9bad99efdb9ffc48e9a79f6d4b7b88c3c16a17a2ad044861bd07f740f7dfa4.json",
+    "snapshot_status": "uploaded",
     "text_len": 14731,
     "title": "Indiana lawmakers want to crack down on data privacy. What about license plate readers? • Indiana Capital Chronicle Quotation",
     "url": "https://indianacapitalchronicle.com/2023/02/01/indiana-lawmakers-want-to-crack-down-on-data-privacy-what-about-license-plate-readers/"
@@ -3900,12 +3927,15 @@
     "url": "https://www.insiderutah.com/articles/wayne-county-commission-feb-4-2025/"
   },
   "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois": {
-    "content_hash": "2880d3f1da1019e67d509c409ca4f43430845fbd01bbec3c5c6475bfb01ff952",
+    "archive": "67311f392f9cd408b9480a7ebf2f9de175830717bb00d96d5c390418d4682baa.txt",
+    "content_hash": "1804f90471ed1c6ba96166eda74d6fff408b283e3f3f9c3a6974eb84437218f9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois/",
-    "simhash": "a77aa0fc76bc6898",
-    "text_len": 6416,
+    "simhash": "b652a25c76986c8c",
+    "snapshot_path": "snapshots/2026-10-07/edea9326548e1e9029a7a50a30c30af18259032e61fe8035294308e0085ae0e2.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6272,
     "title": "Evanston and Oak Park Terminate Agreements with Flock Safety, a...",
     "url": "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois/"
   },
@@ -3960,11 +3990,14 @@
     "url": "https://iowastartingline.com/local/local-news/flock-cameras/"
   },
   "https://ipm.org/2021-12-29/indiana-police-agencies-trying-out-license-plate-cameras": {
+    "archive": "2b262ac10627ad3385650484df16d8b4c57ed139a76ac7c5e783cc3b0c7ee6d9.txt",
     "content_hash": "b2a311a893e99f89238be525d5672d890ef3c2ff36aed397d6ba397f05f63684",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.ipm.org/2021-12-29/indiana-police-agencies-trying-out-license-plate-cameras",
     "simhash": "6781a31f9f66ba5b",
+    "snapshot_path": "snapshots/2026-10-07/f193099c1e422235d9bdc662038639ce4662adf2ab03865ef5a636f16f1d6bf1.json",
+    "snapshot_status": "uploaded",
     "text_len": 2434,
     "title": "Indiana police agencies trying out license plate cameras",
     "url": "https://www.ipm.org/2021-12-29/indiana-police-agencies-trying-out-license-plate-cameras"
@@ -4022,11 +4055,14 @@
     "url": "https://www.ipm.org/news/2026-09-22/indiana-sees-surge-of-cities-counties-ending-flock-camera-contracts"
   },
   "https://irishrover.net/2026/09/flock-cameras-in-south-bend": {
+    "archive": "d72086b243e53f74086bc058b55e11d50e51329d5fa791fb5b19eb3a49dad8d9.txt",
     "content_hash": "993d570be5c29db6fa2d7c9e1907e980a6addcc854d69dee94dc2fd2f8af62dc",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://irishrover.net/2026/09/flock-cameras-in-south-bend/",
     "simhash": "04986d569103b3fb",
+    "snapshot_path": "snapshots/2026-10-07/474a3930585a2c681618dc83127bd41119ecde8f11c06404ace06e3de7b032fe.json",
+    "snapshot_status": "uploaded",
     "text_len": 5792,
     "title": "Flock Cameras in South Bend - Irish Rover",
     "url": "https://irishrover.net/2026/09/flock-cameras-in-south-bend/"
@@ -5111,11 +5147,14 @@
     "url": "https://minneapolimedia.town.news/g/coon-rapids-mn/n/379970/minneapolimedia-news-columbia-heights-ends-flock-safety-contract-after"
   },
   "https://mirrorindy.org/indianapolis-impd-license-plate-readers-gunshot-detection-technology-flock-sensors-contract": {
+    "archive": "c8f05e5a856af181d9b11c179194acacb1e19d1f7c30a000efb97126e15f05d3.txt",
     "content_hash": "efce85088eabe0d1e27143a247ba5a6ba0db345f7c724c4cf8f1b3ca4b3f4e68",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://mirrorindy.org/indianapolis-impd-license-plate-readers-gunshot-detection-technology-flock-sensors-contract/",
     "simhash": "05b6e114df01879d",
+    "snapshot_path": "snapshots/2026-10-07/d85bfe3c2b3e22e431ecae7db4a3483ecc6afc413fc6765dfba0433ff9c04b77.json",
+    "snapshot_status": "uploaded",
     "text_len": 20534,
     "title": "IMPD contract for license plate readers also allows for gunshot detection tech",
     "url": "http://mirrorindy.org/indianapolis-impd-license-plate-readers-gunshot-detection-technology-flock-sensors-contract/"
@@ -6059,21 +6098,27 @@
     "url": "https://published.pdf.pagesuite.com/fea9d757-caf1-44de-a806-73630a1ba0bf/d6868dc7-925a-49e9-863d-9f8135d68d78/6aff557d-37ed-424f-9ef0-a22eac0dd9ad/677371f9-cb5a-4ed8-90b4-3d06c1b91e5a/a399e7df-22cf-4e86-90d1-3e026e8385b5/lowres.pdf"
   },
   "https://purdueexponent.org/city_state/general_news/west-lafayette-flock-info-session-september/article_51bd2068-01d7-4f6c-975b-bbd1fc6a0b7b.html": {
+    "archive": "7b225bfea377d3d6fc7ca3cd0acd9983403bb50580370cfdc06773c5cd39d1d7.txt",
     "content_hash": "6d7f0506b16914c3e0860a303fa17ab95df559602a295c9d476d166b235d5d6d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.purdueexponent.org/city_state/general_news/west-lafayette-flock-info-session-september/article_51bd2068-01d7-4f6c-975b-bbd1fc6a0b7b.html",
     "simhash": "c9b13bc2280277a6",
+    "snapshot_path": "snapshots/2026-10-07/13de48e9f11f88e9426a984c4d84e92f8bd46a6bc7a0899480bb3778e055e3f1.json",
+    "snapshot_status": "uploaded",
     "text_len": 6029,
     "title": "WL community members voice concerns over Flock cameras | General News | purdueexponent.org",
     "url": "https://www.purdueexponent.org/city_state/general_news/west-lafayette-flock-info-session-september/article_51bd2068-01d7-4f6c-975b-bbd1fc6a0b7b.html"
   },
   "https://purdueexponent.org/city_state/police-chief-flock-camera-interview/article_70b9d1d8-49ad-47ff-b66c-f8912b83b6a6.html": {
+    "archive": "21a1142771676874c4c1ce0519dc6a41f506d97e414f129306f51fe386d3ed8b.txt",
     "content_hash": "9b4ea24dcf1bd8105a28fa48b37c129969612ac61031fa644b43cc5679acb811",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.purdueexponent.org/city_state/police-chief-flock-camera-interview/article_70b9d1d8-49ad-47ff-b66c-f8912b83b6a6.html",
     "simhash": "44562d994bc332e2",
+    "snapshot_path": "snapshots/2026-10-07/7360b8e7821f8f72b7b7b5d54c9753852f44bf256934785cb3b474f454090d8a.json",
+    "snapshot_status": "uploaded",
     "text_len": 22495,
     "title": "WL chief of police ‘absolutely in favor’ of Flock cameras | City State | purdueexponent.org",
     "url": "https://www.purdueexponent.org/city_state/police-chief-flock-camera-interview/article_70b9d1d8-49ad-47ff-b66c-f8912b83b6a6.html"
@@ -7041,12 +7086,15 @@
     "url": "https://www.techspot.com/news/113769-california-city-canceled-flock-removed-cameras-found-company.html"
   },
   "https://techtimes.com/articles/319317/20260629/flock-safety-crosses-100000-cameras-53-cities-cancel-over-unauthorized-federal-data-access.htm": {
-    "content_hash": "94d5e68657b355ec8a5a8d8a9f463faeb4d5af503823c18db104f87ec8249e3f",
+    "archive": "189cbb42f1d39579e66cc365a708e44fb0fec96ec7311012c6824d2502214fbc.txt",
+    "content_hash": "723f2019d977b92d8939efd5e744824938fc689e38723be04e86816e2ce262f1",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.techtimes.com/articles/319317/20260629/flock-safety-crosses-100000-cameras-53-cities-cancel-over-unauthorized-federal-data-access.htm",
-    "simhash": "5a15d20cb71a595e",
-    "text_len": 294,
+    "simhash": "5814820cb71a595c",
+    "snapshot_path": "snapshots/2026-10-07/23f3921a92c922aed90e4551a0b4dbc7feb7dbee1bd497d5e1e919b15630e8a1.json",
+    "snapshot_status": "uploaded",
+    "text_len": 277,
     "title": "Flock Safety Crosses 100,000 Cameras as 53 Cities Cancel Over Unauthorized Federal Data Access",
     "url": "https://www.techtimes.com/articles/319317/20260629/flock-safety-crosses-100000-cameras-53-cities-cancel-over-unauthorized-federal-data-access.htm"
   },
@@ -7867,11 +7915,14 @@
     "url": "https://universitystar.com/34089/news/city-council-decided-against-flock-safety-contract-renewal/"
   },
   "https://unraveledpress.com/a-dea-agent-used-an-illinois-police-officers-flock-license-plate-reader-password-for-unauthorized-immigration-enforcement-searches": {
+    "archive": "a626168689eb1583f2f7a25b3ac91c7d8281014745afa31f48ed3fd2a4a322e7.txt",
     "content_hash": "ba93aaff8630f1776626d3b53f5c0163fef20b7ca34585f33969350354c60089",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://unraveledpress.com/a-dea-agent-used-an-illinois-police-officers-flock-license-plate-reader-password-for-unauthorized-immigration-enforcement-searches/",
     "simhash": "217be5b966cdb46e",
+    "snapshot_path": "snapshots/2026-10-07/d516c828cfac50be0efbbd922cb5d38bcc9514a9b0c77a47eb503775a0145bed.json",
+    "snapshot_status": "uploaded",
     "text_len": 8024,
     "title": "DEA agent used Illinois cop’s Flock license plate reader password for immigration enforcement searches",
     "url": "https://unraveledpress.com/a-dea-agent-used-an-illinois-police-officers-flock-license-plate-reader-password-for-unauthorized-immigration-enforcement-searches/"
@@ -7926,11 +7977,14 @@
     "url": "https://www.vcstar.com/story/news/local/communities/camarillo/2026/08/27/camarillo-council-criticism-flock-cameras/91482788007/"
   },
   "https://vernonhills.org/963/Automated-License-Plate-Readers": {
+    "archive": "45d47bb666ebcb884490a71b253a43a57dac8cffc54ed4419e4383fd6035c83d.txt",
     "content_hash": "4288de03e5f82fc03adf376432e84a2e440bab4ba27b30cff11ee38793e8473d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.vernonhills.org/963/Automated-License-Plate-Readers",
     "simhash": "7c84c6ba4a6ca579",
+    "snapshot_path": "snapshots/2026-10-07/582818b7de6fdad31e82615871143ba39e4b5ea30f9ebfa8747d4215cb37d46f.json",
+    "snapshot_status": "uploaded",
     "text_len": 2314,
     "title": "Automated License Plate Readers | Vernon Hills, IL - Official Website Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
     "url": "http://vernonhills.org/963/Automated-License-Plate-Readers"
@@ -8089,11 +8143,14 @@
     "url": "https://www.wcia.com/news/decatur-city-council-approves-license-plate-reading-cameras/"
   },
   "https://wcia.com/news/decatur-extends-usage-of-license-plate-readers": {
+    "archive": "2ab04da83eb3131c0a120b90da3767432e7f0c2a2f22277ae30d8014f529ba34.txt",
     "content_hash": "b4d9dfc21f48c8889459e793c1ac6d08a33a9a079fb2da41f3149c9a516e95cc",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.wcia.com/news/decatur-extends-usage-of-license-plate-readers/amp/",
     "simhash": "1eb7c09c0da4d281",
+    "snapshot_path": "snapshots/2026-10-07/be3800091333373d95e937629eb1e7556a1184f3a41ad8288a776f518d46c84b.json",
+    "snapshot_status": "uploaded",
     "text_len": 1167,
     "title": "Decatur extends usage of license plate readers | WCIA.com",
     "url": "https://www.wcia.com/news/decatur-extends-usage-of-license-plate-readers/amp/"
@@ -8425,11 +8482,14 @@
     "url": "https://www.wydc-tv.com/news/local/tompkins-county-ends-flock-safety-camera-contract-in-12-1-vote/article_505c13ab-d243-401e-84ce-019f70dd0485.html"
   },
   "https://wyrz.org/plainfield-police-department-deploys-innovative-license-plate-reader-cameras-to-help-solve-and-reduce-crime": {
-    "content_hash": "de87116f33c56a9902b13d325c34f53b3bebb96143cb44253b1b4328e3fefe8d",
+    "archive": "6e4daffde45f22614a21f06c0f8a85a2e44b527cbcd2c6ea68a21fc5f3fb0a10.txt",
+    "content_hash": "2931aeb61c9f678b6231d4c5b3f901dd6b4697c186747e7653d0b5759055453d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://wyrz.org/plainfield-police-department-deploys-innovative-license-plate-reader-cameras-to-help-solve-and-reduce-crime/",
-    "simhash": "54b48d253e4df5a7",
+    "simhash": "54948d253e4df5a7",
+    "snapshot_path": "snapshots/2026-10-07/01c3e293b7ff539778c678b043279d51e17fccd0f03ebc363c2894d8cb2a1f47.json",
+    "snapshot_status": "uploaded",
     "text_len": 2329,
     "title": "Plainfield Police Department Deploys Innovative License Plate Reader Cameras to Help Solve and Reduce Crime - WYRZ.org",
     "url": "https://wyrz.org/plainfield-police-department-deploys-innovative-license-plate-reader-cameras-to-help-solve-and-reduce-crime/"
