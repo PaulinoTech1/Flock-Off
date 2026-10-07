@@ -1144,6 +1144,19 @@
     "title": "Flock cameras are surging in Cincinnati area. So is backlash",
     "url": "https://www.cincinnati.com/story/news/crime/2026/08/23/flock-cameras-spread-ohio-northern-kentucky-backlash/90912929007/"
   },
+  "https://cincinnati.com/story/news/crime/2026/10/02/hamilton-county-sheriff-terminates-use-of-flock-cameras/92060921007": {
+    "archive": "41a5ceb6c4b6608bb653e03657002ba96f4e582af72b092540099800840f7434.txt",
+    "content_hash": "0abab33a5c03db20021153f11989b0ad2e8c1a2807e2f9547cdef86f8f009a79",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.cincinnati.com/story/news/crime/2026/10/02/hamilton-county-sheriff-terminates-use-of-flock-cameras/92060921007/",
+    "simhash": "089986b335dfd181",
+    "snapshot_path": "snapshots/2026-10-07/52713a6bc9105973ac37c6bf4d0153ce7108170c6e97d0506b0e6baba20bcf3b.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2994,
+    "title": "Hamilton County sheriff terminates use of Flock cameras",
+    "url": "https://www.cincinnati.com/story/news/crime/2026/10/02/hamilton-county-sheriff-terminates-use-of-flock-cameras/92060921007/"
+  },
   "https://citizen-times.com/story/news/local/2026/08/26/asheville-city-council-votes-to-end-flock-camera-contract/91405585007": {
     "archive": "8a660488511ff8ac639b0b217dd194afa8e2ad57ddb34c5433e80c2c58fe17ac.txt",
     "content_hash": "11eb5a4622924693121b85745f0c81a5033ac5e7ff699987b1fcaec7e5758c32",
@@ -1841,6 +1854,19 @@
     "text_len": 1306,
     "title": "Statement: Evanston Deactivates Flock Cameras and Terminates Contract",
     "url": "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/3efa81d"
+  },
+  "https://coralspringsflnews.com/news/article317364116.html": {
+    "archive": "5d86dfefc50de45d0289dd17678652ba2a01eb6ee6102ad0ceff756808ebbcdb.txt",
+    "content_hash": "354df2c9969e7a524be1a57ecc18d31d50ab803856e81e05b04f42d3bb8db8e5",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.coralspringsflnews.com/news/article317364116.html",
+    "simhash": "5affaac9e3e9f82d",
+    "snapshot_path": "snapshots/2026-10-07/bd796f55da9bcce5dd0e6aeaa5a3adc31b87be0d7c5ab6bc273db3d311d1167d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4076,
+    "title": "Boynton to end Flock Safety software contract | Exclusive | Coral Springs News",
+    "url": "https://www.coralspringsflnews.com/news/article317364116.html"
   },
   "https://coralville.org/AgendaCenter/ViewFile/Minutes/_02242026-1949": {
     "archive": null,
@@ -3592,6 +3618,19 @@
     "title": "Beacon Police Chief Explains Camera System – The Current",
     "url": "https://highlandscurrent.org/2026/09/25/beacon-police-chief-explains-camera-system/"
   },
+  "https://highlandscurrent.org/2026/09/25/dutchess-to-end-flock-camera-use": {
+    "archive": "0409e69aa427fd194856f4e5cb4f3f034935d0dc091126166502cfe4604005aa.txt",
+    "content_hash": "89cf83767f5c9b644f2a3bcac397c299966b84d5d08dd8a37af4a97dc936a1b2",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://highlandscurrent.org/2026/09/25/dutchess-to-end-flock-camera-use/",
+    "simhash": "a6448f16f9572385",
+    "snapshot_path": "snapshots/2026-10-07/d0e77976abab30eb615e9e420998862981ffa8c2bc292ee5c017635320745dae.json",
+    "snapshot_status": "uploaded",
+    "text_len": 11624,
+    "title": "Dutchess to End Flock Camera Use – The Current",
+    "url": "https://highlandscurrent.org/2026/09/25/dutchess-to-end-flock-camera-use/"
+  },
   "https://hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007": {
     "archive": "589375207849dd3b36567d505a4a7aad895d12054a3a368638c1500656cd4882.txt",
     "content_hash": "a15794cb3c611fa1904080f1427b370232edc038dffda89ea392d2b74e6b0663",
@@ -4907,6 +4946,19 @@
     "title": "IMPD contract for license plate readers also allows for gunshot detection tech",
     "url": "http://mirrorindy.org/indianapolis-impd-license-plate-readers-gunshot-detection-technology-flock-sensors-contract/"
   },
+  "https://monroenews.com/story/news/local/2026/09/11/bedford-township-mi-downtown-development-authority-terminates-flock-cameras-license-plate-readers/91710358007": {
+    "archive": "ca692d7a12037773d88b19ab5baa8f8f606301c9fe00994c1465dece47e66474.txt",
+    "content_hash": "3c685dfc376171e576c1fc60b984ea6c29220a9751127dd5f052652e52034f57",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.monroenews.com/story/news/local/2026/09/11/bedford-township-mi-downtown-development-authority-terminates-flock-cameras-license-plate-readers/91710358007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "29528516b4f4592b",
+    "snapshot_path": "snapshots/2026-10-07/bf68689c75afb85a06c0a08ab503e42999173fe5bcc78314fc3b9f6c2378fe3e.json",
+    "snapshot_status": "uploaded",
+    "text_len": 461,
+    "title": "Bedford Township DDA votes to terminate Flock camera use in township",
+    "url": "https://www.monroenews.com/story/news/local/2026/09/11/bedford-township-mi-downtown-development-authority-terminates-flock-cameras-license-plate-readers/91710358007/"
+  },
   "https://montco.today/2026/08/abington-police-drop-flock-cameras-data-security": {
     "content_hash": "dd556b2e8b134a0569bcc7fbcb4fe76f9e061705fcaed9156d18db14ca154992",
     "fetch_status": "ok",
@@ -5399,6 +5451,19 @@
     "title": "Mountain View Council votes to get rid of license plate cameras – Palo Alto Daily Post",
     "url": "https://padailypost.com/2026/02/24/mountain-view-council-votes-to-get-rid-of-license-plate-cameras/"
   },
+  "https://palmbeachpost.com/story/news/local/boynton/2026/09/24/boynton-beach-to-end-flock-safety-software-contract-but-still-use-cameras/91877493007": {
+    "archive": "21d1dc59c33b7e5c788d406eae92c2393b6e4ad929638009cda2124198ff5b2e.txt",
+    "content_hash": "0e87c91a9922d5ccf3aa7f05bb18ae2a915a9f8021c23f06dd0fae6ae20b1aff",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.palmbeachpost.com/story/news/local/boynton/2026/09/24/boynton-beach-to-end-flock-safety-software-contract-but-still-use-cameras/91877493007/",
+    "simhash": "dafc8b69e8effd0f",
+    "snapshot_path": "snapshots/2026-10-07/97e177ba3fe39f0d5774c742ccb85a69e654f9ef7b70ebfe84f1549dd2718cb1.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4384,
+    "title": "Boynton to end Flock Safety software contract but still use cameras",
+    "url": "https://www.palmbeachpost.com/story/news/local/boynton/2026/09/24/boynton-beach-to-end-flock-safety-software-contract-but-still-use-cameras/91877493007/"
+  },
   "https://paloaltoonline.com/city-government/2026/02/25/city-council-terminates-mountain-views-license-plate-camera-contract": {
     "archive": null,
     "content_hash": null,
@@ -5731,6 +5796,19 @@
     "text_len": 1693,
     "title": "Dare County to remove all automated license plate recognition cameras from unincorporated areas",
     "url": "https://www.publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-recognition-cameras-from-unincorporated-areas"
+  },
+  "https://publicradioeast.org/2026-09-14/reidsville-police-department-stops-use-of-flock-safety-cameras": {
+    "archive": "b0a1d09bad54e955a2ea250ce9a9757730a7f0feb0a275e706a4c0ec695827da.txt",
+    "content_hash": "80525c6be508223b3f92e734b8cfe20b168b96dbf854a0a3b79dea7de42a72eb",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.publicradioeast.org/2026-09-14/reidsville-police-department-stops-use-of-flock-safety-cameras",
+    "simhash": "7a7033c202451a0c",
+    "snapshot_path": "snapshots/2026-10-07/a2088e9ffbbf21027629b6674bcb93c839279f56ca62b128bd31b0a889dbdd0d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1222,
+    "title": "Reidsville Police Department stops use of Flock Safety cameras",
+    "url": "https://www.publicradioeast.org/2026-09-14/reidsville-police-department-stops-use-of-flock-safety-cameras"
   },
   "https://published.pdf.pagesuite.com/fea9d757-caf1-44de-a806-73630a1ba0bf/d6868dc7-925a-49e9-863d-9f8135d68d78/51f0d15a-da51-4869-a117-f430fab1a93f/721107fc-1d5c-49ae-8f41-cf4a5ac5a7dc/8a5aa49b-eeaf-46e8-a0e6-59b7d99f203b/lowres.pdf": {
     "archive": null,
@@ -7073,6 +7151,32 @@
     "title": "Waukee PD ends contract with license plate reader company | ThePerryNews",
     "url": "https://theperrynews.com/waukee-pd-ends-contract-with-license-plate-reader-company/"
   },
+  "https://thepostathens.com/article/2026/09/athens-ohio-police-flock-camera-tracking-fourth-amendment": {
+    "archive": "4675a924a207db84e81bc0b9f300ddfaeee7aeabf975209cb82b8632cb0a9c44.txt",
+    "content_hash": "bea74c4e66ecc2aaf7a57306a0b1b6b8cf26b136be3a8eaa10f11ce2d80f8f54",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.thepostathens.com/article/2026/09/athens-ohio-police-flock-camera-tracking-fourth-amendment",
+    "simhash": "f1433165d625b1cd",
+    "snapshot_path": "snapshots/2026-10-07/35a8fa0e77ca9feff05c5652564c5f516b4a287727b96c2f3444e7952b55088b.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5510,
+    "title": "Flock monitoring in Athens continues amid public concern - The Post",
+    "url": "https://www.thepostathens.com/article/2026/09/athens-ohio-police-flock-camera-tracking-fourth-amendment"
+  },
+  "https://therecord.media/flock-safety-cameras-remained-active-after-cities-asked-turned-off": {
+    "archive": "e702a52db08ad0975ab4038895396896789d7cea0ef2776a569a7c8e78afa544.txt",
+    "content_hash": "277de51d2107282325294554d86e27a79d1d537fdedfa034aad3fc75963f52c9",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://therecord.media/flock-safety-cameras-remained-active-after-cities-asked-turned-off",
+    "simhash": "1f56400a44af867a",
+    "snapshot_path": "snapshots/2026-10-07/38b1c250835c24173234b11dd7ddfe72fc8609e9fe4317fc0e6ad5c1d4ccc3ee.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4258,
+    "title": "Flock cameras remained active in two cities where officials had asked for them to be turned off | The Record from Recorded Future News",
+    "url": "https://therecord.media/flock-safety-cameras-remained-active-after-cities-asked-turned-off"
+  },
   "https://thesiuslawnews.com/news/council-votes-3-2-to-keep-flock-cameras/article_524d684c-ecaa-483b-ad4f-a6da9794a7f3.html": {
     "archive": "a4ae2d0fe6bda19a2454813f4e6a760821ee504ae1be1bb256f298c559a655e1.txt",
     "content_hash": "b408af8f442952165b7d54f31c0b7d98897c96b5833ee21cb06f2716f5e0ec7a",
@@ -7642,6 +7746,19 @@
     "title": "Troy City Council limits mayor's emergency powers after Flock dispute | WAMC",
     "url": "https://www.wamc.org/news/2026-09-06/troy-flock-cameras-city-council-limits-mayors-emergency-powers"
   },
+  "https://wamc.org/news/2026-09-29/newburgh-city-council-votes-to-end-flock-contract": {
+    "archive": "fea64ccf7ea1f9b7e84fce3db1d31961be916ac15d32bf71c57cd420f25bfb0e.txt",
+    "content_hash": "ba50f5890aae8c9b7f1f27c8a2aaf715264a8990a1765da8726c8c18cb85095e",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.wamc.org/news/2026-09-29/newburgh-city-council-votes-to-end-flock-contract",
+    "simhash": "5b79afa12d0e3e60",
+    "snapshot_path": "snapshots/2026-10-07/13662acdda990a2ddfccf165d40e59078ea92610029af3a0a43b8ae10d005255.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1743,
+    "title": "Newburgh City Council votes to end Flock contract | WAMC",
+    "url": "https://www.wamc.org/news/2026-09-29/newburgh-city-council-votes-to-end-flock-contract"
+  },
   "https://washingtonexaminer.com/policy/technology/4672621/flock-controversial-camera-contracts-canceled-23-states": {
     "content_hash": "7c7590b6482fa1d1983e018d2a38127383f5c063b4fca2a9b8edd7abf1eaa917",
     "fetch_status": "ok",
@@ -7737,6 +7854,19 @@
     "text_len": 4859,
     "title": "Ohio cities take different approaches to Flock camera privacy concerns",
     "url": "https://www.wcsufm.org/2026-09-02/ohio-cities-take-different-approaches-to-flock-camera-privacy-concerns"
+  },
+  "https://wctv.tv/2026/09/10/tallahassee-city-commission-suspends-alpr-cameras": {
+    "archive": "865f8c27ea237dd24f599c4f80fe979ca6bcca430ff9b1542c94bdcc6625f35a.txt",
+    "content_hash": "551f3fdad7ef41ac5b626a779ffd45ef77226b51a895a623162e09aa6c145862",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.wctv.tv/2026/09/10/tallahassee-city-commission-suspends-alpr-cameras/",
+    "simhash": "f35a0c635ec1e1a2",
+    "snapshot_path": "snapshots/2026-10-07/e8ce519f5184beb4507851e9cf275c5f5dc66e554da52fc5c3213fb5957533f4.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1655,
+    "title": "Tallahassee City Commission suspends ALPR cameras",
+    "url": "https://www.wctv.tv/2026/09/10/tallahassee-city-commission-suspends-alpr-cameras/"
   },
   "https://webpronews.com/axon-joins-the-license-plate-tracking-frenzy-as-cities-swap-vendors-but-keep-the-cameras": {
     "content_hash": "1f047da5cb9b76217b1196d10f5794a8dbc884b7670bf2861ff4202eba92b684",
@@ -7909,6 +8039,19 @@
     "text_len": 2482,
     "title": "Syracuse Council To Vote On License Plate Reader Switch After Data Leak | 570 WSYR",
     "url": "https://wsyr.iheart.com/content/2026-02-09-syracuse-council-to-vote-on-license-plate-reader-switch-after-data-leak/"
+  },
+  "https://wthd.net/news.php?article=128952": {
+    "archive": "70b0441bece3c08ccfe0979cb5d932b9dce2ae1abb16a2b542f76ecf4e0616c2.txt",
+    "content_hash": "e3c5bad5ea9f86af9bc3a87b8cd82aa8ca731df853f020bc7bfb7e3b9cb74a68",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-07",
+    "final_url": "http://www.wthd.net/news.php?article=128952",
+    "simhash": "2f1a343a2c534660",
+    "snapshot_path": "snapshots/2026-10-07/910ca37f5b70114ca0370f1043ccc747c5ef277cbc2f46ee3439a82f8d832514.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4241,
+    "title": "Latest News - WTHD",
+    "url": "http://www.wthd.net/news.php?article=128952"
   },
   "https://wuot.org/news/2026-09-02/knox-county-joins-cities-nationwide-in-removing-flock-cameras": {
     "content_hash": "04b97c11a9b18831e7706492945a7c6a2d4bdebe4243d11d134622b9983062b5",
@@ -8123,6 +8266,19 @@
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=L-KcNG3lf4g"
+  },
+  "https://youtube.com/watch?v=N1vrkTOHd90": {
+    "archive": null,
+    "content_hash": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-07",
+    "final_url": "https://www.youtube.com/watch?v=N1vrkTOHd90",
+    "retry_after": "2026-11-06",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.youtube.com/watch?v=N1vrkTOHd90"
   },
   "https://youtube.com/watch?v=Ox5y7n4ZTfE": {
     "archive": null,
