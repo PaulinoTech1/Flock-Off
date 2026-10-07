@@ -123,11 +123,14 @@
     "url": "https://607newsnow.com/news/258852-ithaca-common-council-cuts-contract-with-flock-safety/"
   },
   "https://949tnt.iheart.com/content/2026-09-01-milwaukee-mayor-announces-changes-to-flock-system-usage": {
+    "archive": "eb05f8192a827491bba1f0bc5407ac02b992672f9d683bab3c052070f7c42ef9.txt",
     "content_hash": "47b9afb4f1ed4c60b6df3ed2b7dd089c2b41ec0aeb9e3147c64027834f4b1ce8",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://949tnt.iheart.com/content/2026-09-01-milwaukee-mayor-announces-changes-to-flock-system-usage/",
     "simhash": "0c26332cd9ea6503",
+    "snapshot_path": "snapshots/2026-10-07/2522363095a0ff6aceeafe65d93f4d1df5a31586df5431206b9d6b5b107f79d8.json",
+    "snapshot_status": "uploaded",
     "text_len": 1804,
     "title": "Milwaukee Mayor Announces Changes To Flock System Usage | 94.9 TNT",
     "url": "https://949tnt.iheart.com/content/2026-09-01-milwaukee-mayor-announces-changes-to-flock-system-usage/"
@@ -907,12 +910,15 @@
     "url": "https://bonnevillecountynews.com/idaho-falls-police-defend-license-plate-cameras-amid-privacy-lawsuit-threats-and-contract-dispute/"
   },
   "https://boropulse.com/2026/08/flock-cameras-raise-privacy-questions-murfreesboro-now-operates-over-100-license-plate-readers-documenting-the-movement-of-vehicles": {
-    "content_hash": "f0801e9d4aaef2e4901a154899e7bdbeb0d6b43a7fb3b241e1264ae6335c0aba",
+    "archive": "56c7e677804d14584d28a6161133cbec12b8870413ddc27556f1a01b042e5473.txt",
+    "content_hash": "7f391ffa8a6184de9871bb7423c0d1be5fee0e6422cbdba7adbf02ea03fe5ac2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://boropulse.com/2026/08/flock-cameras-raise-privacy-questions-murfreesboro-now-operates-over-100-license-plate-readers-documenting-the-movement-of-vehicles/",
-    "simhash": "9bb3ca7b546cbbc0",
-    "text_len": 14290,
+    "simhash": "dbf3de7a5468bbc0",
+    "snapshot_path": "snapshots/2026-10-07/33ac8d01ad46e0c2f85d9f99ae889867ccb689de19f7c84d71d02cfe359af9a8.json",
+    "snapshot_status": "uploaded",
+    "text_len": 14299,
     "title": "Flock Cameras Raise Privacy Questions, Murfreesboro Now Operates Over 100 License Plate Readers Documenting the Movement of Vehicles - The Murfreesboro Pulse",
     "url": "https://boropulse.com/2026/08/flock-cameras-raise-privacy-questions-murfreesboro-now-operates-over-100-license-plate-readers-documenting-the-movement-of-vehicles/"
   },
@@ -1634,11 +1640,14 @@
     "url": "https://civiclensnetwork.com/articles/anoka-county-sheriff-signs-flock-camera-deal-just-under-175000-board-limit"
   },
   "https://civiclex.org/weekly-posts/council-approves-five-year-lease-extension-for-flock-cameras": {
+    "archive": "9396b41e50addbfb2acf76f9efb2c5029db04bcae985bfd71e3a6e1c13a06624.txt",
     "content_hash": "cbbfdfb7fb1689e03d66a3f76ad1fbe209296d8878c3cca5f9b912a563953691",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://civiclex.org/weekly-posts/council-approves-five-year-lease-extension-for-flock-cameras",
     "simhash": "73832bc8d99d5751",
+    "snapshot_path": "snapshots/2026-10-07/ab18ef8c0cf0dc1643d225ac640b727c0af7d8cd35ca41e493a3fb6bd98ac281.json",
+    "snapshot_status": "uploaded",
     "text_len": 1798,
     "title": "Council Approves Five-Year Lease Extension for Flock Cameras — CivicLex",
     "url": "https://civiclex.org/weekly-posts/council-approves-five-year-lease-extension-for-flock-cameras"
@@ -1902,12 +1911,15 @@
     "url": "https://www.compuserve.com/pf/story/0022/20260420/9692753.htm"
   },
   "https://connect-clarksburg.com/monongalia-county-sheriffs-office-says-flock-camera-helped-locate-missing-9-year-old": {
-    "content_hash": "9872c16ae0f80ab97e5a225e6854fd5f0dff2e826c4dad920b9cca663231f17a",
+    "archive": "5fb173f5aa4cadb6bbe3cdbbfe19b6c02dbbf1e218dbbf833ef9b475852e82f7.txt",
+    "content_hash": "1c414c5a2cc72717d03d91fbff32e3942d64a153ba3849dc383545aa0e36588f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.connect-clarksburg.com/monongalia-county-sheriffs-office-says-flock-camera-helped-locate-missing-9-year-old/",
-    "simhash": "f16478f821fe60e6",
-    "text_len": 4508,
+    "simhash": "41c4fb7831fe21c2",
+    "snapshot_path": "snapshots/2026-10-07/10ffc3e67c96a6f18a6d88e7b1a4eca9a7c550f54498bd81d9c1da904ca326dd.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4466,
     "title": "Monongalia County Sheriff’s Office Says Flock Camera Helped Locate Missing 9-Year-Old",
     "url": "https://www.connect-clarksburg.com/monongalia-county-sheriffs-office-says-flock-camera-helped-locate-missing-9-year-old/"
   },
@@ -2730,12 +2742,15 @@
     "url": "https://www.flocksafety.com/blog/flock-safety-identifies-suspects-behind-190-000-crime-ring"
   },
   "https://flocksafety.com/blog/shelby-county-policing-technology": {
-    "content_hash": "b613ae98cdec651d0653edc2cc861a90ae7feeba19c2dc975455dc3bcbaf4bf8",
+    "archive": "9e0140e999e8018e1c18c3d54c254ebfecf701d5be9ad0f25f863f81d1c75a09.txt",
+    "content_hash": "6f85e229885b9b1d624144c45c6781c1a091c1407c384846d1980911661644af",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.flocksafety.com/blog/shelby-county-policing-technology",
-    "simhash": "2616c7749cde9e7e",
-    "text_len": 4825,
+    "simhash": "2615c7e49cda9e7e",
+    "snapshot_path": "snapshots/2026-10-07/2eb1030fa4cf1b4d33fbdf3e885e795b02ab6ac4efe7ce8170d0d52ba7e267f2.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4844,
     "title": "Shelby County Sheriff Cuts Crime 10% with LPR Cameras",
     "url": "https://www.flocksafety.com/blog/shelby-county-policing-technology"
   },
@@ -2946,11 +2961,14 @@
     "url": "https://fox6now.com/news/kenosha-police-flock-axon-surveillance"
   },
   "https://fox6now.com/news/milwaukee-fire-police-commission-host-public-comment-flock": {
+    "archive": "31158d5078341155710bcf453b3add327da5aa4b22ae8933fff4e888ced21102.txt",
     "content_hash": "bb732226c72d603c4697e1774f31b04fb589baae7a5a830b5840e49bbdbd818e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.fox6now.com/news/milwaukee-fire-police-commission-host-public-comment-flock",
     "simhash": "55a11f243bf94e12",
+    "snapshot_path": "snapshots/2026-10-07/d17fdb42383342b89bfad3be12e74b8c6301f66f9b242321080c2417080c1c9f.json",
+    "snapshot_status": "uploaded",
     "text_len": 3535,
     "title": "Milwaukee Flock camera policy changes; FPC Commission holds meeting | FOX6 Milwaukee",
     "url": "https://fox6now.com/news/milwaukee-fire-police-commission-host-public-comment-flock"
@@ -4200,11 +4218,14 @@
     "url": "https://johnsoncitytn.civicweb.net/document/322557/Flock%20Group%20Inc.%20dba%20Flock%20Safety_Flock%20Safety%20.pdf?handle=FFC6987687084379BCCF1920802EF93D"
   },
   "https://johnsoncitytn.org/services/police/safe_city_project/index.php": {
+    "archive": "6c1aba71f4b85c6a89c77726549c5ef8c89d5df4d414a89ae90d7999992ab5cb.txt",
     "content_hash": "adc4f65c1e8c90d48c38ad79856eaa00c3812b767d800473701edef2f4b9b4d9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.johnsoncitytn.org/services/police/safe_city_project/index.php",
     "simhash": "2019e10d413ca7b8",
+    "snapshot_path": "snapshots/2026-10-07/7b7b70e90563129356e65368f7de61f3da9cd5da831f75a594ebde5fca70d35f.json",
+    "snapshot_status": "uploaded",
     "text_len": 15213,
     "title": "Safe City Project (Flock Safety) | Johnson City, TN",
     "url": "https://www.johnsoncitytn.org/services/police/safe_city_project/index.php"
@@ -4371,11 +4392,14 @@
     "url": "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon/"
   },
   "https://kentuckylantern.com/2026/09/03/warrants-for-flock-searches-kentucky-lawmakers-may-add-more-rules-for-public-cameras": {
+    "archive": "a3bb545462e6b22e41ad8e3651b5ad43fa8afa316784208e4e6a63940e91a9b9.txt",
     "content_hash": "9aaf055b534124e76cd97a4a09f96941f2e5efef1c97e3ad911b0573bdf9f650",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://kentuckylantern.com/2026/09/03/warrants-for-flock-searches-kentucky-lawmakers-may-add-more-rules-for-public-cameras/",
     "simhash": "facf585c97979b33",
+    "snapshot_path": "snapshots/2026-10-07/2ef5a481cd3eb28b7675c01594d828325a516925da61ffd1feccab11cd536c1b.json",
+    "snapshot_status": "uploaded",
     "text_len": 6478,
     "title": "Warrants for Flock searches? Kentucky lawmakers may add more rules for public cameras. • Kentucky Lantern",
     "url": "https://kentuckylantern.com/2026/09/03/warrants-for-flock-searches-kentucky-lawmakers-may-add-more-rules-for-public-cameras/"
@@ -4983,11 +5007,14 @@
     "url": "https://www.louisianafirstnews.com/news/two-men-accused-of-tearing-down-flock-camera-in-louisiana/"
   },
   "https://louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are": {
+    "archive": "6c4fe05ab716eae305457a838ed2d48ac55cac5d5b23ac161f14a641101de04f.txt",
     "content_hash": "7eeaa5ff4e866e23bb41e9737f952fa9c387e0e2cf432b89575d24a7279d527b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are/",
     "simhash": "07db7042e3ef1deb",
+    "snapshot_path": "snapshots/2026-10-07/be09f2bc96cdbaef7dcb4f560af096fd9775d5b0597c0c86409cce5e32b030fd.json",
+    "snapshot_status": "uploaded",
     "text_len": 6856,
     "title": "KyCIR Report: U of L, UK use Flock license plate readers to monitor drivers. Here’s where their cameras are. – The Louisville Cardinal",
     "url": "https://www.louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are/"
@@ -5541,11 +5568,14 @@
     "url": "https://newspub.live/northeast/new-hampshire/as-states-seek-to-rein-in-flock-license-plate-cameras-new-hampshire-is-considered-a-model-the-boston-globe/"
   },
   "https://newsroom.theredemptionproject.news/p/knox-county-banned-fixed-plate-readers": {
+    "archive": "24cfee5ecada3dbac2347e7fc6c0c592e2d57af6352b8ba71c8b0322bfde8ca9.txt",
     "content_hash": "8e6f943769727963de6f3d6b0f9a4af51844c053b20487376cd6c4d1458fbba9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://newsroom.theredemptionproject.news/p/knox-county-banned-fixed-plate-readers",
     "simhash": "9c89c2c83b3073b7",
+    "snapshot_path": "snapshots/2026-10-07/95fbcd29ffb5685e7c8fdc15b6afc129856371e1ebca8f043b8afd367246388a.json",
+    "snapshot_status": "uploaded",
     "text_len": 18419,
     "title": "Knox County Banned Fixed Plate Readers. The New Surveillance Ordinance Goes Much Further.",
     "url": "https://newsroom.theredemptionproject.news/p/knox-county-banned-fixed-plate-readers"
@@ -6558,12 +6588,15 @@
     "url": "https://www.route-fifty.com/digital-government/2026/08/immigration-searches-were-conducted-twin-falls-flock-network-month-later-agreements-changed/415333/"
   },
   "https://route-fifty.com/public-safety/2026/09/flock-cameras-divide-tennessee-governments-residents-over-privacy-some-end-their-contracts/415832": {
-    "content_hash": "93fe9e0d6c5a9c61c119456a1a366db4407c6b3fbc674bf209a48e0e0a96d7f3",
+    "archive": "311f2b4cd1eaf9585751d4008248155706054192460a22642487af9de925ed6f.txt",
+    "content_hash": "d6ae3153a9e248fe3fe2767761f315b036c525d66e05707c405e7c589a9e93a1",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.route-fifty.com/public-safety/2026/09/flock-cameras-divide-tennessee-governments-residents-over-privacy-some-end-their-contracts/415832/",
-    "simhash": "2b0c89fc0ab58ced",
-    "text_len": 19489,
+    "simhash": "2b0c89fc0a958ced",
+    "snapshot_path": "snapshots/2026-10-07/9310b4023595ddb7566115affddd561c85707aa1a1eaec1e7fefcf368d3ba3c9.json",
+    "snapshot_status": "uploaded",
+    "text_len": 19514,
     "title": "Flock cameras divide Tennessee governments, residents over privacy as some end their contracts - Route Fifty",
     "url": "https://www.route-fifty.com/public-safety/2026/09/flock-cameras-divide-tennessee-governments-residents-over-privacy-some-end-their-contracts/415832/"
   },
@@ -7349,12 +7382,15 @@
     "url": "https://thedailytexan.com/2026/09/10/installation-of-new-flock-cameras-in-texas-halted-following-funding-pause/"
   },
   "https://thedaonline.com/news/morgantown/residents-push-back-on-mon-county-flock-camera-use/article_1b6f1749-9816-49ca-9da3-2831a405c329.html": {
-    "content_hash": "ba7cda9b1647e18807fa385da9282f1c6d8133ddcf3e4889c245c9b0e8826ba3",
+    "archive": "6363cd0a89af0c23190315e06df4b851552249ee79c4ef25c44cefb6e83f1d0d.txt",
+    "content_hash": "42938a060a13be4921fe930b4d62121dc561b693ba9952c094470b0b79d84269",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.thedaonline.com/news/morgantown/residents-push-back-on-mon-county-flock-camera-use/article_1b6f1749-9816-49ca-9da3-2831a405c329.html",
-    "simhash": "b4184ae2e1b4d11c",
-    "text_len": 5203,
+    "simhash": "b6184ae3efb4d11c",
+    "snapshot_path": "snapshots/2026-10-07/0509a457639f5bd495282919265da98f94630fd53bd81944640adda7b5691050.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4974,
     "title": "Residents push back on Mon County Flock Camera use | Morgantown News | thedaonline.com",
     "url": "https://www.thedaonline.com/news/morgantown/residents-push-back-on-mon-county-flock-camera-use/article_1b6f1749-9816-49ca-9da3-2831a405c329.html"
   },
@@ -7609,11 +7645,14 @@
     "url": "https://www.tmj4.com/about-us/lighthouse/kenosha-says-farewell-to-flock-drops-license-plate-readers-citing-security-misuse-and-data-sharing-concerns"
   },
   "https://tmj4.com/news/fond-du-lac-county/fond-du-lac-county-law-enforcement-agencies-discontinue-flock-camera-use-effective-immediately": {
+    "archive": "76467d36afcc7227e91c192cea02f4eee3ceb32138145ff4bd47b849a913e08e.txt",
     "content_hash": "23ec3cf35683935ff45a7677afd35fb37595d97728784b516b6311cfe53c3a0c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.tmj4.com/news/fond-du-lac-county/fond-du-lac-county-law-enforcement-agencies-discontinue-flock-camera-use-effective-immediately",
     "simhash": "68647c47a4f7c0a8",
+    "snapshot_path": "snapshots/2026-10-07/1e56bfab7d233a0befaf3ca696458eaa45aba00dde761abbf91100d2a40a9983.json",
+    "snapshot_status": "uploaded",
     "text_len": 2493,
     "title": "Fond du Lac law enforcement agencies discontinue use of Flock cameras",
     "url": "https://www.tmj4.com/news/fond-du-lac-county/fond-du-lac-county-law-enforcement-agencies-discontinue-flock-camera-use-effective-immediately"
@@ -8285,21 +8324,27 @@
     "url": "https://www.webpronews.com/dayton-pulls-plug-on-flock-cameras-after-7100-immigration-searches-slip-through/"
   },
   "https://weku.org/lexington-richmond/2026-08-28/lexington-residents-push-back-against-flock-cameras-at-council-meeting": {
+    "archive": "a2f433132de9a0e00ced0f69142b7aa58d6bb1c73dc35a4b029fac94be693fe3.txt",
     "content_hash": "22edd07a6ef2e41716f26ace853508b89a74ff59de8766d359e222febbfff2e6",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.weku.org/lexington-richmond/2026-08-28/lexington-residents-push-back-against-flock-cameras-at-council-meeting",
     "simhash": "23cf3912077202b7",
+    "snapshot_path": "snapshots/2026-10-07/9bc8b03a171b9a3d939a2df91af2da5a06fffb0499f64843cb43e5c8ce8add69.json",
+    "snapshot_status": "uploaded",
     "text_len": 4984,
     "title": "Lexington residents push back against Flock cameras at council meeting | WEKU",
     "url": "https://www.weku.org/lexington-richmond/2026-08-28/lexington-residents-push-back-against-flock-cameras-at-council-meeting"
   },
   "https://weku.org/lexington-richmond/2026-09-04/as-outcry-grows-lexington-mayor-announces-independent-review-of-citys-flock-cameras": {
+    "archive": "502dba50cfcdd9170212b8a3d24df01027745be10372c124b99551224fa3af98.txt",
     "content_hash": "53a5422d0f8af227e4c1b1e9bc0bc7c083492ec23b36046fed418e3c72531740",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.weku.org/lexington-richmond/2026-09-04/as-outcry-grows-lexington-mayor-announces-independent-review-of-citys-flock-cameras",
     "simhash": "a7e029055c410ab0",
+    "snapshot_path": "snapshots/2026-10-07/3cfb8f579c179f55a05aefcf9246dd0489baf34a19fc8afe43229ed370fce4b0.json",
+    "snapshot_status": "uploaded",
     "text_len": 3205,
     "title": "As outcry grows, Lexington mayor announces independent review of city's Flock cameras | WEKU",
     "url": "https://www.weku.org/lexington-richmond/2026-09-04/as-outcry-grows-lexington-mayor-announces-independent-review-of-citys-flock-cameras"
@@ -8465,41 +8510,53 @@
     "url": "http://www.wthd.net/news.php?article=128952"
   },
   "https://wuot.org/news/2026-09-02/knox-county-joins-cities-nationwide-in-removing-flock-cameras": {
+    "archive": "4a841711189c586213b6acca229a0373b2f3277f3c5da126269bf990e450c5ef.txt",
     "content_hash": "04b97c11a9b18831e7706492945a7c6a2d4bdebe4243d11d134622b9983062b5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.wuot.org/news/2026-09-02/knox-county-joins-cities-nationwide-in-removing-flock-cameras",
     "simhash": "be76dcafe430e6c6",
+    "snapshot_path": "snapshots/2026-10-07/e40c13290b9ad68a25128de275b5828d81a76cda557576bf3171264dbfc90559.json",
+    "snapshot_status": "uploaded",
     "text_len": 2640,
     "title": "Knox County joins cities nationwide in removing Flock cameras",
     "url": "https://www.wuot.org/news/2026-09-02/knox-county-joins-cities-nationwide-in-removing-flock-cameras"
   },
   "https://wvlt.tv/2026/08/24/knox-county-sheriffs-office-agreement-with-flock-may-be-invalid-letter-mayor-says": {
+    "archive": "6e46c111017a839ea7ef865309be593d7fbec61d85a09f6441229a576cc96b59.txt",
     "content_hash": "4fc3b0030f5e345622da1af065aa1c5c1708dcb2825e0aa574f9e37f18974396",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.wvlt.tv/2026/08/24/knox-county-sheriffs-office-agreement-with-flock-may-be-invalid-letter-mayor-says/",
     "simhash": "032e9f666e9064c0",
+    "snapshot_path": "snapshots/2026-10-07/4ed644aabe9e71aee3f2a5101abfd46cd9e9e9111dce93388706f25236a14c4b.json",
+    "snapshot_status": "uploaded",
     "text_len": 4297,
     "title": "Knox County Sheriff’s Office agreement with Flock may be invalid, letter from mayor says",
     "url": "https://www.wvlt.tv/2026/08/24/knox-county-sheriffs-office-agreement-with-flock-may-be-invalid-letter-mayor-says/"
   },
   "https://wvlt.tv/2026/09/01/knox-county-commission-passes-emergency-ordinance-remove-flock-cameras-heres-what-happens-next": {
+    "archive": "ce40aa334982eaf139eeb450fd133af4f206ff5081ee6d8bbdba23555e1993c6.txt",
     "content_hash": "7198008d3da9e20a7ba12c04ea68d8e9b0af4fc4e3da62afd612ab767531eaae",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.wvlt.tv/2026/09/01/knox-county-commission-passes-emergency-ordinance-remove-flock-cameras-heres-what-happens-next/",
     "simhash": "d11616055c9d34c1",
+    "snapshot_path": "snapshots/2026-10-07/e235e683d597bf4a715696e64da97b38f1d1c20f4ed4f71193093b5d5369c27c.json",
+    "snapshot_status": "uploaded",
     "text_len": 4157,
     "title": "Knox County Commission votes to remove Flock cameras; here’s what happens next",
     "url": "https://www.wvlt.tv/2026/09/01/knox-county-commission-passes-emergency-ordinance-remove-flock-cameras-heres-what-happens-next/"
   },
   "https://wvlt.tv/2026/09/10/knox-county-mayor-reveals-solution-after-flock-says-it-will-miss-deadline-take-down-cameras": {
+    "archive": "430346e6c7feb212525b36727d0ce8a2b274d2c9d9daba91a88e12f888a1282d.txt",
     "content_hash": "05b78395f31fd3ed68007e91420c9c4d287fbb116cc9e358c8068f48ef4718a6",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.wvlt.tv/2026/09/10/knox-county-mayor-reveals-solution-after-flock-says-it-will-miss-deadline-take-down-cameras/",
     "simhash": "88db4d4d2b7c0cce",
+    "snapshot_path": "snapshots/2026-10-07/7bdf928041cffd467bacb78c9f3b74c5cdb4aabb7523e190066ef4a71523aa8f.json",
+    "snapshot_status": "uploaded",
     "text_len": 1539,
     "title": "Knox County to install plastic covers after Flock says it will miss deadline to take cameras down",
     "url": "https://www.wvlt.tv/2026/09/10/knox-county-mayor-reveals-solution-after-flock-says-it-will-miss-deadline-take-down-cameras/"
