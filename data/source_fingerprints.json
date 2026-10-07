@@ -241,12 +241,15 @@
     "url": "https://www.aclu-ia.org/app/uploads/2025/12/Final-Report-ALPRs-in-Iowa.pdf"
   },
   "https://aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance": {
-    "content_hash": "dfb9da5d2807ab09c9d0e5dde59014eac0cfccd9589be6649229303c3604cb65",
+    "archive": "7928fcc9f7a230ec75f569cc46f78fe52d78912a5958f8baba2b25a968078a1d.txt",
+    "content_hash": "84e0d6efa3e7306bc4a8ff3b6d4e55f13ad12ed78c7acafd29324a27bd506aee",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance/",
-    "simhash": "0c501595227880d8",
-    "text_len": 5603,
+    "simhash": "0c50179523b880d8",
+    "snapshot_path": "snapshots/2026-10-07/f92d865781a57707e3cf2e555f8df6813b17d05cf0ba0ecd7da76389adf5b4af.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5925,
     "title": "Flock Off: Wisconsinites Continue the Fight Against Constant Surveillance - ACLU of Wisconsin",
     "url": "https://www.aclu-wi.org/news/flock-off-wisconsinites-continue-the-fight-against-constant-surveillance/"
   },
@@ -2210,11 +2213,14 @@
     "url": "https://denver.thebadger.news/articles/2026-09-09-englewood-council-votes-to-end-flock-camera-contract-rejects-axon-replacement"
   },
   "https://department-test3.countyofdane.com/PressDetail/11832": {
+    "archive": "66f10cd359e4f6a3f0f12ba87fa267963ccc402dda6a6d357b47203ee5aeabca.txt",
     "content_hash": "162632428f0806ad7c5de0c7f02db75ba8558ff73636697efeb5f652c91225ed",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://department-test3.countyofdane.com/PressDetail/11832",
     "simhash": "652c98097eec6b20",
+    "snapshot_path": "snapshots/2026-10-07/b018356e6c097e78d62425d97e44407d3a6e23bff2b4fdda9759695ad55f10e7.json",
+    "snapshot_status": "uploaded",
     "text_len": 2779,
     "title": "Press Releases | Dane County, Wisconsin",
     "url": "https://department-test3.countyofdane.com/PressDetail/11832"
@@ -2651,12 +2657,15 @@
     "url": "https://www.findingflock.com/operators"
   },
   "https://fitchburgstar.com/news/public_safety/county-board-cuts-funding-for-license-plate-readers/article_ba3d111c-ea78-4c1d-9621-fdfad4e2a101.html": {
-    "content_hash": "7726abf01db07278a05c1ce7abf84b32a49f19d89312a0d8f3e368b009581081",
+    "archive": "c0e9680b8db04ad1abd17ff105f6d18193af868ea9c35d2e3def8ce44ac1cdff.txt",
+    "content_hash": "316447dcd99fd96318a3f5279a1c271e41ff8e63c6e3235caf85e23f40ebb976",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.fitchburgstar.com/news/public_safety/county-board-cuts-funding-for-license-plate-readers/article_ba3d111c-ea78-4c1d-9621-fdfad4e2a101.html",
-    "simhash": "270bde932660810b",
-    "text_len": 5394,
+    "simhash": "2f0b569136a8890b",
+    "snapshot_path": "snapshots/2026-10-07/0170b1b2ae9a34fe55ccb346e142b9eb75de1b6f1daf84b6760f439e3bff5415.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5316,
     "title": "County board cuts funding for license plate readers | Public Safety | fitchburgstar.com",
     "url": "https://www.fitchburgstar.com/news/public_safety/county-board-cuts-funding-for-license-plate-readers/article_ba3d111c-ea78-4c1d-9621-fdfad4e2a101.html"
   },
@@ -2898,31 +2907,40 @@
     "url": "https://fox5dc.com/news/dc-police-investigate-2-potential-cases-flock-camera-misuse-amid-privacy-concerns"
   },
   "https://fox6now.com/news/flock-cameras-racine-mayor-tie-vote": {
+    "archive": "b7a8388978cdd7078b21740f809f92414634e73ceae33dab0c258d812d9127e0.txt",
     "content_hash": "2fda5fcfa79a5e35bcb16f6ad2c4da9e360dcf437134bb89a26e4965c1e8fc98",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.fox6now.com/news/flock-cameras-racine-mayor-tie-vote",
     "simhash": "6f990721560e0637",
+    "snapshot_path": "snapshots/2026-10-07/facd0d7af3dea6fc25f9a903ab5be2082efb82e31e7e1640764b839523a8fc0c.json",
+    "snapshot_status": "uploaded",
     "text_len": 3752,
     "title": "Flock cameras: Racine mayor votes to terminate contract, breaks tie | FOX6 Milwaukee",
     "url": "https://fox6now.com/news/flock-cameras-racine-mayor-tie-vote"
   },
   "https://fox6now.com/news/kenosha-police-ending-flock-contract-moving-axon": {
+    "archive": "5f4eeac6e30509c20edcebbf1568a25094c8d82ac204affec8790c83921c0c56.txt",
     "content_hash": "c5748201f5e894ed1cc6c4699538677ec0d8e376da5ac3c16b7cf8319e8d2099",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.fox6now.com/news/kenosha-police-ending-flock-contract-moving-axon",
     "simhash": "189281143dfd228f",
+    "snapshot_path": "snapshots/2026-10-07/a27b13d7904af78dcfa7336edda9b82968a3ef13b0032b308067becdfc4bb74d.json",
+    "snapshot_status": "uploaded",
     "text_len": 5293,
     "title": "Kenosha police ending Flock contract, moving to Axon | FOX6 Milwaukee",
     "url": "https://fox6now.com/news/kenosha-police-ending-flock-contract-moving-axon"
   },
   "https://fox6now.com/news/kenosha-police-flock-axon-surveillance": {
+    "archive": "17d236d0788021748e5b316e60165d2f979096fe400888ef9d40202b2877b96b.txt",
     "content_hash": "b8d133c1691f06516950ced6b2b74662eefdac10e439458628c8257b42e18a9c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.fox6now.com/news/kenosha-police-flock-axon-surveillance",
     "simhash": "55eac2e11cffcfca",
+    "snapshot_path": "snapshots/2026-10-07/cde8d45c10df09114839cd699ff543a801e7203355ad32284ba6bafa45448c16.json",
+    "snapshot_status": "uploaded",
     "text_len": 9615,
     "title": "Flock out, Axon in: Kenosha police lead surveillance tech shift | FOX6 Milwaukee",
     "url": "https://fox6now.com/news/kenosha-police-flock-axon-surveillance"
@@ -2938,11 +2956,14 @@
     "url": "https://fox6now.com/news/milwaukee-fire-police-commission-host-public-comment-flock"
   },
   "https://fox6now.com/news/sheboygan-common-council-votes-end-flock-camera-contract": {
+    "archive": "182de76157cc2acb426557931a8e30ac6080ba98fc06637d6a80df17e552cf5c.txt",
     "content_hash": "82194df42a722005bceada70ded66a40ccfcc68e981e4fc8e3d811b6f4b8832e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.fox6now.com/news/sheboygan-common-council-votes-end-flock-camera-contract",
     "simhash": "ed0f1e285ae1c45d",
+    "snapshot_path": "snapshots/2026-10-07/19218daa9814bcf0fe5f16099a5e8a712c5c926fcdf8b3d4b6a162ef66b44ffe.json",
+    "snapshot_status": "uploaded",
     "text_len": 2652,
     "title": "Sheboygan Common Council votes to end Flock camera contract | FOX6 Milwaukee",
     "url": "https://fox6now.com/news/sheboygan-common-council-votes-end-flock-camera-contract"
@@ -3580,11 +3601,14 @@
     "url": "https://gray-waff-prod.gtv-cdn.com/2026/09/16/huntsville-flock-camera-forum-put-access-oversight-questions-before-police/"
   },
   "https://gray-wbay-prod.gtv-cdn.com/2026/05/06/city-appleton-stop-using-flock-cameras": {
+    "archive": "2a4ff948fc3e9a544a7c115668069d115610148a791f4f6b8462779dc9988d7f.txt",
     "content_hash": "bd05f574df0b9d398db9e07eec975a0adb16b5c1ac2f2e88dbe44969755f3e4f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://gray-wbay-prod.gtv-cdn.com/2026/05/06/city-appleton-stop-using-flock-cameras/",
     "simhash": "237cd4b25cc12a9a",
+    "snapshot_path": "snapshots/2026-10-07/50bc4b29718605d042c4ace82ae7a1365c706227585fdbd35a2d18fa3d8814ac.json",
+    "snapshot_status": "uploaded",
     "text_len": 2951,
     "title": "City of Appleton to stop using Flock cameras",
     "url": "https://gray-wbay-prod.gtv-cdn.com/2026/05/06/city-appleton-stop-using-flock-cameras/"
@@ -4321,22 +4345,28 @@
     "url": "https://kenner.la.us/DocumentCenter/View/1381/End-Of-Year-District-3-Newsletter---2023-PDF"
   },
   "https://kenoshacountyeye.com/2026/09/04/racine-county-sheriff-orders-immediate-removal-of-flock-cameras-after-learning-company-retains-monetizes-data": {
-    "content_hash": "80354f3c3e0a62b0780d77c857c6afacf3a5d2254468b52c1b7857f11aa52ae1",
+    "archive": "fb504ca9000d72d3da3d15d7f2783fad082485b32409174fcb85530ff562e2e9.txt",
+    "content_hash": "b7927329c220422f83da2a39d96591ded6e22d8ebcafc9a7a61f7d3b320ba0e3",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://kenoshacountyeye.com/2026/09/04/racine-county-sheriff-orders-immediate-removal-of-flock-cameras-after-learning-company-retains-monetizes-data/",
-    "simhash": "af90b2468b28c7cb",
-    "text_len": 27488,
+    "simhash": "b7f4d1484ecda3ee",
+    "snapshot_path": "snapshots/2026-10-07/827c1e979c108e970997d4710ffb10a2320b84232f6f2c27303e39b4b1feed04.json",
+    "snapshot_status": "uploaded",
+    "text_len": 27861,
     "title": "Racine County Sheriff Orders Immediate Removal Of Flock Cameras After Learning Company Retains, Monetizes Data - Kenosha County Eye",
     "url": "https://kenoshacountyeye.com/2026/09/04/racine-county-sheriff-orders-immediate-removal-of-flock-cameras-after-learning-company-retains-monetizes-data/"
   },
   "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon": {
-    "content_hash": "b3eec09820d9bcf109be2a5011fc5a1670f49e2022dc1042caa42793bbea3c3c",
+    "archive": "0a62b4689bb387efc74d630e48611318eb055794f45c80ed7f8527d0448e6d0d.txt",
+    "content_hash": "bec62ef0d61d2a86c393800b8919d21217cdd29556a1a0b8b75f5fef4822fde7",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon/",
-    "simhash": "bf91b2968310c7eb",
-    "text_len": 31271,
+    "simhash": "f5f551884e5d03ae",
+    "snapshot_path": "snapshots/2026-10-07/104451baa2ce6c43633ad1fa43d6c572fa13cd75274660ef43e1b263e9a82fc5.json",
+    "snapshot_status": "uploaded",
+    "text_len": 31404,
     "title": "Meet the New Boss, Same as the Old Boss: Kenosha Doubles Down on Big Brother, Replacing Flock With Axon - Kenosha County Eye",
     "url": "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon/"
   },
@@ -5055,11 +5085,14 @@
     "url": "https://medium.com/@IamRonBurgandy/spokane-countys-806k-deal-for-flock-license-plate-cameras-what-public-records-reveal-249a6c31fc5d"
   },
   "https://medium.com/@iwan.steinmann/week-3-cna-4cb0e2f95099": {
+    "archive": "616a14b6e10ff5115a7939213f6b4ddf65f04cdc34a55cc582747a8e710a0113.txt",
     "content_hash": "032cc102ffb7e8316b6e7de8c1e6aa21f91fbf0b3b1d8e21542c05d17e70edd9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://medium.com/@iwan.steinmann/week-3-cna-4cb0e2f95099",
     "simhash": "078ed61e72013e79",
+    "snapshot_path": "snapshots/2026-10-07/5f9dd66294c95047672c9e6f869957f607427606e3797bafa3ccf58e80d32605.json",
+    "snapshot_status": "uploaded",
     "text_len": 5558,
     "title": "Medium Week #3 CNA. City Council rejects Misjuns’ bid for… | by Iwan Steinmann | Sep, 2026 | Medium",
     "url": "https://medium.com/@iwan.steinmann/week-3-cna-4cb0e2f95099"
@@ -5242,11 +5275,14 @@
     "url": "https://myedmondsnews.com/2026/08/flock-safety-tightens-safeguards-as-states-cities-question-surveillance-network/"
   },
   "https://myhuntleynews.com/2023/04/24/huntley-police-present-new-tech-at-village-board-meeting": {
+    "archive": "9b36d6adecf8975916388ea8ae654eee9c924658cea98f8b12614d9ef7f35cb6.txt",
     "content_hash": "b7ba6abae142e9eb4f086814f26f1bd0ef005da4a3c9fa96a7166f613ca940f4",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.myhuntleynews.com/2023/04/24/huntley-police-present-new-tech-at-village-board-meeting/",
     "simhash": "bacbb251345f715d",
+    "snapshot_path": "snapshots/2026-10-07/e290cc24f83ecf4dfc939e049b89f2780ee12bccc52ffde57aa18eb7315f799f.json",
+    "snapshot_status": "uploaded",
     "text_len": 4289,
     "title": "Huntley Police present new tech at Village Board meeting | My Huntley News",
     "url": "https://www.myhuntleynews.com/2023/04/24/huntley-police-present-new-tech-at-village-board-meeting/"
@@ -6147,21 +6183,27 @@
     "url": "https://qni.ogdencity.com/DocumentCenter/View/35296/Public-Safety-ALPR-RFP_QandADoc2"
   },
   "https://quincycurrent.com/quincy-police-chief-defends-flock-cameras-as-local-debate-intensifies": {
+    "archive": "7f4820d406300f74a3212b4279525ba8f70a54096c9dfbd45c7735e9b5e8d4cb.txt",
     "content_hash": "67c18d9ecfed10c9fbdb90127a96fe87e7e4e72591c1e25aa4f747b8072dfbeb",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://quincycurrent.com/quincy-police-chief-defends-flock-cameras-as-local-debate-intensifies/",
     "simhash": "700663b990427aa5",
+    "snapshot_path": "snapshots/2026-10-07/c0e0585e6aebca614f9df117993b37e0df46e4756f798b64a1b5f4fcb5eb3c28.json",
+    "snapshot_status": "uploaded",
     "text_len": 6918,
     "title": "Quincy Police Chief Defends Flock Cameras as Local Debate Intensifies - Crime & Courts",
     "url": "https://quincycurrent.com/quincy-police-chief-defends-flock-cameras-as-local-debate-intensifies/"
   },
   "https://quincycurrent.com/where-are-quincys-flock-cameras-a-look-at-the-network-ahead-of-city-council-report": {
+    "archive": "7e7cc5d3d197e3a5e6535c267db30262ba398d7737a8ed9c564766f29f37d314.txt",
     "content_hash": "7174f7a8a654b622a5189fb8fcb4be6a815545526f0e9bd252c11f9dfcf3a744",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://quincycurrent.com/where-are-quincys-flock-cameras-a-look-at-the-network-ahead-of-city-council-report/",
     "simhash": "7a51c41353fb668e",
+    "snapshot_path": "snapshots/2026-10-07/8c8ad0102dc95236d3e873f879bf1527c561442f83f1d9cb50a31409becec78e.json",
+    "snapshot_status": "uploaded",
     "text_len": 9199,
     "title": "Where Are Quincy’s Flock Cameras? A Look at the Network Ahead of City Council Report - Local News",
     "url": "https://quincycurrent.com/where-are-quincys-flock-cameras-a-look-at-the-network-ahead-of-city-council-report/"
@@ -6748,11 +6790,14 @@
     "url": "https://www.sheboyganpress.com/story/news/local/2026/09/08/sheboygan-flock-safety-cameras-contract-ended-data-dispute/91663620007/"
   },
   "https://shepherdexpress.com/news/issue-of-the-month/flock-cameras-in-milwaukee-the-writing-is-on-the-wall": {
+    "archive": "622ab9c5b29b2421bb1f9cc3fe2195373752c247994a5d862f128d401e267a4e.txt",
     "content_hash": "1a99cdd5a3e6ee35dda43d36337c74328a99eca52f7a1db602bb9d2c0cf88a82",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://shepherdexpress.com/news/issue-of-the-month/flock-cameras-in-milwaukee-the-writing-is-on-the-wall/",
     "simhash": "530d69a09357f0ef",
+    "snapshot_path": "snapshots/2026-10-07/cdd45fdaa9d59fd0936c6b03d8db5ae0aee7f3061d117f51a8bbd2d5106c9a41.json",
+    "snapshot_status": "uploaded",
     "text_len": 8315,
     "title": "Flock Cameras in Milwaukee: The Writing is on the Wall - Shepherd Express",
     "url": "https://shepherdexpress.com/news/issue-of-the-month/flock-cameras-in-milwaukee-the-writing-is-on-the-wall/"
@@ -7551,11 +7596,14 @@
     "url": "https://www.tiktok.com/@wlukfox11/video/7631973302319320333"
   },
   "https://tmj4.com/about-us/lighthouse/kenosha-says-farewell-to-flock-drops-license-plate-readers-citing-security-misuse-and-data-sharing-concerns": {
+    "archive": "a97cb265f8f04d79f8f617f11f03fd08529f723ca2c18b2bf01e83060455e44e.txt",
     "content_hash": "96c0dda26b0cafcb089a3774600e3e81726c8dafeee7a12fa445e59391237723",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.tmj4.com/about-us/lighthouse/kenosha-says-farewell-to-flock-drops-license-plate-readers-citing-security-misuse-and-data-sharing-concerns",
     "simhash": "3954a6f921e1a8e0",
+    "snapshot_path": "snapshots/2026-10-07/1de1163462435eead30b3a5ea403c8078159db9da495fd126d55be4bde83e07c.json",
+    "snapshot_status": "uploaded",
     "text_len": 4515,
     "title": "Kenosha says farewell to Flock, and commits to new license plate reader company",
     "url": "https://www.tmj4.com/about-us/lighthouse/kenosha-says-farewell-to-flock-drops-license-plate-readers-citing-security-misuse-and-data-sharing-concerns"
@@ -7571,21 +7619,27 @@
     "url": "https://www.tmj4.com/news/fond-du-lac-county/fond-du-lac-county-law-enforcement-agencies-discontinue-flock-camera-use-effective-immediately"
   },
   "https://tmj4.com/news/local-news/green-bay-keeps-flock-cameras-amid-statewide-backlash": {
+    "archive": "3d20afd42b0eb2ed3691e114ac666ff897f13504eb8a550389e45d8452e8c854.txt",
     "content_hash": "d468e330b7ce383815c9a3ef6f782abe5e3980249276a7cdb8c688b6b69c8610",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.tmj4.com/news/local-news/green-bay-keeps-flock-cameras-amid-statewide-backlash",
     "simhash": "11a4307d51be882e",
+    "snapshot_path": "snapshots/2026-10-07/935d73dfa8898957a1324928921b76cf9ecac60cc3d2f6d25c8d2a0fb47bb3d9.json",
+    "snapshot_status": "uploaded",
     "text_len": 3346,
     "title": "Green Bay keeps Flock cameras amid statewide backlash",
     "url": "https://www.tmj4.com/news/local-news/green-bay-keeps-flock-cameras-amid-statewide-backlash"
   },
   "https://tmj4.com/news/local-news/in-your-community/racine-county/racine-common-council-votes-to-end-flock-safety-contract-cameras-to-stay-up-for-30-more-days": {
+    "archive": "50feda953612775b256a4936d01c43af98529828545345c412d80bbc3b652199.txt",
     "content_hash": "c8ff420f8a9a2f4d39f615a4d9a5c6346f4f7451b3ac648caf3f137ade68af10",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.tmj4.com/news/local-news/in-your-community/racine-county/racine-common-council-votes-to-end-flock-safety-contract-cameras-to-stay-up-for-30-more-days",
     "simhash": "39d1bf7472da382b",
+    "snapshot_path": "snapshots/2026-10-07/7f60a8f4a42cb42204ca4d712fc437e56064e4744f48da41bfd66fe2bb972759.json",
+    "snapshot_status": "uploaded",
     "text_len": 3861,
     "title": "Racine Common Council votes to end Flock Safety contract",
     "url": "https://www.tmj4.com/news/local-news/in-your-community/racine-county/racine-common-council-votes-to-end-flock-safety-contract-cameras-to-stay-up-for-30-more-days"
@@ -8156,11 +8210,14 @@
     "url": "https://www.wcia.com/news/decatur-extends-usage-of-license-plate-readers/amp/"
   },
   "https://wcia.com/news/rantoul-police-looking-to-fill-blind-spots-with-new-license-plate-readers": {
+    "archive": "66ef0383289e3b850e2d71610a8a18a70d478b948910dad9a251ea053c99255c.txt",
     "content_hash": "697be5d288c0c95dcb6b2e1170c443c776caabe512b510f7ea0d7ab49a24a743",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.wcia.com/news/rantoul-police-looking-to-fill-blind-spots-with-new-license-plate-readers/amp/",
     "simhash": "6e14af22be8c6612",
+    "snapshot_path": "snapshots/2026-10-07/e569837a58e5c8ede8b67ca9231975bc835c3d863fd3dd984c42fba21da91826.json",
+    "snapshot_status": "uploaded",
     "text_len": 1962,
     "title": "Rantoul Police looking to fill blind spots with new license plate readers | WCIA.com",
     "url": "https://www.wcia.com/news/rantoul-police-looking-to-fill-blind-spots-with-new-license-plate-readers/amp/"
