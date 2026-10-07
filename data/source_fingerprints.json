@@ -110,11 +110,14 @@
     "url": "https://www.5bgazette.com/government_policy/the-flock-is-flying-away-from-neighboring-jurisdictions-while-blaine-county-is-still-mulling-the/article_207b2292-97cc-4922-b2ca-62ad7d570e25.html"
   },
   "https://607newsnow.com/news/258852-ithaca-common-council-cuts-contract-with-flock-safety": {
+    "archive": "5a505237695d963127440100dae510ff34be250993bb53f3764591f7717b8989.txt",
     "content_hash": "87f77b56b1a0addeca8317d09fa10a1db00098c8b3cfb9054d98c753a0ee6996",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://607newsnow.com/news/258852-ithaca-common-council-cuts-contract-with-flock-safety/",
     "simhash": "9209b4c5d17c389c",
+    "snapshot_path": "snapshots/2026-10-07/722c0ff556bcaef917a29ea9ed7d47d8a00b2d4bb771ee71630b4f3da8ed4a80.json",
+    "snapshot_status": "uploaded",
     "text_len": 795,
     "title": "Ithaca Common Council cuts contract with Flock Safety - 607 News Now",
     "url": "https://607newsnow.com/news/258852-ithaca-common-council-cuts-contract-with-flock-safety/"
@@ -985,21 +988,27 @@
     "url": "https://capitolcitynow.com/news/248842-springfield-city-council-approves-flock-license-plate-reader-contract-with-changes/"
   },
   "https://cardinalpine.com/news/in-rural-nc-county-opposition-to-flock-cameras-unites-conservatives-and-liberals": {
-    "content_hash": "7aa6c90e26f6835c33f9efbd6259b02b3e2f356ecc19e47d2f1eee5b0e61af35",
+    "archive": "f365965d1185a642a30ce96809de85862223aa23d617d4a36406fe54a3763bbe.txt",
+    "content_hash": "757415cfbd8a660129f535898b2b1b12919b4c15f0beaaad43a6693b02e28b14",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://cardinalpine.com/news/in-rural-nc-county-opposition-to-flock-cameras-unites-conservatives-and-liberals/",
-    "simhash": "dd17774cce6002d1",
-    "text_len": 9523,
+    "simhash": "dd1777ccc6608af0",
+    "snapshot_path": "snapshots/2026-10-07/94890259ff50293e87d45886182786d09a3a53f16348f74ab9d74b7edbf47156.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9565,
     "title": "In rural NC county, opposition to Flock cameras unites conservatives and liberals",
     "url": "https://cardinalpine.com/news/in-rural-nc-county-opposition-to-flock-cameras-unites-conservatives-and-liberals/"
   },
   "https://carscoops.com/2026/02/flock-safety-alpr-contract-termination": {
+    "archive": "3b5aa2d5742baada7c3ae09075f4e87998619f34ba94a41ab3bd7dc34d6e3ccf.txt",
     "content_hash": "04e1342a91d20a51a886c1ecd029a7de0fe76c481ee1bf50749672e8ca3669cc",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.carscoops.com/2026/02/flock-safety-alpr-contract-termination/",
     "simhash": "d8641d98fbe56464",
+    "snapshot_path": "snapshots/2026-10-07/88faaa9f704b929ad01c57e08f7a38ddb47427a04b970e28938b536f869231b9.json",
+    "snapshot_status": "uploaded",
     "text_len": 3943,
     "title": "Why More Cities Are Suddenly Pulling The Plug On Flock Safety Cameras | Carscoops",
     "url": "https://www.carscoops.com/2026/02/flock-safety-alpr-contract-termination/"
@@ -1111,11 +1120,14 @@
     "url": "https://cedarrapidsgazette-ia.newsmemory.com/?publink=3c7df1e6a_1351fa6"
   },
   "https://cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them": {
+    "archive": "c8d3ee797141cf9c11124189765344aa86f39378f0fefcfa7193c95be32f42e6.txt",
     "content_hash": "f7bab8708df54ca3ee2e74cd5c0f5317ddcca546c42156fcae95d538c4f26ee5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them",
     "simhash": "3801d43b51a423b4",
+    "snapshot_path": "snapshots/2026-10-07/72460471de8a87c1919e6cc66dba66a0058098446b6fa78202c18642efe5ec66.json",
+    "snapshot_status": "uploaded",
     "text_len": 6037,
     "title": "Before DeSanits nixed flock cameras, he approved funding them",
     "url": "https://www.cfpublic.org/politics/2026-09-02/before-desanits-nixed-flock-cameras-he-approved-funding-them"
@@ -1680,12 +1692,15 @@
     "url": "https://www.clevescene.com/news/cleveland-city-council-warily-approves-flock-safety-renewal/"
   },
   "https://cmg-cmg-tv-10070-prod.cdn.arcpublishing.com/news/local/fdot-orders-license-plate-reading-cameras-removed-state-rights-of-way-halts-new-permits/XBT4JV2XJBCMVCPATCMBUWEU3A": {
-    "content_hash": "4627571d6556da1a1cef512d7b61ba864db9188a757605392633ee61f47ad2d4",
+    "archive": "b933d0e5bdb4898566e71ffa458b4b6f7ab3e2c78fd99a32103ce6cf3e0bc310.txt",
+    "content_hash": "a160c651ea08cc853e26810f9e2f5cf822f154e0e2560068dff87dff1da85d3b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://cmg-cmg-tv-10070-prod.cdn.arcpublishing.com/news/local/fdot-orders-license-plate-reading-cameras-removed-state-rights-of-way-halts-new-permits/XBT4JV2XJBCMVCPATCMBUWEU3A/",
-    "simhash": "eb5e846b22a632fb",
-    "text_len": 12653,
+    "simhash": "6bde80292aa662fa",
+    "snapshot_path": "snapshots/2026-10-07/32c7677af84f5e1b6ed0430326f53df34176525076f55fdf93a5d28dfb2cc37a.json",
+    "snapshot_status": "uploaded",
+    "text_len": 12639,
     "title": "Florida Orders End of Flock Camera Use, Halts New Permits - WFTV",
     "url": "https://cmg-cmg-tv-10070-prod.cdn.arcpublishing.com/news/local/fdot-orders-license-plate-reading-cameras-removed-state-rights-of-way-halts-new-permits/XBT4JV2XJBCMVCPATCMBUWEU3A/"
   },
@@ -1919,12 +1934,15 @@
     "url": "https://core-docs.s3.us-east-1.amazonaws.com/documents/asset/uploaded_file/5042/GIPD/4856824/Automatic_License_Plate_Re.pdf"
   },
   "https://cornellsun.com/article/2026/03/common-council-votes-to-end-ithaca-s-contract-with-flock-safety-keep-free-gaza-on-green-street-mural": {
-    "content_hash": "3644b9fbccfa400ce2ed4005d5c7a6485fdd2d1e2fc5d83e6fffc30a4ca5fa30",
+    "archive": "121242025ecb15787cba5d8f0a39e756cf3c18123bfbf716669ad2189deb0269.txt",
+    "content_hash": "5da94e71a60cc02f2eb0028f79d88ca91b486e7413a1fdb7ee7042da7cf83490",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.cornellsun.com/article/2026/03/common-council-votes-to-end-ithaca-s-contract-with-flock-safety-keep-free-gaza-on-green-street-mural",
-    "simhash": "60fecea577bee991",
-    "text_len": 9970,
+    "simhash": "24bece2d75bce9f9",
+    "snapshot_path": "snapshots/2026-10-07/9d925cd8d33c0538dfad849e0919dd0f7245362ec033dee2e5378b7a19f06a41.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9973,
     "title": "Common Council Votes to End Ithaca’s Contract With Flock Safety, Keep ‘Free Gaza’ on Green Street Mural - The Cornell Daily Sun",
     "url": "https://www.cornellsun.com/article/2026/03/common-council-votes-to-end-ithaca-s-contract-with-flock-safety-keep-free-gaza-on-green-street-mural"
   },
@@ -1978,11 +1996,14 @@
     "url": "https://cun.news/texas-police-surveillance-cell-trackers-license-plate-readers/"
   },
   "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services": {
+    "archive": "3f6778604edff69ac75d7093086b181b5e8313a4026123bcb5e03e7da43643ed.txt",
     "content_hash": "6d6970acfc7664c110a729fcc34c84f35333fa26065075ffd6d60ad0b2a691a2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services/",
     "simhash": "0fa6e7b73c0ffeb9",
+    "snapshot_path": "snapshots/2026-10-07/1f171a20cb254f5acf75f6fb5283e9dabb1612b7c41325323718beda6277f137.json",
+    "snapshot_status": "uploaded",
     "text_len": 4937,
     "title": "Flock CEO includes Charlottesville, Staunton in email blaming activists for cities dropping the company’s services - Cville Right Now",
     "url": "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services/"
@@ -2091,11 +2112,14 @@
     "url": "https://deflockmonroe.com/"
   },
   "https://deflocknewportnews.org/": {
+    "archive": "f98dce93313b41d4bd955c687c0af3998c0feea4819146133a008f67b0bd0a68.txt",
     "content_hash": "67cadae25e73b9678632c89e49c41d6b9531ed66f0d5bc70134c510195a5981a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://deflocknewportnews.org/",
     "simhash": "7764813833152f4f",
+    "snapshot_path": "snapshots/2026-10-07/836497f79975cb47a4e660f8142b2b6154745cf03583f5fdfec82146aa3081c7.json",
+    "snapshot_status": "uploaded",
     "text_len": 31019,
     "title": "DeFlock — Newport News, VA",
     "url": "https://deflocknewportnews.org/"
@@ -2797,11 +2821,14 @@
     "url": "https://fox4news.com/news/dallas-police-looking-new-ways-keep-over-300-flock-cameras-operational-state-funding-ends"
   },
   "https://fox5atlanta.com/news/inside-gwinnett-county-police-audit-exposed-license-plate-data-abuse": {
+    "archive": "e84701da5e62710747afc8209b50b483b4f1a64f4d6a7eba567c067c3418170c.txt",
     "content_hash": "6ab9fa66a152824810029e860cdcc765e34f978b9a5e1e7c6d28792e5e5a72c3",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.fox5atlanta.com/news/inside-gwinnett-county-police-audit-exposed-license-plate-data-abuse",
     "simhash": "2f52830832d4aaec",
+    "snapshot_path": "snapshots/2026-10-07/67f5925f39c4fa6e5f668cc289fd6618f07b0ff70fd362c3d128403fac34e7a3.json",
+    "snapshot_status": "uploaded",
     "text_len": 4044,
     "title": "Inside the Gwinnett County police audit that exposed license plate data abuse | FOX 5 Atlanta",
     "url": "https://fox5atlanta.com/news/inside-gwinnett-county-police-audit-exposed-license-plate-data-abuse"
@@ -3040,12 +3067,15 @@
     "url": "https://gmg-ksat-prod.cdn.arcpublishing.com/news/local/2026/08/11/flock-cameras-what-automated-license-plate-readers-are-and-why-theyre-controversial-in-south-texas/"
   },
   "https://gmg-wsls-prod.cdn.arcpublishing.com/topic/Flock_Safety": {
-    "content_hash": "b96c0268068818eebbdcaef8e2d112b9db83f8641da439e335da23bb6e1f4ade",
+    "archive": "f3056422623a1b11be445305bcf17f323d1b86218cf99f08e53dc0b723e2ee51.txt",
+    "content_hash": "1da1c6a987e6e586f566befbba5de2bf162378a5639b1e628b64077ff6bf045c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://gmg-wsls-prod.cdn.arcpublishing.com/topic/Flock_Safety/",
-    "simhash": "1f0446751c450073",
-    "text_len": 7989,
+    "simhash": "3f0d46741c450073",
+    "snapshot_path": "snapshots/2026-10-07/6025627b25e75d0b7b6f2e828caed4a69705d069a61bc339e744ca73511950d3.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7987,
     "title": "Flock_Safety",
     "url": "https://gmg-wsls-prod.cdn.arcpublishing.com/topic/Flock_Safety/"
   },
@@ -3225,11 +3255,14 @@
     "url": "https://www.govtech.com/public-safety/duluth-minn-police-explain-decision-to-end-flock-contract"
   },
   "https://govtech.com/public-safety/flock-safety-opponents-pack-community-meeting-in-virginia": {
+    "archive": "8400e159567ceda8a24383d26fce414f04d56682a0edd36488db93c018db48bc.txt",
     "content_hash": "7d5c14460626819b599bd7bc96d327e3b56f2cdcfbb0f0a6a5fcf62023737b59",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.govtech.com/public-safety/flock-safety-opponents-pack-community-meeting-in-virginia",
     "simhash": "6538ce1a36903329",
+    "snapshot_path": "snapshots/2026-10-07/d13528108ef147297aac663e703f9e0ce8bd59763212638aa7cf9e5b7f316e42.json",
+    "snapshot_status": "uploaded",
     "text_len": 5483,
     "title": "Flock Safety Opponents Pack Community Meeting in Virginia",
     "url": "https://www.govtech.com/public-safety/flock-safety-opponents-pack-community-meeting-in-virginia"
@@ -3488,11 +3521,14 @@
     "url": "https://gray-wbay-prod.gtv-cdn.com/2026/05/06/city-appleton-stop-using-flock-cameras/"
   },
   "https://gray-whns-prod.gtv-cdn.com/2026/08/10/greenville-county-sheriff-addresses-flock-camera-concerns-after-deputies-fired": {
+    "archive": "c4232d91df6f8328af5eab76fdbb2a2f60c360f2cacc917bcfa06cb0013873ad.txt",
     "content_hash": "55c5273cc8f7f2941d2be578edfacaf6629b5089e2b1581614da74a7a16a8102",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://gray-whns-prod.gtv-cdn.com/2026/08/10/greenville-county-sheriff-addresses-flock-camera-concerns-after-deputies-fired/",
     "simhash": "ba99454395fe7603",
+    "snapshot_path": "snapshots/2026-10-07/5b725003fa3ad70b6b660cbd4b544ed100dbf43f04b5dde6e2ee6bd1541971b1.json",
+    "snapshot_status": "uploaded",
     "text_len": 5772,
     "title": "Greenville County sheriff addresses Flock camera concerns after deputies fired",
     "url": "https://gray-whns-prod.gtv-cdn.com/2026/08/10/greenville-county-sheriff-addresses-flock-camera-concerns-after-deputies-fired/"
@@ -5214,12 +5250,15 @@
     "url": "https://www.news-leader.com/story/news/local/ozarks/2026/09/22/springfield-council-stalls-flock-camera-report-crowd-erupts/91827433007/"
   },
   "https://news.thepalmbayer.com/news/this-week-in-palm-bay-episode-24-september-21-2026": {
-    "content_hash": "56ec4ca5129ddeb303cf6edae894baed4910f7bb4b1a1f6f14e0386105a945cd",
+    "archive": "0b51dafc5014b1fbc98dc9f891128e2b9f0b6d0c86a61bec2cd651459e833418.txt",
+    "content_hash": "e82ab55b93b15a00bb44f4f68c665c7bddc331f1a9b84995d889a8ce454f5dbf",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://news.thepalmbayer.com/news/this-week-in-palm-bay-episode-24-september-21-2026/",
-    "simhash": "db3e2dffb6cdde25",
-    "text_len": 7080,
+    "simhash": "f93f477b1efdcf21",
+    "snapshot_path": "snapshots/2026-10-07/14e5aaf7e9ac2c57b875d95828218b60627a16bbc9d019ed116350c5615f2d52.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7038,
     "title": "This Week in Palm Bay: Budget Finality, 911 Dispatch Showdown, and Surveillance Grid Dismantled",
     "url": "https://news.thepalmbayer.com/news/this-week-in-palm-bay-episode-24-september-21-2026/"
   },
@@ -5507,11 +5546,14 @@
     "url": "https://www.operanewsapp.com/us/en/share/detail?news_id=6db53191c5f63ead04a0d1ff5687b570&news_entry_id=4a54754d260902en_us&open_type=transcoded&from=localnews&request_id=share_request&share_from"
   },
   "https://origin.volusiasheriff.gov/news/volusia-county-sheriff/sheriff-chitwoods-statement-on-discontinuation-of-vso-lprs.stml": {
+    "archive": "9047b5a8bc421b2072e8924c82a80257166c5d88b1f5215e6585dfc6074d0bc8.txt",
     "content_hash": "c2b158f872127d6060a1d2435afd3165f1bdc334514c94de87248cd3a9742bf0",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://origin.volusiasheriff.gov/news/volusia-county-sheriff/sheriff-chitwoods-statement-on-discontinuation-of-vso-lprs.stml",
     "simhash": "6acd272307742a2e",
+    "snapshot_path": "snapshots/2026-10-07/41aad2beae8039099c47afb45f655dd95e953736adda21c3f1050b36498d5c64.json",
+    "snapshot_status": "uploaded",
     "text_len": 2100,
     "title": "Sheriff Chitwood's statement on discontinuation of VSO LPRs | VSO",
     "url": "https://origin.volusiasheriff.gov/news/volusia-county-sheriff/sheriff-chitwoods-statement-on-discontinuation-of-vso-lprs.stml"
@@ -5678,12 +5720,15 @@
     "url": "https://www.police1.com/investigations/2-mich-officers-threaten-to-leave-department-after-city-votes-down-lpr-contract"
   },
   "https://police1.com/law-enforcement-policies/florida-bans-alprs-from-all-state-roads": {
-    "content_hash": "6ffa756301063e6b7e7e97bcb5faf5ee1bc28344cd19e0b1273756740a127464",
+    "archive": "d7a08acad1022a24340ca190017d6e2aa8e3983e42a74919a3cdae3b183d4577.txt",
+    "content_hash": "420343371cd68fef0992350827723a4c79c719ffc063b31af113148b7c5b7331",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.police1.com/law-enforcement-policies/florida-bans-alprs-from-all-state-roads",
-    "simhash": "4248a1517400375e",
-    "text_len": 6658,
+    "simhash": "424e1351204037de",
+    "snapshot_path": "snapshots/2026-10-07/5e1de7fc73a831e6d0c58561f931a5f63394e84ba9ef5df685f5594a540afe72.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6704,
     "title": "Florida bans most license plate readers from state roads",
     "url": "https://www.police1.com/law-enforcement-policies/florida-bans-alprs-from-all-state-roads"
   },
@@ -5872,12 +5917,15 @@
     "url": "https://www.publicopiniononline.com/story/news/local/2026/08/31/shapiro-supports-flock-ban-in-pa-whats-happening-in-franklin-county/91545178007/"
   },
   "https://publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-recognition-cameras-from-unincorporated-areas": {
-    "content_hash": "670437aa7561533454385bc854b7c28a010738d0e26efec77c3aa9ae4cad2552",
+    "archive": "8f6c8e5a26f50cf68042856404cabbb3455b8e3c8dd2bf2cf44f5fe0cc17c7cf.txt",
+    "content_hash": "85185488c512de8229947f23741eb559afa57e66b679d7466b23d89289a700ab",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-recognition-cameras-from-unincorporated-areas",
-    "simhash": "f9220f761844a8ed",
-    "text_len": 1693,
+    "simhash": "d9720f769844a8ed",
+    "snapshot_path": "snapshots/2026-10-07/ca34a642dd2516e024695e2a6b19f78ceb0e3c556b583b04841bfda7b93bc46c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1677,
     "title": "Dare County to remove all automated license plate recognition cameras from unincorporated areas",
     "url": "https://www.publicradioeast.org/2026-09-03/dare-county-to-remove-all-automated-license-plate-recognition-cameras-from-unincorporated-areas"
   },
@@ -7819,12 +7867,15 @@
     "url": "https://www.voicenews.com/2023/09/29/license-plate-readers-an-invaluable-tool-for-chesterfield-township-police/"
   },
   "https://waltontribune.com/news/three-gwinnett-pd-officers-fired-and-charged-in-connection-with-alleged-misuse-of-flock-cameras/article_d6092fd8-3247-5b13-b502-e06aac47a87c.html": {
-    "content_hash": "55b349e8da81b0ff2a4fa8aec0fc1111e588711e2646251ed83d7f70c4425abb",
+    "archive": "6b0380c925d3ea0e49a01e8df26451b0a95728fe3d6cc14982772eb89653773c.txt",
+    "content_hash": "656a45b2b69af5cccb7b473e838f91360297e1cf7dd6e83c7ac6a3fe9a680c9c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.waltontribune.com/news/three-gwinnett-pd-officers-fired-and-charged-in-connection-with-alleged-misuse-of-flock-cameras/article_d6092fd8-3247-5b13-b502-e06aac47a87c.html",
-    "simhash": "9b97e361b7c21b5b",
-    "text_len": 6134,
+    "simhash": "8b97e3c1a7c21b5b",
+    "snapshot_path": "snapshots/2026-10-07/42811cdb05a928449af7abcf80264c13c61403b5769b959328dbf0e0b9f92eda.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6052,
     "title": "Three Gwinnett PD officers fired and charged in connection with alleged misuse of Flock cameras | News | waltontribune.com",
     "url": "https://www.waltontribune.com/news/three-gwinnett-pd-officers-fired-and-charged-in-connection-with-alleged-misuse-of-flock-cameras/article_d6092fd8-3247-5b13-b502-e06aac47a87c.html"
   },
@@ -7868,12 +7919,15 @@
     "url": "https://www.wamc.org/news/2026-09-29/newburgh-city-council-votes-to-end-flock-contract"
   },
   "https://washingtonexaminer.com/policy/technology/4672621/flock-controversial-camera-contracts-canceled-23-states": {
-    "content_hash": "7c7590b6482fa1d1983e018d2a38127383f5c063b4fca2a9b8edd7abf1eaa917",
+    "archive": "51e44f3aae26b60d79e06f88dd8abff0c1861b36a4ab07b48accf963b04df0e4.txt",
+    "content_hash": "2aa80a6fa6da57c89ff0b09c558e237f8a6fecbc576faaf0a9295144b1503b8f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.washingtonexaminer.com/policy/technology/4672621/flock-controversial-camera-contracts-canceled-23-states/",
-    "simhash": "41804120283982e1",
-    "text_len": 3231,
+    "simhash": "2219d3613d67c2d1",
+    "snapshot_path": "snapshots/2026-10-07/2220dcdd9324681d4201eb3d24456d265db076405050bfbbc35965932fd7438c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1025,
     "title": "Flock sees controversial camera contracts canceled in 23 states",
     "url": "https://www.washingtonexaminer.com/policy/technology/4672621/flock-controversial-camera-contracts-canceled-23-states/"
   },
@@ -8040,11 +8094,14 @@
     "url": "https://www.whitecountycitizen.com/news/searcy-city-council-starts-process-of-ending-citys-flock-camera-contracts/article_42916c74-34b5-537f-96d8-300b866aab0b.html"
   },
   "https://whro.org/virginia-center-for-investigative-journalism/2026-08-14/flock-surveillance-spreads-virginia-communities-push-back": {
+    "archive": "93f6ff49280312558c8513547629bac623b8eb8fb2946d81307e4a63fabb90ef.txt",
     "content_hash": "b155f9fb4b55cde51374ab748445714270fd9f920c350ae06288900049c13a3b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.whro.org/virginia-center-for-investigative-journalism/2026-08-14/flock-surveillance-spreads-virginia-communities-push-back",
     "simhash": "42e6d6ed86967e91",
+    "snapshot_path": "snapshots/2026-10-07/834e656ad5de756168786e0eabf539d6949c50c9fe84a357e9af7d5fd595aead.json",
+    "snapshot_status": "uploaded",
     "text_len": 13450,
     "title": "As Flock surveillance spreads, Virginia communities push back",
     "url": "https://www.whro.org/virginia-center-for-investigative-journalism/2026-08-14/flock-surveillance-spreads-virginia-communities-push-back"
@@ -8102,11 +8159,14 @@
     "url": "https://wichitaks.granicus.com/services/legistar/download/pdf/2912126/Agenda_Report_VI-7.pdf"
   },
   "https://wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there": {
+    "archive": "91551e6d3f410e5a4de7fed534d81fd18d77162d92d5844bcbb3f70dd8e5c289.txt",
     "content_hash": "933ec79a986825b616324fd75d5df0ad880440c5f590451f668f1ec9006b76ab",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-07",
     "final_url": "https://www.wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there",
     "simhash": "c66feb94df17ce9f",
+    "snapshot_path": "snapshots/2026-10-07/873448eecf3734b040098a4de1d7337d1c7fefc1ca8b970680d3ceae0cba8cb3.json",
+    "snapshot_status": "uploaded",
     "text_len": 8934,
     "title": "Asheville voted to tear out its Flock cameras. Here's the pushback that got it there. | WNCW",
     "url": "https://www.wncw.org/podcast/more-to-the-story/2026-08-28/asheville-voted-to-tear-out-its-flock-cameras-heres-the-pushback-that-got-it-there"
