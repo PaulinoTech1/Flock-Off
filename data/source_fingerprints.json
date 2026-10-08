@@ -303,12 +303,15 @@
     "url": "https://albanyrecordsproject.com/articles/albany-council-cancels-flock-contract"
   },
   "https://alpolitics.com/": {
-    "content_hash": "6dad2f64bc176d16ceb88d1b464aa2ee6cfe9517f613ec83c83615a7c4f2fb3c",
+    "archive": "51c3c29cce0a794ca011e45d3714783ce2bf35299c716fefad23f3d591a02ef9.txt",
+    "content_hash": "0514ec5213d7cac3a98e8ae70877d0de7c653a4bad294d6a4f1026e42816b531",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://alpolitics.com/",
-    "simhash": "79e13aa71a914756",
-    "text_len": 2411,
+    "simhash": "c2599d087510830e",
+    "snapshot_path": "snapshots/2026-10-08/80e99e470e83f19bef2644837ebaf271f868ba09df550806bfd02c82d4e6e51c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2476,
     "title": "Alabama Politics - Alabama Political News and Events",
     "url": "https://alpolitics.com/"
   },
@@ -694,12 +697,15 @@
     "url": "https://azcir.org/news/2025/11/14/did-university-of-arizona-spend-over-800000-on-surveillance-cameras-accessible-by-federal-law-enforcement-yes/"
   },
   "https://azfreenews.com/2025/09/sedona-council-terminates-license-plate-reader-program": {
-    "content_hash": "260c36b9a7eea4fbad7f2bcd39c4b7a597df5d9e28c53507540ba9ea36ed00b4",
+    "archive": "9b12d3cabe5f023cdee29cc7915c6eb58b73b0f84225980e212780d6fb79d444.txt",
+    "content_hash": "57d79ab525ca5525d579cd54b08839cedba4a17138d976ce858a42e8e54eb31b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://azfreenews.com/2025/09/sedona-council-terminates-license-plate-reader-program/",
-    "simhash": "1e9ed46d08b05ba8",
-    "text_len": 625,
+    "simhash": "12188147e0ec8610",
+    "snapshot_path": "snapshots/2026-10-08/fca25bde6689ccb9ffec41a4f851a231bf80b0f0d51a16a798223181c077710c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 652,
     "title": "Sedona Council Terminates License Plate Reader Program - AZ FREE NEWS",
     "url": "https://azfreenews.com/2025/09/sedona-council-terminates-license-plate-reader-program/"
   },
@@ -3196,12 +3202,15 @@
     "url": "https://go.boarddocs.com/md/tofhmd/Board.nsf/files/DEWLR757C3C8/$file/Town Council Staff Report-GOCCP-Flock.pdf"
   },
   "https://gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891": {
-    "content_hash": "dd543c27360c5a7652f0e43c4bb80837162b88b4e089dd0d9450166c1932abd9",
+    "archive": "fc7e6ed388ac45918258e1c3c84469f892765f971c94f2a8cee6cd668e6a16ed.txt",
+    "content_hash": "b52924438553352033ed9cc1bd7a931054bf5c1eff0b3577cf85d0389e065cd7",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891",
-    "simhash": "7b4f90c6b1e184a9",
-    "text_len": 6157,
+    "simhash": "7b4f90c6b1a094a9",
+    "snapshot_path": "snapshots/2026-10-08/cabeddaaf2512ac1bd2525276fff0070b9d11f117fb69d6571a098d2baf92792.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6188,
     "title": "De Pere to end use of ALPRs, Green Bay to continue with updated policy - Press Times",
     "url": "https://www.gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891"
   },
@@ -3410,11 +3419,14 @@
     "url": "https://www.govtech.com/public-safety/kenner-la-to-more-than-double-license-plate-reader-network"
   },
   "https://govtech.com/public-safety/license-plate-readers-help-police-in-alabama-cities-solve-crimes": {
+    "archive": "36b2bf8af3d7ba75ba65ad13e8e553ed677839ec7ff8a73897ffda0528a4b00b.txt",
     "content_hash": "35374884492943aeac22ee054febb6a9543de89a9377f78f8c3750622ee43642",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/license-plate-readers-help-police-in-alabama-cities-solve-crimes",
     "simhash": "5ca2c1b8254d1ecf",
+    "snapshot_path": "snapshots/2026-10-08/ce447c8d6354018e834a8696806380ee934ea2f9c1a5ed8eb0e5e4491111d80d.json",
+    "snapshot_status": "uploaded",
     "text_len": 6199,
     "title": "License Plate Readers Help Police in Alabama Cities Solve Crimes",
     "url": "https://www.govtech.com/public-safety/license-plate-readers-help-police-in-alabama-cities-solve-crimes"
@@ -3479,11 +3491,14 @@
     "url": "https://www.govtech.com/public-safety/st-paul-minn-council-will-not-expand-police-drone-program"
   },
   "https://govtech.com/public-safety/with-9-7m-pact-birmingham-ala-adds-100-security-cameras": {
+    "archive": "d97f76e2633aef9e2f78448abcbd42dce808849d108650f40607e2516b5df7e2.txt",
     "content_hash": "27a34407e37fb0dd8cd43c67c9c1328f3a060f32e5a69e6419cddc2180d9bf8a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/with-9-7m-pact-birmingham-ala-adds-100-security-cameras",
     "simhash": "81e7fcda21ad0d47",
+    "snapshot_path": "snapshots/2026-10-08/4a610a1a2a516b67bfe3e4a0c276f0bac720faa1134ba4d66072520c93b0b0a7.json",
+    "snapshot_status": "uploaded",
     "text_len": 3876,
     "title": "With $9.7M Pact, Birmingham, Ala., Adds 100 Security Cameras",
     "url": "https://www.govtech.com/public-safety/with-9-7m-pact-birmingham-ala-adds-100-security-cameras"
@@ -3539,11 +3554,14 @@
     "url": "https://gray-kctv-prod.gtv-cdn.com/2026/09/11/parkville-look-implementing-policies-flock-cameras-residents-voice-concerns/"
   },
   "https://gray-kolo-prod.gtv-cdn.com/2026/08/28/we-needed-get-rid-these-city-turns-off-flock-cameras-cites-misuse-concerns": {
+    "archive": "dbdec1a8dcc87bda24404f08a65de38dbd321d8a68aae993631848f2c23364a1.txt",
     "content_hash": "b74927f653820ce361c482e359673cc6be5f3bf6037a3d1937bb9f7dd5d79f55",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-kolo-prod.gtv-cdn.com/2026/08/28/we-needed-get-rid-these-city-turns-off-flock-cameras-cites-misuse-concerns/",
     "simhash": "a9db8fbb1e2f255f",
+    "snapshot_path": "snapshots/2026-10-08/7b601ab4fb440a9184b2bf79ba17d9bfb4b344907503e7aef421d1dee80627ad.json",
+    "snapshot_status": "uploaded",
     "text_len": 3578,
     "title": "‘We needed to get rid of these’: City turns off Flock cameras, cites misuse concerns",
     "url": "https://gray-kolo-prod.gtv-cdn.com/2026/08/28/we-needed-get-rid-these-city-turns-off-flock-cameras-cites-misuse-concerns/"
@@ -3579,41 +3597,53 @@
     "url": "https://gray-wafb-prod.gtv-cdn.com/2026/08/19/jefferson-parish-deputy-fired-misusing-flock-camera-track-ex-fiancees-vehicle-lopinto-says/"
   },
   "https://gray-waff-prod.gtv-cdn.com/2026/07/31/decatur-residents-push-back-against-flock-cameras": {
+    "archive": "aa213ec63cf6e36e8adf89febb51bb75e165994d002b0b68f36013faad6a176b.txt",
     "content_hash": "05b73e52b3abd97f882af8f4f438a865e45070a38809d4fb991b5e9f32933ab5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-waff-prod.gtv-cdn.com/2026/07/31/decatur-residents-push-back-against-flock-cameras/",
     "simhash": "f9a856e1ff8f3e88",
+    "snapshot_path": "snapshots/2026-10-08/57c66e385cf27641450386087938b3f2afe8bb17432ecc773f8ca8be987b46bf.json",
+    "snapshot_status": "uploaded",
     "text_len": 2774,
     "title": "Decatur residents push back against Flock cameras",
     "url": "https://gray-waff-prod.gtv-cdn.com/2026/07/31/decatur-residents-push-back-against-flock-cameras/"
   },
   "https://gray-waff-prod.gtv-cdn.com/2026/08/27/huntsville-police-detail-privacy-safeguards-flock-cameras": {
+    "archive": "0ca59a89bfb8b952efe76fdcdb217546817cde103ff49ac8010832c5fa4879ee.txt",
     "content_hash": "8bcf2a96f8d958f34e32d8ac6d3e7570a3dad42ec9dfde6c29429760fc53e01b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-waff-prod.gtv-cdn.com/2026/08/27/huntsville-police-detail-privacy-safeguards-flock-cameras/",
     "simhash": "0936c4f37ec1eb69",
+    "snapshot_path": "snapshots/2026-10-08/755a007035669b0ac49f7b48942122cda6f7d798071a8322d70ad334f50230db.json",
+    "snapshot_status": "uploaded",
     "text_len": 1156,
     "title": "Huntsville police detail privacy safeguards for Flock cameras",
     "url": "https://gray-waff-prod.gtv-cdn.com/2026/08/27/huntsville-police-detail-privacy-safeguards-flock-cameras/"
   },
   "https://gray-waff-prod.gtv-cdn.com/2026/09/15/decatur-officer-reassigned-under-investigation-license-plate-reader-misuse": {
+    "archive": "eb65a4d64201feb62c4a511b9f5e7e2fc62b03240e18634f0c1711ace930c7b0.txt",
     "content_hash": "72db7b1651a63f1e542ebcaa02102a59e0070ae408c7cf9ce8b41f386bff292e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-waff-prod.gtv-cdn.com/2026/09/15/decatur-officer-reassigned-under-investigation-license-plate-reader-misuse/",
     "simhash": "8566d9b7484bb592",
+    "snapshot_path": "snapshots/2026-10-08/c0b4b283dd1b066da21c08b2d0b4df9197b325187818c26bc7b0835acb37db92.json",
+    "snapshot_status": "uploaded",
     "text_len": 2286,
     "title": "Decatur police officer under investigation for alleged misuse of Flock safety cameras",
     "url": "https://gray-waff-prod.gtv-cdn.com/2026/09/15/decatur-officer-reassigned-under-investigation-license-plate-reader-misuse/"
   },
   "https://gray-waff-prod.gtv-cdn.com/2026/09/16/huntsville-flock-camera-forum-put-access-oversight-questions-before-police": {
+    "archive": "66252095739ba2fcbc3fa80921b960ab214a26cace6ebaac7e5eb232248d9619.txt",
     "content_hash": "fb40c87a117db4ecc449cd0f006c97aef4a04d4fbb99cdcb9c846e9967f8c8a5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-waff-prod.gtv-cdn.com/2026/09/16/huntsville-flock-camera-forum-put-access-oversight-questions-before-police/",
     "simhash": "4272eb2fe89d2b82",
+    "snapshot_path": "snapshots/2026-10-08/86d018091e808387a371303ef29ea25c46624c75bff14ad96a3a062b50ca53ee.json",
+    "snapshot_status": "uploaded",
     "text_len": 2602,
     "title": "Huntsville Flock camera forum to put access, oversight questions before police",
     "url": "https://gray-waff-prod.gtv-cdn.com/2026/09/16/huntsville-flock-camera-forum-put-access-oversight-questions-before-police/"
@@ -4231,21 +4261,27 @@
     "url": "https://www.johnsoncitytn.org/services/police/safe_city_project/index.php"
   },
   "https://journalaz.com/2026/08/14/cottonwood-residents-fight-flock-cameras": {
+    "archive": "b955a4ebbc8eb07697c4f9623b6562b1f85d017d6c23218adcb390a4f7406a9f.txt",
     "content_hash": "f57bb52f0f068ee39355644ee2386e38a01dafb8908a09e953a6a617dfcaca73",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://journalaz.com/2026/08/14/cottonwood-residents-fight-flock-cameras/",
     "simhash": "51bb6931d7531196",
+    "snapshot_path": "snapshots/2026-10-08/2566796f56e3486f53d5e6e59c87b78c4b07de0f8fda27c5a991487f4ce0d808.json",
+    "snapshot_status": "uploaded",
     "text_len": 6652,
     "title": "Cottonwood residents fight Flock cameras - Journalaz.com",
     "url": "https://journalaz.com/2026/08/14/cottonwood-residents-fight-flock-cameras/"
   },
   "https://journalaz.com/2026/09/03/594-agencies-run-3-8m-searches-of-prescott-pds-alprs-half-without-case-number": {
+    "archive": "5a730884384c9a4ea317849bab3f1861abf125fcc415d32d9b0c509f2a3856a9.txt",
     "content_hash": "ea99fbf2a5b79b4330bfdc846e4952de53b732c173bcdd792e6d623a175abaed",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://journalaz.com/2026/09/03/594-agencies-run-3-8m-searches-of-prescott-pds-alprs-half-without-case-number/",
     "simhash": "3d4e91ac05ca7cc0",
+    "snapshot_path": "snapshots/2026-10-08/9ad9a240f5b16d23fda780c61396f4d6f04c41a7af89de8d0c8ee6dd1c37cc84.json",
+    "snapshot_status": "uploaded",
     "text_len": 8342,
     "title": "594 agencies run 3.8M searches of Prescott PD's ALPRs, half without case number - Journalaz.com",
     "url": "https://journalaz.com/2026/09/03/594-agencies-run-3-8m-searches-of-prescott-pds-alprs-half-without-case-number/"
@@ -4405,11 +4441,14 @@
     "url": "https://kentuckylantern.com/2026/09/03/warrants-for-flock-searches-kentucky-lawmakers-may-add-more-rules-for-public-cameras/"
   },
   "https://kentuckylantern.com/2026/09/24/repub/flock-surveillance-cameras-raise-constitutional-questions-bipartisan-us-senators-say": {
+    "archive": "0bdc3f6b3fa7678e8982e0c7cc30f951a58ce71d9f10b89850258b8220117d0f.txt",
     "content_hash": "65805a999ef2785ded467c4981da2f68abb8bf6fd23a6146ba033f40e224a7f5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://kentuckylantern.com/2026/09/24/repub/flock-surveillance-cameras-raise-constitutional-questions-bipartisan-us-senators-say/",
     "simhash": "2e46c94e5ad20595",
+    "snapshot_path": "snapshots/2026-10-08/33084dc18de9a7737090043303453a26a94204f713fbd5ceaa32e07246b7abd3.json",
+    "snapshot_status": "uploaded",
     "text_len": 5945,
     "title": "Flock surveillance cameras raise constitutional questions, bipartisan US senators say • Kentucky Lantern",
     "url": "https://kentuckylantern.com/2026/09/24/repub/flock-surveillance-cameras-raise-constitutional-questions-bipartisan-us-senators-say/"
@@ -5030,11 +5069,14 @@
     "url": "https://lvdsa.org/2026/04/13/get-the-flock-off-the-block/"
   },
   "https://mailchi.mp/tempe/tempe-turns-off-flock-license-plate-reader-system-ends-program": {
+    "archive": "99892cb798fed015f25a68cb77de3ac73fa91f10fcfb1009573970d55b617ed4.txt",
     "content_hash": "4d0861216ba680e36ae17d001f5ab8df6437f7a8db6843bd832e6e77ab43127d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://mailchi.mp/tempe/tempe-turns-off-flock-license-plate-reader-system-ends-program",
     "simhash": "63060fff7e39290c",
+    "snapshot_path": "snapshots/2026-10-08/77b5496c6b0b20110048211519ff6881979e84442d449133e34d535edf8a02ae.json",
+    "snapshot_status": "uploaded",
     "text_len": 5529,
     "title": "Tempe turns off Flock license plate reader system, ends program",
     "url": "https://mailchi.mp/tempe/tempe-turns-off-flock-license-plate-reader-system-ends-program"
@@ -5856,11 +5898,14 @@
     "url": "https://www.phillyvoice.com/flock-cameras-philadelphia-pennsylvania-lawmakers/"
   },
   "https://pinaltoday.com/sheriff-ross-teeple-testifies-before-senate-subcommittee-on-flock-camera-technology": {
+    "archive": "1c16cd9ac8833c081175af03f582e3d49af5d4b17dbd47613393921e246b8b41.txt",
     "content_hash": "e787afa1dac18267257bb2e4543d51f07d80282e67c7787436eb2242c11a6a52",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://pinaltoday.com/sheriff-ross-teeple-testifies-before-senate-subcommittee-on-flock-camera-technology",
     "simhash": "1a20f93a1bf99783",
+    "snapshot_path": "snapshots/2026-10-08/a834273ed38b4f8891b3d70c2b10141d9724813b412e0bbc440e569204f38b1f.json",
+    "snapshot_status": "uploaded",
     "text_len": 1807,
     "title": "Sheriff Ross Teeple testifies before Senate subcommittee on Flock camera technology - Pinal Today",
     "url": "https://pinaltoday.com/sheriff-ross-teeple-testifies-before-senate-subcommittee-on-flock-camera-technology"
@@ -6727,12 +6772,15 @@
     "url": "http://www.scottsbluff.org/departments/police/alpr_-_automatic_license_plate_readers.php"
   },
   "https://scottsdale.org/city_news/scottsdale-keeps-cameras-on-despite-flock-fury/article_9670e344-0d7a-47fb-b7a8-d9f51747d359.html": {
-    "content_hash": "263eff9f15356f5d18ea4fabfb5027db0953f7050210f451518a8a1599282c76",
+    "archive": "59b3e5096930b1c41c0f4af2dd4fb33ab759f8c8994f5f4785ce5b9aff2ccdc8.txt",
+    "content_hash": "9d681259e2a7af98cc4a0b3f7f654386bcc75954f38993f4188219d64928826d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.scottsdale.org/city_news/scottsdale-keeps-cameras-on-despite-flock-fury/article_9670e344-0d7a-47fb-b7a8-d9f51747d359.html",
-    "simhash": "bf146a47cb71234a",
-    "text_len": 13770,
+    "simhash": "bf106a46cb31234a",
+    "snapshot_path": "snapshots/2026-10-08/c437177a78a5eec9a685d9621d6df0aabe60d5ce501c79eb542c0a089a0c9ad9.json",
+    "snapshot_status": "uploaded",
+    "text_len": 13788,
     "title": "Scottsdale keeps cameras on despite 'Flock fury' | City News | scottsdale.org",
     "url": "https://www.scottsdale.org/city_news/scottsdale-keeps-cameras-on-despite-flock-fury/article_9670e344-0d7a-47fb-b7a8-d9f51747d359.html"
   },
@@ -6777,11 +6825,14 @@
     "url": "https://securitytoday.com/articles/2021/03/16/high-tech-cameras-agree-with-fort-worth.aspx?admgarea=ht.government"
   },
   "https://sedonapete.com/2025/09/10/sedona-city-council-tells-staff-to-get-flock-out-of-town": {
+    "archive": "f040bc42931d07a7a0dc5424ca2bc94f95b4236d69ba1a79bc29d931a9f44871.txt",
     "content_hash": "a56c06ffcf304e5e245f90ddfae2aa596291ae5c769955e7475933516208c431",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://sedonapete.com/2025/09/10/sedona-city-council-tells-staff-to-get-flock-out-of-town/",
     "simhash": "a3564cc62e05aed8",
+    "snapshot_path": "snapshots/2026-10-08/8e00caa41eca97d1989e75c8d7994c868727f6100cfab858c3b2dc7c2315e76a.json",
+    "snapshot_status": "uploaded",
     "text_len": 9183,
     "title": "Sedona City Council tells staff to get Flock out of town | Sedona City Councilmember Pete Furman Email Facebook Instagram LinkedIn YouTube",
     "url": "https://sedonapete.com/2025/09/10/sedona-city-council-tells-staff-to-get-flock-out-of-town/"
@@ -7240,11 +7291,14 @@
     "url": "https://thebatt.com/news/college-station-city-council-to-vote-on-400000-flock-safety-contract/"
   },
   "https://thebeatofthecapital.com/2021/10/26/ridgeland-adds-12-license-plate-reader-cameras": {
+    "archive": "acd8112b1100dc4598524b01823e19767e108c819f5bc54a07bf33cf58c12abc.txt",
     "content_hash": "ec717db972c982a36f1a35e74f10fead23405b632a36aeaed24b0eba3fe143fa",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://thebeatofthecapital.com/2021/10/26/ridgeland-adds-12-license-plate-reader-cameras/",
     "simhash": "6267ccaaa795fa57",
+    "snapshot_path": "snapshots/2026-10-08/d5b4c87b5a23ee404c089b64c18845f78c298fce427d4611f78997a8d1e19690.json",
+    "snapshot_status": "uploaded",
     "text_len": 834,
     "title": "Ridgeland adds 12 license plate reader cameras | 97.7 The Beat of The Capital",
     "url": "https://thebeatofthecapital.com/2021/10/26/ridgeland-adds-12-license-plate-reader-cameras/"
@@ -7290,12 +7344,15 @@
     "url": "https://www.thecooldown.com/green-tech/anoka-county-sheriff-flock-deal-backlash/"
   },
   "https://thecooldown.com/green-tech/arizona-sheriff-ends-flock-camera-contract": {
-    "content_hash": "1f2036f3f70660b8c7ca5296bb9e064c8899383dcc67f0174e4b64564c4aad71",
+    "archive": "f997504e7292c5243c5f124595c68824e6e3858d320a9da2db13c26615b1af49.txt",
+    "content_hash": "95d979680ae09ee9e41516d9e1612a183be1ed84d36ef81654d870d8b1205e28",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.thecooldown.com/green-tech/arizona-sheriff-ends-flock-camera-contract/",
-    "simhash": "e56eda3681ea56bd",
-    "text_len": 3191,
+    "simhash": "e57e5ab6a5ea56bd",
+    "snapshot_path": "snapshots/2026-10-08/bdacc751ce6809a37c444fd16c2665f9c6ec39b7d8dc38de9fc8b9d64315aa21.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3181,
     "title": "Arizona sheriff ends Flock camera contract, warns of 'AI-driven surveillance state'",
     "url": "https://www.thecooldown.com/green-tech/arizona-sheriff-ends-flock-camera-contract/"
   },
@@ -8573,12 +8630,15 @@
     "url": "https://wvpress.org/breaking-news/license-to-track-lawmakers-question-flock-safety-over-data-security-and-privacy-concerns/"
   },
   "https://wvpress.org/breaking-news/marion-county-sheriffs-office-dispels-myths-about-flock-cameras": {
-    "content_hash": "08232b12fb4e503653314488bc7fd60293ae78408ff5442cd87984687d800a00",
+    "archive": "18026c3d47df14a85796d1c2e7e2b1f4bc071dff47532b6ae2310b5efc2cc432.txt",
+    "content_hash": "b1c3773b54b10cfee71f7df6b46085fd38555c5d88065ec45ef246d38f70ccd5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://wvpress.org/breaking-news/marion-county-sheriffs-office-dispels-myths-about-flock-cameras/",
-    "simhash": "bf70173895bf9e2e",
-    "text_len": 6846,
+    "simhash": "bff817385fbc5e2e",
+    "snapshot_path": "snapshots/2026-10-08/af4a8152932e839cd63a374422bced5131fe2b1eccc41ed70b69119d6544bd9d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6779,
     "title": "Marion County Sheriff's Office dispels myths about Flock cameras - West Virginia Press Association",
     "url": "https://wvpress.org/breaking-news/marion-county-sheriffs-office-dispels-myths-about-flock-cameras/"
   },
