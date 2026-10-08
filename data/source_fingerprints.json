@@ -1007,12 +1007,15 @@
     "url": "https://brightgram.com/wichita-ks/10511520/flock-cameras-vandalized-in-derby-police-investigating/"
   },
   "https://brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime": {
-    "content_hash": "fdb8fd59c9f8d2153d17857d66d08f6b1e7a9efff4b787d2d99551603ad45af6",
+    "archive": "11c37c000127089a0322d051c599fc2370528e7584c2bbd4af3f15bd9977b8da.txt",
+    "content_hash": "61933860c8af0495421c8b52c24b0d0549d9d23f664657c39a4334f4a0073e0d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime/",
-    "simhash": "263a7060f466b471",
-    "text_len": 8760,
+    "simhash": "247a60c0f426b671",
+    "snapshot_path": "snapshots/2026-10-08/7c836367668c8258918b2bbff9a8e2ff283ca500f271e57eccb86a9db5eceae6.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8741,
     "title": "Washington cities spend millions on Flock cameras. Do they solve crime? – Brushwood Media Network",
     "url": "https://www.brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime/"
   },
@@ -1807,11 +1810,14 @@
     "url": "https://cmg-cmg-tv-10070-prod.cdn.arcpublishing.com/news/local/fdot-orders-license-plate-reading-cameras-removed-state-rights-of-way-halts-new-permits/XBT4JV2XJBCMVCPATCMBUWEU3A/"
   },
   "https://cmg-cmg-tv-10090-prod.cdn.arcpublishing.com/news/local/stanwood-reactivates-flock-cameras-spokane-county-joins-pierce-county-shutting-them-down/A7O7L5NXUNGYBJILWMIBGXOGSY": {
+    "archive": "400121400010154655a6366b1d381da60f2ac7c23d2d854b4d609065ffb2b0f6.txt",
     "content_hash": "5cd0519f5e13ba22320c6cb2a2fd91ae43a9d9828dd843b94304699dd9b09429",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://cmg-cmg-tv-10090-prod.cdn.arcpublishing.com/news/local/stanwood-reactivates-flock-cameras-spokane-county-joins-pierce-county-shutting-them-down/A7O7L5NXUNGYBJILWMIBGXOGSY/",
     "simhash": "27e95e6cd814fbd7",
+    "snapshot_path": "snapshots/2026-10-08/6272582f9ba5e0b72cc9a6bfdce803f798510d8dee21b6c66a9f20fca5fdc7f6.json",
+    "snapshot_status": "uploaded",
     "text_len": 5137,
     "title": "Stanwood reactivates Flock cameras as Spokane County joins Pierce County in shutting them down – KIRO 7 News Seattle",
     "url": "http://cmg-cmg-tv-10090-prod.cdn.arcpublishing.com/news/local/stanwood-reactivates-flock-cameras-spokane-county-joins-pierce-county-shutting-them-down/A7O7L5NXUNGYBJILWMIBGXOGSY/"
@@ -3249,11 +3255,14 @@
     "url": "https://fresnoland.org/newsletter/now-fresnos-real-transportation-fight-begins/"
   },
   "https://geekwire.com/2025/washington-state-cities-turn-off-license-plate-reader-cameras-amid-ruling-on-data-access": {
+    "archive": "5eaf49680ee2f8d3150d1bd94d30a00312b9c156da91a6178637a419b63f709d.txt",
     "content_hash": "d8860226688839e8316ce90ea226e8b42f7483799ce1ef76306521ef7daad68f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.geekwire.com/2025/washington-state-cities-turn-off-license-plate-reader-cameras-amid-ruling-on-data-access/",
     "simhash": "68f58d12dc4fee6a",
+    "snapshot_path": "snapshots/2026-10-08/e14cc5ffd95f6c6c8776cf589f0e2d946cc28984728397ed713878accc3fa7e6.json",
+    "snapshot_status": "uploaded",
     "text_len": 3931,
     "title": "Washington state cities turn off license plate reader cameras amid ruling on data access – GeekWire",
     "url": "https://www.geekwire.com/2025/washington-state-cities-turn-off-license-plate-reader-cameras-amid-ruling-on-data-access/"
@@ -4198,12 +4207,15 @@
     "url": "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois/"
   },
   "https://investigatewest.org/federal-aid-is-supercharging-local-wa-police-surveillance-tech": {
-    "content_hash": "47ce8c83842b8f3e18e6f406f59844c0c2a424bcd39b284957b02a4516625e54",
+    "archive": "70a6fdf33247acfb518d2ec2efe5948bb0ea35c22b3b1b98a82596ee8023b34a.txt",
+    "content_hash": "3b8f1beecd5d96d5b6357950d3c0af0a8f17951da6473dbe9e84a27a01167907",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.investigatewest.org/federal-aid-is-supercharging-local-wa-police-surveillance-tech/",
-    "simhash": "58e39adc0158d5af",
-    "text_len": 27266,
+    "simhash": "5ab3bad8017ed5af",
+    "snapshot_path": "snapshots/2026-10-08/5aae8814558179c91cbc0f8a17f02d5b98329455387c86ee3f8264036ee84bd5.json",
+    "snapshot_status": "uploaded",
+    "text_len": 26105,
     "title": "Federal aid is supercharging local WA police surveillance tech",
     "url": "https://www.investigatewest.org/federal-aid-is-supercharging-local-wa-police-surveillance-tech/"
   },
@@ -4329,12 +4341,15 @@
     "url": "https://irishrover.net/2026/09/flock-cameras-in-south-bend/"
   },
   "https://issaquahreporter.com/2026/08/28/damages-done-to-covington-police-flock-cameras-over-2-months": {
-    "content_hash": "eddb69f3992551d52494950bd6dea4c7e9fdd5a28f6090c383f76b811ac6280a",
+    "archive": "548b979472eeda3715586acc0f3e3e8ff09e9adeebbdb4e76ff850bddac0a3f0.txt",
+    "content_hash": "7fd6425836be494974247d564ae78c0d45cea4aefc974fe156180632855b0404",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.issaquahreporter.com/2026/08/28/damages-done-to-covington-police-flock-cameras-over-2-months/",
-    "simhash": "a620c4dd0aadd785",
-    "text_len": 6655,
+    "simhash": "a400c4dd1a2dd587",
+    "snapshot_path": "snapshots/2026-10-08/846768eb50198e5c847c008676c2121ae489fba5016a3d1c22ce4e185078593c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6670,
     "title": "Damages done to Covington Police Flock cameras over 2 months | Issaquah Reporter",
     "url": "https://www.issaquahreporter.com/2026/08/28/damages-done-to-covington-police-flock-cameras-over-2-months/"
   },
@@ -4505,21 +4520,27 @@
     "url": "https://journalaz.com/2026/09/18/4335-searches-in-cpd-shuts-off-and-bags-flock/"
   },
   "https://jsis.washington.edu/humanrights/2025/10/24/kent-police-change-access-to-flock-cameras-after-uw-report": {
+    "archive": "7a1d923917ad9ccdf8bac6069e17285480ed4d802b43be0f7d32fa081540a86d.txt",
     "content_hash": "20c3080c8da075851a3dd76b979b035ffb2e5c919741db25d10d5c3ef6179958",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://jsis.washington.edu/humanrights/2025/10/24/kent-police-change-access-to-flock-cameras-after-uw-report/",
     "simhash": "5ca7599209e8c21d",
+    "snapshot_path": "snapshots/2026-10-08/976e0b1fdd6520cbb79b0541647cdb0f00c48d2b6f26050a76b71dc21f60a17c.json",
+    "snapshot_status": "uploaded",
     "text_len": 856,
     "title": "Kent Police change access to Flock cameras after UW report - Center for Human Rights",
     "url": "https://jsis.washington.edu/humanrights/2025/10/24/kent-police-change-access-to-flock-cameras-after-uw-report/"
   },
   "https://jsis.washington.edu/humanrights/publication/9480": {
+    "archive": "a6688fd1b174fd5bc8cd853b9809ebe224f43b0a24ccfe58e844eb67efddcdfd.txt",
     "content_hash": "f5b2011b0a43cf9ecb6a0263cda4124a20a22e8fdf18ed65b6dff75d30b80c5c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://jsis.washington.edu/humanrights/publication/9480/",
     "simhash": "5eceb0435954427e",
+    "snapshot_path": "snapshots/2026-10-08/500351bca3164c26612876b8cbdbd8bdab069f85033bacf5ce5277f9d8a22f3a.json",
+    "snapshot_status": "uploaded",
     "text_len": 3372,
     "title": "Leaving the Door Wide Open: Flock Surveillance Systems Expose Washington Data to Immigration Enforcement - Center for Human Rights",
     "url": "https://jsis.washington.edu/humanrights/publication/9480/"
@@ -4766,11 +4787,14 @@
     "url": "https://www.kjluradio.com/newsroom/senator-josh-hawley-launching-investigation-into-flock-cameras/article_e6674592-628f-4230-8562-f922cb759cb5.html"
   },
   "https://knkx.org/2025-11-07/some-sanctuary-states-discover-feds-mining-local-license-plate-data": {
+    "archive": "1a00b445f5694a1bac026ad43bef2852fb3409a7557348bbf9f529b24e184e32.txt",
     "content_hash": "39b60fc4b96851e9735a88408c2d68c78af375bfa7e63a07faedcca39fb90b74",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.knkx.org/2025-11-07/some-sanctuary-states-discover-feds-mining-local-license-plate-data",
     "simhash": "c0ad7d954536a1cd",
+    "snapshot_path": "snapshots/2026-10-08/a3c0342dec35d9d216d04e4daf00d27ad18bdce40b148de0bdfd76d63258b57a.json",
+    "snapshot_status": "uploaded",
     "text_len": 6197,
     "title": "Some sanctuary states discover feds mining local license plate data | KNKX Public Radio",
     "url": "https://www.knkx.org/2025-11-07/some-sanctuary-states-discover-feds-mining-local-license-plate-data"
@@ -5474,11 +5498,14 @@
     "url": "https://www.military.com/communities-nationwide-tearing-down-flock-cameras-quietly-replacing-them-with-these-brands"
   },
   "https://millcreekwa.gov/topics/flock-safety-cameras": {
+    "archive": "c14edd7b4ddaaf7acc300f38af8f52e4e2e6790fd69e3c917578da1e60eb6990.txt",
     "content_hash": "70c6fba901dfe8b2ff7eec297e7cd4ed7914123998dd7b360d396bf8b862f467",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://millcreekwa.gov/topics/flock-safety-cameras",
     "simhash": "71cf485e3eee567d",
+    "snapshot_path": "snapshots/2026-10-08/ce1897d7f7de92b295a2b2e7ea7fdf153502007af7a6a17558fdf78b9281a0d2.json",
+    "snapshot_status": "uploaded",
     "text_len": 2739,
     "title": "Flock Safety Cameras | City of Mill Creek",
     "url": "https://millcreekwa.gov/topics/flock-safety-cameras"
@@ -6538,11 +6565,14 @@
     "url": "https://www.purdueexponent.org/city_state/police-chief-flock-camera-interview/article_70b9d1d8-49ad-47ff-b66c-f8912b83b6a6.html"
   },
   "https://q13fox.com/news/washington-expands-flock-camera-use": {
+    "archive": "36707dd99e8d62174858e6c5062ad4456e670dfe7393168d4280728bb4116dbc.txt",
     "content_hash": "d3dfe4acc499a3bc276c044e7ba162821c5ab74070d995c7bdc1d6a511594068",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox13seattle.com/news/washington-expands-flock-camera-use",
     "simhash": "1898cf3fd6d48a9b",
+    "snapshot_path": "snapshots/2026-10-08/9c1f53251b84a624c34fe0704bb60ceb7072d04a18203e4a40182fe777841278.json",
+    "snapshot_status": "uploaded",
     "text_len": 6196,
     "title": "WA law enforcement expands Flock camera use amid concerns | FOX 13 Seattle",
     "url": "https://q13fox.com/news/washington-expands-flock-camera-use"
@@ -8042,12 +8072,15 @@
     "url": "https://www.thesiuslawnews.com/news/council-votes-to-keep-flock-cameras/article_c8a3c463-cf09-4fa3-b468-85c32c116213.html"
   },
   "https://theurbanist.org/license-plate-readers-proliferate-in-washington-ice-overreach": {
-    "content_hash": "fd7e7e184a8f3350d6e556431c51cb8d54f1ace3a2d9208fa1ee643ed4aa5d57",
+    "archive": "b74b488df1704f2027d83c323183f1292433192fc391288cd4154b94547ab43c.txt",
+    "content_hash": "953eeb3c0ed98cc440e1687c730f913fa4313d4ae23177deb471d26269b69dc0",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.theurbanist.org/license-plate-readers-proliferate-in-washington-ice-overreach/",
-    "simhash": "5e681129394c0898",
-    "text_len": 1132,
+    "simhash": "5e2c808f6b5c0c41",
+    "snapshot_path": "snapshots/2026-10-08/1f5d855011c5c2e581078edefa41511d7c432dc712c394c2a1b659efe3735c7b.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1188,
     "title": "License Plate Readers Proliferate in Washington, Bringing Concerns over ICE Overreach » The Urbanist",
     "url": "https://www.theurbanist.org/license-plate-readers-proliferate-in-washington-ice-overreach/"
   },
