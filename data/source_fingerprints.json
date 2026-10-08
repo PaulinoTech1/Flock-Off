@@ -3867,11 +3867,14 @@
     "url": "https://gray-kolo-prod.gtv-cdn.com/2026/08/28/we-needed-get-rid-these-city-turns-off-flock-cameras-cites-misuse-concerns/"
   },
   "https://gray-kvvu-prod.gtv-cdn.com/2026/08/26/clark-county-school-district-police-chief-reviewing-use-flock-cameras": {
+    "archive": "08ac46f974135f2640c6ed198d9280f291a9fbebd55029a204e3a2cb586015b1.txt",
     "content_hash": "3e8f9166ee4e3eb24bc10eaaba9af15c6112872eb81811f1ec23c820884c7ff1",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-kvvu-prod.gtv-cdn.com/2026/08/26/clark-county-school-district-police-chief-reviewing-use-flock-cameras/",
     "simhash": "7449e8e3145edd5b",
+    "snapshot_path": "snapshots/2026-10-08/5f7f9b830770996f908a5f9b0fe46eff53379e371dfa69f94b235ec00906230b.json",
+    "snapshot_status": "uploaded",
     "text_len": 5038,
     "title": "Clark County School District Police Department reviewing Flock cameras",
     "url": "https://gray-kvvu-prod.gtv-cdn.com/2026/08/26/clark-county-school-district-police-chief-reviewing-use-flock-cameras/"
@@ -4313,11 +4316,14 @@
     "url": "https://insider.govtech.com/california/news/berkeley-delays-vote-on-2m-flock-safety-deal-after-public-backlash"
   },
   "https://insiderutah.com/articles/wayne-county-commission-feb-4-2025": {
+    "archive": "ff87f645906900abc703c3a7af1a551e2b9f9957774a17e2b4ce1a086e2933af.txt",
     "content_hash": "488bdd6c9cc94898550d5bbaaaa253536a08a099af8787499d79fd3b26549c87",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.insiderutah.com/articles/wayne-county-commission-feb-4-2025/",
     "simhash": "8ad31a9ecccd6950",
+    "snapshot_path": "snapshots/2026-10-08/2084fceb655febe987e44af951aa87fb38985482c89f9249457351b17416fb52.json",
+    "snapshot_status": "uploaded",
     "text_len": 5160,
     "title": "Wayne County Commission Feb. 4, 2025 - The Insider",
     "url": "https://www.insiderutah.com/articles/wayne-county-commission-feb-4-2025/"
@@ -6236,12 +6242,15 @@
     "url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/18/okc-council-renews-flock-safety-contract-in-contentious-meeting/91356272007/"
   },
   "https://omakchronicle.com/news/state/flock-cameras-cost-washington-taxpayers-millions-as-backlash-grows/article_88a9ba00-78ac-51be-8642-eed75a7e9f72.html": {
-    "content_hash": "dc99380070a69ef2d82b1c69da6ae2651023d9f9c7c8e165de3b6d586eb3bf70",
+    "archive": "e0bbba3511e700ba9e43631ee6113fce9f6831fbeaa69c7898fa4ecf81186d90.txt",
+    "content_hash": "f0a17675f55dfca8caa7081193e60514909baa95f0486f9cc85fabdc8377a134",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.omakchronicle.com/news/state/flock-cameras-cost-washington-taxpayers-millions-as-backlash-grows/article_88a9ba00-78ac-51be-8642-eed75a7e9f72.html",
-    "simhash": "9a1b44ade5638e0f",
-    "text_len": 7921,
+    "simhash": "c29b44bde6618d0f",
+    "snapshot_path": "snapshots/2026-10-08/521dc89dfa1a4bb6a6628de5f933cc4979c1804032bbcea13cb4be5b1d72551d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7737,
     "title": "Flock cameras cost Washington taxpayers millions as backlash grows | State | omakchronicle.com",
     "url": "https://www.omakchronicle.com/news/state/flock-cameras-cost-washington-taxpayers-millions-as-backlash-grows/article_88a9ba00-78ac-51be-8642-eed75a7e9f72.html"
   },
@@ -8821,11 +8830,14 @@
     "url": "https://www.usi.edu/news/releases/2024/01/vanderburgh-county-sheriff-s-office-to-install-three-flock-safety-cameras-on-usi-campus"
   },
   "https://utahn.com/your-license-plate-logged-where-flock-safety-stands-in-utah": {
+    "archive": "a34266a3c8816733bcf79c97c1bb3be0419291c784cae4ff21bef86544ba0a35.txt",
     "content_hash": "195af11f7190a84cf0faea4484a5921c015f9aac0b9ba09d4b10edc797160a1f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://utahn.com/your-license-plate-logged-where-flock-safety-stands-in-utah/",
     "simhash": "0df415976d56d8aa",
+    "snapshot_path": "snapshots/2026-10-08/8ba0ea4d79084191126c6f4d1643a27c3d085bd9fb0ef17eb85b64cdaef36555.json",
+    "snapshot_status": "uploaded",
     "text_len": 21123,
     "title": "Your License Plate, Logged: Where Flock Safety Stands in Utah",
     "url": "https://utahn.com/your-license-plate-logged-where-flock-safety-stands-in-utah/"
