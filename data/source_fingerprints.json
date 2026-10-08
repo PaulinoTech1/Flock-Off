@@ -2851,11 +2851,14 @@
     "url": "https://flatwaterfreepress.org/nebraska-law-enforcement-agencies-using-opioid-settlement-money-on-surveillance-technology-tools/"
   },
   "https://flockinghell.com/reports/idaho-falls-bans-flock-ai-training": {
+    "archive": "ddcabeac9ba329416524982994ce5651a119f0ae6e1dbbd7d227ec3445d88b90.txt",
     "content_hash": "8fae5b73e5449a6ebfbc4b4d1ebe88311b96e023b244fe016ac05121af12ebca",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://flockinghell.com/reports/idaho-falls-bans-flock-ai-training",
     "simhash": "96b8ccb11d171994",
+    "snapshot_path": "snapshots/2026-10-08/e14d50ed04ed8bb1c05ecc4528a8c85e3bcc11a7b18ca1328c8265028ec863ef.json",
+    "snapshot_status": "uploaded",
     "text_len": 4397,
     "title": "Idaho Falls, Idaho: Partial win | Flockinghell",
     "url": "https://flockinghell.com/reports/idaho-falls-bans-flock-ai-training"
@@ -3387,11 +3390,14 @@
     "url": "https://www.gov1.com/products/technology/n-y-city-seeks-300-100-grant-for-license-plate-reader-cameras"
   },
   "https://governing.com/management-and-administration/how-ai-cameras-and-drones-are-reshaping-local-policing": {
+    "archive": "8c860f76153a07045f7d6d3e4bfa303f4d262b5f08d5ac8afd789bc4806b9e9e.txt",
     "content_hash": "17854e1accc6fed0edc25bc0f377425110dd8d4bdfc69f28e4fcf83e7f20c076",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.governing.com/management-and-administration/how-ai-cameras-and-drones-are-reshaping-local-policing",
     "simhash": "9b65b7e39cff2af5",
+    "snapshot_path": "snapshots/2026-10-08/1ae3d839ac9fc3a4c7408f2bf7a407623af89e7d916ac094a4fa7663544efdaa.json",
+    "snapshot_status": "uploaded",
     "text_len": 11126,
     "title": "How AI, Cameras and Drones Are Reshaping Local Policing",
     "url": "https://www.governing.com/management-and-administration/how-ai-cameras-and-drones-are-reshaping-local-policing"
@@ -3501,11 +3507,14 @@
     "url": "https://www.govtech.com/public-safety/after-outcry-bay-city-mich-rejects-license-plate-readers"
   },
   "https://govtech.com/public-safety/cedar-rapids-iowa-deploys-70-new-license-plate-readers": {
+    "archive": "1ffc36af35a81480924f9138ccddbf56c917aaaebf1252ddb440bd67995de375.txt",
     "content_hash": "575bf6168c8aa262940834dbca88356f176b89b6467f4d5b0a9f5c5865dcd857",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/cedar-rapids-iowa-deploys-70-new-license-plate-readers",
     "simhash": "cc7b17fcb777078e",
+    "snapshot_path": "snapshots/2026-10-08/a18ff508b9f427b15308111ff2a7c3676074adea48b99e7bc05dbb82bb7187ff.json",
+    "snapshot_status": "uploaded",
     "text_len": 6753,
     "title": "Cedar Rapids, Iowa, Deploys 70 New License Plate Readers",
     "url": "https://www.govtech.com/public-safety/cedar-rapids-iowa-deploys-70-new-license-plate-readers"
@@ -3573,11 +3582,14 @@
     "url": "https://www.govtech.com/public-safety/grand-rapids-mich-residents-pack-meeting-over-flock-safety"
   },
   "https://govtech.com/public-safety/how-tech-is-transforming-police-work-in-idaho": {
+    "archive": "037f20cfd322fc03b9ecacfc661b09f72e18f4a03d387344d1dde32f0fcfe459.txt",
     "content_hash": "125a57899766e9263b0ee26bc45911bff53bf5c82f68ccdae553bae3bdd4f927",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/how-tech-is-transforming-police-work-in-idaho",
     "simhash": "9b65b4a3bc7468fd",
+    "snapshot_path": "snapshots/2026-10-08/ca4317bff0c81142433da93c903a06866d7ef37f4f0298aa594f0111f4e8fd59.json",
+    "snapshot_status": "uploaded",
     "text_len": 10351,
     "title": "How Tech Is Transforming Police Work in Idaho",
     "url": "https://www.govtech.com/public-safety/how-tech-is-transforming-police-work-in-idaho"
@@ -4235,11 +4247,14 @@
     "url": "https://www.investigatewest.org/federal-aid-is-supercharging-local-wa-police-surveillance-tech/"
   },
   "https://iowapublicradio.org/ipr-news/2025-09-12/flock-ai-surveillance-police-cameras-eastern-iowa": {
+    "archive": "1563baed2ec4de12ed41aa3f430015b643189544e6d8ab3c5ae0b92137eb33a8.txt",
     "content_hash": "c4bd177c912fdd8b1145122a13d1290f76f21329033742161eefbd373d15604d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.iowapublicradio.org/ipr-news/2025-09-12/flock-ai-surveillance-police-cameras-eastern-iowa",
     "simhash": "7eb5f2fbf06a9dff",
+    "snapshot_path": "snapshots/2026-10-08/98531b87b9e5b77a31e789ed7d64f9111b7301544292836d0896eb1d094cde1a.json",
+    "snapshot_status": "uploaded",
     "text_len": 14235,
     "title": "Eastern Iowa residents say AI surveillance cameras lack transparency and regulation | Iowa Public Radio",
     "url": "https://www.iowapublicradio.org/ipr-news/2025-09-12/flock-ai-surveillance-police-cameras-eastern-iowa"
@@ -4271,12 +4286,15 @@
     "url": "https://www.iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change"
   },
   "https://iowastartingline.com/local/local-news/flock-cameras": {
-    "content_hash": "d27f7b67b2fc0d0a9d23634299be59ebd3adb60372b82fb969ec5ac54e054374",
+    "archive": "e5a480e8cc216618887e1425859105da95329ebf099bf454daaa404f70f629a0.txt",
+    "content_hash": "5a073fb4d1aacba8d4a4bdde681f8e5aee3430cd615af0a98b19d4f9c742c364",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://iowastartingline.com/local/local-news/flock-cameras/",
-    "simhash": "9845d412a48ec33e",
-    "text_len": 9829,
+    "simhash": "b84df412b4cec39e",
+    "snapshot_path": "snapshots/2026-10-08/ad996ab86fb224245d7da8fc6aebf68c681db90c62727dc070368140d2bf61a9.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9896,
     "title": "National backlash against Flock cameras reflected in Iowa communities",
     "url": "https://iowastartingline.com/local/local-news/flock-cameras/"
   },
@@ -4899,12 +4917,15 @@
     "url": "https://krna.com/ixp/675/p/indianola-police-flock-cameras/"
   },
   "https://krna.com/ixp/679/p/flock-camera-vandalism-iowa": {
-    "content_hash": "280555794564c319b73f03924fa3a053daf30d799f87668f6324574840b81170",
+    "archive": "48bbdce54e715d08fa5df93eed2fcf24aee96c4db416c393c2080db548783902.txt",
+    "content_hash": "52691955fbf8645842c3b8e13984b3a598fad4b432afa862e71b796aa8f56139",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://krna.com/ixp/679/p/flock-camera-vandalism-iowa/",
-    "simhash": "2de743a93d923164",
-    "text_len": 4675,
+    "simhash": "0def41853dd69147",
+    "snapshot_path": "snapshots/2026-10-08/de22cb87561aca467f6a56c2de461fbb009ce57d00e0f3f0e6319b43773f62ea.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5391,
     "title": "Flock Cameras are Being Vandalized All Around Iowa",
     "url": "https://krna.com/ixp/679/p/flock-camera-vandalism-iowa/"
   },
@@ -5682,12 +5703,15 @@
     "url": "https://www.mymetmedia.com/denver-drops-flock-hires-axon-as-new-license-plate-camera-vendor/"
   },
   "https://nbcpalmsprings.com/ca-us-and-world/2026/06/20/deflock-idaho-files-tort-claims-against-cities-over-flock-safety-camera-ai-data-use": {
-    "content_hash": "5a3178adfba5ecb500590c06b592db3e10880984db1be84505485dfa327c35b0",
+    "archive": "fa90312f2702a28394653b279590ce204c5af748b049fc3482f7cb2154fd425b.txt",
+    "content_hash": "e68d7a886ffb9ea3f3dd68c9ac8532ac1446692a563b33edba8a761f56d0c47b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.nbcpalmsprings.com/ca-us-and-world/2026/06/20/deflock-idaho-files-tort-claims-against-cities-over-flock-safety-camera-ai-data-use",
-    "simhash": "c7fc0bb505789435",
-    "text_len": 6469,
+    "simhash": "f3be4bbf461aa435",
+    "snapshot_path": "snapshots/2026-10-08/538142b2fa5ed21f11be6db1ba9d044f4cd34a8cdbcaaef5d8a38dceb9c1e01d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5583,
     "title": "Deflock Idaho Files Tort Claims Against Cities Over Flock Safety Camera AI Data Use",
     "url": "https://www.nbcpalmsprings.com/ca-us-and-world/2026/06/20/deflock-idaho-files-tort-claims-against-cities-over-flock-safety-camera-ai-data-use"
   },
@@ -7000,22 +7024,28 @@
     "url": "https://rockymountainvoice.com/2026/09/14/englewood-drops-flock-cameras-amid-privacy-and-surveillance-concerns/"
   },
   "https://route-fifty.com/digital-government/2026/08/all-eyes-flock-idaho-navigates-surveillance-technology-across-state/415247": {
-    "content_hash": "1a84d0380dcad3d84c9bbdaa941fdbda29ef3e8d7d0f30fb55698ab3f43d10f6",
+    "archive": "8cbcd8555ff8ba7ad6a6791555d93b020b8f75206a251517e784bd97cf4c6269.txt",
+    "content_hash": "a583f3b6c6bc700068016d636cbb4c014e970eca397d3679eba3b6e74c1de843",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.route-fifty.com/digital-government/2026/08/all-eyes-flock-idaho-navigates-surveillance-technology-across-state/415247/",
-    "simhash": "532c854c2a36e62f",
-    "text_len": 24207,
+    "simhash": "530c854c2a36e62f",
+    "snapshot_path": "snapshots/2026-10-08/078c577606ec2f9e9028b90850efec8c05ea9641215672ac27afe5d25811a082.json",
+    "snapshot_status": "uploaded",
+    "text_len": 24232,
     "title": "All eyes on Flock as Idaho navigates surveillance technology across the state - Route Fifty",
     "url": "https://www.route-fifty.com/digital-government/2026/08/all-eyes-flock-idaho-navigates-surveillance-technology-across-state/415247/"
   },
   "https://route-fifty.com/digital-government/2026/08/immigration-searches-were-conducted-twin-falls-flock-network-month-later-agreements-changed/415333": {
-    "content_hash": "b46a8788d0f3364a8313effbe5b8127fc85d83bb64cdaa933bf2aebda815d5f6",
+    "archive": "25820453fa02a5d9286c8f988bca3e4f750eea36231c8d6957ed7d26b31bce79.txt",
+    "content_hash": "fdff5cee420c778c7a3c602de334f119a81bf1a3a120e6bd566861cf20068be9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.route-fifty.com/digital-government/2026/08/immigration-searches-were-conducted-twin-falls-flock-network-month-later-agreements-changed/415333/",
-    "simhash": "332f916e5a14872d",
-    "text_len": 18338,
+    "simhash": "332f916e4b14872d",
+    "snapshot_path": "snapshots/2026-10-08/1beb32d0b37ddb88b27366baee31296def0dcca785e73e849cf5783028bc2616.json",
+    "snapshot_status": "uploaded",
+    "text_len": 18363,
     "title": "Immigration searches were conducted on Twin Falls Flock network. A month later, agreements changed. - Route Fifty",
     "url": "https://www.route-fifty.com/digital-government/2026/08/immigration-searches-were-conducted-twin-falls-flock-network-month-later-agreements-changed/415333/"
   },
@@ -7717,11 +7747,14 @@
     "url": "https://www.texasobserver.org/san-marcos-city-council-end-alprs/"
   },
   "https://tfid.org/899/Automated-License-Plate-Reader-ALPR": {
+    "archive": "7e09566dd243482cb750d25845b2ff54873be7860925709de858d0a445eef23e.txt",
     "content_hash": "cd99968114676720d536a19f59474dd9168f56f1314c889286cead6a0c5ab5b9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://tfid.org/899/Automated-License-Plate-Reader-ALPR",
     "simhash": "7b4136aa05c62998",
+    "snapshot_path": "snapshots/2026-10-08/df63925935559680e0657f65bc3bdfac0add6e21ed41acbb3dbd34364d44b26f.json",
+    "snapshot_status": "uploaded",
     "text_len": 10784,
     "title": "Automated License Plate Reader (ALPR) | Twin Falls, ID - Official Website Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
     "url": "https://tfid.org/899/Automated-License-Plate-Reader-ALPR"
