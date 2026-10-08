@@ -238,11 +238,14 @@
     "url": "https://abc17news.b-cdn.net/abc17news.com/2024/09/Council-Memo.pdf"
   },
   "https://abq.news/2026/09/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology": {
+    "archive": "d06463bba1290370b605ea7b39b5bdc237d55116363c7815d7357eab889473b2.txt",
     "content_hash": "2410fcd8356773970b0617549125cf475b6d48973e4318fad76d1d78c4637520",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://abq.news/2026/09/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology/",
     "simhash": "81e3b762dfef21c6",
+    "snapshot_path": "snapshots/2026-10-08/447ea7d181f1e97c104d84cb538bb2b4739e56c51290c1775c9b1a14ec548db9.json",
+    "snapshot_status": "uploaded",
     "text_len": 3919,
     "title": "Sheriff details Flock shutdown, Axon switch - The Paper.",
     "url": "https://abq.news/2026/09/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology/"
@@ -1054,11 +1057,14 @@
     "url": "https://buffalocounty.ne.gov/Portals/0/Buffalo%20Co%20SO%20Policy%201346%20Automated%20License%20Plate%20Readers.pdf"
   },
   "https://buffalocounty.ne.gov/county-offices/sheriff/flock-safety-system": {
+    "archive": "68567054874937b5abf5f6c99ddf24eb98400d20da37cced3f8b35528366d160.txt",
     "content_hash": "315fef2b19fc18933ca6a4c18dc4da8a2fb56568b605844f5b3ee49828b189d6",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://buffalocounty.ne.gov/county-offices/sheriff/flock-safety-system",
     "simhash": "6217bc1b0475435c",
+    "snapshot_path": "snapshots/2026-10-08/d73d849d6012d0bc92ecee469fb58e55cc96cacbf2abe4d31365a2bdebbb4afe.json",
+    "snapshot_status": "uploaded",
     "text_len": 2592,
     "title": "Flock Safety System | Sheriff | Buffalo County, NE",
     "url": "https://buffalocounty.ne.gov/county-offices/sheriff/flock-safety-system"
@@ -1618,11 +1624,14 @@
     "url": "https://citizenportal.ai/articles/9986177/indiana/porter-county/chesterton/chesterton-council-votes-to-discontinue-flock-camera-contract-pending-review"
   },
   "https://citydesk.org/2026/09/08/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology": {
+    "archive": "a37f7c716e93c2188868d0c84492502147580b2b58b7622d184076e9bfa59a87.txt",
     "content_hash": "6157e5bec31a20a7333ac91d337f944c42bae59932eb0521da5462da91e53232",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://citydesk.org/2026/09/08/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology/",
     "simhash": "81e9b762dfee01d6",
+    "snapshot_path": "snapshots/2026-10-08/cf614ae90e399dda10a6e7e004ab9cab1bce1c96a99ea9c8e36058eebea3e44c.json",
+    "snapshot_status": "uploaded",
     "text_len": 4159,
     "title": "Sheriff details Flock shutdown, Axon switch - City Desk ABQ",
     "url": "https://citydesk.org/2026/09/08/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology/"
@@ -2168,12 +2177,15 @@
     "url": "https://cvillerightnow.com/news/208802-flock-ceo-includes-charlottesville-staunton-in-email-blaming-activists-for-cities-dropping-the-companys-services/"
   },
   "https://cybernews.com/ai-news/police-arrest-viral-protestor-with-flock": {
-    "content_hash": "a3ee7ddc225f2c23296671662ea67fccc3721ade288a6e8d985da3fa39388418",
+    "archive": "5bf711434ad99605d1244634883b5703736fcfbbf20277c7e542b7994873875f.txt",
+    "content_hash": "e0c0c51e517e40ea7ebffa19e8d1ac9e20c8842de9ae37fa5883e58e69d0b4cc",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://cybernews.com/ai-news/police-arrest-viral-protestor-with-flock/",
-    "simhash": "2f405aa3f360b476",
-    "text_len": 3958,
+    "simhash": "ab4a56f3e3e0e87f",
+    "snapshot_path": "snapshots/2026-10-08/46d06279b951fcb61a22f49d31df674eb5beb7b2f87f407d46e763cdc1590467.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4012,
     "title": "Flock cameras protester arrested in New Mexico | Cybernews",
     "url": "https://cybernews.com/ai-news/police-arrest-viral-protestor-with-flock/"
   },
@@ -3284,11 +3296,14 @@
     "url": "https://foxnews.com/politics/hawley-rips-flocks-sprawling-surveillance-web-texas-cities-cut-cameras-privacy-data-fears"
   },
   "https://foxnews.com/tech/man-films-himself-taking-down-flock-cameras-gets-arrested": {
+    "archive": "a5a5a993dc898a3f26522f051095c28151c5b02d2742d6d73676a61fd0bab498.txt",
     "content_hash": "ecede4b742f22b1ccaf51cfcfb2b6bb75236b9850820868f62099e5145115f1f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.foxnews.com/tech/man-films-himself-taking-down-flock-cameras-gets-arrested",
     "simhash": "71bee85ceb1dd7b2",
+    "snapshot_path": "snapshots/2026-10-08/5cebab51e33b914ef076dc01b9d96b9569f7c8fae348d8f76a92cc79e2f20f4f.json",
+    "snapshot_status": "uploaded",
     "text_len": 12272,
     "title": "Flock Safety camera removal lands New Mexico man on felony charges | Fox News",
     "url": "https://foxnews.com/tech/man-films-himself-taking-down-flock-cameras-gets-arrested"
@@ -4813,11 +4828,14 @@
     "url": "https://kimmonson.com/news/fort-collins-drops-flock-but-the-license-plate-cameras-keep-spreading/"
   },
   "https://kisselkohoutes.com/news-feed/2022/8/19/douglas-county-sheriffs-office-urging-omaha-to-install-license-plate-readers": {
+    "archive": "f2d78b42d4e2fd148818ae55df00a8d2a0ee7850995c6cce4228e8ecfe38079f.txt",
     "content_hash": "e6be6ca3bc14cf2f8c95b00f2e6e4f5a995c4eab16f6d3d580b17f8bc2c3d0e1",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.kisselkohoutes.com/news-feed/2022/8/19/douglas-county-sheriffs-office-urging-omaha-to-install-license-plate-readers",
     "simhash": "edea458ea1122673",
+    "snapshot_path": "snapshots/2026-10-08/a24e503f389ac595855d2296a3e2248a24c4328e8dabf73b03b44182ccfa038f.json",
+    "snapshot_status": "uploaded",
     "text_len": 1742,
     "title": "DOUGLAS COUNTY SHERIFF'S OFFICE URGING OMAHA TO INSTALL LICENSE-PLATE READERS — Kissel, Kohout, ES Associates LLC",
     "url": "https://www.kisselkohoutes.com/news-feed/2022/8/19/douglas-county-sheriffs-office-urging-omaha-to-install-license-plate-readers"
@@ -6399,12 +6417,15 @@
     "url": "https://www.police1.com/arrests-sentencing/law-enforcement-agencies-report-widespread-alpr-vandalism"
   },
   "https://police1.com/arrests-sentencing/man-shows-up-at-n-m-sheriffs-office-with-truck-full-of-dismantled-alpr-cameras": {
-    "content_hash": "a2091010204ecd88618874170ca5aedee83f8dea6fa9fcc97ae8c9aa3f3c8d12",
+    "archive": "2417027bda6b92f7308c3ab03868b5c5f3e65642e1c51d377f278039c3f36271.txt",
+    "content_hash": "b6c0eb954830d55c5764e000b32c6c9fca3066dd36972957e23a356727e9c163",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.police1.com/arrests-sentencing/man-shows-up-at-n-m-sheriffs-office-with-truck-full-of-dismantled-alpr-cameras",
-    "simhash": "232225716ed0bc4b",
-    "text_len": 6013,
+    "simhash": "277e2f716ec0b8ee",
+    "snapshot_path": "snapshots/2026-10-08/4cbf03b246e446f3de2ec50b9409dc75c8bf5d0f11cd5906d2431b8085f280af.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6116,
     "title": "Man dismantles Flock cameras, drops them off at Bernalillo County Sheriff’s Office",
     "url": "https://www.police1.com/arrests-sentencing/man-shows-up-at-n-m-sheriffs-office-with-truck-full-of-dismantled-alpr-cameras"
   },
@@ -7080,11 +7101,14 @@
     "url": "https://www.rileycountypolice.org/AgendaCenter/ViewFile/Agenda/_05192025-90"
   },
   "https://riorancho.news/2026/08/rio-rancho-traffic-study": {
+    "archive": "2fc80064670f9785204450aae92631fd800f23b0f5f0997db33f06cb7a9dc18d.txt",
     "content_hash": "67d44f0d24b33bb53a1b7e3f98a7bac81c5abf88ee11acf0a531293299fe3f0b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://riorancho.news/2026/08/rio-rancho-traffic-study/",
     "simhash": "a88f01c06e093a24",
+    "snapshot_path": "snapshots/2026-10-08/aa5c4badc41bdf20526d96b23442cbf9c9f0c2432eccef5fd73403e8698a94b9.json",
+    "snapshot_status": "uploaded",
     "text_len": 2319,
     "title": "Rio Rancho police credit ALPR cameras with dozens of arrests, vehicle recoveries - The Paper. in Rio Rancho",
     "url": "https://riorancho.news/2026/08/rio-rancho-traffic-study/"
