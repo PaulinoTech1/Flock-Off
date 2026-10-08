@@ -1,20 +1,26 @@
 {
   "https://1025theriver.com/local/charges-filed-against-man-accused-of-vandalizing-derby-flock-cameras": {
+    "archive": "2c39934037eed7436351316f87eba74b8e6baf5a2f1d3f0e61e8e34706f73723.txt",
     "content_hash": "5cd5bbb0675ac696e8b61d711d32a73ce100f1aaa2aad7875d34cd4a427a5368",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.1025theriver.com/local/charges-filed-against-man-accused-of-vandalizing-derby-flock-cameras/",
     "simhash": "720158754c240833",
+    "snapshot_path": "snapshots/2026-10-08/3dbfe50ed349c031eaa4dd6a5f31101c250ea0d84b819ba288b664b92bb57e3b.json",
+    "snapshot_status": "uploaded",
     "text_len": 435,
     "title": "Charges filed against man accused of vandalizing Derby Flock cameras – 1025 The River",
     "url": "https://www.1025theriver.com/local/charges-filed-against-man-accused-of-vandalizing-derby-flock-cameras/"
   },
   "https://1025theriver.com/local/flock-cameras-vandalized": {
+    "archive": "f5e2ffe95715c5066789ac503e11c1e9abb300213ca58b6e7bd76dcaf2371a77.txt",
     "content_hash": "0f62797c56b79e0859e5c111bec55892943e7ac17362e7113c7e1c02b7e28568",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.1025theriver.com/local/flock-cameras-vandalized/",
     "simhash": "968f756b84651e44",
+    "snapshot_path": "snapshots/2026-10-08/cfaea3a0a8904607165bcf5ab2ee1e8b7e251afef8dfdac474edd87278a74639.json",
+    "snapshot_status": "uploaded",
     "text_len": 662,
     "title": "Flock cameras vandalized – 1025 The River",
     "url": "https://www.1025theriver.com/local/flock-cameras-vandalized/"
@@ -732,11 +738,14 @@
     "url": "https://b101.iheart.com/content/2026-07-31-risp-to-install-39-plate-readers-under-flock-contract/"
   },
   "https://b1047.com/manhattan-flock-cameras-spark-privacy-debate": {
+    "archive": "a3f10cf2d9ffb1668b72a820f9c1f12d5bcc1cf1fa1588f1a958a8b0bf9b9152.txt",
     "content_hash": "64eaa3d55d7d60577015d6d5371216316ec26167b1fa6310653ef48261afe989",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://b1047.com/manhattan-flock-cameras-spark-privacy-debate/",
     "simhash": "58b15dc46bbcecd4",
+    "snapshot_path": "snapshots/2026-10-08/b6ee75c93c56a8e7d75bc04561af06d2a5fecf63c054e9e234868a485d821f2a.json",
+    "snapshot_status": "uploaded",
     "text_len": 1054,
     "title": "Manhattan Flock cameras spark privacy debate – B104.7 Manhattan's Hometown Country Station",
     "url": "https://b1047.com/manhattan-flock-cameras-spark-privacy-debate/"
@@ -964,12 +973,15 @@
     "url": "https://www.brief.news/tech/2025/05/30/temple-university-tackles-burglar?briefFormat=TopStories&categories=Science&categories=World&categories=US&categories=Financial+Market+Space&source=%2Ftech&utm_source=category-page&utm_medium=web"
   },
   "https://brightgram.com/wichita-ks/10511520/flock-cameras-vandalized-in-derby-police-investigating": {
-    "content_hash": "99d7e1001d88b7c184efd8fc952cc5b10e35c542c0fa58e8315a6468dee469fb",
+    "archive": "98068c7b94fb4c8972e7a19e7da386be14e92507733fe472e766ec98ab64b1ba.txt",
+    "content_hash": "f5283a79d41730fe516547d7055569be00e5352f14f1dfcc52f2d45df903a4a7",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://brightgram.com/wichita-ks/10511520/flock-cameras-vandalized-in-derby-police-investigating/",
-    "simhash": "32c414a7445f07b5",
-    "text_len": 1390,
+    "simhash": "72c4e8571e6e0e31",
+    "snapshot_path": "snapshots/2026-10-08/4aadbffc2e7dfa1af52ae6ca1fabceaa38b36d5a3ed8ea8a2165b57541988af4.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1423,
     "title": "Flock cameras vandalized in Derby, police investigating - Brightgram",
     "url": "https://brightgram.com/wichita-ks/10511520/flock-cameras-vandalized-in-derby-police-investigating/"
   },
@@ -1079,12 +1091,15 @@
     "url": "http://www.cashmerevalleyrecord.com/stories/sheriff-license-plate-readers-could-save-lives-but-abuse-would-cost-deputy-their-job,188848"
   },
   "https://castlerocknewspress.net/news/article_f09f8077-351a-4f7e-b8f9-c5621744d712.html": {
-    "content_hash": "fe1368abf8b7d173246e080d679477ab156760d4abaf91e24f43d1dcb572c35d",
+    "archive": "d14db628a435dcfa9f6e5c13e9577ead2c4202207ab136c0791f40aa5ea8c9a3.txt",
+    "content_hash": "972829d7d80553d98450c3f0109e189b79a17bbd00ec43e9dd461313854fab43",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.castlerocknewspress.net/news/article_f09f8077-351a-4f7e-b8f9-c5621744d712.html",
-    "simhash": "14063196c0cfad13",
-    "text_len": 8477,
+    "simhash": "544631d6e0cbad13",
+    "snapshot_path": "snapshots/2026-10-08/1880f9360566a26a8658735f775b8aeafd3e4d0e9b2f0adf4cf1374ce12030e7.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8474,
     "title": "DCSO approved to use Drones as First Responders technology | News | castlerocknewspress.net",
     "url": "https://www.castlerocknewspress.net/news/article_f09f8077-351a-4f7e-b8f9-c5621744d712.html"
   },
@@ -2600,12 +2615,15 @@
     "url": "https://englewoodgov.civicweb.net/document/464269/Discussion%20with%20Council%20reference%20contracts%20for.pdf?handle=EC8535D70AA04227AA0BCBE5FDF66045"
   },
   "https://epcsheriffsoffice.com/flock-safety-cameras-assist-in-arrest-of-attempted-murder-suspect": {
-    "content_hash": "8346ff87bce1585c4d96319030053687b4b41a93c9838e108864be872a0b2d4f",
+    "archive": "f57ababacec8f300f847449964513d7a00eda0046812743918bb0d6b821baa6a.txt",
+    "content_hash": "677170753e477d77559c61b785f62161a302f662f8e7308280aaa486a46b083d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://epcsheriffsoffice.com/flock-safety-cameras-assist-in-arrest-of-attempted-murder-suspect/",
-    "simhash": "23e318aa62a1e9fc",
-    "text_len": 1886,
+    "simhash": "48c30162a95c5db0",
+    "snapshot_path": "snapshots/2026-10-08/ec509f670736d1f8cfe97a11d0cc452ee86191bd55dab6bd330ec6e601e5ed33.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1979,
     "title": "FLOCK Safety Cameras Assist in Arrest of Attempted Murder Suspect – El Paso County Sheriff's Office",
     "url": "https://epcsheriffsoffice.com/flock-safety-cameras-assist-in-arrest-of-attempted-murder-suspect/"
   },
@@ -3182,11 +3200,14 @@
     "url": "https://github.com/todb/pflock-docs/blob/HEAD/README.md"
   },
   "https://globenewswire.com/news-release/2026/07/17/3329299/0/en/Flock-LPR-Alert-Leads-to-Arrest-of-Three-Homicide-Suspects-on-Kansas-Interstate.html": {
+    "archive": "4b3ab4a10f3a59447ecbe9945f4f267aa41105c42afe42ed2f3ea117f2bb7afd.txt",
     "content_hash": "0ca2a9f45dca8165c5c144fd1d7f6e2a3eb652e4f791c750df4fecfa9c339786",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.globenewswire.com/news-release/2026/07/17/3329299/0/en/Flock-LPR-Alert-Leads-to-Arrest-of-Three-Homicide-Suspects-on-Kansas-Interstate.html",
     "simhash": "428ea04b663d0601",
+    "snapshot_path": "snapshots/2026-10-08/04e762adb9058b59b8bb80019b86405ef66da55e3b54b3f4b7acfdc4edbc0f01.json",
+    "snapshot_status": "uploaded",
     "text_len": 3355,
     "title": "Flock LPR Alert Leads to Arrest of Three Homicide Suspects",
     "url": "https://www.globenewswire.com/news-release/2026/07/17/3329299/0/en/Flock-LPR-Alert-Leads-to-Arrest-of-Three-Homicide-Suspects-on-Kansas-Interstate.html"
@@ -4093,11 +4114,14 @@
     "url": "https://www.iowapublicradio.org/ipr-news/2026-08-27/flock-cameras-privacy-concerns-indianola"
   },
   "https://iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change": {
+    "archive": "523b756e319578ecfcc395d6da9fcdcb7e9396f66dc796e4d839a48fd1af0450.txt",
     "content_hash": "c9b5992b9509c424ea413c057ce42277738135291d566c1496a19b9bb5ae029b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change",
     "simhash": "d201a73e55c3aab2",
+    "snapshot_path": "snapshots/2026-10-08/441ea7eb6ad1f8fe2db5856ec5554b3bd2a7de6da1cbbb2a89f259c0adca55af.json",
+    "snapshot_status": "uploaded",
     "text_len": 20711,
     "title": "There is little state regulation of Flock cameras in Iowa. That could soon change. | Iowa Public Radio",
     "url": "https://www.iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change"
@@ -4514,13 +4538,16 @@
     "url": "https://kentuckylantern.com/2026/09/24/repub/flock-surveillance-cameras-raise-constitutional-questions-bipartisan-us-senators-say/"
   },
   "https://kimmonson.com/news/douglas-county-axon-contract-replaces-flock-alpr-drones": {
-    "content_hash": "e9cdbcd6dba5cfcb18aac89d91c908d54ff01d121de2a5fb3020ce37e732467b",
+    "archive": "d6acc832d551309c10b23183e3e719765f914f948abca68a5d8ad95569a39491.txt",
+    "content_hash": "96c524938e02e1178a283ebee12985f277af4ea2bb3421d0610bb81a13cc1ea9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://kimmonson.com/news/douglas-county-axon-contract-replaces-flock-alpr-drones/",
-    "simhash": "61b7749aec786fbf",
-    "text_len": 24344,
-    "title": "Douglas County commissioners approved a nearly $22.8 million Axon contract on July 14 that replaces the county's Flock cameras | KMS Newsroom",
+    "simhash": "6196749aec786e9f",
+    "snapshot_path": "snapshots/2026-10-08/aa01e12a95f1a3e6e14cfd297b47c01b22c64974d52420408c6ace39169870be.json",
+    "snapshot_status": "uploaded",
+    "text_len": 24291,
+    "title": "Douglas County $22.8 million Axon contract replaces Flock cameras",
     "url": "https://kimmonson.com/news/douglas-county-axon-contract-replaces-flock-alpr-drones/"
   },
   "https://kimmonson.com/news/fort-collins-drops-flock-but-the-license-plate-cameras-keep-spreading": {
@@ -5842,11 +5869,14 @@
     "url": "https://opengovernment.ny.gov/system/files/documents/2025/10/f19882.pdf"
   },
   "https://operanewsapp.com/us/en/share/detail?from=localnews&news_entry_id=4a54754d260902en_us&news_id=6db53191c5f63ead04a0d1ff5687b570&open_type=transcoded&request_id=share_request&share_from=": {
+    "archive": "81b610054a0b55e6ebf898a109cd461c83cd0577f124e06795e707c93317b202.txt",
     "content_hash": "ad0066ce81dc7f372316668e4db75f983677c96388c15736a2a19d730aa3f770",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.operanewsapp.com/us/en/share/detail?news_id=6db53191c5f63ead04a0d1ff5687b570&news_entry_id=4a54754d260902en_us&open_type=transcoded&from=localnews&request_id=share_request&share_from",
     "simhash": "393ce7b4c703421e",
+    "snapshot_path": "snapshots/2026-10-08/8f5e8948f057d842d92a0ed0198479ccffab8ccfcb48e9f5cf2b51a8ba97f114.json",
+    "snapshot_status": "uploaded",
     "text_len": 1652,
     "title": "Routt County Sheriff’s Office ending Flock contract, in process of deactivating cameras-operanewsapp",
     "url": "https://www.operanewsapp.com/us/en/share/detail?news_id=6db53191c5f63ead04a0d1ff5687b570&news_entry_id=4a54754d260902en_us&open_type=transcoded&from=localnews&request_id=share_request&share_from"
@@ -5914,12 +5944,15 @@
     "url": "https://panhandlepost.com/posts/afe19bbc-ec9f-42a4-8ef0-7019e48d2198"
   },
   "https://parkerchronicle.net/news/article_01bdde33-6b4a-4c71-89f9-1ca64415be1c.html": {
-    "content_hash": "a21af4d4552e088c9d521907b394f213834abdbe19eb23191d674a73286ff20a",
+    "archive": "9a1044fcff223653ba0e3ad25462983a8ba30863e4a88a23eab74082d1ec04b1.txt",
+    "content_hash": "9d22b8f08acba597327dfa2fab586d7184eb7d65f6b33ecdb3526e2d9768002d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.parkerchronicle.net/news/article_01bdde33-6b4a-4c71-89f9-1ca64415be1c.html",
-    "simhash": "14563192e0c3ad53",
-    "text_len": 8491,
+    "simhash": "54563192c0cbad03",
+    "snapshot_path": "snapshots/2026-10-08/bf7012628b76bb8e69e8511ea63b587db55f0645d8b4acb0d811f8ee81039dba.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8498,
     "title": "DCSO approved to use Drones as First Responders technology | News | parkerchronicle.net",
     "url": "https://www.parkerchronicle.net/news/article_01bdde33-6b4a-4c71-89f9-1ca64415be1c.html"
   },
@@ -6100,11 +6133,14 @@
     "url": "https://www.postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007/"
   },
   "https://postgoo.com/posts/6a9f6abcb5221344e09c9d3c?type=article": {
+    "archive": "4dfaff8276f4504183bb75022ac6fb12f6af59adce001fe8fe56a5350c2980ca.txt",
     "content_hash": "5aa5327372dc42709e30aabd0a2d9de7a72503af7dd22129403d9b5722b392c7",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://postgoo.com/posts/6a9f6abcb5221344e09c9d3c?type=article",
     "simhash": "7035d2d35c3f4641",
+    "snapshot_path": "snapshots/2026-10-08/7fdb83ed0bdca13047afc86d939ed4361003b4c7633ec7bdd07e5c871f92600c.json",
+    "snapshot_status": "uploaded",
     "text_len": 4891,
     "title": "Hayden Police Department terminating Flock contract, bagging cameras | PostGoo Loading... Loading...",
     "url": "https://postgoo.com/posts/6a9f6abcb5221344e09c9d3c?type=article"
@@ -6388,11 +6424,14 @@
     "url": "https://radiofreehubcity.com/2026/09/23/boonsboro-town-council-found-to-violate-open-meetings-act-over-2025-flock-camera-purchase/"
   },
   "https://ransonfinancial.com/2024/10/15/wichita-city-council-to-consider-gunshot-detecting-devices-water-plant-agreement": {
+    "archive": "4cdb8fc97138015c59c06937a5894e6c28ea2fdd85747aa1b1f5a5be2c51372d.txt",
     "content_hash": "c07164454954f7e64205cf87423e8a52b69dc39f9ab79ff82934266f0ced84a0",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://ransonfinancial.com/2024/10/15/wichita-city-council-to-consider-gunshot-detecting-devices-water-plant-agreement/",
     "simhash": "ada6664460aac433",
+    "snapshot_path": "snapshots/2026-10-08/7d52621d7fc33b12d64eea6292c3bbb73d24d32c5e634fadf0180465cd9e54f5.json",
+    "snapshot_status": "uploaded",
     "text_len": 1259,
     "title": "Wichita City Council to consider gunshot detecting devices, water plant agreement – Ranson Financial Group LLC",
     "url": "https://ransonfinancial.com/2024/10/15/wichita-city-council-to-consider-gunshot-detecting-devices-water-plant-agreement/"
@@ -6408,12 +6447,15 @@
     "url": "https://reason.com/2025/07/29/an-arkansas-town-agrees-to-remove-a-license-plate-camera-aimed-at-a-couples-home/"
   },
   "https://reason.com/2026/07/31/kansas-lawsuit-alprs-turn-a-license-plate-into-the-functional-equivalent-of-a-gps-tracking-device": {
-    "content_hash": "4182fe05a3d529717415a0dc6c5cd81a5087cb504dab5fa1b69ad7de4ff789d9",
+    "archive": "45694c27e6bd079f9c1da3156e013e4bb4c0af25036e504af476a07a0d513836.txt",
+    "content_hash": "0c1994731b1e124e4b59efc5a67680b0dbc0f184f49e5c6ddf87ea838ae7373a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://reason.com/2026/07/31/kansas-lawsuit-alprs-turn-a-license-plate-into-the-functional-equivalent-of-a-gps-tracking-device/",
-    "simhash": "51cf60a4c3d5b4f0",
-    "text_len": 13098,
+    "simhash": "51c768a445d7b4b0",
+    "snapshot_path": "snapshots/2026-10-08/1abb13a3ef93546a6e34a9fccbacdadf6be508d9c0f02eccb795af4c57eb1fb2.json",
+    "snapshot_status": "uploaded",
+    "text_len": 12992,
     "title": "Kansas man sues Wichita over Flock license plate readers",
     "url": "https://reason.com/2026/07/31/kansas-lawsuit-alprs-turn-a-license-plate-into-the-functional-equivalent-of-a-gps-tracking-device/"
   },
@@ -6677,12 +6719,15 @@
     "url": "https://riorancho.news/2026/09/deflock-rr/"
   },
   "https://rockymountainvoice.com/2026/07/16/douglas-county-replaces-flock-cameras-with-22-8-million-axon-public-safety-system": {
-    "content_hash": "d42824ed13ff964f5ae3236fab3d92fb3ba87b59933f692ae1c380aa60810e9f",
+    "archive": "dfb011ab10f54e7a474d48909182d32b6998d749732e7b9ec6ddc722e3aeaf84.txt",
+    "content_hash": "3271beb585d71a008a9954ee2516ec9499a60c28651a617fc49f61ecc659998a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://rockymountainvoice.com/2026/07/16/douglas-county-replaces-flock-cameras-with-22-8-million-axon-public-safety-system/",
-    "simhash": "03013f1dd92a9367",
-    "text_len": 1693,
+    "simhash": "43893e15e93aa377",
+    "snapshot_path": "snapshots/2026-10-08/d174539414f3a14a5f6512eb5e4a39fb57bf3b90415a6d3dbfe6fa72af78c9fe.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1728,
     "title": "Douglas County Replaces Flock Cameras With $22.8 Million Axon Public Safety System - Rocky Mountain Voice",
     "url": "https://rockymountainvoice.com/2026/07/16/douglas-county-replaces-flock-cameras-with-22-8-million-axon-public-safety-system/"
   },
@@ -6753,41 +6798,53 @@
     "url": "https://www.sacurrent.com/news/there-are-more-than-10000-flock-cameras-in-texas-gina-hinojosa-blames-gov-greg-abbott/"
   },
   "https://salina311.com/stories/2026-06-01-4-to-1-vote-salina-city-commission-approves-flock-camera-renewal-after-privacy-safety-and-data-debate": {
-    "content_hash": "a44dd962e502c2071d60ad4db5b58c5ca12b2733ccdd3517d63f41988045d2a4",
+    "archive": "2f09775aeb13493ae86361d3b1d9311c123fc609d3ed6a6c5ea37312a3313af5.txt",
+    "content_hash": "3a8df8519e7533db46998b23341913b3c08706c83a366a80ac63e647a014dba1",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.salina311.com/stories/2026-06-01-4-to-1-vote-salina-city-commission-approves-flock-camera-renewal-after-privacy-safety-and-data-debate/",
-    "simhash": "9b161dd2509aba2b",
-    "text_len": 9332,
+    "simhash": "9b765592589eba22",
+    "snapshot_path": "snapshots/2026-10-08/bc9a63610a8eb3c8eab4d98b1240eece39bea0533ced8a105ab856d3a9bbf872.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9342,
     "title": "4 To 1 Vote: Salina City Commission Approves Flock Camera Renewal After Privacy, Safety and Data Debate - Salina311",
     "url": "https://www.salina311.com/stories/2026-06-01-4-to-1-vote-salina-city-commission-approves-flock-camera-renewal-after-privacy-safety-and-data-debate/"
   },
   "https://salina311.com/stories/2026-09-20-spd-releases-new-details-on-flock-cameras-role-in-homicide-suspect-arrest": {
-    "content_hash": "ab82915978270a116e7e66bb1febe923c62e2e3c33f5c737a5a431b48b16784b",
+    "archive": "58ad6031dcd5b5e02665c38423066900753d9106ac7ae1f756380638c5cdecb5.txt",
+    "content_hash": "2267f55bf572276e25d786e71b1f341f1888d478c685a2061f0c2ecea458556a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.salina311.com/stories/2026-09-20-spd-releases-new-details-on-flock-cameras-role-in-homicide-suspect-arrest/",
-    "simhash": "1b240d5a0233beaf",
-    "text_len": 8169,
+    "simhash": "1324455a0293bcaf",
+    "snapshot_path": "snapshots/2026-10-08/d202b64ee6a2f15004b08167836d2df9c5af302d7595c560a5193044ce324338.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8179,
     "title": "SPD Releases New Details on Flock Camera’s Role in Homicide Suspect Arrest - Salina311",
     "url": "https://www.salina311.com/stories/2026-09-20-spd-releases-new-details-on-flock-cameras-role-in-homicide-suspect-arrest/"
   },
   "https://salinapost.com/posts/c5f80797-64e7-4ffe-b729-3332334ec4ae": {
+    "archive": "28bb273650c07f38a3432e07a11c71f44e060a263589ad97f8cacfbb0e597d5c.txt",
     "content_hash": "be9780ee6089beb4e5886942109c419ce2133f28bec6b4ff3a1714b7f671a7d2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://salinapost.com/posts/c5f80797-64e7-4ffe-b729-3332334ec4ae",
     "simhash": "ad92d80eefa0c0dd",
+    "snapshot_path": "snapshots/2026-10-08/794d068d761144253cde94a61fef76c9da386e4d10c1792256e47bc02cb7dd1e.json",
+    "snapshot_status": "uploaded",
     "text_len": 6337,
     "title": "Salina Police share information on Flock cameras to local media for the community",
     "url": "https://salinapost.com/posts/c5f80797-64e7-4ffe-b729-3332334ec4ae"
   },
   "https://salinapost.com/posts/d902070a-cc14-4b63-ac30-a19ef2b8ee3f": {
+    "archive": "4ea8d51fd9fa927a73e40f63d9046158cda7d6cc08b58f2ef776460d63d85736.txt",
     "content_hash": "0555d31939700263fc20dd9064c1983a5ab23a85d1e36b8aa7419e5bfc4144aa",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://salinapost.com/posts/d902070a-cc14-4b63-ac30-a19ef2b8ee3f",
     "simhash": "33151b05ff0b5308",
+    "snapshot_path": "snapshots/2026-10-08/e93f0fcd5d3ae35587ab1c57d7c410adc533680fdcdfd73e102978579c3eabe9.json",
+    "snapshot_status": "uploaded",
     "text_len": 2810,
     "title": "FLOCK cameras contract renewed within Salina for 3 more years",
     "url": "https://salinapost.com/posts/d902070a-cc14-4b63-ac30-a19ef2b8ee3f"
