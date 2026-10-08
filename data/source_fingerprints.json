@@ -295,11 +295,14 @@
     "url": "https://www.akronjewishnews.com/news/local/candidates-for-ohio-attorney-general-address-flock-cameras-controversy-make-proposals/article_9ae03e49-5ffc-503c-ac25-bc1a012b51f5.html"
   },
   "https://akronnewsreporter.com/2026/09/13/follow-opioid-settlement-cash": {
+    "archive": "aa6e87464269b049b996b7d69948d059557c8e5c3756b6f441e8c4c4c74346a3.txt",
     "content_hash": "f283d1e3bf05180b5d374d53ebdfa4c5372d0450ca0177b0cab09463c2bcfd0c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.akronnewsreporter.com/2026/09/13/follow-opioid-settlement-cash/",
     "simhash": "3366850d5144757a",
+    "snapshot_path": "snapshots/2026-10-08/05d1f7dedf8198a1e4afed0c30200c8f34e11d3a2c3fef3eb00eecbe4fab4fdc.json",
+    "snapshot_status": "uploaded",
     "text_len": 17426,
     "title": "A state gave sheriffs 20% of its opioid settlement cash. We followed the money – Akron News-Reporter",
     "url": "https://www.akronnewsreporter.com/2026/09/13/follow-opioid-settlement-cash/"
@@ -1738,11 +1741,14 @@
     "url": "https://classicrock1051.com/ixp/34/p/deputy-fired-using-flock-cameras-track-ex-fiance/"
   },
   "https://classicrock1051.com/ixp/34/p/lafayette-flock-camera-arrests-privacy-debate": {
+    "archive": "f4b85faaaa8825bce519711aea0c0ddc3743f7aadffba09cc43050fc8340dbb9.txt",
     "content_hash": "20551af1417edf924010b88637beb4180f0c628d66987ad217c2e71dfbdad6ba",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://classicrock1051.com/ixp/34/p/lafayette-flock-camera-arrests-privacy-debate/",
     "simhash": "f18c102254eeaa29",
+    "snapshot_path": "snapshots/2026-10-08/d5421f3aaf07bc2f34b88e0b9b9974eb41a0a1bd2a71f85288cc68479b0032ae.json",
+    "snapshot_status": "uploaded",
     "text_len": 6211,
     "title": "Lafayette Flock Camera Arrests Spark Debate on Privacy",
     "url": "https://classicrock1051.com/ixp/34/p/lafayette-flock-camera-arrests-privacy-debate/"
@@ -2113,12 +2119,15 @@
     "url": "https://d33gy59ovltp76.cloudfront.net/news/from-illinois-to-doral-how-flocks-cameras-became-an-immigration-enforcement-flashpoint"
   },
   "https://d3nqdp0e3r32g8.cloudfront.net/news/baton-rouge-police-credit-license-plate-cameras-with-helping-solve-crimes": {
-    "content_hash": "6a9713934ed10b74ab7b3e5ca4ed10ec58d118e2a109d0a0d7331dca436f276c",
+    "archive": "8d6b9cdf1406d0c9395144983baba5a66947361421faa114dfcf77e73d076b93.txt",
+    "content_hash": "2a98f8768d096e394636de5a6fb84577495ab8b95444b9d0b76ad681f5cd7753",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://d3nqdp0e3r32g8.cloudfront.net/news/baton-rouge-police-credit-license-plate-cameras-with-helping-solve-crimes",
-    "simhash": "6a922b2326c4e8a2",
-    "text_len": 3580,
+    "simhash": "5bd32e0ba60ce8e1",
+    "snapshot_path": "snapshots/2026-10-08/6a3ca38f507217461b9115e66eae02c6aa8c01ed30ae6f73562cbe89f61c47ea.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3643,
     "title": "Baton Rouge police credit license plate cameras with helping solve crimes",
     "url": "https://d3nqdp0e3r32g8.cloudfront.net/news/baton-rouge-police-credit-license-plate-cameras-with-helping-solve-crimes"
   },
@@ -2501,12 +2510,15 @@
     "url": "http://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?guid=5667c99a-30a1-46fc-b1fd-8dd6285b4a8a&pbid=6553bde4-6f9f-4e22-9ccc-4f84dc38dcd6&share=true&appcode=SNSFEE"
   },
   "https://einpresswire.com/article/938840554/st-charles-county-cuts-ties-with-flock-cameras": {
-    "content_hash": "a0cc66d5783a73cfa9b7672e211e4f9e81d97f6881dfec147370083371c01fa3",
+    "archive": "6a19a0219b9834391a31623b3a296fd036c9e6936596e7729bc7d05c6403262e.txt",
+    "content_hash": "a9575b06d9811585298cd67e0e4eec75e824ccc1a414eac8d1c44c8fd862865e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.einpresswire.com/article/938840554/st-charles-county-cuts-ties-with-flock-cameras",
-    "simhash": "31ea507cd65385cc",
-    "text_len": 5931,
+    "simhash": "386a506dd65385cc",
+    "snapshot_path": "snapshots/2026-10-08/95e948d534587cdc70808ec273029fb75ae5aa93c4d106bad5647d3a5110cddf.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5916,
     "title": "St. Charles County Cuts Ties with Flock Cameras",
     "url": "https://www.einpresswire.com/article/938840554/st-charles-county-cuts-ties-with-flock-cameras"
   },
@@ -2641,11 +2653,14 @@
     "url": "https://www.europesays.com/poland/25025/"
   },
   "https://eventbrite.com/e/what-the-flock-cameras-in-wyandotte-county-what-do-we-know-community-qs-tickets-1999112707924": {
+    "archive": "57407b3bc8b93b10009359acf9c763db835b7fd344d924fe82c1157bc404f984.txt",
     "content_hash": "6363a8ac12050fd12687d677afeccb524b9a0eef1511e5d459077fcbe9857192",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.eventbrite.com/e/what-the-flock-cameras-in-the-kc-metro-what-do-we-know-community-qs-tickets-1999112707924",
     "simhash": "e3176d530e6541cf",
+    "snapshot_path": "snapshots/2026-10-08/1a3e9d8b1dab8c6ec3b2c0a16f3de5dfea573e5214191e3ed4257729875f1e0e.json",
+    "snapshot_status": "uploaded",
     "text_len": 239,
     "title": "What the Flock? Cameras in the KC metro: What Do We Know? Community Qs Tickets, Wednesday, September 23 • 6 PM - 7:30 PM | Eventbrite",
     "url": "https://www.eventbrite.com/e/what-the-flock-cameras-in-wyandotte-county-what-do-we-know-community-qs-tickets-1999112707924"
@@ -3298,11 +3313,14 @@
     "url": "https://www.governing.com/management-and-administration/how-ai-cameras-and-drones-are-reshaping-local-policing"
   },
   "https://governing.com/security/advocates-worry-as-central-la-police-increase-surveillance": {
+    "archive": "9c8c70452b9aee348430961f8ee6a68edc2351ed96e0d54a71b278915d18291c.txt",
     "content_hash": "7942450df496fa779b5702c6bb8c3411d7b749d8cfda426e997a14c2e4ec60f2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.governing.com/security/advocates-worry-as-central-la-police-increase-surveillance",
     "simhash": "acda30b29bda4619",
+    "snapshot_path": "snapshots/2026-10-08/b80c0ffcaa2a7ee2e34b04a2586120498fd8c541545d8beb07661ae4094fbd93.json",
+    "snapshot_status": "uploaded",
     "text_len": 6626,
     "title": "Advocates Worry as Central, La., Police Increase Surveillance",
     "url": "https://www.governing.com/security/advocates-worry-as-central-la-police-increase-surveillance"
@@ -3472,11 +3490,14 @@
     "url": "https://www.govtech.com/public-safety/how-tech-is-transforming-police-work-in-idaho"
   },
   "https://govtech.com/public-safety/kenner-la-to-more-than-double-license-plate-reader-network": {
+    "archive": "0a935e6fe9b273821aa53a51a0dbee42f0066f473800279de7922c6faa27cdf3.txt",
     "content_hash": "e3cacac3a2dde19712ab9ce9ac7c3a4b329ac749b90f91f3970470da9ceba919",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/kenner-la-to-more-than-double-license-plate-reader-network",
     "simhash": "266f6461220dbc3c",
+    "snapshot_path": "snapshots/2026-10-08/053fb7f9cacee33fb7a77285a77c4a813719f1bd46fc06308a588af9144c5ac3.json",
+    "snapshot_status": "uploaded",
     "text_len": 3098,
     "title": "Kenner, La., to More Than Double License Plate-Reader Network",
     "url": "https://www.govtech.com/public-safety/kenner-la-to-more-than-double-license-plate-reader-network"
@@ -3603,11 +3624,14 @@
     "url": "https://www.govtech.com/transportation/woodland-calif-extends-license-plate-cam-program-amid-concern"
   },
   "https://gray-kctv-prod.gtv-cdn.com/2026/08/10/kansas-city-kansas-detective-charged-after-wyandotte-county-da-investigation": {
+    "archive": "241eef378a6f8a8852027a32164f53ee7c42cb6af6da45030bde6eddd11c3c6e.txt",
     "content_hash": "6377dd9b12edd3c5d936427fd80c11c7d9a783e6293674f27a205728fde3e52c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-kctv-prod.gtv-cdn.com/2026/08/10/kansas-city-kansas-detective-charged-after-wyandotte-county-da-investigation/",
     "simhash": "4baffdb75887dbe1",
+    "snapshot_path": "snapshots/2026-10-08/b11a75a6d793fdece9b14e5a9457f2434fcc80bedfd09973d1ebbea86270bcba.json",
+    "snapshot_status": "uploaded",
     "text_len": 1533,
     "title": "Kansas City, Kansas detective charged with computer crime",
     "url": "https://gray-kctv-prod.gtv-cdn.com/2026/08/10/kansas-city-kansas-detective-charged-after-wyandotte-county-da-investigation/"
@@ -3646,21 +3670,27 @@
     "url": "https://gray-kvvu-prod.gtv-cdn.com/2026/08/26/clark-county-school-district-police-chief-reviewing-use-flock-cameras/"
   },
   "https://gray-wafb-prod.gtv-cdn.com/2026/08/10/baton-rouge-police-defend-flock-cameras-privacy-concerns-mount-nationwide": {
+    "archive": "d1a0712b1a3155aae3e9294661c393cdf60bacd86b7b983a7da28186e4b16e40.txt",
     "content_hash": "539f54bda2eb466d2e0a47789201ed7ecfb224460d21306fe3ace60e9fe249eb",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-wafb-prod.gtv-cdn.com/2026/08/10/baton-rouge-police-defend-flock-cameras-privacy-concerns-mount-nationwide/",
     "simhash": "47298a3328c69b93",
+    "snapshot_path": "snapshots/2026-10-08/4e4a7b1df5e6cf4157b4c0af282d44bc97efaa708245177357904d8aab09630e.json",
+    "snapshot_status": "uploaded",
     "text_len": 3053,
     "title": "Baton Rouge police defend Flock cameras as privacy concerns mount nationwide",
     "url": "https://gray-wafb-prod.gtv-cdn.com/2026/08/10/baton-rouge-police-defend-flock-cameras-privacy-concerns-mount-nationwide/"
   },
   "https://gray-wafb-prod.gtv-cdn.com/2026/08/19/jefferson-parish-deputy-fired-misusing-flock-camera-track-ex-fiancees-vehicle-lopinto-says": {
+    "archive": "2c35a3e639475fe347ecb4ed54a83af33f13d5f7fa3717d88cbf0df74f7c4949.txt",
     "content_hash": "43c894636983927d820b4e7c154c4c4882cfb537786a8f8b627e7569dfdf84da",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-wafb-prod.gtv-cdn.com/2026/08/19/jefferson-parish-deputy-fired-misusing-flock-camera-track-ex-fiancees-vehicle-lopinto-says/",
     "simhash": "3d476a356eafae6a",
+    "snapshot_path": "snapshots/2026-10-08/ed931859a98a959847bdd00c6e308ffa097c2724167b18224a8d72655cdf65a1.json",
+    "snapshot_status": "uploaded",
     "text_len": 4556,
     "title": "Jefferson Parish deputy fired for misusing Flock camera to track ex-fiance’s vehicle, Lopinto says",
     "url": "https://gray-wafb-prod.gtv-cdn.com/2026/08/19/jefferson-parish-deputy-fired-misusing-flock-camera-track-ex-fiancees-vehicle-lopinto-says/"
@@ -3878,11 +3908,14 @@
     "url": "https://haussamen.com/wp-content/uploads/2026/02/NM-Las-Cruces-PD-FlockOSLPRLive-Video-Law-Enforcement-Agreement-9122024.pdf"
   },
   "https://hawley.senate.gov/hawley-expands-investigation-into-surveillance-cameras-warns-flock-competitors": {
+    "archive": "e95f4d585a950db7380dcc2536e0444be1a3ff488f96502b9b1ca18b4b97998c.txt",
     "content_hash": "74af5a048165ed8e0a7b6b2f2e54d33d8c51bb16b03109401b66fdeed34bc808",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.hawley.senate.gov/hawley-expands-investigation-into-surveillance-cameras-warns-flock-competitors/",
     "simhash": "b9a831c22285379f",
+    "snapshot_path": "snapshots/2026-10-08/96ff7769cab70b8f18d60e695a671df891732edf83623da049f81af3d121ba2a.json",
+    "snapshot_status": "uploaded",
     "text_len": 7293,
     "title": "Hawley Expands Investigation into Surveillance Cameras, Warns Flock Competitors - Josh Hawley",
     "url": "https://www.hawley.senate.gov/hawley-expands-investigation-into-surveillance-cameras-warns-flock-competitors/"
@@ -4620,12 +4653,15 @@
     "url": "https://www.kjluradio.com/newsroom/governor-mike-kehoe-becomes-first-in-nation-to-issue-executive-order-on-flock-cameras/article_1ae3e0ea-edfe-4aec-af09-218e7b049262.html"
   },
   "https://kjluradio.com/newsroom/pulaski-county-sheriff-says-he-will-end-use-of-flock-safety-cameras/article_7c89469e-d84c-49c6-90cd-9cafe5206922.html": {
-    "content_hash": "b5e8049de59a68bb59dcafc415c45d6fdabee41c2a306c4e164ca404d87466a3",
+    "archive": "32cf0cd0a1b06a43c56aafc0b5de5e16a086881619371255a79bd9273c0aedae.txt",
+    "content_hash": "fe7f1cc708462ccffb5e704defd178dcb5fbbe9f3cecae97916d67d0bd217386",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.kjluradio.com/newsroom/pulaski-county-sheriff-says-he-will-end-use-of-flock-safety-cameras/article_7c89469e-d84c-49c6-90cd-9cafe5206922.html",
-    "simhash": "c050616e976010aa",
-    "text_len": 3820,
+    "simhash": "d458b16e99ee64b6",
+    "snapshot_path": "snapshots/2026-10-08/6c721a2e1aa4a2d96bedd78b4ccff3ed62d356bca8aa6b1df44ebd0cfd76b537.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3886,
     "title": "Pulaski County Sheriff says he will end use of Flock Safety cameras | Newsroom | kjluradio.com",
     "url": "https://www.kjluradio.com/newsroom/pulaski-county-sheriff-says-he-will-end-use-of-flock-safety-cameras/article_7c89469e-d84c-49c6-90cd-9cafe5206922.html"
   },
@@ -4745,11 +4781,14 @@
     "url": "https://krny.com/2024/12/05/kearney-police-quickly-recover-stolen-truck-using-alpr-cameras/"
   },
   "https://krps.org/missouri-news/2026-08-21/pulaski-county-sheriffs-office-to-stop-using-flock-cameras": {
+    "archive": "582c469cf0f2728803108d67069b22813bb9b8536d6776bab4e69a5a74c7e8bf.txt",
     "content_hash": "b4cf498d99ad758c5479ce014689d5698295332db15d5e4019d7d3f8c4a4246f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.krps.org/missouri-news/2026-08-21/pulaski-county-sheriffs-office-to-stop-using-flock-cameras",
     "simhash": "60af8744b2e8b590",
+    "snapshot_path": "snapshots/2026-10-08/3614a06630db825b94e2fd66ff7d4665004c876f379d529639f88adbea509728.json",
+    "snapshot_status": "uploaded",
     "text_len": 1808,
     "title": "Pulaski County Sheriff's Office to stop using Flock cameras",
     "url": "https://www.krps.org/missouri-news/2026-08-21/pulaski-county-sheriffs-office-to-stop-using-flock-cameras"
@@ -4775,21 +4814,27 @@
     "url": "https://www.krps.org/missouri-news/2026-09-23/mayor-council-member-concerned-citizen-weigh-in-on-flock-camera-resolution-vote"
   },
   "https://ksmu.org/news/2026-08-12/bolivar-takes-next-steps-to-cut-ties-with-flock": {
+    "archive": "a63d3856339a3ef3dc6a73ead7be142d29a8b76ef37765d82f85a91f85514877.txt",
     "content_hash": "16bb976f03a0ad6afa86548c3248619ecc4ede727987e98c66ce6152684608b2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.ksmu.org/news/2026-08-12/bolivar-takes-next-steps-to-cut-ties-with-flock",
     "simhash": "95af1ce098c4e77c",
+    "snapshot_path": "snapshots/2026-10-08/9aff29e2f80304fe44effbdd2aa7256388efda190a05f16abf66dcb85d7b0925.json",
+    "snapshot_status": "uploaded",
     "text_len": 2209,
     "title": "Bolivar takes next steps to cut ties with Flock",
     "url": "https://www.ksmu.org/news/2026-08-12/bolivar-takes-next-steps-to-cut-ties-with-flock"
   },
   "https://ksmu.org/news/2026-08-21/willard-police-department-decides-not-to-renew-its-contract-with-flock-safety": {
+    "archive": "b8773826be73697c2cb299dc6107f181767a9fadd343b63734c4c933bc85d774.txt",
     "content_hash": "c3638b1be1813322755151e13627f7a53af01f4c6e1df018c5b242c6b5705d5d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.ksmu.org/news/2026-08-21/willard-police-department-decides-not-to-renew-its-contract-with-flock-safety",
     "simhash": "bc13d00bda308b38",
+    "snapshot_path": "snapshots/2026-10-08/01accaaf16c4eac6120e105812f329988a0f3c09bdb9c3769cb8b1b702c44b87.json",
+    "snapshot_status": "uploaded",
     "text_len": 1658,
     "title": "Willard Police Department decides not to renew its contract with Flock Safety",
     "url": "https://www.ksmu.org/news/2026-08-21/willard-police-department-decides-not-to-renew-its-contract-with-flock-safety"
@@ -6159,11 +6204,14 @@
     "url": "https://postgoo.com/posts/6aa2244f5e5503b6ffd5f2c1?type=article"
   },
   "https://pr.chestercounty.com/article/Flock-LPR-Helps-East-Baton-Rouge-Deputies-Arrest-Three-Suspects-in-School-Bus-Shooting-Within-Minutes/6a68c4cd0b3f8c67775208a0": {
+    "archive": "2c9179b589874edbee76a21ccc09f16435ba4cbe896aadbc5e420bd0c791e939.txt",
     "content_hash": "e89ca7f75120884665c486122103f15c3307ab55bcce32c4f00f7a5ee117937c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://pr.chestercounty.com/article/Flock-LPR-Helps-East-Baton-Rouge-Deputies-Arrest-Three-Suspects-in-School-Bus-Shooting-Within-Minutes/6a68c4cd0b3f8c67775208a0",
     "simhash": "da88bad3faacfd00",
+    "snapshot_path": "snapshots/2026-10-08/da471286ebe83444277206297f22b41ea1b3e715680a64061c1b67f8ce1f3094.json",
+    "snapshot_status": "uploaded",
     "text_len": 1676,
     "title": "Flock LPR Helps East Baton Rouge Deputies Arrest Three Suspects in School Bus Shooting Within Minutes Intrado",
     "url": "https://pr.chestercounty.com/article/Flock-LPR-Helps-East-Baton-Rouge-Deputies-Arrest-Three-Suspects-in-School-Bus-Shooting-Within-Minutes/6a68c4cd0b3f8c67775208a0"
@@ -6509,12 +6557,15 @@
     "url": "https://www.recordnet.com/story/news/politics/government/2026/09/01/stockton-pushed-to-end-flock-contract-privacy-concerns/91361717007/"
   },
   "https://redeyebr.com/what-the-flock": {
-    "content_hash": "0670522c866b3b24b7ad44f1c70ed9d280cd987eef24ceaf9cae4003a06102ed",
+    "archive": "396091b9afb773c3688c236ac328dfb85023fe7052198ef5aed23f5d9a7c21d3.txt",
+    "content_hash": "5780e9d73b3003a504e038964d22dae749068ecb4d65c94ea84c1d9d6d93488b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.redeyebr.com/what-the-flock/",
-    "simhash": "c445f2d219d8b08c",
-    "text_len": 3026,
+    "simhash": "8465b2d019ccf08c",
+    "snapshot_path": "snapshots/2026-10-08/bcfeabb0ca056189e8a865c537ac791bb497e4b068ed00f1cd68d279a4db4269.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3316,
     "title": "What the Flock?",
     "url": "https://www.redeyebr.com/what-the-flock/"
   },
