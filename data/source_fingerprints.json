@@ -2960,11 +2960,14 @@
     "url": "https://www.floridatoday.com/story/news/local/2026/08/31/video-shows-brevard-sheriff-terminate-flock-camera-usage/91554536007/"
   },
   "https://footnote4a.org/news/vumacam-flock": {
+    "archive": "80d65b478ea9334cdbaa14a7c35ad6dca64430952ba4c7d5c1c60d313231d44b.txt",
     "content_hash": "fbaeedce7b3289f6c31116a8f1077791956cfec37bc218264e3eaae7c9783771",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://footnote4a.org/news/vumacam-flock",
     "simhash": "c7b7549afb86df6b",
+    "snapshot_path": "snapshots/2026-10-08/b0e7239014f2be5adda32a8f9d8b2c0c4a21183f65430e0f127d382d1ed0fd0e.json",
+    "snapshot_status": "uploaded",
     "text_len": 11357,
     "title": "Flock Goes Global: How a $7.5 Billion Surveillance Company Found Its International Partner in South Africa's Most Controversial Camera Network | Footnote4a",
     "url": "https://footnote4a.org/news/vumacam-flock"
@@ -4140,13 +4143,16 @@
     "url": "https://www.hawley.senate.gov/hawley-expands-investigation-into-surveillance-cameras-warns-flock-competitors/"
   },
   "https://heavyweather.media/former-puerto-rico-public-safety-chief-has-exclusive-contract-with-flock-court-records-say": {
-    "content_hash": "03b0c7fca3eab1e5bb9326188ee654485fbeb8bc06a65499b599748df9cfce48",
+    "archive": "a04c31c085cb4ab74359125c466c7422c444c5031e1061d2bd8914d30270b5ba.txt",
+    "content_hash": "96be146a605c1f3cbaa02e1cccc3462c341a2becc68661c9513922c0a9999d74",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://heavyweather.media/former-puerto-rico-public-safety-chief-has-exclusive-contract-with-flock-court-records-say/",
-    "simhash": "524792df5118e572",
-    "text_len": 11841,
-    "title": "Former Puerto Rico Public Security Chief Has Exclusive Flock Distribution Contract, Court Records Say lock-1 lock-1 lock-1",
+    "simhash": "525712df5118e472",
+    "snapshot_path": "snapshots/2026-10-08/1d3bc3a03f7fda69e75b46e36ec93d5fb1bde8a0f746b504e9786cdf55c79db1.json",
+    "snapshot_status": "uploaded",
+    "text_len": 11912,
+    "title": "Former Puerto Rico Public Security Chief Has Exclusive Flock Distribution Contract, Court Records Say lock-1 lock-1",
     "url": "https://heavyweather.media/former-puerto-rico-public-safety-chief-has-exclusive-contract-with-flock-court-records-say/"
   },
   "https://heraldnews.com/story/news/2026/07/29/tiverton-town-council-oks-purchase-of-more-flock-surveillance-cameras/91081209007": {
@@ -6580,11 +6586,14 @@
     "url": "https://pr.chestercounty.com/article/Flock-LPR-Helps-East-Baton-Rouge-Deputies-Arrest-Three-Suspects-in-School-Bus-Shooting-Within-Minutes/6a68c4cd0b3f8c67775208a0"
   },
   "https://pr.murrayjournal.com/article/Flock-LPR-Helps-Utah-Deputies-Locate-Suspected-Serial-Arsonist/6a5a9525fef76cbb7d73e104": {
+    "archive": "005ed42621a2d50ee1a9a06874a2bdf53fb5e0b7d0401bdbc187fe97989c3c19.txt",
     "content_hash": "8972112c5b56714adfa2d759842200dd1de39c175a9b12fcb70a4b45117ccdd1",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://pr.murrayjournal.com/article/Flock-LPR-Helps-Utah-Deputies-Locate-Suspected-Serial-Arsonist/6a5a9525fef76cbb7d73e104",
     "simhash": "5aca9382682fa408",
+    "snapshot_path": "snapshots/2026-10-08/722dc0e7e79c062dd0c1a754591da6edc6bad731ec9647107cdb30ce399171ba.json",
+    "snapshot_status": "uploaded",
     "text_len": 2206,
     "title": "Flock LPR Helps Utah Deputies Locate Suspected Serial Arsonist Intrado",
     "url": "https://pr.murrayjournal.com/article/Flock-LPR-Helps-Utah-Deputies-Locate-Suspected-Serial-Arsonist/6a5a9525fef76cbb7d73e104"
@@ -8748,12 +8757,15 @@
     "url": "https://tygartmedia.com/everett-flock-cameras-sb-6002/"
   },
   "https://tztnews.com/2026/07/08/ahead-of-tonights-city-council-flock-safety-vote-one-cedar-city-criminal-case-raises-new-concerns": {
-    "content_hash": "d27e812535cd94a362dd831788da52e497eed9301828e553dce8541f6cb81b8a",
+    "archive": "dfdefd1133de455315b0ffb48c4d25808c3f555d56fb567af3e02b4a7d4f2a96.txt",
+    "content_hash": "c8eb2b7334b7eec721bc003b8eaef4b8fdb54addeadc28ac041966ae03db529e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://tztnews.com/2026/07/08/ahead-of-tonights-city-council-flock-safety-vote-one-cedar-city-criminal-case-raises-new-concerns/",
     "simhash": "f62d7bcccd2ce80d",
-    "text_len": 20521,
+    "snapshot_path": "snapshots/2026-10-08/f82f871ab3c332434c66bebc2631c70979b23f5a5a8748ab92f1386aad946d6c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 20536,
     "title": "AHEAD OF TONIGHT'S CITY COUNCIL FLOCK SAFETY VOTE, ONE CEDAR CITY CRIMINAL CASE RAISES NEW CONCERNS",
     "url": "https://tztnews.com/2026/07/08/ahead-of-tonights-city-council-flock-safety-vote-one-cedar-city-criminal-case-raises-new-concerns/"
   },
