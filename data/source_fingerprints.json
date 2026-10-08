@@ -314,11 +314,14 @@
     "url": "https://www.akronnewsreporter.com/2026/09/13/follow-opioid-settlement-cash/"
   },
   "https://albanyrecordsproject.com/articles/albany-council-cancels-flock-contract": {
+    "archive": "590864e01bdacdb9dbe0d0f18bd1a3d9d9de001720dfa13cca8adb8072dae0f0.txt",
     "content_hash": "bee62e68ce91c0c6d1230f6744c772eab40e1bf4da4fe56bb73b4f2107186bf9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://albanyrecordsproject.com/articles/albany-council-cancels-flock-contract",
     "simhash": "fd74980b287fa465",
+    "snapshot_path": "snapshots/2026-10-08/2f39f6d7c2f847748b5453964bffda2258cc2f1bab2e8444116a88c1fc193cd0.json",
+    "snapshot_status": "uploaded",
     "text_len": 30531,
     "title": "Albany Canceled Flock. Can the City Regulate Public and Private ALPR Systems? | Albany Records Project",
     "url": "https://albanyrecordsproject.com/articles/albany-council-cancels-flock-contract"
@@ -386,11 +389,14 @@
     "url": "https://www.alvinsun.net/news/article_22f94e55-0e41-4281-87c5-7f97ac4f1b3a.html"
   },
   "https://americanpoliticalreport.com/oklahoma-police-chief-cancels-citys-flock-safety-contract-after-citizens-raise-privacy-concerns": {
+    "archive": "78578bd3f730ad2b46c513523eaae7da1733a8ee23f96cc2d181c689ff93e987.txt",
     "content_hash": "ff8930c9f9d0094d168a17ec9b34832571bce587505d4d49a0d6be815e950dd4",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://americanpoliticalreport.com/oklahoma-police-chief-cancels-citys-flock-safety-contract-after-citizens-raise-privacy-concerns/",
     "simhash": "8996f36145b17814",
+    "snapshot_path": "snapshots/2026-10-08/09b3d1ca7c806b0c3867c9d523d25b482dd48d6ea4065712b9f468bb0a0e5854.json",
+    "snapshot_status": "uploaded",
     "text_len": 2566,
     "title": "Oklahoma Police Chief Cancels City’s Flock Safety Contract After Citizens Raise Privacy Concerns – American Political Report",
     "url": "https://americanpoliticalreport.com/oklahoma-police-chief-cancels-citys-flock-safety-contract-after-citizens-raise-privacy-concerns/"
@@ -2154,12 +2160,15 @@
     "url": "https://www.dailycal.org/news/city/city-council-to-vote-on-controversial-flock-safety-contract/article_da4ee75a-f326-43c8-b33c-b79c2a36b8e7.html"
   },
   "https://dailyemerald.com/189945/community-news/city-council-looks-to-develop-surveillance-technology-policy-by-end-of-2026": {
-    "content_hash": "75e253623bb3aedcdec16894f74fa472faec734cfd2e082b6f999bbdb6d9b2c7",
+    "archive": "3975e37420d3c67733933cdfab63ab762f219095b6f6d043e0df37b5d3faefd1.txt",
+    "content_hash": "d1d76e52c3a669eeb17026d817de6b59562781b1f7616087da66395e455ed65e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://dailyemerald.com/189945/community-news/city-council-looks-to-develop-surveillance-technology-policy-by-end-of-2026/",
-    "simhash": "c09012d461e554cb",
-    "text_len": 6554,
+    "simhash": "c8c8139c617010c3",
+    "snapshot_path": "snapshots/2026-10-08/43e9d1688d1489de29ec5528b04f7b1a4f687bc5e4e3237195b0437790ac1a6c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6528,
     "title": "City Council looks to develop surveillance technology policy by end of 2026 - Daily Emerald",
     "url": "https://dailyemerald.com/189945/community-news/city-council-looks-to-develop-surveillance-technology-policy-by-end-of-2026/"
   },
@@ -2177,21 +2186,27 @@
     "url": "https://dailyillini.com/news-stories/world-news/state-news/2026/07/28/illinois-police-double-down-on-license-plate-readers/"
   },
   "https://dailytidings.com/oregon-lawmakers-remove-privacy-safeguards-from-license-plate-camera-bill-after-heavy-lobbying": {
-    "content_hash": "a9138ddc97ee1cf3466b0a935ab3d55d97b62cd8482f2ad492f4cf4b0e237e56",
+    "archive": "871a82e6f5ca92f3a1b40e59458a2bc69398b604b45f3f26945c31011033c0c0.txt",
+    "content_hash": "783c5f492d20bf2dc1c3e65fc4b631887afcc029455500618f861c7470c65ac9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.dailytidings.com/oregon-lawmakers-remove-privacy-safeguards-from-license-plate-camera-bill-after-heavy-lobbying/",
-    "simhash": "55a189ae974db826",
-    "text_len": 4301,
+    "simhash": "55a18dae970db0a6",
+    "snapshot_path": "snapshots/2026-10-08/8eded73796a1c33626f4b44543af9832b407070e4ad3e7ea7c224790d4696dd9.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4310,
     "title": "Oregon Lawmakers Remove Privacy Safeguards From License Plate Camera Bill After Heavy Lobbying | Daily Tidings",
     "url": "https://www.dailytidings.com/oregon-lawmakers-remove-privacy-safeguards-from-license-plate-camera-bill-after-heavy-lobbying/"
   },
   "https://dailytidings.com/oregon-town-shuts-down-license-plate-camera-network-after-federal-agencies-run-more-than-6000-searches": {
+    "archive": "8cc9009325db872a9e31f45ad46fd02d70bc4447ad287531bf3448851e3ad0bb.txt",
     "content_hash": "50481a9e79e39f91b5e25619f09e3acd469607932b2cd345bfc833e2f088abdb",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.dailytidings.com/oregon-town-shuts-down-license-plate-camera-network-after-federal-agencies-run-more-than-6000-searches/",
     "simhash": "3391c863d1d0de7d",
+    "snapshot_path": "snapshots/2026-10-08/34358545a1a9d610a8b6caac5266d616be89cadf6fc54d791e2df2515af585ff.json",
+    "snapshot_status": "uploaded",
     "text_len": 2773,
     "title": "Oregon Town Shuts Down License Plate Camera Network After Federal Agencies Run More Than 6,000 Searches | Daily Tidings",
     "url": "https://www.dailytidings.com/oregon-town-shuts-down-license-plate-camera-network-after-federal-agencies-run-more-than-6000-searches/"
@@ -3469,11 +3484,14 @@
     "url": "https://www.govtech.com/public-safety/flock-safety-opponents-pack-community-meeting-in-virginia"
   },
   "https://govtech.com/public-safety/flock-safety-suspension-costs-oregon-city-7-000": {
+    "archive": "63910c87850c85df04d4d6941ec5d83f238f35bf60ae87ec40a0b6015d44791d.txt",
     "content_hash": "7e330ff0780e61eafa842005de3adfa68deaed16dc01d1bb3d20a1cd773401fa",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/flock-safety-suspension-costs-oregon-city-7-000",
     "simhash": "47fe016670d1cd1d",
+    "snapshot_path": "snapshots/2026-10-08/e69de66bd5e43bd54de67678883894ba070226496290760dafe2aa6e59974da2.json",
+    "snapshot_status": "uploaded",
     "text_len": 3662,
     "title": "Flock Safety Suspension Costs Oregon City $7,000",
     "url": "https://www.govtech.com/public-safety/flock-safety-suspension-costs-oregon-city-7-000"
@@ -3962,12 +3980,15 @@
     "url": "https://www.heraldnews.com/story/news/2026/07/29/tiverton-town-council-oks-purchase-of-more-flock-surveillance-cameras/91081209007/"
   },
   "https://hh-today.com/council-votes-to-end-flock-camera-contract": {
-    "content_hash": "b639d280947b29956acf3e08f467b88ec55beded41a9dede393db398d6052629",
+    "archive": "ffe4ec5a0712e7cbe34610440ef5fff0c8c9fd8be33a764aa085a89df0fc79bd.txt",
+    "content_hash": "db2cd37b6462d1f3eb55c388ed470e220aa61baa9752497ec3390327615e1c53",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://hh-today.com/council-votes-to-end-flock-camera-contract/",
-    "simhash": "7987853360d143c4",
-    "text_len": 9581,
+    "simhash": "5fa7a53328b112e0",
+    "snapshot_path": "snapshots/2026-10-08/2a23cc647af07b2db926fb6632465797359fed554a3086c524c9cac825905877.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9660,
     "title": "Council votes to end Flock camera contract – Hasso Hering",
     "url": "https://hh-today.com/council-votes-to-end-flock-camera-contract/"
   },
@@ -4501,11 +4522,14 @@
     "url": "https://www.karmactive.com/flock-safety-cameras-grassroots-backlash-50-cities/"
   },
   "https://kcfmradio.com/2026/02/03/flock-cameras-approved-city-manager-evaluation-ocf-grant-cycle": {
+    "archive": "89eac55a48d9c9e29c9adedb12f815fb178a3356f90ba14170bb5b532eb921cc.txt",
     "content_hash": "e6bf3d3d8d5c97926c4b4dcb76647c03240fa9ea17cfe0a77002359bf238bc19",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://kcfmradio.com/2026/02/03/flock-cameras-approved-city-manager-evaluation-ocf-grant-cycle/",
     "simhash": "393c1cab4231cf8d",
+    "snapshot_path": "snapshots/2026-10-08/a57ab40b0f7eb1c2e676d516e1bfec5dfac8f764b07b58a336cc6270e6a5884a.json",
+    "snapshot_status": "uploaded",
     "text_len": 4400,
     "title": "FLOCK Cameras Approved; City Manager Evaluation; OCF Grant Cycle - Coast Radio - Florence Oregon News - KCST • KCFM",
     "url": "https://kcfmradio.com/2026/02/03/flock-cameras-approved-city-manager-evaluation-ocf-grant-cycle/"
@@ -5128,51 +5152,66 @@
     "url": "https://lookout.co/city-council-votes-to-end-santa-cruzs-contract-with-flock-safety/story"
   },
   "https://lookouteugene-springfield.com/story/justice/2025/12/05/eugene-announces-termination-of-flock-contract": {
+    "archive": "60a1fc3b3fe4ce8b2ef5ec28f6a6aa466245b3092bfdc5f8c70bfc106573f566.txt",
     "content_hash": "fa8e85a0b993e0055ef47fa47cdb25c296c9504e6b6637f70ad81b802461ce28",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://lookouteugene-springfield.com/story/justice/2025/12/05/eugene-announces-termination-of-flock-contract/",
     "simhash": "8dd08ca68581ca12",
+    "snapshot_path": "snapshots/2026-10-08/790387d5092e6e16a4b016a5c24baeb03d818dc0206f85968f64cef57f8b3d9b.json",
+    "snapshot_status": "uploaded",
     "text_len": 7583,
     "title": "Eugene, Springfield announce end of Flock cameras - Lookout Eugene-Springfield",
     "url": "https://lookouteugene-springfield.com/story/justice/2025/12/05/eugene-announces-termination-of-flock-contract/"
   },
   "https://lookouteugene-springfield.com/story/justice/2025/12/16/timeline-the-brief-troubled-history-of-flock-cameras-in-eugene-springfield": {
+    "archive": "f9388ae00e33e8569a3d664130d72d9693eb2d202f27415e91ef25593de47366.txt",
     "content_hash": "79bb490f2aff3251a00c4327912a302d83d1b100abfd10555e4c3d629c1abc0c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://lookouteugene-springfield.com/story/justice/2025/12/16/timeline-the-brief-troubled-history-of-flock-cameras-in-eugene-springfield/",
     "simhash": "32213627cad1cd13",
+    "snapshot_path": "snapshots/2026-10-08/196d889d0be49290422da6087d67b4baf3b1a3e69abda038a1f6990ca294345d.json",
+    "snapshot_status": "uploaded",
     "text_len": 9632,
     "title": "Timeline: The brief, troubled history of Flock cameras in Eugene, Springfield - Lookout Eugene-Springfield",
     "url": "https://lookouteugene-springfield.com/story/justice/2025/12/16/timeline-the-brief-troubled-history-of-flock-cameras-in-eugene-springfield/"
   },
   "https://lookouteugene-springfield.com/story/justice/2026/01/21/flock-safety-removing-springfield-cameras-police-say": {
+    "archive": "d0b28b7a5c5582c88f3482963c676301fe396121a754cb8e10ecf77af581b6da.txt",
     "content_hash": "d6256075fff74105e6ad57c296bbbbeca6de062816385d55359dc1b1d5e6ae08",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://lookouteugene-springfield.com/story/justice/2026/01/21/flock-safety-removing-springfield-cameras-police-say/",
     "simhash": "c35e5c1a61de31fc",
+    "snapshot_path": "snapshots/2026-10-08/0920d674021d19a01b4e14d71b270f7b852e6737bb16ca0b9a365c57a6df9c6d.json",
+    "snapshot_status": "uploaded",
     "text_len": 2086,
     "title": "Flock Safety removing Springfield cameras, police say - Lookout Eugene-Springfield",
     "url": "https://lookouteugene-springfield.com/story/justice/2026/01/21/flock-safety-removing-springfield-cameras-police-say/"
   },
   "https://lookouteugene-springfield.com/story/justice/2026/02/03/flock-safety-to-remain-in-florence-after-close-vote": {
+    "archive": "e5743f145c95f24d2005b468aeb23157ff39bb30196fb16ce996b75a5999e434.txt",
     "content_hash": "592034e63d9139a8f69af252a273e723c61b2e529ff41482407382d4d71d2f97",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://lookouteugene-springfield.com/story/justice/2026/02/03/flock-safety-to-remain-in-florence-after-close-vote/",
     "simhash": "a9aa2d86fa4ca84e",
+    "snapshot_path": "snapshots/2026-10-08/88c70b2e4b4b41fceb651ad28f442cbb6a3e9d56f80ac4e63e3c1e2388086cce.json",
+    "snapshot_status": "uploaded",
     "text_len": 5628,
     "title": "Florence will keep Flock Safety cameras after close council vote - Lookout Eugene-Springfield",
     "url": "https://lookouteugene-springfield.com/story/justice/2026/02/03/flock-safety-to-remain-in-florence-after-close-vote/"
   },
   "https://lookouteugene-springfield.com/story/latest-news/2025/12/10/lane-county-sheriffs-office-suspends-flock-safety-contract": {
+    "archive": "8b98cc64c06d48b4addbcb7647196f2cdbe694140c8c6a159096b3f6c4cf87bd.txt",
     "content_hash": "d0f137560e67a93bc769784bc900cf359ad664c2978cb1f859d0b9b2b0a43ed2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://lookouteugene-springfield.com/story/latest-news/2025/12/10/lane-county-sheriffs-office-suspends-flock-safety-contract/",
     "simhash": "138400ea638dda0e",
+    "snapshot_path": "snapshots/2026-10-08/14d5917e7dba5528a320f2ce5defd35b69ceb02a6a9f6bea9502ce76a9ad991b.json",
+    "snapshot_status": "uploaded",
     "text_len": 3193,
     "title": "Lane County Sheriff’s Office suspends Flock Safety contract - Lookout Eugene-Springfield",
     "url": "https://lookouteugene-springfield.com/story/latest-news/2025/12/10/lane-county-sheriffs-office-suspends-flock-safety-contract/"
@@ -5656,11 +5695,14 @@
     "url": "https://news.thepalmbayer.com/news/this-week-in-palm-bay-episode-24-september-21-2026/"
   },
   "https://news9.com/oklahoma-city-news/flock-camera-technology-wont-be-used-in-latimer-county": {
+    "archive": "17d1e8bcd36c128ce3fb203d5be95849d31e90b40cfc6d63d6a6cc8f5089ae0c.txt",
     "content_hash": "f975394135491404c219814a5e64ce5743afb3e20255054d7f26f90fe38b7b27",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.news9.com/oklahoma-city-news/flock-camera-technology-wont-be-used-in-latimer-county",
     "simhash": "970bd0d21535b734",
+    "snapshot_path": "snapshots/2026-10-08/f81c1af91d787ba7b4bdd35cf6a1fbc7a6cd1377d69e38c367a5283950fa8f59.json",
+    "snapshot_status": "uploaded",
     "text_len": 2117,
     "title": "Flock camera technology won't be used in Latimer County, sheriff says - News9.com",
     "url": "https://www.news9.com/oklahoma-city-news/flock-camera-technology-wont-be-used-in-latimer-county"
@@ -5705,11 +5747,14 @@
     "url": "https://www.news9.com/oklahoma-city-news/okc-police-seek-new-restrictions-on-federal-access-to-flock-camera-data"
   },
   "https://news9.com/oklahoma-politics-statewide/oklahoma-lawmakers-examine-privacy-issues-with-flock-cameras": {
+    "archive": "dac093a26ebd1f7650934a78b41ceeaf93dc95ea4846ddc8202dfe31295d993f.txt",
     "content_hash": "88c479f00981100fe1dfa52494dee84762889a1de0599a88f80e6c54b9142cb2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.news9.com/oklahoma-politics-statewide/oklahoma-lawmakers-examine-privacy-issues-with-flock-cameras",
     "simhash": "79621ab498549332",
+    "snapshot_path": "snapshots/2026-10-08/a897432b30cee0db401fcf3045db9c3b8e1005a7d3211d1b32d18f0825be32b3.json",
+    "snapshot_status": "uploaded",
     "text_len": 7204,
     "title": "Oklahoma Lawmakers Address Flock Cameras, Under Scrutiny for Public Safety and Personal Data Protection - News9.com",
     "url": "https://www.news9.com/oklahoma-politics-statewide/oklahoma-lawmakers-examine-privacy-issues-with-flock-cameras"
@@ -5881,11 +5926,14 @@
     "url": "https://www.okc.gov/Services/Public-Safety/Police/Flock-Safety-license-plate-reader-LPR-usage-in-Oklahoma-City"
   },
   "https://okhouse.gov/posts/news-20251016_3": {
+    "archive": "2029b2473aabf503e5d3b4532b5dccca9ca5bd3837e79338266c6cbd1eb4716b.txt",
     "content_hash": "46020e161b4d99e40b25b4d1d2fb5a0ea31da54f5ddb8a5a672ffbde2d08cbdb",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.okhouse.gov/posts/news-20251016_3",
     "simhash": "259a8f1d5aaca142",
+    "snapshot_path": "snapshots/2026-10-08/137bbe2b691fc4d84a5332eab987a043100bdf696a6f012c8d702b8326d7a193.json",
+    "snapshot_status": "uploaded",
     "text_len": 4961,
     "title": "Gann Studies License Plate Readers Impact on Privacy",
     "url": "https://www.okhouse.gov/posts/news-20251016_3"
