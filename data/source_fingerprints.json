@@ -915,11 +915,14 @@
     "url": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-03-24%20Annotated%20Agenda%20-%20Council.pdf"
   },
   "https://bleedingheartland.com/2025/07/17/surveillance-ai-alpr-flock-transparency": {
+    "archive": "9db99d7fb070c854073a2a4e044237881c73cedce4005b547d4dd7ed1920b221.txt",
     "content_hash": "e89ed1b75e681a00a28778223484d0bbe18070aacbe0efd2fc09f420a2d8aea6",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.bleedingheartland.com/2025/07/17/surveillance-ai-alpr-flock-transparency/",
     "simhash": "05f7b5acd12563f0",
+    "snapshot_path": "snapshots/2026-10-08/693406f1f7c12624b2ea061437a12c0476e4d7cec92266f0944c29d6b3a30a6f.json",
+    "snapshot_status": "uploaded",
     "text_len": 27172,
     "title": "AI mass surveillance expands, Iowa cities resist transparency - Bleeding Heartland",
     "url": "https://www.bleedingheartland.com/2025/07/17/surveillance-ai-alpr-flock-transparency/"
@@ -1193,21 +1196,27 @@
     "url": "https://cedarcity.openutah.org/meetings/2026-07-08-cedar-city-council-to-discuss-speed-bumps-rap-tax-funding-and-flock-safety-camer-749a1132-f09e-46ad-a92c-298e0dc63126"
   },
   "https://cedarrapidsgazette-ia.newsmemory.com/?publink=0eeb16b1a_134f8f1": {
+    "archive": "0c604e5e705d9ffb8e011c9affe33524862c45d36a44f91fa999b8a526716b96.txt",
     "content_hash": "b9770b40986aabb08c47849b8ed6ef099fa0d2fec69492814d3d3955c69e3347",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://cedarrapidsgazette-ia.newsmemory.com/?publink=0eeb16b1a_134f8f1",
     "simhash": "ee31157cbd7507ae",
+    "snapshot_path": "snapshots/2026-10-08/bc56f660d890bb4c520cf306ba0fd992ffc33c65afd21ee268a59effc903a308.json",
+    "snapshot_status": "uploaded",
     "text_len": 7301,
     "title": "C.R. police using 70 new license plate cameras - The Green Gazette",
     "url": "https://cedarrapidsgazette-ia.newsmemory.com/?publink=0eeb16b1a_134f8f1"
   },
   "https://cedarrapidsgazette-ia.newsmemory.com/?publink=3c7df1e6a_1351fa6": {
+    "archive": "dc6e7eb98cea0c4bf5b1e187ae6847ed29fb11c71b0d55f4abdd5bd995bcce6e.txt",
     "content_hash": "e81fe2563bde7e2a6687f58b4de3961993b84d911ff507e77ac48d8a19bdee7a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://cedarrapidsgazette-ia.newsmemory.com/?publink=3c7df1e6a_1351fa6",
     "simhash": "3b78a06d012cd28a",
+    "snapshot_path": "snapshots/2026-10-08/5e3e75620de9c807193458e92243dc97be6ae777595a80b669697900e754c9dd.json",
+    "snapshot_status": "uploaded",
     "text_len": 5874,
     "title": "Coralville to remove license plate reader cams - The Green Gazette",
     "url": "https://cedarrapidsgazette-ia.newsmemory.com/?publink=3c7df1e6a_1351fa6"
@@ -4236,11 +4245,14 @@
     "url": "https://www.iowapublicradio.org/ipr-news/2025-09-12/flock-ai-surveillance-police-cameras-eastern-iowa"
   },
   "https://iowapublicradio.org/ipr-news/2026-08-27/flock-cameras-privacy-concerns-indianola": {
+    "archive": "9beb588a56c891acb65af50e0268451275c409997716ba35b036a6277d9e34f6.txt",
     "content_hash": "15d064060b16c06a666dce4da706316cac36a4598488f19847d3c558283ec055",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.iowapublicradio.org/ipr-news/2026-08-27/flock-cameras-privacy-concerns-indianola",
     "simhash": "149f71a4c0a79173",
+    "snapshot_path": "snapshots/2026-10-08/ecf4f3c59e4b1527999222a9db9940bcfeddba88aba7ddb2c86992d20a8a4329.json",
+    "snapshot_status": "uploaded",
     "text_len": 6454,
     "title": "Cities around Iowa ditch Flock cameras amid growing privacy concerns | Iowa Public Radio",
     "url": "https://www.iowapublicradio.org/ipr-news/2026-08-27/flock-cameras-privacy-concerns-indianola"
@@ -4731,12 +4743,15 @@
     "url": "https://www.kitsapsun.com/story/news/2026/08/17/flock-cameras-in-washington-state-where-to-find-them-near-me/91336758007/"
   },
   "https://kjan.com/news/local-news/another-iowa-town-blinds-flock-cameras-though-some-crimes-may-go-unsolved": {
-    "content_hash": "c29b952c6bd051659eb7b93af205e543edc3be7466b1ee24ea016b0e09d62b37",
+    "archive": "9e0755db8dabde9fabdf93a64c320bc553bee9c9064fee4617ef728b3fda7c9c.txt",
+    "content_hash": "ad562c474766591c65d90f1048d612e53ba48f4b01bef16d322046740a4eaf14",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.kjan.com/news/local-news/another-iowa-town-blinds-flock-cameras-though-some-crimes-may-go-unsolved/",
-    "simhash": "01e5723b53b13a26",
-    "text_len": 1683,
+    "simhash": "0124380f52d0bb2c",
+    "snapshot_path": "snapshots/2026-10-08/8eb3453d13bd731a7c987e49679b3a80eb21e7944716a71eacdb2257461983c1.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1729,
     "title": "Another Iowa town blinds Flock cameras, though some crimes may go unsolved - KJAN",
     "url": "https://www.kjan.com/news/local-news/another-iowa-town-blinds-flock-cameras-though-some-crimes-may-go-unsolved/"
   },
@@ -4871,12 +4886,15 @@
     "url": "https://www.kqed.org/news/12069705/santa-cruz-the-first-in-california-to-terminate-its-contract-with-flock-safety"
   },
   "https://krna.com/ixp/675/p/indianola-police-flock-cameras": {
-    "content_hash": "83aeecbcc253c63e6c36b3fe229411547abc2a26be1a3af697b61a53d256cf4b",
+    "archive": "db5177607a73e09910241e91728ac5b76501eacea19afa57bd8d699f556d2ce9.txt",
+    "content_hash": "7842d3b00739f27b90f96aa79a5493c9cc7b72289ba0629edc1445516c45a9e5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://krna.com/ixp/675/p/indianola-police-flock-cameras/",
-    "simhash": "dc653acbd9898060",
-    "text_len": 2181,
+    "simhash": "cc473a8999c10060",
+    "snapshot_path": "snapshots/2026-10-08/e7a953af3bfd6e6e7d085b80f55237ba5dcb070cc11cd507650977cd4aaf9714.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2745,
     "title": "Another Iowa City Deactivates Flock License Plate Cameras",
     "url": "https://krna.com/ixp/675/p/indianola-police-flock-cameras/"
   },
@@ -5158,11 +5176,14 @@
     "url": "https://www.littlerock.gov/city-administration/board-of-directors/meeting-agenda/AGENDA - WEB - 2-18-2025/R%20-%20LRPD%20Flock%20Safety%20Cameras%20with%20Insight%20Public%20Sector.pdf"
   },
   "https://littlevillagemag.com/flock-alpr-cameras-removed-coralville": {
+    "archive": "613bc795b6e4431d71c5f6c1d5eacccc4a13ac5a2e224a51f5dfe09bc5e5c790.txt",
     "content_hash": "624def99e4770e2306d79ba7798135ba3e2c17dae96d9f49a598133fd3a5fdfd",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://littlevillagemag.com/flock-alpr-cameras-removed-coralville/",
     "simhash": "d80eb5053a089aa2",
+    "snapshot_path": "snapshots/2026-10-08/b456a3b6b4a84f3a4bcdbddb44fc72fdef591e9c9b52b2c20b03cbc9ef747875.json",
+    "snapshot_status": "uploaded",
     "text_len": 12682,
     "title": "Coralville City Council ends Flock contract signed by police chief after backlash; residents tell city 'never again' - Little Village",
     "url": "https://littlevillagemag.com/flock-alpr-cameras-removed-coralville/"
@@ -6659,12 +6680,15 @@
     "url": "https://ransonfinancial.com/2024/10/15/wichita-city-council-to-consider-gunshot-detecting-devices-water-plant-agreement/"
   },
   "https://reason.com/2025/07/29/an-arkansas-town-agrees-to-remove-a-license-plate-camera-aimed-at-a-couples-home": {
-    "content_hash": "0512ee94607419aefa1c94020f45085683f36009628002e2986d4aa1fd2bb14f",
+    "archive": "760d2a9d3f32c02f9e267ad9b9d19eed699d5e6381b20581d8865d64a6c63e2e.txt",
+    "content_hash": "9d00141635872a696c48077ccbbee6ab6a37f54578b33602119683c775b5a9f5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://reason.com/2025/07/29/an-arkansas-town-agrees-to-remove-a-license-plate-camera-aimed-at-a-couples-home/",
-    "simhash": "61b34045da2f8b1c",
-    "text_len": 10319,
+    "simhash": "61a34451d00f8a58",
+    "snapshot_path": "snapshots/2026-10-08/fc51898a19d656f3f6a5c5445eb402b9da042fd3a5b54396c119950921c08bd6.json",
+    "snapshot_status": "uploaded",
+    "text_len": 10160,
     "title": "Arkansas town agrees to remove a license plate camera aimed at a home",
     "url": "https://reason.com/2025/07/29/an-arkansas-town-agrees-to-remove-a-license-plate-camera-aimed-at-a-couples-home/"
   },
@@ -7185,12 +7209,15 @@
     "url": "https://seattlered.com/legislature/spokane-sheriff-shuts-down-flock-cameras-sb-6002/4117761"
   },
   "https://securityinfowatch.com/video-surveillance/license-plate-detection/news/55275267/cedar-rapids-police-department-using-70-new-license-plate-reader-cameras": {
-    "content_hash": "8a6d4bc794cb24d5c109eee22655e16c3ace6ff0d5adeb09ed88d79786eafcf5",
+    "archive": "05f3083d7cd00b301bd8caf2a347d076baba2cb6b6bcd69a9062685df903401b.txt",
+    "content_hash": "ffa49cb67736dee159fe6ffe3947c05e17fc80c8623ace06c897088f113aff9a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.securityinfowatch.com/video-surveillance/license-plate-detection/news/55275267/cedar-rapids-police-department-using-70-new-license-plate-reader-cameras",
-    "simhash": "ce1a1f7cbd77e7ae",
-    "text_len": 7366,
+    "simhash": "c81b1d7cbd77078e",
+    "snapshot_path": "snapshots/2026-10-08/299b330a2a16c87dc3dcc3b0f5546b21eaba4b223027d985778d86db5a61124c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7335,
     "title": "Cedar Rapids Police Department expands surveillance with 70 new license plate reader cameras | Security Info Watch",
     "url": "https://www.securityinfowatch.com/video-surveillance/license-plate-detection/news/55275267/cedar-rapids-police-department-using-70-new-license-plate-reader-cameras"
   },
@@ -7850,12 +7877,15 @@
     "url": "https://www.thecooldown.com/green-tech/south-kingstown-removes-flock-license-plate-readers/"
   },
   "https://thecooldown.com/green-tech/waukee-iowa-police-flock-safety-contract-privacy-concerns": {
-    "content_hash": "825b9b4f9faaffcfe5c3a883134642053f250037c11d88a108b6ade561967bda",
+    "archive": "1d8681298b97b62dda745e5b7327f883bd01758ea95600e6bba8f5a10d5ba2ed.txt",
+    "content_hash": "833b6eab413233f5720f088d48568f0d165bb5ae5dda95e3daf89258c3fa3037",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.thecooldown.com/green-tech/waukee-iowa-police-flock-safety-contract-privacy-concerns/",
-    "simhash": "c0b62377b022c4b6",
-    "text_len": 2925,
+    "simhash": "c0b62177be328496",
+    "snapshot_path": "snapshots/2026-10-08/4c49367f38b054e63ce806f7fcfd59519cef0953227460281e55425e18d0e27c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2915,
     "title": "Iowa police department drops Flock cameras as privacy fight heads to state lawmakers",
     "url": "https://www.thecooldown.com/green-tech/waukee-iowa-police-flock-safety-contract-privacy-concerns/"
   },
@@ -8039,11 +8069,14 @@
     "url": "https://theokeagle.com/2022/06/22/tulsa-county-sheriffs-office-to-install-25-license-plate-reading-cameras-2/"
   },
   "https://theperrynews.com/waukee-pd-ends-contract-with-license-plate-reader-company": {
+    "archive": "a2c08bf0392b60532f67842d6ab6479445206f625b72f04426e8c7a273705f38.txt",
     "content_hash": "d1888220480970afb04a3c8278233c28a62e3466d0cb58372401061ed823e370",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://theperrynews.com/waukee-pd-ends-contract-with-license-plate-reader-company/",
     "simhash": "34bd93a623e15730",
+    "snapshot_path": "snapshots/2026-10-08/85d47455eb89d0c376e461124ca61a753271f137108d8ad8d255eded0b4bd54c.json",
+    "snapshot_status": "uploaded",
     "text_len": 1652,
     "title": "Waukee PD ends contract with license plate reader company | ThePerryNews",
     "url": "https://theperrynews.com/waukee-pd-ends-contract-with-license-plate-reader-company/"
@@ -8424,11 +8457,14 @@
     "url": "https://transparency.flocksafety.com/west-des-moines-ia-pd"
   },
   "https://triarkradio.com/local-news/city-of-cabot-suspends-flock-cameras-mayor-provides-friday-update": {
-    "content_hash": "0f4e699a4287b2b8aa81c748b1e50dfbc536b1410a672db62dffaf58daae4ea1",
+    "archive": "86b9ede9545914ce66d3ca1272e3f98c90c3b70bedfd4687c3527b635c6fe7ff.txt",
+    "content_hash": "a64553ab49ad75a1bcfd589611ca0e9a648b19fdfd9625345b04907d21bd49ef",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.triarkradio.com/local-news/city-of-cabot-suspends-flock-cameras-mayor-provides-friday-update",
-    "simhash": "06465197c451820d",
+    "simhash": "26461190c451828d",
+    "snapshot_path": "snapshots/2026-10-08/f485a1c8545828fe7e8b3217cf41a9db892be30251bc82c9a8637d6af7b2ef51.json",
+    "snapshot_status": "uploaded",
     "text_len": 1459,
     "title": "City of Cabot suspends flock cameras, Mayor provides Friday update – TriArk Radio",
     "url": "https://www.triarkradio.com/local-news/city-of-cabot-suspends-flock-cameras-mayor-provides-friday-update"
