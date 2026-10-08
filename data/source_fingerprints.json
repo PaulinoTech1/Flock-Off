@@ -2464,11 +2464,14 @@
     "url": "https://www.desmoinesregister.com/story/news/local/waukee/2026/08/15/waukee-police-department-wont-renew-its-flock-contract-11-cameras-license-plate-reader/91318490007/"
   },
   "https://diggingdeeper.net/2025/10/24/plate-reader-strikes-again": {
+    "archive": "61dd5126639d34b717dc66b8bbb564d2df75306ee43ed2dcdce17d918e681004.txt",
     "content_hash": "28745deb3a394912b83f29f82ebf00e734163af7ae35aca482d73cf3929ebec6",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://diggingdeeper.net/2025/10/24/plate-reader-strikes-again/",
     "simhash": "9334fd1509698776",
+    "snapshot_path": "snapshots/2026-10-08/36620940db778d99ed2bbc9551ce3f80550fef64d9a85cd9610a1b37f5db2ef3.json",
+    "snapshot_status": "uploaded",
     "text_len": 3281,
     "title": "Plate Reader Strikes Again – Hale Multimedia LLC",
     "url": "http://diggingdeeper.net/2025/10/24/plate-reader-strikes-again/"
@@ -2855,22 +2858,28 @@
     "url": "https://flatwaterfreepress.org/a-nebraska-city-voted-to-ban-flock-cameras-the-county-wants-to-keep-surveilling-drivers-anyway/"
   },
   "https://flatwaterfreepress.org/license-plate-readers-in-nebraska-help-ice-conduct-immigration-enforcement-efforts": {
+    "archive": "5bdeb2f4fd44e5546ea63c8bd271601e11ada5861aec445020f901a6368a6528.txt",
     "content_hash": "c03ade471599204290f262aadfa73090beba5bf7f20679876ead1392f4190229",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://flatwaterfreepress.org/license-plate-readers-in-nebraska-help-ice-conduct-immigration-enforcement-efforts/",
     "simhash": "85c9b4d4c9352ff1",
+    "snapshot_path": "snapshots/2026-10-08/8c18372c2569c06b5451bdee3e436d1d674778ecb9cd839323d7e9ab09a61f9e.json",
+    "snapshot_status": "uploaded",
     "text_len": 17364,
     "title": "License plate readers in Nebraska help ICE conduct immigration enforcement efforts - Flatwater Free Press",
     "url": "https://flatwaterfreepress.org/license-plate-readers-in-nebraska-help-ice-conduct-immigration-enforcement-efforts/"
   },
   "https://flatwaterfreepress.org/nebraska-law-enforcement-agencies-using-opioid-settlement-money-on-surveillance-technology-tools": {
-    "content_hash": "fb15c2735597bf8e2dbbcfcc9a46ab59e7d571e48c5fea1a2a72d6651d8d5646",
+    "archive": "489bccd081f4697d016d302fdb1cd687d43aaa5e2e579595f35ebdad0d48b1f9.txt",
+    "content_hash": "89f0c2673bc994034e9cb9409c4e76344c3715babf98750c50a781ec0c45dcc0",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://flatwaterfreepress.org/nebraska-law-enforcement-agencies-using-opioid-settlement-money-on-surveillance-technology-tools/",
-    "simhash": "4ff12f9b614a2061",
-    "text_len": 23507,
+    "simhash": "87f12f9b414a2065",
+    "snapshot_path": "snapshots/2026-10-08/9f6751ae46105c8e84871e85e472e1815f52ca30e82f3c2a1f339262aaaa7b1f.json",
+    "snapshot_status": "uploaded",
+    "text_len": 24110,
     "title": "Nebraska counties got money meant to combat the opioid crisis. Some are spending it on Flock cameras and other police tools. - Flatwater Free Press",
     "url": "https://flatwaterfreepress.org/nebraska-law-enforcement-agencies-using-opioid-settlement-money-on-surveillance-technology-tools/"
   },
@@ -3958,11 +3967,14 @@
     "url": "https://gray-wowt-prod.gtv-cdn.com/2026/08/04/city-ord-votes-unanimously-remove-its-flock-cameras-first-nebraska/"
   },
   "https://gray-wowt-prod.gtv-cdn.com/2026/08/10/what-cost-city-ord-weighs-public-safety-privacy-after-vote-remove-flock-cameras": {
+    "archive": "1993b111108342ac2a93ff3adacd487962fb47b6cdfcfa4c1928d51227350d4f.txt",
     "content_hash": "ca83d152c87edf9adc970c271c44cae354a9381020b6c52abc741e99bee812aa",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-wowt-prod.gtv-cdn.com/2026/08/10/what-cost-city-ord-weighs-public-safety-privacy-after-vote-remove-flock-cameras/",
     "simhash": "976c7445d8d8c8b5",
+    "snapshot_path": "snapshots/2026-10-08/40d13dc3982670f19bff5cc6206bbbcb035b396afbab7c3456445f6d30a61dfd.json",
+    "snapshot_status": "uploaded",
     "text_len": 5265,
     "title": "The City of Ord voted to remove Flock Automated License Plate Readers and now takes the decision to the Valley County Board",
     "url": "https://gray-wowt-prod.gtv-cdn.com/2026/08/10/what-cost-city-ord-weighs-public-safety-privacy-after-vote-remove-flock-cameras/"
@@ -5798,31 +5810,40 @@
     "url": "https://nebraskapublicmedia.org/en/news/news-articles/as-flock-security-cameras-expand-across-nebraska-communities-express-concerns-about-data-privacy/"
   },
   "https://nebraskapublicmedia.org/en/news/news-articles/license-plate-readers-in-nebraska-help-ice-conduct-immigration-enforcement-efforts": {
+    "archive": "c8d338994329309bc1269e8ac46ea28ce0715b4adc699645607f0eae9c3b9f6f.txt",
     "content_hash": "9eb78536001a04557af018f2746cddc2567dad82622ca66e4c87ec60f149128f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://nebraskapublicmedia.org/en/news/news-articles/license-plate-readers-in-nebraska-help-ice-conduct-immigration-enforcement-efforts/",
     "simhash": "a1e9b5d4c975bfe9",
+    "snapshot_path": "snapshots/2026-10-08/d7961d1b90b3ba21dc9a985a257124c7dfe11b987bb5bf679ae2adbe84661e42.json",
+    "snapshot_status": "uploaded",
     "text_len": 16839,
     "title": "License plate readers in Nebraska help ICE conduct immigration enforcement efforts | Nebraska Public Media Nebraska Public Media Nebraska Public Media Search Close Menu Close Search Nebraska Public Media facebook twitter youtube instagram linkedin",
     "url": "https://nebraskapublicmedia.org/en/news/news-articles/license-plate-readers-in-nebraska-help-ice-conduct-immigration-enforcement-efforts/"
   },
   "https://nebraskapublicmedia.org/en/news/news-articles/nebraska-counties-got-money-meant-to-combat-the-opioid-crisis-some-are-spending-it-on-flock-cameras-and-other-police-tools": {
+    "archive": "da4925c5c06283c63e18579c7ff608dd2f27fb739b30498dc2ffc8bdb998f5c7.txt",
     "content_hash": "19cd3888bb45c592d39c6529da6a791d18d15524c1e75c026519980716172253",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://nebraskapublicmedia.org/en/news/news-articles/nebraska-counties-got-money-meant-to-combat-the-opioid-crisis-some-are-spending-it-on-flock-cameras-and-other-police-tools/",
     "simhash": "82b56bda754a3461",
+    "snapshot_path": "snapshots/2026-10-08/d4edf7d19e9b0335a70ed5ff77cc4cc45a424937e1913bea32e72c02a4761108.json",
+    "snapshot_status": "uploaded",
     "text_len": 12250,
     "title": "Nebraska counties got money meant to combat the opioid crisis. Some are spending it on Flock cameras and other police tools | Nebraska Public Media Nebraska Public Media Nebraska Public Media Search Close Menu Close Search Nebraska Public Media facebook twitter youtube instagram linkedin",
     "url": "https://nebraskapublicmedia.org/en/news/news-articles/nebraska-counties-got-money-meant-to-combat-the-opioid-crisis-some-are-spending-it-on-flock-cameras-and-other-police-tools/"
   },
   "https://nebraskapublicmedia.org/en/news/news-articles/western-nebraska-police-chief-nixes-budget-request-for-flock-cameras": {
+    "archive": "4404bed978cfb5d76b87807d707d470e99b5adbd41d1a67c20e9d82708ce02a6.txt",
     "content_hash": "467a6b026b9bf9f3884a3655f65b5502e66c23b5402d2dec7ea57bfbc233df69",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://nebraskapublicmedia.org/en/news/news-articles/western-nebraska-police-chief-nixes-budget-request-for-flock-cameras/",
     "simhash": "6643d83e60916923",
+    "snapshot_path": "snapshots/2026-10-08/f3ac201291ab78fd8a0d068d541c6054a7b98067961e6045473801837faeae76.json",
+    "snapshot_status": "uploaded",
     "text_len": 3394,
     "title": "Western Nebraska police chief nixes budget request for Flock cameras | Nebraska Public Media Nebraska Public Media Nebraska Public Media Search Close Menu Close Search Nebraska Public Media facebook twitter youtube instagram linkedin",
     "url": "https://nebraskapublicmedia.org/en/news/news-articles/western-nebraska-police-chief-nixes-budget-request-for-flock-cameras/"
@@ -6261,11 +6282,14 @@
     "url": "https://www.paloaltoonline.com/city-government/2026/02/25/city-council-terminates-mountain-views-license-plate-camera-contract/"
   },
   "https://panhandlepost.com/posts/afe19bbc-ec9f-42a4-8ef0-7019e48d2198": {
+    "archive": "52451fbbe59a27061693b231aa6d3af66714352ed1d07bb69d1cd9fd7cf19780.txt",
     "content_hash": "5c6e7e2f39bfceb5c8fd4e369fcaa30318d27dd803eba6d290f95329ff690543",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://panhandlepost.com/posts/afe19bbc-ec9f-42a4-8ef0-7019e48d2198",
     "simhash": "483959a86416e989",
+    "snapshot_path": "snapshots/2026-10-08/ea3df70dd1fe9b51bb78ee74274a7f3e87bee7f2364bc812ed3c17a280e9ad78.json",
+    "snapshot_status": "uploaded",
     "text_len": 3897,
     "title": "Alliance Police Chief Withdraws FY27 Funding Request for Flock Safety Camera, License Plate Reader System",
     "url": "https://panhandlepost.com/posts/afe19bbc-ec9f-42a4-8ef0-7019e48d2198"
