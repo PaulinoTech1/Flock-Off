@@ -379,12 +379,15 @@
     "url": "https://alprwatch.org/pub/muckrock/data/199260-flock-email-metadata-and-contracts/FLOCK_ALPR.pdf"
   },
   "https://alvinsun.net/news/article_22f94e55-0e41-4281-87c5-7f97ac4f1b3a.html": {
-    "content_hash": "937ec9708685b08e68d106cf6f482393c303efd0a932e0d275b8da9971b6fd32",
+    "archive": "219698c34bdf424d66bbda8d910c83fde96527ba057823e9f3eb298dd26083f0.txt",
+    "content_hash": "c444b536489b4aa76d958009a0a11539798e541f320b3bf93f195eb9d9ff6145",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.alvinsun.net/news/article_22f94e55-0e41-4281-87c5-7f97ac4f1b3a.html",
-    "simhash": "830342edac1087ea",
-    "text_len": 3656,
+    "simhash": "8542e24dec5093e9",
+    "snapshot_path": "snapshots/2026-10-08/0cc74a6593bd0a4e8e4119c02472731da4651107dd592c9002167d4abf316fb3.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3497,
     "title": "Flock cameras shuttered by Manvel city council: | News | alvinsun.net",
     "url": "https://www.alvinsun.net/news/article_22f94e55-0e41-4281-87c5-7f97ac4f1b3a.html"
   },
@@ -1099,12 +1102,15 @@
     "url": "https://www.carscoops.com/2026/02/flock-safety-las-vegas-cameras/"
   },
   "https://cashmerevalleyrecord.com/stories/sheriff-license-plate-readers-could-save-lives-but-abuse-would-cost-deputy-their-job,188848": {
-    "content_hash": "68dc5cbb3c5681a71588a7775955f8f52dc51ad6cb3ac516a44f28b5a60ca0f0",
+    "archive": "5a74dc7d6df71e8c075b8d6aed2a7ced87235625b2ed6e70d73cab7c6b123e33.txt",
+    "content_hash": "67b7a7e9b6df38e39a82a1daa5f3a7993b12d2950169de7935306e6d44ff59f1",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.cashmerevalleyrecord.com/stories/sheriff-license-plate-readers-could-save-lives-but-abuse-would-cost-deputy-their-job,188848",
-    "simhash": "9c5be6640339cfbb",
-    "text_len": 6735,
+    "simhash": "9c1bc2640131dfbb",
+    "snapshot_path": "snapshots/2026-10-08/b895a8d27a5538d2cbbbcf5c10a248a544e997c78101d112480ca69f10a06425.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6713,
     "title": "Sheriff: License plate readers could save lives, but abuse would cost deputy their job - Cashmere Valley Record",
     "url": "http://www.cashmerevalleyrecord.com/stories/sheriff-license-plate-readers-could-save-lives-but-abuse-would-cost-deputy-their-job,188848"
   },
@@ -2958,21 +2964,27 @@
     "url": "https://fox11online.com/newsletter-daily/manitowoc-ending-flock-camera-contract-in-2027"
   },
   "https://fox26houston.com/news/flock-cameras-city-manvel-unanimously-approves-remove-cameras": {
+    "archive": "e4282fc563182189bdfa96582e060c6ea71c3b80e7f05f419ea93b7b481be95c.txt",
     "content_hash": "cc79f6286cf11eed4aab816a6cfc8bb0623c4196a97232665167956be0b99e2c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox26houston.com/news/flock-cameras-city-manvel-unanimously-approves-remove-cameras",
     "simhash": "ac6fc92ee911fa6f",
+    "snapshot_path": "snapshots/2026-10-08/c5c4f13cb2042e4aaf8bbffd19fb2a46d2d466530e5e0e040b9310d937a18977.json",
+    "snapshot_status": "uploaded",
     "text_len": 3215,
     "title": "Flock cameras: City of Manvel unanimously approves to remove cameras | FOX 26 Houston",
     "url": "https://fox26houston.com/news/flock-cameras-city-manvel-unanimously-approves-remove-cameras"
   },
   "https://fox26houston.com/news/flock-cameras-city-willis-announces-theyve-discontinued-shut-off-cameras": {
+    "archive": "b88867a2d3099e73433092a1fa4f8b1edf699cab6b3ae696aa6305c4c1f4ccef.txt",
     "content_hash": "938dafebe8de32c3b4f7c47dca2933f8eaaf5417a32bbc1be254c152aaee7c4f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox26houston.com/news/flock-cameras-city-willis-announces-theyve-discontinued-shut-off-cameras",
     "simhash": "d26bf111ffe9f4d7",
+    "snapshot_path": "snapshots/2026-10-08/8c723ba240054b665c3c7f26d07b3c32fd15d885dfcc36ef42fd3a69abd305b0.json",
+    "snapshot_status": "uploaded",
     "text_len": 1370,
     "title": "Flock cameras: City of Willis announces they've discontinued, shut off cameras | FOX 26 Houston",
     "url": "https://fox26houston.com/news/flock-cameras-city-willis-announces-theyve-discontinued-shut-off-cameras"
@@ -3175,11 +3187,14 @@
     "url": "https://fox9.com/news/st-paul-city-council-flock-cameras-aug-26-2026"
   },
   "https://foxnews.com/politics/hawley-rips-flocks-sprawling-surveillance-web-texas-cities-cut-cameras-privacy-data-fears": {
+    "archive": "d64107b7cd26de94ecc3229f5b8b1ee807dd1642d84fd21062ad03f0c11d6dd3.txt",
     "content_hash": "281503d3b02d951f6ef529e05bb34b0fe5afa516aa278e98c2ac975483a0f515",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.foxnews.com/politics/hawley-rips-flocks-sprawling-surveillance-web-texas-cities-cut-cameras-privacy-data-fears",
     "simhash": "022e977a2222d7cc",
+    "snapshot_path": "snapshots/2026-10-08/81ec17abd92e72d73c313ccb5c17495f05896ed54bbe849b0c20255ae9ee8c1b.json",
+    "snapshot_status": "uploaded",
     "text_len": 12116,
     "title": "Sen Josh Hawley investigates Flock Safety AI surveillance network | Fox News",
     "url": "https://foxnews.com/politics/hawley-rips-flocks-sprawling-surveillance-web-texas-cities-cut-cameras-privacy-data-fears"
@@ -3244,12 +3259,15 @@
     "url": "https://www.geekwire.com/2025/washington-state-cities-turn-off-license-plate-reader-cameras-amid-ruling-on-data-access/"
   },
   "https://github.com/todb/pflock-docs/blob/HEAD/README.md": {
-    "content_hash": "3ec52e64f547f9fa1d005a326840c8d3ff2acf9da03b5492a5f7eba92860d5b9",
+    "archive": "8e2521f9c6700e718fe18fb7c5b89997c2e293c9929fef656963640fe62bd33d.txt",
+    "content_hash": "f3ac4f57e7ebe3d389eb1281755e4112e6908ea0e789ac2c69a7bd7ad6cdacd2",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://github.com/todb/pflock-docs/blob/HEAD/README.md",
-    "simhash": "be27d365c177c819",
-    "text_len": 7548,
+    "simhash": "be27d365c177c81d",
+    "snapshot_path": "snapshots/2026-10-08/72d3bf77681c720932ab5cf6e0f5e438bfb8638af57edba9b512018a1ba30e3d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7440,
     "title": "pflock-docs/README.md at 99b55ce9f83ac73a79bd7984f4da024875d5b881 · todb/pflock-docs · GitHub",
     "url": "https://github.com/todb/pflock-docs/blob/HEAD/README.md"
   },
@@ -3381,21 +3399,27 @@
     "url": "https://www.govtech.com/education/higher-ed/groups-ask-university-of-arizona-to-not-use-certain-cameras"
   },
   "https://govtech.com/em/safety/wash-bill-would-regulate-automated-license-plate-readers": {
+    "archive": "3f0bfba706663a2854e315660c493a0e06b025a5d190df7e2b41e91fcd8ea146.txt",
     "content_hash": "ae104bdebf42b0c1f18b1070485c8ad86d795f65ec34e192451b20e04c055646",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/em/safety/wash-bill-would-regulate-automated-license-plate-readers",
     "simhash": "d3f5c24002a5029f",
+    "snapshot_path": "snapshots/2026-10-08/2bb73ef9a7a6033fd4658390309fb1d01c45d92edf0a3e9b081bb2852f8622c9.json",
+    "snapshot_status": "uploaded",
     "text_len": 6485,
     "title": "Wash. Bill Would Regulate Automated License Plate Readers",
     "url": "https://www.govtech.com/em/safety/wash-bill-would-regulate-automated-license-plate-readers"
   },
   "https://govtech.com/gov-experience/license-plate-cameras-to-be-turned-off-in-olympia-wash": {
+    "archive": "a4f16974f5936f58d485377c5639c71e3e41be39f6b4dea3bdc7c69d7c6e375a.txt",
     "content_hash": "e2cee34909f5ce270dec63453ed7636473447f712d3537df88c33a79b06039fb",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/gov-experience/license-plate-cameras-to-be-turned-off-in-olympia-wash",
     "simhash": "d77c58b1c30e2b74",
+    "snapshot_path": "snapshots/2026-10-08/61213cd99262d3e3714ed025a7b93144fbdf6c104f0b292884f3453f9757d381.json",
+    "snapshot_status": "uploaded",
     "text_len": 7469,
     "title": "License Plate Cameras to Be Turned Off in Olympia, Wash.",
     "url": "https://www.govtech.com/gov-experience/license-plate-cameras-to-be-turned-off-in-olympia-wash"
@@ -4791,11 +4815,14 @@
     "url": "https://www.kozi.com/post/chelan-county-sheriff-to-use-license-plate-identifying-cameras-to-assist-in-crime-investigations"
   },
   "https://kprcradio.iheart.com/content/2026-09-09-manvel-to-end-flock-contract-over-privacy-concerns": {
+    "archive": "e0ef0bc4302591fa949e47ee707d606532e19b7ba6941dd749bc595f73af5727.txt",
     "content_hash": "dccc4f5421e2c1849d3b153311be23de4f407513f5d90c77a76d4e17bfd77286",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://kprcradio.iheart.com/content/2026-09-09-manvel-to-end-flock-contract-over-privacy-concerns/",
     "simhash": "de956500e5c55a2e",
+    "snapshot_path": "snapshots/2026-10-08/679743fff16d40f8d9527bfcfda97587ba4d4baa5e0ef1d24e86f04ac34f1979.json",
+    "snapshot_status": "uploaded",
     "text_len": 1327,
     "title": "Manvel to End Flock Contract Over Privacy Concerns | KPRC AM 950",
     "url": "https://kprcradio.iheart.com/content/2026-09-09-manvel-to-end-flock-contract-over-privacy-concerns/"
@@ -7165,11 +7192,14 @@
     "url": "https://sedonapete.com/2025/09/10/sedona-city-council-tells-staff-to-get-flock-out-of-town/"
   },
   "https://seenineverett.com/mayor-puts-use-of-flock-automated-license-plate-readers-on-pause-in-everett-washington": {
+    "archive": "b4f3d5e3d8ae0ba5a9a03ec7e2eb7bd3be4a6e88d237220334dee7ae761c66d4.txt",
     "content_hash": "fbde9d65b5930f23c54971a871c8288439ce552315c25b861dd022cd4cee3368",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://seenineverett.com/mayor-puts-use-of-flock-automated-license-plate-readers-on-pause-in-everett-washington/",
     "simhash": "ebf183801a0f1810",
+    "snapshot_path": "snapshots/2026-10-08/0f018ba8eaefb50f7438f3de0ca22665194afee1cb67bdafd9bd4399ffb748a9.json",
+    "snapshot_status": "uploaded",
     "text_len": 1415,
     "title": "Mayor Puts Use Of Flock Automated License Plate Readers On Pause In Everett Washington – Seen In Everett",
     "url": "https://seenineverett.com/mayor-puts-use-of-flock-automated-license-plate-readers-on-pause-in-everett-washington/"
@@ -7253,21 +7283,27 @@
     "url": "https://www.signalsaz.com/articles/flock-safety-cameras-to-be-removed-from-city-streets/"
   },
   "https://snoho.com/news/2024/jul/10/public-monitoring-cameras-coming-to-everett": {
+    "archive": "6819189bf914cc38fd9f48344430ea7912408a1026393a3b4499cc8a7e881207.txt",
     "content_hash": "f9b7099ca46c6f53148c2bda935fda8afa241a50993c12dc7241d5803f5fcfb6",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.snoho.com/news/2024/jul/10/public-monitoring-cameras-coming-to-everett/",
     "simhash": "176416e4fc8f22c5",
+    "snapshot_path": "snapshots/2026-10-08/0249c61f1e5a9abc5f5081a622aa43419fa4a6d54949401ba17514cadc901f69.json",
+    "snapshot_status": "uploaded",
     "text_len": 3793,
     "title": "Public monitoring cameras coming to Everett | Snohomish County Tribune",
     "url": "http://www.snoho.com/news/2024/jul/10/public-monitoring-cameras-coming-to-everett/"
   },
   "https://snoho.com/news/2026/jun/10/everett-settles-flock-cameras-records-lawsuit": {
+    "archive": "2752f8cfb38a5b2f9f74c52a7d693a6159cbc12bc2ae9ebc8ebb9f36a4a00c5c.txt",
     "content_hash": "3d1fdaad96303dd352a95844ea839db5f3af6ceaeb7cf24a22d36da5d2647a97",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.snoho.com/news/2026/jun/10/everett-settles-flock-cameras-records-lawsuit/",
     "simhash": "202de6b0e2604fa2",
+    "snapshot_path": "snapshots/2026-10-08/96cd682517e65ae128516c8871972fea5e63cb42ccbf22f277d4886d6aa79986.json",
+    "snapshot_status": "uploaded",
     "text_len": 2993,
     "title": "Everett settles Flock cameras records lawsuit | Snohomish County Tribune",
     "url": "http://www.snoho.com/news/2026/jun/10/everett-settles-flock-cameras-records-lawsuit/"
@@ -8387,12 +8423,15 @@
     "url": "https://www.tulsapolice.org/flock-safety"
   },
   "https://tygartmedia.com/everett-flock-cameras-sb-6002": {
-    "content_hash": "17722b16b3f7fc99e11e812651d2653a3d2067e3b3d03334e488806a3a39b212",
+    "archive": "0c4e1ce258e10eade7cda30c9562285acda78d316e93344687d99350914a21b6.txt",
+    "content_hash": "66dc7929e2f0abbd3ad1e055fb97fa2a1c6b635739a85306b3b6ae885a52f66f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://tygartmedia.com/everett-flock-cameras-sb-6002/",
-    "simhash": "a7813402c1c0365b",
-    "text_len": 10195,
+    "simhash": "a701d60243c83c7e",
+    "snapshot_path": "snapshots/2026-10-08/cf1b7204513c466c179c2cfc6466d093691d3229dded039b819b5faaf775f260.json",
+    "snapshot_status": "uploaded",
+    "text_len": 10187,
     "title": "Everett Flock Cameras: SB 6002 and the 2026 Reactivation - Tygart Media",
     "url": "https://tygartmedia.com/everett-flock-cameras-sb-6002/"
   },
@@ -8619,12 +8658,15 @@
     "url": "https://www.washingtonexaminer.com/policy/technology/4672621/flock-controversial-camera-contracts-canceled-23-states/"
   },
   "https://washingtonretail.org/olympia-and-redmond-halt-flock-safety-camera-use-amid-privacy-and-data-access-concerns-2": {
-    "content_hash": "3bc1d8d0b71d4f60b31f0c3e9f0561d85a06fdcec2c3adb03012ff6e2dfed7e6",
+    "archive": "be6ea39ea54a4f1e292bbffaf4dd06e7750519134aefb978309d6211dc7c3f94.txt",
+    "content_hash": "f5c4f9d0da82555a13cd8156645e5cd8f7b8f48e63d2a41dcdf6ed0b2080a5da",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://washingtonretail.org/olympia-and-redmond-halt-flock-safety-camera-use-amid-privacy-and-data-access-concerns-2/",
-    "simhash": "3e83357db9c1ea41",
-    "text_len": 2944,
+    "simhash": "1e8b3569d881ee41",
+    "snapshot_path": "snapshots/2026-10-08/7e9c61374f664ae325ff2b10fbb20b96b502923603e65ee9b458ad02c28aa0be.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2925,
     "title": "Olympia and Redmond halt Flock safety camera use amid privacy and data-access concerns - Washington Retail Association",
     "url": "https://washingtonretail.org/olympia-and-redmond-halt-flock-safety-camera-use-amid-privacy-and-data-access-concerns-2/"
   },
