@@ -50,11 +50,14 @@
     "url": "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384346/alamogordo-city-commission-moves-forward-2-year-flock-camera-contract"
   },
   "https://404media.co/aclu-and-eff-sue-a-city-blanketed-with-flock-surveillance-cameras": {
+    "archive": "5e8d4daf1d66e5eed3e0d3d09c016e421d4c4106ab1d5af4e5ebc3a4856b7009.txt",
     "content_hash": "7439c59bfd6abd4e5a41fa96a26f95ad7ce9a7fe749aaabbd95efb2b8de3d921",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.404media.co/aclu-and-eff-sue-a-city-blanketed-with-flock-surveillance-cameras/",
     "simhash": "cffff4f8391ad46f",
+    "snapshot_path": "snapshots/2026-10-08/869ebdae0bbb516e86daf789b6032cdf2ad09b838827eb34abf1219379694132.json",
+    "snapshot_status": "uploaded",
     "text_len": 4467,
     "title": "ACLU and EFF Sue a City Blanketed With Flock Surveillance Cameras",
     "url": "https://www.404media.co/aclu-and-eff-sue-a-city-blanketed-with-flock-surveillance-cameras/"
@@ -221,12 +224,15 @@
     "url": "https://abq.news/2026/09/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology/"
   },
   "https://abridged.org/news/woodland-flock-contract": {
-    "content_hash": "c3c6147f2e2fb88f7bbabd80b25bd5853cc20ee7689f740422c05d5363013a4f",
+    "archive": "bc7c6526f68a466ca3eacbc42d732d01f87c63190fc7c563120cd884e0f3e68c.txt",
+    "content_hash": "419387187a45fb4e9da343df5cc6b042e99ebd0557904d22c8ba4b6bfca685dc",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.abridged.org/news/woodland-flock-contract/",
-    "simhash": "f2b0698d17cf29ca",
-    "text_len": 5330,
+    "simhash": "f2ba698513cf018e",
+    "snapshot_path": "snapshots/2026-10-08/8260f279180d3dcbfa523178d58010dba7ab8a6be33aeb18fc1c8fddb79197b3.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5338,
     "title": "Flock cameras continue to scan license plates in Woodland CA Instagram Facebook Linkedin Tiktok Youtube X, formerly Twitter Bluesky Search Dropdown Arrow Dropdown Arrow Dropdown Arrow Dropdown Arrow Dropdown Arrow Dropdown Arrow Instagram Facebook Linkedin Tiktok Youtube X, formerly Twitter Bluesky Open in new window",
     "url": "https://www.abridged.org/news/woodland-flock-contract/"
   },
@@ -1616,12 +1622,15 @@
     "url": "https://cityofkearney.org/Archive/ViewFile/Item/8715"
   },
   "https://cityofwoodland.gov/1704/Automated-License-Plate-Readers-ALPR": {
-    "content_hash": "d78a317f1fc70ee0c17ffb5406f53fd8699fd0140acab063b934f04048f38fae",
+    "archive": "55c627894ed328f9650382a025ff5fe6c28dfa6a0223481d9293569407f9323a.txt",
+    "content_hash": "bb3145abefd80df237c0e3c550ef37ec455952eb2e2328cad12fdd460f8e0b36",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.cityofwoodland.gov/1704/Automated-License-Plate-Readers-ALPR",
-    "simhash": "5720d7c93394324e",
-    "text_len": 25367,
+    "simhash": "5720d7893394324e",
+    "snapshot_path": "snapshots/2026-10-08/6daa8243cb4456953ee4544583117767664e5c18102544d13860338b22a3d415.json",
+    "snapshot_status": "uploaded",
+    "text_len": 25430,
     "title": "Automated License Plate Readers (ALPR) | Woodland, CA Woodland ALPR FAQ Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
     "url": "https://www.cityofwoodland.gov/1704/Automated-License-Plate-Readers-ALPR"
   },
@@ -1835,12 +1844,15 @@
     "url": "https://coastalabc.com/newsletter-daily/glocesters-town-council-to-discuss-flock-cameras-as-opposition-rises-privacy-concerns-aug-6-2026"
   },
   "https://collegian.com/articles/news/2026/08/category-news-fort-collins-cancels-flock-safety-contract-as-cameras-are-removed-statewide": {
-    "content_hash": "3b072b4298565c2bf2921526b68deff401399b48270a8f8ddad4e281579f22fd",
+    "archive": "805ef5b16391f0437c55038e510476cae3d9eaef8ea107c53967838a269c548c.txt",
+    "content_hash": "697e9772f4dfbdc2131f9d19e6c3ed9606d63c12f99b90038893495d5bb01af1",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://collegian.com/articles/news/2026/08/category-news-fort-collins-cancels-flock-safety-contract-as-cameras-are-removed-statewide/",
-    "simhash": "21036b9c56d2b283",
-    "text_len": 9750,
+    "simhash": "2193699c5e98b683",
+    "snapshot_path": "snapshots/2026-10-08/afbabcd55408df0229c4b8223ab4cfd03b5dda9d6ed9a7ad5b8fa799869729d2.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9774,
     "title": "Fort Collins cancels Flock Safety contract as cameras are removed statewide - The Rocky Mountain Collegian",
     "url": "https://collegian.com/articles/news/2026/08/category-news-fort-collins-cancels-flock-safety-contract-as-cameras-are-removed-statewide/"
   },
@@ -1910,12 +1922,15 @@
     "url": "https://www.compassvermont.com/p/vermont-towns-face-a-july-2027-ban"
   },
   "https://compuserve.com/pf/story/0022/20260420/9692753.htm": {
-    "content_hash": "dde4fa295b9577df2d8935287ad947b35c72021e798db24048aa180ad83c3f9b",
+    "archive": "04bb330114a47d0761472fbaf9efda8414ed8f9b20f26db7dcf961475ea1299a.txt",
+    "content_hash": "7f40f449356c66cfc4ecfcbcacd66d41146a274128509988b84b3edd9bcbcb2e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.compuserve.com/pf/story/0022/20260420/9692753.htm",
-    "simhash": "01475023b073402a",
-    "text_len": 4430,
+    "simhash": "c047d0271e7b627a",
+    "snapshot_path": "snapshots/2026-10-08/e4827aa2e904998fcb30ad43b909ab45baa2207cad92810476a2b862ba518be8.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4459,
     "title": "Six Abducted Children Recovered in Five Months in Colorado With Flock License Plate Reader Technology",
     "url": "https://www.compuserve.com/pf/story/0022/20260420/9692753.htm"
   },
@@ -2093,11 +2108,14 @@
     "url": "https://d3nqdp0e3r32g8.cloudfront.net/news/baton-rouge-police-credit-license-plate-cameras-with-helping-solve-crimes"
   },
   "https://dailycal.org/news/city/city-council-to-vote-on-controversial-flock-safety-contract/article_da4ee75a-f326-43c8-b33c-b79c2a36b8e7.html": {
+    "archive": "18daba5009d8a0d90046846db02ad159c753f4a070ffe1369ff8643afd0c36ed.txt",
     "content_hash": "0ebe11f8856654e54004fef2ef12233bc931aa74705da3067ee66d0aad9a0673",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.dailycal.org/news/city/city-council-to-vote-on-controversial-flock-safety-contract/article_da4ee75a-f326-43c8-b33c-b79c2a36b8e7.html",
     "simhash": "ee0327bbdf88e8a8",
+    "snapshot_path": "snapshots/2026-10-08/52f69618a42a0fe853af335d9b040e407cb1e074a69d458b1f010bfcddb9add9.json",
+    "snapshot_status": "uploaded",
     "text_len": 4855,
     "title": "City council to vote on controversial Flock Safety contract | City | dailycal.org",
     "url": "https://www.dailycal.org/news/city/city-council-to-vote-on-controversial-flock-safety-contract/article_da4ee75a-f326-43c8-b33c-b79c2a36b8e7.html"
@@ -2224,12 +2242,15 @@
     "url": "https://denver.legistar1.com/denver/attachments/f31b1d7b-3fc3-4b2c-b88e-b825fb3bca04.pdf"
   },
   "https://denver.thebadger.news/articles/2026-09-09-englewood-council-votes-to-end-flock-camera-contract-rejects-axon-replacement": {
-    "content_hash": "ea747c34f31426a165f2e83cb3c84cd77918e5319144a3c4e9a6bbd817772223",
+    "archive": "dbd4b08e7cfb93dbb04b2005d87ad3d57a54a42c7a932680332e51da10355742.txt",
+    "content_hash": "50115f363a0e06e07fa8b3329bc8c79013a171c6eebaa67b54eb45b4427d4ddc",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://denver.thebadger.news/articles/2026-09-09-englewood-council-votes-to-end-flock-camera-contract-rejects-axon-replacement",
-    "simhash": "3598eafac6afa4a2",
-    "text_len": 3069,
+    "simhash": "3598eaf8c6ada4a2",
+    "snapshot_path": "snapshots/2026-10-08/f77cb9a91aa4ad0c1c2aab1ae654b402f55115904ff2dccd1693fd656d18905c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3050,
     "title": "Englewood council votes to end Flock camera contract, rejects Axon replacement | The Badger",
     "url": "https://denver.thebadger.news/articles/2026-09-09-englewood-council-votes-to-end-flock-camera-contract-rejects-axon-replacement"
   },
@@ -3102,31 +3123,40 @@
     "url": "https://foxnews.com/tech/man-films-himself-taking-down-flock-cameras-gets-arrested"
   },
   "https://fresno.granicusideas.com/meetings/776-city-council-on-2024-02-22-9-00-am-regular-meeting/agenda_items/65cfdd83f395e7e05600c6fb-2-dot-z-id-24-204-approve-the-updated-agreement-betw": {
+    "archive": "d10b51579384f10a8835f25c212da7a4d1d440632b32c5cd30e8ad2b5c0eb6a6.txt",
     "content_hash": "45ca990b69daa1ff538640e1b03ed9226ba739a2fd9090f23119792297eb0972",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://fresno.granicusideas.com/meetings/776-city-council-on-2024-02-22-9-00-am-regular-meeting/agenda_items/65cfdd83f395e7e05600c6fb-2-dot-z-id-24-204-approve-the-updated-agreement-betw",
     "simhash": "8a8a52307c8d9439",
+    "snapshot_path": "snapshots/2026-10-08/6e5269dbbc83290d29ebd616dab031b58e6072b352a52617d680ac1e7a8e0042.json",
+    "snapshot_status": "uploaded",
     "text_len": 799,
     "title": "2.-Z. ID 24-204 Approve the updated Agreement between the City of Fresno Police Department and Flock Safety, in an amount not to exceed $1,498,690.41 for three (3) years for the subscription services of Automated License Plate Readers (ALPR), cameras, and software. - City of Fresno",
     "url": "https://fresno.granicusideas.com/meetings/776-city-council-on-2024-02-22-9-00-am-regular-meeting/agenda_items/65cfdd83f395e7e05600c6fb-2-dot-z-id-24-204-approve-the-updated-agreement-betw"
   },
   "https://fresnoalliance.com/what-the-flock": {
-    "content_hash": "957bd957f9393e94709c05c8092e9b8a790eff2aef82bc58be4bb50d2ddb7767",
+    "archive": "1eef6ebd0374d00085f22b7bdbf0beca33cdc7e1952ddb81448ef5369c07c8f8.txt",
+    "content_hash": "b43fa0aad229fc3417b6ca3c19d58590602729a273bb4162e933d733a14f68b5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://fresnoalliance.com/what-the-flock/",
-    "simhash": "38cb5d96946fae3c",
+    "simhash": "38cb5996d46fae3c",
+    "snapshot_path": "snapshots/2026-10-08/5a7a4340df1f61e8e6ef5e6158ebfcd9c959da902b686a11ec2a0b5d1d498378.json",
+    "snapshot_status": "uploaded",
     "text_len": 12144,
     "title": "What the Flock? - Community Alliance Facebook Instagram",
     "url": "https://fresnoalliance.com/what-the-flock/"
   },
   "https://fresnoland.org/newsletter/now-fresnos-real-transportation-fight-begins": {
+    "archive": "66f4f9b4035250653605bdf03a5f033ef69e343d704870812cc43618028e7612.txt",
     "content_hash": "fa884c4e42e70ebb1b4eee8e1395a0852a012d4f5983df5f540b926c1ef73a56",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://fresnoland.org/newsletter/now-fresnos-real-transportation-fight-begins/",
     "simhash": "b2338e624ee47af7",
+    "snapshot_path": "snapshots/2026-10-08/188b971f3cd53ef3bb4545e954e4d9e4eb09e638a58c459e67282bd698ec88df.json",
+    "snapshot_status": "uploaded",
     "text_len": 4952,
     "title": "Now, Fresno’s real transportation fight begins - Fresnoland",
     "url": "https://fresnoland.org/newsletter/now-fresnos-real-transportation-fight-begins/"
@@ -3539,11 +3569,14 @@
     "url": "https://www.govtech.com/public-safety/woodland-calif-police-defend-flock-safety-amid-concern"
   },
   "https://govtech.com/transportation/woodland-calif-extends-license-plate-cam-program-amid-concern": {
+    "archive": "01ef9e2d0ada35a2971f02d26d0ca0a424b9ca45fb847d2ecdbfa3b7cdaa763c.txt",
     "content_hash": "07781517ce85371fab619d3aa69fd57bab110369ceb72be5c897e6db256e2669",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/transportation/woodland-calif-extends-license-plate-cam-program-amid-concern",
     "simhash": "dd0a6f1c072b718e",
+    "snapshot_path": "snapshots/2026-10-08/f6c0953efb5aec81866c0d57e2440ccf4d810a9b433cb856d1d4dc90db09e546.json",
+    "snapshot_status": "uploaded",
     "text_len": 5071,
     "title": "Woodland, Calif., Extends License Plate Cam Program Amid Concern",
     "url": "https://www.govtech.com/transportation/woodland-calif-extends-license-plate-cam-program-amid-concern"
@@ -3994,11 +4027,14 @@
     "url": "https://www.indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007/"
   },
   "https://insider.govtech.com/california/news/berkeley-delays-vote-on-2m-flock-safety-deal-after-public-backlash": {
+    "archive": "d2ebaecfcd88aee36d3f67171bff93d639d12560be4712602715002e43b2db10.txt",
     "content_hash": "6cd9370b4da3c37fb94e697b94ecba692099a52c728b839c7eced23de4f37274",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://insider.govtech.com/california/news/berkeley-delays-vote-on-2m-flock-safety-deal-after-public-backlash",
     "simhash": "02860e80f6a4c3da",
+    "snapshot_path": "snapshots/2026-10-08/c246df63af4055f4f220708e5bc89dc1f6a968269595445b2c9a3b19cdee8dc0.json",
+    "snapshot_status": "uploaded",
     "text_len": 3319,
     "title": "Berkeley Delays Vote on $2M Flock Safety Deal After Public Backlash",
     "url": "https://insider.govtech.com/california/news/berkeley-delays-vote-on-2m-flock-safety-deal-after-public-backlash"
@@ -4488,13 +4524,16 @@
     "url": "https://kimmonson.com/news/douglas-county-axon-contract-replaces-flock-alpr-drones/"
   },
   "https://kimmonson.com/news/fort-collins-drops-flock-but-the-license-plate-cameras-keep-spreading": {
-    "content_hash": "fc90235c5cebb42d4af2d4e97b42c1ed9c2f33ac3ee97c78ae06df682f8d67cd",
+    "archive": "46a205badb86205021a9eac78155e0755936dfb5aa5a39ce507af6c632bc08e1.txt",
+    "content_hash": "3fa8dbb6b85127feaaec93a9e04d0508a34825ce7291a4246f7caf6aae2655df",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://kimmonson.com/news/fort-collins-drops-flock-but-the-license-plate-cameras-keep-spreading/",
-    "simhash": "67afec8e6c722bcf",
-    "text_len": 19847,
-    "title": "Fort Collins drops Flock, but the license-plate cameras keep spreading | KMS Newsroom",
+    "simhash": "678dec8e6c722ecd",
+    "snapshot_path": "snapshots/2026-10-08/2e72f6b5cc9d13c0795badbbe33162a878096736a2d91fb372ebbf79800ab43e.json",
+    "snapshot_status": "uploaded",
+    "text_len": 19769,
+    "title": "Fort Collins drops Flock, but license plate cameras remain",
     "url": "https://kimmonson.com/news/fort-collins-drops-flock-but-the-license-plate-cameras-keep-spreading/"
   },
   "https://kisselkohoutes.com/news-feed/2022/8/19/douglas-county-sheriffs-office-urging-omaha-to-install-license-plate-readers": {
@@ -5239,11 +5278,14 @@
     "url": "https://meetings.cvilledata.org/meetings/harrisonburg/1425067-city-council-meeting-2026-08-11/attachments/15742880-Minutes.pdf"
   },
   "https://military.com/communities-nationwide-tearing-down-flock-cameras-quietly-replacing-them-with-these-brands": {
+    "archive": "b87a43ace574c1dde19519500570596dcba16a5befdd5e6519a31858806e6466.txt",
     "content_hash": "4ae4c857a7aa46b5e2bcdfb0d80d1194ef9a7e43412095e46a8988e0b8cbfd13",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.military.com/communities-nationwide-tearing-down-flock-cameras-quietly-replacing-them-with-these-brands",
     "simhash": "885ae642c641a7cd",
+    "snapshot_path": "snapshots/2026-10-08/364360c4c7b5d7735b1c1c44fcd2e185e35de004fc7748619233100608fc65eb.json",
+    "snapshot_status": "uploaded",
     "text_len": 4788,
     "title": "Communities Nationwide Tearing Down Flock Cameras, Quietly Replacing Them With These Brands",
     "url": "https://www.military.com/communities-nationwide-tearing-down-flock-cameras-quietly-replacing-them-with-these-brands"
@@ -6068,11 +6110,14 @@
     "url": "https://postgoo.com/posts/6a9f6abcb5221344e09c9d3c?type=article"
   },
   "https://postgoo.com/posts/6aa2244f5e5503b6ffd5f2c1?type=article": {
+    "archive": "2521f2c4ce4d2c04e114e71f5ddeda49822cfd7d941c2eb147abe93e8026c9d3.txt",
     "content_hash": "16e37a54bfc527652db064b6074715c00255901d3561b50110fc73b1e5dddbaa",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://postgoo.com/posts/6aa2244f5e5503b6ffd5f2c1?type=article",
     "simhash": "9309a1cec9628277",
+    "snapshot_path": "snapshots/2026-10-08/165f0f2499c6dec45c5a1fa360e38f7a20d1d42acc5ff62c428b35d298826ba9.json",
+    "snapshot_status": "uploaded",
     "text_len": 8379,
     "title": "Police chief updates Steamboat City Council on decommissioning Flock cameras | PostGoo Loading... Loading...",
     "url": "https://postgoo.com/posts/6aa2244f5e5503b6ffd5f2c1?type=article"
@@ -6642,12 +6687,15 @@
     "url": "https://rockymountainvoice.com/2026/07/16/douglas-county-replaces-flock-cameras-with-22-8-million-axon-public-safety-system/"
   },
   "https://rockymountainvoice.com/2026/09/14/englewood-drops-flock-cameras-amid-privacy-and-surveillance-concerns": {
-    "content_hash": "5f5293bfefcf07c20d3f9d9565c7f2e84dfeeea6035b427c4c80716c0b67e15e",
+    "archive": "91062a0609310a1a8df7337c6c85d972184b47242cfa1faecb8d84202b968aae.txt",
+    "content_hash": "29cfd99392271deec80920573eacdd63cf7b58a31724696fcf9dfc96eab0ec9f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://rockymountainvoice.com/2026/09/14/englewood-drops-flock-cameras-amid-privacy-and-surveillance-concerns/",
-    "simhash": "19102f61eb1611fe",
-    "text_len": 1217,
+    "simhash": "1b001f40ce8001f2",
+    "snapshot_path": "snapshots/2026-10-08/e9e9bef19709d459cd942c4d358bf79ce6df0b19aece02caabf6b2c7ba2f22cd.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1159,
     "title": "Englewood Drops Flock Cameras Amid Privacy and Surveillance Concerns - Rocky Mountain Voice",
     "url": "https://rockymountainvoice.com/2026/09/14/englewood-drops-flock-cameras-amid-privacy-and-surveillance-concerns/"
   },
@@ -6755,22 +6803,28 @@
     "url": "https://sandovalsignpost.com/2026/09/deflock-rr/"
   },
   "https://sanjosespotlight.com/fact-brief-has-san-jose-been-using-automated-license-plate-reader-cameras-for-at-least-15-years": {
-    "content_hash": "0d19b012249eea325ed67fc237ee35537e0b72dc1d2065ef11b989ce67107f02",
+    "archive": "b820255d5d651e27e18d087feb2ae190bc56e8936223db76b67f59e34ca27495.txt",
+    "content_hash": "671d21e3f8bb141d60deaa96cb71d53b8cbd2c7f1703c88bc623c60610249db7",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://sanjosespotlight.com/fact-brief-has-san-jose-been-using-automated-license-plate-reader-cameras-for-at-least-15-years/",
     "simhash": "312872f604f2d7ec",
+    "snapshot_path": "snapshots/2026-10-08/9af0ddad9e16fd96a8363cb0388993e479a8fbe6e05efb10d45daee70d34c712.json",
+    "snapshot_status": "uploaded",
     "text_len": 1904,
     "title": "Fact Brief: Has San Jose been using Automated License Plate Reader cameras for at least 15 years? - San José Spotlight",
     "url": "https://sanjosespotlight.com/fact-brief-has-san-jose-been-using-automated-license-plate-reader-cameras-for-at-least-15-years/"
   },
   "https://sanjosespotlight.com/san-jose-again-attempts-to-tighten-controls-on-license-plate-readers": {
-    "content_hash": "580e55e1e1525d5ddc1227c8aa52b257be297d579407284f9df0066ff37d35ea",
+    "archive": "4d22ac9503171876cfa4520d61a3761c8f5a8fec2d0d91b3541c0ee757095e50.txt",
+    "content_hash": "aee8703a99a9e1ad627ea03f0be97cd7ef839f7f1428c04c3c80c6f27d65a172",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://sanjosespotlight.com/san-jose-again-attempts-to-tighten-controls-on-license-plate-readers/",
-    "simhash": "255e0f927e74c5c6",
-    "text_len": 5061,
+    "simhash": "245ecf12fe75c546",
+    "snapshot_path": "snapshots/2026-10-08/85c7173755039f3711fddd8a00a4048671bb8755494af594f5b191a9bf04f74f.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4873,
     "title": "San Jose again tries to tighten controls on license plate readers - San José Spotlight",
     "url": "https://sanjosespotlight.com/san-jose-again-attempts-to-tighten-controls-on-license-plate-readers/"
   },
@@ -7187,11 +7241,14 @@
     "url": "https://www.swoknews.com/ap/national/missouri-governor-issues-executive-order-for-flock-other-cameras-see-new-rules/article_797d10d1-2515-550a-adc4-8f14a79c958e.html"
   },
   "https://swoknews.com/ap/national/san-jose-pushes-for-tighter-controls-on-flock-camera-data-after-police-officer-abuse/article_ebdb4ffe-1e74-5036-b6bc-e9731dea189b.html": {
+    "archive": "6d286b7dc1dc2b0ccbbdf30383b9b1fe388abf21ea0a285e828a28b5d7b709f2.txt",
     "content_hash": "fc233bd1daa385b2c580f1e28c27365a522205fcd16219b28334505628b425e0",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.swoknews.com/ap/national/san-jose-pushes-for-tighter-controls-on-flock-camera-data-after-police-officer-abuse/article_ebdb4ffe-1e74-5036-b6bc-e9731dea189b.html",
     "simhash": "a1647b10bde83881",
+    "snapshot_path": "snapshots/2026-10-08/c6e292562f4695c5c61d9790ea263f41aada6c05187f8fcc1fdeb06e1dd22ad7.json",
+    "snapshot_status": "uploaded",
     "text_len": 8766,
     "title": "San Jose pushes for tighter controls on Flock camera data after police officer abuse | National | swoknews.com",
     "url": "https://www.swoknews.com/ap/national/san-jose-pushes-for-tighter-controls-on-flock-camera-data-after-police-officer-abuse/article_ebdb4ffe-1e74-5036-b6bc-e9731dea189b.html"
@@ -7368,11 +7425,14 @@
     "url": "https://www.thecamarilloacorn.com/articles/lapd-hits-pause-on-license-plate-readers-but-local-cameras-still-in-force/"
   },
   "https://thecamarilloacorn.com/articles/residents-sound-the-alarm-over-license-plate-readers": {
+    "archive": "2a0e89f6c4191e37bc4eedcfabd70c4873b12be0c1bf0629cf461f768ddd1b19.txt",
     "content_hash": "c2b1ae676126b6abdd9ece7958fe58b7c9a27f52ae28740ba6a05a83b38eadc4",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.thecamarilloacorn.com/articles/residents-sound-the-alarm-over-license-plate-readers/",
     "simhash": "282d7d5f48d55ea5",
+    "snapshot_path": "snapshots/2026-10-08/d40482dc2ac6fa718822a7e04ea7473a4126c6fc71079d4cea5200206be24044.json",
+    "snapshot_status": "uploaded",
     "text_len": 4654,
     "title": "Residents sound the alarm over license plate readers",
     "url": "https://www.thecamarilloacorn.com/articles/residents-sound-the-alarm-over-license-plate-readers/"
