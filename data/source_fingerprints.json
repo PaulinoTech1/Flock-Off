@@ -1131,11 +1131,14 @@
     "url": "https://www.carscoops.com/2026/02/flock-safety-alpr-contract-termination/"
   },
   "https://carscoops.com/2026/02/flock-safety-las-vegas-cameras": {
+    "archive": "45fd9ec64c6b3e3446bb12c1996fa3f5305b6e0f42c71ddd73f113bb18857783.txt",
     "content_hash": "249d17dd1e8e0d446b8cd9d977d46130e379573a93633ee03d87521ff2e40f86",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.carscoops.com/2026/02/flock-safety-las-vegas-cameras/",
     "simhash": "369481d7a3022045",
+    "snapshot_path": "snapshots/2026-10-08/f40356dc65818ed925903c8259f5e6ead04830ff6dd28ed0fbaa4b748a436f93.json",
+    "snapshot_status": "uploaded",
     "text_len": 2659,
     "title": "How Las Vegas Installed A Massive Flock Camera Network Without Asking You | Carscoops",
     "url": "https://www.carscoops.com/2026/02/flock-safety-las-vegas-cameras/"
@@ -5149,12 +5152,15 @@
     "url": "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing/"
   },
   "https://lasvegasnewsroom.com/2026/08/27/clark-county-school-district-police-access-flock-license-plate-cameras": {
-    "content_hash": "eebd378c824914417b0892e4cf1796b89d0e7dff349b80c45a56efee6359b660",
+    "archive": "63fbb68d929db9e0b9f7a5c43acabc7b75cfe204b616fbf74a7625e250c8b41a.txt",
+    "content_hash": "ddd557e53c107b8564f06ff3877c0f3552a75c502b0f33779a3b88e01cc1ae1f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://lasvegasnewsroom.com/2026/08/27/clark-county-school-district-police-access-flock-license-plate-cameras/",
-    "simhash": "5f8d3b8c98681637",
-    "text_len": 3370,
+    "simhash": "5f8beda4d0681437",
+    "snapshot_path": "snapshots/2026-10-08/2f9ef494fc33010f173bb76b7e2f9072da5598fc331dd2e23a85827e4b95af05.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3397,
     "title": "Clark County School District Police Access Flock License Plate Cameras - Las Vegas Newsroom",
     "url": "https://lasvegasnewsroom.com/2026/08/27/clark-county-school-district-police-access-flock-license-plate-cameras/"
   },
@@ -5491,11 +5497,14 @@
     "url": "https://www.louisvillecardinal.com/2026/01/kycir-report-u-of-l-uk-use-flock-license-plate-readers-to-monitor-drivers-heres-where-their-cameras-are/"
   },
   "https://lvdsa.org/2026/04/13/get-the-flock-off-the-block": {
+    "archive": "93e1107c3e0b4b7d8904d643af1529c1516cc514358b4162bdbd49216f6b1d3f.txt",
     "content_hash": "3134d4a85fc3e8aab3d68da9b5bf1e135c764f27fced02f975608a51f6aea57a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://lvdsa.org/2026/04/13/get-the-flock-off-the-block/",
     "simhash": "12ed8ac2d069fca6",
+    "snapshot_path": "snapshots/2026-10-08/20b92efd540ad7912c404ca3df71a6fd437eb4160e22713583942473c000bde2.json",
+    "snapshot_status": "uploaded",
     "text_len": 13893,
     "title": "Get the Flock Off the Block: Flock Surveillance is Taking over Las Vegas - Las Vegas DSA",
     "url": "https://lvdsa.org/2026/04/13/get-the-flock-off-the-block/"
@@ -7021,32 +7030,41 @@
     "url": "https://resources.finalsite.net/images/v1761753101/putnamctus/uv0v8sucfql7nza6eqp5/MayorandBoardofSelectmensMinutesOctober202025.pdf"
   },
   "https://reviewjournal.com/crime/las-vegas-sheriff-defends-license-plate-reader-cameras-as-privacy-debate-intensifies-3858170": {
-    "content_hash": "6b23fd8a781db4d76a22c248416afa68bb7fd4934fefc2a2b517683e76f0e79d",
+    "archive": "3291cbf1c2fee372d9fa7339e500f6e4ac036e9fb70d1a0c9df2ad4d174274dd.txt",
+    "content_hash": "a1269421e52aff4686c0b4741051b10eb5e93a586a3534e189db51558589fcc7",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.reviewjournal.com/crime/las-vegas-sheriff-defends-license-plate-reader-cameras-as-privacy-debate-intensifies-3858170/",
-    "simhash": "0066633cef30159e",
-    "text_len": 10847,
+    "simhash": "9a72623c2db04089",
+    "snapshot_path": "snapshots/2026-10-08/ae5d67c2d0219c4ff4e47cce30d4d702135ab38d1c4a6a41c3b18b1671e28639.json",
+    "snapshot_status": "uploaded",
+    "text_len": 10524,
     "title": "Las Vegas Sheriff defends license plate reader cameras as privacy debate intensifies | Crime",
     "url": "https://www.reviewjournal.com/crime/las-vegas-sheriff-defends-license-plate-reader-cameras-as-privacy-debate-intensifies-3858170/"
   },
   "https://reviewjournal.com/local/education/memo-school-district-police-can-use-flocks-southern-nevada-camera-network-3869846": {
-    "content_hash": "01b459e86c44ef2582517fd79016ae3426d2d7c28c7fe3efe80176ac5fd8d817",
+    "archive": "d6a9d82926e80e03688d81237ae8a628b61b615bdea1b17a22dc87cda40e0fc1.txt",
+    "content_hash": "023c415f18970d05f1ee5b047fd5df71cca0deac9f1c1bea74283fc987596674",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.reviewjournal.com/local/education/memo-school-district-police-can-use-flocks-southern-nevada-camera-network-3869846/",
-    "simhash": "b092e9b8f9b4905d",
-    "text_len": 6271,
+    "simhash": "9c93e5b4e9b0b06d",
+    "snapshot_path": "snapshots/2026-10-08/7611e54b0ca793fea4a0a22dbd45e782c6a6e133106c63a05e564f08fdd5b21a.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6459,
     "title": "CCSD police pause use of Flock’s Southern Nevada camera network | Education | Local",
     "url": "https://www.reviewjournal.com/local/education/memo-school-district-police-can-use-flocks-southern-nevada-camera-network-3869846/"
   },
   "https://reviewjournal.com/news/politics-and-government/nevada/silver-state-not-surveillance-state-nevada-lawmaker-proposes-ban-on-tech-behind-flock-cameras-3887877": {
-    "content_hash": "db92ccf87b0059d4ded62e6e1b5dd583d7cab3f48117567eda28632fd3993927",
+    "archive": "14a1466f080e7b9891c70c4f7d01446c735e54c9e4add1dfda405eab2958252d.txt",
+    "content_hash": "8c1dcff7c2548cb6069d2c94c36cc901f617cb3bdb9cc577b68c85a547f3b2f3",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.reviewjournal.com/news/politics-and-government/nevada/silver-state-not-surveillance-state-nevada-lawmaker-proposes-ban-on-tech-behind-flock-cameras-3887877/",
-    "simhash": "4059cf31209d4892",
-    "text_len": 9743,
+    "simhash": "7079df03259d7c9c",
+    "snapshot_path": "snapshots/2026-10-08/c79195acc2af39257b353503539c7c5e9351f338b145633a55218e1012a112a5.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9598,
     "title": "Nevada lawmaker wants Legislature to ban technology behind Flock cameras | Nevada | News | Politics and Government",
     "url": "https://www.reviewjournal.com/news/politics-and-government/nevada/silver-state-not-surveillance-state-nevada-lawmaker-proposes-ban-on-tech-behind-flock-cameras-3887877/"
   },
@@ -9060,11 +9078,14 @@
     "url": "https://www.wctv.tv/2026/09/10/tallahassee-city-commission-suspends-alpr-cameras/"
   },
   "https://webpronews.com/axon-joins-the-license-plate-tracking-frenzy-as-cities-swap-vendors-but-keep-the-cameras": {
+    "archive": "b53bf8d8ffe23d5e9c00c13b150826bd476b9a70ffe8a599686ceae321b4a501.txt",
     "content_hash": "1f047da5cb9b76217b1196d10f5794a8dbc884b7670bf2861ff4202eba92b684",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.webpronews.com/axon-joins-the-license-plate-tracking-frenzy-as-cities-swap-vendors-but-keep-the-cameras/",
     "simhash": "d17945280cc62a42",
+    "snapshot_path": "snapshots/2026-10-08/8f6a14713caacb98296408e93acb5b5b0b5ec229d5d47a103dd6f46f28463046.json",
+    "snapshot_status": "uploaded",
     "text_len": 7830,
     "title": "Axon Joins the License Plate Tracking Frenzy as Cities Swap Vendors but Keep the Cameras",
     "url": "https://www.webpronews.com/axon-joins-the-license-plate-tracking-frenzy-as-cities-swap-vendors-but-keep-the-cameras/"
