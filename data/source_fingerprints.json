@@ -95,22 +95,28 @@
     "url": "https://www.404media.co/woman-arrested-after-city-council-denies-residents-right-to-speak-on-flock-cameras/"
   },
   "https://5bgazette.com/government_policy/across-blaine-county-flock-cameras-remain-a-live-local-issue-even-as-the-company-announces/article_9b14783d-3057-49d0-a8f4-7bb1d0bbbd57.html": {
-    "content_hash": "f580e085161625cb41f55e731bc153d3755d2460a82e6a04c10caf0e74d55748",
+    "archive": "53e2af1ae4ace535b79953941600c6d01c7fe021fc7bd5f28f410c768ecba40e.txt",
+    "content_hash": "da751d0e0b703d689d83ad3e885c50206c3eb6c6bbf387a5d7bb13067aa6e199",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.5bgazette.com/government_policy/across-blaine-county-flock-cameras-remain-a-live-local-issue-even-as-the-company-announces/article_9b14783d-3057-49d0-a8f4-7bb1d0bbbd57.html",
-    "simhash": "079f5b8ea367dc8a",
-    "text_len": 7792,
+    "simhash": "079f5b8ea367dc9a",
+    "snapshot_path": "snapshots/2026-10-08/8dcafed672293ae69d5730f9165589ebb977619926a34ad30388cc9ad1e4a3a1.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7772,
     "title": "Across Blaine County, Flock cameras remain a live local issue even as the company announces national changes | 5b Government & Policy | 5bgazette.com",
     "url": "https://www.5bgazette.com/government_policy/across-blaine-county-flock-cameras-remain-a-live-local-issue-even-as-the-company-announces/article_9b14783d-3057-49d0-a8f4-7bb1d0bbbd57.html"
   },
   "https://5bgazette.com/government_policy/carey-slams-the-door-on-flock-city-votes-to-ban-plate-readers-on-its-own/article_4ada6117-a6cb-4c1d-907b-30db13800404.html": {
-    "content_hash": "ed311ff3172bbc88679656b9b19f12cff1b66786bf3a4a9271c998238a365057",
+    "archive": "444b4cd7ede376e22213b46325130b0dddcd13e495d7b8e8ef6a491c8af9d8ca.txt",
+    "content_hash": "db0a6ffb3ed8384fef02dfb23cc9fc8b7dc5a6bbca1e7a1c742faa30173c8335",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.5bgazette.com/government_policy/carey-slams-the-door-on-flock-city-votes-to-ban-plate-readers-on-its-own/article_4ada6117-a6cb-4c1d-907b-30db13800404.html",
-    "simhash": "3c2f740495c19e00",
-    "text_len": 7554,
+    "simhash": "382f740495c19e00",
+    "snapshot_path": "snapshots/2026-10-08/4dfb40db7bef549f585fa58c773a86b426eed294b47b6f96d41ac53db3254c5d.json",
+    "snapshot_status": "uploaded",
+    "text_len": 7534,
     "title": "Carey slams the door on Flock — city votes to ban plate readers on its own ground | 5b Government & Policy | 5bgazette.com",
     "url": "https://www.5bgazette.com/government_policy/carey-slams-the-door-on-flock-city-votes-to-ban-plate-readers-on-its-own/article_4ada6117-a6cb-4c1d-907b-30db13800404.html"
   },
@@ -190,11 +196,14 @@
     "url": "https://www.9news.com/article/news/local/colorado-news/thornton-police-complaint-officer-ran-20000-flock-searches/73-cf59c995-f38b-4b5b-a883-ee36a5b06c50"
   },
   "https://aacounty.org/police-department/about-us/calendar/police-hearing-board-february-19": {
+    "archive": "e6b2429c32e832bd679f41e862e86df5347ffdff3776223a4f4f6ea8b3113451.txt",
     "content_hash": "4dfc48cceb9e94ec978d0e49c72435c2433c0986e4d03fa0ec8f6854364c0282",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.aacounty.org/police-department/about-us/calendar/police-hearing-board-february-19",
     "simhash": "392b0bc9ee3491f9",
+    "snapshot_path": "snapshots/2026-10-08/9fcd6007930c5cff112b7a49d59498d3340a60afd54af276589b780b31b33924.json",
+    "snapshot_status": "uploaded",
     "text_len": 2108,
     "title": "Police Hearing Board - February 19 | Anne Arundel County Government",
     "url": "https://www.aacounty.org/police-department/about-us/calendar/police-hearing-board-february-19"
@@ -1140,12 +1149,15 @@
     "url": "https://www.castlerocknewspress.net/news/article_f09f8077-351a-4f7e-b8f9-c5621744d712.html"
   },
   "https://ccxmedia.org/news/crystal-police-remove-flock-automatic-license-plate-readers-after-community-backlash": {
-    "content_hash": "af15082caa3026be06e65e6e7ee5aa84910b6c1fee81712aee35e6692a553a60",
+    "archive": "1207b63f08df52f27ec7b74f7c74f7bf3d5d69a00b50d2ea491509ea1a809eac.txt",
+    "content_hash": "953f25d25729a22c3f384ff5d33d6242a2406b1a447c3ee6b77f257ee7f48517",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://ccxmedia.org/news/crystal-police-remove-flock-automatic-license-plate-readers-after-community-backlash/",
-    "simhash": "4d4b30c363034aec",
-    "text_len": 4698,
+    "simhash": "6d4a35db6303c2ec",
+    "snapshot_path": "snapshots/2026-10-08/2a957d4bbdff42e85546881334823a060abf81c0c5ebeecddba710ba73ed3f2a.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4691,
     "title": "Crystal Police Remove Flock License Plate Readers After Community Backlash",
     "url": "https://ccxmedia.org/news/crystal-police-remove-flock-automatic-license-plate-readers-after-community-backlash/"
   },
@@ -2864,12 +2876,15 @@
     "url": "https://flockinghell.com/reports/idaho-falls-bans-flock-ai-training"
   },
   "https://flocksafety.com/blog/flock-safety-identifies-suspects-behind-190-000-crime-ring": {
-    "content_hash": "bf9eba6acd03d08a77d616d24266277934ed448e48c2a91102ef77f27eaa647a",
+    "archive": "0c11d63d9bb50c16cf9d0acd42141f68db6054535c0ca5b6a33b93e7403015ac.txt",
+    "content_hash": "ba696e0def2d08e325028592fde3d8c456ee6b3acd31b8e9dcdde9199fcbc7a4",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.flocksafety.com/blog/flock-safety-identifies-suspects-behind-190-000-crime-ring",
-    "simhash": "8d0807120d2780ab",
-    "text_len": 2691,
+    "simhash": "870807a2830780eb",
+    "snapshot_path": "snapshots/2026-10-08/302937cd3f19aca97ebdf9719c188df8a2ee0cea74f51c668df7c51224d39d28.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2710,
     "title": "How Flock Helped Identify Suspects in $190K Theft Ring",
     "url": "https://www.flocksafety.com/blog/flock-safety-identifies-suspects-behind-190-000-crime-ring"
   },
@@ -3131,21 +3146,27 @@
     "url": "https://fox6now.com/news/sheboygan-common-council-votes-end-flock-camera-contract"
   },
   "https://fox9.com/news/columbia-heights-set-drop-flock-license-plate-cameras-after-community-pushback": {
+    "archive": "7f24be02bc1f1fbbc88abf6a0a4e5af4f4503082ecf1e5f8ebd967b5f3b4b60a.txt",
     "content_hash": "2ee113c252d04db2c4a19ca822d08d0d70715bf94d23e8b8b9704d5e1a8523a7",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox9.com/news/columbia-heights-set-drop-flock-license-plate-cameras-after-community-pushback",
     "simhash": "01c357607911c714",
+    "snapshot_path": "snapshots/2026-10-08/9dd0ee26f05634b8260185e60049929ac1bc29e5c0a385ab8a3088740e980384.json",
+    "snapshot_status": "uploaded",
     "text_len": 3094,
     "title": "Columbia Heights set to drop Flock license plate cameras after community pushback | FOX 9 Minneapolis-St. Paul",
     "url": "https://fox9.com/news/columbia-heights-set-drop-flock-license-plate-cameras-after-community-pushback"
   },
   "https://fox9.com/news/crystal-drops-flock-cams-after-community-concerns": {
+    "archive": "fc93137feac5e6885d88caaf13d84f6fb4a12e30ffe8a45fbcdfb3b147875c05.txt",
     "content_hash": "fbddff30a7a778c81e869b7fb80874708ba2492f53b9017679a23c68ef1aab0e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox9.com/news/crystal-drops-flock-cams-after-community-concerns",
     "simhash": "960760c5554394ec",
+    "snapshot_path": "snapshots/2026-10-08/6c4c04e1564f14e989018d2550e6f3e927cd021337fb233fdb164f1307755e9a.json",
+    "snapshot_status": "uploaded",
     "text_len": 2195,
     "title": "Crystal drops Flock cams after community concerns | FOX 9 Minneapolis-St. Paul",
     "url": "https://fox9.com/news/crystal-drops-flock-cams-after-community-concerns"
@@ -5572,12 +5593,15 @@
     "url": "https://www.millingtontn.gov/AgendaCenter/ViewFile/Item/4271?fileID=5051"
   },
   "https://minneapolimedia.town.news/g/coon-rapids-mn/n/379970/minneapolimedia-news-columbia-heights-ends-flock-safety-contract-after": {
-    "content_hash": "6fbf9225249c61d910d73755fc419f922b718f012071a727e0bb97579fc8251d",
+    "archive": "c942c013256a0282f2b5135e1094a09c446abdb793cd7d55f6e70f13b0f9d1a3.txt",
+    "content_hash": "fbab52b401931dd830661cdfb4c660c30441921dee220c1858a92609355948a6",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://minneapolimedia.town.news/g/coon-rapids-mn/n/379970/minneapolimedia-news-columbia-heights-ends-flock-safety-contract-after",
-    "simhash": "b3ecd3c72b3cb198",
-    "text_len": 11946,
+    "simhash": "bb7cf32fa338313c",
+    "snapshot_path": "snapshots/2026-10-08/32be6564bcb5567a99f82ad63ad5110c0deab9b60a82c0bb26c402fe3655631f.json",
+    "snapshot_status": "uploaded",
+    "text_len": 12486,
     "title": "MINNEAPOLIMEDIA NEWS | Columbia Heights Ends Flock Safety Contract After Residents Force Rethink of Police Surveillance | MinneapoliMedia",
     "url": "https://minneapolimedia.town.news/g/coon-rapids-mn/n/379970/minneapolimedia-news-columbia-heights-ends-flock-safety-contract-after"
   },
@@ -6681,13 +6705,16 @@
     "url": "https://radio.kttz.org/2026-09-16/these-groups-are-driving-the-deflock-movement-in-austin-now-theyre-ready-for-statewide-action"
   },
   "https://radiofreehubcity.com/2026/09/23/boonsboro-town-council-found-to-violate-open-meetings-act-over-2025-flock-camera-purchase": {
-    "content_hash": "4588a00d210bbc57dad7248c77b37ec8ca4dca5724d6c37d01cc7d50fde81144",
+    "archive": "98f7ce6f249acec529cbb5f047dd3ccf889b402a4e36dc16b7c9c4d85e94c456.txt",
+    "content_hash": "34de1e13c706fd469c7155765f70414d880501bac2e531e3d525a80ea74aa151",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://radiofreehubcity.com/2026/09/23/boonsboro-town-council-found-to-violate-open-meetings-act-over-2025-flock-camera-purchase/",
-    "simhash": "ebffdf0ed53102ee",
-    "text_len": 7316,
-    "title": "Boonsboro Town Council Found to Violate Open Meetings Act Over 2025 Flock Camera Purchase - Radio Free Hub City",
+    "simhash": "e0b774e835a79809",
+    "snapshot_path": "snapshots/2026-10-08/d50e8fa41f7f28646868b8bb3cc12d877fbb917640b52115c821dc293ce4c6ae.json",
+    "snapshot_status": "uploaded",
+    "text_len": 746,
+    "title": "Boonsboro Town Council Found to Violate Open Meetings Act Over 2025 Flock Camera Purchase (Subscribers Only) - Radio Free Hub City",
     "url": "https://radiofreehubcity.com/2026/09/23/boonsboro-town-council-found-to-violate-open-meetings-act-over-2025-flock-camera-purchase/"
   },
   "https://ransonfinancial.com/2024/10/15/wichita-city-council-to-consider-gunshot-detecting-devices-water-plant-agreement": {
