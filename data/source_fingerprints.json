@@ -121,12 +121,15 @@
     "url": "https://www.5bgazette.com/government_policy/carey-slams-the-door-on-flock-city-votes-to-ban-plate-readers-on-its-own/article_4ada6117-a6cb-4c1d-907b-30db13800404.html"
   },
   "https://5bgazette.com/government_policy/the-flock-is-flying-away-from-neighboring-jurisdictions-while-blaine-county-is-still-mulling-the/article_207b2292-97cc-4922-b2ca-62ad7d570e25.html": {
-    "content_hash": "631e0c1709b7bcd52365e5b81c4a0c543c7ac3bf23116e60e47fc12bb88ce752",
+    "archive": "52b46e03af124eb19e50a533ab3100503937a14db5aa4574f8b42d5b165ba853.txt",
+    "content_hash": "979d9a59b1755daa11fd1205a933b6885657afeb91df17c172142285e9e74966",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.5bgazette.com/government_policy/the-flock-is-flying-away-from-neighboring-jurisdictions-while-blaine-county-is-still-mulling-the/article_207b2292-97cc-4922-b2ca-62ad7d570e25.html",
-    "simhash": "7eb9819ee16b28a7",
-    "text_len": 12253,
+    "simhash": "7eb9819ec16b28a7",
+    "snapshot_path": "snapshots/2026-10-08/3a82dd7a98206e7b66cbd9ca85e62b960e9eceb5e71798e09cdc88785f8faa06.json",
+    "snapshot_status": "uploaded",
+    "text_len": 12233,
     "title": "The 'Flock' is flying away from neighboring jurisdictions while Blaine County is still mulling the issue | 5b Government & Policy | 5bgazette.com",
     "url": "https://www.5bgazette.com/government_policy/the-flock-is-flying-away-from-neighboring-jurisdictions-while-blaine-county-is-still-mulling-the/article_207b2292-97cc-4922-b2ca-62ad7d570e25.html"
   },
@@ -1162,12 +1165,15 @@
     "url": "https://ccxmedia.org/news/crystal-police-remove-flock-automatic-license-plate-readers-after-community-backlash/"
   },
   "https://ccxmedia.org/news/plymouth-latest-city-to-discontinue-flock-safety-surveillance": {
-    "content_hash": "c5f945f2a208918bacec8f7d831035a0111f46ab70d2ee430a3dda209b34b6ee",
+    "archive": "d887dd3e01730a4434290afd81e5179e279ed09acfaf565531767c09faa20837.txt",
+    "content_hash": "00afb91dc42fa3f9dbb68bc107fc2c7a8988e19d84fd4577f3ea6e955fb9b29c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://ccxmedia.org/news/plymouth-latest-city-to-discontinue-flock-safety-surveillance/",
-    "simhash": "8d9473f620145fe5",
-    "text_len": 6253,
+    "simhash": "a994637a08145fc1",
+    "snapshot_path": "snapshots/2026-10-08/05f84d84ed96737c5dd75508de3b2c36a0403a4498a0332ff3c883fa0079ff2a.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6260,
     "title": "Plymouth Latest City To Discontinue Flock Safety Surveillance",
     "url": "https://ccxmedia.org/news/plymouth-latest-city-to-discontinue-flock-safety-surveillance/"
   },
@@ -3172,21 +3178,27 @@
     "url": "https://fox9.com/news/crystal-drops-flock-cams-after-community-concerns"
   },
   "https://fox9.com/news/duluth-pd-ends-flock-camera-contract-keep-using-license-plate-reader-tech": {
+    "archive": "b16f1c95df23d7e53704d51770d737b8c066e34b306fb1ba37c6080bb3637174.txt",
     "content_hash": "9ccf314646ce2123b228be49389e3332c44d24a54ec07ab83cdbd53b4a824ac6",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox9.com/news/duluth-pd-ends-flock-camera-contract-keep-using-license-plate-reader-tech",
     "simhash": "5c7cc70b7e68a01b",
+    "snapshot_path": "snapshots/2026-10-08/a3794af972192dc9400563ed0f5a148c8ed401710faed84f552ce3890c4120bb.json",
+    "snapshot_status": "uploaded",
     "text_len": 2086,
     "title": "Duluth PD ends Flock camera contract, with keep using license plate reader tech | FOX 9 Minneapolis-St. Paul",
     "url": "https://fox9.com/news/duluth-pd-ends-flock-camera-contract-keep-using-license-plate-reader-tech"
   },
   "https://fox9.com/news/flock-cameras-company-changes-data-retention-offense-filtering-aug-14-2026": {
+    "archive": "29e6f4eb0a1b974ccc1f12e5357f4b1cc27efdfc47b9039d3ed91fa6e38bb397.txt",
     "content_hash": "989a1960867ddffa74b4439d2343f27d09928e592e4d592cf7c10d5460abfe87",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox9.com/news/flock-cameras-company-changes-data-retention-offense-filtering-aug-14-2026",
     "simhash": "11fd9596b86c3672",
+    "snapshot_path": "snapshots/2026-10-08/66c34904d4892afbc9474151da9cf291aa8f214926bb57f187b842be0595c57f.json",
+    "snapshot_status": "uploaded",
     "text_len": 3582,
     "title": "Flock cameras: Company announces changes to data retention, offense filtering | FOX 9 Minneapolis-St. Paul",
     "url": "https://fox9.com/news/flock-cameras-company-changes-data-retention-offense-filtering-aug-14-2026"
@@ -3222,11 +3234,14 @@
     "url": "https://fox9.com/news/shakopee-officials-defend-flock-cameras-against-misinformation-ahead-council-meeting"
   },
   "https://fox9.com/news/st-paul-city-council-flock-cameras-aug-26-2026": {
+    "archive": "3dbe57b9412e3ce1600d63684d7ceb1537405599038ccb73c3d5643c85e72644.txt",
     "content_hash": "2d2e1ea3171e18389f88a198beb2064b5092e663968c4b86ba0784588a90df85",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox9.com/news/st-paul-city-council-flock-cameras-aug-26-2026",
     "simhash": "290f9a7f4e3e111a",
+    "snapshot_path": "snapshots/2026-10-08/b9ec1f9d6f284406d29391ef6df22edaca820970a7a200bbb14456ce12137532.json",
+    "snapshot_status": "uploaded",
     "text_len": 3712,
     "title": "St. Paul City Council calls for end to Flock cameras — but stops short of a ban | FOX 9 Minneapolis-St. Paul",
     "url": "https://fox9.com/news/st-paul-city-council-flock-cameras-aug-26-2026"
@@ -3554,11 +3569,14 @@
     "url": "https://www.govtech.com/public-safety/connecticut-police-discuss-use-of-license-plate-readers"
   },
   "https://govtech.com/public-safety/duluth-minn-police-explain-decision-to-end-flock-contract": {
+    "archive": "e56f090d5a26bf58462bf5683fdace027e97c4eb14dd8e4b94d12225c8b0a7b9.txt",
     "content_hash": "e1830620515ed9cced859241b4d2adf8a5981d5a7dc23302377b666c106879cd",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/duluth-minn-police-explain-decision-to-end-flock-contract",
     "simhash": "4f64f5e36817848c",
+    "snapshot_path": "snapshots/2026-10-08/04f3f0d3e49326001b01f922da0dac28a4cfc9612d859085b5e743b7bf68638c.json",
+    "snapshot_status": "uploaded",
     "text_len": 5309,
     "title": "Duluth, Minn., Police Explain Decision to End Flock Contract",
     "url": "https://www.govtech.com/public-safety/duluth-minn-police-explain-decision-to-end-flock-contract"
@@ -3668,11 +3686,14 @@
     "url": "https://www.govtech.com/public-safety/michigan-bills-would-regulate-automatic-license-plate-readers"
   },
   "https://govtech.com/public-safety/minneapolis-area-cities-shutting-off-license-plate-cameras": {
+    "archive": "9c51dccf5736fac07010d8fc2f56219a78d3afec114406e0c5d5866f83071cc4.txt",
     "content_hash": "c8666953c05999626f2499d1ea42580e751083783dfcfa5f1bea7c4f8b841c6c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/minneapolis-area-cities-shutting-off-license-plate-cameras",
     "simhash": "32e57683d05d8666",
+    "snapshot_path": "snapshots/2026-10-08/18d9d9e0353ed04a32a26fcf00b98c30fda1219002acf5a4cc265e35396fd94c.json",
+    "snapshot_status": "uploaded",
     "text_len": 6172,
     "title": "Minneapolis Area Cities Shutting Off License Plate Cameras",
     "url": "https://www.govtech.com/public-safety/minneapolis-area-cities-shutting-off-license-plate-cameras"
@@ -3691,11 +3712,14 @@
     "url": "https://www.govtech.com/public-safety/niagara-falls-n-y-approves-license-plate-reader-deployment"
   },
   "https://govtech.com/public-safety/st-paul-minn-council-will-not-expand-police-drone-program": {
+    "archive": "31928176501f4bc79270412c4cdfb4b10b7b073f35fb0d97865861d54aab13b1.txt",
     "content_hash": "f6cccf9e2d0a8ee241d4345cac75b161d2682279ac69fe81ea8dfc459df71f41",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/st-paul-minn-council-will-not-expand-police-drone-program",
     "simhash": "bdc19d82bb0c1096",
+    "snapshot_path": "snapshots/2026-10-08/1d8880a5cb4a2a96452eacc2d7bd5577f7fc6ac20a9b51db93fb4881879f86fb.json",
+    "snapshot_status": "uploaded",
     "text_len": 5741,
     "title": "St. Paul, Minn., Council Will Not Expand Police Drone Program",
     "url": "https://www.govtech.com/public-safety/st-paul-minn-council-will-not-expand-police-drone-program"
@@ -6314,12 +6338,15 @@
     "url": "https://www.piratemedia1.com/theeastcarolinian/article_4caa430a-e61d-4369-af40-86e56b59d4ac.html"
   },
   "https://police1.com/arrests-sentencing/law-enforcement-agencies-report-widespread-alpr-vandalism": {
-    "content_hash": "de72f7f3ce879b2ec33aa907c6ca914484abe53a19921e94f865770c0b5a38a5",
+    "archive": "d68b88d598e196188ac60f0b243007b1d75a0cb7d14c974ba9e0c281bac8a3df.txt",
+    "content_hash": "4f087dbdd7ea6459b2e4fef85403bfd354c4928f80c03cc323e3e06ce14d0dd4",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.police1.com/arrests-sentencing/law-enforcement-agencies-report-widespread-alpr-vandalism",
-    "simhash": "3493f1f99010f140",
-    "text_len": 9562,
+    "simhash": "3493f9bd894cf1e2",
+    "snapshot_path": "snapshots/2026-10-08/dd74ecf30d837d621504e8241f2bf6dde40c834816aefcdc5bd5cdc9965739e0.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9749,
     "title": "Law enforcement agencies report widespread Flock camera vandalism",
     "url": "https://www.police1.com/arrests-sentencing/law-enforcement-agencies-report-widespread-alpr-vandalism"
   },
@@ -7458,11 +7485,14 @@
     "url": "http://southportland-gov.community.diligentoneplatform.com/document/9d70cca1-180d-4a47-a702-52af619d2310/"
   },
   "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras": {
+    "archive": "86f5982d5e3168262f0376bbf2a1cc49911667c72f80e5e4cfe9c5286e61a23e.txt",
     "content_hash": "d2ee26617b144afe01ed9348559282ab07141609332ee9e6f3b16b05d4e268b7",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras/",
     "simhash": "9bfd44f0cadf1143",
+    "snapshot_path": "snapshots/2026-10-08/98eaf502592e6c1906919d0ffdb05ebec97944a2ff24b0345710a29b9269937f.json",
+    "snapshot_status": "uploaded",
     "text_len": 8786,
     "title": "Minnesota Cities Now Ending or Pausing Flock Camera Use",
     "url": "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras/"
