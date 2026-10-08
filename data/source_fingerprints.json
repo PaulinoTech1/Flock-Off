@@ -1729,12 +1729,15 @@
     "url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743"
   },
   "https://civiclensnetwork.com/articles/anoka-county-sheriff-signs-flock-camera-deal-just-under-175000-board-limit": {
-    "content_hash": "2af8831f0b504f9fd47e9d5496f95fbe930a046724fe072ad939c466c3dabbeb",
+    "archive": "3bfbcb7fa01689178e924cfaf2c6c4a88446066cec97c3e383b5431e4bdbf8ef.txt",
+    "content_hash": "15e8994a5abb079c690e0947c0889ee366378e4259fecbbbda4255f246df61f1",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://civiclensnetwork.com/articles/anoka-county-sheriff-signs-flock-camera-deal-just-under-175000-board-limit",
-    "simhash": "9dcdcfb800acc388",
-    "text_len": 5183,
+    "simhash": "9dc5cfb940acc3c8",
+    "snapshot_path": "snapshots/2026-10-08/bebfbec166e5a2235457d500b1841201e6a00709386c1dd6d9fee6c427bd0653.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5145,
     "title": "Anoka County Sheriff Signs Flock Camera Deal Just Under $175,000 Board Limit | Civic Lens Network",
     "url": "https://civiclensnetwork.com/articles/anoka-county-sheriff-signs-flock-camera-deal-just-under-175000-board-limit"
   },
@@ -2839,11 +2842,14 @@
     "url": "https://flagscanner.com/flagstaff-city-council-votes-to-cancel-flock-safety-camera-contract/"
   },
   "https://flatwaterfreepress.org/a-nebraska-city-voted-to-ban-flock-cameras-the-county-wants-to-keep-surveilling-drivers-anyway": {
+    "archive": "357d392ae02d1799a59260e1c7b1ace89e81fd0fe0bc86d9c7bb6ab4c53d3735.txt",
     "content_hash": "3232261df2c6cff230efd65112ceffc44a850d358c1a3ec7a91133e787577b9b",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://flatwaterfreepress.org/a-nebraska-city-voted-to-ban-flock-cameras-the-county-wants-to-keep-surveilling-drivers-anyway/",
     "simhash": "384c3ef422dd9c4e",
+    "snapshot_path": "snapshots/2026-10-08/79a8c9379416cf58ef30805b9b034451290cadc7bf12cbdbbfd45084128cdb52.json",
+    "snapshot_status": "uploaded",
     "text_len": 21089,
     "title": "A Nebraska city voted to ban Flock cameras. The county wants to keep surveilling drivers anyway. - Flatwater Free Press",
     "url": "https://flatwaterfreepress.org/a-nebraska-city-voted-to-ban-flock-cameras-the-county-wants-to-keep-surveilling-drivers-anyway/"
@@ -3204,31 +3210,40 @@
     "url": "https://fox9.com/news/flock-cameras-company-changes-data-retention-offense-filtering-aug-14-2026"
   },
   "https://fox9.com/news/flock-cameras-praised-anoka-co-sheriff-after-led-scam-arrest": {
+    "archive": "ba5cae1125b9476b28ccb9dc1f86fe34a534407a7a9d28ce1da7084a0b0276bf.txt",
     "content_hash": "498a19b8c51b47b3b2baa4dfa9c1ff8af6076c60289e37128e5aba257f4fac8c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox9.com/news/flock-cameras-praised-anoka-co-sheriff-after-led-scam-arrest",
     "simhash": "978ed94f0a7c979e",
+    "snapshot_path": "snapshots/2026-10-08/70ae955329d67a1eb98c1c3c9abc91f8d0b63ceedc5e8500c30e98284c0a9c38.json",
+    "snapshot_status": "uploaded",
     "text_len": 3719,
     "title": "Flock cameras praised by Anoka Co. Sheriff after it led to scam arrest, charges | FOX 9 Minneapolis-St. Paul",
     "url": "https://fox9.com/news/flock-cameras-praised-anoka-co-sheriff-after-led-scam-arrest"
   },
   "https://fox9.com/news/minnesota-cities-pull-back-flock-cameras-amid-public-pushback": {
+    "archive": "dd66cbeec49eba0cc0ccaf64602659e384dae24756f33297e31f550fe24cdd85.txt",
     "content_hash": "809ac8512a18d0bbbce5402ed3da7cac0be5ce3cfa9d566b8b920d987d78013f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox9.com/news/minnesota-cities-pull-back-flock-cameras-amid-public-pushback",
     "simhash": "97cd05ce5d68ae74",
+    "snapshot_path": "snapshots/2026-10-08/ee4ed3fc9c0a0116bb2aee6326063fbd65d7221131f42f0b8a5b30e202bc5c40.json",
+    "snapshot_status": "uploaded",
     "text_len": 3104,
     "title": "Minnesota cities pull back on Flock cameras amid public pushback | FOX 9 Minneapolis-St. Paul",
     "url": "https://fox9.com/news/minnesota-cities-pull-back-flock-cameras-amid-public-pushback"
   },
   "https://fox9.com/news/shakopee-officials-defend-flock-cameras-against-misinformation-ahead-council-meeting": {
+    "archive": "d8dd81c7783f7072462b9117614693c8c77abe67dfcc08c27eb61c3131a4a471.txt",
     "content_hash": "0068684f19a446dd17b5a9ff766165ae28c058578c4c405f65f7508e4742636d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox9.com/news/shakopee-officials-defend-flock-cameras-against-misinformation-ahead-council-meeting",
     "simhash": "6bbd3db3862a4eee",
+    "snapshot_path": "snapshots/2026-10-08/e12f94b7351a86891aa1b5a48a1e2ae160019c987dcffb6812487ee5b5d76419.json",
+    "snapshot_status": "uploaded",
     "text_len": 5127,
     "title": "Shakopee officials defend Flock cams against 'misinformation' ahead of meeting | FOX 9 Minneapolis-St. Paul",
     "url": "https://fox9.com/news/shakopee-officials-defend-flock-cameras-against-misinformation-ahead-council-meeting"
@@ -3930,11 +3945,14 @@
     "url": "https://gray-whns-prod.gtv-cdn.com/2026/08/10/greenville-county-sheriff-addresses-flock-camera-concerns-after-deputies-fired/"
   },
   "https://gray-wowt-prod.gtv-cdn.com/2026/08/04/city-ord-votes-unanimously-remove-its-flock-cameras-first-nebraska": {
+    "archive": "50e9d6c469f1a9a4c5a4114a1d7ba8869646f7ecbb73bd3c148f9e620c1c790c.txt",
     "content_hash": "a3ee865951cfbbdcc95935fd7a4650cdb9110c56bae03e7f478b7ab95023a2bc",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-wowt-prod.gtv-cdn.com/2026/08/04/city-ord-votes-unanimously-remove-its-flock-cameras-first-nebraska/",
     "simhash": "33949b6654f03917",
+    "snapshot_path": "snapshots/2026-10-08/d2a391a1c0cc0cd54e4ce3d09fe6620ae1811fbd5ee8e97b9937bcb161009f05.json",
+    "snapshot_status": "uploaded",
     "text_len": 3864,
     "title": "City of Ord votes unanimously to remove its Flock cameras, a first in Nebraska",
     "url": "https://gray-wowt-prod.gtv-cdn.com/2026/08/04/city-ord-votes-unanimously-remove-its-flock-cameras-first-nebraska/"
@@ -4975,11 +4993,14 @@
     "url": "https://krna.com/ixp/679/p/flock-camera-vandalism-iowa/"
   },
   "https://krny.com/2024/12/05/kearney-police-quickly-recover-stolen-truck-using-alpr-cameras": {
+    "archive": "d14379deffd0d00d698b395505c4093a4fa752ab4e7ff2ac78c6f32752db6dac.txt",
     "content_hash": "6fbc1ada13c599e8a2eea95bb475fef1b60f320e8484043085cfff10ee4d54a8",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://krny.com/2024/12/05/kearney-police-quickly-recover-stolen-truck-using-alpr-cameras/",
     "simhash": "63042a099ddeba11",
+    "snapshot_path": "snapshots/2026-10-08/66fa1b9de388fddcbafd642391f2665824f1bebad07dec5a9b933d969ac44d6a.json",
+    "snapshot_status": "uploaded",
     "text_len": 2278,
     "title": "Kearney Police quickly recover stolen truck using ALPR cameras | Y102 - Nebraska's Hot Country",
     "url": "https://krny.com/2024/12/05/kearney-police-quickly-recover-stolen-truck-using-alpr-cameras/"
@@ -5764,11 +5785,14 @@
     "url": "https://www.nbcpalmsprings.com/ca-us-and-world/2026/06/20/deflock-idaho-files-tort-claims-against-cities-over-flock-safety-camera-ai-data-use"
   },
   "https://nebraskapublicmedia.org/en/news/news-articles/as-flock-security-cameras-expand-across-nebraska-communities-express-concerns-about-data-privacy": {
+    "archive": "3b94d21d64821996b8dbfc1f961a223e0672baa80e2e4d254c320a69cb8820ef.txt",
     "content_hash": "093d1229287553263641c5942bafa05e0a11a373b7fa433d7eeb59168ec783ec",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://nebraskapublicmedia.org/en/news/news-articles/as-flock-security-cameras-expand-across-nebraska-communities-express-concerns-about-data-privacy/",
     "simhash": "5aeeba2b949a2d2b",
+    "snapshot_path": "snapshots/2026-10-08/97d5da2a9aeedd40048a1354cebf322360eb58eb4d4ea6a364ef491983449777.json",
+    "snapshot_status": "uploaded",
     "text_len": 9650,
     "title": "The number of Flock Security cameras is increasing. So is the concern in Nebraska communities | Nebraska Public Media Nebraska Public Media Nebraska Public Media Search Close Menu Close Search Nebraska Public Media facebook twitter youtube instagram linkedin",
     "url": "https://nebraskapublicmedia.org/en/news/news-articles/as-flock-security-cameras-expand-across-nebraska-communities-express-concerns-about-data-privacy/"
@@ -7892,12 +7916,15 @@
     "url": "https://thecommercedispatch.substack.com/p/another-missouri-sheriff-cancels"
   },
   "https://thecooldown.com/green-tech/anoka-county-sheriff-flock-deal-backlash": {
-    "content_hash": "c31d056cfbb5388733bf06fb4cfb1ae8988618e5163eb3df82c83b9642632e7f",
+    "archive": "44a1e9a021cd94b3868143c514c2a2f20fd58acb1b64550237bf9933e881c9e0.txt",
+    "content_hash": "c16d940126ce67b42cb57bd7fe7109448595b3c9dd89820c007c116735b2b77e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.thecooldown.com/green-tech/anoka-county-sheriff-flock-deal-backlash/",
-    "simhash": "a1f66d262c204a9c",
-    "text_len": 4038,
+    "simhash": "a1f66d2e2c204a9c",
+    "snapshot_path": "snapshots/2026-10-08/08e8428b21ac24c8b411f73f173bf3131b7775801f98231b8dd01136fc9750c2.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4028,
     "title": "Minnesota county sheriff signs Flock deal below board approval threshold, drawing backlash",
     "url": "https://www.thecooldown.com/green-tech/anoka-county-sheriff-flock-deal-backlash/"
   },
