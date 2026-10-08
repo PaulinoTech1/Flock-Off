@@ -454,12 +454,15 @@
     "url": "https://www.archynewsy.com/watch-hamilton-county-sheriff-discuss-use-flock-safety-cameras/"
   },
   "https://arkatechnews.com/state-news-spotlight-privacy-concerns-fuel-fight-against-flock-in-arkansas": {
-    "content_hash": "752c7b25f54e09f53b5527e20bde976241209c6cdf087c35a34727e54fbd5c14",
+    "archive": "fe1d954af5eeff9356c51a33738ca5f47ddb46362c50f69488b687160f7971da.txt",
+    "content_hash": "b6155b5c8d2c1631dad52082e83eac37559f628bc9ebd9c166b7d1c35b4740af",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.arkatechnews.com/state-news-spotlight-privacy-concerns-fuel-fight-against-flock-in-arkansas/",
-    "simhash": "0c6bf95278ada176",
-    "text_len": 3875,
+    "simhash": "2d4afd5378adb55e",
+    "snapshot_path": "snapshots/2026-10-08/76b065b4aa22c6695b84d70085562b1959861bd7018c57a7bbbaeaf7e6d858b6.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3827,
     "title": "STATE NEWS SPOTLIGHT: Privacy Concerns Fuel Fight Against Flock in Arkansas – The Arka Tech",
     "url": "https://www.arkatechnews.com/state-news-spotlight-privacy-concerns-fuel-fight-against-flock-in-arkansas/"
   },
@@ -808,12 +811,15 @@
     "url": "https://www.basedinlafayette.com/p/wlpd-chief-defends-deployment-of"
   },
   "https://batesvilletribune.com/flock-cameras-quietly-expand-in-batesville-as-residents-elsewhere-push-back": {
-    "content_hash": "fd7723074a37d3576fe9e6cfaba2ca621d121fa03b0a81e79aca90aa0fd53ddf",
+    "archive": "bd7cf9804f16089bce73fce196dbe70a0a02538adc815021d7e7fb24201286bc.txt",
+    "content_hash": "0a1a0df848d45eace1cd4e1f8706f06558c769079bbcbad80980f4cf77be7e0a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://batesvilletribune.com/flock-cameras-quietly-expand-in-batesville-as-residents-elsewhere-push-back/",
-    "simhash": "5cc08f1962febb62",
-    "text_len": 6721,
+    "simhash": "5ce0cf1060febb72",
+    "snapshot_path": "snapshots/2026-10-08/9f71db9458f737d0015eacf1716e559456547f44ea59552f009964f04c158b53.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6696,
     "title": "Flock Cameras Quietly Expand in Batesville as Residents Elsewhere Push Back | Batesville Tribune",
     "url": "https://batesvilletribune.com/flock-cameras-quietly-expand-in-batesville-as-residents-elsewhere-push-back/"
   },
@@ -6793,11 +6799,14 @@
     "url": "https://renton.civicweb.net/document/305496/Public%20Safety%20Committee%20-%2024%20Nov%202025.pdf?handle=04A9B10E6C4B9E96B6518DED96953E"
   },
   "https://rentonsignal.com/2026/05/06/council-puts-flock-cameras-on-hold-again": {
+    "archive": "82113b941eecf929cd620ada1af9580a13385d2635102e0092a9cf58ffc1602b.txt",
     "content_hash": "0ae40aa065d8389fdb796b00535fba5e4cb48f2c1220a1bbc06b2e4383386403",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://rentonsignal.com/2026/05/06/council-puts-flock-cameras-on-hold-again/",
     "simhash": "ef02abd1cf648e1e",
+    "snapshot_path": "snapshots/2026-10-08/b29da19691a29553dc0e75f8e1f952390615c018b36f31c85bff4c3b16bc5a5a.json",
+    "snapshot_status": "uploaded",
     "text_len": 5679,
     "title": "Council Puts Flock Cameras on Hold — Again – Renton Signal",
     "url": "https://rentonsignal.com/2026/05/06/council-puts-flock-cameras-on-hold-again/"
@@ -7163,11 +7172,14 @@
     "url": "https://www.scottsdale.org/city_news/scottsdale-keeps-cameras-on-despite-flock-fury/article_9670e344-0d7a-47fb-b7a8-d9f51747d359.html"
   },
   "https://seattlered.com/legislature/spokane-sheriff-shuts-down-flock-cameras-sb-6002/4117761": {
+    "archive": "21d16b310e1fecbd4bfef18ea5dca2ba1d87b13b0393383217b4f8199df32adf.txt",
     "content_hash": "cc86ee469239a89ee5d3b64f71d75101ffea6945399df10b4a679a4f32e9a29d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://seattlered.com/legislature/spokane-sheriff-shuts-down-flock-cameras-sb-6002/4117761",
     "simhash": "294d0096acef8985",
+    "snapshot_path": "snapshots/2026-10-08/942bd1b61f71f2b8b56bdaa940e40eea8a3c7789962a5517b72bf978968f9d9f.json",
+    "snapshot_status": "uploaded",
     "text_len": 4623,
     "title": "Spokane sheriff shuts down Flock cameras, cites SB 6002 risk | Seattle Red",
     "url": "https://seattlered.com/legislature/spokane-sheriff-shuts-down-flock-cameras-sb-6002/4117761"
@@ -7564,41 +7576,53 @@
     "url": "https://www.swtimes.com/story/news/2026/08/28/fort-smith-changes-rules-for-flock-automated-license-plate-readers/91508039007/"
   },
   "https://talkbusiness.net/2026/08/fort-smith-police-department-evaluating-flock-camera-use-management": {
+    "archive": "63b3044eacf28f3aefc8f0b84086891377e12400b647692ecf240b9c389c2306.txt",
     "content_hash": "4f551688ef0e5e48724874780ac6f909542668697560b857a3f587ddf6990352",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://talkbusiness.net/2026/08/fort-smith-police-department-evaluating-flock-camera-use-management/",
     "simhash": "ba2b3b7add348fbe",
+    "snapshot_path": "snapshots/2026-10-08/6f6cb319a58ec6e97c3ac2ad1402c4a7cbdf60e98e13f60806494f1b29ddffa0.json",
+    "snapshot_status": "uploaded",
     "text_len": 10879,
     "title": "Fort Smith Police Department evaluating Flock camera use, management - Talk Business & Politics",
     "url": "https://talkbusiness.net/2026/08/fort-smith-police-department-evaluating-flock-camera-use-management/"
   },
   "https://talkbusiness.net/2026/08/fspd-makes-flock-camera-policy-changes-will-review-contract-renewal": {
+    "archive": "f1f878e5c2fc0a154bc5e232dd3299859a89e8ca73cf1a0826b38141ac702a1f.txt",
     "content_hash": "773ab175fb9cabe44fce9634544fb8079317da42a3c7f9dd53917f78218896ac",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://talkbusiness.net/2026/08/fspd-makes-flock-camera-policy-changes-will-review-contract-renewal/",
     "simhash": "9359aec8bd1ce3f6",
+    "snapshot_path": "snapshots/2026-10-08/7d9a6467be9647b2ccf1d37204c429265bab291ea8327e4e4d20a4befb8b2b4f.json",
+    "snapshot_status": "uploaded",
     "text_len": 3750,
     "title": "FSPD makes Flock camera policy changes, will review contract renewal - Talk Business & Politics",
     "url": "https://talkbusiness.net/2026/08/fspd-makes-flock-camera-policy-changes-will-review-contract-renewal/"
   },
   "https://talkbusiness.net/2026/08/greenwood-city-council-city-residents-discuss-use-of-flock-system": {
+    "archive": "52be825f97eb1a92493277e29290356301892a40ea493a1ff3c90660e490b4c5.txt",
     "content_hash": "d1e61323ce4347bd308db7f62b754f0bd1553eeaf1a67c6658a11697917a65d5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://talkbusiness.net/2026/08/greenwood-city-council-city-residents-discuss-use-of-flock-system/",
     "simhash": "ac44a968f8c692f2",
+    "snapshot_path": "snapshots/2026-10-08/180ea2cee142b1031893dcce2fd0e28947735881edbfc716d7ae053bed5d73cf.json",
+    "snapshot_status": "uploaded",
     "text_len": 7078,
     "title": "Greenwood City Council, city residents discuss use of Flock system - Talk Business & Politics",
     "url": "https://talkbusiness.net/2026/08/greenwood-city-council-city-residents-discuss-use-of-flock-system/"
   },
   "https://talkbusiness.net/2026/09/van-buren-police-chief-makes-changes-to-flock-camera-policies": {
+    "archive": "bc2c259fab91d3bfae68e594ab70225ecc58ca8975dbcddf3b5e8ae809bc292a.txt",
     "content_hash": "91acdbc42ff11d231a5fcbfb4cbd7f6158e7147b67ca2dd70c74dc1c9048456e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://talkbusiness.net/2026/09/van-buren-police-chief-makes-changes-to-flock-camera-policies/",
     "simhash": "1040ad406c20e914",
+    "snapshot_path": "snapshots/2026-10-08/eb97b5f8590a9752b8717ab98a8d17dce68287da6ff7f1cbd4920a7ad8b8dba2.json",
+    "snapshot_status": "uploaded",
     "text_len": 4250,
     "title": "Van Buren Police chief makes changes to Flock camera policies - Talk Business & Politics",
     "url": "https://talkbusiness.net/2026/09/van-buren-police-chief-makes-changes-to-flock-camera-policies/"
@@ -7774,12 +7798,15 @@
     "url": "https://www.thecooldown.com/green-tech/arizona-sheriff-ends-flock-camera-contract/"
   },
   "https://thecooldown.com/green-tech/cabot-arkansas-suspends-flock-camera-program": {
-    "content_hash": "a15bcccbf00ec59b2283fa159091042d227a91959fd082f9f9e2df56fbe8d81f",
+    "archive": "5edf0c1574950e39a6cdbe9d953b77c6ab7cfdc4ee617854e2cb24d9fa642a0d.txt",
+    "content_hash": "5e82a32d3f3ec2f04c66dc367a4f42277b1de9039c1e75bb3c6d26a5eb41f944",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.thecooldown.com/green-tech/cabot-arkansas-suspends-flock-camera-program/",
-    "simhash": "8fd43f17c6b87c04",
-    "text_len": 3700,
+    "simhash": "8fd43d97eeb87c04",
+    "snapshot_path": "snapshots/2026-10-08/4936275104ce233800e6537e91e9b35d555848811a7da97bbb03a6e271e8e110.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3690,
     "title": "Arkansas mayor, not police chief, suspends Flock cameras over privacy concerns",
     "url": "https://www.thecooldown.com/green-tech/cabot-arkansas-suspends-flock-camera-program/"
   },
@@ -8857,22 +8884,28 @@
     "url": "https://www.weku.org/lexington-richmond/2026-09-04/as-outcry-grows-lexington-mayor-announces-independent-review-of-citys-flock-cameras"
   },
   "https://whitecountycitizen.com/news/beebe-police-chief-auto-renewal-of-flock-camera-contract-stopped-to-expire-oct-8/article_ee8cd07b-8114-5998-91a0-4538e425c2a5.html": {
-    "content_hash": "1f99d438c562526cd510c7df1e57908fd5add2dcbb25b231e67f222540f742a4",
+    "archive": "38b864e5f972e980274aa7135db57667325c3b80b8f7f9583b2b12cd710c51f8.txt",
+    "content_hash": "5d96935bf4fd2c4e01ec0dd6f7c802bfcc256495188b29ba199bff96c7c13b3e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.whitecountycitizen.com/news/beebe-police-chief-auto-renewal-of-flock-camera-contract-stopped-to-expire-oct-8/article_ee8cd07b-8114-5998-91a0-4538e425c2a5.html",
-    "simhash": "c98e1216c5299d2b",
-    "text_len": 8287,
+    "simhash": "cb8e321a8469cc63",
+    "snapshot_path": "snapshots/2026-10-08/c2259b9b5c9381defda4e111407b9aa3909be5241c688b07050fa0f5d59d5d2b.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8227,
     "title": "Beebe police chief: Auto-renewal of Flock camera contract stopped, to expire Oct. 8 | News | whitecountycitizen.com",
     "url": "https://www.whitecountycitizen.com/news/beebe-police-chief-auto-renewal-of-flock-camera-contract-stopped-to-expire-oct-8/article_ee8cd07b-8114-5998-91a0-4538e425c2a5.html"
   },
   "https://whitecountycitizen.com/news/searcy-city-council-starts-process-of-ending-citys-flock-camera-contracts/article_42916c74-34b5-537f-96d8-300b866aab0b.html": {
-    "content_hash": "974617a737f8572a30c7f4bd18a8c25d03746d575b15379c5e21da77d714bca7",
+    "archive": "6c02b29eb2c3a48923e8266a6f7550dce81ab0ffb22354222db740482e676449.txt",
+    "content_hash": "060dbd3e969d9c06eb22c8f954705babcb779c4c6e28fe1e7615217339db73dd",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.whitecountycitizen.com/news/searcy-city-council-starts-process-of-ending-citys-flock-camera-contracts/article_42916c74-34b5-537f-96d8-300b866aab0b.html",
-    "simhash": "f3bb5fe77d88a408",
-    "text_len": 15849,
+    "simhash": "f3db7bef3dcaa478",
+    "snapshot_path": "snapshots/2026-10-08/ee69c8675bacecac96926bab294a9f4a38dfeaa3b35a2f76d19924863b7c1e52.json",
+    "snapshot_status": "uploaded",
+    "text_len": 15741,
     "title": "Searcy City Council starts process of ending city's Flock camera contracts | News | whitecountycitizen.com",
     "url": "https://www.whitecountycitizen.com/news/searcy-city-council-starts-process-of-ending-citys-flock-camera-contracts/article_42916c74-34b5-537f-96d8-300b866aab0b.html"
   },
@@ -8981,11 +9014,14 @@
     "url": "https://woodburn-or.gov/DocumentCenter/View/3299/Flock-Public-Q-and-A-FINAL-2-3-26"
   },
   "https://wrn.com/wisconsin-pm-news-summary-91": {
+    "archive": "2f72bb5e9ff9367fdac8322fffa0424b266866ef00b5555602abd81f62f8116f.txt",
     "content_hash": "3b1cc0d30d3f05e3715bcd8998c60efc4bcaa26621ad370b5e7f82ed22013dad",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.wrn.com/wisconsin-pm-news-summary-91/",
     "simhash": "c285bb385d9f91fc",
+    "snapshot_path": "snapshots/2026-10-08/3c96fd3f87376729617a240ea6ef45293c35fea143e54fc23043cba60426f9a8.json",
+    "snapshot_status": "uploaded",
     "text_len": 2069,
     "title": "Wisconsin PM News Summary - Wisconsin Radio Network",
     "url": "https://www.wrn.com/wisconsin-pm-news-summary-91/"
