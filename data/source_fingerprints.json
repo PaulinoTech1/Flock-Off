@@ -916,12 +916,15 @@
     "url": "https://www.bleedingheartland.com/2025/07/17/surveillance-ai-alpr-flock-transparency/"
   },
   "https://blog.cstx.gov/2026/09/24/live-from-city-hall-thursdays-city-council-meeting-sept-24": {
-    "content_hash": "447dbb08a400963715ee33a7ca4ea3f5ae03d76ab2851af887204f3fe62aeeb8",
+    "archive": "be50ccd66f41363baed96069493231b55bc0ac5c1f4023d888c05d5786b00a0b.txt",
+    "content_hash": "23ee162b48717af3ad174aa0b6786ec0f65d3b791386ca5b03baef2c525a9675",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://blog.cstx.gov/2026/09/24/live-from-city-hall-thursdays-city-council-meeting-sept-24/",
-    "simhash": "4fc2e41b00c9a4d6",
-    "text_len": 17887,
+    "simhash": "4fc2e41b00c9a4f6",
+    "snapshot_path": "snapshots/2026-10-08/e0d507f85f8912678be8dd2be4daa96be81b6cfd707bef5ed5418bc53375674c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 17900,
     "title": "Live from City Hall: Thursday’s City Council meeting (Sept. 24)",
     "url": "https://blog.cstx.gov/2026/09/24/live-from-city-hall-thursdays-city-council-meeting-sept-24/"
   },
@@ -1609,11 +1612,14 @@
     "url": "https://www.cityofbartlesville.org/wp-content/uploads/2024/12/Flock-cameras-FAQ.pdf"
   },
   "https://cityofdallas.legistar.com/LegislationDetail.aspx?FullText=1&GUID=FDDAEA7D-A941-4B35-8A9D-318FF351CAE4&ID=7404358": {
+    "archive": "cbc401250049bfa1661eb48ec7f72bbfd5745dc9808058e916b9b45438566715.txt",
     "content_hash": "6c440a292e030c2cfe6f730305e95eaf2609ea0be9814ed44275fb11e984201a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?ID=7404358&GUID=FDDAEA7D-A941-4B35-8A9D-318FF351CAE4&FullText=1",
     "simhash": "fa2ad26365bcec18",
+    "snapshot_path": "snapshots/2026-10-08/6b0a842485b7ea889a4324ccd90e51d78abcd26a01ea594547b21f056402d07a.json",
+    "snapshot_status": "uploaded",
     "text_len": 3992,
     "title": "City of Dallas - File #: 25-1606A",
     "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?ID=7404358&GUID=FDDAEA7D-A941-4B35-8A9D-318FF351CAE4&FullText=1"
@@ -2088,12 +2094,15 @@
     "url": "https://www.croftoncommunity.org/_files/ugd/c759a7_a277ea517b98421f9c2ad3185e831004.pdf"
   },
   "https://cun.news/texas-police-surveillance-cell-trackers-license-plate-readers": {
-    "content_hash": "db778e5f290956e1dad9e47539bc4c1e41045fe1d8ee6d714b4653b84887f261",
+    "archive": "98adcc454d8de3fb0d95042be79c4beb9a3ebd44503bfac89d113d805aa523bc.txt",
+    "content_hash": "5142c0eafed1dbaad0bba97815d2ebfa7aaec0d0816d04e44d034ca6e31db2f3",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://cun.news/texas-police-surveillance-cell-trackers-license-plate-readers/",
-    "simhash": "05fad043f622d09b",
-    "text_len": 5444,
+    "simhash": "85da9e43e602d1b3",
+    "snapshot_path": "snapshots/2026-10-08/9f765c568627404d0cd8bfd2cd80919b5ea33dc3276a6a4d8e620b9825b201ae.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5406,
     "title": "Texas Police Are Using Cell Trackers, License-Plate Readers and Sound Sensors to Monitor Suspects and Bystanders Across the State, Raising Privacy Questions – Cun News",
     "url": "https://cun.news/texas-police-surveillance-cell-trackers-license-plate-readers/"
   },
@@ -2982,11 +2991,14 @@
     "url": "https://fox29.com/news/abington-township-votes-ditch-flock-cameras-over-privacy-concerns"
   },
   "https://fox4news.com/news/dallas-police-looking-new-ways-keep-over-300-flock-cameras-operational-state-funding-ends": {
+    "archive": "c5f7ab44823f96c50ce49eb6e7bff5af4960898e756a9dcf751a11562d49110f.txt",
     "content_hash": "6c98669759deca4757ded58f196ecb703a7c2623841c8ddd2bf2ed23aa41fc1f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox4news.com/news/dallas-police-looking-new-ways-keep-over-300-flock-cameras-operational-state-funding-ends",
     "simhash": "98045bc6c96a040b",
+    "snapshot_path": "snapshots/2026-10-08/dbdf7ce0099e0cef29c8d881c358c87aea83772a51fdb7d80e4999cbedb53d51.json",
+    "snapshot_status": "uploaded",
     "text_len": 4805,
     "title": "Dallas Police looking for ways to keep over 300 Flock cameras operational as state funding ends | FOX 4 Dallas-Fort Worth",
     "url": "https://fox4news.com/news/dallas-police-looking-new-ways-keep-over-300-flock-cameras-operational-state-funding-ends"
@@ -3255,12 +3267,15 @@
     "url": "https://www.globenewswire.com/news-release/2026/07/17/3329299/0/en/Flock-LPR-Alert-Leads-to-Arrest-of-Three-Homicide-Suspects-on-Kansas-Interstate.html"
   },
   "https://gmg-ksat-prod.cdn.arcpublishing.com/news/local/2026/08/11/flock-cameras-what-automated-license-plate-readers-are-and-why-theyre-controversial-in-south-texas": {
-    "content_hash": "070bc6dd8a37fe5f0867b771dbc29a927a83d0e68fd7c8900905ecc077fb5cdf",
+    "archive": "ec2e0a00233561fdb8c178f1c506c4926453d8275e93fbbcea821f08b988830a.txt",
+    "content_hash": "d38161a7fd02ff471031594bd2e9def67259a9da8bb7970ac0210ac675465e2a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gmg-ksat-prod.cdn.arcpublishing.com/news/local/2026/08/11/flock-cameras-what-automated-license-plate-readers-are-and-why-theyre-controversial-in-south-texas/",
-    "simhash": "7124e0491b5469b2",
-    "text_len": 7377,
+    "simhash": "0133f464ce5479f1",
+    "snapshot_path": "snapshots/2026-10-08/ca63c46503717886f0d0bb74e2fb9f5400d93df41217c54aef8461436a186de7.json",
+    "snapshot_status": "uploaded",
+    "text_len": 6936,
     "title": "Flock cameras explained: How automated plate readers work and their impact in South Texas",
     "url": "https://gmg-ksat-prod.cdn.arcpublishing.com/news/local/2026/08/11/flock-cameras-what-automated-license-plate-readers-are-and-why-theyre-controversial-in-south-texas/"
   },
@@ -3618,11 +3633,14 @@
     "url": "https://www.govtech.com/public-safety/with-9-7m-pact-birmingham-ala-adds-100-security-cameras"
   },
   "https://govtech.com/public-safety/with-state-funding-pause-dallas-to-switch-off-flock-cameras": {
+    "archive": "becf7bab14e884fe0e97d6a0a81efba6dc6fc57cb5e1c4ff812463b4d95a0589.txt",
     "content_hash": "6d13c8da644044ba2117a8891b075e46c60e66e36e8a3ca42d5d104a6b45869c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/with-state-funding-pause-dallas-to-switch-off-flock-cameras",
     "simhash": "7f54aaf6110a9557",
+    "snapshot_path": "snapshots/2026-10-08/fada21dca1b0240dc4ca6c47e0178745d94b1a14b0f2c7b0dc520eb50c09cde6.json",
+    "snapshot_status": "uploaded",
     "text_len": 3347,
     "title": "With State Funding Pause, Dallas to Switch Off Flock Cameras",
     "url": "https://www.govtech.com/public-safety/with-state-funding-pause-dallas-to-switch-off-flock-cameras"
@@ -6314,12 +6332,15 @@
     "url": "https://pr.murrayjournal.com/article/Flock-LPR-Helps-Utah-Deputies-Locate-Suspected-Serial-Arsonist/6a5a9525fef76cbb7d73e104"
   },
   "https://prinevillereview.com/left-and-right-unite-as-oregonians-turn-against-flock-camera-network": {
-    "content_hash": "f15f1fa2bc00f3ebc52d966d09e5fd9f1c332fcc82b343fd7495386d1c72a44a",
+    "archive": "ed3ddba759ecd643fce5080278882bcc888b6c73a4aaf86bc74a559b774947e0.txt",
+    "content_hash": "4136e3976ad21e0aad8ca237182521208f72662e0b4ea6ca5fdc532f19d0d344",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://prinevillereview.com/left-and-right-unite-as-oregonians-turn-against-flock-camera-network/",
-    "simhash": "3dc316745dad53fb",
-    "text_len": 4922,
+    "simhash": "3dc317665dad53fb",
+    "snapshot_path": "snapshots/2026-10-08/42ce959dbf1d08c736567b92781f08baadf679623c7cefa77c8437e5484ea416.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4931,
     "title": "Left and Right unite as Oregonians turn against Flock camera network - Prineville Review",
     "url": "https://prinevillereview.com/left-and-right-unite-as-oregonians-turn-against-flock-camera-network/"
   },
@@ -6539,11 +6560,14 @@
     "url": "https://quincycurrent.com/where-are-quincys-flock-cameras-a-look-at-the-network-ahead-of-city-council-report/"
   },
   "https://radio.kttz.org/2026-09-16/these-groups-are-driving-the-deflock-movement-in-austin-now-theyre-ready-for-statewide-action": {
+    "archive": "3221a6cfbaef3ce8652f267e862558ba174afb305a83dc34742c0b02f2398989.txt",
     "content_hash": "175a2268241947e953ca80bfeeb2951e68bafd23d1cee453cbeda542c9db52ec",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://radio.kttz.org/2026-09-16/these-groups-are-driving-the-deflock-movement-in-austin-now-theyre-ready-for-statewide-action",
     "simhash": "e499b4666eaf6763",
+    "snapshot_path": "snapshots/2026-10-08/3fa5303d10059ae9301138d828eda68ca33a687dbd407b53d2b719576af7a090.json",
+    "snapshot_status": "uploaded",
     "text_len": 10135,
     "title": "These groups are driving the DeFlock movement in Austin. Now, they're ready for statewide action | KTTZ",
     "url": "https://radio.kttz.org/2026-09-16/these-groups-are-driving-the-deflock-movement-in-austin-now-theyre-ready-for-statewide-action"
@@ -6919,22 +6943,28 @@
     "url": "https://www.route-fifty.com/public-safety/2026/09/flock-cameras-divide-tennessee-governments-residents-over-privacy-some-end-their-contracts/415832/"
   },
   "https://sacurrent.com/news/san-antonio-news/bexar-county-sheriff-tries-to-quell-fears-about-departments-use-of-flock-surveillance": {
-    "content_hash": "99a2afc4a2d831c7d8755b5abf6b63f67f4b0df79a6b5a3379fe7676063baf21",
+    "archive": "7c100f2cf0d675b6bdcd38e61a61c9b1ed467192b392f5fce763f9a5118eb581.txt",
+    "content_hash": "1a8f3f2544e0e220cff358ac1072a26fbf2a3f5f7c227392573df86b7ac8dda3",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.sacurrent.com/news/san-antonio-news/bexar-county-sheriff-tries-to-quell-fears-about-departments-use-of-flock-surveillance/",
-    "simhash": "dd32609f9a191b65",
-    "text_len": 3693,
+    "simhash": "ddb8241fb99113e4",
+    "snapshot_path": "snapshots/2026-10-08/28ff4c6f420643738413bbaec4534867d63fdf698a3ddad12cadec9e9a5f1985.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3779,
     "title": "Bexar County Sheriff tries to quell fears about department's use of Flock surveillance - San Antonio Current",
     "url": "https://www.sacurrent.com/news/san-antonio-news/bexar-county-sheriff-tries-to-quell-fears-about-departments-use-of-flock-surveillance/"
   },
   "https://sacurrent.com/news/there-are-more-than-10000-flock-cameras-in-texas-gina-hinojosa-blames-gov-greg-abbott": {
-    "content_hash": "7f5fa80db5bd75a3e09fcefee6be623bf85577476a52e8d86d0860fd37de2ab6",
+    "archive": "c903284f1e542a7f3bdebdadd0f01519c5227bfb91838cb522099f48df48eca8.txt",
+    "content_hash": "e8bebad316dcca9815b300763410119fd4e6f96bed2b5a95d702df28176b52e9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.sacurrent.com/news/there-are-more-than-10000-flock-cameras-in-texas-gina-hinojosa-blames-gov-greg-abbott/",
-    "simhash": "c675ca2db882ce11",
-    "text_len": 3792,
+    "simhash": "467de83d3ca34b11",
+    "snapshot_path": "snapshots/2026-10-08/ed44a41f75f7e9dbffc5598934acd1ec512bffd6b9a6fb620ec19af3c2bc68f9.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3764,
     "title": "There are more than 10,000 Flock cameras in Texas. Gina Hinojosa blames Gov. Greg Abbott. - San Antonio Current",
     "url": "https://www.sacurrent.com/news/there-are-more-than-10000-flock-cameras-in-texas-gina-hinojosa-blames-gov-greg-abbott/"
   },
@@ -7109,12 +7139,15 @@
     "url": "https://www.securitysystemsnews.com/article/city-s-break-with-flock-safety-highlights-growing-ai-privacy-debate"
   },
   "https://securitytoday.com/articles/2021/03/16/high-tech-cameras-agree-with-fort-worth.aspx?admgarea=ht.government": {
-    "content_hash": "b69805258719d9ff689a6c3634878ef4e89ee4a8fef7b693a7940d7eee8cb838",
+    "archive": "1f63bd53c28d123caf30c2623f369c9657976eba57d158f1438b1ffdf592f696.txt",
+    "content_hash": "16a3c2e0d3520e772c2cc970dc734f5960542a3dbbc314672fa5f8e471ddc7d5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://securitytoday.com/articles/2021/03/16/high-tech-cameras-agree-with-fort-worth.aspx?admgarea=ht.government",
-    "simhash": "d22a230b8ecda0e2",
-    "text_len": 9727,
+    "simhash": "d6f926a98f8495e8",
+    "snapshot_path": "snapshots/2026-10-08/b0f110b7301f71b4ac090ce7cfd3f17418d412782ba5785a10334b2a34aa5080.json",
+    "snapshot_status": "uploaded",
+    "text_len": 9877,
     "title": "High-tech Cameras Agree with Fort Worth, TX, Police Department -- Security Today",
     "url": "https://securitytoday.com/articles/2021/03/16/high-tech-cameras-agree-with-fort-worth.aspx?admgarea=ht.government"
   },
@@ -7554,11 +7587,14 @@
     "url": "https://www.techtimes.com/articles/325025/20260115/aurora-pd-flock-safety-cameras-gunpoint-incident.htm"
   },
   "https://texasobserver.org/san-marcos-city-council-end-alprs": {
+    "archive": "e32e8097e979a9227f0d98d4b64cfe5c2ba62c0dac169155ca94ba182f99b6b5.txt",
     "content_hash": "61dbd522936c5f3673997de1d570bb91459088a351c97b18879a36099b8f3794",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.texasobserver.org/san-marcos-city-council-end-alprs/",
     "simhash": "cc73c872c3c7c587",
+    "snapshot_path": "snapshots/2026-10-08/e175197d37dfe514a618f15b121e9be5f1e54a07b99407f5e940ee6ecdb87f50.json",
+    "snapshot_status": "uploaded",
     "text_len": 8059,
     "title": "Why My Texas Town Took Action Against Flock Cameras Search icon Search icon facebook twitter Mail icon Share icon",
     "url": "https://www.texasobserver.org/san-marcos-city-council-end-alprs/"
@@ -7587,12 +7623,15 @@
     "url": "https://tfid.org/DocumentCenter/View/8284/TFPD-Automated-License-Plate-Reader-Policy-8192026?bidId="
   },
   "https://thebatt.com/news/college-station-city-council-to-vote-on-400000-flock-safety-contract": {
-    "content_hash": "d5441e7dc29eb5ba8162f319a02c87696d1f49a61717b7320cb7398ea572aea1",
+    "archive": "30ef813ef58b57438ce75d5b1c1009a75caad7922430f53104ed7fbd34df278f.txt",
+    "content_hash": "7c0fdfe23a82fed40570b6c824cbacb60f655a6e532057a04990d0634788c09d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://thebatt.com/news/college-station-city-council-to-vote-on-400000-flock-safety-contract/",
-    "simhash": "5a412f1341241940",
-    "text_len": 5811,
+    "simhash": "52432f1341209848",
+    "snapshot_path": "snapshots/2026-10-08/ee7d45020d51f74c435959d76668ec5d2a2ba81a0373e03844f4e09438846c63.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5937,
     "title": "College Station City Council to vote on $400,000 Flock Safety contract – The Battalion",
     "url": "https://thebatt.com/news/college-station-city-council-to-vote-on-400000-flock-safety-contract/"
   },
@@ -7741,12 +7780,15 @@
     "url": "https://www.thedailycatch.org/articles/dutchess-county-district-attorney-and-sheriff-withdraw-support-for-continued-use-of-flock-cameras/"
   },
   "https://thedailytexan.com/2026/09/10/installation-of-new-flock-cameras-in-texas-halted-following-funding-pause": {
-    "content_hash": "d06defaabd6dc020f10ee4c75bdcc1ebf8f2ac279a94c75a3dad704b146ddcad",
+    "archive": "b1a2f10fcfc1eaff0c9a8c2aca192891269f19848d2fda7fdfeedd4eb4aab4cc.txt",
+    "content_hash": "bbfd8146a988548933eace37551b637a23f0a4317b67d3bc2e1fc74d61e07968",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://thedailytexan.com/2026/09/10/installation-of-new-flock-cameras-in-texas-halted-following-funding-pause/",
-    "simhash": "a9db499a89a0f86b",
-    "text_len": 4734,
+    "simhash": "23ce4b9e83a258ef",
+    "snapshot_path": "snapshots/2026-10-08/9ab4ae44a59ad24fc93764bb0826b1ece9b45535d50545882d374f2ac4a07ba1.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4746,
     "title": "Installation of new Flock cameras in Texas halted following funding pause – The Daily Texan",
     "url": "https://thedailytexan.com/2026/09/10/installation-of-new-flock-cameras-in-texas-halted-following-funding-pause/"
   },
@@ -8385,12 +8427,15 @@
     "url": "https://universe.byu.edu/metro/provo-citizens-raise-concerns-over-use-of-flock-safety"
   },
   "https://universitystar.com/34089/news/city-council-decided-against-flock-safety-contract-renewal": {
-    "content_hash": "38709ee8f153c59479cb6b0577ed427a2510a8ace8d744e2f84f637d1af9656e",
+    "archive": "31c9d6e8ce9a885af5dea9dc22c23d373b386db7066c88e1246b43af378e3b87.txt",
+    "content_hash": "5b01773d2eb272db688378f11da037583e4898d1fd6e5ee5b641c59870272685",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://universitystar.com/34089/news/city-council-decided-against-flock-safety-contract-renewal/",
-    "simhash": "4ca97d7b10880736",
-    "text_len": 5359,
+    "simhash": "54a8597a10802774",
+    "snapshot_path": "snapshots/2026-10-08/63762e94ae4dd51557bc0602136e4686ddb4934a629f9277639d09b080ea997f.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5292,
     "title": "City Council declines Flock Safety contract renewal – The University Star",
     "url": "https://universitystar.com/34089/news/city-council-decided-against-flock-safety-contract-renewal/"
   },
