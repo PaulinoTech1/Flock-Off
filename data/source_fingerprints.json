@@ -69,21 +69,27 @@
     "url": "https://www.404media.co/aclu-and-eff-sue-a-city-blanketed-with-flock-surveillance-cameras/"
   },
   "https://404media.co/the-mayor-who-said-no-when-flock-came-to-town": {
+    "archive": "18a3ec371a9e13745d20ca0fcccf0fe8cac9f5ff0eb1aff1308d80eea1c6c4bd.txt",
     "content_hash": "10023312417014cb412def97566dc59cf8e58d97d11b540e676079eec7498582",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.404media.co/the-mayor-who-said-no-when-flock-came-to-town/",
     "simhash": "65ae46e342c019e5",
+    "snapshot_path": "snapshots/2026-10-08/71f1f8e93f2899c257bf2d9828c8c2d1c093c48afbfa28c015d06b0ca9a10aeb.json",
+    "snapshot_status": "uploaded",
     "text_len": 6653,
     "title": "The Mayor Who Said 'No' When Flock Came to Town",
     "url": "https://www.404media.co/the-mayor-who-said-no-when-flock-came-to-town/"
   },
   "https://404media.co/woman-arrested-after-city-council-denies-residents-right-to-speak-on-flock-cameras": {
+    "archive": "75c5d73a870da517adad00c6deda78f3e5323717daaf759902cb8f0799a0f72c.txt",
     "content_hash": "221cfa72ddeeda2162c3a95f720d75fed03af9423a0fcc1ffeaef85baca7b0ec",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.404media.co/woman-arrested-after-city-council-denies-residents-right-to-speak-on-flock-cameras/",
     "simhash": "9340907ed7c0f75d",
+    "snapshot_path": "snapshots/2026-10-08/17ccb72911d137132d98501a84b1f1ffcc8d9bad16bab94e303f3a2ec8d22f5f.json",
+    "snapshot_status": "uploaded",
     "text_len": 7592,
     "title": "Woman Arrested, Dragged Away After Quietly Speaking About Flock at City Council Meeting",
     "url": "https://www.404media.co/woman-arrested-after-city-council-denies-residents-right-to-speak-on-flock-cameras/"
@@ -1571,11 +1577,14 @@
     "url": "https://citydesk.org/2026/09/08/sheriff-allen-to-address-flock-shutdown-and-bcsos-transition-to-axon-alpr-technology/"
   },
   "https://cityofbartlesville.org/police-department-hosts-flock-safety-camera-forum-2": {
+    "archive": "ce83ce3fe9a34858a6f6fcb2254de6854762b7b11bd92689463c05da13564b3b.txt",
     "content_hash": "33fe7baea23d7b64749428c8f01b2614f7544b0dc916c3b79530196b8949de17",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.cityofbartlesville.org/police-department-hosts-flock-safety-camera-forum-2/",
     "simhash": "89b05595379a7cc2",
+    "snapshot_path": "snapshots/2026-10-08/8c5a1f70fb48275ef386f57a8977b7be460ee1c7984f6298dcd34c21a4f3dec5.json",
+    "snapshot_status": "uploaded",
     "text_len": 4458,
     "title": "Police Department hosts Flock Safety camera forum | City of Bartlesville",
     "url": "https://www.cityofbartlesville.org/police-department-hosts-flock-safety-camera-forum-2/"
@@ -2692,12 +2701,15 @@
     "url": "https://eyesoffma.com/wins/"
   },
   "https://factinface.com/news/272625-two_arrested_in_springfield_after_city_council_stalls_public_review_of_flock_surveillance_cameras": {
-    "content_hash": "087392b2ba02faea17eff4de538cd7264f4c34916fa5fcb4da8da5dc31de530f",
+    "archive": "074655f022905f2f16e7745329acbc57ad6c25179b6e7ec8298ea775b2f74dd1.txt",
+    "content_hash": "ba44ec248a624844beb7af65e603f7dc44b76fc0ab315db684f82f03ede4b59f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-08",
     "final_url": "https://factinface.com/news/272625-two_arrected_in_springfield_after_city_council_stalls_public_review_of_flock_surveillance_cameras",
-    "simhash": "b770d07b94aac35f",
-    "text_len": 13077,
+    "simhash": "9748817ed76be75d",
+    "snapshot_path": "snapshots/2026-10-08/f8ceff14a5e6188306115726229fa63ebbb5cec006de7287fd7b0588ab058030.json",
+    "snapshot_status": "uploaded",
+    "text_len": 12695,
     "title": "Two arrested in Springfield after city council stalls public review of Flock surveillance cameras • Fact In Face • Your right to know. Our job to expose.",
     "url": "https://factinface.com/news/272625-two_arrested_in_springfield_after_city_council_stalls_public_review_of_flock_surveillance_cameras"
   },
@@ -3637,11 +3649,14 @@
     "url": "https://gray-kctv-prod.gtv-cdn.com/2026/08/10/kansas-city-kansas-detective-charged-after-wyandotte-county-da-investigation/"
   },
   "https://gray-kctv-prod.gtv-cdn.com/2026/09/11/parkville-look-implementing-policies-flock-cameras-residents-voice-concerns": {
+    "archive": "cf185bcc87d23fc3d7dd8f72e2b57f118185d79d66129606c62d6433902c7fd0.txt",
     "content_hash": "4daf6fc0bf88f4be4b919a3add1c6e52ebbc52a96b262a704804e27a03b4e19d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://gray-kctv-prod.gtv-cdn.com/2026/09/11/parkville-look-implementing-policies-flock-cameras-residents-voice-concerns/",
     "simhash": "97f354168c4378b4",
+    "snapshot_path": "snapshots/2026-10-08/4ec7a308ac686a0d9210df61905a1191cc4338f554419d6f5198199925cb3ff6.json",
+    "snapshot_status": "uploaded",
     "text_len": 4967,
     "title": "Parkville to look at implementing policies on Flock cameras as residents voice concerns",
     "url": "https://gray-kctv-prod.gtv-cdn.com/2026/09/11/parkville-look-implementing-policies-flock-cameras-residents-voice-concerns/"
@@ -3872,11 +3887,14 @@
     "url": "https://www.grotonma.gov/2026/08/31/town-of-groton-to-terminate-flock-safety-camera-contract-commit-to-developing-permanent-solution-for-spring-2027-town-meeting/"
   },
   "https://guessingheadlights.com/flock-camera-helps-troopers-locate-teen-and-stolen-car-most-effective-tool-ive-used-in-my-career": {
+    "archive": "5db93b7e6073fc918165ec4f936cd2d911ff9d30eff48ecdda713841362ebb8c.txt",
     "content_hash": "9350e6acb49f07e535b46e8b0db1ae69e4b3df17f2b28f8a920e05bbbf6a2a24",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://guessingheadlights.com/flock-camera-helps-troopers-locate-teen-and-stolen-car-most-effective-tool-ive-used-in-my-career/",
     "simhash": "7f00915d69ff7b00",
+    "snapshot_path": "snapshots/2026-10-08/b29435daa794678205658998d49c51026d42ac0731b70a389a7b3f3638830c35.json",
+    "snapshot_status": "uploaded",
     "text_len": 4056,
     "title": "Flock Camera Helps Troopers Locate Teen and Stolen Car, But Some are Still Skeptical About Their Use Flipboard",
     "url": "https://guessingheadlights.com/flock-camera-helps-troopers-locate-teen-and-stolen-car-most-effective-tool-ive-used-in-my-career/"
@@ -4643,12 +4661,15 @@
     "url": "https://www.kjluradio.com/newsroom/city-of-columbia-to-hold-public-hearing-on-use-of-flock-safety-cameras/article_7c80b87a-a13b-47b4-993e-bdecd8be05f4.html"
   },
   "https://kjluradio.com/newsroom/governor-mike-kehoe-becomes-first-in-nation-to-issue-executive-order-on-flock-cameras/article_1ae3e0ea-edfe-4aec-af09-218e7b049262.html": {
-    "content_hash": "d69057bcfbc595764dda93d13d9b91ce457e01109f2eb81a9ff2233e8bdce6f6",
+    "archive": "f1ff75ce19e865be99b3ac47825007e27eed8c9ecb50a7db15bc4254c89558f7.txt",
+    "content_hash": "6a00b3e0b839c9fba06c39d27cbd8e4ab0316b76401cd2166d628ffd7a2b006f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.kjluradio.com/newsroom/governor-mike-kehoe-becomes-first-in-nation-to-issue-executive-order-on-flock-cameras/article_1ae3e0ea-edfe-4aec-af09-218e7b049262.html",
-    "simhash": "b032a0724b51d4c9",
-    "text_len": 4092,
+    "simhash": "9e82a1f239f7d44d",
+    "snapshot_path": "snapshots/2026-10-08/723ff2f2126c73b1da0c1a37a5e433076e6197bea1584dbe95409ad039e107dd.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4019,
     "title": "Governor Mike Kehoe becomes first in nation to issue executive order on Flock cameras | Newsroom | kjluradio.com",
     "url": "https://www.kjluradio.com/newsroom/governor-mike-kehoe-becomes-first-in-nation-to-issue-executive-order-on-flock-cameras/article_1ae3e0ea-edfe-4aec-af09-218e7b049262.html"
   },
@@ -4794,21 +4815,27 @@
     "url": "https://www.krps.org/missouri-news/2026-08-21/pulaski-county-sheriffs-office-to-stop-using-flock-cameras"
   },
   "https://krps.org/missouri-news/2026-09-14/flock-cameras-escalate-the-battle-between-privacy-and-safety-in-st-louis": {
+    "archive": "aca011def8d7eb75b0644de694935a256c8f7e83c6ceed46c68ff026f13c8354.txt",
     "content_hash": "164943cb6eabccf0f5b88f3e8a7ff5997eb8c75f73268bf641af1e830685d4a9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.krps.org/missouri-news/2026-09-14/flock-cameras-escalate-the-battle-between-privacy-and-safety-in-st-louis",
     "simhash": "1fcdc81343c27224",
+    "snapshot_path": "snapshots/2026-10-08/89c550368adabfd87ce633eafdd0adea6a689081e8f841ff7c387cda619fd638.json",
+    "snapshot_status": "uploaded",
     "text_len": 5823,
     "title": "Flock cameras escalate the battle between privacy and safety in St. Louis",
     "url": "https://www.krps.org/missouri-news/2026-09-14/flock-cameras-escalate-the-battle-between-privacy-and-safety-in-st-louis"
   },
   "https://krps.org/missouri-news/2026-09-23/mayor-council-member-concerned-citizen-weigh-in-on-flock-camera-resolution-vote": {
+    "archive": "ab3136a2b804c6533049a460721c96e973b47fd6ce0c2dd5d8034d35db47a442.txt",
     "content_hash": "db54c3366d7ed7ece7555fb076736f84fea86067be74dcd2aa9a20573583c5cc",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.krps.org/missouri-news/2026-09-23/mayor-council-member-concerned-citizen-weigh-in-on-flock-camera-resolution-vote",
     "simhash": "f0c6455912fb9880",
+    "snapshot_path": "snapshots/2026-10-08/2ff4124583df5e9f41e306736feada1d1a7e5ec0c939bb77f9e9cedf7c1250a7.json",
+    "snapshot_status": "uploaded",
     "text_len": 3922,
     "title": "Mayor, council member, concerned citizen weigh in on Flock camera resolution vote",
     "url": "https://www.krps.org/missouri-news/2026-09-23/mayor-council-member-concerned-citizen-weigh-in-on-flock-camera-resolution-vote"
@@ -5639,31 +5666,40 @@
     "url": "https://www.news9.com/oklahoma-city-news/flock-camera-technology-wont-be-used-in-latimer-county"
   },
   "https://news9.com/oklahoma-city-news/flock-updates-privacy-transparency-safeguards-recommends-seven-day-data-retention-limit": {
+    "archive": "76d4fdb6d8185c493742f91cbcfcb5fef131723f70e9c58eafcefc93fa421c7d.txt",
     "content_hash": "8fbda9c25776510ee483e4c9a6d787e0f69e658e77826dc773f550440afda05a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.news9.com/oklahoma-city-news/flock-updates-privacy-transparency-safeguards-recommends-seven-day-data-retention-limit",
     "simhash": "7c8fe7799214cc24",
+    "snapshot_path": "snapshots/2026-10-08/d42eef5a900d0fa2f64acbfedbd316af193b0d9e05e41ea68f445b08258446e7.json",
+    "snapshot_status": "uploaded",
     "text_len": 5144,
     "title": "Flock Updates Privacy, Transparency Safeguards, Data Retention Policies - News9.com",
     "url": "https://www.news9.com/oklahoma-city-news/flock-updates-privacy-transparency-safeguards-recommends-seven-day-data-retention-limit"
   },
   "https://news9.com/oklahoma-city-news/get-the-flock-out-okc-renews-camera-contract-with-new-privacy-guardrails": {
+    "archive": "e1c14fc4681ac3f12e57d318fa84d0383a4efc79bd7966f399f48fe1cbdde346.txt",
     "content_hash": "18700d7a6341acb018c093576236a557e3ab9a07d411318e1496c9ebe9ad483d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.news9.com/oklahoma-city-news/get-the-flock-out-okc-renews-camera-contract-with-new-privacy-guardrails",
     "simhash": "e3ee68835bf24462",
+    "snapshot_path": "snapshots/2026-10-08/71e960c607c41cf999d9ebb404f08e29415362c15f7c3c60f4df00fe24141cdf.json",
+    "snapshot_status": "uploaded",
     "text_len": 6638,
     "title": "‘Get the Flock out’: OKC renews camera contract with new privacy guardrails - News9.com",
     "url": "https://www.news9.com/oklahoma-city-news/get-the-flock-out-okc-renews-camera-contract-with-new-privacy-guardrails"
   },
   "https://news9.com/oklahoma-city-news/okc-police-seek-new-restrictions-on-federal-access-to-flock-camera-data": {
+    "archive": "841293783896a1c2fe5c260d345b71c0c8eab411f7c36d0663a33b4847655933.txt",
     "content_hash": "4368a9d34839abdbdb42195f15d65512dc37e436c40e110afc7b818cae0c2e9f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.news9.com/oklahoma-city-news/okc-police-seek-new-restrictions-on-federal-access-to-flock-camera-data",
     "simhash": "08b917dade317b4c",
+    "snapshot_path": "snapshots/2026-10-08/5e42014655482063c698351bd1282b17c85e49d813b22c5cfe8114a745b0e660.json",
+    "snapshot_status": "uploaded",
     "text_len": 5811,
     "title": "Oklahoma City residents react to new restrictions on federal access to Flock camera data - News9.com",
     "url": "https://www.news9.com/oklahoma-city-news/okc-police-seek-new-restrictions-on-federal-access-to-flock-camera-data"
@@ -5832,11 +5868,14 @@
     "url": "https://ogdencity.gov/DocumentCenter/View/13470/LPR-RFP_ROA"
   },
   "https://okc.gov/Services/Public-Safety/Police/Flock-Safety-license-plate-reader-LPR-usage-in-Oklahoma-City": {
+    "archive": "757370dc2901e223a4f970f75bcff334197545f2964d8fd054c3aa211d347e3e.txt",
     "content_hash": "ae8d356c63f41d3d274de469c03e61a45b72ed0a4aaa1819b646c79d18993fb4",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.okc.gov/Services/Public-Safety/Police/Flock-Safety-license-plate-reader-LPR-usage-in-Oklahoma-City",
     "simhash": "6e90a68d802ab931",
+    "snapshot_path": "snapshots/2026-10-08/052a2c3d7fba14be1a91d989df1760cb3dcc0c0f53fe5a92fba0b1e31caee039.json",
+    "snapshot_status": "uploaded",
     "text_len": 5633,
     "title": "Flock Safety license plate reader (LPR) usage in Oklahoma City | City of OKC",
     "url": "https://www.okc.gov/Services/Public-Safety/Police/Flock-Safety-license-plate-reader-LPR-usage-in-Oklahoma-City"
@@ -6508,12 +6547,15 @@
     "url": "https://reason.com/2026/07/31/kansas-lawsuit-alprs-turn-a-license-plate-into-the-functional-equivalent-of-a-gps-tracking-device/"
   },
   "https://reclaimthenet.org/norman-oklahoma-flock-license-plate-readers-county-sheriff": {
-    "content_hash": "5173ed67462a71cf1700fb199a961255708439ff1ef65137120c59da529b7803",
+    "archive": "448fffcf1346f96cc75bb64ff510e4b79a8880b982b4112f560d5dd22d3738e7.txt",
+    "content_hash": "74080bd786003b6e0a7f072d7e0865951caa847d35e6905e7b0d7344cce72ca8",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://reclaimthenet.org/norman-oklahoma-flock-license-plate-readers-county-sheriff",
-    "simhash": "0100815dc2275944",
-    "text_len": 4232,
+    "simhash": "4500a55de0434f66",
+    "snapshot_path": "snapshots/2026-10-08/a5e41886039f0eea45e40da130d1c3308c4e096a4360e2ae5b77cb8261a01920.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4262,
     "title": "Flock Cameras Come to Norman, Despite Council Rejection",
     "url": "https://reclaimthenet.org/norman-oklahoma-flock-license-plate-readers-county-sheriff"
   },
@@ -7749,11 +7791,14 @@
     "url": "https://theithacan.org/66799/news/presence-of-flock-cameras-in-ithaca-raises-surveillance-concerns/"
   },
   "https://themaneater.com/122229/news/columbia-city-council-adopts-flock-safety-surveillance-ordinance": {
+    "archive": "8ef72e7aa2f7d6ffced93868e136ba45d98ebc2470fb193155c08ff242945e47.txt",
     "content_hash": "833a7707962492c1a6125cca9ec3c8309906505a5a998d77105477fa1f0e0610",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://themaneater.com/122229/news/columbia-city-council-adopts-flock-safety-surveillance-ordinance/",
     "simhash": "f7a2595e24fdc06f",
+    "snapshot_path": "snapshots/2026-10-08/48c4e2d6d2b3024b572ca204cb6923ccd33d61c8f76886048c0ddc89897f05ad.json",
+    "snapshot_status": "uploaded",
     "text_len": 5924,
     "title": "Columbia City Council adopts Flock Safety surveillance ordinance - The Maneater",
     "url": "https://themaneater.com/122229/news/columbia-city-council-adopts-flock-safety-surveillance-ordinance/"
@@ -7798,12 +7843,15 @@
     "url": "https://www.thenorthwestern.com/story/news/local/oshkosh/2026/09/04/winnebago-county-flock-safety-license-plate-readers-suspended/91614453007/"
   },
   "https://theokeagle.com/2022/06/22/tulsa-county-sheriffs-office-to-install-25-license-plate-reading-cameras-2": {
-    "content_hash": "491ba7bdb12e724fdfad8ac429faef35208653946600cdaab40e9a76952e5562",
+    "archive": "de3f5994ec5f2700d1edf05133b719b027d56ff001a453ea0c08e45076ec97ab.txt",
+    "content_hash": "74a467828c491d89a46bdc71ace4c70b1965937915598015ca3e647270ba6c3f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://theokeagle.com/2022/06/22/tulsa-county-sheriffs-office-to-install-25-license-plate-reading-cameras-2/",
-    "simhash": "4e37427db6f6c04b",
-    "text_len": 1993,
+    "simhash": "4e77427fb6f6ca4b",
+    "snapshot_path": "snapshots/2026-10-08/e422d99c5b1ac34ce612f9c8f8623856f8e7debe80c941db4d5591e7b8d46910.json",
+    "snapshot_status": "uploaded",
+    "text_len": 2007,
     "title": "Tulsa County Sheriff’s Office To Install 25 License Plate Reading Cameras – The Oklahoma Eagle",
     "url": "https://theokeagle.com/2022/06/22/tulsa-county-sheriffs-office-to-install-25-license-plate-reading-cameras-2/"
   },
@@ -7891,12 +7939,15 @@
     "url": "https://www.thorntonpd.org/s/PowerPoint-ALPR.pdf"
   },
   "https://threeriverspublishing.com/stories/gov-kehoe-orders-privacy-protections-for-use-of-flock-police-cameras,294791": {
-    "content_hash": "21eae2e1d673d0170715149a63b697f500a6f24770160fe00e8d6396b9373bd1",
+    "archive": "f3b852662e8a4894166634234b35d562b1f9e9a9d4f32320cba4faae5b6ba111.txt",
+    "content_hash": "1c2eb6dcd04666d126de62feb4c5f67b49d8464b8af21fa9c9ec90b557322f08",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.threeriverspublishing.com/stories/gov-kehoe-orders-privacy-protections-for-use-of-flock-police-cameras,294791",
-    "simhash": "0e4ec6a9a9479250",
-    "text_len": 4763,
+    "simhash": "0e4ec6a9e9479250",
+    "snapshot_path": "snapshots/2026-10-08/44c8888dd1de4f923ff9d8122263f0cd85b56846eac0e2c707c99b822b86d2f5.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4762,
     "title": "Gov. Kehoe orders privacy protections for use of Flock police cameras | Three Rivers Publishing",
     "url": "https://www.threeriverspublishing.com/stories/gov-kehoe-orders-privacy-protections-for-use-of-flock-police-cameras,294791"
   },
@@ -8220,11 +8271,14 @@
     "url": "https://www.tucsonspotlight.org/ua-approved-870k-flock-safety-deal-for-campus-surveillance/"
   },
   "https://tulsaflyer.org/2026/03/13/government/post/flock-cameras-used-investigate-protests": {
+    "archive": "147f510ade5d0e45d48dcd363caaa1ca963d4fbd6aca69188c834c827d174b57.txt",
     "content_hash": "f1ccebbf4d974cda7772408ec9100bec8e1352d7ac7a8f95681d8a7cfb6cad45",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://tulsaflyer.org/2026/03/13/government/post/flock-cameras-used-investigate-protests/",
     "simhash": "2333182a58d933bb",
+    "snapshot_path": "snapshots/2026-10-08/433b5c1f1baa9a5c405507f48bc345302eb6a14112a2587223e492fb4924a319.json",
+    "snapshot_status": "uploaded",
     "text_len": 7147,
     "title": "How do Tulsa police use Flock cameras to investigate at protests? x",
     "url": "https://tulsaflyer.org/2026/03/13/government/post/flock-cameras-used-investigate-protests/"
