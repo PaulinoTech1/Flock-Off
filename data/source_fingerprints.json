@@ -687,11 +687,14 @@
     "url": "https://www.azcentral.com/story/news/metro-phoenix/2026/09/11/tempe-to-become-first-az-city-ban-flock-like-cameras/91691228007/"
   },
   "https://azcir.org/news/2025/11/14/did-university-of-arizona-spend-over-800000-on-surveillance-cameras-accessible-by-federal-law-enforcement-yes": {
+    "archive": "69dc48c9ad821f0b5139d0a9ef2c82ed5994f6e70c48a89669a10f74f436097e.txt",
     "content_hash": "2673ac98c2405078ff004d2e0cae5d56703f80542b3e1ebeb48ec6c8122cc68d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://azcir.org/news/2025/11/14/did-university-of-arizona-spend-over-800000-on-surveillance-cameras-accessible-by-federal-law-enforcement-yes/",
     "simhash": "74d61b114ed25ab7",
+    "snapshot_path": "snapshots/2026-10-08/8da77a7d86716a0f70e0c98f7b6324389a0a2c20cac12d61d9e7c13422f667fa.json",
+    "snapshot_status": "uploaded",
     "text_len": 2689,
     "title": "Did the University of Arizona spend over $800,000 on surveillance cameras accessible by federal law enforcement?",
     "url": "https://azcir.org/news/2025/11/14/did-university-of-arizona-spend-over-800000-on-surveillance-cameras-accessible-by-federal-law-enforcement-yes/"
@@ -2688,11 +2691,14 @@
     "url": "https://www.fitchburgstar.com/news/public_safety/county-board-cuts-funding-for-license-plate-readers/article_ba3d111c-ea78-4c1d-9621-fdfad4e2a101.html"
   },
   "https://flagscanner.com/flagstaff-city-council-votes-to-cancel-flock-safety-camera-contract": {
+    "archive": "43a0e3948de963ff33473561c70453147b085c9ebc37ebebdb1b3e2dc98848a9.txt",
     "content_hash": "0b6b7e856f1f5b4bb36c58191d2a8fc870e92d32646c2d71ab5a1d6b8989a468",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://flagscanner.com/flagstaff-city-council-votes-to-cancel-flock-safety-camera-contract/",
     "simhash": "fb1a8159555825d8",
+    "snapshot_path": "snapshots/2026-10-08/6dceba9b4164915131a770a18a67f37f7b0a686f0aa5e8129bbf34326686f3f1.json",
+    "snapshot_status": "uploaded",
     "text_len": 1150,
     "title": "Flagstaff City Council Votes to Cancel Flock Safety Camera Contract – FlagScanner",
     "url": "https://flagscanner.com/flagstaff-city-council-votes-to-cancel-flock-safety-camera-contract/"
@@ -2823,11 +2829,14 @@
     "url": "https://fountain.colorado.gov/government/fountain-police-department"
   },
   "https://fox10phoenix.com/news/2-more-arizona-communities-drop-flock-license-plate-cameras": {
+    "archive": "06d45807b6d5bc3e061646ee36201772d74d94ee520ac11b590f1c03c04eb225.txt",
     "content_hash": "731330de729718a9eb4e6150d59eb26435049f22844ed658ed301a270e3ace9e",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.fox10phoenix.com/news/2-more-arizona-communities-drop-flock-license-plate-cameras",
     "simhash": "7b36de10ff498ca4",
+    "snapshot_path": "snapshots/2026-10-08/6067f944e1cfd324ebe6dff2662a7b321ed72a692af09c3ca172de9cf4411f9d.json",
+    "snapshot_status": "uploaded",
     "text_len": 3759,
     "title": "2 more Arizona communities drop Flock license plate cameras | FOX 10 Phoenix",
     "url": "https://fox10phoenix.com/news/2-more-arizona-communities-drop-flock-license-plate-cameras"
@@ -3248,11 +3257,14 @@
     "url": "https://www.governing.com/security/advocates-worry-as-central-la-police-increase-surveillance"
   },
   "https://govtech.com/education/higher-ed/groups-ask-university-of-arizona-to-not-use-certain-cameras": {
+    "archive": "582dde6169a45e69754735696c11e72ac0e387ff8ef3b1ac64d40cc1c81bb2c2.txt",
     "content_hash": "dd4fbe66a55992a87e13e3a24c4ef0eaefec30c422fa47611129ead8f6c7d288",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/education/higher-ed/groups-ask-university-of-arizona-to-not-use-certain-cameras",
     "simhash": "c179de96f70d3d9a",
+    "snapshot_path": "snapshots/2026-10-08/924e07cc550776137d6b0e25b48625a7677ff7dd0822b09af3d67f9c55b8a827.json",
+    "snapshot_status": "uploaded",
     "text_len": 8980,
     "title": "Groups Ask University of Arizona to Not Use Certain Cameras",
     "url": "https://www.govtech.com/education/higher-ed/groups-ask-university-of-arizona-to-not-use-certain-cameras"
@@ -3514,11 +3526,14 @@
     "url": "https://www.govtech.com/public-safety/with-state-funding-pause-dallas-to-switch-off-flock-cameras"
   },
   "https://govtech.com/public-safety/woodland-calif-police-defend-flock-safety-amid-concern": {
+    "archive": "ae9ff7118418d0e57bb0f827edce5de43b16bbee950f6271c281c9adc73e109a.txt",
     "content_hash": "39d948bcc03371d365ece6ff133a1e112c8e85a2badea1760bed6ea1c0d92e90",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.govtech.com/public-safety/woodland-calif-police-defend-flock-safety-amid-concern",
     "simhash": "dd38159d15948c0f",
+    "snapshot_path": "snapshots/2026-10-08/ecc7416449deca8c688a62c7e81971cfb5d0f2e08cecd3774617b9480e131432.json",
+    "snapshot_status": "uploaded",
     "text_len": 4517,
     "title": "Woodland, Calif., Police Defend Flock Safety Amid Concern",
     "url": "https://www.govtech.com/public-safety/woodland-calif-police-defend-flock-safety-amid-concern"
@@ -4150,12 +4165,15 @@
     "url": "https://www.issaquahreporter.com/2026/08/28/damages-done-to-covington-police-flock-cameras-over-2-months/"
   },
   "https://itechpost.com/articles/236675/20260713/lapd-ends-flock-safety-contract-phases-out-cameras-automated-license-plate-readers.htm": {
-    "content_hash": "489a52cef8ca5fbe252fa06bcbf036280357642c4c05da5b17c244ef609731f6",
+    "archive": "c52bfa7c207aa8e84d82d22c69213f56715da1685afc13811e1b1c0fbfa28744.txt",
+    "content_hash": "21d8276b002aac3722994aae2e96a13b16fce104bc2be3fce122505824a8e749",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.itechpost.com/articles/236675/20260713/lapd-ends-flock-safety-contract-phases-out-cameras-automated-license-plate-readers.htm",
-    "simhash": "81d25927680b3346",
-    "text_len": 4820,
+    "simhash": "91d27975500afb43",
+    "snapshot_path": "snapshots/2026-10-08/48ba2c579a5bf12fde653b8a41f23b34005570063156f776bc31c6e4e341186e.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4833,
     "title": "LAPD Ends Flock Safety Contract, Phases Out Cameras and Automated License Plate Readers",
     "url": "https://www.itechpost.com/articles/236675/20260713/lapd-ends-flock-safety-contract-phases-out-cameras-automated-license-plate-readers.htm"
   },
@@ -4287,21 +4305,27 @@
     "url": "https://journalaz.com/2026/09/03/594-agencies-run-3-8m-searches-of-prescott-pds-alprs-half-without-case-number/"
   },
   "https://journalaz.com/2026/09/04/city-of-cottonwood-suspends-flock-cameras-effective-immediately": {
+    "archive": "23edee874a541c28d98d9ea9ec36ac759b912cfb31aa6163d68e87218f164b6b.txt",
     "content_hash": "0765cc12300fc49689842fff84f140c46e703e44e5b6c4a0a2e0d97fa35f7ba8",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://journalaz.com/2026/09/04/city-of-cottonwood-suspends-flock-cameras-effective-immediately/",
     "simhash": "5fb3c382ccff31da",
+    "snapshot_path": "snapshots/2026-10-08/dd1afa4e0e62f3fa0332152b50f915da1fbe2981dec9a9935cac5e45ee427cf9.json",
+    "snapshot_status": "uploaded",
     "text_len": 1935,
     "title": "City of Cottonwood suspends Flock cameras, effective immediately - Journalaz.com",
     "url": "https://journalaz.com/2026/09/04/city-of-cottonwood-suspends-flock-cameras-effective-immediately/"
   },
   "https://journalaz.com/2026/09/18/4335-searches-in-cpd-shuts-off-and-bags-flock": {
+    "archive": "cb6d1410df39ad97f1cc0c0d2f5c2d7c5ba859ff17e747d81f66539a68eefdd8.txt",
     "content_hash": "a8f2ef5e0b45a36654cc6e7344edb54ecbf1d96b8419b4e6956a669ca1ee56fe",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://journalaz.com/2026/09/18/4335-searches-in-cpd-shuts-off-and-bags-flock/",
     "simhash": "969fee263ca73298",
+    "snapshot_path": "snapshots/2026-10-08/a4a20d92bc6a86b04182d5cde9c9d6f54dd1d2791a2b0f5509f38c5998c73e78.json",
+    "snapshot_status": "uploaded",
     "text_len": 6334,
     "title": "4,335 searches in, CPD shuts off and bags Flock - Journalaz.com",
     "url": "https://journalaz.com/2026/09/18/4335-searches-in-cpd-shuts-off-and-bags-flock/"
@@ -4612,11 +4636,14 @@
     "url": "https://kprcradio.iheart.com/content/2026-09-09-manvel-to-end-flock-contract-over-privacy-concerns/"
   },
   "https://kqed.org/news/12069705/santa-cruz-the-first-in-california-to-terminate-its-contract-with-flock-safety": {
+    "archive": "b37f0a8d4ba5583faaf2f1dbbf69a5a5c72db8d0d5901198cb69d3eb1045c265.txt",
     "content_hash": "fece078978e912a9ae05efe1a95b99ecc2c4d6ac42fb4315d2ed13af25b51194",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.kqed.org/news/12069705/santa-cruz-the-first-in-california-to-terminate-its-contract-with-flock-safety",
     "simhash": "f4647c6e96399f9a",
+    "snapshot_path": "snapshots/2026-10-08/555b49efa535251fa810626d7331573cec83dc3345a6704a78f61efbc323831e.json",
+    "snapshot_status": "uploaded",
     "text_len": 4960,
     "title": "Santa Cruz the First in California to Terminate Its Contract With Flock Safety | KQED KQED KQED",
     "url": "https://www.kqed.org/news/12069705/santa-cruz-the-first-in-california-to-terminate-its-contract-with-flock-safety"
@@ -4937,21 +4964,27 @@
     "url": "https://lonepeakpolice.com/flock-safety/"
   },
   "https://lookout.co/after-santa-cruz-banned-flock-cameras-activists-push-to-expand-fight-against-license-plate-readers/story": {
+    "archive": "97ac28e82a7a341dd41d077ba778c19d4991b3193ee74f50c72f5cc9b74a9975.txt",
     "content_hash": "086401dbb53da9c9e983c7ca01c76bc25a538d1a0790e1f34f4cf7a5beb05f94",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://lookout.co/after-santa-cruz-banned-flock-cameras-activists-push-to-expand-fight-against-license-plate-readers/story",
     "simhash": "3b9aaa4bc201cda4",
+    "snapshot_path": "snapshots/2026-10-08/e018ee2be59b0c793e37af9e15dad54caab8a5e60d9fbd62f71e1ab990d5a509.json",
+    "snapshot_status": "uploaded",
     "text_len": 5620,
     "title": "After Santa Cruz banned Flock cameras, activists push to expand fight against license plate readers - Lookout Santa Cruz",
     "url": "https://lookout.co/after-santa-cruz-banned-flock-cameras-activists-push-to-expand-fight-against-license-plate-readers/story"
   },
   "https://lookout.co/city-council-votes-to-end-santa-cruzs-contract-with-flock-safety/story": {
+    "archive": "cff4bef5a62d233c9059d0e98730a619f932cabd9af17ff6a6c2af94ff3f9618.txt",
     "content_hash": "518d117cc6939a7d666decf2643a9dce1b5ddadd211fd26c21bf00b8537af6e8",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://lookout.co/city-council-votes-to-end-santa-cruzs-contract-with-flock-safety/story",
     "simhash": "cd9edad91351280b",
+    "snapshot_path": "snapshots/2026-10-08/38d5cdce65bef36ff4098b2bc1c17af7c0adf20b7b93eed06bd33eb94cb1959b.json",
+    "snapshot_status": "uploaded",
     "text_len": 7577,
     "title": "City council votes to end Santa Cruz’s contract with Flock Safety - Lookout Santa Cruz",
     "url": "https://lookout.co/city-council-votes-to-end-santa-cruzs-contract-with-flock-safety/story"
@@ -5790,11 +5823,14 @@
     "url": "https://origin.volusiasheriff.gov/news/volusia-county-sheriff/sheriff-chitwoods-statement-on-discontinuation-of-vso-lprs.stml"
   },
   "https://padailypost.com/2026/02/24/mountain-view-council-votes-to-get-rid-of-license-plate-cameras": {
+    "archive": "f742c1dfaa5e9281023cf826a9a9970c6fb1ca580f9c2c0bb18cae16e1339090.txt",
     "content_hash": "86e5b92d76bac8cdabc642d947e2cb8287dac2033203686a1c928d6322d88af9",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://padailypost.com/2026/02/24/mountain-view-council-votes-to-get-rid-of-license-plate-cameras/",
     "simhash": "f90a0c159502d49b",
+    "snapshot_path": "snapshots/2026-10-08/48ecc21d4940c796ad22c4f2b603ee4307335e7f0f97cb1bf4b350accc015659.json",
+    "snapshot_status": "uploaded",
     "text_len": 4017,
     "title": "Mountain View Council votes to get rid of license plate cameras – Palo Alto Daily Post",
     "url": "https://padailypost.com/2026/02/24/mountain-view-council-votes-to-get-rid-of-license-plate-cameras/"
@@ -5983,11 +6019,14 @@
     "url": "https://www.police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes"
   },
   "https://poliscopic.com/articles/2026-06-02-queen-creek-considers-license-plate-readers-police-drones-body-cameras-single-consent-vote": {
+    "archive": "8bbe96070ba0179421f299b9c2e6a7674913d9ab00a1baa8e88a9bb06c737a37.txt",
     "content_hash": "8fca7f02d97b9c98778be60a01c6287e5a056819754bb8e54ea9371f96eecae8",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://poliscopic.com/articles/2026-06-02-queen-creek-considers-license-plate-readers-police-drones-body-cameras-single-consent-vote",
     "simhash": "2f536cbc81a09f1d",
+    "snapshot_path": "snapshots/2026-10-08/83f28e0d260202bc946c307255a6c0019d398c643a3ae4df28c07b97b51318d4.json",
+    "snapshot_status": "uploaded",
     "text_len": 5519,
     "title": "Queen Creek considers license plate readers, police drones, and body cameras in single consent vote — Poliscopic",
     "url": "https://poliscopic.com/articles/2026-06-02-queen-creek-considers-license-plate-readers-police-drones-body-cameras-single-consent-vote"
@@ -6805,12 +6844,15 @@
     "url": "https://www.securityinfowatch.com/video-surveillance/license-plate-detection/news/55275267/cedar-rapids-police-department-using-70-new-license-plate-reader-cameras"
   },
   "https://securitysystemsnews.com/article/city-s-break-with-flock-safety-highlights-growing-ai-privacy-debate": {
-    "content_hash": "1d2c607f70cf6d32c57dd0b2d5a149e9fa9cbe53b0f6b0d3822fe42108f97a73",
+    "archive": "777f33bb5608e616f2ac0d9a51c6f827a8f62574373ff5ec03f27fbeae1257bf.txt",
+    "content_hash": "491ea34235afadc908fcedfbb4c87ef9e4b20fc5a00a8509cb5e9079427286d5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.securitysystemsnews.com/article/city-s-break-with-flock-safety-highlights-growing-ai-privacy-debate",
-    "simhash": "015301686af983bf",
-    "text_len": 5232,
+    "simhash": "019621684251839f",
+    "snapshot_path": "snapshots/2026-10-08/766d77865827f828e7c62a2061e5c6f2c9d11fb8abeb0f3ee8004d9d06425d4a.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5269,
     "title": "City’s break with Flock Safety highlights growing AI privacy debate",
     "url": "https://www.securitysystemsnews.com/article/city-s-break-with-flock-safety-highlights-growing-ai-privacy-debate"
   },
@@ -6913,11 +6955,14 @@
     "url": "https://signalakron.org/akron-police-flock-camera-program-review-independent-auditor-anthony-finnell/"
   },
   "https://signalsaz.com/articles/flock-safety-cameras-to-be-removed-from-city-streets": {
+    "archive": "76c8d7ab7074975f62343d66189b3a0a097cc57440dfa6e60a7b70634cbacda8.txt",
     "content_hash": "ab30a1ca500b8778672eb4270dd25af53929094aa295966e1ccb521f069883d7",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.signalsaz.com/articles/flock-safety-cameras-to-be-removed-from-city-streets/",
     "simhash": "a5b61e41de8695d1",
+    "snapshot_path": "snapshots/2026-10-08/a54d6ad08d039fcd93d0f5b0dca9a0136706a2d0121de0df89a9eda867c2c855.json",
+    "snapshot_status": "uploaded",
     "text_len": 1001,
     "title": "Flock Safety Cameras to Be Removed From City Streets - Signals AZ",
     "url": "https://www.signalsaz.com/articles/flock-safety-cameras-to-be-removed-from-city-streets/"
@@ -7205,12 +7250,15 @@
     "url": "https://talkbusiness.net/2026/09/van-buren-police-chief-makes-changes-to-flock-camera-policies/"
   },
   "https://techspot.com/news/113769-california-city-canceled-flock-removed-cameras-found-company.html": {
-    "content_hash": "f7395f98c995db5601c5d580745ea74bb163925ab19d7d191f720092613edbbc",
+    "archive": "2cfa0226f1bc36fa5be577c375e75f427dea34aee321deefedfe23ca6566fb84.txt",
+    "content_hash": "ee3ec8371364ddedd99fd14c026e4b925f973b14971c94e6f43cb45f01cfc267",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.techspot.com/news/113769-california-city-canceled-flock-removed-cameras-found-company.html",
-    "simhash": "7fa8a1f8d4ac52d3",
-    "text_len": 3342,
+    "simhash": "7fa0a158d4a81bd1",
+    "snapshot_path": "snapshots/2026-10-08/06a6d4d563c4ebe711dd2d12d017afeaa45b48b2cf2c56ccc9fc39eb2dbbab7c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3334,
     "title": "California city canceled Flock, removed its cameras, then found the company had put some of them back | TechSpot User login Search TechSpot",
     "url": "https://www.techspot.com/news/113769-california-city-canceled-flock-removed-cameras-found-company.html"
   },
@@ -7228,11 +7276,14 @@
     "url": "https://www.techtimes.com/articles/319317/20260629/flock-safety-crosses-100000-cameras-53-cities-cancel-over-unauthorized-federal-data-access.htm"
   },
   "https://techtimes.com/articles/320800/20260717/lapd-cuts-off-flock-safety-after-audit-finds-one-three-hot-list-alerts-were-false.htm": {
+    "archive": "f497f483afe376d5c8bded4d382ba3b3da906d599de1ff54698ebc72962819d6.txt",
     "content_hash": "5665484be9d44c87b45846d7c0025e33fe5dae0d9525e516c9e7d0824576581d",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.techtimes.com/articles/320800/20260717/lapd-cuts-off-flock-safety-after-audit-finds-one-three-hot-list-alerts-were-false.htm",
     "simhash": "461d8cfef58f538d",
+    "snapshot_path": "snapshots/2026-10-08/162eb33746e3dfce75923e0f8f25be1750e7d613151be49fde61bdedf3e1329f.json",
+    "snapshot_status": "uploaded",
     "text_len": 338,
     "title": "LAPD Cuts Off Flock Safety After Audit Finds One-in-Three Hot-List Alerts Were False",
     "url": "https://www.techtimes.com/articles/320800/20260717/lapd-cuts-off-flock-safety-after-audit-finds-one-three-hot-list-alerts-were-false.htm"
@@ -7304,11 +7355,14 @@
     "url": "https://thebeatofthecapital.com/2021/10/26/ridgeland-adds-12-license-plate-reader-cameras/"
   },
   "https://thecamarilloacorn.com/articles/lapd-hits-pause-on-license-plate-readers-but-local-cameras-still-in-force": {
+    "archive": "e1b3b62d31053e97589c8b1c6d6d60e3aefbe3d6b20006ec45429789b9c605ce.txt",
     "content_hash": "6c5ca9727ab119c5598853e721c5849e65c158324d4379ffd4c45f11c462d850",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.thecamarilloacorn.com/articles/lapd-hits-pause-on-license-plate-readers-but-local-cameras-still-in-force/",
     "simhash": "ecb5db2af260e392",
+    "snapshot_path": "snapshots/2026-10-08/eabbf8c803393bd2a2e9657dc8698ac8c8abf97e67b7f56cbe37be1cc9c957d0.json",
+    "snapshot_status": "uploaded",
     "text_len": 2921,
     "title": "LAPD hits pause on license plate readers but local cameras still in force",
     "url": "https://www.thecamarilloacorn.com/articles/lapd-hits-pause-on-license-plate-readers-but-local-cameras-still-in-force/"
@@ -7465,11 +7519,14 @@
     "url": "https://thedetroit.org/news/eastpointe-ends-flock-safety-contract-after-employees-misused-license-plate-reader-system"
   },
   "https://theflagstaffpost.com/flagstaff-deactivates-all-32-flock-safety-cameras-after-unanimous-city-council-vote": {
+    "archive": "d83d579a816e713c93ac123b747b0cecd1185b55e593dbd9a3368986503c22c9.txt",
     "content_hash": "a2a0de298e2a263e425ba888e33e1b9ebdd8a34f2474af791b7870ca51031abb",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.theflagstaffpost.com/flagstaff-deactivates-all-32-flock-safety-cameras-after-unanimous-city-council-vote/",
     "simhash": "ff12ec83460b2975",
+    "snapshot_path": "snapshots/2026-10-08/e2d06108fe480c4763e75a6d2c31dc359abb12ea2cbfd66ce0efffd9054ba55f.json",
+    "snapshot_status": "uploaded",
     "text_len": 2609,
     "title": "Flagstaff deactivates all 32 flock safety cameras after unanimous city council vote - THE FLAGSTAFF POST",
     "url": "https://www.theflagstaffpost.com/flagstaff-deactivates-all-32-flock-safety-cameras-after-unanimous-city-council-vote/"
@@ -7982,12 +8039,15 @@
     "url": "https://www.tricityrecordnm.com/articles/tri-cities/new-mexico-legislation-limits-use-of-flock-cameras-and-data/"
   },
   "https://tucsonspotlight.org/ua-approved-870k-flock-safety-deal-for-campus-surveillance": {
-    "content_hash": "bf9df9e96d9dc41a0a7bbb2e975cacb2ef47082477a251aa4f364c38bf3868ca",
+    "archive": "128c1b04ffad710c3d9c69be902a3df70f4a2385ac352d1f30ea4c2239dd67db.txt",
+    "content_hash": "50f253696760d5a1d04ad8300379e9b28e1de7c82f4d91bcf1c63515502797db",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-08",
     "final_url": "https://www.tucsonspotlight.org/ua-approved-870k-flock-safety-deal-for-campus-surveillance/",
-    "simhash": "8c17e9452522f487",
-    "text_len": 5939,
+    "simhash": "8c17f9052522f487",
+    "snapshot_path": "snapshots/2026-10-08/5afaf6188e4fda98d78021f34f31db56803d5bba2b970e6844a2a63c65768d6a.json",
+    "snapshot_status": "uploaded",
+    "text_len": 5937,
     "title": "UA approved $870K Flock Safety deal for campus surveillance",
     "url": "https://www.tucsonspotlight.org/ua-approved-870k-flock-safety-deal-for-campus-surveillance/"
   },
