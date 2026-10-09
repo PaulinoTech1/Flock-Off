@@ -5597,11 +5597,14 @@
     "url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columbhtmn-meet-58b52135de1f43089d7974a55fb7def8/ITEM-Attachment-001-ff4c4d1fffa24182b6263fa8bd698d28.pdf"
   },
   "https://medium.com/@IamRonBurgandy/spokane-countys-806k-deal-for-flock-license-plate-cameras-what-public-records-reveal-249a6c31fc5d": {
+    "archive": "8c74d5a4323e4133c09e8d846ad13b6d83d64eae24ac4f2f52aba5d8c584a60b.txt",
     "content_hash": "65daf50523b812f93ea23c760b3f5f001cfe0dc197b26c1e924cb57073132110",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-09",
     "final_url": "https://medium.com/@IamRonBurgandy/spokane-countys-806k-deal-for-flock-license-plate-cameras-what-public-records-reveal-249a6c31fc5d",
     "simhash": "f782515af00dfd6d",
+    "snapshot_path": "snapshots/2026-10-09/6a608f570a221194a9e63f814eb848f88f0987502e5d705fd767a720d3f44350.json",
+    "snapshot_status": "uploaded",
     "text_len": 2729,
     "title": "Medium Spokane County’s $806K Flock Camera Deal — Documents Reveal Policy Gaps | by Civic Contributor | Medium",
     "url": "https://medium.com/@IamRonBurgandy/spokane-countys-806k-deal-for-flock-license-plate-cameras-what-public-records-reveal-249a6c31fc5d"
