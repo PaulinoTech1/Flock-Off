@@ -51,7 +51,7 @@
     ],
     "methodology": "docs/METHODOLOGY.md",
     "generated_by": "scripts/generate_meta.py",
-    "last_updated": "2026-10-04",
+    "last_updated": "2026-10-09",
     "record_count": 343,
     "jurisdiction_count": 47,
     "jurisdictions": [
@@ -5668,11 +5668,11 @@
       "confidence": "high",
       "contract_end": "2028-06",
       "contract_start": "2023-06-21",
-      "decision_date": "2026-08-28",
-      "decision_summary": "City Council voted to keep the 85-camera Flock system while ordering an independent review and added safeguards, bucking the statewide cancellation wave.",
+      "decision_date": "2026-10-06",
+      "decision_summary": "Council voted 7-0 to keep the 85 cameras while directing staff to draft an ALPR ordinance (misuse penalties, independent audits, training, data retention/access review, public tech webpage), evaluate alternative vendors and a potential transition from Flock, and exclude Flock funding from the proposed FY 2027-28 budget. Ordinance consideration set for Dec 1, 2026.",
       "id": "az-scottsdale-pd",
-      "last_verified": "2026-09-25",
-      "notes": "$370k/yr and $1.2M five-year term from contract records obtained by Scottsdale Progress; azcentral reports expiry June 2028. No misuse complaints found in quarterly audits per SPD.",
+      "last_verified": "2026-10-09",
+      "notes": "$370k/yr and $1.2M five-year term from contract records obtained by Scottsdale Progress; azcentral reports expiry June 2028. No misuse complaints found in quarterly audits per SPD. Oct 6, 2026: Whitehead motion passed 7-0 (cameras stay; ordinance + vendor review + FY27-28 funding exclusion). Contract still ends ~2028-06; non-appropriation is the budget exit path.",
       "renewal_date": null,
       "sources": [
         {
@@ -5696,6 +5696,20 @@
           "date": "2026-08-16",
           "verified": true,
           "source_key": "https://azcentral.com/story/news/local/phoenix/2026/08/16/these-metro-phoenix-cities-use-flock-safety-cameras/91275430007"
+        },
+        {
+          "title": "Scottsdale City Council to vote on Flock cameras in December meeting",
+          "url": "https://www.azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting/",
+          "date": "2026-10-07",
+          "verified": false,
+          "source_key": "https://azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting"
+        },
+        {
+          "title": "Whitehead moves for a Scottsdale license-plate reader ordinance, vendor review and a possible end to Flock funding",
+          "url": "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which",
+          "date": "2026-10-06",
+          "verified": false,
+          "source_key": "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which"
         }
       ],
       "state": "AZ",
