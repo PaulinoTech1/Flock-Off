@@ -2305,6 +2305,19 @@
     "title": "In a village without a newspaper, a small digital outlet is keeping tabs and asking questions – Media Nation",
     "url": "http://dankennedy.net/2025/08/04/in-a-village-without-a-newspaper-a-small-digital-outlet-was-keeping-tabs-and-asking-questions/"
   },
+  "https://decatur.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=8225&ItemID=3769": {
+    "archive": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-09",
+    "final_url": "https://decatur.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=8225&ItemID=3769",
+    "retry_after": "2026-11-08",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://decatur.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=8225&ItemID=3769"
+  },
   "https://deflockmonroe.com/": {
     "archive": "d20b36067b09b2f4b9aa50d22aa07aa27ad965626cea967622e25b7d440bbd65.txt",
     "content_hash": "17abb35d5dbb38d9bf75ccf31bbdcaa408b5e6a93c880863124adf3371550e90",
@@ -6213,6 +6226,19 @@
     "text_len": 4961,
     "title": "Gann Studies License Plate Readers Impact on Privacy",
     "url": "https://www.okhouse.gov/posts/news-20251016_3"
+  },
+  "https://oklahoman.com/story/news/crime/2026/10/05/flock-camera-search-tulsa-ok-deputy-ruled-unconstitutional-oklahoma-federal-judge/92107612007": {
+    "archive": "1a56dacd0b72daa3ead22d9abb1800d5532cfd28b550c2914d64086c3591c348.txt",
+    "content_hash": "5c43eb6114c9e52d2d1027243788df7c17cec92b0dd532b23aa5aaea38410106",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-09",
+    "final_url": "https://www.oklahoman.com/story/news/crime/2026/10/05/flock-camera-search-tulsa-ok-deputy-ruled-unconstitutional-oklahoma-federal-judge/92107612007/",
+    "simhash": "3744923a6ab1f176",
+    "snapshot_path": "snapshots/2026-10-09/dc9f9edd2c91352cf0b6ee5eade3eed07e26feacf520ba702eecd46c6e558b09.json",
+    "snapshot_status": "uploaded",
+    "text_len": 8875,
+    "title": "Tulsa OK deputy's Flock search ruled unconstitutional by federal judge",
+    "url": "https://www.oklahoman.com/story/news/crime/2026/10/05/flock-camera-search-tulsa-ok-deputy-ruled-unconstitutional-oklahoma-federal-judge/92107612007/"
   },
   "https://oklahoman.com/story/news/local/2026/08/03/okc-council-will-vote-on-police-contract-for-flock-cameras/90958514007": {
     "archive": "b2b505e67cdea0efd098358a338ba71f7de81feff42e6ec47ee74c749caf63b7.txt",
