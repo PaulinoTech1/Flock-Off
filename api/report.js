@@ -107,6 +107,25 @@ async function upstashPipeline(commands) {
   return res.json();
 }
 
+// Count failed auth attempts per day (no IP stored). Logs a warning if the
+// daily count exceeds 50, which suggests a brute-force or scanning attempt.
+// Best-effort: failures here must not affect the 401 response (LOW-2).
+async function countAuthFailure() {
+  try {
+    const day = signals.dayUTC();
+    const key = `flockoff:authfail:${day}`;
+    const results = await upstashPipeline([
+      ["INCR", key],
+      ["EXPIRE", key, "86400"],
+    ]);
+    if (results && results[0] && results[0].result === 50) {
+      console.warn(`[auth] 50 failed report-key attempts today (${day}); possible scanning`);
+    }
+  } catch {
+    /* auth failure counting is advisory only */
+  }
+}
+
 async function rateLimited(ip) {
   const day = signals.dayUTC();
   const bucket = signals.bucketHash(ip, day);
@@ -405,6 +424,10 @@ module.exports = async (req, res) => {
   const writeKey = process.env.FLOCKOFF_REPORT_WRITE_KEY;
   if (!writeKey) return send(res, 503, CODES.REPORT_503_001());
   if (!timingSafeEqual(req.headers["x-report-key"], writeKey)) {
+    // Privacy-preserving auth failure counting (LOW-2, 2026-10-09):
+    // increment a daily counter (no IP stored). Operator can alert on
+    // spikes via Vercel logs. Best-effort: never blocks the 401.
+    countAuthFailure().catch(() => {});
     return send(res, 401, CODES.REPORT_401_001());
   }
 
@@ -460,10 +483,13 @@ module.exports = async (req, res) => {
   const canonicalJson = JSON.stringify(canonicalBody);
 
   // Deduplication: hash with Argon2id + server pepper, check pending blobs.
-  // Uses FLOCKOFF_REPORT_WRITE_KEY as pepper (already required, never logged).
+  // Uses FLOCKOFF_HASH_PEPPER if set, else falls back to the write key
+  // (backward compatible with existing hashes). Key separation: rotating
+  // the pepper must not require rotating the auth key (LOW-1, 2026-10-09).
+  const hashPepper = process.env.FLOCKOFF_HASH_PEPPER || writeKey;
   let contentHash;
   try {
-    contentHash = await hashContent(canonicalJson, writeKey);
+    contentHash = await hashContent(canonicalJson, hashPepper);
   } catch (e) {
     return send(res, 500, CODES.REPORT_500_001());
   }
