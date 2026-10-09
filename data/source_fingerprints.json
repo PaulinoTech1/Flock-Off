@@ -5535,12 +5535,15 @@
     "url": "https://mailchi.mp/tempe/tempe-turns-off-flock-license-plate-reader-system-ends-program"
   },
   "https://mandatory.com/culture/1830228-flock-camera-thefts-force-police-department-give-up-minnesota": {
-    "content_hash": "5f92fe06b9037059b85b59e84caca4a7787a445e84651134ff70c813f5e8d6a0",
+    "archive": "1593a106ece3e303d7af2f44cc704fa1383af05570b0cf7ee2fc9518fd685a02.txt",
+    "content_hash": "83e3f1560bf2eecf67c5130c2ea6f1eeda9fb29003dbf466d4409fe051903067",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-09",
     "final_url": "https://www.mandatory.com/culture/1830228-flock-camera-thefts-force-police-department-give-up-minnesota",
-    "simhash": "7dfcc915b344750c",
-    "text_len": 4302,
+    "simhash": "6dff815db9413036",
+    "snapshot_path": "snapshots/2026-10-09/1885485b31f8848a2534f0d7973398d4709ba850032c4e3df1e374932d60016c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4305,
     "title": "Excessive Flock Camera Thefts Force Police Department to Give Up - Mandatory Mandatory",
     "url": "https://www.mandatory.com/culture/1830228-flock-camera-thefts-force-police-department-give-up-minnesota"
   },
