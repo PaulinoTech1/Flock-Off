@@ -93,6 +93,30 @@ class TestVercelBuild(unittest.TestCase):
         finally:
             shutil.rmtree(tmp, ignore_errors=True)
 
+    def test_csp_inline_script_hash_matches(self):
+        # vercel.json pins a sha256 for the inline JSON-LD script. If the
+        # script is edited without updating the hash, CSP silently blocks
+        # the structured data in production.
+        import base64
+        import hashlib
+        import re
+        html = open(os.path.join(REPO_ROOT, "index.html"), encoding="utf-8").read()
+        m = re.search(r'<script type="application/ld\+json">(.*?)</script>',
+                      html, re.S)
+        self.assertIsNotNone(m, "inline JSON-LD script not found")
+        digest = base64.b64encode(
+            hashlib.sha256(m.group(1).encode("utf-8")).digest()).decode()
+        vercel_cfg = json.load(
+            open(os.path.join(REPO_ROOT, "vercel.json"), encoding="utf-8"))
+        csp = ""
+        for h in vercel_cfg.get("headers", []):
+            for item in h.get("headers", []):
+                if item.get("key") == "Content-Security-Policy":
+                    csp = item.get("value", "")
+        self.assertIn(f"'sha256-{digest}'", csp,
+                      "vercel.json CSP hash does not match the inline script; "
+                      "update the hash when editing the JSON-LD")
+
 
 if __name__ == "__main__":
     unittest.main()

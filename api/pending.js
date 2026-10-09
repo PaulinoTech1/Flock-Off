@@ -1,5 +1,6 @@
 "use strict";
 const { CODES } = require("./_errors.js");
+const { timingSafeEqual } = require("./_timing.js");
 /* GET /api/pending — reviewer queue for the quarantine model.
  *
  * Lists reports-pending/ blobs with each submission's full record so a human
@@ -19,14 +20,6 @@ function send(res, code, obj) {
   res.setHeader("Content-Type", "application/json");
   res.setHeader("Cache-Control", "no-store");
   res.end(JSON.stringify(obj));
-}
-
-function timingSafeEqual(a, b) {
-  if (typeof a !== "string" || typeof b !== "string") return false;
-  if (a.length !== b.length) return false;
-  let diff = 0;
-  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
-  return diff === 0;
 }
 
 module.exports = async (req, res) => {

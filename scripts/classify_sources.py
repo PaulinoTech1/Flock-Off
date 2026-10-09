@@ -45,6 +45,16 @@ def _domains() -> dict:
     return _cfg()["classify"]
 
 
+def host_of(url: str) -> str:
+    """Lowercased host with a single leading www. stripped.
+
+    Uses removeprefix, not replace: replace("www.", "") mangles domains
+    that merely contain the substring (e.g. awww.example.com).
+    """
+    host = urllib.parse.urlparse(url or "").netloc.lower()
+    return host.removeprefix("www.")
+
+
 def VERIFIED_NEWS() -> set[str]:
     return set(_domains()["verified_news"])
 
@@ -74,7 +84,7 @@ def CLASSIFICATION_PATH() -> str:
 
 
 def classify(url: str) -> tuple[bool, str]:
-    host = urllib.parse.urlparse(url).netloc.lower().replace("www.", "")
+    host = host_of(url)
     if host in VERIFIED_NEWS():
         return True, "verified-news"
     if host in VERIFIED_PRIMARY():
@@ -128,8 +138,7 @@ def main(argv: list[str] | None = None) -> None:
         for src in agency.get("sources") or []:
             verified, reason = classify(src.get("url", ""))
             if reason == "unverified-unlisted":
-                host = urllib.parse.urlparse(src.get("url", "")).netloc.lower().replace("www.", "")
-                unlisted.add(host)
+                unlisted.add(host_of(src.get("url", "")))
             if src.get("verified") is not verified:
                 changed += 1
             if not check_only:

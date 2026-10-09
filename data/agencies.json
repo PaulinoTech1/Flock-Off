@@ -114,7 +114,7 @@
     "terminal_pending_validation": 138,
     "records_with_renewal_date": 4,
     "records_with_contract_end": 24,
-    "coverage_note": "343 sourced records across 47 state/DC jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 4 records carry a renewal date and 24 a contract end date; exact renewal dates remain thin and are the top research priority."
+    "coverage_note": "343 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 4 records carry a renewal date and 24 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {

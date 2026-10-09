@@ -22,11 +22,12 @@ import urllib.request
 from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from flockoff_config import ConfigError, load_config  # noqa: E402
+from flockoff_config import ConfigError, load_config, resolve_config_path  # noqa: E402
 from flockoff_errors import fmt  # noqa: E402
 from source_keys import check as check_source_keys  # noqa: E402
 from source_keys import canonical_url  # noqa: E402
 import source_fingerprints as sfp  # noqa: E402
+import evidence as evidence_mod  # noqa: E402
 
 _cfg_cache: dict | None = None
 
@@ -42,13 +43,12 @@ def _cfg() -> dict:
 # cost. Anything paywalled (e.g. GovSpend) is out by policy; see
 # docs/DATA_SOURCES.md. These feeds find candidates; the underlying linked
 # primary/news source is what gets cited, never the feed page itself.
-COVERED_STATES = {
-    "CT", "DC", "DE", "FL", "GA", "MA", "ME", "NC",
-    "NH", "NJ", "NY", "PA", "RI", "SC", "VA", "VT",
-    # Wave 1 (westward expansion, in progress):
-    "OH", "MI", "IN", "IL", "WI",
-    "WV", "KY", "TN", "AL", "MS",
-}
+#
+# The feed scope is derived from the dataset itself (distinct state codes
+# present in data/agencies.json), computed in main() and passed to the
+# check functions. A hardcoded list went stale at 26 states while the
+# dataset grew to 47 jurisdictions, silently skipping discovery for the
+# rest; deriving it eliminates that drift class.
 FF_ACTION_TO_STATUS = {
     "canceled": "cancelled",
     "non-renewal": "cancelled",
@@ -137,10 +137,12 @@ class _TrackerTableParser(HTMLParser):
             self._buf.append(data)
 
 
-def check_finding_flock_tracker(agencies: list[dict]) -> tuple[list[str], list[str]]:
+def check_finding_flock_tracker(agencies: list[dict],
+                               covered_states: set[str]) -> tuple[list[str], list[str]]:
     """Compare the Finding Flock cancellation tracker against the dataset.
 
     Returns (candidate_lines, mismatch_lines); raises on fetch/parse failure.
+    covered_states scopes the feed to the dataset's own jurisdiction set.
     """
     html = fetch_text(_cfg()["urls"]["finding_flock_tracker"], timeout=60, max_bytes=2_000_000)
     parser = _TrackerTableParser()
@@ -155,7 +157,7 @@ def check_finding_flock_tracker(agencies: list[dict]) -> tuple[list[str], list[s
     candidates, mismatches = [], []
     for place, state, date, action, source_url in parser.rows:
         state = state.strip().upper()
-        if state not in COVERED_STATES:
+        if state not in covered_states:
             continue
         key = (norm_name(place), state)
         matched = []
@@ -182,10 +184,11 @@ def check_finding_flock_tracker(agencies: list[dict]) -> tuple[list[str], list[s
     return candidates, mismatches
 
 
-def check_atlas_csv(agencies: list[dict]) -> list[str]:
+def check_atlas_csv(agencies: list[dict], covered_states: set[str]) -> list[str]:
     """Find covered-state Atlas of Surveillance agencies missing from the dataset.
 
     Returns candidate lines; raises on fetch/parse failure.
+    covered_states scopes the feed to the dataset's own jurisdiction set.
     """
     text = fetch_text(_cfg()["urls"]["atlas_csv"], timeout=120, max_bytes=15_000_000)
     reader = csv.DictReader(io.StringIO(text))
@@ -194,7 +197,7 @@ def check_atlas_csv(agencies: list[dict]) -> list[str]:
     candidates = []
     for row in reader:
         state = (row.get("State") or "").strip().upper()
-        if state not in COVERED_STATES:
+        if state not in covered_states:
             continue
         agency = (row.get("Agency") or "").strip()
         key = (norm_name(agency), state)
@@ -211,22 +214,30 @@ def check_atlas_csv(agencies: list[dict]) -> list[str]:
     return candidates
 
 
-def days_until(date_str: str | None, today: datetime.date) -> int | None:
-    if not date_str:
+def _parse_date(date_str: str | None) -> datetime.date | None:
+    # The schema allows YYYY-MM-DD, YYYY-MM, and YYYY (documented precision
+    # levels); coarser precisions pad to the first of the period so date
+    # math never silently drops month/year-precision records.
+    if not date_str or not isinstance(date_str, str):
         return None
     try:
-        d = datetime.date.fromisoformat(date_str)
-    except ValueError:
+        padded = {4: date_str + "-01-01", 7: date_str + "-01",
+                  10: date_str}[len(date_str)]
+        return datetime.date.fromisoformat(padded)
+    except (ValueError, KeyError):
+        return None
+
+
+def days_until(date_str: str | None, today: datetime.date) -> int | None:
+    d = _parse_date(date_str)
+    if d is None:
         return None
     return (d - today).days
 
 
 def days_since(date_str: str | None, today: datetime.date) -> int | None:
-    if not date_str:
-        return None
-    try:
-        d = datetime.date.fromisoformat(date_str)
-    except ValueError:
+    d = _parse_date(date_str)
+    if d is None:
         return None
     return (today - d).days
 
@@ -329,14 +340,17 @@ def main() -> None:
     lines.append("")
 
     # Upstream discovery feeds (free, keyless). Failures are reported, never fatal.
+    # Feed scope follows the dataset: every jurisdiction code present in the
+    # data is monitored, so coverage can never silently lag expansion again.
+    covered_states = {a.get("state") for a in agencies if a.get("state")}
     health_notes: list[str] = []
     try:
-        ff_candidates, ff_mismatches = check_finding_flock_tracker(agencies)
+        ff_candidates, ff_mismatches = check_finding_flock_tracker(agencies, covered_states)
     except Exception as exc:  # noqa: BLE001 - reported under Monitor health
         ff_candidates, ff_mismatches = [], []
         health_notes.append(fmt("W_UPSTREAM_FF", str(exc)))
     try:
-        atlas_candidates = check_atlas_csv(agencies)
+        atlas_candidates = check_atlas_csv(agencies, covered_states)
     except Exception as exc:  # noqa: BLE001 - reported under Monitor health
         atlas_candidates = []
         health_notes.append(fmt("W_UPSTREAM_ATLAS", str(exc)))
@@ -366,16 +380,10 @@ def main() -> None:
 
     # Stats.
     from collections import Counter
-    import urllib.parse
     status = Counter(a.get("status") for a in agencies)
     conf = Counter(a.get("confidence") for a in agencies)
-    terminal = [a for a in agencies if a.get("status") in ("cancelled", "rejected", "expired")]
-
-    def independent_citations(a: dict) -> int:
-        return len({
-            urllib.parse.urlparse(s["url"]).netloc.replace("www.", "")
-            for s in a.get("sources", []) if s.get("verified")
-        })
+    terminal = [a for a in agencies
+                if a.get("status") in evidence_mod.TERMINAL_STATUSES]
 
     # Source key hygiene: missing/stale dedup keys, intra-agency duplicates.
     key_problems = check_source_keys(data)
@@ -501,15 +509,27 @@ def main() -> None:
         if missing_fp:
             health_notes.append(fmt("W_FP_MISSING_KEYS", f"{missing_fp} citations"))
 
-    bar_met = sum(1 for a in terminal if independent_citations(a) >= 3)
+    # Evidence tiers share the single definition in scripts/evidence.py
+    # (1 verified-primary + 2 independent verified-news). The monitor
+    # previously counted "3+ independent verified citations", a different
+    # bar that disagreed with the methodology's own numbers.
+    try:
+        _ev_primary, _ev_news, _ = evidence_mod.load_classify_lists(
+            resolve_config_path())
+    except OSError:
+        _ev_primary, _ev_news = set(), set()
+    ev_tier = {a.get("id"): evidence_mod.compute(a, _ev_primary, _ev_news, today)["tier"]
+               for a in agencies}
+    bar_met = sum(1 for a in terminal if ev_tier.get(a.get("id")) == "verified")
     lines.append("## Dataset stats")
     lines.append(
         f"- {len(agencies)} records across {len(set(a.get('state') for a in agencies))} states. "
         f"Status: {dict(status)}. Confidence: {dict(conf)}."
     )
     lines.append(
-        f"- Evidence: {bar_met} verified claims (3+ independent verified citations), "
-        f"{len(terminal) - bar_met} pending validation* (fewer than 3)."
+        f"- Evidence: {bar_met} verified claims "
+        f"(1 primary record + 2 independent news sources), "
+        f"{len(terminal) - bar_met} pending validation*."
     )
     if health_notes:
         lines.append("")

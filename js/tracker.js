@@ -16,7 +16,10 @@ const TrackerTab = (() => {
     rejected: "Proposal rejected",
     expired: "Expired",
   };
-  const TERMINAL_STATUS = new Set(["cancelled", "rejected", "expired"]);
+  // Terminality comes from the build-computed evidence.json
+  // (scripts/evidence.py), not a duplicated status list: evidence(a).terminal
+  // is the single source of truth here. The canonical taxonomy lives in
+  // scripts/evidence.py; STATUS_LABEL keys are cross-checked by test_schema.py.
   // Evidence bar per docs/METHODOLOGY.md: 1 verified-primary + 2 independent verified-news.
   const EVIDENCE_BAR = 2;
 
@@ -26,8 +29,10 @@ const TrackerTab = (() => {
   // Missing derived data fails closed to "pending validation*".
   function evidence(a) {
     if (a._evidence && typeof a._evidence.tier === "string") return a._evidence;
+    // Fail closed to "pending validation*" without claiming terminality:
+    // a missing evidence.json means "unknown", not "terminal".
     return {
-      tier: "pending", terminal: true, primary: 0, news_independent: 0,
+      tier: "pending", terminal: false, primary: 0, news_independent: 0,
       meets_bar: false, acknowledged_pending: true, stale: false,
       stale_downgraded: false,
     };
@@ -53,12 +58,16 @@ const TrackerTab = (() => {
       classification = await fetchJson(PATHS.classification);
     } catch { /* transparency list degrades to a repo link */ }
     // Build-computed evidence tiers (scripts/evidence.py). Attached per
-    // record; evidence() fails closed to pending when absent.
+    // record; evidence() fails closed to pending when absent. The stale
+    // downgrade is re-applied here at display time so a "verified" tier
+    // baked at build time cannot survive past stale_days without a rebuild.
     try {
-      const evMap = (await fetchJson(PATHS.evidence)).agencies || {};
-        for (const a of agencies) {
-          if (evMap[a.id]) a._evidence = evMap[a.id];
-        }
+      const evDoc = await fetchJson(PATHS.evidence);
+      const evMap = evDoc.agencies || {};
+      const staleDays = Number(evDoc.stale_days) || 180;
+      for (const a of agencies) {
+        if (evMap[a.id]) a._evidence = withDisplayStaleness(evMap[a.id], staleDays);
+      }
     } catch { /* evidence() fails closed to pending */ }
     buildStateFilter();
     for (const id of ["filter-state", "filter-status", "filter-sort", "filter-evidence"]) {
@@ -115,6 +124,27 @@ const TrackerTab = (() => {
     return Math.round((d - now) / 86400000);
   }
 
+  function daysSince(dateStr) {
+    if (!dateStr) return null;
+    const d = new Date(String(dateStr).slice(0, 10) + "T00:00:00");
+    if (isNaN(d.getTime())) return null;
+    const now = new Date();
+    now.setHours(0, 0, 0, 0);
+    return Math.round((now - d) / 86400000);
+  }
+
+  // Stale downgrade at display time: a "verified" tier computed at build
+  // time must not outlive stale_days. Recomputed from last_verified on
+  // every page load so the badge stays honest between deploys.
+  function withDisplayStaleness(ev, staleDays) {
+    if (!ev || ev.tier !== "verified") return ev;
+    const age = daysSince(ev.last_verified);
+    if (age !== null && age > staleDays) {
+      return { ...ev, tier: "pending", stale: true, stale_downgraded: true };
+    }
+    return ev;
+  }
+
   function filtered() {
     const st = el("filter-state").value;
     const status = el("filter-status").value;
@@ -151,15 +181,17 @@ const TrackerTab = (() => {
   }
 
   function renewalCell(a) {
+    // Date fields are esc()aped: they are data-derived strings injected via
+    // innerHTML, and test_schema.py pins them to YYYY-MM-DD as well.
     if (a.status === "active" && a.renewal_date) {
       const d = daysUntil(a.renewal_date);
       const soon = d != null && d >= 0 && d <= 180;
-      return `${a.renewal_date}${soon ? ' <span class="badge badge-warn">renewal soon</span>' : ""}`;
+      return `${esc(a.renewal_date)}${soon ? ' <span class="badge badge-warn">renewal soon</span>' : ""}`;
     }
     if ((a.status === "cancelled" || a.status === "rejected") && a.decision_date) {
-      return a.decision_date;
+      return esc(a.decision_date);
     }
-    if (a.contract_end) return a.contract_end;
+    if (a.contract_end) return esc(a.contract_end);
     return "—";
   }
 
@@ -353,7 +385,7 @@ const TrackerTab = (() => {
   function renderPriorities() {
     const host = el("priorities");
     if (!host || !agencies.length) return;
-    const terminal = agencies.filter((a) => TERMINAL_STATUS.has(a.status));
+    const terminal = agencies.filter((a) => evidence(a).terminal);
     const pending = terminal.filter((a) => evidence(a).tier === "pending").length;
     const active = agencies.filter((a) => a.status === "active");
     const noRenewal = active.filter((a) => !a.renewal_date).length;
@@ -369,7 +401,7 @@ const TrackerTab = (() => {
       `<p class="status">Ranked by what most improves the tracker's trustworthiness. Counts are live from the dataset.</p>` +
       `<div class="priorities-grid">` +
       card("1. Corroborate terminal claims",
-        `<strong>${pending} of ${terminal.length}</strong> cancelled/rejected records are pending validation* (fewer than ${EVIDENCE_BAR} independent verified citations).`,
+        `<strong>${pending} of ${terminal.length}</strong> cancelled/rejected/expired records are pending validation* (fewer than ${EVIDENCE_BAR} independent verified citations).`,
         "3 independent verified citations per record → verified.") +
       card("2. Fill the map gaps",
         (byState.MD ? "" : `<strong>Maryland: 0 records.</strong> `) +

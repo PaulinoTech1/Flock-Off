@@ -1,6 +1,7 @@
 "use strict";
 const { CODES } = require("./_errors.js");
-const { argon2, randomBytes, createHash, timingSafeEqual: nodeTimingSafeEqual } = require("crypto");
+const { timingSafeEqual } = require("./_timing.js");
+const { argon2, createHash } = require("crypto");
 /* POST /api/report — regulated write path for historical Flock contract reports.
  *
  * QUARANTINE MODEL: submissions land in reports-pending/, never directly in
@@ -47,12 +48,15 @@ const TOP_KEYS = new Set(["agency_id", "source_url", "downloaded_at", "descripti
 const REPORT_KEYS = new Set(["status", "cameras", "annual_cost_usd", "renewal_date", "notes"]);
 
 // Patterns that indicate executable code. Rejected in all string fields.
+// The event-handler pattern only fires inside an HTML tag (<... onload=):
+// a bare "on...=" in prose (e.g. "based on=") is not executable and must
+// not reject legitimate reports.
 const EXECUTABLE_PATTERNS = [
   /<script/i,
   /<\/script/i,
   /javascript:/i,
   /data:text\/html/i,
-  /on\w+\s*=/i,  // event handlers: onclick=, onerror=, etc.
+  /<[^>]*\son\w+\s*=/i,  // event handlers inside a tag: <img onerror=, etc.
   /<iframe/i,
   /<object/i,
   /<embed/i,
@@ -109,14 +113,6 @@ function clientIp(req) {
   return (req.socket && req.socket.remoteAddress) || "unknown";
 }
 
-function timingSafeEqual(a, b) {
-  if (typeof a !== "string" || typeof b !== "string") return false;
-  if (a.length !== b.length) return false;
-  let diff = 0;
-  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
-  return diff === 0;
-}
-
 function readBody(req) {
   return new Promise((resolve, reject) => {
     let bytes = 0;
@@ -146,7 +142,7 @@ function isValidHttpUrl(s) {
 }
 
 function isValidPastDate(s) {
-  if (typeof s !== "string" || !/^\d{4}-\d{2}-\d{2}/.test(s)) return false;
+  if (typeof s !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(s)) return false;
   const d = new Date(s);
   if (Number.isNaN(d.getTime())) return false;
   return d.getTime() <= Date.now() + 24 * 3600 * 1000;

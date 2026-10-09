@@ -1,5 +1,6 @@
 "use strict";
 const { CODES } = require("./_errors.js");
+const { timingSafeEqual } = require("./_timing.js");
 /* POST /api/promote — human-review gate for the quarantine model.
  *
  * Takes a pending report's blob URL, verifies it is genuinely a
@@ -50,14 +51,6 @@ function send(res, code, obj) {
   res.end(JSON.stringify(obj));
 }
 
-function timingSafeEqual(a, b) {
-  if (typeof a !== "string" || typeof b !== "string") return false;
-  if (a.length !== b.length) return false;
-  let diff = 0;
-  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
-  return diff === 0;
-}
-
 function readBody(req) {
   return new Promise((resolve, reject) => {
     let bytes = 0;
@@ -76,7 +69,7 @@ function readBody(req) {
   });
 }
 
-function validPendingUrl(s) {
+function validPendingUrl(s, allowedHost) {
   if (typeof s !== "string" || s.length > 500) return null;
   let u;
   try {
@@ -85,7 +78,15 @@ function validPendingUrl(s) {
     return null;
   }
   if (u.protocol !== "https:") return null;
-  if (!u.hostname.endsWith(".blob.vercel-storage.com")) return null;
+  // The hostname must be this project's own blob store, pinned by the
+  // caller from a live listing. A bare *.blob.vercel-storage.com suffix
+  // check would let an attacker-controlled store host receive the
+  // Authorization-bearing fetch below (token leak on admin-key compromise).
+  if (allowedHost) {
+    if (u.hostname !== allowedHost) return null;
+  } else if (!u.hostname.endsWith(".blob.vercel-storage.com")) {
+    return null;
+  }
   if (!PENDING_RE.test(u.pathname)) return null;
   return u;
 }
@@ -183,7 +184,32 @@ module.exports = async (req, res) => {
   } catch {
     return send(res, 400, CODES.PROMOTE_400_002());
   }
-  const u = validPendingUrl(body && body.url);
+  // Pin the store hostname from a live listing of this project's own
+  // pending blobs before fetching the submitted URL with the blob token.
+  // Fail closed when the store cannot be determined: with no pending blobs
+  // in the project's store, no submitted URL can be legitimate anyway.
+  let storeHost = null;
+  try {
+    const listRes = await fetch(
+      `${BLOB_API}/?prefix=${encodeURIComponent("reports-pending/")}&limit=1`,
+      { headers: { authorization: `Bearer ${token}`, "x-api-version": API_VERSION } }
+    );
+    if (listRes.ok) {
+      const listData = await listRes.json();
+      const first = (listData.blobs || [])[0];
+      if (first && typeof first.url === "string") {
+        try {
+          storeHost = new URL(first.url).hostname || null;
+        } catch {
+          storeHost = null;
+        }
+      }
+    }
+  } catch {
+    storeHost = null;
+  }
+  if (!storeHost) return send(res, 400, CODES.PROMOTE_400_003());
+  const u = validPendingUrl(body && body.url, storeHost);
   if (!u) return send(res, 400, CODES.PROMOTE_400_003());
 
   // Fetch the pending submission and confirm it is what it claims to be.
@@ -233,6 +259,9 @@ module.exports = async (req, res) => {
     agency_id: pending.agency_id,
     source_url: pending.source_url,
     downloaded_at: pending.downloaded_at,
+    // description was mandatory at intake (min 10 chars); keep it on the
+    // approved copy instead of silently dropping it.
+    description: pending.description,
     received_at: pending.received_at,
     approved_at: approvedAt,
     approved_by: "admin",

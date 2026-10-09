@@ -42,7 +42,7 @@ def compute_meta(agencies: list, ev_by_id: dict) -> dict:
     verified = tiers.get("verified", 0)
     pending = tiers.get("pending", 0)
     note = (
-        f"{n} sourced records across {len(states)} state/DC jurisdictions. "
+        f"{n} sourced records across {len(states)} jurisdictions. "
         "Coverage is USA-wide, expanding in 10-state waves. "
         "A missing agency means not yet researched, not confirmed absent. "
         f"{verified} terminal claims verified, {pending} pending validation*. "

@@ -25,7 +25,19 @@ from __future__ import annotations
 import datetime
 import urllib.parse
 
+# Canonical status taxonomy. Every other copy (tracker.js, vercel_build.py,
+# api/report.js, weekly_monitor.py) must match these; scripts/tests/test_schema.py
+# cross-checks them all so a new value like "terminated" can never again slip
+# through in one layer while the rest disagree.
+STATUSES = frozenset({"active", "pending", "cancelled", "rejected", "expired"})
 TERMINAL_STATUSES = frozenset({"cancelled", "rejected", "expired"})
+STATUS_LABELS = {
+    "active": "Active",
+    "pending": "Under debate",
+    "cancelled": "Cancelled",
+    "rejected": "Proposal rejected",
+    "expired": "Expired",
+}
 STALE_DAYS = 180
 
 

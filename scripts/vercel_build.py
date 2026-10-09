@@ -16,6 +16,7 @@ so Vercel fails the build instead of publishing a degraded site.
 """
 from __future__ import annotations
 
+import datetime
 import json
 import shutil
 import sys
@@ -26,13 +27,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 import evidence as evidence_mod  # noqa: E402
 
-STATUS_LABEL = {
-    "active": "Active",
-    "pending": "Under debate",
-    "cancelled": "Cancelled",
-    "rejected": "Proposal rejected",
-    "expired": "Expired",
-}
+# Display labels come from the canonical taxonomy in scripts/evidence.py;
+# do not redefine the status set here.
+STATUS_LABEL = evidence_mod.STATUS_LABELS
 
 
 def _esc(s: str) -> str:
@@ -188,15 +185,26 @@ def main() -> None:
     # and the pre-render share the build's computation instead of
     # reimplementing the rule in JS. data/agencies.json itself is untouched
     # (the release manifest hashes it byte-identical).
-    ev_public = {
-        aid: {k: ev[k] for k in ("tier", "terminal", "primary",
+    #
+    # last_verified rides along so the client can re-apply the stale
+    # downgrade at display time: a "verified" tier baked at build time must
+    # not survive past STALE_DAYS without a rebuild.
+    by_id = {a["id"]: a for a in agencies}
+    ev_public = {}
+    for aid, ev in ev_by_id.items():
+        rec = {k: ev[k] for k in ("tier", "terminal", "primary",
                                  "news_independent", "meets_bar",
                                  "acknowledged_pending", "stale",
                                  "stale_downgraded")}
-        for aid, ev in ev_by_id.items()
+        rec["last_verified"] = by_id.get(aid, {}).get("last_verified")
+        ev_public[aid] = rec
+    ev_doc = {
+        "computed_at": datetime.date.today().isoformat(),
+        "stale_days": evidence_mod.STALE_DAYS,
+        "agencies": ev_public,
     }
     (public / "data" / "evidence.json").write_text(
-        json.dumps({"agencies": ev_public}, indent=2) + "\n", encoding="utf-8")
+        json.dumps(ev_doc, indent=2) + "\n", encoding="utf-8")
 
     n_verified = sum(1 for ev in ev_by_id.values() if ev["tier"] == "verified")
     n_pending = sum(1 for ev in ev_by_id.values() if ev["tier"] == "pending")

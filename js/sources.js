@@ -1,6 +1,6 @@
 /* Sources tab: every citation in the dataset, aggregated by URL and browsable.
  * Data: data/agencies.json. Card markup mirrors the deploy-time pre-render
- * in vercel_deploy.py (_prerender_sources) so crawlers and no-JS readers
+ * in vercel_build.py (_prerender_sources) so crawlers and no-JS readers
  * see the same list the JS renders.
  */
 "use strict";
