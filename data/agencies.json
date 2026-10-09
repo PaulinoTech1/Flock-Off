@@ -112,9 +112,9 @@
     },
     "terminal_verified": 8,
     "terminal_pending_validation": 138,
-    "records_with_renewal_date": 4,
-    "records_with_contract_end": 24,
-    "coverage_note": "343 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 4 records carry a renewal date and 24 a contract end date; exact renewal dates remain thin and are the top research priority."
+    "records_with_renewal_date": 5,
+    "records_with_contract_end": 25,
+    "coverage_note": "343 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 5 records carry a renewal date and 25 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {
@@ -4289,7 +4289,7 @@
       "city": "Decatur",
       "confidence": "high",
       "contract_end": null,
-      "contract_start": null,
+      "contract_start": "2021-03",
       "county": "Macon County",
       "decision_date": null,
       "decision_summary": "Decatur leased 60 Flock LPR cameras in March 2021 ($165k year 1, $150k each of years 2-3), added 40 more in 2022, and in late 2023 the City Council approved a 5-year lease extension fixing the price at $2,500 per camera per year through 2028, with roughly 100 cameras deployed.",
@@ -4324,6 +4324,14 @@
           "date": null,
           "verified": true,
           "source_key": "https://wcia.com/news/decatur-extends-usage-of-license-plate-readers"
+        },
+        {
+          "title": "Resolution R2021-40: lease of 60 LPR cameras for 2021-2023 (Decatur City Council)",
+          "url": "https://decatur.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=8225&ItemID=3769",
+          "date": "2021-03",
+          "verified": false,
+          "source_key": "https://decatur.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=8225&ItemID=3769",
+          "publisher": "City of Decatur (NovusAgenda)"
         }
       ],
       "state": "IL",
@@ -8317,8 +8325,8 @@
       "cameras": 90,
       "annual_cost_usd": 270000,
       "contract_start": null,
-      "contract_end": null,
-      "renewal_date": null,
+      "contract_end": "2027-06-30",
+      "renewal_date": "2027-06-30",
       "decision_date": "2026-08-18",
       "decision_summary": "City Council voted 5-3 to renew the Flock contract for one year at $270,000 with new restrictions on federal data sharing, audits, and retention. The prior agreement had expired 2026-06-30. Council had delayed the vote from Aug 4 over privacy concerns.",
       "transparency_portal": null,
@@ -8351,20 +8359,12 @@
           "content_hash": "4368a9d34839abdbdb42195f15d65512dc37e436c40e110afc7b818cae0c2e9f"
         },
         {
-          "title": "OKC City Council renews Flock Safety contract in contentious meeting",
-          "url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/18/okc-council-renews-flock-safety-contract-in-contentious-meeting/91356272007/",
-          "date": "2026-08-18",
+          "title": "Oklahoma City renews Flock contract through June 30, 2027 (The Oklahoman)",
+          "url": "https://www.oklahoman.com/story/news/crime/2026/10/05/flock-camera-search-tulsa-ok-deputy-ruled-unconstitutional-oklahoma-federal-judge/92107612007/",
+          "date": "2026-10-05",
           "verified": true,
-          "source_key": "https://oklahoman.com/story/news/local/oklahoma-city/2026/08/18/okc-council-renews-flock-safety-contract-in-contentious-meeting/91356272007",
-          "publisher": "The Oklahoman"
-        },
-        {
-          "title": "OKC City Council to vote on Flock contract renewal",
-          "url": "https://www.oklahoman.com/story/news/local/oklahoma-city/2026/08/03/okc-stalls-vote-flock-cameras-renewal/91159028007/",
-          "date": "2026-08-03",
-          "verified": true,
-          "source_key": "https://oklahoman.com/story/news/local/oklahoma-city/2026/08/03/okc-stalls-vote-flock-cameras-renewal/91159028007",
-          "publisher": "The Oklahoman"
+          "source_key": "https://oklahoman.com/story/news/crime/2026/10/05/flock-camera-search-tulsa-ok-deputy-ruled-unconstitutional-oklahoma-federal-judge/92107612007",
+          "publisher": "The Oklahoman (Gannett)"
         }
       ],
       "confidence": "high",

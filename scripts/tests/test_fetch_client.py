@@ -83,7 +83,10 @@ class TestContentDecoding(unittest.TestCase):
 
     def test_urllib_backend_decodes_gzip(self):
         client = fc.FetchClient()
-        self.assertEqual(client.backend, "urllib")  # curl_cffi not installed here
+        # NB: do not assert client.backend here. The test calls _fetch_urllib
+        # directly, which exercises the stdlib fallback regardless of which
+        # backend is default. CI installs curl_cffi via requirements.txt, so
+        # asserting backend == "urllib" fails there (2026-10-09 incident).
         status, url, html = client._fetch_urllib(self._url("/gzip"))
         self.assertEqual(status, "ok")
         self.assertIn("Hello, Flock-Off.", html)
