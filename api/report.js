@@ -19,9 +19,10 @@ const { argon2, createHash } = require("crypto");
  *  - AUTHENTICATED: FLOCKOFF_REPORT_WRITE_KEY is mandatory. Requests without a
  *    matching x-report-key are rejected (constant-time compare).
  *  - RATE LIMITED: 10 writes / subnet-bucket / hour, 500 writes / day globally
- *    (in-memory per function instance: best-effort on serverless, documented
- *    in docs/BLOB_REPORTS.md). Buckets are keyed by a daily-rotated salted
- *    hash of the /24 (or /48) subnet: raw IPs are never stored.
+ *    (Upstash Redis when configured: true global enforcement across serverless
+ *    instances; falls back to per-instance in-memory map if Redis is unreachable.
+ *    Buckets are keyed by a daily-rotated salted hash of the /24 (or /48)
+ *    subnet: raw IPs are never stored).
  *  - DEDUPLICATION: content is hashed with Argon2id (server pepper). Before
  *    storing, pending blobs are checked for matching content hash. Duplicates
  *    are rejected with 409.
@@ -67,36 +68,84 @@ const EXECUTABLE_PATTERNS = [
 /* Valid agency ids, injected at deploy time from data/agencies.json. */
 const AGENCY_IDS = new Set(/*__AGENCY_IDS__*/[]);
 
-// ---- rate limiting (per-instance, best effort on serverless) ----
+// ---- rate limiting (global via Upstash Redis, fallback to per-instance) ----
 // Buckets are keyed by signals.bucketHash(ip, day): a daily-rotated salted
 // hash of the /24 (IPv4) or /48 (IPv6) subnet. Raw IPs never enter storage.
-// The map is dropped on day rollover because yesterday's hashes are useless
-// under today's salt (and must not be joinable across days).
+//
+// Primary: Upstash Redis via REST API (UPSTASH_REDIS_REST_URL + TOKEN env,
+// or KV_REST_API_URL + KV_REST_API_TOKEN from the Vercel KV integration).
+// This gives true global rate limiting across all serverless instances.
+// Fallback: in-memory per-instance map (best-effort) if Redis is unreachable
+// or not configured. The write key remains the primary control; rate limiting
+// is defense-in-depth against spam/DoS. On Redis failure we fail OPEN (allow
+// the request) because a Redis outage must not block legitimate submissions;
+// the failure is logged to Vercel logs for operator visibility.
 const bucketState = new Map();
 let bucketDay = "";
-let globalDay = "";
-let globalCount = 0;
 
-function rateLimited(ip) {
-  const now = Date.now();
+function upstashConfig() {
+  // Supports both direct Upstash Redis and Vercel KV (Upstash-backed).
+  // Vercel KV integration creates KV_REST_API_URL / KV_REST_API_TOKEN.
+  const url = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
+  if (!url || !token) return null;
+  return { url: url.replace(/\/$/, ""), token };
+}
+
+async function upstashPipeline(commands) {
+  const cfg = upstashConfig();
+  if (!cfg) return null;
+  const res = await fetch(cfg.url, {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${cfg.token}`,
+      "content-type": "application/json",
+    },
+    body: JSON.stringify(commands),
+  });
+  if (!res.ok) throw new Error(`upstash HTTP ${res.status}`);
+  return res.json();
+}
+
+async function rateLimited(ip) {
   const day = signals.dayUTC();
+  const bucket = signals.bucketHash(ip, day);
+  const bucketKey = `flockoff:rl:${day}:${bucket}`;
+  const globalKey = `flockoff:rl:${day}:global`;
+
+  // Try Upstash first for global enforcement.
+  try {
+    const results = await upstashPipeline([
+      ["INCR", bucketKey],
+      ["EXPIRE", bucketKey, "3600"],
+      ["INCR", globalKey],
+      ["EXPIRE", globalKey, "86400"],
+    ]);
+    if (results && results.length >= 3) {
+      const bucketCount = results[0].result;
+      const globalCount = results[2].result;
+      return bucketCount > 10 || globalCount > 500;
+    }
+    throw new Error("unexpected upstash response shape");
+  } catch (e) {
+    // Fail open: log and fall back to per-instance map.
+    // The write key is the real gate; this is spam/DoS defense only.
+    console.error(`[rate-limit] upstash unavailable, using per-instance fallback: ${e.message}`);
+  }
+
+  // Per-instance fallback (best-effort on serverless).
+  const now = Date.now();
   if (day !== bucketDay) {
     bucketDay = day;
     bucketState.clear();
   }
-  const bucket = signals.bucketHash(ip, day);
   let b = bucketState.get(bucket);
   if (!b || now > b.reset) {
     b = { count: 0, reset: now + 3600 * 1000 };
     bucketState.set(bucket, b);
   }
   b.count += 1;
-  if (day !== globalDay) {
-    globalDay = day;
-    globalCount = 0;
-  }
-  globalCount += 1;
-  return b.count > 10 || globalCount > 500;
+  return b.count > 10;
 }
 
 // ---- helpers ----
@@ -364,7 +413,7 @@ module.exports = async (req, res) => {
     return send(res, 415, CODES.REPORT_415_001());
   }
 
-  if (rateLimited(clientIp(req))) {
+  if (await rateLimited(clientIp(req))) {
     res.setHeader("Retry-After", "3600");
     return send(res, 429, CODES.REPORT_429_001());
   }

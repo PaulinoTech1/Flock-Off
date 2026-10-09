@@ -26,8 +26,10 @@ public    ──GET  /api/history ──> lists reports/ only (approved records)
 
 - `Content-Type: application/json` only; max body 32 KB.
 - Rate limit: 10 writes / subnet-bucket / hour, 500 writes / day globally
-  (in-memory per function instance: best-effort on serverless, a spam speed
-  bump, not a guarantee). Buckets are keyed by a daily-rotated salted hash of
+  (Upstash Redis when UPSTASH_REDIS_REST_URL/TOKEN are set: true global
+  enforcement across serverless instances; falls back to per-instance
+  in-memory map if Redis is unreachable — a spam speed bump, not a
+  guarantee). Buckets are keyed by a daily-rotated salted hash of
   the submitter's /24 (IPv4) or /48 (IPv6) subnet; raw IPs are never stored
   anywhere (see "Submission signals" below).
 - Strict schema validation: allowlisted fields, correct types, `agency_id`
