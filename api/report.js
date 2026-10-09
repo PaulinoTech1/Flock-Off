@@ -108,8 +108,15 @@ function send(res, code, obj) {
 }
 
 function clientIp(req) {
+  // Vercel's edge overwrites x-real-ip with the client IP; it is not
+  // client-spoofable. x-forwarded-for may carry a client-supplied prefix,
+  // so take the LAST entry (Vercel appends the real client IP last),
+  // never the first (MEDIUM-1, 2026-10-09 review).
+  const real = req.headers["x-real-ip"];
+  if (typeof real === "string" && real.length) return real.slice(0, 64);
   const fwd = req.headers["x-forwarded-for"];
-  if (typeof fwd === "string" && fwd.length) return fwd.split(",")[0].trim().slice(0, 64);
+  if (typeof fwd === "string" && fwd.length)
+    return fwd.split(",").pop().trim().slice(0, 64);
   return (req.socket && req.socket.remoteAddress) || "unknown";
 }
 

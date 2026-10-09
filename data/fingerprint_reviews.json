@@ -442,5 +442,11 @@
     "note": "Drift d=37 reviewed 2026-10-04: article 'There is little state regulation of Flock cameras in Iowa. That could soon change.' confirmed live via indexed content. Cited claim (Iowa ALPR regulatory context) holds; drift is site churn.",
     "reviewed_at": "2026-10-04",
     "reviewed_by": "Constantine (agent)"
+  },
+  "https://themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state": {
+    "decision": "accept",
+    "note": "Source returns 403 to automated fetcher; Boss manually downloaded and verified article content (PDF archived at docs/source_archives/midwesterner-2026-09-flock-privacy.pdf). Verified by another means per drift gate policy.",
+    "reviewed_at": "2026-10-09",
+    "reviewed_by": "Alexander"
   }
 }

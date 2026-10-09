@@ -6,7 +6,7 @@
 "use strict";
 
 const SourcesTab = (() => {
-  const { esc, el, fetchJson, PATHS } = Utils;
+  const { esc, el, fetchJson, PATHS, safeUrl } = Utils;
   let entries = [];
 
   function publisherOf(url) {
@@ -58,7 +58,7 @@ const SourcesTab = (() => {
       .join(", ");
     return (
       `<article class="source-card">${badge}` +
-      `<h3><a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">${esc(e.title)}</a></h3>` +
+      `<h3><a href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">${esc(e.title)}</a></h3>` +
       `<p class="source-meta">${esc(meta)}</p>` +
       `<p class="cited-by">Cited by: ${esc(cited)}</p></article>`
     );

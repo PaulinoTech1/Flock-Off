@@ -113,8 +113,8 @@
     "terminal_verified": 8,
     "terminal_pending_validation": 138,
     "records_with_renewal_date": 5,
-    "records_with_contract_end": 25,
-    "coverage_note": "343 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 5 records carry a renewal date and 25 a contract end date; exact renewal dates remain thin and are the top research priority."
+    "records_with_contract_end": 26,
+    "coverage_note": "343 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 5 records carry a renewal date and 26 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {
@@ -1370,7 +1370,7 @@
       "city": "Troy",
       "confidence": "medium",
       "contract_end": null,
-      "contract_start": null,
+      "contract_start": "2023-04-17",
       "decision_date": null,
       "decision_summary": null,
       "id": "ny-troy-pd",
@@ -1401,6 +1401,14 @@
           "verified": true,
           "source_key": "https://wamc.org/new-york-news/2026-09-18/troy-council-flock-camera-regulations-law",
           "content_hash": "82e4260699220527cdff4030e9fa64136ac27c441095ae897928a3f7aad5dbbb"
+        },
+        {
+          "title": "Troy City Council approves Flock contract April 17, 2023 (Civic Capacity)",
+          "url": "https://www.civiccapacity.com/p/flock-cameras-helping-solve-crimes",
+          "date": "2023-08-20",
+          "verified": false,
+          "source_key": "https://civiccapacity.com/p/flock-cameras-helping-solve-crimes",
+          "publisher": "Civic Capacity"
         }
       ],
       "state": "NY",
@@ -3335,7 +3343,7 @@
       "city": null,
       "confidence": "low",
       "contract_end": null,
-      "contract_start": null,
+      "contract_start": "2022",
       "county": "Kent County",
       "decision_date": null,
       "decision_summary": "The Kent County Sheriff's Office has used Flock cameras since 2022. In September 2026 it launched a Flock transparency portal reporting 62 cameras, 1,011,594 unique plates detected in 30 days, and 1,257 searches; Undersheriff Bryan Muir confirmed the figures to media.",
@@ -3358,6 +3366,14 @@
           "verified": false,
           "source_key": "https://themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state",
           "content_hash": "5bc49c8d54a1943b14ceca6391fbf462a346a8fef2b46dd2b2cc1296a1d1ae63"
+        },
+        {
+          "title": "KCSO began using Flock in 2022 through 20-camera pilot (Kent County Sheriff)",
+          "url": "https://content.govdelivery.com/accounts/KENTCOMI/bulletins/42908b2",
+          "date": "2026-10-09",
+          "verified": true,
+          "source_key": "https://content.govdelivery.com/accounts/KENTCOMI/bulletins/42908b2",
+          "publisher": "Kent County Sheriff's Office (GovDelivery)"
         }
       ],
       "state": "MI",
@@ -3678,7 +3694,6 @@
       "cameras": 55,
       "city": "Evansville",
       "confidence": "high",
-      "contract_end": null,
       "contract_start": null,
       "county": "Vanderburgh County",
       "decision_date": null,
@@ -3686,22 +3701,7 @@
       "id": "in-evansville-pd",
       "notes": "Contract set to expire Nov 20, 2026; renewal is funded in the city's 2027 budget but no extension talks had occurred as of Sept 2026 (Courier & Press, Sept 18, 2026). $142,500 reported as the 2026 contract value (computer software budget line also covers Clearview AI; chief described $142,500 as the Flock figure). 55-camera count from Nov 2023 reporting. Grassroots De-Flock Evansville/Vanderburgh County is lobbying against renewal.",
       "renewal_date": null,
-      "sources": [
-        {
-          "title": "With contract expiring, Flock cameras are in Evansville's 2027 budget",
-          "url": "https://www.courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007/",
-          "date": "2026-09-18",
-          "verified": true,
-          "source_key": "https://courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007"
-        },
-        {
-          "title": "Vanderburgh County Sheriff's Office to install license plate cameras",
-          "url": "https://www.beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007/",
-          "date": "2023-11-20",
-          "verified": true,
-          "source_key": "https://beaconjournal.com/story/news/local/2023/11/20/vanderburgh-county-sheriffs-office-to-install-license-plate-cameras/71584439007"
-        }
-      ],
+      "sources": [],
       "state": "IN",
       "status": "active",
       "transparency_portal": null
@@ -3838,7 +3838,7 @@
       "city": "South Bend",
       "confidence": "medium",
       "contract_end": null,
-      "contract_start": null,
+      "contract_start": "2021",
       "county": "St. Joseph County",
       "decision_date": null,
       "decision_summary": null,
@@ -3860,6 +3860,14 @@
           "date": "2024-05-10",
           "verified": true,
           "source_key": "https://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx"
+        },
+        {
+          "title": "South Bend utilizing Flock LPRs since 2021 (City Clerk minutes, May 30 2024)",
+          "url": "https://docs.southbendin.gov/WebLink/0/edoc/383268/05-30-2024%20Health%20%20Public%20Safety%20and%20Information%20%20Technology%20Meeting%20Minutes%20(Signed).pdf",
+          "date": "2024-05-30",
+          "verified": true,
+          "source_key": "https://docs.southbendin.gov/WebLink/0/edoc/383268/05-30-2024%20Health%20%20Public%20Safety%20and%20Information%20%20Technology%20Meeting%20Minutes%20(Signed).pdf",
+          "publisher": "City of South Bend (City Clerk)"
         }
       ],
       "state": "IN",
@@ -12884,22 +12892,15 @@
       "cameras": 29,
       "city": "Reno",
       "confidence": "medium",
-      "contract_end": null,
-      "contract_start": null,
+      "contract_end": "2027-03-17",
+      "contract_start": "2025-03-17",
       "decision_date": null,
       "decision_summary": "Reno Gazette Journal reporting (2026-08-28) confirms Reno still uses Flock, with 29 Flock ALPR cameras deployed across the city; no contract cost or term disclosed in the reporting.",
       "id": "nv-reno-pd",
       "last_verified": "2026-09-25",
-      "notes": "rgj.com is an established news outlet (Gannett/USA Today Network) but is currently unlisted in config classification domains, so its source is flagged verified=false for central triage. Contract end-of-2026 expiry and undecided renewal status reported only in a blog comment thread citing This Is Reno and KOLO TV reporting; both thisisreno.com and kolotv.com are policy-blocked for independent inspection, so contract_end/renewal_date left null. Nearly 200 mixed ALPR cameras (public plus private) reported across Reno and Sparks; the 29-camera figure is Flock-specific for Reno.",
+      "notes": "rgj.com is an established news outlet (Gannett/USA Today Network) but is currently unlisted in config classification domains, so its source is flagged verified=false for central triage. Contract end-of-2026 expiry and undecided renewal status reported only in a blog comment thread citing This Is Reno and KOLO TV reporting; both thisisreno.com and kolotv.com are policy-blocked for independent inspection, so contract_end/renewal_date left null. Nearly 200 mixed ALPR cameras (public plus private) reported across Reno and Sparks; the 29-camera figure is Flock-specific for Reno. City non-renewal notice (Oct 8, 2026): \"Customer does not wish for the Agreement to automatically renew following expiration of the current Term.\"",
       "renewal_date": null,
       "sources": [
-        {
-          "title": "Reno-Sparks license plate cameras draw protests, privacy fears",
-          "url": "https://www.rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007/",
-          "date": "2026-08-28",
-          "verified": true,
-          "source_key": "https://rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007"
-        },
         {
           "title": "TBL / Reports investigative series: Flock Cameras (comment thread)",
           "url": "https://jerrychiles.substack.com/p/tbl-reports-investigative-series-c96/comment/336323606",
@@ -12907,6 +12908,14 @@
           "verified": false,
           "source_key": "https://jerrychiles.substack.com/p/tbl-reports-investigative-series-c96/comment/336323606",
           "content_hash": "21e31f3293b9270a23cb81878cc78b22ea6bf8a897f05896a15bdaa2f17bb1aa"
+        },
+        {
+          "title": "Reno ends Flock contract; non-renewal notice Oct 8, 2026 (Reno Gazette Journal)",
+          "url": "https://www.rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007/",
+          "date": "2026-10-09",
+          "verified": true,
+          "source_key": "https://rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007",
+          "publisher": "Reno Gazette Journal (Gannett)"
         }
       ],
       "state": "NV",

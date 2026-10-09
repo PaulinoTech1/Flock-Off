@@ -38,7 +38,7 @@ const TrackerTab = (() => {
     };
   }
 
-  const { esc, el, fetchJson, PATHS } = Utils;
+  const { esc, el, fetchJson, PATHS, safeUrl } = Utils;
   const usd = (n) =>
     n == null ? "—" : new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
 
@@ -307,7 +307,7 @@ const TrackerTab = (() => {
       `<li><span class="${s.verified ? "src-ver" : "src-unver"}" title="${s.verified
         ? "Verified source: counts toward the evidence bar"
         : "Unverified: lead only, not counted toward the evidence bar"}">${s.verified ? "✓" : "○"}</span> ` +
-      `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>` +
+      `<a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>` +
       (s.date ? ` <span class="muted">(${esc(s.date)})</span>` : "") + `</li>`
     ).join("");
     const evSection = !ev.terminal ? "" :
@@ -339,7 +339,7 @@ const TrackerTab = (() => {
       `<dl class="detail">${timeline}</dl>` +
       evSection +
       (a.transparency_portal
-        ? `<p><a href="${esc(a.transparency_portal)}" target="_blank" rel="noopener noreferrer">Flock transparency portal</a></p>` : "") +
+        ? `<p><a href="${esc(safeUrl(a.transparency_portal))}" target="_blank" rel="noopener noreferrer">Flock transparency portal</a></p>` : "") +
       (a.notes ? `<p>${esc(a.notes)}</p>` : "") +
       `<h3>Sources</h3><ul>${src || "<li>none listed</li>"}</ul>` +
       `<p class="muted">✓ verified citation · ○ unverified lead (not counted toward the evidence bar). ` +
@@ -373,7 +373,7 @@ const TrackerTab = (() => {
         const status = r.report && r.report.status ? esc(r.report.status) : "";
         return `<li><strong>${date}</strong>${status ? ` <span class="muted">(${status})</span>` : ""}` +
           (desc ? `<br><span>${desc}</span>` : "") +
-          (r.source_url ? `<br><a href="${esc(r.source_url)}" target="_blank" rel="noopener noreferrer" class="muted">Source</a>` : "") +
+          (r.source_url ? `<br><a href="${esc(safeUrl(r.source_url))}" target="_blank" rel="noopener noreferrer" class="muted">Source</a>` : "") +
           `</li>`;
       }).join("")}</ul>` +
         `<p class="muted">Append-only archive. Each report is tied to its source and download date.</p>`;

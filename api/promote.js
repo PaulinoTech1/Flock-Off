@@ -79,12 +79,16 @@ function validPendingUrl(s, allowedHost) {
   }
   if (u.protocol !== "https:") return null;
   // The hostname must be this project's own blob store, pinned by the
-  // caller from a live listing. A bare *.blob.vercel-storage.com suffix
-  // check would let an attacker-controlled store host receive the
-  // Authorization-bearing fetch below (token leak on admin-key compromise).
+  // caller from a live listing. The caller rejects before calling when
+  // the store host cannot be determined, so the else branch is a
+  // fail-closed dead end, not a fallback (LOW-4, 2026-10-09 review:
+  // dead security branches rot). Do NOT reintroduce a suffix fallback
+  // here: a bare *.blob.vercel-storage.com check would let an
+  // attacker-controlled store host receive the Authorization-bearing
+  // fetch below (token leak on admin-key compromise).
   if (allowedHost) {
     if (u.hostname !== allowedHost) return null;
-  } else if (!u.hostname.endsWith(".blob.vercel-storage.com")) {
+  } else {
     return null;
   }
   if (!PENDING_RE.test(u.pathname)) return null;
