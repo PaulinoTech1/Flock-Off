@@ -29,8 +29,10 @@ Return contract matches source_fingerprints.fetch_page:
 """
 from __future__ import annotations
 
+import gzip
 import re
 import urllib.request
+import zlib
 
 # Markers that mean "bot challenge page", even on HTTP 200.
 _CHALLENGE_MARKERS = (
@@ -86,6 +88,27 @@ def _sniff_blocked(status_code: int, html: str | None) -> bool:
     return _looks_like_challenge(html or "")
 
 
+def _decompress_body(raw: bytes, content_encoding: str | None) -> bytes:
+    """Undo Content-Encoding so callers always see plain bytes.
+
+    Regression guard: the stdlib urllib backend used to advertise
+    "Accept-Encoding: gzip, deflate, br" but never decoded the response,
+    so a gzipping server produced binary garbage that was fingerprinted
+    as page text (false drift). curl_cffi decodes transparently; this
+    keeps the fallback honest too. Unknown or undecodable encodings fall
+    back to the raw bytes rather than failing the fetch.
+    """
+    enc = (content_encoding or "").lower()
+    try:
+        if "gzip" in enc:
+            return gzip.decompress(raw)
+        if "deflate" in enc:
+            return zlib.decompress(raw)
+    except Exception:
+        return raw
+    return raw
+
+
 class FetchClient:
     """One browser-like session. Create per pipeline run, not per fetch."""
 
@@ -118,6 +141,9 @@ class FetchClient:
         except Exception:
             return "error", None, None
         body = resp.content[: self.max_bytes + 1]
+        # curl_cffi normally decodes transparently; unpack defensively in
+        # case a response arrives still encoded (see _decompress_body).
+        body = _decompress_body(body, resp.headers.get("Content-Encoding"))
         html = body.decode("utf-8", errors="replace")
         if _sniff_blocked(resp.status_code, html):
             return "blocked", None, None
@@ -129,13 +155,18 @@ class FetchClient:
         return "ok", resp.url, html
 
     def _fetch_urllib(self, url: str):
-        req = urllib.request.Request(url, headers=_BROWSER_HEADERS)
+        # The stdlib backend can only decode gzip/deflate: advertise just
+        # those so a server never answers with brotli we cannot unpack.
+        headers = dict(_BROWSER_HEADERS)
+        headers["Accept-Encoding"] = "gzip, deflate"
+        req = urllib.request.Request(url, headers=headers)
         try:
             with urllib.request.urlopen(req, timeout=self.timeout) as resp:
                 code = resp.status
                 ctype = resp.headers.get("Content-Type", "")
                 final_url = resp.geturl()
                 raw = resp.read(self.max_bytes + 1)
+                encoding = resp.headers.get("Content-Encoding")
         except urllib.request.HTTPError as e:
             if e.code in _BLOCKED_CODES:
                 return "blocked", None, None
@@ -143,7 +174,7 @@ class FetchClient:
         except Exception:
             return "error", None, None
         try:
-            html = raw.decode("utf-8", errors="replace")
+            html = _decompress_body(raw, encoding).decode("utf-8", errors="replace")
         except Exception:
             return "error", None, None
         if _sniff_blocked(code, html):

@@ -240,9 +240,8 @@ def put_snapshot(snapshot: dict, token=None) -> str | None:
         return None
 
     pathname = snapshot_pathname(snapshot)
-    # No snapshot_exists() pre-check here: deterministic PUT paths (random
-    # suffix disabled) overwrite safely, and the pre-check cost one blob
-    # LIST (advanced operation) per snapshot.
+    if snapshot_exists(pathname, token):
+        return pathname  # already archived; deduplication
 
     params = urllib.parse.urlencode({"pathname": pathname})
     headers = {

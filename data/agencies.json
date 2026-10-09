@@ -49,9 +49,72 @@
       "WI",
       "WV"
     ],
-    "last_updated": "2026-09-26",
     "methodology": "docs/METHODOLOGY.md",
-    "coverage_note": "322 sourced records across 45 state/DC jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. Claims with 3+ independent verified citations are marked verified; the rest are marked pending validation*. Exact renewal dates are still thin and are the top research priority."
+    "generated_by": "scripts/generate_meta.py",
+    "last_updated": "2026-10-04",
+    "record_count": 343,
+    "jurisdiction_count": 47,
+    "jurisdictions": [
+      "AL",
+      "AR",
+      "AZ",
+      "CA",
+      "CO",
+      "CT",
+      "DC",
+      "DE",
+      "FL",
+      "GA",
+      "IA",
+      "ID",
+      "IL",
+      "IN",
+      "KS",
+      "KY",
+      "LA",
+      "MA",
+      "MD",
+      "ME",
+      "MI",
+      "MN",
+      "MO",
+      "MS",
+      "NC",
+      "NE",
+      "NH",
+      "NJ",
+      "NM",
+      "NV",
+      "NY",
+      "OH",
+      "OK",
+      "OR",
+      "PA",
+      "PR",
+      "RI",
+      "SC",
+      "TN",
+      "TX",
+      "UT",
+      "VA",
+      "VI",
+      "VT",
+      "WA",
+      "WI",
+      "WV"
+    ],
+    "status_counts": {
+      "active": 172,
+      "cancelled": 133,
+      "expired": 3,
+      "pending": 25,
+      "rejected": 10
+    },
+    "terminal_verified": 8,
+    "terminal_pending_validation": 138,
+    "records_with_renewal_date": 4,
+    "records_with_contract_end": 24,
+    "coverage_note": "343 sourced records across 47 state/DC jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 4 records carry a renewal date and 24 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {
@@ -1263,7 +1326,7 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "Cities Ditch Flock Cameras for Axon ALPRs — Who Owns Axon?",
+          "title": "Cities Ditch Flock Cameras for Axon ALPRs \u2014 Who Owns Axon?",
           "url": "https://nexfinitynews.com/cities-drop-flock-cameras-replace-axon-alpr-who-owns-axon/",
           "date": "2026-07-27",
           "verified": false,
@@ -1520,7 +1583,7 @@
       "contract_end": null,
       "contract_start": null,
       "decision_date": "2026-08-05",
-      "decision_summary": "City decommissioned its four Flock cameras (decommissioning began March 2026, complete by week of July 27) because the city could not control the collected data; the city never held a contract with Flock — the cameras had been donated in 2023.",
+      "decision_summary": "City decommissioned its four Flock cameras (decommissioning began March 2026, complete by week of July 27) because the city could not control the collected data; the city never held a contract with Flock \u2014 the cameras had been donated in 2023.",
       "id": "de-wilmington-pd",
       "last_verified": "2026-09-25",
       "notes": "No contract ever existed (donation), so cost fields are null; status 'cancelled' here means the deployment was discontinued. Council member Yolanda McCoy announced discontinuance Aug 5, 2026. WHYY reported 20 Delaware police agencies use ALPRs; Wilmington used to be one.",
@@ -3019,7 +3082,7 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "Ordinance No. 1401 — An ordinance to prohibit the installation or use of electronic license plate scanning devices in the City of Ypsilanti (adopted 2022-09-13)",
+          "title": "Ordinance No. 1401 \u2014 An ordinance to prohibit the installation or use of electronic license plate scanning devices in the City of Ypsilanti (adopted 2022-09-13)",
           "url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743",
           "date": "2022-09-13",
           "verified": true,
@@ -3123,7 +3186,7 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "City Council Agenda Item — Flock Safety Cameras, Troy Police Department (2023-03-08, with Insight/Flock quote)",
+          "title": "City Council Agenda Item \u2014 Flock Safety Cameras, Troy Police Department (2023-03-08, with Insight/Flock quote)",
           "url": "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116",
           "date": "2023-03-08",
           "verified": true,
@@ -7312,10 +7375,10 @@
       "sources": [
         {
           "title": "'A Great Crime-Fighting Tool': Flock cameras boost sheriff's office",
-          "url": "https://kspress.com/news/2026/02/09/‘a-great-crime-fighting-tool’-flock-cameras-boost-sheriff’s-office",
+          "url": "https://kspress.com/news/2026/02/09/\u2018a-great-crime-fighting-tool\u2019-flock-cameras-boost-sheriff\u2019s-office",
           "date": "2026-02-09",
           "verified": false,
-          "source_key": "https://kspress.com/news/2026/02/09/‘a-great-crime-fighting-tool’-flock-cameras-boost-sheriff’s-office",
+          "source_key": "https://kspress.com/news/2026/02/09/\u2018a-great-crime-fighting-tool\u2019-flock-cameras-boost-sheriff\u2019s-office",
           "publisher": "Kansas Press Association (Newton Kansan)"
         },
         {
@@ -13492,7 +13555,7 @@
       "agency_type": "county_sheriff",
       "city": "Ithaca",
       "state": "NY",
-      "status": "terminated",
+      "status": "cancelled",
       "cameras": null,
       "annual_cost_usd": null,
       "contract_start": null,
@@ -13520,7 +13583,8 @@
           "source_key": "https://wydc-tv.com/news/local/tompkins-county-ends-flock-safety-camera-contract-in-12-1-vote/article_505c13ab-d243-401e-84ce-019f70dd0485.html",
           "notes": "Domain pending verified_news approval; usable as lead, not as citation toward the verified bar."
         }
-      ]
+      ],
+      "validation": "pending"
     },
     {
       "id": "wi-marinette-city",
