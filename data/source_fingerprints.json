@@ -1749,6 +1749,19 @@
     "title": null,
     "url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743"
   },
+  "https://civiccapacity.com/p/flock-cameras-helping-solve-crimes": {
+    "archive": "0cea404b5ff995e4fb031bc4e373e55a2bf1d0ad12a0773c2ba614e664cb8dd7.txt",
+    "content_hash": "a59bca3abc277dc267a93a70804bfc24dce2a6a2d488a183dd0d5f64bf4a3203",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-09",
+    "final_url": "https://www.civiccapacity.com/p/flock-cameras-helping-solve-crimes",
+    "simhash": "ac2de2eaab034182",
+    "snapshot_path": "snapshots/2026-10-09/4afd7ec1f6a47f9ad4317732ba80e57015054305d329c6df5f0f39e69a091d59.json",
+    "snapshot_status": "uploaded",
+    "text_len": 473,
+    "title": "Flock Cameras Helping Solve Crimes - by William Lutz",
+    "url": "https://www.civiccapacity.com/p/flock-cameras-helping-solve-crimes"
+  },
   "https://civiclensnetwork.com/articles/anoka-county-sheriff-signs-flock-camera-deal-just-under-175000-board-limit": {
     "archive": "3bfbcb7fa01689178e924cfaf2c6c4a88446066cec97c3e383b5431e4bdbf8ef.txt",
     "content_hash": "15e8994a5abb079c690e0947c0889ee366378e4259fecbbbda4255f246df61f1",
@@ -2070,6 +2083,19 @@
     "text_len": 1306,
     "title": "Statement: Evanston Deactivates Flock Cameras and Terminates Contract",
     "url": "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/3efa81d"
+  },
+  "https://content.govdelivery.com/accounts/KENTCOMI/bulletins/42908b2": {
+    "archive": "7e7df0b69c0fee5e359542f79d1d4410b0d2986b3aad617c4ea4b2cf8779f459.txt",
+    "content_hash": "a901a0d62e5263dc3902da1c759acfff9ee0048838e737204e01c670bfe22ba9",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-09",
+    "final_url": "https://content.govdelivery.com/accounts/KENTCOMI/bulletins/42908b2",
+    "simhash": "fdddb6f9d500a895",
+    "snapshot_path": "snapshots/2026-10-09/a427c4c4cae1069a3dc355fe1574f635c7fef75a0004909ce2763c924d2839a2.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3665,
+    "title": "KCSO Launches Flock Transparency Portal",
+    "url": "https://content.govdelivery.com/accounts/KENTCOMI/bulletins/42908b2"
   },
   "https://coralspringsflnews.com/news/article317364116.html": {
     "archive": "5d86dfefc50de45d0289dd17678652ba2a01eb6ee6102ad0ceff756808ebbcdb.txt",
@@ -2564,6 +2590,19 @@
     "text_len": 96,
     "title": null,
     "url": "http://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx"
+  },
+  "https://docs.southbendin.gov/WebLink/0/edoc/383268/05-30-2024%20Health%20%20Public%20Safety%20and%20Information%20%20Technology%20Meeting%20Minutes%20(Signed).pdf": {
+    "archive": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-09",
+    "final_url": "https://docs.southbendin.gov/WebLink/0/edoc/383268/05-30-2024%20Health%20%20Public%20Safety%20and%20Information%20%20Technology%20Meeting%20Minutes%20(Signed).pdf",
+    "retry_after": "2026-11-08",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://docs.southbendin.gov/WebLink/0/edoc/383268/05-30-2024%20Health%20%20Public%20Safety%20and%20Information%20%20Technology%20Meeting%20Minutes%20(Signed).pdf"
   },
   "https://draperutah.gov/media/ya4nigvm/police-letterhead-flock-camera-chief-letter.pdf": {
     "archive": null,
@@ -7130,6 +7169,19 @@
     "text_len": 579,
     "title": "License plate reader camera debate: Solving crime vs. privacy concerns",
     "url": "https://www.rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007/"
+  },
+  "https://rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007": {
+    "archive": "08dd81662acae98e246116745d898a939b79efc8e4117adb6ebc8f8dca327df4.txt",
+    "content_hash": "7c5b5d6e7c9ac82964ef584571f3794813396f830e609f0f603931ec09e1ad7c",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-09",
+    "final_url": "https://www.rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007/",
+    "simhash": "a67bf7f8cdcb663a",
+    "snapshot_path": "snapshots/2026-10-09/0253ac04cccbaf225d0e46a2b051783c235f13bd4f47b017cdbe4ee9733bd7fc.json",
+    "snapshot_status": "uploaded",
+    "text_len": 3073,
+    "title": "City of Reno ends contract with Flock for surveillance cameras",
+    "url": "https://www.rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007/"
   },
   "https://riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf": {
     "archive": null,
