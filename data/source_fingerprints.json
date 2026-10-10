@@ -743,6 +743,19 @@
     "title": "Tempe poised to become first AZ city to ban all Flock-like cameras",
     "url": "https://www.azcentral.com/story/news/metro-phoenix/2026/09/11/tempe-to-become-first-az-city-ban-flock-like-cameras/91691228007/"
   },
+  "https://azcentral.com/story/news/metro-phoenix/2026/10/08/scottsdale-to-make-flock-camera-abuse-a-crime/92137855007": {
+    "archive": "be53ae43268c2abb2a87e28b01050c83f5d5746cf2ed9be6d28d74e67d5b09c8.txt",
+    "content_hash": "4d58f04a6f99098e24847890805649cd386331ac93856d82470e5a7050b897d5",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-10",
+    "final_url": "https://www.azcentral.com/story/news/metro-phoenix/2026/10/08/scottsdale-to-make-flock-camera-abuse-a-crime/92137855007/?gnt-cfr=1&gca-cat=p&gca-uir=false&gca-epti=z11xx03p119850l003850c119850e1180xxv11xx03&gca-ft=215&gca-ds=sophi&gnt-djm=1",
+    "simhash": "33c6129a47415679",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 463,
+    "title": "Scottsdale to make Flock camera abuse a crime",
+    "url": "https://www.azcentral.com/story/news/metro-phoenix/2026/10/08/scottsdale-to-make-flock-camera-abuse-a-crime/92137855007/"
+  },
   "https://azcir.org/news/2025/11/14/did-university-of-arizona-spend-over-800000-on-surveillance-cameras-accessible-by-federal-law-enforcement-yes": {
     "archive": "69dc48c9ad821f0b5139d0a9ef2c82ed5994f6e70c48a89669a10f74f436097e.txt",
     "content_hash": "2673ac98c2405078ff004d2e0cae5d56703f80542b3e1ebeb48ec6c8122cc68d",
@@ -755,6 +768,19 @@
     "text_len": 2689,
     "title": "Did the University of Arizona spend over $800,000 on surveillance cameras accessible by federal law enforcement?",
     "url": "https://azcir.org/news/2025/11/14/did-university-of-arizona-spend-over-800000-on-surveillance-cameras-accessible-by-federal-law-enforcement-yes/"
+  },
+  "https://azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting": {
+    "archive": "5659fd99e2edd4325d81b5c14997a7d35c074c0b2ff2a9e179559afefe2d19f0.txt",
+    "content_hash": "61c40557ced541dec0188cb3d4b4300a9bd5d38dd09eed3cfbc75b7db0e4fb71",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-10",
+    "final_url": "https://www.azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting/",
+    "simhash": "d04c4f2e5cc32aab",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 3303,
+    "title": "Scottsdale City Council to vote on Flock cameras in December meeting",
+    "url": "https://www.azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting/"
   },
   "https://azfreenews.com/2025/09/sedona-council-terminates-license-plate-reader-program": {
     "archive": "9b12d3cabe5f023cdee29cc7915c6eb58b73b0f84225980e212780d6fb79d444.txt",
@@ -2577,6 +2603,19 @@
     "text_len": 3059,
     "title": "Flock cameras to be bagged in Reynoldsburg as city ends use",
     "url": "https://www.dispatch.com/story/news/local/reynoldsburg/2026/09/09/flock-cameras-to-be-bagged-in-reynoldsburg-as-city-ends-use/91676029007/"
+  },
+  "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which": {
+    "archive": "cf5fb9374cf4a00e10938b66cf30dd2e91f80f7506364b6528bd69d1fa158fb2.txt",
+    "content_hash": "5c3485eef5b6d1821a51db731bc3a96cd110ce20b996b74082c47b166d9df2fd",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-10",
+    "final_url": "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which",
+    "simhash": "afa0335b711a0dd5",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 5398,
+    "title": "Whitehead moves for a Scottsdale license-plate reader ordinance, vendor review and a possible end to Flock funding | The Dispute Index",
+    "url": "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which"
   },
   "https://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx": {
     "archive": "a953578db79e03b9b3f54b6354dc9b1f79e3c2c5fc9f4566d08f738f2895a72b.txt",

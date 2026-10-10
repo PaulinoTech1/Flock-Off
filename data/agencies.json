@@ -51,7 +51,7 @@
     ],
     "methodology": "docs/METHODOLOGY.md",
     "generated_by": "scripts/generate_meta.py",
-    "last_updated": "2026-10-04",
+    "last_updated": "2026-10-10",
     "record_count": 343,
     "jurisdiction_count": 47,
     "jurisdictions": [
@@ -1326,7 +1326,7 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "Cities Ditch Flock Cameras for Axon ALPRs \u2014 Who Owns Axon?",
+          "title": "Cities Ditch Flock Cameras for Axon ALPRs — Who Owns Axon?",
           "url": "https://nexfinitynews.com/cities-drop-flock-cameras-replace-axon-alpr-who-owns-axon/",
           "date": "2026-07-27",
           "verified": false,
@@ -1591,7 +1591,7 @@
       "contract_end": null,
       "contract_start": null,
       "decision_date": "2026-08-05",
-      "decision_summary": "City decommissioned its four Flock cameras (decommissioning began March 2026, complete by week of July 27) because the city could not control the collected data; the city never held a contract with Flock \u2014 the cameras had been donated in 2023.",
+      "decision_summary": "City decommissioned its four Flock cameras (decommissioning began March 2026, complete by week of July 27) because the city could not control the collected data; the city never held a contract with Flock — the cameras had been donated in 2023.",
       "id": "de-wilmington-pd",
       "last_verified": "2026-09-25",
       "notes": "No contract ever existed (donation), so cost fields are null; status 'cancelled' here means the deployment was discontinued. Council member Yolanda McCoy announced discontinuance Aug 5, 2026. WHYY reported 20 Delaware police agencies use ALPRs; Wilmington used to be one.",
@@ -3090,7 +3090,7 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "Ordinance No. 1401 \u2014 An ordinance to prohibit the installation or use of electronic license plate scanning devices in the City of Ypsilanti (adopted 2022-09-13)",
+          "title": "Ordinance No. 1401 — An ordinance to prohibit the installation or use of electronic license plate scanning devices in the City of Ypsilanti (adopted 2022-09-13)",
           "url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743",
           "date": "2022-09-13",
           "verified": true,
@@ -3194,7 +3194,7 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "City Council Agenda Item \u2014 Flock Safety Cameras, Troy Police Department (2023-03-08, with Insight/Flock quote)",
+          "title": "City Council Agenda Item — Flock Safety Cameras, Troy Police Department (2023-03-08, with Insight/Flock quote)",
           "url": "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116",
           "date": "2023-03-08",
           "verified": true,
@@ -5668,11 +5668,11 @@
       "confidence": "high",
       "contract_end": "2028-06",
       "contract_start": "2023-06-21",
-      "decision_date": "2026-08-28",
-      "decision_summary": "City Council voted to keep the 85-camera Flock system while ordering an independent review and added safeguards, bucking the statewide cancellation wave.",
+      "decision_date": "2026-10-06",
+      "decision_summary": "Council voted 7-0 to keep the 85 cameras while directing staff to draft an ALPR ordinance (misuse penalties, independent audits, training, data retention/access review, public tech webpage), evaluate alternative vendors and a potential transition from Flock, and exclude Flock funding from the proposed FY 2027-28 budget. Ordinance consideration set for Dec 1, 2026.",
       "id": "az-scottsdale-pd",
-      "last_verified": "2026-09-25",
-      "notes": "$370k/yr and $1.2M five-year term from contract records obtained by Scottsdale Progress; azcentral reports expiry June 2028. No misuse complaints found in quarterly audits per SPD.",
+      "last_verified": "2026-10-10",
+      "notes": "$370k/yr and $1.2M five-year term from contract records obtained by Scottsdale Progress; azcentral reports expiry June 2028. No misuse complaints found in quarterly audits per SPD. Oct 6, 2026: Whitehead motion passed 7-0 (cameras stay; ordinance + vendor review + FY27-28 funding exclusion). Contract still ends ~2028-06; non-appropriation is the budget exit path.",
       "renewal_date": null,
       "sources": [
         {
@@ -5696,6 +5696,27 @@
           "date": "2026-08-16",
           "verified": true,
           "source_key": "https://azcentral.com/story/news/local/phoenix/2026/08/16/these-metro-phoenix-cities-use-flock-safety-cameras/91275430007"
+        },
+        {
+          "title": "Scottsdale to make Flock camera abuse a crime",
+          "url": "https://www.azcentral.com/story/news/metro-phoenix/2026/10/08/scottsdale-to-make-flock-camera-abuse-a-crime/92137855007/",
+          "date": "2026-10-08",
+          "verified": true,
+          "source_key": "https://azcentral.com/story/news/metro-phoenix/2026/10/08/scottsdale-to-make-flock-camera-abuse-a-crime/92137855007"
+        },
+        {
+          "title": "Scottsdale City Council to vote on Flock cameras in December meeting",
+          "url": "https://www.azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting/",
+          "date": "2026-10-07",
+          "verified": false,
+          "source_key": "https://azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting"
+        },
+        {
+          "title": "Whitehead moves for a Scottsdale license-plate reader ordinance, vendor review and a possible end to Flock funding",
+          "url": "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which",
+          "date": "2026-10-06",
+          "verified": false,
+          "source_key": "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which"
         }
       ],
       "state": "AZ",
@@ -7391,10 +7412,10 @@
       "sources": [
         {
           "title": "'A Great Crime-Fighting Tool': Flock cameras boost sheriff's office",
-          "url": "https://kspress.com/news/2026/02/09/\u2018a-great-crime-fighting-tool\u2019-flock-cameras-boost-sheriff\u2019s-office",
+          "url": "https://kspress.com/news/2026/02/09/‘a-great-crime-fighting-tool’-flock-cameras-boost-sheriff’s-office",
           "date": "2026-02-09",
           "verified": false,
-          "source_key": "https://kspress.com/news/2026/02/09/\u2018a-great-crime-fighting-tool\u2019-flock-cameras-boost-sheriff\u2019s-office",
+          "source_key": "https://kspress.com/news/2026/02/09/‘a-great-crime-fighting-tool’-flock-cameras-boost-sheriff’s-office",
           "publisher": "Kansas Press Association (Newton Kansan)"
         },
         {

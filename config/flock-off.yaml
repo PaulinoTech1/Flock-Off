@@ -386,7 +386,8 @@ classify:
     # A domain sits here for at least one weekly monitor cycle and may be
     # promoted only with an entry in config/domain_approvals.yaml naming the
     # approver, date, and rationale. Domains here classify as unverified.
-    []
+    - azfamily.com  # KTVK/KPHO Phoenix (Gray); proposed verified_news 2026-10-09
+    - disputeindex.com  # meeting-motion index; provenance under review 2026-10-09
   unverified:
     # Advocacy organizations: reputable, but advocacy. Leads, not citations.
     # Social / video / self-publishing platforms.
