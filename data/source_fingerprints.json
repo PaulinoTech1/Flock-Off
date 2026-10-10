@@ -5408,11 +5408,14 @@
     "url": "https://localyocalidaho.substack.com/p/wilder-amends-flock-camera-deal-but"
   },
   "https://lonepeakpolice.com/flock-safety": {
+    "archive": "a71078055b19e4e1da55fe61d7e01eeb7903413f4dc42b5b4651a0e9c70e9c5f.txt",
     "content_hash": "f92bb011f1d44373ee4a901bd7324f0fa0f5ede3dbb0c36af2fd0b174447c534",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-10",
     "final_url": "https://lonepeakpolice.com/flock-safety/",
     "simhash": "47745869be0ee48f",
+    "snapshot_path": "snapshots/2026-10-10/b9b4ff0b91d9d2770838ef23644e02dfc02ef95138c8a65e532ecdb1ccaf9824.json",
+    "snapshot_status": "uploaded",
     "text_len": 267,
     "title": "Flock Safety – Lone Peak Police Department",
     "url": "https://lonepeakpolice.com/flock-safety/"
