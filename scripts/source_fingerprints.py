@@ -196,8 +196,11 @@ def extract_text(html: str) -> tuple[str, str]:
     return title, text
 
 
-def fetch_page(url: str) -> tuple[str, str | None, str | None]:
-    """Return (status, final_url, html). status: ok|blocked|error|non_html.
+def fetch_page(url: str
+) -> tuple[str, str | None, str | None, str | None]:
+    """Return (status, final_url, html, blocked_reason).
+    status: ok|blocked|error|non_html. blocked_reason is a short string
+    like "http_403" or "cf_challenge" when status is blocked, else None.
 
     Delegates to scripts/fetch_client.py: a browser-like client (Chrome
     TLS impersonation via curl_cffi where installed, stdlib fallback
@@ -282,7 +285,7 @@ def fingerprint_url(url: str, today: str,
     never breaks fingerprinting. The blob pathname is stored as
     snapshot_path.
     """
-    status, final_url, html = fetch_page(url)
+    status, final_url, html, blocked_reason = fetch_page(url)
     rec: dict = {
         "url": url,
         "final_url": final_url,
@@ -292,6 +295,7 @@ def fingerprint_url(url: str, today: str,
         "text_len": 0,
         "fetched_at": today,
         "fetch_status": status,
+        "blocked_reason": blocked_reason,
         "archive": None,
         "snapshot_path": None,
     }
@@ -445,15 +449,16 @@ def drift_check(fps: dict, reviews: dict, keys: set[str] | None = None,
             stats["rereviewed"] += 1
             continue
         time.sleep(fetch_delay())
-        status, _final, html = fetch_page(fp.get("url") or key)
+        status, _final, html, _reason = fetch_page(fp.get("url") or key)
         if status == "error":
             # One retry: transient network failures should not block a push,
             # but a persistently unreachable source must not pass silently.
             time.sleep(fetch_delay())
-            status, _final, html = fetch_page(fp.get("url") or key)
+            status, _final, html, _reason = fetch_page(fp.get("url") or key)
         if status != "ok" or not html:
             stats["blocked" if status == "blocked" else "error"] += 1
-            print(f"  [{status}] {key[:70]}", flush=True)
+            _why = f" ({_reason})" if _reason else ""
+            print(f"  [{status}{_why}] {key[:70]}", flush=True)
             continue
         _title, text = extract_text(html)
         new_sh = simhash64(text)

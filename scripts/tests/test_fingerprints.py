@@ -91,7 +91,7 @@ class TestFingerprintUrl(unittest.TestCase):
                                   archive_directory=self._tmp, key=key)
 
     def test_thin_page(self):
-        fp.fetch_page = lambda url: ("ok", url, "<html><body><p>tiny</p></body></html>")
+        fp.fetch_page = lambda url: ("ok", url, "<html><body><p>tiny</p></body></html>", None)
         rec = self._fp("https://example.com/")
         self.assertEqual(rec["fetch_status"], "thin")
         self.assertIsNone(rec["simhash"])
@@ -99,7 +99,7 @@ class TestFingerprintUrl(unittest.TestCase):
 
     def test_ok_page(self):
         body = "<html><body>" + "<p>substantive paragraph of text</p>" * 40 + "</body></html>"
-        fp.fetch_page = lambda url: ("ok", url, body)
+        fp.fetch_page = lambda url: ("ok", url, body, None)
         rec = self._fp("https://example.com/")
         self.assertEqual(rec["fetch_status"], "ok")
         self.assertIsNotNone(rec["simhash"])
@@ -107,14 +107,14 @@ class TestFingerprintUrl(unittest.TestCase):
         self.assertGreaterEqual(rec["text_len"], fp.min_text_len())
 
     def test_blocked_page(self):
-        fp.fetch_page = lambda url: ("blocked", url, None)
+        fp.fetch_page = lambda url: ("blocked", url, None, "http_403")
         rec = self._fp("https://example.com/")
         self.assertEqual(rec["fetch_status"], "blocked")
         self.assertIsNone(rec["simhash"])
 
     def test_archive_written_on_ok(self):
         body = "<html><head><title>T</title></head><body>" + "<p>substantive paragraph of text</p>" * 40 + "</body></html>"
-        fp.fetch_page = lambda url: ("ok", url, body)
+        fp.fetch_page = lambda url: ("ok", url, body, None)
         rec = self._fp("https://example.com/canonical-key")
         self.assertIsNotNone(rec["archive"])
         archived = fp.read_archive("https://example.com/canonical-key",
@@ -126,14 +126,14 @@ class TestFingerprintUrl(unittest.TestCase):
 
     def test_archive_keyed_by_canonical_key(self):
         body = "<html><body>" + "<p>substantive paragraph of text</p>" * 40 + "</body></html>"
-        fp.fetch_page = lambda url: ("ok", url, body)
+        fp.fetch_page = lambda url: ("ok", url, body, None)
         rec = self._fp("https://example.com/some-url", key="canonical-key")
         self.assertEqual(rec["archive"], fp.archive_filename("canonical-key"))
         self.assertIsNotNone(fp.read_archive("canonical-key",
                                              directory=self._tmp))
 
     def test_no_archive_on_blocked(self):
-        fp.fetch_page = lambda url: ("blocked", url, None)
+        fp.fetch_page = lambda url: ("blocked", url, None, "http_403")
         rec = self._fp("https://example.com/")
         self.assertIsNone(rec["archive"])
         self.assertIsNone(fp.read_archive("https://example.com/",
@@ -171,21 +171,21 @@ class TestRefreshQuarantine(unittest.TestCase):
         } for i in range(n)]}
 
     def test_blocked_record_gets_retry_after(self):
-        fp.fetch_page = lambda url: ("blocked", url, None)
+        fp.fetch_page = lambda url: ("blocked", url, None, "http_403")
         rec = fp.fingerprint_url("https://example.com/", "2026-10-04",
                                  key="k")
         self.assertEqual(rec["fetch_status"], "blocked")
         self.assertEqual(rec["retry_after"], "2026-11-03")  # +30d
 
     def test_error_quarantine_is_shorter(self):
-        fp.fetch_page = lambda url: ("error", url, None)
+        fp.fetch_page = lambda url: ("error", url, None, None)
         rec = fp.fingerprint_url("https://example.com/", "2026-10-04",
                                  key="k")
         self.assertEqual(rec["retry_after"], "2026-10-11")  # +7d
 
     def test_ok_record_has_no_retry_after(self):
         body = "<html><body>" + "<p>substantive paragraph of text</p>" * 40
-        fp.fetch_page = lambda url: ("ok", url, body)
+        fp.fetch_page = lambda url: ("ok", url, body, None)
         import tempfile
         with tempfile.TemporaryDirectory() as tmp:
             rec = fp.fingerprint_url("https://example.com/", "2026-10-04",
@@ -215,7 +215,7 @@ class TestRefreshQuarantine(unittest.TestCase):
         fps = {"key-0": {"fetch_status": "blocked",
                          "fetched_at": "2026-09-01",
                          "retry_after": "2026-10-01"}}
-        fp.fetch_page = lambda url: ("blocked", url, None)
+        fp.fetch_page = lambda url: ("blocked", url, None, "http_403")
         stats = fp.refresh(data, fps, max_n=25, max_age_days=60)
         self.assertEqual(stats["fetched"], 1)
         self.assertEqual(stats["blocked"], 1)
@@ -226,7 +226,7 @@ class TestRefreshQuarantine(unittest.TestCase):
         data = self._data(1)
         fps = {"key-0": {"fetch_status": "blocked",
                          "fetched_at": "2026-09-01"}}
-        fp.fetch_page = lambda url: ("blocked", url, None)
+        fp.fetch_page = lambda url: ("blocked", url, None, "http_403")
         stats = fp.refresh(data, fps, max_n=25, max_age_days=60)
         self.assertEqual(stats["fetched"], 1)
         self.assertIn("retry_after", fps["key-0"])

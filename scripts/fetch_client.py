@@ -25,7 +25,10 @@ What this does NOT do (standing rule, unchanged):
     shared identity, honest delays, same as before.
 
 Return contract matches source_fingerprints.fetch_page:
-  (status, final_url, html) with status in ok|blocked|error|non_html.
+  (status, final_url, html, blocked_reason) with status in
+  ok|blocked|error|non_html. blocked_reason is a short string like
+  "http_403", "cf_challenge", or "challenge_title" when status is
+  "blocked", else None.
 """
 from __future__ import annotations
 
@@ -82,6 +85,25 @@ def _looks_like_challenge(html: str) -> bool:
     return "just a moment" in head and "cloudflare" in head
 
 
+def _blocked_reason(status_code: int, html: str | None) -> str | None:
+    """Short machine-readable reason for a blocked fetch. Distinguishes
+    HTTP-code blocks from presented bot challenges so quarantine decisions
+    can tell a Cloudflare Turnstile apart from a soft 403."""
+    if status_code in _BLOCKED_CODES:
+        return f"http_{status_code}"
+    head = (html or "")[:8000].lower()
+    if not head:
+        return "empty_challenge"
+    title = re.search(r"<title>(.*?)</title>", head, re.S)
+    if title and any(m in title.group(1) for m in _CHALLENGE_MARKERS):
+        return "challenge_title"
+    if "just a moment" in head and "cloudflare" in head:
+        return "cf_challenge"
+    if any(m in head for m in _CHALLENGE_MARKERS):
+        return "challenge_body"
+    return "challenge_unknown"
+
+
 def _sniff_blocked(status_code: int, html: str | None) -> bool:
     if status_code in _BLOCKED_CODES:
         return True
@@ -129,7 +151,7 @@ class FetchClient:
     def backend(self) -> str:
         return "curl_cffi" if self._curl else "urllib"
 
-    def fetch(self, url: str) -> tuple[str, str | None, str | None]:
+    def fetch(self, url: str) -> tuple[str, str | None, str | None, str | None]:
         if self._curl:
             return self._fetch_curl(url)
         return self._fetch_urllib(url)
@@ -139,20 +161,21 @@ class FetchClient:
             resp = self._sess.get(url, headers=_BROWSER_HEADERS,
                                   timeout=self.timeout)
         except Exception:
-            return "error", None, None
+            return "error", None, None, None
         body = resp.content[: self.max_bytes + 1]
         # curl_cffi normally decodes transparently; unpack defensively in
         # case a response arrives still encoded (see _decompress_body).
         body = _decompress_body(body, resp.headers.get("Content-Encoding"))
         html = body.decode("utf-8", errors="replace")
         if _sniff_blocked(resp.status_code, html):
-            return "blocked", None, None
+            return ("blocked", None, None,
+                    _blocked_reason(resp.status_code, html))
         if resp.status_code >= 400:
-            return "error", None, None
+            return "error", None, None, None
         ctype = resp.headers.get("Content-Type", "")
         if "html" not in ctype and "text" not in ctype:
-            return "non_html", resp.url, None
-        return "ok", resp.url, html
+            return "non_html", resp.url, None, None
+        return "ok", resp.url, html, None
 
     def _fetch_urllib(self, url: str):
         # The stdlib backend can only decode gzip/deflate: advertise just
@@ -169,16 +192,17 @@ class FetchClient:
                 encoding = resp.headers.get("Content-Encoding")
         except urllib.request.HTTPError as e:
             if e.code in _BLOCKED_CODES:
-                return "blocked", None, None
-            return "error", None, None
+                return "blocked", None, None, f"http_{e.code}"
+            return "error", None, None, None
         except Exception:
-            return "error", None, None
+            return "error", None, None, None
         try:
             html = _decompress_body(raw, encoding).decode("utf-8", errors="replace")
         except Exception:
-            return "error", None, None
+            return "error", None, None, None
         if _sniff_blocked(code, html):
-            return "blocked", None, None
+            return ("blocked", None, None,
+                    _blocked_reason(code, html))
         if "html" not in ctype and "text" not in ctype:
-            return "non_html", final_url, None
-        return "ok", final_url, html
+            return "non_html", final_url, None, None
+        return "ok", final_url, html, None

@@ -102,6 +102,173 @@ def classify(url: str) -> tuple[bool, str]:
     return False, "unverified-unlisted"
 
 
+def promote_domain(domain: str, tier: str, rationale: str,
+                   approved_by: str = "Boss",
+                   assume_yes: bool = False) -> None:
+    """Promote a domain from pending_classify to a verified tier.
+
+    Evidence-then-apply: prints every citation using the domain (count,
+    date range, sample titles) BEFORE touching any file, so the reviewer
+    sees what they are approving in the same terminal. Requires
+    --rationale; aborts unless confirmed (--yes or interactive y).
+
+    Edits are surgical text operations on config/flock-off.yaml and
+    config/domain_approvals.yaml so hand-maintained comments survive.
+    """
+    import datetime as _dt
+
+    domain = (domain or "").lower().strip().removeprefix("www.")
+    if tier not in ("verified_news", "verified_primary"):
+        sys.exit(f"promote: tier must be verified_news or verified_primary, "
+                 f"got {tier!r}")
+    if not rationale or not rationale.strip():
+        sys.exit("promote: --rationale is required")
+    cfg = _cfg()
+    pending = set(cfg["classify"].get("pending_classify") or [])
+    if domain not in pending:
+        sys.exit(f"promote: {domain} is not in classify.pending_classify "
+                 f"(quarantine first, then promote)")
+
+    # ---- Evidence phase (read-only) ----
+    data_path = cfg["paths"]["data"]
+    with open(data_path, encoding="utf-8") as f:
+        data = json.load(f)
+    hits: list[tuple[str, str, str, str]] = []  # agency, title, date, url
+    for agency in data["agencies"]:
+        for src in agency.get("sources") or []:
+            if host_of(src.get("url", "")) == domain:
+                hits.append((agency.get("id", "?"),
+                             src.get("title", "(no title)"),
+                             src.get("date", "?"),
+                             src.get("url", "")))
+    print(f"=== promote {domain} -> {tier} ===")
+    print(f"citations using this domain: {len(hits)}")
+    if hits:
+        dates = sorted(h for _, _, h, _ in hits if h and h != "?")
+        if dates:
+            print(f"date range: {dates[0]} .. {dates[-1]}")
+        print("sample titles:")
+        for _ag, title, _d, _u in hits[:5]:
+            print(f"  - {title[:80]}")
+        if len(hits) > 5:
+            print(f"  ...and {len(hits) - 5} more")
+    else:
+        print("(no citations in the dataset currently use this domain)")
+    print(f"rationale: {rationale.strip()}")
+    print(f"approver: {approved_by}, date: {_dt.date.today().isoformat()}")
+
+    if not assume_yes:
+        try:
+            ans = input("apply promotion? [y/N] ").strip().lower()
+        except EOFError:
+            ans = ""
+        if ans not in ("y", "yes"):
+            print("promote: aborted, no files changed")
+            return
+
+    # ---- Apply phase: surgical text edits, comments preserved ----
+    repo_root = cfg["_repo_root"]
+    flockoff_yaml = os.path.join(repo_root, "config", "flock-off.yaml")
+    approvals_yaml = os.path.join(repo_root, "config", "domain_approvals.yaml")
+
+    with open(flockoff_yaml, encoding="utf-8") as f:
+        lines = f.readlines()
+
+    def _section_bounds(key: str) -> tuple[int, int]:
+        """(start, end) line indices of a `classify:` subsection's body,
+        end exclusive. The body is the run of 4+-space-indented lines
+        (list items, comments, blank lines) after `  {key}:`; it ends at
+        the next 2-space sibling key or end of file."""
+        start = -1
+        for i, ln in enumerate(lines):
+            if ln == f"  {key}:\n":
+                start = i + 1
+                break
+        if start == -1:
+            sys.exit(f"promote: section {key!r} not found in "
+                     f"config/flock-off.yaml")
+        end = len(lines)
+        for i in range(start, len(lines)):
+            ln = lines[i]
+            if ln.strip() == "":
+                continue
+            # A 2-space-indented non-continuation line is the next key.
+            if ln.startswith("  ") and not ln.startswith("   "):
+                end = i
+                break
+            if not ln.startswith(" "):
+                end = i
+                break
+        return start, end
+
+    # 1. Remove from pending_classify.
+    ps, pe = _section_bounds("pending_classify")
+    removed = False
+    kept = []
+    for ln in lines[ps:pe]:
+        stripped = ln.strip()
+        if stripped.startswith("- "):
+            item = stripped[2:].split("#")[0].strip()
+            if item == domain:
+                removed = True
+                continue
+        kept.append(ln)
+    if not removed:
+        # pending_classify may be an inline `[]`; handle that too.
+        for i in range(ps):
+            if lines[i] == "  pending_classify:\n":
+                break
+        else:
+            i = -1
+        if i != -1 and ps < len(lines) and lines[ps].strip() == "[]":
+            sys.exit(f"promote: {domain} listed in config but section is "
+                     f"empty inline list; edit config/flock-off.yaml by hand")
+        sys.exit(f"promote: {domain} not found as a list item under "
+                 f"pending_classify")
+    lines[ps:pe] = kept
+
+    # 2. Insert into the target tier list, sorted.
+    ts, te = _section_bounds(tier)
+    items = []
+    for ln in lines[ts:te]:
+        stripped = ln.strip()
+        if stripped.startswith("- "):
+            items.append(stripped[2:].split("#")[0].strip())
+    if domain in items:
+        sys.exit(f"promote: {domain} is already in {tier}")
+    insert_at = ts
+    for i, ln in enumerate(lines[ts:te]):
+        stripped = ln.strip()
+        if stripped.startswith("- "):
+            item = stripped[2:].split("#")[0].strip()
+            if item > domain:
+                insert_at = ts + i
+                break
+            insert_at = ts + i + 1
+    lines.insert(insert_at, f"    - {domain}\n")
+
+    with open(flockoff_yaml, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+    print(f"updated config/flock-off.yaml: moved {domain} to {tier}")
+
+    # 3. Append the approval entry.
+    today = _dt.date.today().isoformat()
+    safe_rationale = rationale.strip().replace('"', "'")
+    entry = (f"  {domain}:\n"
+             f"    tier: {tier}\n"
+             f"    approved_by: {approved_by}\n"
+             f"    date: {today}\n"
+             f"    rationale: \"{safe_rationale}\"\n")
+    with open(approvals_yaml, encoding="utf-8") as f:
+        content = f.read()
+    if not content.endswith("\n"):
+        content += "\n"
+    with open(approvals_yaml, "w", encoding="utf-8") as f:
+        f.write(content + entry)
+    print(f"updated config/domain_approvals.yaml: approval recorded")
+    print(f"promote: {domain} -> {tier} complete")
+
+
 def stamp_source(src: dict, verified: bool) -> None:
     """Set the verified flag, preserving every field in a stable key order.
 

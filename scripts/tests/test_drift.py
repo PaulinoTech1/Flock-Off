@@ -51,7 +51,7 @@ class TestDriftCheck(unittest.TestCase):
         def fake_fetch(url):
             html = ("<html><head><title>t</title></head><body><p>"
                     + live_text + "</p></body></html>")
-            return "ok", url, html
+            return "ok", url, html, None
         with mock.patch.object(sf, "fetch_page", fake_fetch), \
              mock.patch.object(sf.time, "sleep", lambda s: None):
             return sf.drift_check(fps, reviews)
@@ -88,7 +88,7 @@ class TestDriftCheck(unittest.TestCase):
     def test_keys_scoping(self):
         fps = {"k1": _fp_for(TEXT_A), "k2": _fp_for(TEXT_A)}
         with mock.patch.object(sf, "fetch_page",
-                               lambda u: ("ok", u, "<html><body><p>" + TEXT_B + "</p></body></html>")), \
+                               lambda u: ("ok", u, "<html><body><p>" + TEXT_B + "</p></body></html>", None)), \
              mock.patch.object(sf.time, "sleep", lambda s: None):
             drifted, stats = sf.drift_check(fps, {}, keys={"k1"})
         self.assertEqual(stats["checked"], 1)
@@ -99,7 +99,7 @@ class TestDriftCheck(unittest.TestCase):
         # A source the gate cannot re-fetch is unverifiable, not clean:
         # it must be counted, never silently treated as "no drift".
         fps = {"k": _fp_for(TEXT_A)}
-        with mock.patch.object(sf, "fetch_page", lambda u: ("blocked", None, None)), \
+        with mock.patch.object(sf, "fetch_page", lambda u: ("blocked", None, None, "http_403")), \
              mock.patch.object(sf.time, "sleep", lambda s: None):
             drifted, stats = sf.drift_check(fps, {})
         self.assertEqual(drifted, [])
@@ -111,7 +111,7 @@ class TestDriftCheck(unittest.TestCase):
         calls = []
         def flaky(url):
             calls.append(url)
-            return ("error", None, None)
+            return ("error", None, None, None)
         with mock.patch.object(sf, "fetch_page", flaky), \
              mock.patch.object(sf.time, "sleep", lambda s: None):
             drifted, stats = sf.drift_check(fps, {})
@@ -122,7 +122,7 @@ class TestDriftCheck(unittest.TestCase):
     def test_error_retry_recovers(self):
         fps = {"k": _fp_for(TEXT_A)}
         html = ("<html><head><title>t</title></head><body><p>" + TEXT_A + "</p></body></html>")
-        seq = [("error", None, None), ("ok", "http://example.invalid/article", html)]
+        seq = [("error", None, None, None), ("ok", "http://example.invalid/article", html, None)]
         with mock.patch.object(sf, "fetch_page", lambda u: seq.pop(0)), \
              mock.patch.object(sf.time, "sleep", lambda s: None):
             drifted, stats = sf.drift_check(fps, {})
@@ -137,7 +137,7 @@ class TestDriftCheck(unittest.TestCase):
              mock.patch.object(sf, "load_reviews", lambda: {}), \
              mock.patch.object(sf, "data_path", lambda: "/dev/null"), \
              mock.patch.object(sf, "iter_citations", lambda data: []), \
-             mock.patch.object(sf, "fetch_page", lambda u: ("blocked", None, None)), \
+             mock.patch.object(sf, "fetch_page", lambda u: ("blocked", None, None, "http_403")), \
              mock.patch.object(sf.time, "sleep", lambda s: None), \
              mock.patch("builtins.open", mock.mock_open(read_data='{"agencies": []}')), \
              self.assertRaises(SystemExit) as cm:

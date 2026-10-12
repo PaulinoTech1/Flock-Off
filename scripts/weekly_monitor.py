@@ -416,6 +416,25 @@ def main() -> None:
             return key, fps.get(key)
 
         # Layer 2: pairwise near-duplicate detection across URLs.
+        # Each candidate carries (agency_id, title, url, key, simhash, date).
+        # Syndication clustering (informational): pairs with near-identical
+        # normalized titles AND dates within 7 days are flagged as likely
+        # syndicated copies for the independence judgment the methodology
+        # requires. Human-gated; similar local stories can false-positive.
+        import re as _re
+        import datetime as _dt
+
+        def _norm_title(t: str) -> str:
+            return _re.sub(r"[^a-z0-9]", "", (t or "").lower())
+
+        def _parse_date(d) -> _dt.date | None:
+            if not d or not isinstance(d, str):
+                return None
+            try:
+                return _dt.date.fromisoformat(d[:10])
+            except ValueError:
+                return None
+
         cands = []
         for agency in agencies:
             for src in agency.get("sources", []):
@@ -425,23 +444,36 @@ def main() -> None:
                 if fp.get("text_len", 0) < sfp.pair_min_len():
                     continue
                 cands.append((agency["id"], src.get("title", ""), src["url"],
-                              key, int(fp["simhash"], 16)))
+                              key, int(fp["simhash"], 16),
+                              _parse_date(src.get("date"))))
         pairs = []
         for i in range(len(cands)):
             for j in range(i + 1, len(cands)):
                 if cands[i][3] == cands[j][3]:
                     continue  # same canonical URL: legitimate reuse, not a dup
                 if sfp.hamming(cands[i][4], cands[j][4]) <= sfp.near_dup_distance():
-                    pairs.append((cands[i], cands[j]))
+                    # Syndication signal: same normalized title + close dates.
+                    t1n, t2n = _norm_title(cands[i][1]), _norm_title(cands[j][1])
+                    d1, d2 = cands[i][5], cands[j][5]
+                    syndicated = (
+                        bool(t1n and t2n and t1n == t2n)
+                        and d1 is not None and d2 is not None
+                        and abs((d1 - d2).days) <= 7
+                    )
+                    pairs.append((cands[i], cands[j], syndicated))
         lines.append("## Possible duplicate sources (cross-URL)")
         if pairs:
-            for (a1, t1, u1, k1, _), (a2, t2, u2, k2, _) in pairs[:12]:
+            for (a1, t1, u1, k1, _, _), (a2, t2, u2, k2, _, _), synd in pairs[:12]:
                 scope = "SAME AGENCY" if a1 == a2 else "cross-agency"
-                lines.append(f"- [{scope}] {a1} <-> {a2} (simhash near-duplicate)")
+                tag = "likely syndicated" if synd else "simhash near-duplicate"
+                lines.append(f"- [{scope}] {a1} <-> {a2} ({tag})")
                 lines.append(f"  - {t1[:70]}: {u1[:90]}")
                 lines.append(f"  - {t2[:70]}: {u2[:90]}")
                 if a1 == a2:
                     lines.append("  - Proposed: drop the redundant citation, keep one URL.")
+                elif synd:
+                    lines.append("  - Informational: likely the same story syndicated; "
+                                 "counts as one independent source per methodology.")
             if len(pairs) > 12:
                 lines.append(f"  - ...and {len(pairs) - 12} more pairs")
         else:
@@ -465,7 +497,7 @@ def main() -> None:
         changed, probe_blocked, probe_err = [], 0, 0
         for agency_id, title, url, key, fp in sample:
             time.sleep(_cfg()["monitor"]["update_probe_delay"])
-            fetch_status, _, html = sfp.fetch_page(url)
+            fetch_status, _, html, _reason = sfp.fetch_page(url)
             if fetch_status != "ok" or not html:
                 if fetch_status == "blocked":
                     probe_blocked += 1
@@ -531,6 +563,45 @@ def main() -> None:
         f"(1 primary record + 2 independent news sources), "
         f"{len(terminal) - bar_met} pending validation*."
     )
+    # Blocked / quarantined sources: the fetch backlog the reviewer
+    # cannot see otherwise. Counts by status and top blocked_reasons
+    # (from fetch_client: http_403, cf_challenge, challenge_title...).
+    lines.append("")
+    lines.append("## Blocked sources (quarantine backlog)")
+    if fps:
+        import datetime as _dt
+        _today = _dt.date.today().isoformat()
+        _q_by_status: dict[str, int] = {}
+        _q_by_reason: dict[str, int] = {}
+        _q_total = 0
+        for _k, _rec in fps.items():
+            if not isinstance(_rec, dict) or "fetch_status" not in _rec:
+                continue
+            _ra = _rec.get("retry_after")
+            if _ra and _ra > _today:
+                _q_total += 1
+                _st = _rec.get("fetch_status", "?")
+                _q_by_status[_st] = _q_by_status.get(_st, 0) + 1
+                _rs = _rec.get("blocked_reason")
+                if _rs:
+                    _q_by_reason[_rs] = _q_by_reason.get(_rs, 0) + 1
+        if _q_total:
+            lines.append(f"- {_q_total} source(s) quarantined "
+                         f"(not re-fetched until retry_after passes).")
+            for _st, _n in sorted(_q_by_status.items()):
+                lines.append(f"  - { _st}: {_n}")
+            if _q_by_reason:
+                lines.append("- top blocked reasons:")
+                for _rs, _n in sorted(_q_by_reason.items(),
+                                      key=lambda kv: -kv[1])[:5]:
+                    lines.append(f"  - {_rs}: {_n}")
+            lines.append("- These are unverifiable by design; clear the "
+                         "block (or wait out the quarantine) before citing.")
+        else:
+            lines.append("- none quarantined")
+    else:
+        lines.append("- fingerprints unavailable; backlog unknown "
+                     "(see Monitor health)")
     if health_notes:
         lines.append("")
         lines.append("## Monitor health")

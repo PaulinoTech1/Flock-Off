@@ -160,6 +160,31 @@ push workflow must move to local git on the maintainer's machine with their
 signing key, and the maintainer runs pushes themselves. That trade is
 documented here so it is a conscious decision, not drift.
 
+## Push helper
+
+Releases push via `~/workspace/flock-off-deploy/github_push.py`, an
+external helper outside this repo. It is external for a reason: this
+working tree has no local `.git`, so pushes go through GitHub's Git
+Data API (create blobs, trees, commits, update refs) rather than
+`git push`.
+
+What the helper does, in order:
+1. Re-runs the full release gate (tests, keys check, classify check,
+   signature verification) fail-closed. A broken tree never leaves
+   the machine even if `flockoff.py release` pre-flight was skipped.
+2. Builds the commit via the Git Data API and updates `main`.
+
+What it does not do:
+- It does not sign commits (platform limitation, see above).
+- It does not push `.github/workflows/**` paths (GitHub blocks them
+  in git/trees; workflow files go via the Contents API or web UI).
+
+`flockoff.py release` checks the helper exists in pre-flight step 0,
+before tests and signing, so a missing helper fails fast instead of
+after minutes of expensive work. If the helper is missing, the release
+aborts with the path it looked for; restore
+`~/workspace/flock-off-deploy/` from backup or re-create it.
+
 ## Rotation
 
 Generate a new keypair on the release VM, point `FLOCK_OFF_SIGNING_KEY` at

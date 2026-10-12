@@ -87,20 +87,20 @@ class TestContentDecoding(unittest.TestCase):
         # directly, which exercises the stdlib fallback regardless of which
         # backend is default. CI installs curl_cffi via requirements.txt, so
         # asserting backend == "urllib" fails there (2026-10-09 incident).
-        status, url, html = client._fetch_urllib(self._url("/gzip"))
+        status, url, html, _reason = client._fetch_urllib(self._url("/gzip"))
         self.assertEqual(status, "ok")
         self.assertIn("Hello, Flock-Off.", html)
         self.assertNotIn("\ufffd", html[:20])  # no binary garbage
 
     def test_urllib_backend_decodes_deflate(self):
         client = fc.FetchClient()
-        status, url, html = client._fetch_urllib(self._url("/deflate"))
+        status, url, html, _reason = client._fetch_urllib(self._url("/deflate"))
         self.assertEqual(status, "ok")
         self.assertIn("Hello, Flock-Off.", html)
 
     def test_urllib_backend_plain_still_works(self):
         client = fc.FetchClient()
-        status, url, html = client._fetch_urllib(self._url("/plain"))
+        status, url, html, _reason = client._fetch_urllib(self._url("/plain"))
         self.assertEqual(status, "ok")
         self.assertIn("Hello, Flock-Off.", html)
 
@@ -141,3 +141,27 @@ class TestContentDecoding(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestBlockedReason(unittest.TestCase):
+    def test_http_code_reason(self):
+        self.assertEqual(fc._blocked_reason(403, "<html></html>"), "http_403")
+        self.assertEqual(fc._blocked_reason(429, None), "http_429")
+
+    def test_cloudflare_challenge_reason(self):
+        html = ("<html><head><title>Loading</title></head>"
+                "<body>Just a moment... cloudflare security check</body></html>")
+        self.assertEqual(fc._blocked_reason(200, html), "cf_challenge")
+
+    def test_challenge_title_reason(self):
+        html = ("<html><head><title>Attention Required! | Cloudflare</title></head>"
+                "<body>verifying</body></html>")
+        self.assertEqual(fc._blocked_reason(200, html), "challenge_title")
+
+    def test_challenge_body_reason(self):
+        html = "<html><body>please complete the captcha to continue</body></html>"
+        self.assertEqual(fc._blocked_reason(200, html), "challenge_body")
+
+    def test_empty_html_reason(self):
+        self.assertEqual(fc._blocked_reason(200, ""), "empty_challenge")
+        self.assertEqual(fc._blocked_reason(200, None), "empty_challenge")

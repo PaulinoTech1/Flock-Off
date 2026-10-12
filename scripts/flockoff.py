@@ -53,6 +53,97 @@ def cmd_keys(args, _cfg) -> None:
     source_keys.main(["--check"] if args.check else [])
 
 
+def cmd_hygiene(args, _cfg) -> None:
+    """One-command hygiene: keys check/backfill + classify --check +
+    fingerprints quarantine summary. Read-only by default; --fix applies
+    the backfill steps that modify files. Continues through all steps and
+    reports a final pass/fail so nothing is silently skipped."""
+    import json as _json
+    import datetime as _dt
+
+    fix = getattr(args, "fix", False)
+    failures: list[str] = []
+    print("=== Flock-Off hygiene ===")
+    print(f"mode: {'fix (modifies files)' if fix else 'read-only'}")
+    print()
+
+    # 1. keys check (read-only)
+    print("--- keys check ---")
+    import source_keys
+    try:
+        source_keys.main(["--check"])
+    except SystemExit as e:
+        if e.code != 0:
+            msg = f"keys check FAILED (exit {e.code})"
+            print(msg, file=sys.stderr)
+            failures.append("keys check")
+            if not fix:
+                print("hint: run with --fix to backfill", file=sys.stderr)
+
+    # 2. keys backfill (only with --fix; modifies data/agencies.json)
+    if fix:
+        print()
+        print("--- keys backfill ---")
+        try:
+            source_keys.main([])
+        except SystemExit as e:
+            if e.code != 0:
+                print(f"keys backfill FAILED (exit {e.code})",
+                      file=sys.stderr)
+                failures.append("keys backfill")
+
+    # 3. classify --check (read-only)
+    print()
+    print("--- classify --check ---")
+    import classify_sources
+    try:
+        classify_sources.main(["--check"])
+    except SystemExit as e:
+        if e.code != 0:
+            print(f"classify --check FAILED (exit {e.code})", file=sys.stderr)
+            failures.append("classify --check")
+
+    # 4. fingerprints quarantine summary (read-only)
+    print()
+    print("--- fingerprints quarantine summary ---")
+    fp_path = os.path.join("data", "source_fingerprints.json")
+    try:
+        with open(fp_path, encoding="utf-8") as f:
+            fps = _json.load(f)
+    except (OSError, _json.JSONDecodeError) as e:
+        print(f"cannot read {fp_path}: {e}", file=sys.stderr)
+        failures.append("quarantine summary (unreadable fingerprints)")
+    else:
+        # Fingerprint DB is a flat dict keyed by source_key; older
+        # snapshots may nest under "sources".
+        sources = fps.get("sources")
+        if not isinstance(sources, dict):
+            sources = {k: v for k, v in fps.items()
+                       if isinstance(v, dict) and "fetch_status" in v}
+        today = _dt.date.today().isoformat()
+        quarantined: dict[str, int] = {}
+        for _key, rec in sources.items():
+            retry_after = rec.get("retry_after")
+            status = rec.get("fetch_status", "?")
+            if retry_after and retry_after > today:
+                quarantined[status] = quarantined.get(status, 0) + 1
+        total = len(sources)
+        q_total = sum(quarantined.values())
+        print(f"sources: {total}, quarantined: {q_total}")
+        if quarantined:
+            for status, count in sorted(quarantined.items()):
+                print(f"  {status}: {count}")
+        else:
+            print("  (none quarantined)")
+
+    print()
+    if failures:
+        print(f"=== hygiene FAILED: {', '.join(failures)} ===",
+              file=sys.stderr)
+        sys.exit(1)
+    print("=== hygiene OK ===")
+
+
 def cmd_snapshot(args, _cfg) -> None:
     """Retrieve a JSON snapshot from the blob archive by source key or
     blob pathname. Integrity-verified on download. Used in drift review
@@ -122,6 +213,11 @@ def cmd_fingerprints(args, _cfg) -> None:
 
 def cmd_classify(args, _cfg) -> None:
     import classify_sources
+    if getattr(args, "classify_cmd", None) == "promote":
+        classify_sources.promote_domain(
+            args.domain, args.tier, args.rationale,
+            approved_by=args.by, assume_yes=args.yes)
+        return
     classify_sources.main(["--check"] if args.check else [])
 
 
@@ -167,6 +263,14 @@ def cmd_release(args, cfg) -> None:
                     val = line.split("=", 1)[1].strip().strip("\"'")
                     val = val.replace("$HOME", os.path.expanduser("~"))
                     os.environ["FLOCK_OFF_SIGNING_KEY"] = val
+
+    # 0. Pre-flight: the push helper must exist before any expensive work.
+    #    Failing here (not after tests + signing) saves a wasted release.
+    #    See docs/RELEASE_SIGNING.md "Push helper".
+    helper = os.path.expanduser("~/workspace/flock-off-deploy/github_push.py")
+    if not os.path.isfile(helper):
+        sys.exit(f"release: push helper not found: {helper} "
+                 f"(see docs/RELEASE_SIGNING.md)")
 
     # 1. Pre-flight: same checks the push gate enforces, failed fast here
     #    so a broken tree never reaches the signing step. The subcommands
@@ -218,9 +322,7 @@ def cmd_release(args, cfg) -> None:
         return
 
     # 4. Push. The helper runs release_gate() again (fail-closed) first.
-    helper = os.path.expanduser("~/workspace/flock-off-deploy/github_push.py")
-    if not os.path.isfile(helper):
-        sys.exit(f"release: push helper not found: {helper}")
+    #    (Existence was verified in pre-flight step 0.)
     r = subprocess.run([sys.executable, helper, args.message])
     if r.returncode != 0:
         sys.exit(f"release: push failed (exit {r.returncode})")
@@ -267,10 +369,29 @@ def build_parser() -> argparse.ArgumentParser:
     cl = sub.add_parser("classify", help="source evidence-tier classification")
     cl.add_argument("--check", action="store_true",
                     help="report only, do not modify data files")
+    clsub = cl.add_subparsers(dest="classify_cmd")
+    pr = clsub.add_parser("promote",
+                          help="promote a domain from pending_classify "
+                               "to a verified tier")
+    pr.add_argument("domain", help="domain to promote")
+    pr.add_argument("--tier", required=True,
+                    choices=["verified_news", "verified_primary"],
+                    help="target verified tier")
+    pr.add_argument("--rationale", required=True,
+                    help="why this domain qualifies (recorded)")
+    pr.add_argument("--by", default="Boss", help="approver name")
+    pr.add_argument("--yes", action="store_true",
+                    help="apply without interactive confirmation")
 
     m = sub.add_parser("monitor", help="run the weekly monitor")
     m.add_argument("local_dataset", nargs="?",
                    help="local agencies.json fallback if the GitHub fetch fails")
+
+    h = sub.add_parser("hygiene",
+                       help="one-command hygiene: keys, classify, quarantine")
+    h.add_argument("--fix", action="store_true",
+                   help="run backfill steps that modify files "
+                        "(default: read-only)")
 
     s = sub.add_parser("snapshot",
                        help="retrieve a JSON snapshot from the blob archive")
@@ -314,6 +435,7 @@ def main() -> None:
         ("fingerprints", "backfill-archive"): cmd_fingerprints,
         ("classify", None): cmd_classify,
         ("monitor", None): cmd_monitor,
+        ("hygiene", None): cmd_hygiene,
         ("snapshot", None): cmd_snapshot,
         ("test", None): cmd_test,
         ("release", None): cmd_release,
