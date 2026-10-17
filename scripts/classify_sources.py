@@ -327,7 +327,7 @@ def main(argv: list[str] | None = None) -> None:
     # Only touch the dataset when the bytes actually change. An unconditional
     # rewrite (e.g. key reordering by stamp_source) invalidates the integrity
     # manifest and audit tip even when no flag changed.
-    new_raw = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
+    new_raw = json.dumps(data, indent=2, ensure_ascii=True) + "\n"
     if new_raw == raw_before:
         print(f"no changes; {data_path} untouched")
     else:
