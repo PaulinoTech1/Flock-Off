@@ -217,9 +217,9 @@
   },
   "https://minneapolimedia.town.news/g/coon-rapids-mn/n/379970/minneapolimedia-news-columbia-heights-ends-flock-safety-contract-after": {
     "decision": "accept",
-    "note": "Drift d=19 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
-    "reviewed_at": "2026-09-26",
-    "reviewed_by": "Alexander"
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Drift d=23 reviewed 2026-10-17: article confirmed live and supports the record; it independently corroborates the registered council item (June 8, 2026 unanimous termination vote, $151,000 three-year total, $49,000 final year, 12 cameras). Body intact; drift is page furniture."
   },
   "https://myedmondsnews.com/2026/05/edmonds-cancels-contract-with-flock-license-plate-reader-system": {
     "decision": "accept",
@@ -448,5 +448,35 @@
     "note": "Source returns 403 to automated fetcher; Boss manually downloaded and verified article content (PDF archived at docs/source_archives/midwesterner-2026-09-flock-privacy.pdf). Verified by another means per drift gate policy.",
     "reviewed_at": "2026-10-09",
     "reviewed_by": "Alexander"
+  },
+  "https://brightgram.com/wichita-ks/10511520/flock-cameras-vandalized-in-derby-police-investigating": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Drift d=20 reviewed 2026-10-17: KWCH story mirrored on Brightgram confirmed live; cited claim intact (two Flock cameras cut down in Derby, police investigating). Drift is aggregator page churn (ads/related modules), not the article body."
+  },
+  "https://postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Drift d=36 reviewed 2026-10-17: Post-Crescent article confirmed live; cited claims intact (city asked Flock to verify 20 cameras disabled by June 30, 2026, removal by July 31; mayor's June 22, 2026 memo; contract was to run through 2028). Drift is article updates/page furniture."
+  },
+  "https://washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Drift d=8 reviewed 2026-10-17: Washtenaw Voice article confirmed live; body intact, including the cited fact that Ypsilanti City leadership signed an ordinance banning installation or use of license plate scanning devices in city limits (the Ordinance 1401 instrument registered on the Contracts page). Drift is page furniture."
+  },
+  "https://cjonline.com/story/news/local/2026/08/27/can-i-find-out-if-ive-been-recorded-by-a-flock-camera-how-to-check-for-license-plate-in-database/91466124007": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Topeka Capital-Journal article 'Were you flocked?' is live and intact; it supports the Wichita record's context (Kansas lawsuit over Wichita's Flock use; Wellsville ending its association). Recorded because the automated fetcher errors on this host."
+  },
+  "https://washingtonretail.org/olympia-and-redmond-halt-flock-safety-camera-use-amid-privacy-and-data-access-concerns-2": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Washington Retail Association article is live and intact; it supports the Olympia record (pilot suspended December 3, 2025; all 15 cameras hooded; pilot began August 2024). Recorded because the automated fetcher errors on this host."
   }
 }

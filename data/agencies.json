@@ -110,11 +110,11 @@
       "pending": 25,
       "rejected": 10
     },
-    "terminal_verified": 8,
-    "terminal_pending_validation": 138,
+    "terminal_verified": 9,
+    "terminal_pending_validation": 137,
     "records_with_renewal_date": 5,
     "records_with_contract_end": 26,
-    "coverage_note": "344 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 5 records carry a renewal date and 26 a contract end date; exact renewal dates remain thin and are the top research priority."
+    "coverage_note": "344 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 9 terminal claims verified, 137 pending validation*. 5 records carry a renewal date and 26 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {
@@ -536,7 +536,7 @@
         }
       ],
       "confidence": "low",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Cancellation reporting is single advocacy source citing newslinklive.com. The stoughton.org warrant document is primary: it shows a $60,000 Flock Safety Software capital item being struck and a directive to cancel Flock contracts irrespective of funding source. Do not confuse with Stoughton, WI.",
       "validation": "pending"
     },
@@ -2997,7 +2997,8 @@
       ],
       "state": "OH",
       "status": "active",
-      "transparency_portal": "https://transparency.flocksafety.com/euclid-oh-pd"
+      "transparency_portal": "https://transparency.flocksafety.com/euclid-oh-pd",
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Columbus Police Department",
@@ -3108,7 +3109,8 @@
       "state": "MI",
       "status": "rejected",
       "transparency_portal": null,
-      "validation": "pending"
+      "validation": "pending",
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Bay City Department of Public Safety",
@@ -4315,7 +4317,7 @@
         {
           "title": "RESOLUTION NO. R2023-231 authorizing a five-year lease agreement extension with Flock Safety (City of Decatur staff memo, 2023-10-27)",
           "url": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf",
-          "date": null,
+          "date": "2023-11-06",
           "verified": false,
           "source_key": "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf"
         },
@@ -4344,7 +4346,8 @@
       ],
       "state": "IL",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Champaign Police Department",
@@ -4567,7 +4570,8 @@
       ],
       "state": "WI",
       "status": "cancelled",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Dane County Sheriff's Office",
@@ -5150,7 +5154,8 @@
       ],
       "state": "TN",
       "status": "active",
-      "transparency_portal": "https://transparency.flocksafety.com/johnson-city-tn-pd"
+      "transparency_portal": "https://transparency.flocksafety.com/johnson-city-tn-pd",
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Murfreesboro Police Department",
@@ -6416,7 +6421,7 @@
       "decision_date": "2024-02-22",
       "decision_summary": "On February 22, 2024, the Fresno City Council approved an updated three-year Flock Safety agreement not to exceed $1,498,690.41 covering ALPR cameras and software; the department reports 70 cameras deployed. The contract is set to expire later in 2026 and a renewal vote is expected, with community groups already petitioning against renewal.",
       "id": "ca-fresno-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Annual cost is derived ($1,498,690.41 / 3 years), not a billed figure. Contract start is ambiguous across sources (2023 per local TV, 2024 per council action); left null. Flock order form on file with the city confirms a 36-month initial term and 30-day retention.",
       "renewal_date": null,
       "sources": [
@@ -7179,7 +7184,7 @@
         }
       ],
       "confidence": "high",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Camera count deliberately left null: cited sources disagree (191 per advocacy source, about 200 per news sources, 31-camera expansion documented in primary docs) and scope (city-owned vs network-accessible) is unresolved. Exact decision/approval date of the October 2024 council vote not confirmed in cited sources. Cost detail: Oct 2024 council package: 10-camera five-year agreement totaling $151,500 ($30,000 annual payments + $1,500 implementation fee); 21-camera/Raven two-year package at $186,150 year one and $183,000 recurring. Total network cost not stated as a single annual figure; left null rather than derived."
     },
     {
@@ -7370,7 +7375,7 @@
         }
       ],
       "confidence": "medium",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Primary city council consent agenda confirms the 2021 Flock procurement. Current 16-camera count rests on local radio reporting; the KWCH vandalism story was seen only via an aggregator repost. Renewal history and current contract dates unknown. Cost detail: Oct 2021 consent agenda: $36,750 for the first two years of use (7 cameras, reduced from 10 after vendor change), with recurring cost of approximately $2,500 per camera annually beginning in 2024. Later expansion to 16 cameras reported by local radio; post-expansion cost not found."
     },
     {
@@ -9657,7 +9662,7 @@
       "decision_date": "2025-12-02",
       "decision_summary": "Interim Chief Shelby Parker recommended suspending the 2-year Flock pilot over privacy and public-records concerns; OPD asked Flock to deactivate the system on Dec 2, 2025 and staff hooded all 15 cameras on Dec 3. The cameras were later uninstalled and the pilot never resumed.",
       "id": "wa-olympia-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "City framed it as a suspension, but cameras were uninstalled Dec 2025 and the 24-month pilot term has lapsed with no renewal; treated as cancelled. Contract total $98,550 per The Olympian vs $90,000 on the order form (difference likely tax/fees); annual figure $45,000 taken from the order form.",
       "renewal_date": null,
       "sources": [
@@ -10712,7 +10717,7 @@
       "decision_date": "2026-02-24",
       "decision_summary": "City Council voted 3-1 on 2026-02-24 to terminate the Flock agreement (Resolution 2026-16) and rescind the ALPR policy after the Iowa AG flagged the city's prohibition on sharing data for immigration enforcement.",
       "id": "ia-coralville-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Decision date 2026-02-24 is from the official council minutes filename and Resolution 2026-16 text (adopted 3-1, one member absent). Two-year contract signed 2025-05-12 for 4 cameras at $36,000 total ($18,000 annually per beaconjournal); only 2 cameras had been installed when cancellation occurred. Gazette reports the contract would otherwise have expired July 2027.",
       "renewal_date": null,
       "sources": [
@@ -11480,7 +11485,7 @@
       "decision_date": null,
       "decision_summary": "Town police hold a 24-month Flock Safety law-enforcement agreement ($33,000 total, $16,500/year recurring) covering 2 Flock LPR units and 7 Wing video integrations; town staff separately proposed a 7-site ALPR expansion funded in part by a $10,000 GOCCP grant. Signature and date fields on the agreement are blank placeholders, so no exact contract effective date is established.",
       "id": "md-forest-heights-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Product-mix details conflict across documents: the newer agreement lists 2 Falcon LPR units, 7 Wing video integrations, and 365-day extended retention for 19 units, while the staff report states 11 ALPR cameras are currently deployed and proposes 7 additional sites (expansion status unconfirmed). Cameras field uses the town's stated deployed count (11). Atlas 30-day retention figure predates the current agreement. Contract signature/date fields are blank.",
       "renewal_date": null,
       "sources": [
@@ -11644,7 +11649,7 @@
       "decision_date": "2026-06-08",
       "decision_summary": "City council voted unanimously to cancel the Flock contract and remove all 12 cameras after community pushback over data access and privacy. A later council packet shows a $49,000 final-year payout to Flock was made even though the city received no further service, and the contract could otherwise have auto-renewed in May 2027.",
       "id": "mn-columbia-heights-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Camera count 12 (7 fixed + 5 flex) from the primary city packet. The three-year contract total of $151,000 is reported but annual_cost_usd left null because the annual figure is not directly stated. Decision date 2026-06-08 from news reporting of the council vote.",
       "renewal_date": null,
       "sources": [
@@ -11660,7 +11665,7 @@
         {
           "title": "City of Columbia Heights council attachment: Flock contract termination details (7 fixed + 5 flex cameras, $49,000 final-year payout)",
           "url": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columbhtmn-meet-58b52135de1f43089d7974a55fb7def8/ITEM-Attachment-001-ff4c4d1fffa24182b6263fa8bd698d28.pdf",
-          "date": null,
+          "date": "2026-06-04",
           "verified": true,
           "source_key": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columbhtmn-meet-58b52135de1f43089d7974a55fb7def8/ITEM-Attachment-001-ff4c4d1fffa24182b6263fa8bd698d28.pdf",
           "publisher": "City of Columbia Heights"

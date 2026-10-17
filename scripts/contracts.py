@@ -133,6 +133,90 @@ REGISTRY = [
         "instrument",
         "Resolution 3-2024 (adopted 2024-01-08) approving Millington PD's contract with Flock Group Inc: maintenance and support for 19 cameras at $47,500 per year for five years, with an option to renew for two more years. All figures are the resolution's own stated terms.",
     ),
+    (
+        "ks-wichita-pd",
+        "https://wichitaks.granicus.com/services/legistar/download/pdf/2912126/Agenda_Report_VI-7.pdf",
+        "instrument",
+        "City Council Agenda Report VI-7 (October 15, 2024) recommending approval of the contracts with Flock Safety: 10 additional Falcon LPR devices under a five-year agreement at $151,500, and 21 additional Falcon readers under a two-year agreement at $186,150 for year one. The signed Wichita agreement is also on this page.",
+    ),
+    (
+        "ks-derby-pd",
+        "https://derby.civicweb.net/document/21142/Flock%20License%20Plate%20Reader%20Cameras.pdf?handle=D1F9EFA8485941DC8A177D0D117C152B",
+        "instrument",
+        "City Council consent agenda item (October 26, 2021); the recommended motion reads: 'Approve the purchase of seven Flock cameras including installation for a two year period for $36,750.'",
+    ),
+    (
+        "ia-coralville-pd",
+        "https://coralville.org/AgendaCenter/ViewFile/Minutes/_02242026-1949",
+        "instrument",
+        "City Council minutes (February 24, 2026) recording adoption of Resolution No. 2026-16, 'Resolution terminating the Agreement with Flock Group and rescinding Police Policy regarding Automated License Plate Readers' (vote 3-1, one absent).",
+    ),
+    (
+        "ca-fresno-pd",
+        "https://agendas.fresno.gov/api/v1/attachments/cmq0gq83x25k8peeiia47sczk/file",
+        "signed_agreement",
+        "Executed order form (Exhibit A) with the Master Services Agreement between Flock Group, Inc. and the City of Fresno: 36-month initial term, annual recurring $492,000, contract total $1,498,690.41. The council item approving the updated agreement (ID 24-204) is also on this page.",
+    ),
+    (
+        "wa-olympia-pd",
+        "https://alprwatch.org/pub/muckrock/data/199260-flock-email-metadata-and-contracts/FLOCK_ALPR.pdf",
+        "signed_agreement",
+        "Signed order form between Flock Group, Inc. and the City of Olympia (signed March 28-29, 2024): 15 Falcon cameras, 24-month initial term, contract total $90,000 billed at signing. Provenance: public-records release hosted by ALPR Watch (MuckRock), not a government server.",
+    ),
+    (
+        "il-decatur-pd",
+        "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2023-231_Resolution_Authorizing_a_Five_Year_Lease_Agreement_Extension_Between_the_City_of_Decatur_and_Flock_Safety_for_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf",
+        "instrument",
+        "Resolution R2023-231 (adopted November 6, 2023) authorizing a five-year lease agreement extension with Flock Safety: 100 LPR cameras for 2024 through 2028, payments not to exceed $250,000 per year. Provenance: public-records (MuckRock) release hosted by ALPR Watch; text verified against the city's official agenda attachment.",
+    ),
+    (
+        "tn-johnson-city-pd",
+        "https://johnsoncitytn.civicweb.net/document/322557/Flock%20Group%20Inc.%20dba%20Flock%20Safety_Flock%20Safety%20.pdf?handle=FFC6987687084379BCCF1920802EF93D",
+        "instrument",
+        "City Commission agenda summary packet (approved July 17, 2025) for a resolution authorizing a 10-year licensing and purchasing agreement with Flock Group Inc. dba Flock Safety: contract total $8,063,000, procured via OMNIA cooperative contract #RS250203. The packet includes the Flock Safety statement of work (draft revision 1.0).",
+    ),
+    (
+        "tx-austin-pd",
+        "https://services.austintexas.gov/edims/document.cfm?id=452741",
+        "instrument",
+        "Council meeting backup text of the resolution authorizing continuation of the ALPR pilot program (File ID 25-0935, June 5, 2025 meeting). The document states the pilot under the 2023 Flock agreement ran March 28, 2024 to June 21, 2025 unless continued. Caveat: this copy's adoption block and resolution number are blank.",
+    ),
+    (
+        "ma-stoughton-pd",
+        "https://stoughton.org/DocumentCenter/View/6337/Amended-Motion-for-STM-Article-15---Police-Department-Capital-submitted-by-Noah-Beit-Aharon-Precinct-6-on-April-28-2026",
+        "instrument",
+        "Select Board's amended motion for Special Town Meeting Article 15 (February 3, 2026) requesting that Stoughton PD cancel any existing or pending contracts with Flock Safety and return Flock equipment, and striking the $60,000 Flock Safety Software capital line. The motion document does not itself record the town meeting vote.",
+    ),
+    (
+        "oh-euclid-pd",
+        "https://cdn.euclidlibrary.org/cdn/ecc/2022/20220420_SAF/agenda.pdf",
+        "instrument",
+        "Public Safety Committee agenda (April 20, 2022) printing Ordinance (040-22), authorizing the mayor to enter a two-year contract with Flock Safety, with an option for a two-year renewal, for LPR cameras and software, not to exceed $110,000.",
+    ),
+    (
+        "mi-ypsilanti",
+        "https://cityofypsilanti.com/Archive/ViewFile/Item/743",
+        "instrument",
+        "Ordinance No. 1401 (adopted September 13, 2022, effective October 13, 2022): 'The installation or use of electronic license plate scanning devices in the City of Ypsilanti is prohibited.' The ordinance bans the device class citywide; it does not name Flock Safety.",
+    ),
+    (
+        "wi-appleton-pd",
+        "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf",
+        "instrument",
+        "Mayor's memorandum 'Flock Service Termination and Final Recommendation' (June 22, 2026): the City notified Flock Group, Inc. of its intention to end use of its products effective June 30, 2026, and the memo requests approval to issue no further payments under the terminated service. The document states Common Council approval is not required to terminate.",
+    ),
+    (
+        "md-forest-heights-pd",
+        "https://go.boarddocs.com/md/tofhmd/Board.nsf/files/DEWLR757C3C8/$file/Town Council Staff Report-GOCCP-Flock.pdf",
+        "instrument",
+        "Town Council staff report recommending approval of an expansion of the Flock ALPR system funded through the Governor's Office of Crime Control and Prevention ($40,000 grant): current cost $30,000 annually for 11 fixed sites, 7 additional sites at $16,500. The signed Forest Heights agreement is also on this page.",
+    ),
+    (
+        "mn-columbia-heights-pd",
+        "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columbhtmn-meet-58b52135de1f43089d7974a55fb7def8/ITEM-Attachment-001-ff4c4d1fffa24182b6263fa8bd698d28.pdf",
+        "instrument",
+        "City Council agenda item (council letter, June 4, 2026): 'Service and Contract Cancellation with Flock Safety.' The item recounts the two contracts executed in May 2024 (7 fixed cameras and 5 flex cameras, 12-month initial terms, three-year totals $89,500 and $61,500) and carries the recommended motion to approve termination of all Flock Safety services and contracts.",
+    ),
 ]
 
 KINDS = frozenset({"signed_agreement", "instrument"})
