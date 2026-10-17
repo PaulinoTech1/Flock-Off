@@ -600,6 +600,19 @@
     "title": "utah | Atlas of Surveillance",
     "url": "https://www.atlasofsurveillance.org/search?location=utah&technologies%5Bautomated-license-plate-readers%5D=on&sort"
   },
+  "https://axios.com/local/scottsdale/2026/10/08/scottsdale-flock-cameras-contract-": {
+    "archive": "1a5d2e47ded3fb7349955b15c12c42f3f2052016b04086b1ff0d78d5cb61a9da.txt",
+    "content_hash": "5d48d8bbb0ef5e7c56eb49988be62944281806c17c5056452a282f36fbaeee22",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-17",
+    "final_url": "https://www.axios.com/local/scottsdale/2026/10/08/scottsdale-flock-cameras-contract-",
+    "simhash": "077eec4d79956599",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 3110,
+    "title": "Scottsdale's latest anti-Flock moves - Axios Scottsdale",
+    "url": "https://www.axios.com/local/scottsdale/2026/10/08/scottsdale-flock-cameras-contract-"
+  },
   "https://ayer.ma.us/m/newsflash/Home/Detail/73": {
     "archive": "4de18780de034e0c4e07741817b1e37ad3e9f52fb6cdb274528640fb85c167c1.txt",
     "content_hash": "edfec8afef3aa90fec7520ad08a1ba8b5cc61fcde9debc7de9e4a783a188a495",
