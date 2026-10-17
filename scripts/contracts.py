@@ -64,7 +64,7 @@ REGISTRY = [
         "nm-las-cruces-pd",
         "https://haussamen.com/wp-content/uploads/2026/02/NM-Las-Cruces-PD-FlockOSLPRLive-Video-Law-Enforcement-Agreement-9122024.pdf",
         "signed_agreement",
-        "Signed FlockOS LPR / live-video Law Enforcement Agreement (dated 2024-09-12 in the filename). Provenance: public-records release hosted on a journalist's site, not a government server, and the citation is not yet classified verified in the dataset.",
+        "Signed FlockOS LPR / live-video Law Enforcement Agreement. Provenance: public-records release hosted on a journalist's site, not a government server, and the citation is not yet classified verified in the dataset.",
     ),
     # --- Authorizing instruments ---
     (
@@ -126,6 +126,12 @@ REGISTRY = [
         "https://alprwatch.org/pub/muckrock/data/156449-foia-request-flock-safety/R2021-40_Resolution_Authorizing_a_Lease_Agreement_Between_the_City_of_Decatur_and_Flock_Safety_for_the_Deployment_of_60_LPR_Cameras_in_the_City_Neighborhoods_and_Adjacent_Thoroughfares.pdf",
         "instrument",
         "Resolution R2021-40 authorizing the lease agreement for 60 LPR cameras. Provenance: public-records (MuckRock) release hosted by ALPR Watch; the citation is not yet classified verified in the dataset.",
+    ),
+    (
+        "tn-millington-pd",
+        "https://millingtontn.gov/AgendaCenter/ViewFile/Item/4271?fileID=5051",
+        "instrument",
+        "Resolution 3-2024 (adopted 2024-01-08) approving Millington PD's contract with Flock Group Inc: maintenance and support for 19 cameras at $47,500 per year for five years, with an option to renew for two more years. All figures are the resolution's own stated terms.",
     ),
 ]
 
