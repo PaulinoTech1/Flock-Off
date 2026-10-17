@@ -526,5 +526,11 @@
     "reviewed_at": "2026-10-17",
     "reviewed_by": "Alexander",
     "note": "Blocked (HTTP 403) reviewed 2026-10-17: source verified by another means (live browser read past the bot check). The MuckRock request 'Flock Safety search audits, network sharing, and general order' to the Everett Police Department (tracking D006653-111025) is live and Completed; the department's January 22, 2026 final response released the organization audits and shared-networks list. Recorded because the host blocks the automated fetcher."
+  },
+  "https://deflocknewportnews.org/": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Drift d=11 reviewed 2026-10-17: DeFlock Newport News research page confirmed live; its purchase-order table supports the record exactly (PO 20251698-04: 74 Falcon units, $222,000). Drift is the page's living counters and dated portal statistics, not the cited facts."
   }
 }

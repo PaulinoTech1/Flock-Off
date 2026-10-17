@@ -1646,8 +1646,8 @@
           "title": "Task Order Agreement No. CW123005, MPD LPR SaaS Solution (DC Office of Contracting and Procurement)",
           "url": "https://contracts.ocp.dc.gov/contracts/attachments/Q1cxMjMwMDXCpkJhc2UgUGVyaW9kwqZ7OEE2QzkwNzMtNjU4Ni00Njc2LUE5RTktRTUzNjMwNzk3MTM4fQ==",
           "date": "2024-12-31",
-          "source_key": "https://contracts.ocp.dc.gov/contracts/attachments/Q1cxMjMwMDXCpkJhc2UgUGVyaW9kwqZ7OEE2QzkwNzMtNjU4Ni00Njc2LUE5RTktRTUzNjMwNzk3MTM4fQ==",
-          "verified": false
+          "verified": false,
+          "source_key": "https://contracts.ocp.dc.gov/contracts/attachments/Q1cxMjMwMDXCpkJhc2UgUGVyaW9kwqZ7OEE2QzkwNzMtNjU4Ni00Njc2LUE5RTktRTUzNjMwNzk3MTM4fQ=="
         }
       ],
       "state": "DC",
@@ -1810,6 +1810,13 @@
           "date": "2026-09-25",
           "verified": true,
           "source_key": "https://transparency.flocksafety.com/newport-news-va-pd"
+        },
+        {
+          "title": "Flock Safety order form, City of Newport News (Law Enforcement Agreement; DocumentCloud public-records copy)",
+          "url": "https://www.documentcloud.org/documents/28546791",
+          "date": null,
+          "source_key": "https://documentcloud.org/documents/28546791",
+          "verified": false
         }
       ],
       "state": "VA",
@@ -2942,8 +2949,8 @@
           "title": "Cleveland City Council summary for Ordinance No. 683-2026 (Flock Safety ALPR licenses and maintenance, as amended)",
           "url": "https://cityofcleveland.legistar1.com/cityofcleveland/attachments/17468918-7373-4770-8d8e-9ce387e0a528.pdf",
           "date": null,
-          "source_key": "https://cityofcleveland.legistar1.com/cityofcleveland/attachments/17468918-7373-4770-8d8e-9ce387e0a528.pdf",
-          "verified": false
+          "verified": false,
+          "source_key": "https://cityofcleveland.legistar1.com/cityofcleveland/attachments/17468918-7373-4770-8d8e-9ce387e0a528.pdf"
         }
       ],
       "state": "OH",
@@ -5321,8 +5328,8 @@
           "title": "Lexington-Fayette Urban County Council minutes, June 27, 2024 (Resolution 0621-24: agreement with Flock Group Inc.)",
           "url": "https://lfucg.granicus.com/MinutesViewer.php?view_id=4&clip_id=6151",
           "date": "2024-06-27",
-          "source_key": "https://lfucg.granicus.com/MinutesViewer.php?clip_id=6151&view_id=4",
-          "verified": false
+          "verified": false,
+          "source_key": "https://lfucg.granicus.com/MinutesViewer.php?clip_id=6151&view_id=4"
         }
       ],
       "state": "KY",
@@ -5758,8 +5765,8 @@
           "title": "Scottsdale City Council marked agenda, October 6, 2026 (Item 16: Flock Camera Usage)",
           "url": "https://ww2.scottsdaleaz.gov/Assets/ScottsdaleAZ/Council/current-agendas-minutes/2026-agendas/10-06-26-regular-and-work-study-agenda.pdf",
           "date": "2026-10-06",
-          "source_key": "https://ww2.scottsdaleaz.gov/Assets/ScottsdaleAZ/Council/current-agendas-minutes/2026-agendas/10-06-26-regular-and-work-study-agenda.pdf",
-          "verified": false
+          "verified": false,
+          "source_key": "https://ww2.scottsdaleaz.gov/Assets/ScottsdaleAZ/Council/current-agendas-minutes/2026-agendas/10-06-26-regular-and-work-study-agenda.pdf"
         }
       ],
       "state": "AZ",
@@ -8442,8 +8449,8 @@
           "title": "Amendment No. 1 to Master Services Agreement, Flock Group Inc. and the City of Oklahoma City (approved August 18, 2026)",
           "url": "https://okc.gov/files/assets/city/v/1/police/documents/flock/flock-amendment-august-2026.pdf",
           "date": "2026-08-18",
-          "source_key": "https://okc.gov/files/assets/city/v/1/police/documents/flock/flock-amendment-august-2026.pdf",
-          "verified": true
+          "verified": true,
+          "source_key": "https://okc.gov/files/assets/city/v/1/police/documents/flock/flock-amendment-august-2026.pdf"
         }
       ],
       "confidence": "high",
@@ -9432,8 +9439,8 @@
           "title": "College Station City Council agenda item, September 24, 2026 (attached Flock Safety agreement terms, TxDOT)",
           "url": "https://collegestationtx.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=10291)",
           "date": "2026-09-24",
-          "source_key": "https://collegestationtx.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=10291)",
-          "verified": false
+          "verified": false,
+          "source_key": "https://collegestationtx.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=10291)"
         }
       ],
       "state": "TX",
@@ -9805,8 +9812,8 @@
           "title": "Everett City Council agenda item, May 29, 2024 (Community Public Safety Cameras: Flock Master Services Agreement and order form)",
           "url": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/16974?fileID=95049",
           "date": "2024-05-29",
-          "source_key": "https://everettwa.gov/AgendaCenter/ViewFile/Item/16974?fileID=95049",
-          "verified": false
+          "verified": false,
+          "source_key": "https://everettwa.gov/AgendaCenter/ViewFile/Item/16974?fileID=95049"
         }
       ],
       "state": "WA",
@@ -10906,8 +10913,8 @@
           "title": "West Des Moines City Council minutes, April 3, 2023 (consent item 4(f): Additional Services Agreement, Flock Group, Inc.)",
           "url": "https://www.wdm.iowa.gov/home/showpublisheddocument/38941/638170630876100000",
           "date": "2023-04-03",
-          "source_key": "https://wdm.iowa.gov/home/showpublisheddocument/38941/638170630876100000",
-          "verified": false
+          "verified": false,
+          "source_key": "https://wdm.iowa.gov/home/showpublisheddocument/38941/638170630876100000"
         }
       ],
       "state": "IA",
@@ -10966,8 +10973,8 @@
           "title": "Cedar Rapids City Council packet, June 25, 2024 (Resolution 0823-06-24: contract with Flock Group Inc.)",
           "url": "https://cms8.revize.com/revize/cedarrapids/CityCouncil/2024/2024-06-25_Packet.pdf",
           "date": "2024-06-25",
-          "source_key": "https://cms8.revize.com/revize/cedarrapids/CityCouncil/2024/2024-06-25_Packet.pdf",
-          "verified": false
+          "verified": false,
+          "source_key": "https://cms8.revize.com/revize/cedarrapids/CityCouncil/2024/2024-06-25_Packet.pdf"
         }
       ],
       "state": "IA",
@@ -12860,8 +12867,8 @@
           "title": "Insight Public Sector Quotation 0228029725, City of Alamogordo (signed December 27, 2024; Flock purchase via OMNIA Partners)",
           "url": "https://deflockalamo.org/documents/foia-2026-06-09/Flock_Quotation_0228029725_-_CITY_OF_ALAMOGORDO_-_signed.pdf",
           "date": "2024-12-16",
-          "source_key": "https://deflockalamo.org/documents/foia-2026-06-09/Flock_Quotation_0228029725_-_CITY_OF_ALAMOGORDO_-_signed.pdf",
-          "verified": false
+          "verified": false,
+          "source_key": "https://deflockalamo.org/documents/foia-2026-06-09/Flock_Quotation_0228029725_-_CITY_OF_ALAMOGORDO_-_signed.pdf"
         }
       ],
       "confidence": "medium",
