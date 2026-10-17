@@ -1622,7 +1622,7 @@
       "decision_date": null,
       "decision_summary": null,
       "id": "dc-mpd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Strongest renewal-date signal: $336,000 one-year contract for 67 cameras (Dec 2024), extended through end of 2026 for another $201,000; end/renewal date 2026-12-31 per NOTUS reporting. Deployed 2025. Under scrutiny: D.C. Police Union grievance over Internal Affairs use of Flock data (July 2026), two misuse investigations under Councilmember Pinto's questions, internal audit expected late 2026; MPD has cut outside-agency data access.",
       "renewal_date": "2026-12-31",
       "sources": [
@@ -1641,6 +1641,13 @@
           "verified": true,
           "source_key": "https://fox5dc.com/news/dc-police-investigate-2-potential-cases-flock-camera-misuse-amid-privacy-concerns",
           "content_hash": "a978bd99ece0e910ec98897e6df6163c0ed67ccf0d946155519850025c6af7e3"
+        },
+        {
+          "title": "Task Order Agreement No. CW123005, MPD LPR SaaS Solution (DC Office of Contracting and Procurement)",
+          "url": "https://contracts.ocp.dc.gov/contracts/attachments/Q1cxMjMwMDXCpkJhc2UgUGVyaW9kwqZ7OEE2QzkwNzMtNjU4Ni00Njc2LUE5RTktRTUzNjMwNzk3MTM4fQ==",
+          "date": "2024-12-31",
+          "source_key": "https://contracts.ocp.dc.gov/contracts/attachments/Q1cxMjMwMDXCpkJhc2UgUGVyaW9kwqZ7OEE2QzkwNzMtNjU4Ni00Njc2LUE5RTktRTUzNjMwNzk3MTM4fQ==",
+          "verified": false
         }
       ],
       "state": "DC",
@@ -2930,11 +2937,19 @@
           "verified": true,
           "source_key": "https://govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts",
           "content_hash": "302e05b4786a0c79dad8765b56d60cf3e6f988d4adb3b8cf39bfe0f6ba28c48c"
+        },
+        {
+          "title": "Cleveland City Council summary for Ordinance No. 683-2026 (Flock Safety ALPR licenses and maintenance, as amended)",
+          "url": "https://cityofcleveland.legistar1.com/cityofcleveland/attachments/17468918-7373-4770-8d8e-9ce387e0a528.pdf",
+          "date": null,
+          "source_key": "https://cityofcleveland.legistar1.com/cityofcleveland/attachments/17468918-7373-4770-8d8e-9ce387e0a528.pdf",
+          "verified": false
         }
       ],
       "state": "OH",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Mansfield Police Department",
@@ -5301,11 +5316,19 @@
           "verified": true,
           "source_key": "https://weku.org/lexington-richmond/2026-09-04/as-outcry-grows-lexington-mayor-announces-independent-review-of-citys-flock-cameras",
           "content_hash": "53a5422d0f8af227e4c1b1e9bc0bc7c083492ec23b36046fed418e3c72531740"
+        },
+        {
+          "title": "Lexington-Fayette Urban County Council minutes, June 27, 2024 (Resolution 0621-24: agreement with Flock Group Inc.)",
+          "url": "https://lfucg.granicus.com/MinutesViewer.php?view_id=4&clip_id=6151",
+          "date": "2024-06-27",
+          "source_key": "https://lfucg.granicus.com/MinutesViewer.php?clip_id=6151&view_id=4",
+          "verified": false
         }
       ],
       "state": "KY",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Elizabethtown Police Department",
@@ -5705,7 +5728,7 @@
       "decision_date": "2026-08-28",
       "decision_summary": "City Council voted to keep the 85-camera Flock system while ordering an independent review and added safeguards, bucking the statewide cancellation wave.",
       "id": "az-scottsdale-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "$370k/yr and $1.2M five-year term from contract records obtained by Scottsdale Progress; azcentral reports expiry June 2028. No misuse complaints found in quarterly audits per SPD.",
       "renewal_date": null,
       "sources": [
@@ -5730,6 +5753,13 @@
           "date": "2026-08-16",
           "verified": true,
           "source_key": "https://azcentral.com/story/news/local/phoenix/2026/08/16/these-metro-phoenix-cities-use-flock-safety-cameras/91275430007"
+        },
+        {
+          "title": "Scottsdale City Council marked agenda, October 6, 2026 (Item 16: Flock Camera Usage)",
+          "url": "https://ww2.scottsdaleaz.gov/Assets/ScottsdaleAZ/Council/current-agendas-minutes/2026-agendas/10-06-26-regular-and-work-study-agenda.pdf",
+          "date": "2026-10-06",
+          "source_key": "https://ww2.scottsdaleaz.gov/Assets/ScottsdaleAZ/Council/current-agendas-minutes/2026-agendas/10-06-26-regular-and-work-study-agenda.pdf",
+          "verified": false
         }
       ],
       "state": "AZ",
@@ -8407,10 +8437,17 @@
           "verified": true,
           "source_key": "https://oklahoman.com/story/news/crime/2026/10/05/flock-camera-search-tulsa-ok-deputy-ruled-unconstitutional-oklahoma-federal-judge/92107612007",
           "publisher": "The Oklahoman (Gannett)"
+        },
+        {
+          "title": "Amendment No. 1 to Master Services Agreement, Flock Group Inc. and the City of Oklahoma City (approved August 18, 2026)",
+          "url": "https://okc.gov/files/assets/city/v/1/police/documents/flock/flock-amendment-august-2026.pdf",
+          "date": "2026-08-18",
+          "source_key": "https://okc.gov/files/assets/city/v/1/police/documents/flock/flock-amendment-august-2026.pdf",
+          "verified": true
         }
       ],
       "confidence": "high",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "One of the strongest OK records. 90 readers confirmed on the official city page (contract began 2023). Renewal explicitly dated 2026-08-18 by two independent outlets. Contract end of the renewed term not explicitly stated in cited sources, left null rather than inferred. Cost detail: One-year renewal value $270,000 approved Aug 2026. Original 2023 contract value and per-camera cost not in cited sources."
     },
     {
@@ -9371,7 +9408,7 @@
       "decision_date": "2026-09-24",
       "decision_summary": "City Council approved renewal agreements for up to $158,000 in Flock readers on TxDOT roads and $141,062 in cameras on non-TxDOT roads. The original contract was approved in September 2025 for $395,098.10, with a grant later covering 80% of the license plate reader cost.",
       "id": "tx-college-station-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "annual_cost_usd left null: the approved figures are separate per-road ceilings and the $400,000/year figure from The Battalion is approximate. Exact contract term unknown.",
       "renewal_date": null,
       "sources": [
@@ -9390,6 +9427,13 @@
           "verified": true,
           "source_key": "https://thebatt.com/news/college-station-city-council-to-vote-on-400000-flock-safety-contract",
           "content_hash": "d5441e7dc29eb5ba8162f319a02c87696d1f49a61717b7320cb7398ea572aea1"
+        },
+        {
+          "title": "College Station City Council agenda item, September 24, 2026 (attached Flock Safety agreement terms, TxDOT)",
+          "url": "https://collegestationtx.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=10291)",
+          "date": "2026-09-24",
+          "source_key": "https://collegestationtx.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=10291)",
+          "verified": false
         }
       ],
       "state": "TX",
@@ -9715,7 +9759,7 @@
       "decision_date": "2024-05",
       "decision_summary": "City Council approved a Flock contract in late May 2024 (71 leased ALPR cameras, grant-funded two-year agreement). After a Feb 2026 court ruling made Flock images public records, the mayor paused all 71 cameras; the network was reactivated in April 2026 once SB 6002 exempted ALPR data from disclosure.",
       "id": "wa-everett-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Reactivation (April 2026) is reported by Tygart Media and Seattle Red (both blogs); no major-outlet confirmation found, but the contract was never terminated and the June 2026 Tribune settlement story treats the program as ongoing. Camera count 71 per Tribune and mayor's statement; a 2024 advocacy scorecard said 74.",
       "renewal_date": null,
       "sources": [
@@ -9756,6 +9800,13 @@
           "verified": false,
           "source_key": "https://seenineverett.com/mayor-puts-use-of-flock-automated-license-plate-readers-on-pause-in-everett-washington",
           "content_hash": "fbde9d65b5930f23c54971a871c8288439ce552315c25b861dd022cd4cee3368"
+        },
+        {
+          "title": "Everett City Council agenda item, May 29, 2024 (Community Public Safety Cameras: Flock Master Services Agreement and order form)",
+          "url": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/16974?fileID=95049",
+          "date": "2024-05-29",
+          "source_key": "https://everettwa.gov/AgendaCenter/ViewFile/Item/16974?fileID=95049",
+          "verified": false
         }
       ],
       "state": "WA",
@@ -10818,7 +10869,7 @@
       "decision_date": null,
       "decision_summary": "No cancellation decision reported. 57 cameras reported April 2026; active Flock transparency portal; department publicly defended the program against privacy and procurement criticism.",
       "id": "ia-west-des-moines-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Contract start 2020-06-23 comes from the ACLU-IA report (unverified tier); treat as lead. A resident at a council meeting claimed a $496,800 contract figure, reported only via AI-generated meeting summaries; left as null pending a primary procurement record. Note: the CivicWeb document found for 'Des Moines' is Des Moines, Washington, not Iowa, and was not used. Des Moines, Iowa PD itself uses Motorola readers, not Flock, and has no record here.",
       "renewal_date": null,
       "sources": [
@@ -10850,6 +10901,13 @@
           "verified": false,
           "source_key": "https://bleedingheartland.com/2025/07/17/surveillance-ai-alpr-flock-transparency",
           "content_hash": "e89ed1b75e681a00a28778223484d0bbe18070aacbe0efd2fc09f420a2d8aea6"
+        },
+        {
+          "title": "West Des Moines City Council minutes, April 3, 2023 (consent item 4(f): Additional Services Agreement, Flock Group, Inc.)",
+          "url": "https://www.wdm.iowa.gov/home/showpublisheddocument/38941/638170630876100000",
+          "date": "2023-04-03",
+          "source_key": "https://wdm.iowa.gov/home/showpublisheddocument/38941/638170630876100000",
+          "verified": false
         }
       ],
       "state": "IA",
@@ -10903,6 +10961,13 @@
           "verified": true,
           "source_key": "https://iowapublicradio.org/ipr-news/2025-09-12/flock-ai-surveillance-police-cameras-eastern-iowa",
           "content_hash": "c4bd177c912fdd8b1145122a13d1290f76f21329033742161eefbd373d15604d"
+        },
+        {
+          "title": "Cedar Rapids City Council packet, June 25, 2024 (Resolution 0823-06-24: contract with Flock Group Inc.)",
+          "url": "https://cms8.revize.com/revize/cedarrapids/CityCouncil/2024/2024-06-25_Packet.pdf",
+          "date": "2024-06-25",
+          "source_key": "https://cms8.revize.com/revize/cedarrapids/CityCouncil/2024/2024-06-25_Packet.pdf",
+          "verified": false
         }
       ],
       "state": "IA",
@@ -12790,6 +12855,13 @@
           "verified": false,
           "source_key": "https://newmexicoconservativenews.com/2026/09/16/eyes-on-the-road-dr-stephanie-hernandez-on-why-alamogordo-turned-to-flock-cameras",
           "content_hash": "1b71fb1f92930eff4c657eaa07f9fdd0e03b952baeafb636c0e9556726e506b8"
+        },
+        {
+          "title": "Insight Public Sector Quotation 0228029725, City of Alamogordo (signed December 27, 2024; Flock purchase via OMNIA Partners)",
+          "url": "https://deflockalamo.org/documents/foia-2026-06-09/Flock_Quotation_0228029725_-_CITY_OF_ALAMOGORDO_-_signed.pdf",
+          "date": "2024-12-16",
+          "source_key": "https://deflockalamo.org/documents/foia-2026-06-09/Flock_Quotation_0228029725_-_CITY_OF_ALAMOGORDO_-_signed.pdf",
+          "verified": false
         }
       ],
       "confidence": "medium",

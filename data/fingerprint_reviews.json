@@ -343,9 +343,9 @@
   },
   "https://tygartmedia.com/everett-flock-cameras-sb-6002": {
     "decision": "accept",
-    "note": "Drift d=10 (threshold 8) reviewed; page still live with same article, content churn accepted per Boss explicit authorization 2026-09-26.",
-    "reviewed_at": "2026-09-26",
-    "reviewed_by": "Alexander"
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Drift d=9 reviewed 2026-10-17: Tygart Media Everett article confirmed live; body intact (February 2026 pause after the public-records ruling, SB 6002 signed March 30, 2026, reactivation April 7, 2026). Its 68-camera deployment figure differs in measure from the record's order-form count; no cited claim is contradicted."
   },
   "https://universitystar.com/34089/news/city-council-decided-against-flock-safety-contract-renewal": {
     "decision": "accept",
@@ -478,5 +478,53 @@
     "reviewed_at": "2026-10-17",
     "reviewed_by": "Alexander",
     "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Washington Retail Association article is live and intact; it supports the Olympia record (pilot suspended December 3, 2025; all 15 cameras hooded; pilot began August 2024). Recorded because the automated fetcher errors on this host."
+  },
+  "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384255/alamogordo-city-commission-meeting-tuesday-630-pm-focuses-flock-public": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Drift d=11 reviewed 2026-10-17: 2nd Life Media Alamogordo article confirmed live; cited claims intact (the $500,000 two-year Flock contract equipped the city with 60 surveillance devices; system reached full installation in June 2026). Drift is page updates/furniture."
+  },
+  "https://newmexicoconservativenews.com/2026/09/16/eyes-on-the-road-dr-stephanie-hernandez-on-why-alamogordo-turned-to-flock-cameras": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Drift d=9 reviewed 2026-10-17: article confirmed live via browser read (host 403s the automated fetcher); the Hernandez interview is intact and contextual to the record; it states none of the record's figures, so nothing is contradicted."
+  },
+  "https://azcentral.com/story/news/local/scottsdale/2026/08/28/scottsdale-chooses-oversight-over-removal-of-flock-cameras/91512992007": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Arizona Republic article intact; supports the record (Scottsdale contracted 85 cameras in 2023; current contract expires June 2028). Recorded because the automated fetcher errors on this host."
+  },
+  "https://azcentral.com/story/news/local/phoenix/2026/08/16/these-metro-phoenix-cities-use-flock-safety-cameras/91275430007": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Arizona Republic Valley roundup intact; lists Scottsdale at 85 Flock cameras, supporting the record. Recorded because the automated fetcher errors on this host."
+  },
+  "https://desmoinesregister.com/story/news/2026/04/17/flock-cameras-des-moines-privacy-police/88960083007": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Des Moines Register article intact; lists West Des Moines at 57 cameras and its department defending the program, supporting the record. Recorded because the automated fetcher errors on this host."
+  },
+  "https://desmoinesregister.com/story/news/iowa/2026/08/18/flock-cameras-near-me-removed-indianola-iowa/91351913007": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Des Moines Register article intact; lists West Des Moines among the Des Moines suburbs holding Flock contracts, supporting the record. Recorded because the automated fetcher errors on this host."
+  },
+  "https://oklahoman.com/story/news/crime/2026/10/05/flock-camera-search-tulsa-ok-deputy-ruled-unconstitutional-oklahoma-federal-judge/92107612007": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). The Oklahoman article intact; its Oklahoma City section supports the record (council renewed the Flock contract August 18 in a 5-3 vote, $270,000, 90 active cameras, renewal through June 30, 2027). Recorded because the automated fetcher errors on this host."
+  },
+  "https://muckrock.com/foi/everett-251/flock-safety-search-audits-network-sharing-and-general-order-197346": {
+    "decision": "accept",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander",
+    "note": "Blocked (HTTP 403) reviewed 2026-10-17: source verified by another means (live browser read past the bot check). The MuckRock request 'Flock Safety search audits, network sharing, and general order' to the Everett Police Department (tracking D006653-111025) is live and Completed; the department's January 22, 2026 final response released the organization audits and shared-networks list. Recorded because the host blocks the automated fetcher."
   }
 }
