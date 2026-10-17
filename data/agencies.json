@@ -1240,7 +1240,7 @@
       "decision_date": null,
       "decision_summary": null,
       "id": "ny-niagara-falls-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-17",
       "notes": "Council approved unanimously: $12,100 install for 24 solar-powered cameras plus a $288,000 four-year Flock cloud software/storage package via reseller SHI International Corp (implies ~$72k/yr, but the source states only the four-year total, so annual cost is null). Funded by a NY State Law Enforcement Tech Grant; project could extend beyond four years with additional funding. Exact approval date not pinned down; proposal was on the Jan 7, 2026 council agenda.",
       "renewal_date": null,
       "sources": [
@@ -1259,6 +1259,13 @@
           "verified": true,
           "source_key": "https://govtech.com/public-safety/niagara-falls-n-y-approves-license-plate-reader-deployment",
           "content_hash": "bb8389c333c0dc320c9a11d56f257da6f410097fc30166d0486d23ad2a841cfd"
+        },
+        {
+          "title": "City Council support packet, March 12, 2025 (draft minutes of February 26, 2025: license plate reader project award)",
+          "url": "https://cms3.revize.com/revize/niagarafallsny/Documents/Government/City Council/2025/0312/1 - Corrected DRAFT Support Packet for Regular Council Meeting on 3.12.25. (18 pgs).pdf",
+          "date": "2025-02-26",
+          "source_key": "https://cms3.revize.com/revize/niagarafallsny/Documents/Government/City Council/2025/0312/1 - Corrected DRAFT Support Packet for Regular Council Meeting on 3.12.25. (18 pgs).pdf",
+          "verified": false
         }
       ],
       "state": "NY",
@@ -1815,8 +1822,8 @@
           "title": "Flock Safety order form, City of Newport News (Law Enforcement Agreement; DocumentCloud public-records copy)",
           "url": "https://www.documentcloud.org/documents/28546791",
           "date": null,
-          "source_key": "https://documentcloud.org/documents/28546791",
-          "verified": false
+          "verified": false,
+          "source_key": "https://documentcloud.org/documents/28546791"
         }
       ],
       "state": "VA",
@@ -3195,11 +3202,19 @@
           "verified": false,
           "source_key": "https://bellevilleareaindependent.com/will-pay-for-license-plate-recognition-cameras-in-its-district",
           "content_hash": "d1d03116eef79911043078f47f343851d3ef33d2cf7366daf36072c219e5ff93"
+        },
+        {
+          "title": "Board of Trustees meeting packet, December 7, 2021 (Flock Safety agreement approval)",
+          "url": "https://cms9files.revize.com/vanburentwp/Document_Center/Agendas%20&%20Minutes/Board%20Of%20Trustees/2021/Packets/BRD%2012-7-21%20Packet.pdf",
+          "date": "2021-12-07",
+          "source_key": "https://cms9files.revize.com/vanburentwp/Document_Center/Agendas%20&%20Minutes/Board%20Of%20Trustees/2021/Packets/BRD%2012-7-21%20Packet.pdf",
+          "verified": false
         }
       ],
       "state": "MI",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Troy Police Department",
@@ -3353,11 +3368,19 @@
           "verified": true,
           "source_key": "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing",
           "content_hash": "4c73e5f7a2710abf9b32dd2c7dd27f85ddf499b97ca96f6ebfebc2f809c01973"
+        },
+        {
+          "title": "City Manager Administrative Order 2026-01: Use of Automated License Plate Readers and Related Surveillance Technology",
+          "url": "https://www.grandrapidsmi.gov/media/3cemd5zb/ao-2026-01-automated-license-plate-readers.pdf",
+          "date": "2026-09-03",
+          "source_key": "https://grandrapidsmi.gov/media/3cemd5zb/ao-2026-01-automated-license-plate-readers.pdf",
+          "verified": false
         }
       ],
       "state": "MI",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Kent County Sheriff's Office",
@@ -4437,11 +4460,19 @@
           "verified": true,
           "source_key": "https://govtech.com/public-safety/More-Chicago-Suburbs-Deploy-Automatic-License-Plate-Scanners.html",
           "content_hash": "90305fe3a3c42f8adbbd6ebeabfd48acd6fca691b0a86f75c08e663debfa4a00"
+        },
+        {
+          "title": "Village Board agenda packet, June 20, 2023 (Ordinance 2023-065, Flock Safety payment authorization)",
+          "url": "https://www.vernonhills.org/AgendaCenter/ViewFile/Agenda/_06202023-1054",
+          "date": "2023-06-20",
+          "source_key": "https://vernonhills.org/AgendaCenter/ViewFile/Agenda/_06202023-1054",
+          "verified": true
         }
       ],
       "state": "IL",
       "status": "active",
-      "transparency_portal": "https://transparency.flocksafety.com/vernon-hills-il-pd"
+      "transparency_portal": "https://transparency.flocksafety.com/vernon-hills-il-pd",
+      "last_verified": "2026-10-17"
     },
     {
       "agency": "Huntley Police Department",
