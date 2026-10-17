@@ -12,7 +12,7 @@ window.addEventListener("unhandledrejection", (e) => {
 });
 
 const App = (() => {
-  const TABS = ["tracker", "sources", "tools", "learn", "legal"];
+  const TABS = ["tracker", "contracts", "sources", "tools", "learn", "legal"];
 
   function show(name) {
     if (!TABS.includes(name)) name = "tracker";
@@ -122,6 +122,7 @@ const App = (() => {
     document.getElementById("year").textContent = new Date().getFullYear();
     showFromHash();
     TrackerTab.init();
+    ContractsTab.init();
     SourcesTab.init();
   }
 

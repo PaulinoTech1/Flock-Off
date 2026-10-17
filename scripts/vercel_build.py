@@ -25,6 +25,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
+import contracts as contracts_mod  # noqa: E402
 import evidence as evidence_mod  # noqa: E402
 
 # Display labels come from the canonical taxonomy in scripts/evidence.py;
@@ -98,6 +99,57 @@ def _prerender_sources(agencies: list) -> str:
     return "\n".join(cards)
 
 
+def _contract_facts(e: dict) -> str:
+    """One-line fact summary for a contract card; omits unknown fields."""
+    facts = []
+    place = ", ".join(p for p in (e.get("city"), e.get("state")) if p)
+    if place:
+        facts.append(place)
+    if e.get("status"):
+        facts.append(STATUS_LABEL.get(e["status"], e["status"]))
+    if e.get("contract_start") or e.get("contract_end"):
+        facts.append(
+            f"Term: {e.get('contract_start') or '?'} to "
+            f"{e.get('contract_end') or 'open'}")
+    if e.get("renewal_date"):
+        facts.append(f"Renewal: {e['renewal_date']}")
+    if e.get("annual_cost_usd") is not None:
+        facts.append(f"Annual cost: {_usd(e['annual_cost_usd'])}")
+    if e.get("cameras") is not None:
+        facts.append(f"Cameras: {e['cameras']}")
+    return " · ".join(facts)
+
+
+def _prerender_contracts(entries: list) -> str:
+    """Contract cards; markup mirrors js/contracts.js card()."""
+    cards = []
+    for e in entries:
+        badge_cls = "ok" if e["kind"] == "signed_agreement" else "lead"
+        badge = f'<span class="badge {badge_cls}">{_esc(e["kind_label"])}</span>'
+        if e.get("accurate_as_of"):
+            asof = f'Record accurate as of {_esc(e["accurate_as_of"])}'
+        else:
+            asof = "Record not yet re-verified"
+        meta = " · ".join(
+            p for p in (_publisher(e["doc_url"]),
+                        e.get("doc_date") or "undated", asof) if p)
+        cards.append(
+            '<article class="source-card">{badge}'
+            '<h3><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a></h3>'
+            '<p class="source-meta">{meta}</p>'
+            '<p class="contract-facts">{facts}</p>'
+            '<p class="cited-by">{note}</p></article>'.format(
+                badge=badge,
+                url=_esc(e["doc_url"]),
+                title=_esc(e["doc_title"]),
+                meta=_esc(meta),
+                facts=_esc(_contract_facts(e)),
+                note=_esc(e["doc_note"]),
+            )
+        )
+    return "\n".join(cards)
+
+
 def _render_rows(agencies: list, ev_by_id: dict) -> str:
     rows = []
     for a in agencies:
@@ -145,16 +197,29 @@ def main() -> None:
         sys.exit(f"build failed: cannot read config/flock-off.yaml: {exc}")
     ev_by_id = {a["id"]: evidence_mod.compute(a, primary, news) for a in agencies}
 
+    # Contracts page entries: the curated registry in
+    # scripts/contracts.py joined against the dataset. Fail-closed: a
+    # registry citation that no longer resolves aborts the build rather
+    # than silently dropping a contract from the page.
+    try:
+        contract_entries = contracts_mod.build_contract_entries(agencies)
+    except ValueError as exc:
+        sys.exit(f"build failed: {exc}")
+
     index_path = ROOT / "index.html"
     html = index_path.read_text(encoding="utf-8")
     rows_marker = "<!--PRE_RENDER_ROWS-->"
     src_marker = "<!--PRE_RENDER_SOURCES-->"
+    contracts_marker = "<!--PRE_RENDER_CONTRACTS-->"
     if rows_marker not in html:
         sys.exit("build failed: pre-render rows marker missing from index.html")
     if src_marker not in html:
         sys.exit("build failed: pre-render sources marker missing from index.html")
+    if contracts_marker not in html:
+        sys.exit("build failed: pre-render contracts marker missing from index.html")
     html = html.replace(rows_marker, _render_rows(agencies, ev_by_id))
     html = html.replace(src_marker, _prerender_sources(agencies))
+    html = html.replace(contracts_marker, _prerender_contracts(contract_entries))
     index_path.write_text(html, encoding="utf-8")
 
     report_path = ROOT / "api" / "report.js"
@@ -206,9 +271,23 @@ def main() -> None:
     (public / "data" / "evidence.json").write_text(
         json.dumps(ev_doc, indent=2) + "\n", encoding="utf-8")
 
+    # Public contracts file: the Contracts tab reads the same entries
+    # the pre-render used, so the no-JS page and the JS render cannot
+    # disagree about which documents are the actual contracts.
+    contracts_doc = {
+        "generated_at": datetime.date.today().isoformat(),
+        "dataset_last_updated": json.loads(
+            data_path.read_text(encoding="utf-8")).get("meta", {}).get(
+                "last_updated"),
+        "entries": contract_entries,
+    }
+    (public / "data" / "contracts.json").write_text(
+        json.dumps(contracts_doc, indent=2) + "\n", encoding="utf-8")
+
     n_verified = sum(1 for ev in ev_by_id.values() if ev["tier"] == "verified")
     n_pending = sum(1 for ev in ev_by_id.values() if ev["tier"] == "pending")
     print(f"build ok: pre-rendered {len(agencies)} agencies, injected {len(ids)} agency ids, "
+          f"contracts: {len(contract_entries)} documents, "
           f"evidence: {n_verified} verified / {n_pending} pending validation*")
 
 

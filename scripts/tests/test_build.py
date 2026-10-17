@@ -42,6 +42,7 @@ class TestVercelBuild(unittest.TestCase):
         html = open(os.path.join(REPO_ROOT, "index.html"), encoding="utf-8").read()
         self.assertIn("<!--PRE_RENDER_ROWS-->", html)
         self.assertIn("<!--PRE_RENDER_SOURCES-->", html)
+        self.assertIn("<!--PRE_RENDER_CONTRACTS-->", html)
         report = open(os.path.join(REPO_ROOT, "api", "report.js"), encoding="utf-8").read()
         self.assertIn("/*__AGENCY_IDS__*/[]", report)
 

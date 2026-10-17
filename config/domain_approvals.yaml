@@ -1413,3 +1413,8 @@ approvals:
     approved_by: grandfather-policy
     date: 2026-09-26
     rationale: "grandfathered by policy: in the verified corpus before the quarantine rule existed (2026-09-26); not individually reviewed"
+  lonepeakpolice.gov:
+    tier: verified_primary
+    approved_by: Alexander
+    date: 2026-10-17
+    rationale: "Official site of Lone Peak Police Department UT, successor domain to lonepeakpolice.com (already verified_primary): department migrated lonepeakpolice.com to lonepeakpolice.gov in 2026; Flock page verified live and text-identical to the cited .com page on 2026-10-17. Same-owner .gov successor of an approved domain; quarantine-to-promotion done same day under Boss's 2026-10-17 accept-all-four authorization for the Lone Peak URL correction."

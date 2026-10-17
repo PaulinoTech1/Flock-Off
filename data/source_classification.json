@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04",
+  "generated": "2026-10-17",
   "criteria": "docs/METHODOLOGY.md#evidence-tiers",
   "classifier": "scripts/flockoff.py classify",
   "verified_news": [
@@ -250,6 +250,7 @@
     "littlerock.gov",
     "live-township-of-north-brunswick.pantheonsite.io",
     "lonepeakpolice.com",
+    "lonepeakpolice.gov",
     "mccmeetingspublic.blob.core.usgovcloudapi.net",
     "meetings.cvilledata.org",
     "millcreekwa.gov",
@@ -379,6 +380,7 @@
     "cashmerevalleyrecord.com",
     "citydesk.org",
     "cityofwoodland.gov",
+    "civiccapacity.com",
     "civiclensnetwork.com",
     "classicrock1051.com",
     "cmg-cmg-tv-10090-prod.cdn.arcpublishing.com",
@@ -390,6 +392,7 @@
     "cybernews.com",
     "d3nqdp0e3r32g8.cloudfront.net",
     "dailyemerald.com",
+    "decatur.novusagenda.com",
     "denver.thebadger.news",
     "diggingdeeper.net",
     "easternprogress.com",

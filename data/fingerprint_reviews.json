@@ -193,8 +193,8 @@
   },
   "https://lonepeakpolice.com/flock-safety": {
     "decision": "accept",
-    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
-    "reviewed_at": "2026-09-26",
+    "note": "Drift d=36 (threshold 8) against the 2026-10-12 baseline re-reviewed 2026-10-17: the department migrated domains (lonepeakpolice.com now redirects to the lonepeakpolice.gov homepage, which is what the fetcher compared). The cited Flock page is live at lonepeakpolice.gov/flock-safety/ with text identical to the baseline (267 chars, same claim), verified live 2026-10-17; the dataset citation was updated to the .gov URL. Accepted per Boss explicit authorization 2026-10-17.",
+    "reviewed_at": "2026-10-17",
     "reviewed_by": "Alexander"
   },
   "https://mandatory.com/culture/1830228-flock-camera-thefts-force-police-department-give-up-minnesota": {
@@ -313,8 +313,8 @@
   },
   "https://theinnovationattorney.substack.com/p/why-is-flock-safety-losing-municipal": {
     "decision": "accept",
-    "note": "Drift d=9 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
-    "reviewed_at": "2026-09-26",
+    "note": "Drift d=8 (threshold 8) against the 2026-10-12 baseline re-reviewed 2026-10-17: archived and current bodies identical, all 15 diff blocks are Substack page chrome, supported claims intact (32.3% LAPD false-positive rate, $7.5B valuation, Illinois audits, California litigation, Massachusetts/Texas disputes, $275M round). Accepted per Boss explicit authorization 2026-10-17.",
+    "reviewed_at": "2026-10-17",
     "reviewed_by": "Alexander"
   },
   "https://thesiuslawnews.com/news/council-votes-3-2-to-keep-flock-cameras/article_524d684c-ecaa-483b-ad4f-a6da9794a7f3.html": {

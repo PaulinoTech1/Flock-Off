@@ -317,6 +317,7 @@ classify:
     - legistar1.granicus.com  # City of Appleton WI memo
     - legistarweb-production.s3.amazonaws.com  # Legistar official document store
     - live-township-of-north-brunswick.pantheonsite.io
+    - lonepeakpolice.gov
     - meetings.cvilledata.org  # civic mirror hosting official Harrisonburg council docs
     - millingtontn.gov  # City of Millington TN
     - opengovernment.ny.gov

@@ -468,12 +468,16 @@
     "url": "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116"
   },
   "https://archynewsy.com/watch-hamilton-county-sheriff-discuss-use-flock-safety-cameras": {
-    "content_hash": "cf89a95375ae3d1742bedb21abe0272c62d7aaab9fb252218e570660ccf31b37",
+    "archive": "fa309f8a46507fc917c7c6c1fbb13c7b8e735e4501a3e1ca9802ae7ba285a52b.txt",
+    "blocked_reason": null,
+    "content_hash": "8bbed5eacaba5a29fdd653b0bc9ea7d1b6085e042a8365fc974b44f9f44384b8",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://www.archynewsy.com/watch-hamilton-county-sheriff-discuss-use-flock-safety-cameras/",
-    "simhash": "2d667420dd8bfb69",
-    "text_len": 4316,
+    "simhash": "2f6574209d8bdb69",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 4212,
     "title": "Law Enforcement Use of Flock Cameras Sparks Privacy Debate in Greater Cincinnati - Archynewsy",
     "url": "https://www.archynewsy.com/watch-hamilton-county-sheriff-discuss-use-flock-safety-cameras/"
   },
@@ -978,11 +982,15 @@
     "url": "https://www.blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007/"
   },
   "https://bonnevillecountynews.com/idaho-falls-police-defend-license-plate-cameras-amid-privacy-lawsuit-threats-and-contract-dispute": {
+    "archive": "88033406548c1b23da4c9a6dbb7ae6021eb66cba3525b11b199cad2eb5dcdf65.txt",
+    "blocked_reason": null,
     "content_hash": "0e1223ad30ece7aaa93b0817b3f659a59b149527c07d4ec5245ecc121d10fda5",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://bonnevillecountynews.com/idaho-falls-police-defend-license-plate-cameras-amid-privacy-lawsuit-threats-and-contract-dispute/",
     "simhash": "d8c336e03f0de432",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
     "text_len": 4144,
     "title": "Idaho Falls Police Defend License Plate Cameras Amid Privacy Lawsuit Threats and Contract Dispute – Bonneville County News",
     "url": "https://bonnevillecountynews.com/idaho-falls-police-defend-license-plate-cameras-amid-privacy-lawsuit-threats-and-contract-dispute/"
@@ -1688,12 +1696,16 @@
     "url": "https://cityofdallas.legistar.com/LegislationDetail.aspx?ID=7404358&GUID=FDDAEA7D-A941-4B35-8A9D-318FF351CAE4&FullText=1"
   },
   "https://cityoffortwayne.in.gov/m/newsflash/Home/Detail/716": {
-    "content_hash": "66b4c16e93b47f11bf991895b11143d4376c3e3c387b5ad02e4d54a623cf147d",
+    "archive": "70892119c291ac8d8e4ecd7a8318ef83b2e29b2260882808015d1f1ca2a667ee.txt",
+    "blocked_reason": null,
+    "content_hash": "d47daa7719cc89f31d608c97f454a888254069dc6ee28ff011d4ba56b0ce905c",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://www.cityoffortwayne.in.gov/m/newsflash/Home/Detail/716",
-    "simhash": "82bd85db20b81806",
-    "text_len": 2475,
+    "simhash": "1a3785fb20b03a05",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 2379,
     "title": "FWPD Chief Statement on Flock in Fort Wayne • Fort Wayne, IN Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
     "url": "http://www.cityoffortwayne.in.gov/m/newsflash/Home/Detail/716"
   },
@@ -1748,6 +1760,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743"
+  },
+  "https://civiccapacity.com/p/flock-cameras-helping-solve-crimes": {
+    "archive": "0cea404b5ff995e4fb031bc4e373e55a2bf1d0ad12a0773c2ba614e664cb8dd7.txt",
+    "blocked_reason": null,
+    "content_hash": "a59bca3abc277dc267a93a70804bfc24dce2a6a2d488a183dd0d5f64bf4a3203",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-12",
+    "final_url": "https://www.civiccapacity.com/p/flock-cameras-helping-solve-crimes",
+    "simhash": "ac2de2eaab034182",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 473,
+    "title": "Flock Cameras Helping Solve Crimes - by William Lutz",
+    "url": "https://www.civiccapacity.com/p/flock-cameras-helping-solve-crimes"
   },
   "https://civiclensnetwork.com/articles/anoka-county-sheriff-signs-flock-camera-deal-just-under-175000-board-limit": {
     "archive": "3bfbcb7fa01689178e924cfaf2c6c4a88446066cec97c3e383b5431e4bdbf8ef.txt",
@@ -2070,6 +2096,20 @@
     "text_len": 1306,
     "title": "Statement: Evanston Deactivates Flock Cameras and Terminates Contract",
     "url": "https://content.govdelivery.com/accounts/ILEVANSTON/bulletins/3efa81d"
+  },
+  "https://content.govdelivery.com/accounts/KENTCOMI/bulletins/42908b2": {
+    "archive": "7e7df0b69c0fee5e359542f79d1d4410b0d2986b3aad617c4ea4b2cf8779f459.txt",
+    "blocked_reason": null,
+    "content_hash": "a901a0d62e5263dc3902da1c759acfff9ee0048838e737204e01c670bfe22ba9",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-12",
+    "final_url": "https://content.govdelivery.com/accounts/KENTCOMI/bulletins/42908b2",
+    "simhash": "fdddb6f9d500a895",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 3665,
+    "title": "KCSO Launches Flock Transparency Portal",
+    "url": "https://content.govdelivery.com/accounts/KENTCOMI/bulletins/42908b2"
   },
   "https://coralspringsflnews.com/news/article317364116.html": {
     "archive": "5d86dfefc50de45d0289dd17678652ba2a01eb6ee6102ad0ceff756808ebbcdb.txt",
@@ -2565,6 +2605,20 @@
     "title": null,
     "url": "http://docs.southbendin.gov/WebLink/0/doc/382551/Page18.aspx"
   },
+  "https://docs.southbendin.gov/WebLink/0/edoc/383268/05-30-2024%20Health%20%20Public%20Safety%20and%20Information%20%20Technology%20Meeting%20Minutes%20(Signed).pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-12",
+    "final_url": "https://docs.southbendin.gov/WebLink/0/edoc/383268/05-30-2024%20Health%20%20Public%20Safety%20and%20Information%20%20Technology%20Meeting%20Minutes%20(Signed).pdf",
+    "retry_after": "2026-11-11",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://docs.southbendin.gov/WebLink/0/edoc/383268/05-30-2024%20Health%20%20Public%20Safety%20and%20Information%20%20Technology%20Meeting%20Minutes%20(Signed).pdf"
+  },
   "https://draperutah.gov/media/ya4nigvm/police-letterhead-flock-camera-chief-letter.pdf": {
     "archive": null,
     "content_hash": null,
@@ -2826,12 +2880,16 @@
     "url": "https://factinface.com/news/272625-two_arrested_in_springfield_after_city_council_stalls_public_review_of_flock_surveillance_cameras"
   },
   "https://findglocal.com/US/Unknown/89921252335/ACLU-of-Rhode-Island": {
-    "content_hash": "e058007459a473edc45f03013b8421bfb9f5b9428282469d94c38c70b23c8b63",
+    "archive": "e403059b002556586c6fc46ac5522a3b65c05bee3a646ce9fd9c13e38981c52c.txt",
+    "blocked_reason": null,
+    "content_hash": "32d89e53ee0e3b36b5f24b0f613aca2e991bd8bb87df74b148a7592e2467feef",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://www.findglocal.com/US/Unknown/89921252335/ACLU-of-Rhode-Island",
-    "simhash": "c90a5dacc7dbd632",
-    "text_len": 5220,
+    "simhash": "c98a5cbcc6d3de32",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 5447,
     "title": "ACLU of Rhode Island (2026)",
     "url": "https://www.findglocal.com/US/Unknown/89921252335/ACLU-of-Rhode-Island"
   },
@@ -4595,11 +4653,15 @@
     "url": "https://jeffcosheriffal.com/flock-cameras-in-center-point-prove-effective/"
   },
   "https://jerrychiles.substack.com/p/tbl-reports-investigative-series-c96/comment/336323606": {
+    "archive": "931c369cfc97f1bac80b852f316c95a22bfcf3ccd3e452400960c1703268f045.txt",
+    "blocked_reason": null,
     "content_hash": "21e31f3293b9270a23cb81878cc78b22ea6bf8a897f05896a15bdaa2f17bb1aa",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://jerrychiles.substack.com/p/tbl-reports-investigative-series-c96/comment/336323606",
     "simhash": "f08f1c499d440482",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
     "text_len": 6967,
     "title": "Comments - TBL / REPORTS — INVESTIGATIVE SERIES FLOCK CAMERAS SAFETY OR SURVEILLANCE?",
     "url": "https://jerrychiles.substack.com/p/tbl-reports-investigative-series-c96/comment/336323606"
@@ -5359,21 +5421,29 @@
     "url": "https://live-township-of-north-brunswick.pantheonsite.io/wp-content/uploads/2025/09/302-9.25-Authorizing-A-Proprietary-Contract-with-Flock-Safety-for-Automated-License-Plate-Reader-1.pdf"
   },
   "https://localyocalidaho.substack.com/p/wilder-amends-flock-camera-deal-but": {
+    "archive": "b727234f8a4b832fda9c136b88609a825f665368ecbbaa6196c5139d71a4cf11.txt",
+    "blocked_reason": null,
     "content_hash": "6473d2b3f63135a7f689cba7ec8ab0f3a8c46c3c7be84110d02847fd2485b559",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://localyocalidaho.substack.com/p/wilder-amends-flock-camera-deal-but",
     "simhash": "db52e742b2b62688",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
     "text_len": 3056,
     "title": "Wilder Amends Flock Camera Deal, But Idahoans Still Want It Gone",
     "url": "https://localyocalidaho.substack.com/p/wilder-amends-flock-camera-deal-but"
   },
   "https://lonepeakpolice.com/flock-safety": {
+    "archive": "a71078055b19e4e1da55fe61d7e01eeb7903413f4dc42b5b4651a0e9c70e9c5f.txt",
+    "blocked_reason": null,
     "content_hash": "f92bb011f1d44373ee4a901bd7324f0fa0f5ede3dbb0c36af2fd0b174447c534",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://lonepeakpolice.com/flock-safety/",
     "simhash": "47745869be0ee48f",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
     "text_len": 267,
     "title": "Flock Safety – Lone Peak Police Department",
     "url": "https://lonepeakpolice.com/flock-safety/"
@@ -5802,12 +5872,16 @@
     "url": "https://www.muckrock.com/foi/talent-6725/talent-police-department-flock-camera-policy-invoice-map-and-contracts-208246/"
   },
   "https://myedmondsnews.com/2026/05/edmonds-cancels-contract-with-flock-license-plate-reader-system": {
-    "content_hash": "3d352de0927f2d0cc4b9844e0860c592e29dc2f4c4b22b57b65f4a22edcd8319",
+    "archive": "e191a49779ca7df3b30e83f90b38a19c0902b185028f7d5ac96f351bcff1d47e.txt",
+    "blocked_reason": null,
+    "content_hash": "065b72750f422ee145434adfe292327127f220a9c41a18a00b5bf8904ef36135",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://myedmondsnews.com/2026/05/edmonds-cancels-contract-with-flock-license-plate-reader-system/",
-    "simhash": "d95f6cd1ae9b9e56",
-    "text_len": 3587,
+    "simhash": "c95f7cd1ae9b9e56",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 3585,
     "title": "Edmonds cancels contract with Flock license plate reader system - My Edmonds News",
     "url": "https://myedmondsnews.com/2026/05/edmonds-cancels-contract-with-flock-license-plate-reader-system/"
   },
@@ -6683,12 +6757,16 @@
     "url": "https://www.providencejournal.com/story/news/crime/2026/08/03/vandals-target-cranston-camera-as-resistance-to-flock-grows-in-ri/91116402007/"
   },
   "https://provo.gov/m/newsflash/Home/Detail/225": {
-    "content_hash": "4691d71c800ba60cb74d969e81040c116fb85b5359f6b72cad1e78a680b79de4",
+    "archive": "7c33613c2cf077e1e55e60cadd56987f640fb623f90ea6e541f2fa0152a2289f.txt",
+    "blocked_reason": null,
+    "content_hash": "6db5754dd6a7f700985478c67db1e3a04a41ef059ddba1cf44a1189a031ff0cf",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://www.provo.gov/m/newsflash/Home/Detail/225",
-    "simhash": "62fdf69ab578128e",
-    "text_len": 5268,
+    "simhash": "62fcf49af538128e",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 5206,
     "title": "Automated License Plate Reader (Flock) Cameras in Provo City • Provo, UT Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
     "url": "http://www.provo.gov/m/newsflash/Home/Detail/225"
   },
@@ -7131,6 +7209,20 @@
     "title": "License plate reader camera debate: Solving crime vs. privacy concerns",
     "url": "https://www.rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007/"
   },
+  "https://rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "error",
+    "fetched_at": "2026-10-12",
+    "final_url": null,
+    "retry_after": "2026-10-19",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007/"
+  },
   "https://riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf": {
     "archive": null,
     "content_hash": null,
@@ -7418,11 +7510,15 @@
     "url": "https://sarpy.civicweb.net/document/82441/"
   },
   "https://scottsbluff.org/departments/police/alpr_-_automatic_license_plate_readers.php": {
+    "archive": "212c5d7f951fc9b42909c729bc134503ffbee403277d87581c0a674a985d5889.txt",
+    "blocked_reason": null,
     "content_hash": "62c3397c6fc7eb96296124f6c1f7def740fe7bc237d40d3f9fc4f23598a6c259",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://www.scottsbluff.org/departments/police/alpr_-_automatic_license_plate_readers.php",
     "simhash": "661fbc1b8476465c",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
     "text_len": 2639,
     "title": "Scottsbluff, NE",
     "url": "http://www.scottsbluff.org/departments/police/alpr_-_automatic_license_plate_readers.php"
@@ -7623,11 +7719,15 @@
     "url": "http://www.snoho.com/news/2026/jun/10/everett-settles-flock-cameras-records-lawsuit/"
   },
   "https://soonersentinel.substack.com/p/the-government-is-watching": {
+    "archive": "a2f048248500a5fd413b0c2db6f8e371e9147a416443ce68ac4a6fab0f34f820.txt",
+    "blocked_reason": null,
     "content_hash": "37bcfde1728621cd4bca8c858f80bc239365c22ef10b9948c02f88b2a3cd894f",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://soonersentinel.substack.com/p/the-government-is-watching",
     "simhash": "e95952e7bf4d31b6",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
     "text_len": 22052,
     "title": "THE GOVERNMENT IS WATCHING - The Sooner Sentinel",
     "url": "https://soonersentinel.substack.com/p/the-government-is-watching"
@@ -8043,11 +8143,15 @@
     "url": "https://www.thecamarilloacorn.com/articles/residents-sound-the-alarm-over-license-plate-readers/"
   },
   "https://thecommercedispatch.substack.com/p/another-missouri-sheriff-cancels": {
+    "archive": "0d0bc210463fa0771682d541a68002bdd362ca6b1c62c563ebc5dbcf5179e389.txt",
+    "blocked_reason": null,
     "content_hash": "0909c52495aaa15ee453c05af536bf354586631e93ba911724262a270d3c601a",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://thecommercedispatch.substack.com/p/another-missouri-sheriff-cancels",
     "simhash": "d9546dde62da126d",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
     "text_len": 3194,
     "title": "Another Missouri Sheriff Cancels Flock Contract After Community Forum",
     "url": "https://thecommercedispatch.substack.com/p/another-missouri-sheriff-cancels"
@@ -8235,12 +8339,16 @@
     "url": "https://www.theindianalawyer.com/articles/license-plate-camera-systems-have-given-some-rogue-officers-a-tool-for-stalking"
   },
   "https://theinnovationattorney.substack.com/p/why-is-flock-safety-losing-municipal": {
-    "content_hash": "8e8338e23fdeaa2bec07c1ac27bc82cd236ff6140eac92eddc1975ef12a9fb5c",
+    "archive": "994e433bd04e1a71eae34bf965ee5933717a0cfffc1cc7ab67dfda7bdf771f26.txt",
+    "blocked_reason": null,
+    "content_hash": "41ec291ea50722304e4309ef984c021467939fe172a9f18e7835d45b9fcaefb6",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-26",
+    "fetched_at": "2026-10-12",
     "final_url": "https://theinnovationattorney.substack.com/p/why-is-flock-safety-losing-municipal",
-    "simhash": "84031d9280e8acb6",
-    "text_len": 8140,
+    "simhash": "c4031da284e8acf0",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 8062,
     "title": "Why Is Flock Safety Losing Municipal Contracts",
     "url": "https://theinnovationattorney.substack.com/p/why-is-flock-safety-losing-municipal"
   },
@@ -8802,21 +8910,29 @@
     "url": "https://tztnews.com/2026/07/08/ahead-of-tonights-city-council-flock-safety-vote-one-cedar-city-criminal-case-raises-new-concerns/"
   },
   "https://universe.byu.edu/2024/03/19/flock-safety-system-identifies-license-plates-for-police-investigation": {
+    "archive": "52fd1e8acd2253e355a58726c10300b81cceeae4cde50c7bc2f55655f3e8798f.txt",
+    "blocked_reason": null,
     "content_hash": "2222bbdbcd7d99c2e011d1b2fe9bbff6fb6334a10f74fb1ede5198a85264c9e3",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://universe.byu.edu/2024/03/19/flock-safety-system-identifies-license-plates-for-police-investigation/",
     "simhash": "4a0b68be5f84b131",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
     "text_len": 2728,
     "title": "Flock Safety System identifies license plates for police investigation - BYU Daily Universe Close Home Burger Menu Icon",
     "url": "https://universe.byu.edu/2024/03/19/flock-safety-system-identifies-license-plates-for-police-investigation/"
   },
   "https://universe.byu.edu/metro/provo-citizens-raise-concerns-over-use-of-flock-safety": {
+    "archive": "8b79f346568f37f783bd686e41f921568ee15a3ff7bc616485e115e3c983fc69.txt",
+    "blocked_reason": null,
     "content_hash": "471fe2afc68af57e094177fbd6bd418b2c8d612a6a5f9548d92635c4d050d256",
     "fetch_status": "ok",
-    "fetched_at": "2026-09-25",
+    "fetched_at": "2026-10-12",
     "final_url": "https://universe.byu.edu/metro/provo-citizens-raise-concerns-over-use-of-flock-safety",
     "simhash": "a714e3095880714f",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
     "text_len": 3998,
     "title": "Provo citizens raise concerns over use of Flock Safety - BYU Daily Universe Close Home Burger Menu Icon",
     "url": "https://universe.byu.edu/metro/provo-citizens-raise-concerns-over-use-of-flock-safety"

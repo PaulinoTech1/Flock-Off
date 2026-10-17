@@ -266,9 +266,10 @@ def cmd_release(args, cfg) -> None:
 
     # 0. Pre-flight: the push helper must exist before any expensive work.
     #    Failing here (not after tests + signing) saves a wasted release.
+    #    Skipped for --dry-run, which stops before the push.
     #    See docs/RELEASE_SIGNING.md "Push helper".
     helper = os.path.expanduser("~/workspace/flock-off-deploy/github_push.py")
-    if not os.path.isfile(helper):
+    if not args.dry_run and not os.path.isfile(helper):
         sys.exit(f"release: push helper not found: {helper} "
                  f"(see docs/RELEASE_SIGNING.md)")
 

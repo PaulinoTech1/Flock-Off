@@ -161,6 +161,28 @@ the fingerprint's `fetched_at`); refreshing the baseline after acceptance
 retires the review. `decision` is `accepted` or `rejected`; a rejected drift
 means the source is replaced, not kept.
 
+## Contracts page
+
+The Contracts tab lists the actual contract documents behind tracker
+records. A document qualifies only if it IS the contract or its
+authorizing instrument:
+
+- **Signed agreement**: the contract itself (signed agreement, services
+  agreement, order form).
+- **Authorizing instrument**: the resolution, legislative item, or
+  agenda approval that creates, renews, extends, or terminates it.
+
+News articles and official statements about a contract do not qualify.
+The registry is an explicit allowlist in `scripts/contracts.py`, keyed
+by `source_key`; a reviewer classifies each document by reading it,
+and the build fails if a registry citation stops resolving. Each entry
+shows **accurate as of**: the record's `last_verified` date (rule 5),
+meaning the date the record was last checked against its sources. It
+is not the document's date and not a claim the contract remains in
+force; status comes from the tracker record. Coverage is partial by
+design: most agencies' signed contracts have not been obtained yet,
+and the page says so rather than padding itself with articles.
+
 ## Research priorities
 
 Ranked by what most improves the tracker's trustworthiness:

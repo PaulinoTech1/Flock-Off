@@ -8,6 +8,7 @@ const Utils = (() => {
   // Centralized data paths. Change once here, not in three files.
   const PATHS = {
     agencies: "data/agencies.json",
+    contracts: "data/contracts.json",
     manifest: "data/integrity/manifest.json",
     classification: "data/source_classification.json",
     evidence: "data/evidence.json",

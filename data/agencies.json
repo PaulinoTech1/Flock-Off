@@ -51,8 +51,8 @@
     ],
     "methodology": "docs/METHODOLOGY.md",
     "generated_by": "scripts/generate_meta.py",
-    "last_updated": "2026-10-04",
-    "record_count": 343,
+    "last_updated": "2026-10-17",
+    "record_count": 344,
     "jurisdiction_count": 47,
     "jurisdictions": [
       "AL",
@@ -104,7 +104,7 @@
       "WV"
     ],
     "status_counts": {
-      "active": 172,
+      "active": 173,
       "cancelled": 133,
       "expired": 3,
       "pending": 25,
@@ -113,8 +113,8 @@
     "terminal_verified": 8,
     "terminal_pending_validation": 138,
     "records_with_renewal_date": 5,
-    "records_with_contract_end": 26,
-    "coverage_note": "343 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 5 records carry a renewal date and 26 a contract end date; exact renewal dates remain thin and are the top research priority."
+    "records_with_contract_end": 27,
+    "coverage_note": "344 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 8 terminal claims verified, 138 pending validation*. 5 records carry a renewal date and 27 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {
@@ -5061,7 +5061,36 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "Resolution 3-2024: Approving Contract with Flock Group Inc",
+          "title": "Resolution 3-2024 (Millington, TN): approves Millington PD's Flock maintenance contract; names Germantown PD among data-sharing agencies",
+          "url": "https://www.millingtontn.gov/AgendaCenter/ViewFile/Item/4271?fileID=5051",
+          "date": "2024-01-08",
+          "verified": true,
+          "source_key": "https://millingtontn.gov/AgendaCenter/ViewFile/Item/4271?fileID=5051"
+        }
+      ],
+      "state": "TN",
+      "status": "active",
+      "transparency_portal": null
+    },
+    {
+      "agency": "Millington Police Department",
+      "agency_type": "municipal_police",
+      "annual_cost_usd": 47500,
+      "cameras": 19,
+      "city": "Millington",
+      "confidence": "high",
+      "contract_end": "2029-01-08",
+      "contract_start": "2024-01-08",
+      "county": "Shelby County",
+      "decision_date": "2024-01-08",
+      "decision_summary": "Millington Board of Mayor and Aldermen adopted Resolution 3-2024 on 2024-01-08, approving a Flock Group Inc contract for maintenance and support of Millington PD's 19 LPR cameras at $47,500 per year for five years, with a two-year renewal option. Recitals note prior Shelby County Commission grant funding for the initial implementation and name Germantown PD among local agencies sharing Flock data.",
+      "id": "tn-millington-pd",
+      "last_verified": "2026-10-17",
+      "notes": "Contract end date is derived from the resolution's stated five-year term from adoption (2024-01-08); it is not printed in the document. The resolution covers maintenance and support for cameras already in use; the initial grant-funded rollout date is not stated.",
+      "renewal_date": null,
+      "sources": [
+        {
+          "title": "Resolution 3-2024 (Millington, TN): approving contract with Flock Group Inc for Millington PD's Flock cameras",
           "url": "https://www.millingtontn.gov/AgendaCenter/ViewFile/Item/4271?fileID=5051",
           "date": "2024-01-08",
           "verified": true,
@@ -13206,16 +13235,16 @@
       "decision_date": null,
       "decision_summary": "Lone Peak Police Department states it utilizes fixed license plate cameras provided by Flock Safety and maintains an active Flock transparency portal.",
       "id": "ut-lone-peak-pd",
-      "last_verified": "2026-09-25",
-      "notes": "Agency serves Highland and Alpine; headquarters in Highland. Flock transparency portal shows 11 cameras and 30-day retention. No contract dates or cost found.",
+      "last_verified": "2026-10-17",
+      "notes": "Agency serves Highland and Alpine; headquarters in Highland. Flock transparency portal shows 11 cameras and 30-day retention. No contract dates or cost found. Agency site migrated from lonepeakpolice.com to lonepeakpolice.gov in 2026; the Flock page text at the .gov address was verified identical to the cited page on 2026-10-17.",
       "renewal_date": null,
       "sources": [
         {
           "title": "Flock Safety - Lone Peak Police Department (official agency page)",
-          "url": "https://lonepeakpolice.com/flock-safety/",
+          "url": "https://lonepeakpolice.gov/flock-safety/",
           "date": null,
           "verified": true,
-          "source_key": "https://lonepeakpolice.com/flock-safety",
+          "source_key": "https://lonepeakpolice.gov/flock-safety",
           "content_hash": "f92bb011f1d44373ee4a901bd7324f0fa0f5ede3dbb0c36af2fd0b174447c534"
         },
         {

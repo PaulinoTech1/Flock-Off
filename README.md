@@ -1,9 +1,5 @@
 # Flock-Off
 
-## TL;DR
-
-A public, source-archived tracker of Flock Safety ALPR (license-plate reader) contracts, renewals, and cancellations across the US, built from public records and OSINT. Goal: privacy advocacy through transparency, with documented, checkable evidence of where surveillance tech is deployed.
-
 **Follow the money behind ALPR surveillance.**
 
 Flock Safety has put 120,000+ automated license plate reader cameras across the US. The map of *cameras* is well covered by DeFlock. What nobody tracks is the map of *contracts*: which agencies hold them, what they cost, when they renew, and where organizers already won cancellations. Every Flock camera is a contract, every contract has a renewal date, and every renewal is a pressure window. Flock-Off is that tracker.
@@ -51,6 +47,7 @@ Deploy: no build step. The tracker page is fully static; tip submission uses min
 | Tab | What |
 |---|---|
 | **Tracker** | Searchable, filterable database of Flock contracts: status, cameras, cost, renewal dates, decision history, sources. Default sort surfaces renewals first. |
+| **Contracts** | The actual contract documents behind the tracker: signed agreements and the resolutions/legislative items that authorize, renew, extend, or terminate them, each with the date its record was last verified ("accurate as of"). Curated registry in `scripts/contracts.py`; news about a contract does not qualify. |
 | **Map** | ALPR cameras near the map center or your location (OpenStreetMap via Overpass, DeFlock's source data). |
 | **Tools** | Directory of the existing anti-Flock ecosystem. |
 | **Learn** | How cancellations happen, spotting cameras, contributing. |

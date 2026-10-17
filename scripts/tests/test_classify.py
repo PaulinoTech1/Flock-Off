@@ -51,8 +51,11 @@ class TestClassify(unittest.TestCase):
         # Updated 2026-10-04: AI-summary domains (citizenportal.ai, summed.news)
         # moved from unverified to the new excluded tier (Boss policy).
         # Updated 2026-10-04: openutah.org added (AI-generated meeting summaries).
+        # Updated 2026-10-17: lonepeakpolice.gov promoted to verified-primary
+        # (Lone Peak PD UT migrated its official site from lonepeakpolice.com;
+        # approval recorded in config/domain_approvals.yaml).
         self.assertEqual(len(cs.VERIFIED_NEWS()), 197)
-        self.assertEqual(len(cs.VERIFIED_PRIMARY()), 83)
+        self.assertEqual(len(cs.VERIFIED_PRIMARY()), 84)
         self.assertEqual(len(cs.UNVERIFIED()), 63)
         self.assertEqual(len(cs.EXCLUDED()), 3)
 
