@@ -26,6 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 import contracts as contracts_mod  # noqa: E402
+import petitions as petitions_mod  # noqa: E402
 import evidence as evidence_mod  # noqa: E402
 
 # Display labels come from the canonical taxonomy in scripts/evidence.py;
@@ -150,6 +151,47 @@ def _prerender_contracts(entries: list) -> str:
     return "\n".join(cards)
 
 
+def _petition_facts(e: dict) -> str:
+    """One-line fact summary for a petition card; omits unknown fields.
+
+    Mirrors js/petitions.js facts().
+    """
+    facts = []
+    if e.get("target_text"):
+        facts.append(f"To: {e['target_text']}")
+    if e.get("signatures") is not None:
+        asof = f" (as of {e['signatures_as_of']})" if e.get("signatures_as_of") else ""
+        facts.append(f"{e['signatures']:,} signatures{asof}")
+    if e.get("organizer"):
+        facts.append(f"Organizer: {e['organizer']}")
+    if e.get("started"):
+        facts.append(f"Started {e['started']}")
+    return " · ".join(facts)
+
+
+def _prerender_petitions(entries: list) -> str:
+    """Petition cards; markup mirrors js/petitions.js card()."""
+    cards = []
+    for e in entries:
+        badge_cls = "ok" if e["status"] == "open" else "lead"
+        badge = f'<span class="badge {badge_cls}">{_esc(e["status_label"])}</span>'
+        meta = " · ".join(p for p in (e["platform"], e.get("place")) if p)
+        cards.append(
+            '<article class="source-card">{badge}'
+            '<h3><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a></h3>'
+            '<p class="source-meta">{meta}</p>'
+            '<p class="contract-facts">{facts}</p>'
+            '<p class="cited-by">{note}</p></article>'.format(
+                badge=badge,
+                url=_esc(e["url"]),
+                title=_esc(e["title"]),
+                meta=_esc(meta),
+                facts=_esc(_petition_facts(e)),
+                note=_esc(e["note"]),
+            )
+        )
+    return "\n".join(cards)
+
 def _render_rows(agencies: list, ev_by_id: dict) -> str:
     rows = []
     for a in agencies:
@@ -206,20 +248,32 @@ def main() -> None:
     except ValueError as exc:
         sys.exit(f"build failed: {exc}")
 
+    # Petitions page entries: the curated registry in
+    # scripts/petitions.py. Fail-closed on the same terms: a broken
+    # entry aborts the build instead of shipping a bad card.
+    try:
+        petition_entries = petitions_mod.build_petition_entries(agencies)
+    except ValueError as exc:
+        sys.exit(f"build failed: {exc}")
+
     index_path = ROOT / "index.html"
     html = index_path.read_text(encoding="utf-8")
     rows_marker = "<!--PRE_RENDER_ROWS-->"
     src_marker = "<!--PRE_RENDER_SOURCES-->"
     contracts_marker = "<!--PRE_RENDER_CONTRACTS-->"
+    petitions_marker = "<!--PRE_RENDER_PETITIONS-->"
     if rows_marker not in html:
         sys.exit("build failed: pre-render rows marker missing from index.html")
     if src_marker not in html:
         sys.exit("build failed: pre-render sources marker missing from index.html")
     if contracts_marker not in html:
         sys.exit("build failed: pre-render contracts marker missing from index.html")
+    if petitions_marker not in html:
+        sys.exit("build failed: pre-render petitions marker missing from index.html")
     html = html.replace(rows_marker, _render_rows(agencies, ev_by_id))
     html = html.replace(src_marker, _prerender_sources(agencies))
     html = html.replace(contracts_marker, _prerender_contracts(contract_entries))
+    html = html.replace(petitions_marker, _prerender_petitions(petition_entries))
     index_path.write_text(html, encoding="utf-8")
 
     report_path = ROOT / "api" / "report.js"
@@ -284,10 +338,21 @@ def main() -> None:
     (public / "data" / "contracts.json").write_text(
         json.dumps(contracts_doc, indent=2) + "\n", encoding="utf-8")
 
+    # Public petitions file: same pattern as contracts.json, so the
+    # no-JS pre-render and the JS render cannot disagree.
+    petitions_doc = {
+        "generated_at": datetime.date.today().isoformat(),
+        "dataset_last_updated": contracts_doc["dataset_last_updated"],
+        "entries": petition_entries,
+    }
+    (public / "data" / "petitions.json").write_text(
+        json.dumps(petitions_doc, indent=2) + "\n", encoding="utf-8")
+
     n_verified = sum(1 for ev in ev_by_id.values() if ev["tier"] == "verified")
     n_pending = sum(1 for ev in ev_by_id.values() if ev["tier"] == "pending")
     print(f"build ok: pre-rendered {len(agencies)} agencies, injected {len(ids)} agency ids, "
           f"contracts: {len(contract_entries)} documents, "
+          f"petitions: {len(petition_entries)}, "
           f"evidence: {n_verified} verified / {n_pending} pending validation*")
 
 

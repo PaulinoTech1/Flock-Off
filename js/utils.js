@@ -9,6 +9,7 @@ const Utils = (() => {
   const PATHS = {
     agencies: "data/agencies.json",
     contracts: "data/contracts.json",
+    petitions: "data/petitions.json",
     manifest: "data/integrity/manifest.json",
     classification: "data/source_classification.json",
     evidence: "data/evidence.json",

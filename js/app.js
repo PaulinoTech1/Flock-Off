@@ -12,7 +12,7 @@ window.addEventListener("unhandledrejection", (e) => {
 });
 
 const App = (() => {
-  const TABS = ["tracker", "contracts", "sources", "tools", "learn", "legal"];
+  const TABS = ["tracker", "contracts", "petitions", "sources", "tools", "learn", "legal"];
 
   function show(name) {
     if (!TABS.includes(name)) name = "tracker";
@@ -123,6 +123,7 @@ const App = (() => {
     showFromHash();
     TrackerTab.init();
     ContractsTab.init();
+    PetitionsTab.init();
     SourcesTab.init();
   }
 
