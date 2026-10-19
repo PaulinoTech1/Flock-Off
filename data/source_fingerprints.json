@@ -402,6 +402,20 @@
     "title": null,
     "url": "https://alprwatch.org/pub/muckrock/data/199260-flock-email-metadata-and-contracts/FLOCK_ALPR.pdf"
   },
+  "https://altoona-iowa.com/departments/public_safety/police/technology_in_altoona__public_safety,_privacy___accountability.php": {
+    "archive": "dc6d78dbc58b9c47cd71149463be5bba5950583f4613d9349ef113017dab4788.txt",
+    "blocked_reason": null,
+    "content_hash": "4d1ce51d72ab7495f4f3535be829f36d15a71f3b4e7082023e269b9390ae8b01",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.altoona-iowa.com/departments/public_safety/police/technology_in_altoona__public_safety,_privacy___accountability.php",
+    "simhash": "0fd8c1caebf46e8f",
+    "snapshot_path": "snapshots/2026-10-19/3d0753dfe1d7f7db0827c66672d0fdc527015c7fe2c2ad8e0e199d0a23d6c2ea.json",
+    "snapshot_status": "uploaded",
+    "text_len": 35934,
+    "title": "ALPR Technology in Altoona: Public Safety, Privacy & Accountability",
+    "url": "https://www.altoona-iowa.com/departments/public_safety/police/technology_in_altoona__public_safety,_privacy___accountability.php"
+  },
   "https://alvinsun.net/news/article_22f94e55-0e41-4281-87c5-7f97ac4f1b3a.html": {
     "archive": "219698c34bdf424d66bbda8d910c83fde96527ba057823e9f3eb298dd26083f0.txt",
     "content_hash": "c444b536489b4aa76d958009a0a11539798e541f320b3bf93f195eb9d9ff6145",
@@ -903,6 +917,20 @@
     "title": "Sedona rejects license plate readers, ends contract with Flock Safety",
     "url": "https://www.beaconjournal.com/story/news/local/arizona/2025/10/05/sedona-removes-flock-safety-license-plate-readers/86268179007/"
   },
+  "https://beaconny.gov/wp-content/uploads/2023/01/2023-002-Resolutions-Council.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://beaconny.gov/wp-content/uploads/2023/01/2023-002-Resolutions-Council.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://beaconny.gov/wp-content/uploads/2023/01/2023-002-Resolutions-Council.pdf"
+  },
   "https://bellevilleareaindependent.com/vbt-approves-license-plate-recognition-project": {
     "archive": "3f21b835c5a1dfe01d493749fcd950ef27b3bf0521053721e8267191fe07ca11.txt",
     "content_hash": "42c25dfc68a4c40c75f1432c4f6b3e2933400cbd6dde79138e379d6bbc279fc2",
@@ -956,6 +984,20 @@
     "title": null,
     "url": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-05-07%20Annotated%20Agenda%20-%20Council.pdf"
   },
+  "https://bhamal.granicus.com/MinutesViewer.php?clip_id=1935&view_id=6": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://bhamal.granicus.com/DocumentViewer.php?file=bhamal_19354b9c02ed39eab9579ca6572bd5b6.pdf&view=1",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://bhamal.granicus.com/MinutesViewer.php?view_id=6&clip_id=1935"
+  },
   "https://blainecountyid.gov/CivicAlerts.aspx?AID=733": {
     "archive": "7fda674e76e02c4832becce068f70b44ca354141187a8eb8f41a05afd1da9308.txt",
     "blocked_reason": null,
@@ -1008,6 +1050,62 @@
     "text_len": 618,
     "title": "Flock cameras reading license plates debated in Henderson County NC",
     "url": "https://www.blueridgenow.com/story/news/local/2026/09/14/flock-cameras-reading-license-plates-debated-in-henderson-county-north-carolina/91596890007/"
+  },
+  "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2242-RATIFICATION-3-5-2024-Vendor-FLOCK-SAFETY.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "error",
+    "fetched_at": "2026-10-19",
+    "final_url": null,
+    "retry_after": "2026-10-26",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2242-RATIFICATION-3-5-2024-Vendor-FLOCK-SAFETY.pdf"
+  },
+  "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2341-RATIFICATION-6-4-2024-Vendor-FLOCK-SAFETY.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "error",
+    "fetched_at": "2026-10-19",
+    "final_url": null,
+    "retry_after": "2026-10-26",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2341-RATIFICATION-6-4-2024-Vendor-FLOCK-SAFETY.pdf"
+  },
+  "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2342-RATIFICATION-6-4-2024-Vendor-FLOCK-SAFETY.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "error",
+    "fetched_at": "2026-10-19",
+    "final_url": null,
+    "retry_after": "2026-10-26",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2342-RATIFICATION-6-4-2024-Vendor-FLOCK-SAFETY.pdf"
+  },
+  "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2377-RATIFICATION-7-16-2024-Vendor-FLOCK.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "error",
+    "fetched_at": "2026-10-19",
+    "final_url": null,
+    "retry_after": "2026-10-26",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2377-RATIFICATION-7-16-2024-Vendor-FLOCK.pdf"
   },
   "https://bonnevillecountynews.com/idaho-falls-police-defend-license-plate-cameras-amid-privacy-lawsuit-threats-and-contract-dispute": {
     "archive": "88033406548c1b23da4c9a6dbb7ae6021eb66cba3525b11b199cad2eb5dcdf65.txt",
@@ -1332,6 +1430,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://chestertonin.org/DocumentCenter/View/34569/Chesterton-Town-Council-votes-to-discontinue-contract-with-Flock-Safety-license-plate-readers"
+  },
+  "https://ci.florence.or.us/AgendaCenter/ViewFile/Minutes/_02022026-1220": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.ci.florence.or.us/AgendaCenter/ViewFile/Minutes/_02022026-1220",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.ci.florence.or.us/AgendaCenter/ViewFile/Minutes/_02022026-1220"
   },
   "https://cincinnati.com/story/news/crime/2026/08/23/flock-cameras-spread-ohio-northern-kentucky-backlash/90912929007": {
     "archive": "e4af0b83520acbe49931ddbb5dcc4e463224efa56a21ab6612910ae53eca2091.txt",
@@ -2410,6 +2522,20 @@
     "title": "From Illinois to Doral: How Flock's Cameras Became an…",
     "url": "https://d33gy59ovltp76.cloudfront.net/news/from-illinois-to-doral-how-flocks-cameras-became-an-immigration-enforcement-flashpoint"
   },
+  "https://d3n9y02raazwpg.cloudfront.net/salisburymd/f5417f02-4157-11f0-b7f5-005056a89546-319aa378-ef0b-4ffc-9cb8-d75f103a5777-1765469598.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://d3n9y02raazwpg.cloudfront.net/salisburymd/f5417f02-4157-11f0-b7f5-005056a89546-319aa378-ef0b-4ffc-9cb8-d75f103a5777-1765469598.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://d3n9y02raazwpg.cloudfront.net/salisburymd/f5417f02-4157-11f0-b7f5-005056a89546-319aa378-ef0b-4ffc-9cb8-d75f103a5777-1765469598.pdf"
+  },
   "https://d3nqdp0e3r32g8.cloudfront.net/news/baton-rouge-police-credit-license-plate-cameras-with-helping-solve-crimes": {
     "archive": "8d6b9cdf1406d0c9395144983baba5a66947361421faa114dfcf77e73d076b93.txt",
     "content_hash": "2a98f8768d096e394636de5a6fb84577495ab8b95444b9d0b76ad681f5cd7753",
@@ -2888,6 +3014,20 @@
     "title": "Contract_Flock_ClivePD.pdf - Google Drive",
     "url": "https://drive.google.com/file/d/15DPNIPNc02k2suwrRBnQUfybw87M29SX/view"
   },
+  "https://drive.google.com/file/d/1lHWKXFbhB6vAAZ7MlSrQ8vxXzVTlsTjD/view": {
+    "archive": "8dc3b0952471ef4288907f0a6f3607916a91330f6771b22d170146d26eeb8884.txt",
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://drive.google.com/file/d/1lHWKXFbhB6vAAZ7MlSrQ8vxXzVTlsTjD/view",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 8,
+    "title": "Contract_Flock_AnkenyPD.pdf - Google Drive",
+    "url": "https://drive.google.com/file/d/1lHWKXFbhB6vAAZ7MlSrQ8vxXzVTlsTjD/view"
+  },
   "https://dropsitenews.com/p/nyclu-lawsuit-surveillance-camera-location-public-record-flock": {
     "archive": "64e8dcbc5e4ca9b34b7d352936ec3605afe1336eb53b0cfa15562ce5ad258a25.txt",
     "content_hash": "d8679c1b75424a769833789b65a60c281a488ccae3fdeecd540c6e1b352f8c69",
@@ -3123,6 +3263,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/16974?fileID=95049"
+  },
+  "https://eyesoffeugene.org/wp-content/uploads/2025/07/Flock-Contract-with-City-of-Eugene-2025.pdf": {
+    "archive": null,
+    "blocked_reason": "http_403",
+    "content_hash": null,
+    "fetch_status": "blocked",
+    "fetched_at": "2026-10-19",
+    "final_url": null,
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://eyesoffeugene.org/wp-content/uploads/2025/07/Flock-Contract-with-City-of-Eugene-2025.pdf"
   },
   "https://eyesoffindiana.org/counties/johnson": {
     "archive": "04863a9f582a8b185dfa2aee108bd76328cfea35a1162a64d53a2157b849d152.txt",
@@ -4514,6 +4668,20 @@
     "title": null,
     "url": "https://www.hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf?t=202412021324290"
   },
+  "https://harlancounty.ne.gov/wp-content/uploads/sites/73/2026/03/bos-2025-minutes.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://harlancounty.ne.gov/wp-content/uploads/sites/73/2026/03/bos-2025-minutes.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://harlancounty.ne.gov/wp-content/uploads/sites/73/2026/03/bos-2025-minutes.pdf"
+  },
   "https://haussamen.com/wp-content/uploads/2026/02/NM-Las-Cruces-PD-FlockOSLPRLive-Video-Law-Enforcement-Agreement-9122024.pdf": {
     "archive": null,
     "content_hash": null,
@@ -4707,6 +4875,20 @@
     "text_len": 14731,
     "title": "Indiana lawmakers want to crack down on data privacy. What about license plate readers? • Indiana Capital Chronicle Quotation",
     "url": "https://indianacapitalchronicle.com/2023/02/01/indiana-lawmakers-want-to-crack-down-on-data-privacy-what-about-license-plate-readers/"
+  },
+  "https://indy.gov/api/v1/indy_contract_document/928C3093-9448-4F2B-BDB8-932D30F641A9": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.indy.gov/api/v1/indy_contract_document/928C3093-9448-4F2B-BDB8-932D30F641A9",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.indy.gov/api/v1/indy_contract_document/928C3093-9448-4F2B-BDB8-932D30F641A9"
   },
   "https://indystar.com/story/news/crime/2026/08/10/what-is-a-flock-camera-and-why-are-people-cutting-them-down/91195834007": {
     "archive": "6bb1cb437b0303ef69a33c4672ff08e79398d15691d054d8a21232475a3354e3.txt",
@@ -5006,6 +5188,20 @@
     "text_len": 0,
     "title": "FLOCK Cameras in Center Point Prove Effective - Jefferson County Sheriff's Office",
     "url": "https://jeffcosheriffal.com/flock-cameras-in-center-point-prove-effective/"
+  },
+  "https://jeffersoncitymo.gov/2026-09-08%20AMENDED%20packet.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://cms4files.revize.com/jeffersonmo/2026-09-08%20AMENDED%20packet.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.jeffersoncitymo.gov/2026-09-08%20AMENDED%20packet.pdf"
   },
   "https://jerrychiles.substack.com/p/tbl-reports-investigative-series-c96/comment/336323606": {
     "archive": "931c369cfc97f1bac80b852f316c95a22bfcf3ccd3e452400960c1703268f045.txt",
@@ -5672,6 +5868,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://legistar.granicus.com/sanjose/attachments/1e311deb-3542-4cd1-8212-d3452782c28f.pdf"
+  },
+  "https://legistar1.granicus.com/Pflugerville/meetings/2026/8/3764_M_City_Council_26-08-25_Minutes_-_Final.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://legistar1.granicus.com/Pflugerville/meetings/2026/8/3764_M_City_Council_26-08-25_Minutes_-_Final.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://legistar1.granicus.com/Pflugerville/meetings/2026/8/3764_M_City_Council_26-08-25_Minutes_-_Final.pdf"
   },
   "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf": {
     "archive": null,
@@ -6675,6 +6885,34 @@
     "text_len": 5697,
     "title": "Who's watching who? How NMSU students feel about Flock cameras - NMSU Round Up",
     "url": "https://nmsuroundup.com/33615/showcase/whos-watching-who-how-nmsu-students-feel-about-flock-camerass/"
+  },
+  "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1379,plainText=false)": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1379,plainText=false)",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1379,plainText=false)"
+  },
+  "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1397,plainText=false)": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1397,plainText=false)",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1397,plainText=false)"
   },
   "https://ocdeez.github.io/magistrate-monitor/archive/files/july-21-2026-regular-meeting/2026-07-20/all-in-one-document.pdf": {
     "archive": null,
@@ -7942,6 +8180,20 @@
     "title": "FLOCK cameras contract renewed within Salina for 3 more years",
     "url": "https://salinapost.com/posts/d902070a-cc14-4b63-ac30-a19ef2b8ee3f"
   },
+  "https://salisburymd.granicus.com/services/minutes/reports/4095083e-2db4-4f94-bba5-87bb6deb57d0/attachment": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://granicus-azasp-hypatia.s3.amazonaws.com/JUhT5oGjiK14LqsaXrg4JdF8?response-content-disposition=inline%3B%20filename%3D%2212.15.25%20LS%20mins.pdf%22%3B%20filename%2A%3DUTF-8%27%2712.15.25%2520LS%2520mins.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATHOFOHMMNY5Z5H5B%2F20261019%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261019T155447Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=071b6ced087e2312f0a0979c91d44b8896d341d76eb54c65d4f91c28ed4dd4d6",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://salisburymd.granicus.com/services/minutes/reports/4095083e-2db4-4f94-bba5-87bb6deb57d0/attachment"
+  },
   "https://sandovalsignpost.com/2026/09/deflock-rr": {
     "archive": "951f854835408f7bfa78ee59feb265dfdf2649f69d83c4ae74cee65465d7f419.txt",
     "content_hash": "a8ef53ccf15d273388d4aa5e6c478a779ce9feb0bd118c71c71c9a0490901cfb",
@@ -8243,6 +8495,20 @@
     "text_len": 0,
     "title": null,
     "url": "http://southportland-gov.community.diligentoneplatform.com/document/9d70cca1-180d-4a47-a702-52af619d2310/"
+  },
+  "https://southportland.gov/m/newsflash/Home/Detail/563": {
+    "archive": "1ff46b756fcf7d4972928468b7eccd5a8ff8675cea935ad3c90cf2104644c058.txt",
+    "blocked_reason": null,
+    "content_hash": "f4c4f5bd798303a5a3ccd553e2703a6b829af49c52ec553718a242e210aa314f",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.southportland.gov/m/newsflash/Home/Detail/563",
+    "simhash": "16bac88b48cfce79",
+    "snapshot_path": "snapshots/2026-10-19/f29674419a52460f304ea376f547bb56a48b118b7d84f8d45d3996a3497f478b.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1360,
+    "title": "Update: Flock ALPR Cameras Removed • South Portland, ME Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
+    "url": "https://www.southportland.gov/m/newsflash/Home/Detail/563"
   },
   "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras": {
     "archive": "86f5982d5e3168262f0376bbf2a1cc49911667c72f80e5e4cfe9c5286e61a23e.txt",
@@ -9630,6 +9896,20 @@
     "title": "Your License Plate, Logged: Where Flock Safety Stands in Utah",
     "url": "https://utahn.com/your-license-plate-logged-where-flock-safety-stands-in-utah/"
   },
+  "https://valleycountyne.gov/wp-content/uploads/sites/54/2026/03/Minutes-4-28-26.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://valleycountyne.gov/wp-content/uploads/sites/54/2026/03/Minutes-4-28-26.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://valleycountyne.gov/wp-content/uploads/sites/54/2026/03/Minutes-4-28-26.pdf"
+  },
   "https://vcstar.com/story/news/local/communities/camarillo/2026/08/27/camarillo-council-criticism-flock-cameras/91482788007": {
     "archive": "91d35f2f69e50aaaf2d57ef3923a3608fc7e21eb9211331a216feac228984239.txt",
     "content_hash": "5c15a0c00e676db30df256c4e600fdd4251a338f19c20d1b2e64b123f97090fc",
@@ -9956,6 +10236,20 @@
     "text_len": 3205,
     "title": "As outcry grows, Lexington mayor announces independent review of city's Flock cameras | WEKU",
     "url": "https://www.weku.org/lexington-richmond/2026-09-04/as-outcry-grows-lexington-mayor-announces-independent-review-of-citys-flock-cameras"
+  },
+  "https://wesanews.org/education/2026-10-17/penn-state-scraps-flock-cameras-on-campus": {
+    "archive": "dcb358553fdc443f1a91ac953fab1d4c5ca51a814345c91c86c0b9217b4d7a7c.txt",
+    "blocked_reason": null,
+    "content_hash": "25d751557103caa057ca6d14d8a1c9fedaa87ff2b737b1ece18d6fdee56babbb",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.wesanews.org/education/2026-10-17/penn-state-scraps-flock-cameras-on-campus",
+    "simhash": "14b2a2afc4f101a9",
+    "snapshot_path": "snapshots/2026-10-19/0622852236f3e8b0cd92c23b80af8d45df352f1e32d27178b1d8e441c79cb220.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1971,
+    "title": "Penn State scraps Flock cameras on campus | 90.5 WESA",
+    "url": "https://www.wesanews.org/education/2026-10-17/penn-state-scraps-flock-cameras-on-campus"
   },
   "https://whitecountycitizen.com/news/beebe-police-chief-auto-renewal-of-flock-camera-contract-stopped-to-expire-oct-8/article_ee8cd07b-8114-5998-91a0-4538e425c2a5.html": {
     "archive": "38b864e5f972e980274aa7135db57667325c3b80b8f7f9583b2b12cd710c51f8.txt",
