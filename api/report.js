@@ -278,7 +278,12 @@ async function isDuplicate(contentHash, token) {
     // Fetch each pending blob and compare content hashes
     for (const blob of blobs.slice(0, 50)) { // limit to 50 for performance
       try {
-        const r = await fetch(blob.url);
+        // Private blobs require the token in the Authorization header
+        // (same as pending/promote/history; without it this fetch fails
+        // and deduplication silently never matches).
+        const r = await fetch(blob.url, {
+          headers: { authorization: `Bearer ${token}` },
+        });
         if (!r.ok) continue;
         const existing = await r.json();
         if (existing.content_hash === contentHash) return true;
@@ -373,7 +378,10 @@ async function repBlob(day, bucket, token) {
     const data = await res.json();
     const hit = (data.blobs || []).find((b) => b.pathname === prefix);
     if (!hit || !hit.url) return null;
-    const r = await fetch(hit.url);
+    // Private blobs require the token in the Authorization header.
+    const r = await fetch(hit.url, {
+      headers: { authorization: `Bearer ${token}` },
+    });
     if (!r.ok) return null;
     return await r.json();
   } catch {
@@ -419,7 +427,7 @@ module.exports = async (req, res) => {
     return send(res, 405, CODES.REPORT_405_001());
   }
   const token = process.env.REPORTS_BLOB_READ_WRITE_TOKEN;
-  if (!token) return send(res, 503, CODES.HISTORY_503_001());
+  if (!token) return send(res, 503, CODES.REPORT_503_001());
 
   const writeKey = process.env.FLOCKOFF_REPORT_WRITE_KEY;
   if (!writeKey) return send(res, 503, CODES.REPORT_503_001());

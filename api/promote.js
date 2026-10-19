@@ -224,7 +224,9 @@ module.exports = async (req, res) => {
       headers: { authorization: `Bearer ${token}` },
     });
     if (!r.ok) return send(res, 400, CODES.PROMOTE_400_004());
-    pending = await r.json();
+    const text = await r.text();
+    if (text.length > 64 * 1024) return send(res, 400, CODES.PROMOTE_400_005());
+    pending = JSON.parse(text);
   } catch {
     return send(res, 400, CODES.PROMOTE_400_005());
   }
