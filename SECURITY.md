@@ -30,10 +30,9 @@ is fail-closed: anything unconfigured or unauthenticated refuses rather
 than degrades.
 
 **Reading is anonymous.** No accounts, no cookies, no analytics, no
-sessions. The tracker, map, and legal pages work without identifying the
-reader. Geolocation for the map stays on-device. Third-party exposure is
-limited to the map tile and geocoding providers and is disclosed in the
-UI (Overpass API, OpenStreetMap tiles, Nominatim, OSRM).
+sessions. The tracker and legal pages work without identifying the
+reader. There is no map and no geolocation; the site makes no
+third-party requests while it is being read.
 
 **Writing requires keys.** Report submission (`/api/report`) requires
 `FLOCKOFF_REPORT_WRITE_KEY` (constant-time compared `x-report-key` header).
@@ -43,11 +42,16 @@ endpoint answers 503 and changes nothing. There is no guest or fallback
 write path.
 
 **Rate limiting is per subnet bucket, privacy-preserving.** Buckets are
-keyed by a daily-rotated salted hash of the /24 (IPv4) or /48 (IPv6)
-subnet; raw IPs are never stored. Limits are 10 writes per bucket per
-hour and 500 writes per day globally. State is in-memory per serverless
-instance, so enforcement is best-effort under scale-out; the keys above
-are the real gate.
+keyed by a daily-rotated hash of the /24 (IPv4) or /48 (IPv6)
+subnet (SHA-256 of a public version string, the day, and the subnet; the
+hash is day-rotated but not secret-salted); raw IPs are never stored.
+Limits are 10 writes per bucket per hour and 500 writes per day globally.
+Enforcement prefers Upstash Redis when configured, which applies the
+limits globally across serverless instances. Without Redis it falls back
+to per-instance in-memory state, where only the per-bucket hourly limit
+is enforced and the 500/day global cap is not. On Redis failure the
+endpoint fails open (allows the request) because a Redis outage must not
+block legitimate submissions; the write keys above remain the real gate.
 
 **Reputation signals inform human review only.** Per-bucket submission
 outcomes are counted under the same daily-rotated pseudonym. A poor

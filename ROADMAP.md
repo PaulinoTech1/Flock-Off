@@ -10,7 +10,7 @@ The tracker is the product. Everything below serves it.
 - [ ] **Cancellation playbook pages** — per-win writeups: what the vote was, what arguments worked, link the council packet. Turns anecdotes into a replicable playbook.
 - [ ] **Eyes on Flock cross-check** — reconcile tracked agencies against transparency-portal camera counts; flag under-researched cities.
 - [ ] **Vendored Leaflet** — ship Leaflet from the repo instead of unpkg.
-- [ ] **CI** — JSON schema validation for `data/agencies.json`, HTML validation, JS syntax check. (Workflow files must be added with a workflow-scoped token.)
+- [x] **CI**: CodeQL (security-extended, JavaScript + Python) on push/PR/weekly; weekly source-snapshot archiver. Still open: JSON schema validation for `data/agencies.json`, HTML validation, JS syntax check.
 
 ## Later
 

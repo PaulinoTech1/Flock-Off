@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Flock-Off: follow the money. A public tracker of Flock Safety ALPR contracts, costs, renewals, and cancellations. No account, no cookies, no analytics.">
   <meta name="theme-color" content="#0f1115">
-  <link rel="canonical" href="https://flock-off.vercel.app/">
+  <link rel="canonical" href="https://www.flock-off.us/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Flock-Off">
   <meta property="og:title" content="Flock-Off: follow the money behind ALPR cameras">
   <meta property="og:description" content="A public tracker of Flock Safety ALPR contracts, costs, renewals, rejections, and cancellations across the USA. Every record sourced.">
-  <meta property="og:url" content="https://flock-off.vercel.app/">
+  <meta property="og:url" content="https://www.flock-off.us/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:image" content="https://flock-off.vercel.app/og-image.png">
+  <meta property="og:image" content="https://www.flock-off.us/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Flock-Off: follow the money behind ALPR cameras">
-  <meta name="twitter:image" content="https://flock-off.vercel.app/og-image.png">
+  <meta name="twitter:image" content="https://www.flock-off.us/og-image.png">
   <title>Flock-Off: follow the money behind ALPR cameras</title>
   <script type="application/ld+json">
   {
@@ -24,13 +24,13 @@
     "@type": "Dataset",
     "name": "Flock-Off contract tracker",
     "description": "Public tracker of Flock Safety automated license plate reader (ALPR) contracts: agency, status, camera counts, costs, renewal dates, and per-record sources.",
-    "url": "https://flock-off.vercel.app/",
+    "url": "https://www.flock-off.us/",
     "keywords": "Flock Safety, ALPR, license plate reader, public contracts, surveillance",
     "creator": { "@type": "Organization", "name": "Flock-Off", "url": "https://github.com/PaulinoTech1/Flock-Off" },
     "license": "https://github.com/PaulinoTech1/Flock-Off",
     "distribution": [
-      { "@type": "DataDownload", "contentUrl": "https://flock-off.vercel.app/data/agencies.json", "encodingFormat": "application/json" },
-      { "@type": "DataDownload", "contentUrl": "https://flock-off.vercel.app/data/source_classification.json", "encodingFormat": "application/json" }
+      { "@type": "DataDownload", "contentUrl": "https://www.flock-off.us/data/agencies.json", "encodingFormat": "application/json" },
+      { "@type": "DataDownload", "contentUrl": "https://www.flock-off.us/data/source_classification.json", "encodingFormat": "application/json" }
     ]
   }
   </script>
@@ -45,7 +45,7 @@
 
   <header class="top">
     <h1>Flock<span class="off">-Off</span></h1>
-    <p class="tagline">Follow the money. Every Flock camera is a contract, every contract has a renewal date, and every renewal is a pressure window.</p>
+    <p class="tagline">Follow the public money behind license plate surveillance. Track contracts, costs, decisions, and documented renewal opportunities.</p>
   </header>
 
   <nav class="tabs" aria-label="Flock-Off sections">
@@ -153,7 +153,7 @@
     <section id="tab-contracts" class="tab" role="tabpanel" aria-labelledby="nav-contracts" hidden>
       <h2>Contracts</h2>
       <p>The actual contract documents behind the tracker, not articles about them. <strong>Signed agreements</strong> are the contracts themselves. <strong>Authorizing instruments</strong> are the resolutions, legislative items, and agenda approvals that create, renew, extend, or terminate a contract. Every entry is a document a reviewer read and classified; news stories and press statements about a contract do not qualify.</p>
-      <p><strong>Accurate as of</strong> is the date the agency's tracker record was last checked against its sources. It is not the document's date, and it is not a guarantee the contract is still in force today; the status shown is the tracker record's status. Most agencies' signed contracts are not in our sources yet: of 343 records, only the documents below have been obtained so far. The rest are a public-records request away, and <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">document tips are welcome</a>.</p>
+      <p><strong>Accurate as of</strong> is the date the agency's tracker record was last checked against its sources. It is not the document's date, and it is not a guarantee the contract is still in force today; the status shown is the tracker record's status. Most agencies' signed contracts are not in our sources yet: of <!--RECORD_COUNT--> records, only the documents below have been obtained so far. The rest are a public-records request away, and <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">document tips are welcome</a>.</p>
 
       <p id="contracts-stats" class="status" role="status" aria-live="polite"></p>
 
@@ -240,7 +240,7 @@
 
       <h3>How cancellations happen</h3>
       <ul>
-        <li>Contracts have renewal dates. A renewal vote is the highest-leverage moment: the agency must publicly defend the system, and the tracker above shows when yours comes up.</li>
+        <li>Some contracts print renewal terms, and a renewal vote is a high-leverage moment: the agency must publicly defend the system. Documented renewal dates are rare in this dataset; where a contract prints one, the tracker's Renewal / decision column shows it.</li>
         <li>What has worked elsewhere: public-records requests for the contract and audit logs, packing the council meeting, and citing neighboring towns that already cancelled.</li>
         <li>23+ jurisdictions cancelled or rejected Flock systems in 2026; roughly 98 have done so since 2021 (DeFlock tally via press reporting). The playbook is proven.</li>
       </ul>
@@ -255,7 +255,7 @@
       <h3>Contribute</h3>
       <ul>
         <li>Contract tip (new deal, renewal date, cancellation vote)? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a> with a source link.</li>
-        <li>Camera sightings go to <a href="https://deflock.org" target="_blank" rel="noopener noreferrer">DeFlock</a>; they flow into OpenStreetMap, which feeds the map tab.</li>
+        <li>Camera sightings go to <a href="https://deflock.org" target="_blank" rel="noopener noreferrer">DeFlock</a>; they flow into OpenStreetMap.</li>
         <li>Check <a href="https://haveibeenflocked.com" target="_blank" rel="noopener noreferrer">Have I Been Flocked</a> to see if your plate appears in released audit logs.</li>
       </ul>
 
@@ -269,8 +269,8 @@
       <h3 id="learn-privacy">Privacy</h3>
       <ul>
         <li><strong>No account, no cookies, no analytics, no fingerprinting.</strong> The site sets nothing in your browser and runs no third-party trackers.</li>
-        <li><strong>Tips are public documents.</strong> If you submit a contract tip, what you type (agency, source link, notes) is stored and, once approved, shown publicly. Submit only public information. The form asks for no name, email, or private details, and none is stored.</li>
-        <li><strong>The map talks to third parties.</strong> Camera data comes from the Overpass API and map tiles from OpenStreetMap, so using the map tab sends them your IP address and the area you view, the same as loading any online map. Your precise location, when you tap "Use my location", only centers the map on your device and is never sent anywhere.</li>
+        <li><strong>Contract tips go through GitHub issues.</strong> What you write in an issue is public and attributed to your GitHub account, so submit only public information. The site's own submission endpoint is key-holder-only for the operator pipeline; there is no anonymous public submission form.</li>
+        <li><strong>No third parties while you read.</strong> The site loads no third-party scripts, styles, images, or data: your browser talks only to the site's own origin until you click a link. Source citations and tool-directory links leave the site under their own sites' policies.</li>
         <li><strong>Hosting.</strong> The site runs on Vercel, which keeps standard server request logs (IP, page, time) to operate the service; that cannot be switched off. Nothing is added on top: our code keeps no visitor logs, and the report endpoint uses your IP only in memory for rate limiting, never writing it to storage.</li>
       </ul>
     </section>
@@ -387,8 +387,7 @@
   <footer>
     <p>
       Contract data is community-researched and sourced per record; see the methodology.
-      Camera data: © OpenStreetMap contributors (ODbL) via the DeFlock community.
-      No account, no cookies, no analytics. Tips you submit are stored as public documents; no private information is collected. <a href="#learn-privacy">Privacy details</a>.
+      No account, no cookies, no analytics. Contract tips are submitted through GitHub issues; no private information is collected on this site. <a href="#learn-privacy">Privacy details</a>.
       Violence is never acceptable: <a href="#legal">read the legal page</a>.
       <span id="year"></span> · <a href="https://github.com/PaulinoTech1/Flock-Off">Source on GitHub</a>
     </p>

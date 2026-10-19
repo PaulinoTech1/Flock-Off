@@ -2,7 +2,7 @@
 
 **Follow the money behind ALPR surveillance.**
 
-Flock Safety has put 120,000+ automated license plate reader cameras across the US. The map of *cameras* is well covered by DeFlock. What nobody tracks is the map of *contracts*: which agencies hold them, what they cost, when they renew, and where organizers already won cancellations. Every Flock camera is a contract, every contract has a renewal date, and every renewal is a pressure window. Flock-Off is that tracker.
+Flock Safety has put 120,000+ automated license plate reader cameras across the US. The map of *cameras* is well covered by DeFlock. What nobody tracks is the map of *contracts*: which agencies hold them, what they cost, how decisions were made, and where organizers already won cancellations. Follow the public money behind license plate surveillance: track contracts, costs, decisions, and documented renewal opportunities. Flock-Off is that tracker.
 
 ## Project origin and timeline
 
@@ -31,24 +31,27 @@ The bipartisan congressional proposal was the initial spark for the project. **F
 
 ## Use it
 
-Live: **https://flock-off.vercel.app**
+Live: **https://www.flock-off.us** (canonical; the same site is also served at https://flock-off.vercel.app)
 
-Or open `index.html` directly, or serve the directory:
+Local dev: the checked-in `index.html` is the unbuilt source; every deploy runs a build. To preview the built site, copy the tree to a disposable directory, run the build there, and serve `public/`:
 
 ```bash
-python3 -m http.server 8080
+cp -r . ~/flock-dev && cd ~/flock-dev
+python3 scripts/vercel_build.py
+python3 -m http.server 8080 --directory public
 # http://localhost:8080
 ```
 
-Deploy: no build step. The tracker page is fully static; tip submission uses minimal serverless endpoints backed by blob storage (see Privacy posture).
+Never run `scripts/vercel_build.py` in the repo root: it rewrites `index.html` and `api/report.js` in place before staging `public/`.
+
+Deploy: `python3 scripts/vercel_build.py` runs on every Vercel deploy (see `vercel.json`); it pre-renders the tracker, contracts, petitions, and sources tabs into `index.html`, injects the agency-ID allowlist into `api/report.js`, and stages the servable site in `public/`. Tip submission uses minimal serverless endpoints backed by blob storage (see Privacy posture).
 
 ## What it does
 
 | Tab | What |
 |---|---|
-| **Tracker** | Searchable, filterable database of Flock contracts: status, cameras, cost, renewal dates, decision history, sources. Default sort surfaces renewals first. |
+| **Tracker** | Searchable, filterable database of Flock contracts: status, cameras, cost, renewal/decision dates, decision history, sources. Default sort surfaces renewals first. |
 | **Contracts** | The actual contract documents behind the tracker: signed agreements and the resolutions/legislative items that authorize, renew, extend, or terminate them, each with the date its record was last verified ("accurate as of"). Curated registry in `scripts/contracts.py`; news about a contract does not qualify. |
-| **Map** | ALPR cameras near the map center or your location (OpenStreetMap via Overpass, DeFlock's source data). |
 | **Tools** | Directory of the existing anti-Flock ecosystem. |
 | **Learn** | How cancellations happen, spotting cameras, contributing. |
 
@@ -61,8 +64,7 @@ To contribute a contract tip (new deal, renewal date, cancellation vote): open a
 ## Privacy posture
 
 - No accounts, no cookies, no analytics, no fingerprinting, no third-party trackers on the page.
-- The only thing stored about visitors is what they submit: tips are public documents by design. The tip form asks for no name, email, or private information, and none is stored. Client IPs are used in memory only for rate limiting the submission endpoint and never written to storage.
-- Map tab exception: camera data comes from the Overpass API and map tiles from OpenStreetMap, so using the map exposes your IP and the viewed area to those services, like any online map. Precise geolocation never leaves your device.
+- No visitor data is stored on the site itself. Contract tips are accepted via GitHub issues (public, attributed to the reporter's GitHub account). The `/api/report` endpoint is a key-holder-only ingestion path for the operator pipeline; quarantined submissions stay private until a human approves them, and there is no anonymous public submission form. Client IPs are used in memory only for rate limiting the submission endpoint and never written to storage.
 - Hosting: the site runs on Vercel, which keeps standard edge request logs (IP, URL, time) to operate the service; that is platform-level and cannot be disabled. Flock-Off adds no tracking on top of it.
 - Outbound links use `rel="noopener noreferrer"`.
 - See `docs/THREAT_MODEL.md` for the full statement and `docs/DATA_SOURCES.md` for data licenses.

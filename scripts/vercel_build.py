@@ -7,7 +7,10 @@ deploy-time transforms the old direct-upload helper used to do:
 - index.html: pre-render tracker table rows and source cards from
   data/agencies.json so crawlers and no-JS readers see the data
   (the JS render() replaces them on load).
-  Markers: <!--PRE_RENDER_ROWS--> and <!--PRE_RENDER_SOURCES-->.
+  Markers: <!--PRE_RENDER_ROWS-->, <!--PRE_RENDER_SOURCES-->,
+  <!--PRE_RENDER_CONTRACTS-->, <!--PRE_RENDER_PETITIONS-->, and
+  <!--RECORD_COUNT--> (the build-derived record count for the Contracts
+  tab intro; a literal count would go stale on every dataset change).
 - api/report.js: inject the valid agency_id list for write-path validation.
   Marker: /*__AGENCY_IDS__*/[]
 
@@ -220,6 +223,17 @@ def _render_rows(agencies: list, ev_by_id: dict) -> str:
     return "\n".join(rows)
 
 
+def _inject_record_count(html: str, n: int) -> str:
+    """Substitute the build-derived record count (Finding F1).
+
+    The Contracts tab intro states how many records the dataset holds. A
+    hard-coded literal drifted from the dataset (343 vs 344); derive it from
+    the agencies list the build already loads so the rendered page, the
+    generated JSON, and the dataset cannot disagree.
+    """
+    return html.replace("<!--RECORD_COUNT-->", str(n))
+
+
 def main() -> None:
     data_path = ROOT / "data" / "agencies.json"
     try:
@@ -270,10 +284,14 @@ def main() -> None:
         sys.exit("build failed: pre-render contracts marker missing from index.html")
     if petitions_marker not in html:
         sys.exit("build failed: pre-render petitions marker missing from index.html")
+    count_marker = "<!--RECORD_COUNT-->"
+    if count_marker not in html:
+        sys.exit("build failed: record-count marker missing from index.html")
     html = html.replace(rows_marker, _render_rows(agencies, ev_by_id))
     html = html.replace(src_marker, _prerender_sources(agencies))
     html = html.replace(contracts_marker, _prerender_contracts(contract_entries))
     html = html.replace(petitions_marker, _prerender_petitions(petition_entries))
+    html = _inject_record_count(html, len(agencies))
     index_path.write_text(html, encoding="utf-8")
 
     report_path = ROOT / "api" / "report.js"

@@ -7,16 +7,13 @@ Flock-Off is an awareness tool, not a security product. This page states plainly
 Two things, both public by design:
 
 - **The contract dataset** (`data/agencies.json`): community-researched public records about agency Flock contracts, with per-field source citations.
-- **Submitted tips**: visitor-submitted reports are held in a private quarantine until reviewed; approved tips are published in the public history. A stored tip contains only what the submitter typed (agency, source URL, notes, timestamps). The form asks for no name, email, or private details, and none is stored.
+- **Submitted tips**: contract tips are accepted via GitHub issues (public, attributed to the reporter's GitHub account). `/api/report` is a key-holder-only ingestion path for the operator pipeline: keyed submissions are held in a private quarantine until reviewed, and approved tips are published in the public history. A stored tip contains only what the submitter typed (agency, source URL, notes, timestamps). There is no anonymous public submission form.
 
 No accounts, no cookies, no analytics. There is no place for private visitor data to go.
 
 ## What leaves your device
 
-- **Map tab**: your browser fetches camera data from the Overpass API (the request includes your IP and the bounding box you asked about, which reveals an area of interest, not your identity) and map tiles from tile.openstreetmap.org (standard web requests: IP + user-agent). This is the same exposure as loading any online map.
-- **Everything else**: only the page and its assets, served from the hosting provider.
-
-Geolocation, when you grant it, is consumed by JavaScript running locally to center the map. Coordinates are never transmitted to Flock-Off infrastructure.
+- **Everything**: only the page and its assets, served from the hosting provider. The site makes no third-party requests while you read; the only outbound traffic is the page load itself, until you click a link and leave the site.
 
 ## Hosting
 
