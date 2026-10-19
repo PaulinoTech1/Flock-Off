@@ -68,3 +68,44 @@ describe("Utils.fetchJson", () => {
     assert.equal(typeof Utils.fetchJson, "function");
   });
 });
+
+describe("Utils.csvCell (formula-injection defense)", () => {
+  it("neutralizes formula-leading cells", () => {
+    assert.equal(Utils.csvCell("=2+5"), "'=2+5");
+    assert.equal(Utils.csvCell("+SUM(A1:A2)"), "'+SUM(A1:A2)");
+    assert.equal(Utils.csvCell("-1+1"), "'-1+1");
+    assert.equal(Utils.csvCell("@mention"), "'@mention");
+  });
+
+  it("neutralizes formulas hidden behind leading whitespace", () => {
+    assert.equal(Utils.csvCell("  =cmd"), "'  =cmd");
+    assert.equal(Utils.csvCell("\t=cmd"), "'\t=cmd");
+  });
+
+  it("quotes cells with commas, quotes, or newlines", () => {
+    assert.equal(Utils.csvCell("a,b"), '"a,b"');
+    assert.equal(Utils.csvCell('say "hi"'), '"say ""hi"""');
+    assert.equal(Utils.csvCell("one\ntwo"), '"one\ntwo"');
+  });
+
+  it("leaves ordinary values untouched", () => {
+    assert.equal(Utils.csvCell("Racine Police Department"), "Racine Police Department");
+    assert.equal(Utils.csvCell(171000), "171000");
+    assert.equal(Utils.csvCell("2026-09-09"), "2026-09-09");
+    assert.equal(Utils.csvCell(null), "");
+    assert.equal(Utils.csvCell(undefined), "");
+  });
+
+  it("a negative number is data, but the defense still applies uniformly", () => {
+    // Uniform prefixing is the documented tradeoff: -5 becomes '-5, which
+    // spreadsheets display as text. Dataset exports carry no negatives.
+    assert.equal(Utils.csvCell(-5), "'-5");
+  });
+});
+
+describe("Utils.toCSV", () => {
+  it("joins headers and rows with CRLF and defends every cell", () => {
+    const out = Utils.toCSV(["Agency", "Note"], [["=evil", "plain"], ["A,B", "x"]]);
+    assert.equal(out, "Agency,Note\r\n'=evil,plain\r\n\"A,B\",x\r\n");
+  });
+});

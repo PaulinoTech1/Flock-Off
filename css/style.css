@@ -117,6 +117,20 @@ section.tab[hidden] { display: none; }
 }
 .empty-state p { margin: 0 0 0.6rem; color: var(--muted); }
 
+.queue-list { padding-left: 1.2rem; }
+.queue-list li { margin-bottom: 0.35rem; font-size: 0.95rem; }
+
+#drawer-request-text {
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.6rem;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
 button, .btn {
   min-height: var(--tap);
   padding: 0.6rem 1.1rem;

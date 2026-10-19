@@ -38,7 +38,7 @@ const TrackerTab = (() => {
     };
   }
 
-  const { esc, el, fetchJson, PATHS, safeUrl } = Utils;
+  const { esc, el, fetchJson, PATHS, safeUrl, toCSV, download } = Utils;
   const usd = (n) =>
     n == null ? "—" : new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
 
@@ -80,6 +80,18 @@ const TrackerTab = (() => {
       }
       el("filter-search").value = "";
       render();
+    });
+    el("tracker-export").addEventListener("click", () => {
+      const rows = filtered().map((a) => [
+        a.agency, a.city || "", a.state, STATUS_LABEL[a.status] || a.status,
+        a.cameras ?? "", a.annual_cost_usd ?? "", a.contract_start || "",
+        a.contract_end || "", a.renewal_date || "", a.decision_date || "",
+        evidence(a).tier, (a.sources || []).length,
+      ]);
+      download("flock-off-tracker.csv", toCSV(
+        ["Agency", "City", "State", "Status", "Cameras", "Annual cost (USD)",
+          "Contract start", "Contract end", "Renewal date", "Decision date",
+          "Evidence", "Sources"], rows));
     });
     el("drawer-close").addEventListener("click", closeDrawer);
     // Switching tabs closes the drawer: it belongs to the tracker tab,
@@ -312,6 +324,39 @@ const TrackerTab = (() => {
     }
   }
 
+  function requestText(a) {
+    const missing = [];
+    if (a.cameras == null) missing.push("the number of cameras deployed");
+    if (a.annual_cost_usd == null) missing.push("the annual cost");
+    if (!a.contract_start || !a.contract_end) missing.push("the contract term dates");
+    if (!a.renewal_date) missing.push("the renewal date and notice period");
+    const place = [a.city, a.state].filter(Boolean).join(", ");
+    return [
+      "[Your name]",
+      "[Your mailing address or email]",
+      "[Date]",
+      "",
+      `Records Custodian`,
+      `${a.agency}${place ? ` (${place})` : ""}`,
+      "",
+      "Re: Public records request: Flock Safety / ALPR contract documents",
+      "",
+      `Under ${a.state}'s public records law, I request copies of the following records concerning the ${a.agency}'s automated license plate reader (ALPR) program with Flock Safety (Flock Group Inc.):`,
+      "",
+      "1. The executed agreement(s) with Flock Group Inc., including all amendments, renewals, extensions, and order forms.",
+      "2. Any termination, non-renewal, or cancellation notices sent to or received from Flock Group Inc.",
+      "3. Invoices or payment records showing the annual cost of the program.",
+      "4. The current ALPR policy or general order governing use of the system.",
+      ...(missing.length
+        ? ["", `Of particular interest, because they are not currently documented in public sources: ${missing.join("; ")}.`]
+        : []),
+      "",
+      "If any portion of this request is denied, please cite the specific exemption and release the remaining material. Electronic copies (PDF) are preferred. If fees will exceed $[amount], please notify me before proceeding.",
+      "",
+      "Thank you for your time.",
+    ].join("\n");
+  }
+
   function openDrawer(a, trigger) {
     lastTrigger = trigger || document.activeElement;
     el("drawer-title").textContent = a.agency;
@@ -359,7 +404,22 @@ const TrackerTab = (() => {
       `Classification: <a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/scripts/classify_sources.py" target="_blank" rel="noopener noreferrer">scripts/classify_sources.py</a>.</p>` +
       `<p class="status">Confidence: <strong>${esc(a.confidence || "unrated")}</strong> · last verified ${esc(a.last_verified || "unknown" )}. ` +
       `Wrong or stale? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a>.</p>` +
-      `<details id="drawer-history"><summary>Report history</summary><div id="drawer-history-body"><p class="muted">Loading…</p></div></details>`;
+      `<details id="drawer-history"><summary>Report history</summary><div id="drawer-history-body"><p class="muted">Loading…</p></div></details>` +
+      `<details id="drawer-request"><summary>Draft a public-records request</summary>` +
+      `<p class="muted">A template for requesting this agency's Flock contract documents. Flock-Off does not send requests: copy the text, fill in the brackets, cite your state's records statute, and send it yourself.</p>` +
+      `<textarea id="drawer-request-text" rows="12" readonly></textarea>` +
+      `<p><button type="button" class="secondary" id="drawer-request-copy">Copy request text</button></p></details>`;
+    const rt = el("drawer-request-text");
+    if (rt) rt.value = requestText(a);
+    const cp = el("drawer-request-copy");
+    if (cp) cp.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(rt.value);
+        cp.textContent = "Copied";
+      } catch {
+        rt.select();
+      }
+    });
     el("drawer").hidden = false;
     setBackgroundInert(true);
     el("drawer-close").focus();
@@ -409,6 +469,34 @@ const TrackerTab = (() => {
     const card = (title, body, done) =>
       `<div class="priority-card"><h3>${title}</h3><p>${body}</p>` +
       `<p><strong>Done looks like:</strong> ${done}</p></div>`;
+    // The queue: records closest to a trust upgrade, computed live.
+    // Terminal records one citation short of the bar, and active records
+    // whose printed contract end is near (renewal pressure).
+    const oneShort = terminal
+      .filter((a) => evidence(a).tier === "pending")
+      .map((a) => ({ a, ev: evidence(a) }))
+      .filter(({ ev }) =>
+        (ev.primary >= 1 && ev.news_independent === 1) ||
+        (ev.primary === 0 && ev.news_independent >= 2))
+      .sort((x, y) => (x.a.state + x.a.agency).localeCompare(y.a.state + y.a.agency))
+      .slice(0, 8);
+    const queueItems = oneShort.map(({ a, ev }) =>
+      `<li><strong>${esc(a.agency)}</strong> (${esc(a.city || "")}, ${esc(a.state)}): ` +
+      (ev.primary === 0
+        ? `has ${ev.news_independent} independent news sources; needs a primary record (government document, official statement, or portal).`
+        : `has a primary record and 1 news source; needs one more independent news source.`) +
+      `</li>`).join("");
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const pressure = active
+      .filter((a) => a.contract_end)
+      .map((a) => ({ a, days: Math.round((new Date(a.contract_end + "T00:00:00") - today) / 86400000) }))
+      .filter(({ days }) => days <= 180)
+      .sort((x, y) => x.days - y.days)
+      .slice(0, 5);
+    const pressureItems = pressure.map(({ a, days }) =>
+      `<li><strong>${esc(a.agency)}</strong> (${esc(a.city || "")}, ${esc(a.state)}): contract end ` +
+      `${esc(a.contract_end)} (${days < 0 ? `${-days} days past` : `${days} days out`}); ` +
+      `renewal or expiry reporting is the highest-value find.</li>`).join("");
     host.innerHTML =
       `<h2>Research priorities</h2>` +
       `<p class="status">Ranked by what most improves the tracker's trustworthiness. Counts are live from the dataset.</p>` +
@@ -424,6 +512,12 @@ const TrackerTab = (() => {
         `<strong>${noRenewal} of ${active.length}</strong> active contracts have no exact renewal date.`,
         "a dated pressure window for every active contract.") +
       `</div>` +
+      (queueItems
+        ? `<h3>Corroboration queue: one citation short</h3><ul class="queue-list">${queueItems}</ul>`
+        : "") +
+      (pressureItems
+        ? `<h3>Renewal pressure: contract ends within 180 days</h3><ul class="queue-list">${pressureItems}</ul>`
+        : "") +
       `<p class="status"><a href="https://github.com/PaulinoTech1/Flock-Off/blob/main/docs/METHODOLOGY.md#evidence-tiers">Evidence tiers</a> · ` +
       `<a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Contribute research</a></p>`;
   }

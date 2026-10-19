@@ -41,5 +41,37 @@ const Utils = (() => {
     return res.json();
   }
 
-  return { PATHS, esc, el, fetchJson, safeUrl };
+  // CSV cell with spreadsheet formula-injection defense. A cell whose
+  // text starts with =, +, -, or @ (after optional leading spaces/tabs)
+  // can execute as a formula when the CSV is opened in a spreadsheet;
+  // prefixing a single quote neutralizes it (OWASP CSV injection
+  // guidance). Cells containing commas, quotes, or newlines are
+  // double-quoted with embedded quotes doubled (RFC 4180).
+  function csvCell(value) {
+    let s = value == null ? "" : String(value);
+    if (/^[ \t]*[=+\-@\t\r]/.test(s)) s = "'" + s;
+    if (/[",\n\r]/.test(s)) s = '"' + s.replace(/"/g, '""') + '"';
+    return s;
+  }
+
+  function toCSV(headers, rows) {
+    const lines = [headers.map(csvCell).join(",")];
+    for (const row of rows) lines.push(row.map(csvCell).join(","));
+    return lines.join("\r\n") + "\r\n";
+  }
+
+  // Client-side file download (Blob + object URL). No network involved.
+  function download(filename, text, type = "text/csv") {
+    const blob = new Blob([text], { type: `${type};charset=utf-8` });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+  }
+
+  return { PATHS, esc, el, fetchJson, safeUrl, csvCell, toCSV, download };
 })();

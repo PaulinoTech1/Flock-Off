@@ -109,6 +109,10 @@
             <option value="agency">Agency name</option>
           </select>
         </div>
+        <div>
+          <label for="tracker-export">Export</label>
+          <button type="button" class="secondary" id="tracker-export">Download filtered CSV</button>
+        </div>
       </div>
 
       <p id="tracker-status" class="status" role="status" aria-live="polite">Loading…</p>
@@ -175,6 +179,10 @@
         <div>
           <label for="contract-filter-search">Search</label>
           <input type="text" id="contract-filter-search" placeholder="Agency, city, state, or document" autocomplete="off">
+        </div>
+        <div>
+          <label for="contracts-export">Export</label>
+          <button type="button" class="secondary" id="contracts-export">Download filtered CSV</button>
         </div>
       </div>
 
@@ -275,6 +283,13 @@
         <li>Contract tip (new deal, renewal date, cancellation vote)? <a href="https://github.com/PaulinoTech1/Flock-Off/issues" target="_blank" rel="noopener noreferrer">Open an issue</a> with a source link.</li>
         <li>Camera sightings go to <a href="https://deflock.org" target="_blank" rel="noopener noreferrer">DeFlock</a>; they flow into OpenStreetMap.</li>
         <li>Check <a href="https://haveibeenflocked.com" target="_blank" rel="noopener noreferrer">Have I Been Flocked</a> to see if your plate appears in released audit logs.</li>
+      </ul>
+
+      <h3 id="learn-case-studies">Case studies: how records get corrected</h3>
+      <ul>
+        <li><strong>Racine, Wisconsin (minutes beat headlines).</strong> News coverage of an August 2026 council fight left this record reading "cancelled." The clerk-attested adopted minutes of September 15, 2026 showed the termination amendment actually failed 6-8 and the contract runs through December 31, 2026. The record was corrected to active, and the minutes are registered in the Contracts tab. Lesson: vote outcomes come from minutes, not from reporting about votes.</li>
+        <li><strong>Monongalia County, West Virginia (split provenance).</strong> The county commission agenda documents the money precisely: $60,000 per year for three years for the Sheriff's license plate reader program. The agenda never names a vendor; the Flock connection rests on the Sheriff's Office's own statements in other sources. The tracker keeps those two facts labeled separately instead of letting a document appear to prove more than it says.</li>
+        <li><strong>Eugene, Oregon (the contract itself).</strong> An executed copy of the city's 2025 Flock agreement, published by a local advocacy group after the city's December 2025 termination, settled fields that reporting had left conflicting: 57 cameras, $171,000 annual recurring, effective March 24, 2025. It still does not print a calendar end date, so that field stays empty. Lesson: a real contract answers many questions, and the honest record keeps the ones it does not answer blank.</li>
       </ul>
 
       <h3>Safety and scope</h3>

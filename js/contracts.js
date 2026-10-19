@@ -8,7 +8,7 @@
 "use strict";
 
 const ContractsTab = (() => {
-  const { esc, el, fetchJson, PATHS, safeUrl } = Utils;
+  const { esc, el, fetchJson, PATHS, safeUrl, toCSV, download } = Utils;
   let entries = [];
 
   const STATUS_LABEL = {
@@ -61,11 +61,11 @@ const ContractsTab = (() => {
     );
   }
 
-  function render() {
+  function shownEntries() {
     const kind = el("contract-filter-kind").value;
     const q = el("contract-filter-search").value.trim().toLowerCase();
     const tokens = q.split(/\s+/).filter(Boolean);
-    const shown = entries.filter((e) => {
+    return entries.filter((e) => {
       if (kind && e.kind !== kind) return false;
       if (tokens.length) {
         const hay = [e.agency, e.city || "", e.state || "",
@@ -74,6 +74,10 @@ const ContractsTab = (() => {
       }
       return true;
     });
+  }
+
+  function render() {
+    const shown = shownEntries();
     el("contracts-list").innerHTML = shown.map(card).join("");
     el("contracts-empty").hidden = shown.length !== 0;
     el("contracts-status").textContent =
@@ -97,6 +101,15 @@ const ContractsTab = (() => {
       el("contract-filter-kind").selectedIndex = 0;
       el("contract-filter-search").value = "";
       render();
+    });
+    el("contracts-export").addEventListener("click", () => {
+      const rows = shownEntries().map((e) => [
+        e.agency, e.city || "", e.state || "", STATUS_LABEL[e.status] || e.status || "",
+        e.kind, e.doc_title, e.doc_url, e.doc_date || "", e.doc_note,
+      ]);
+      download("flock-off-contracts.csv", toCSV(
+        ["Agency", "City", "State", "Status", "Kind", "Document",
+          "Document URL", "Document date", "Note"], rows));
     });
     try {
       const doc = await fetchJson(PATHS.contracts);
