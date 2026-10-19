@@ -1962,6 +1962,20 @@
     "title": null,
     "url": "https://cms6.revize.com/revize/scottsbluffne/POLICE%20DEPT/30.14%20Automated%20License%20Plate%20Readers%20ALPR-ks.pdf?t=202406271557520&t=202406271557520"
   },
+  "https://cms8.revize.com/revize/cedarrapids/CityCouncil/2024/2024-06-25_Packet.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://cms8.revize.com/revize/cedarrapids/CityCouncil/2024/2024-06-25_Packet.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://cms8.revize.com/revize/cedarrapids/CityCouncil/2024/2024-06-25_Packet.pdf"
+  },
   "https://cms9files.revize.com/vanburentwp/Document_Center/Agendas%20&%20Minutes/Board%20Of%20Trustees/2021/Packets/BRD%2012-7-21%20Packet.pdf": {
     "archive": null,
     "blocked_reason": null,
@@ -2443,6 +2457,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://decatur.novusagenda.com/agendapublic/AttachmentViewer.ashx?AttachmentID=8225&ItemID=3769"
+  },
+  "https://deflockalamo.org/documents/foia-2026-06-09/Flock_Quotation_0228029725_-_CITY_OF_ALAMOGORDO_-_signed.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://deflockalamo.org/documents/foia-2026-06-09/Flock_Quotation_0228029725_-_CITY_OF_ALAMOGORDO_-_signed.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://deflockalamo.org/documents/foia-2026-06-09/Flock_Quotation_0228029725_-_CITY_OF_ALAMOGORDO_-_signed.pdf"
   },
   "https://deflockdane.org/reading-room/green-bay-pd-flock-dfr-law-enforcement-agreement-2025/file?download=1": {
     "archive": null,
@@ -2982,6 +3010,20 @@
     "text_len": 239,
     "title": "What the Flock? Cameras in the KC metro: What Do We Know? Community Qs Tickets, Wednesday, September 23 • 6 PM - 7:30 PM | Eventbrite",
     "url": "https://www.eventbrite.com/e/what-the-flock-cameras-in-wyandotte-county-what-do-we-know-community-qs-tickets-1999112707924"
+  },
+  "https://everettwa.gov/AgendaCenter/ViewFile/Item/16974?fileID=95049": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/16974?fileID=95049",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/16974?fileID=95049"
   },
   "https://eyesoffindiana.org/counties/johnson": {
     "archive": "04863a9f582a8b185dfa2aee108bd76328cfea35a1162a64d53a2157b849d152.txt",
@@ -7427,17 +7469,17 @@
     "url": "https://www.rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007/"
   },
   "https://rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007": {
-    "archive": null,
+    "archive": "08dd81662acae98e246116745d898a939b79efc8e4117adb6ebc8f8dca327df4.txt",
     "blocked_reason": null,
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-10-12",
-    "final_url": null,
-    "retry_after": "2026-10-19",
-    "simhash": null,
-    "snapshot_path": null,
-    "text_len": 0,
-    "title": null,
+    "content_hash": "6e58ec75ed8e1a36ab1be1fe46771ded2bf157d45140383567dddd3c8c853e12",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007/",
+    "simhash": "863356b0b5df7e3a",
+    "snapshot_path": "snapshots/2026-10-19/42932311c401d0ce86a489715c321472ac14e742f3933bd61744ce581ca85539.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4937,
+    "title": "City of Reno ends contract with Flock, seeks new vendor for cameras",
     "url": "https://www.rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007/"
   },
   "https://riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf": {
@@ -9553,6 +9595,20 @@
     "text_len": 1655,
     "title": "Tallahassee City Commission suspends ALPR cameras",
     "url": "https://www.wctv.tv/2026/09/10/tallahassee-city-commission-suspends-alpr-cameras/"
+  },
+  "https://wdm.iowa.gov/home/showpublisheddocument/38941/638170630876100000": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.wdm.iowa.gov/home/showpublisheddocument/38941/638170630876100000",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.wdm.iowa.gov/home/showpublisheddocument/38941/638170630876100000"
   },
   "https://webpronews.com/axon-joins-the-license-plate-tracking-frenzy-as-cities-swap-vendors-but-keep-the-cameras": {
     "archive": "b53bf8d8ffe23d5e9c00c13b150826bd476b9a70ffe8a599686ceae321b4a501.txt",
