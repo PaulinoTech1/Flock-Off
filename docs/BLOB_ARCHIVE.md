@@ -117,6 +117,11 @@ python3 scripts/blob_archive.py verify original.json
 3. Set `ARCHIVE_BLOB_READ_WRITE_TOKEN` in the environment where the
    monitor/fingerprint scripts run. This is a local/CI variable, not a
    Vercel function env var: archiving happens in the Python pipeline.
+   CI reads it from GitHub Secrets. For local runs,
+   `python3 scripts/setup_archive_token.py` stores the token in the
+   operating system keyring instead (never in a clear-text file), and
+   `blob_archive.py` falls back to the keyring when the variable is
+   unset.
 4. Without the token, snapshotting is skipped with a warning. Fingerprinting
    continues normally.
 

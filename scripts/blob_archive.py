@@ -46,6 +46,8 @@ Storage:
 Env:
   ARCHIVE_BLOB_READ_WRITE_TOKEN: token for the source-archive blob store.
     Absence disables archiving with a stderr warning, never a failure.
+    When the variable is unset, the OS keyring entry stored by
+    setup_archive_token.py is used as a local fallback.
 """
 
 import hashlib
@@ -59,12 +61,29 @@ from datetime import datetime, timezone
 BLOB_API = "https://vercel.com/api/blob"
 API_VERSION = "12"  # pinned to the @vercel/blob protocol version verified 2026-09-25
 TOKEN_ENV = "ARCHIVE_BLOB_READ_WRITE_TOKEN"
+# Keep in sync with KEYRING_SERVICE in scripts/setup_archive_token.py.
+KEYRING_SERVICE = "flock-off"
 SCHEMA_VERSION = 1
 MAX_TEXT_CHARS = 500_000  # 500K char cap on extracted text per snapshot
 
 
 def _token():
-    return os.environ.get(TOKEN_ENV)
+    """Resolve the blob token: environment first, OS keyring second.
+
+    CI sets the environment variable from GitHub Secrets. Locally,
+    setup_archive_token.py stores the token in the OS keyring instead
+    of a clear-text file. `keyring` is an optional dependency: when it
+    is not installed, or no backend is available, resolution falls
+    through to None and the caller warns and skips archiving.
+    """
+    tok = os.environ.get(TOKEN_ENV)
+    if tok:
+        return tok
+    try:
+        import keyring
+        return keyring.get_password(KEYRING_SERVICE, TOKEN_ENV)
+    except Exception:
+        return None
 
 
 def _warn(msg):

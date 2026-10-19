@@ -138,5 +138,52 @@ class TestFailOpen(unittest.TestCase):
         self.assertIsNone(result)
 
 
+class TestTokenResolution(unittest.TestCase):
+    """_token(): environment first, OS keyring second, else None.
+
+    The keyring module is faked through sys.modules; the real keyring
+    is never touched (it may not even be installed).
+    """
+
+    FAKE_TOKEN = "vercel_blob_rw_faketokenfortests"
+
+    def _fake_keyring(self, stored):
+        import types
+        mod = types.ModuleType("keyring")
+        mod.get_password = lambda service, var: stored
+        return mod
+
+    def setUp(self):
+        self._env = os.environ.pop(ba.TOKEN_ENV, None)
+        self._keyring = sys.modules.get("keyring")
+
+    def tearDown(self):
+        if self._env is not None:
+            os.environ[ba.TOKEN_ENV] = self._env
+        if self._keyring is None:
+            sys.modules.pop("keyring", None)
+        else:
+            sys.modules["keyring"] = self._keyring
+
+    def test_env_wins_over_keyring(self):
+        os.environ[ba.TOKEN_ENV] = "env-token"
+        sys.modules["keyring"] = self._fake_keyring(self.FAKE_TOKEN)
+        self.assertEqual(ba._token(), "env-token")
+
+    def test_keyring_fallback(self):
+        sys.modules["keyring"] = self._fake_keyring(self.FAKE_TOKEN)
+        self.assertEqual(ba._token(), self.FAKE_TOKEN)
+
+    def test_no_env_no_keyring_module_returns_none(self):
+        # sys.modules[name] = None makes `import keyring` raise
+        # ImportError, simulating the optional dependency being absent.
+        sys.modules["keyring"] = None
+        self.assertIsNone(ba._token())
+
+    def test_keyring_without_entry_returns_none(self):
+        sys.modules["keyring"] = self._fake_keyring(None)
+        self.assertIsNone(ba._token())
+
+
 if __name__ == "__main__":
     unittest.main()

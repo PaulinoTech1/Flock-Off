@@ -6,3 +6,10 @@ pyyaml>=6,<7
 # 2026-10-04): the naive urllib fetcher was 403-blocked as a bot by sites
 # that serve normal browsers. stdlib fallback keeps working without it.
 curl-cffi>=0.13
+# OS-keyring storage for the archive blob token (fix 2026-10-19 for
+# CodeQL py/clear-text-storage-sensitive-data, alert #1):
+# setup_archive_token.py stores the token in the OS keyring instead of
+# a clear-text file, and blob_archive falls back to the keyring when
+# the env var is unset. Optional: without it, env-only resolution
+# keeps working.
+keyring>=24
