@@ -18,8 +18,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "agencies.json"
+sys.path.insert(0, str(ROOT / "scripts"))
+import contracts as contracts_mod  # noqa: E402
 
 DATE_FIELDS = ("contract_start", "contract_end", "renewal_date", "decision_date")
+TERMINAL = ("cancelled", "rejected", "expired")
 
 
 def main() -> None:
@@ -57,6 +60,38 @@ def main() -> None:
                 pass
     report["renewals_within_180d"] = upcoming
 
+    # Document coverage: which records carry a registered contract
+    # document or authorizing instrument, split by status and kind.
+    # This is the evidence-integrity view of the same dataset: an active
+    # record with no registered document rests on citations alone.
+    kinds_by_agency: dict[str, set] = {}
+    for agency_id, _key, kind, _note in contracts_mod.REGISTRY:
+        kinds_by_agency.setdefault(agency_id, set()).add(kind)
+
+    def doc_class(a):
+        kinds = kinds_by_agency.get(a["id"], set())
+        if "signed_agreement" in kinds:
+            return "signed_agreement"
+        if kinds:
+            return "instrument_only"
+        return "none"
+
+    by_status: dict[str, Counter] = {}
+    for a in data:
+        by_status.setdefault(a.get("status"), Counter())[doc_class(a)] += 1
+    report["document_coverage_by_status"] = {
+        s: dict(c) for s, c in sorted(by_status.items())
+    }
+    report["document_coverage_active"] = dict(
+        by_status.get("active", Counter()))
+    report["registry_documents"] = len(contracts_mod.REGISTRY)
+    report["registry_kinds"] = dict(
+        Counter(k for _a, _k, k, _n in contracts_mod.REGISTRY))
+    terminal = [a for a in data if a.get("status") in TERMINAL]
+    report["terminal_records"] = len(terminal)
+    report["terminal_validation"] = dict(
+        Counter(a.get("validation") or "verified" for a in terminal))
+
     if "--json" in sys.argv:
         print(json.dumps(report, indent=2))
     else:
@@ -69,6 +104,14 @@ def main() -> None:
             pct = 100 * v / max(1, report["active_records"])
             print(f"    {k}: {v} ({pct:.1f}%)")
         print(f"  Renewals within 180d: {report['renewals_within_180d']}")
+        print(f"  Registry documents: {report['registry_documents']} "
+              f"({report['registry_kinds']})")
+        print("  Document coverage by status (signed / instrument-only / none):")
+        for s, c in report["document_coverage_by_status"].items():
+            print(f"    {s}: {c.get('signed_agreement', 0)} / "
+                  f"{c.get('instrument_only', 0)} / {c.get('none', 0)}")
+        print(f"  Terminal records: {report['terminal_records']} "
+              f"(validation: {report['terminal_validation']})")
 
 
 if __name__ == "__main__":
