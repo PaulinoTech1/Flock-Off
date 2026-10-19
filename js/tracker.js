@@ -74,7 +74,19 @@ const TrackerTab = (() => {
       el(id).addEventListener("change", render);
     }
     el("filter-search").addEventListener("input", debounce(render, 250));
+    el("tracker-clear").addEventListener("click", () => {
+      for (const id of ["filter-state", "filter-status", "filter-sort", "filter-evidence"]) {
+        el(id).selectedIndex = 0;
+      }
+      el("filter-search").value = "";
+      render();
+    });
     el("drawer-close").addEventListener("click", closeDrawer);
+    // Switching tabs closes the drawer: it belongs to the tracker tab,
+    // and leaving it open over another panel strands focus and content.
+    window.addEventListener("flockoff:tabchange", (e) => {
+      if (e.detail !== "tracker" && !el("drawer").hidden) closeDrawer();
+    });
     el("drawer").addEventListener("click", (e) => {
       if (e.target.id === "drawer") closeDrawer();
     });
@@ -229,6 +241,7 @@ const TrackerTab = (() => {
 
   function render() {
     const rows = filtered();
+    el("tracker-empty").hidden = rows.length !== 0;
     renderStats();
     const tb = el("tracker-table").querySelector("tbody");
     tb.innerHTML = "";

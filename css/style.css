@@ -100,23 +100,22 @@ main { padding: 1rem; max-width: 72rem; margin: 0 auto; }
 
 section.tab[hidden] { display: none; }
 
-.map-wrap { position: relative; }
+/* Deep-link targets must clear the sticky tab bar (U7). */
+:target { scroll-margin-top: 76px; }
 
-#map, #route-map {
-  height: 62vh;
-  min-height: 320px;
-  border: 1px solid var(--border);
+/* Explicit placeholder color: the browser default on this dark theme
+ * lands near 4.22:1; --muted on the panel background passes AA. */
+::placeholder { color: var(--muted); opacity: 1; }
+
+.empty-state {
+  border: 1px dashed var(--border);
   border-radius: var(--radius);
-  background: #0a0c10;
-  z-index: 1;
+  background: var(--panel);
+  padding: 1rem;
+  margin: 0.8rem 0;
+  text-align: center;
 }
-
-.map-controls {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.6rem;
-  flex-wrap: wrap;
-}
+.empty-state p { margin: 0 0 0.6rem; color: var(--muted); }
 
 button, .btn {
   min-height: var(--tap);
@@ -210,16 +209,6 @@ input[type="text"] {
 
 .checkbox-row input { width: 1.4rem; height: 1.4rem; }
 
-#route-summary {
-  border-left: 4px solid var(--accent);
-  padding: 0.6rem 0.9rem;
-  margin: 0.8rem 0;
-  background: var(--panel);
-}
-
-#route-list { padding-left: 1.2rem; }
-#route-list li { margin-bottom: 0.35rem; font-size: 0.95rem; }
-
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
@@ -301,10 +290,6 @@ footer {
   * { transition: none !important; animation: none !important; }
 }
 
-@media (min-width: 48rem) {
-  #map { height: 68vh; }
-  .route-form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 0.8rem; align-items: end; }
-}
 
 /* Tracker */
 .stats {

@@ -48,6 +48,7 @@ const PetitionsTab = (() => {
       return tokens.every((t) => hay.includes(t));
     });
     el("petitions-list").innerHTML = shown.map(card).join("");
+    el("petitions-empty").hidden = shown.length !== 0;
     el("petitions-status").textContent =
       shown.length === entries.length
         ? `${entries.length} petitions.`
@@ -64,6 +65,10 @@ const PetitionsTab = (() => {
 
   async function init() {
     el("petition-filter-search").addEventListener("input", debounce(render, 250));
+    el("petitions-clear").addEventListener("click", () => {
+      el("petition-filter-search").value = "";
+      render();
+    });
     try {
       const doc = await fetchJson(PATHS.petitions);
       entries = doc.entries || [];

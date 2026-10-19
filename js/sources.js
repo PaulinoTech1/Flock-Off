@@ -81,6 +81,7 @@ const SourcesTab = (() => {
       return true;
     });
     el("sources-list").innerHTML = shown.map(card).join("");
+    el("sources-empty").hidden = shown.length !== 0;
     el("sources-status").textContent =
       shown.length === entries.length
         ? `${entries.length} sources.`
@@ -98,6 +99,11 @@ const SourcesTab = (() => {
   async function init() {
     el("src-filter-type").addEventListener("change", render);
     el("src-filter-search").addEventListener("input", debounce(render, 250));
+    el("sources-clear").addEventListener("click", () => {
+      el("src-filter-type").selectedIndex = 0;
+      el("src-filter-search").value = "";
+      render();
+    });
     try {
       const json = await fetchJson(PATHS.agencies);
       entries = aggregate(json.agencies || []);

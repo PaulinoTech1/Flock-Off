@@ -32,9 +32,12 @@ def _copy_repo():
     tmp = tempfile.mkdtemp(prefix="flockoff-count-")
     for name in ("index.html", "api", "data", "scripts", "js", "css",
                  "config", "vendor", "og-image.png", "robots.txt",
-                 "sitemap.xml", "lessons-learned.pdf"):
+                 "sitemap.xml", "lessons-learned.pdf", "404.html",
+                 "favicon.svg"):
         src = os.path.join(REPO_ROOT, name)
         dst = os.path.join(tmp, name)
+        if not os.path.exists(src):
+            continue
         if os.path.isdir(src):
             shutil.copytree(src, dst, ignore=shutil.ignore_patterns("__pycache__"))
         else:

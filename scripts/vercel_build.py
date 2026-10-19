@@ -38,6 +38,8 @@ import evidence as evidence_mod  # noqa: E402
 # shipped two local diagnostic snapshots to the live site in Oct 2026:
 # with a denylist, every new stray file is public by default.
 PUBLIC_FILES = (
+    "404.html",
+    "favicon.svg",
     "index.html",
     "lessons-learned.pdf",
     "og-image.png",
@@ -48,7 +50,6 @@ PUBLIC_DIRS = (
     "css",
     "data",
     "js",
-    "vendor",
 )
 
 # Display labels come from the canonical taxonomy in scripts/evidence.py;

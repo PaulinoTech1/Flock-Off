@@ -13,8 +13,26 @@ window.addEventListener("unhandledrejection", (e) => {
 
 const App = (() => {
   const TABS = ["tracker", "contracts", "petitions", "sources", "tools", "learn", "legal"];
+  const TITLES = {
+    tracker: "Contract tracker · Flock-Off",
+    contracts: "Contract documents · Flock-Off",
+    petitions: "Petitions · Flock-Off",
+    sources: "Sources · Flock-Off",
+    tools: "Tools · Flock-Off",
+    learn: "How this tracker works · Flock-Off",
+    legal: "Legal · Flock-Off",
+  };
+  const LABELS = {
+    tracker: "Tracker", contracts: "Contracts", petitions: "Petitions",
+    sources: "Sources", tools: "Tools", learn: "Learn", legal: "Legal",
+  };
+  let hashInitialized = false;
 
-  function show(name) {
+  // opts.user marks a deliberate tab activation (click, arrow keys, or an
+  // in-page link): push a history entry so Back traverses tabs (U4), and
+  // announce the new panel to assistive tech (U8). Hash-driven shows
+  // (initial load, Back/Forward) must not write history again.
+  function show(name, opts = {}) {
     if (!TABS.includes(name)) name = "tracker";
     for (const t of TABS) {
       const panel = document.getElementById(`tab-${t}`);
@@ -27,7 +45,16 @@ const App = (() => {
         btn.tabIndex = t === name ? 0 : -1;
       }
     }
-    if (location.hash !== `#${name}`) history.replaceState(null, "", `#${name}`);
+    document.title = TITLES[name];
+    if (location.hash !== `#${name}`) {
+      if (opts.user) history.pushState(null, "", `#${name}`);
+      else history.replaceState(null, "", `#${name}`);
+    }
+    if (opts.user) {
+      const ann = document.getElementById("tab-announcer");
+      if (ann) ann.textContent = `${LABELS[name]} tab selected.`;
+    }
+    window.dispatchEvent(new CustomEvent("flockoff:tabchange", { detail: name }));
   }
 
   function renderDirectory() {
@@ -88,16 +115,26 @@ const App = (() => {
     const tab = TABS.includes(raw)
       ? raw
       : TABS.find((t) => raw.startsWith(t + "-")) || raw;
-    show(tab);
+    const user = hashInitialized; // initial load is not an activation
+    hashInitialized = true;
+    show(tab, { user });
     if (raw !== tab) {
       const el = document.getElementById(raw);
-      if (el) el.scrollIntoView({ block: "start" });
+      if (el) {
+        el.scrollIntoView({ block: "start" });
+        // Move focus to the deep-link target on user navigation so
+        // keyboard and AT users land where the link pointed (U8).
+        if (user) {
+          if (!el.hasAttribute("tabindex")) el.setAttribute("tabindex", "-1");
+          el.focus({ preventScroll: true });
+        }
+      }
     }
   }
 
   function init() {
     for (const t of TABS) {
-      document.getElementById(`nav-${t}`).addEventListener("click", () => show(t));
+      document.getElementById(`nav-${t}`).addEventListener("click", () => show(t, { user: true }));
     }
     // ARIA tabs keyboard pattern: arrows move between tabs, Home/End jump.
     document.querySelector("nav.tabs").addEventListener("keydown", (e) => {
@@ -111,7 +148,7 @@ const App = (() => {
       else if (e.key === "End") j = TABS.length - 1;
       if (j !== null) {
         e.preventDefault();
-        show(TABS[j]);
+        show(TABS[j], { user: true });
         document.getElementById(`nav-${TABS[j]}`).focus();
       }
     });

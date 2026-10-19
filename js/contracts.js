@@ -75,6 +75,7 @@ const ContractsTab = (() => {
       return true;
     });
     el("contracts-list").innerHTML = shown.map(card).join("");
+    el("contracts-empty").hidden = shown.length !== 0;
     el("contracts-status").textContent =
       shown.length === entries.length
         ? `${entries.length} contract documents.`
@@ -92,6 +93,11 @@ const ContractsTab = (() => {
   async function init() {
     el("contract-filter-kind").addEventListener("change", render);
     el("contract-filter-search").addEventListener("input", debounce(render, 250));
+    el("contracts-clear").addEventListener("click", () => {
+      el("contract-filter-kind").selectedIndex = 0;
+      el("contract-filter-search").value = "";
+      render();
+    });
     try {
       const doc = await fetchJson(PATHS.contracts);
       entries = doc.entries || [];

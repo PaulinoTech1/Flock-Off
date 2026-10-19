@@ -21,9 +21,12 @@ def _copy_repo():
     tmp = tempfile.mkdtemp(prefix="flockoff-build-")
     for name in ("index.html", "api", "data", "scripts", "js", "css",
                  "config", "vendor", "og-image.png", "robots.txt",
-                 "sitemap.xml", "lessons-learned.pdf"):
+                 "sitemap.xml", "lessons-learned.pdf", "404.html",
+                 "favicon.svg"):
         src = os.path.join(REPO_ROOT, name)
         dst = os.path.join(tmp, name)
+        if not os.path.exists(src):
+            continue
         if os.path.isdir(src):
             shutil.copytree(src, dst, ignore=shutil.ignore_patterns("__pycache__"))
         else:
@@ -103,9 +106,10 @@ class TestVercelBuild(unittest.TestCase):
                           "NOTES.md", "scratch.txt", "straydir"):
                 self.assertFalse(os.path.exists(os.path.join(public, stray)),
                                  f"stray path staged into public/: {stray}")
-            allowed = {"index.html", "lessons-learned.pdf", "og-image.png",
+            allowed = {"404.html", "favicon.svg", "index.html",
+                       "lessons-learned.pdf", "og-image.png",
                        "robots.txt", "sitemap.xml",
-                       "css", "data", "js", "vendor"}
+                       "css", "data", "js"}
             self.assertEqual(set(os.listdir(public)), allowed)
         finally:
             shutil.rmtree(tmp, ignore_errors=True)
