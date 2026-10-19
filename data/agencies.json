@@ -104,17 +104,17 @@
       "WV"
     ],
     "status_counts": {
-      "active": 174,
-      "cancelled": 133,
-      "expired": 3,
+      "active": 172,
+      "cancelled": 134,
+      "expired": 4,
       "pending": 24,
       "rejected": 10
     },
     "terminal_verified": 9,
-    "terminal_pending_validation": 137,
+    "terminal_pending_validation": 139,
     "records_with_renewal_date": 4,
-    "records_with_contract_end": 28,
-    "coverage_note": "344 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 9 terminal claims verified, 137 pending validation*. 4 records carry a renewal date and 28 a contract end date; exact renewal dates remain thin and are the top research priority."
+    "records_with_contract_end": 29,
+    "coverage_note": "344 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 9 terminal claims verified, 139 pending validation*. 4 records carry a renewal date and 29 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {
@@ -1131,14 +1131,14 @@
       "agency_type": "municipal_police",
       "city": "South Portland",
       "state": "ME",
-      "status": "active",
+      "status": "cancelled",
       "cameras": 7,
       "annual_cost_usd": null,
       "contract_start": null,
       "contract_end": null,
       "renewal_date": null,
-      "decision_date": null,
-      "decision_summary": null,
+      "decision_date": "2026-06-11",
+      "decision_summary": "Per the city's June 11, 2026 council workshop direction, South Portland ceased use of Flock ALPR readers and stopped data sharing effective immediately; Flock confirmed camera removal and account closure as of June 22, 2026.",
       "transparency_portal": null,
       "sources": [
         {
@@ -1155,11 +1155,19 @@
           "date": "2026-05-31",
           "verified": true,
           "source_key": "https://southportland-gov.community.diligentoneplatform.com/document/9d70cca1-180d-4a47-a702-52af619d2310"
+        },
+        {
+          "title": "City of South Portland News Flash: Flock ALPR Cameras Removed (posted July 1, 2026)",
+          "url": "https://www.southportland.gov/m/newsflash/Home/Detail/563",
+          "date": "2026-07-01",
+          "verified": false,
+          "source_key": "https://southportland.gov/m/newsflash/Home/Detail/563"
         }
       ],
       "confidence": "medium",
-      "last_verified": "2026-09-25",
-      "notes": "Seven cameras operational since June 2025; city has spent about $22,000 so far. A proposal to extend the contract beyond its 2027 expiration was removed; unclear whether the city will renew next year; councilors plan continued public meetings. City completed a review of network audit records Feb 2025-May 2026. renewal_date null: only '2027' known, no exact date."
+      "last_verified": "2026-10-19",
+      "notes": "Seven cameras operational since June 2025; city has spent about $22,000 so far. Per the city's July 1, 2026 News Flash, use ceased following the June 11, 2026 council workshop direction and, as of June 22, 2026, Flock confirmed all cameras removed and no active account; the seven-camera figure above is the pre-removal count. City completed a review of network audit records Feb 2025-May 2026. renewal_date null: only '2027' known, no exact date.",
+      "validation": "pending"
     },
     {
       "agency": "Beacon Police Department",
@@ -1173,7 +1181,7 @@
       "decision_date": null,
       "decision_summary": null,
       "id": "ny-beacon-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "Chief defended the system Sept 21, 2026 amid resident opposition. Contract approved Jan 2023, initial two-year term $21,400, later extended and reported as running through 2028 (exact end date not reported; not inferred). Beacon withdrew from Flock's nationwide database in early 2026 over outside-agency access concerns. Camera count not stated exactly: 2 on Route 9D, others on Route 52/Washington Ave/Main St, plus one mobile. 30-day retention.",
       "renewal_date": null,
       "sources": [
@@ -1184,6 +1192,13 @@
           "verified": true,
           "source_key": "https://highlandscurrent.org/2026/09/25/beacon-police-chief-explains-camera-system",
           "content_hash": "0986f65c4eaf86b6320490d3e2f638dce86db65760a4cbcc65ef95bb678e8bc2"
+        },
+        {
+          "title": "City of Beacon Resolution No. 2 of 2023 (Flock Group agreement authorization)",
+          "url": "https://beaconny.gov/wp-content/uploads/2023/01/2023-002-Resolutions-Council.pdf",
+          "date": "2023",
+          "verified": false,
+          "source_key": "https://beaconny.gov/wp-content/uploads/2023/01/2023-002-Resolutions-Council.pdf"
         }
       ],
       "state": "NY",
@@ -1539,11 +1554,11 @@
       "confidence": "medium",
       "contract_end": null,
       "contract_start": null,
-      "decision_date": null,
-      "decision_summary": null,
+      "decision_date": "2026-10-13",
+      "decision_summary": "Penn State is not renewing its agreement with Flock Safety and is ending the use of Flock cameras at University Park. Senior Vice President Sara Thorndike told the Faculty Senate on October 13, 2026, 'we're not renewing the contract that has expired,' and said the cameras are being removed (reported by WPSU, October 17, 2026).",
       "id": "pa-penn-state-upps",
-      "last_verified": "2026-09-25",
-      "notes": "Described by the department as a 'limited, time-bound pilot' at University Park perimeter, 'no contract or cost during the testing period.' DeFlock lists ~24 reported campus locations; the Collegian attempted to verify all of them, but the count is crowdsourced and unconfirmed. Access restricted to trained UPPS personnel; audit logs showed only testing-level access in late 2025.",
+      "last_verified": "2026-10-19",
+      "notes": "Described by the department as a 'limited, time-bound pilot' at University Park perimeter, 'no contract or cost during the testing period.' DeFlock lists ~24 reported campus locations; the Collegian attempted to verify all of them, but the count is crowdsourced and unconfirmed. Access restricted to trained UPPS personnel; audit logs showed only testing-level access in late 2025. The pilot has ended: the university's October 13, 2026 announcement states the contract expired and will not be renewed.",
       "renewal_date": null,
       "sources": [
         {
@@ -1553,11 +1568,19 @@
           "verified": true,
           "source_key": "https://psucollegian.com/features/features_investigation/its-like-youve-had-a-tail-the-entire-time-flock-cameras-on-campus-raise-privacy/article_d29a3790-5fd0-45d6-ace2-40d38d3f37a7.html",
           "content_hash": "8950a9e84a20cea18628b37229286145b2524a5aa1e4501a32e403c6dc14f6f0"
+        },
+        {
+          "title": "WPSU: Penn State scraps Flock cameras on campus",
+          "url": "https://www.wesanews.org/education/2026-10-17/penn-state-scraps-flock-cameras-on-campus",
+          "date": "2026-10-17",
+          "verified": false,
+          "source_key": "https://wesanews.org/education/2026-10-17/penn-state-scraps-flock-cameras-on-campus"
         }
       ],
       "state": "PA",
-      "status": "active",
-      "transparency_portal": null
+      "status": "expired",
+      "transparency_portal": null,
+      "validation": "pending"
     },
     {
       "agency": "Temple University Police Department",
@@ -3479,11 +3502,40 @@
           "date": "2026-09-24",
           "verified": true,
           "source_key": "https://hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007"
+        },
+        {
+          "title": "Ottawa County Contract 2242 (Master Services Agreement and order form, Flock Safety)",
+          "url": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2242-RATIFICATION-3-5-2024-Vendor-FLOCK-SAFETY.pdf",
+          "date": "2024-03-26",
+          "verified": false,
+          "source_key": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2242-RATIFICATION-3-5-2024-Vendor-FLOCK-SAFETY.pdf"
+        },
+        {
+          "title": "Ottawa County Contract 2341 (Addendum No. 1, Holland Township passthrough)",
+          "url": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2341-RATIFICATION-6-4-2024-Vendor-FLOCK-SAFETY.pdf",
+          "date": "2024-06-04",
+          "verified": false,
+          "source_key": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2341-RATIFICATION-6-4-2024-Vendor-FLOCK-SAFETY.pdf"
+        },
+        {
+          "title": "Ottawa County Contract 2342 (Addendum No. 2, Park Township passthrough)",
+          "url": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2342-RATIFICATION-6-4-2024-Vendor-FLOCK-SAFETY.pdf",
+          "date": "2024-06-04",
+          "verified": false,
+          "source_key": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2342-RATIFICATION-6-4-2024-Vendor-FLOCK-SAFETY.pdf"
+        },
+        {
+          "title": "Ottawa County Contract 2377 (order form, Falcon Flex)",
+          "url": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2377-RATIFICATION-7-16-2024-Vendor-FLOCK.pdf",
+          "date": "2024-07-16",
+          "verified": false,
+          "source_key": "https://boards.miottawa.org/wp-content/uploads/2026/06/Contract-2377-RATIFICATION-7-16-2024-Vendor-FLOCK.pdf"
         }
       ],
       "state": "MI",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-19"
     },
     {
       "agency": "Monroe County",
@@ -3823,16 +3875,16 @@
       "agency": "Indianapolis Metropolitan Police Department",
       "agency_type": "municipal_police",
       "annual_cost_usd": null,
-      "cameras": null,
+      "cameras": 275,
       "city": "Indianapolis",
       "confidence": "medium",
-      "contract_end": null,
-      "contract_start": null,
+      "contract_end": "2028-12-31",
+      "contract_start": "2025-01-27",
       "county": "Marion County",
       "decision_date": null,
       "decision_summary": null,
       "id": "in-indianapolis-mpd",
-      "notes": "Camera counts are mixed: Indiana Capital Chronicle (Feb 2023) reported IMPD had 250+ license plate readers after adding 200 stationary units, but not all are Flock (department also runs mobile/Vigilant units); only 'dozens' were identified as Flock. Mirror Indy (2025) reported a ~$1M/year Flock spend target pitched to city boards, including gunshot-detection and drone provisions. On Sept 23, 2026 five IMPD officers were criminally charged (fraud, official misconduct, stalking) for alleged misuse of the Flock system.",
+      "notes": "Camera counts are mixed: Indiana Capital Chronicle (Feb 2023) reported IMPD had 250+ license plate readers after adding 200 stationary units, but not all are Flock (department also runs mobile/Vigilant units); only 'dozens' were identified as Flock. Mirror Indy (2025) reported a ~$1M/year Flock spend target pitched to city boards, including gunshot-detection and drone provisions. On Sept 23, 2026 five IMPD officers were criminally charged (fraud, official misconduct, stalking) for alleged misuse of the Flock system. The executed services agreement (signed January 27, 2025; registered in the contract documents) states 275 Falcon cameras previously provided and installed, superseding the 'dozens' figure in 2023 reporting.",
       "renewal_date": null,
       "sources": [
         {
@@ -3856,11 +3908,19 @@
           "date": "2026-09-24",
           "verified": true,
           "source_key": "https://indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007"
+        },
+        {
+          "title": "Services Agreement, Consolidated City of Indianapolis and Marion County (IMPD) / Flock Group Inc., executed January 27, 2025",
+          "url": "https://www.indy.gov/api/v1/indy_contract_document/928C3093-9448-4F2B-BDB8-932D30F641A9",
+          "date": "2025-01-27",
+          "verified": false,
+          "source_key": "https://indy.gov/api/v1/indy_contract_document/928C3093-9448-4F2B-BDB8-932D30F641A9"
         }
       ],
       "state": "IN",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-19"
     },
     {
       "agency": "Plainfield Police Department",
@@ -5678,7 +5738,7 @@
       "contract_start": null,
       "county": "Jefferson County",
       "decision_date": null,
-      "decision_summary": "City Council approved an amendment in July 2025 to the Alabama Power surveillance-camera agreement, adding 100 cameras (including Flock LPR cameras) to the 330 from the 2024 deal. Combined amended agreement totals $9.7M over a five-year arrangement, with an estimated $2M/year cost per Council President O'Quinn (GovTech/TNS, alpolitics.com).",
+      "decision_summary": "City Council approved an amendment in July 2025 to the Alabama Power surveillance-camera agreement, adding 100 cameras (including Flock LPR cameras) to the 330 from the 2024 deal. Combined amended agreement totals $9.7M over a five-year arrangement, with an estimated $2M/year cost per Council President O'Quinn (GovTech/TNS).",
       "id": "al-birmingham-pd",
       "notes": "Camera count nulled: the 430 figure is the combined fixed-camera fleet under the Alabama Power agreement (330 from 2024 + 100 added 2025); the mix includes Flock LPRs plus other camera types and the Flock-only share is not separated. Cost nulled: $2M/yr is an estimate for the bundled agreement (installation, maintenance, software, connectivity, power for ALL camera types), not a Flock ALPR figure. Decision date month-precision only (July 2025).",
       "renewal_date": null,
@@ -5692,17 +5752,17 @@
           "content_hash": "27a34407e37fb0dd8cd43c67c9c1328f3a060f32e5a69e6419cddc2180d9bf8a"
         },
         {
-          "title": "Birmingham surveillance camera expansion cost report",
-          "url": "https://alpolitics.com/",
-          "date": null,
-          "verified": true,
-          "source_key": "https://alpolitics.com/",
-          "content_hash": "dbbd11061f42c1dceabf235acdc9c12bd8438e45e8e465be5c1dd738503fbde9"
+          "title": "Birmingham City Council minutes, December 16, 2025 (Resolution 2304-25)",
+          "url": "https://bhamal.granicus.com/MinutesViewer.php?view_id=6&clip_id=1935",
+          "date": "2025-12-16",
+          "verified": false,
+          "source_key": "https://bhamal.granicus.com/MinutesViewer.php?clip_id=1935&view_id=6"
         }
       ],
       "state": "AL",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-19"
     },
     {
       "agency": "Huntsville Police Department",
@@ -7654,7 +7714,7 @@
       "state": "KS",
       "status": "active",
       "cameras": 11,
-      "annual_cost_usd": null,
+      "annual_cost_usd": 33000,
       "contract_start": null,
       "contract_end": null,
       "renewal_date": null,
@@ -7681,8 +7741,8 @@
         }
       ],
       "confidence": "medium",
-      "last_verified": "2026-09-25",
-      "notes": "Primary government source confirms the Flock partnership and camera count. Second verified citation is local radio/news coverage of the 2026 commission debate. Contract dates and cost unknown; a third independent citation is needed for the verified tier. Cost detail: No contract value found in cited sources."
+      "last_verified": "2026-10-19",
+      "notes": "Primary government source confirms the Flock partnership and camera count. Second verified citation is local radio/news coverage of the 2026 commission debate. Contract dates unknown; the agency's May 19, 2025 Law Board budget packet lists a $33,000 annual contract expenditure line for Flock Safety. A third independent citation is needed for the verified tier."
     },
     {
       "id": "ks-kansas-city-kansas-pd",
@@ -8289,8 +8349,8 @@
     {
       "agency": "Jefferson City Police Department",
       "agency_type": "municipal_police",
-      "annual_cost_usd": null,
-      "cameras": null,
+      "annual_cost_usd": 51000,
+      "cameras": 17,
       "city": "Jefferson City",
       "confidence": "medium",
       "contract_end": null,
@@ -8298,8 +8358,8 @@
       "decision_date": null,
       "decision_summary": "Jefferson City Council voted to renew the city's Flock Safety agreement in August 2026 despite privacy concerns; Police Chief Eric Wilde defended the technology, saying it had helped solve three homicides.",
       "id": "mo-jefferson-city-pd",
-      "last_verified": "2026-09-25",
-      "notes": "Renewal is corroborated by two KJLU articles (same newsroom) and a blog citing an Aug. 17, 2026 ABC 17 report that the vote was 'overwhelming.' The ABC 17 article itself was not directly located, so the exact vote date is null and confidence is medium.",
+      "last_verified": "2026-10-19",
+      "notes": "Renewal is corroborated by two KJLU articles (same newsroom) and a blog citing an Aug. 17, 2026 ABC 17 report that the vote was 'overwhelming.' The adopted minutes in the September 8, 2026 amended council packet record the renewal vote on August 17, 2026 as 9-1 (Holt dissenting); the packet's staff report and invoice INV-99899 state the renewal term May 15, 2026 through May 14, 2027, 17 readers, $51,000.",
       "renewal_date": null,
       "sources": [
         {
@@ -8324,6 +8384,13 @@
           "verified": false,
           "source_key": "https://guessingheadlights.com/flock-camera-helps-troopers-locate-teen-and-stolen-car-most-effective-tool-ive-used-in-my-career",
           "content_hash": "9350e6acb49f07e535b46e8b0db1ae69e4b3df17f2b28f8a920e05bbbf6a2a24"
+        },
+        {
+          "title": "City of Jefferson City council packet, September 8, 2026 (amended; adopted minutes of August 17, 2026)",
+          "url": "https://www.jeffersoncitymo.gov/2026-09-08%20AMENDED%20packet.pdf",
+          "date": "2026-09-08",
+          "verified": false,
+          "source_key": "https://jeffersoncitymo.gov/2026-09-08%20AMENDED%20packet.pdf"
         }
       ],
       "state": "MO",
@@ -9394,10 +9461,17 @@
           "verified": false,
           "source_key": "https://subluceo.com/source/5899fa9d-cd24-438f-a2a4-6107032d40f9",
           "publisher": "City of Florence (council work session minutes)"
+        },
+        {
+          "title": "City of Florence (OR) council Final Action Minutes, February 2, 2026",
+          "url": "https://www.ci.florence.or.us/AgendaCenter/ViewFile/Minutes/_02022026-1220",
+          "date": "2026-02-02",
+          "verified": false,
+          "source_key": "https://ci.florence.or.us/AgendaCenter/ViewFile/Minutes/_02022026-1220"
         }
       ],
       "confidence": "high",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "One of the few Oregon agencies to keep Flock after public debate. Cost and contract dates not in cited sources."
     },
     {
@@ -11169,7 +11243,7 @@
     {
       "agency": "Ankeny Police Department",
       "agency_type": "municipal_police",
-      "annual_cost_usd": null,
+      "annual_cost_usd": 35000,
       "cameras": 16,
       "city": "Ankeny",
       "confidence": "medium",
@@ -11178,8 +11252,8 @@
       "decision_date": null,
       "decision_summary": "No cancellation decision reported. 16 cameras reported April 2026; four cameras were vandalized or damaged during 2026 and repaired in-house.",
       "id": "ia-ankeny-pd",
-      "last_verified": "2026-09-25",
-      "notes": "All coverage traces to Des Moines Register reporting (Iowa Starting Line republished the Register piece; KRNA's write-up attributes the Register). No primary contract or transparency portal found. Contract start 2022-07-06 comes from the ACLU-IA report (unverified tier). One camera was covered in tape, one rotated away from the roadway, one bent by a vehicle strike, and one damaged 2026-08-08; all fixed in-house per department spokesperson.",
+      "last_verified": "2026-10-19",
+      "notes": "All coverage traces to Des Moines Register reporting (Iowa Starting Line republished the Register piece; KRNA's write-up attributes the Register). The executed Flock order form and customer agreement (signed July 5-6, 2022; public-records copy obtained through the ACLU of Iowa's reporting) are registered in the contract documents; they print 13 Falcon cameras, against 16 in news reporting, and the two figures are not reconciled. Contract start 2022-07-06 is the order form's execution date. One camera was covered in tape, one rotated away from the roadway, one bent by a vehicle strike, and one damaged 2026-08-08; all fixed in-house per department spokesperson.",
       "renewal_date": null,
       "sources": [
         {
@@ -11211,6 +11285,13 @@
           "verified": false,
           "source_key": "https://krna.com/ixp/679/p/flock-camera-vandalism-iowa",
           "content_hash": "c72fcb090fca900e4b90ec361aec488f09fc6f7ea0bdc334d1d8b816569c6de5"
+        },
+        {
+          "title": "Flock order form and Government Agency Customer Agreement, IA - Ankeny PD (public-records copy via ACLU of Iowa)",
+          "url": "https://drive.google.com/file/d/1lHWKXFbhB6vAAZ7MlSrQ8vxXzVTlsTjD/view",
+          "date": "2022-07-06",
+          "verified": false,
+          "source_key": "https://drive.google.com/file/d/1lHWKXFbhB6vAAZ7MlSrQ8vxXzVTlsTjD/view"
         }
       ],
       "state": "IA",
@@ -11229,7 +11310,7 @@
       "decision_date": null,
       "decision_summary": "No cancellation decision reported. 51 Flock cameras reported April 2026; a Flock alert led to arrests in 27 burglaries in September 2026; department is piloting 25 Axon license plate reading cameras alongside Flock.",
       "id": "ia-altoona-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "All three citations are Des Moines Register reporting, so independence is limited. One camera damage incident reported in 2026. Contract start 2024-05-08 comes from the ACLU-IA report (unverified tier). No cost figures or transparency portal found.",
       "renewal_date": null,
       "sources": [
@@ -11253,6 +11334,13 @@
           "date": "2026-09-25",
           "verified": true,
           "source_key": "https://desmoinesregister.com/story/news/crime-and-courts/2026/09/25/altoona-car-burglaries-suspects-charged-flock-cameras/91925680007"
+        },
+        {
+          "title": "Altoona Police Department ALPR program page (city website)",
+          "url": "https://www.altoona-iowa.com/departments/public_safety/police/technology_in_altoona__public_safety,_privacy___accountability.php",
+          "date": "2026",
+          "verified": false,
+          "source_key": "https://altoona-iowa.com/departments/public_safety/police/technology_in_altoona__public_safety,_privacy___accountability.php"
         }
       ],
       "state": "IA",
@@ -11811,7 +11899,7 @@
       "decision_date": null,
       "decision_summary": "City council unanimously approved a nearly $400,000 Flock contract (vote in December; exact vote date, dollar figure, and contract year not established from retrieved text), described as 40 cameras and license plate readers. On August 6, 2026, the police chief publicly confirmed the system was implemented and operational and announced a Flock Safety transparency portal.",
       "id": "md-salisbury-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "Camera composition unresolved: newspaper PDF describes 40 cameras and license plate readers while the Atlas lead describes 40 security cameras plus 40 ALPRs under a 2025 contract; cameras left null rather than guessing. Exact vote date, contract year, dates, and dollar figure not established. Active status is solid: the chief's August 2026 open letter confirms operational investigative use and a live transparency portal.",
       "renewal_date": null,
       "sources": [
@@ -11835,6 +11923,20 @@
           "date": null,
           "verified": true,
           "source_key": "https://transparency.flocksafety.com/salisbury-pd-md"
+        },
+        {
+          "title": "Salisbury City Council adopted minutes, Legislative Session, December 15, 2025",
+          "url": "https://salisburymd.granicus.com/services/minutes/reports/4095083e-2db4-4f94-bba5-87bb6deb57d0/attachment",
+          "date": "2025-12-15",
+          "verified": false,
+          "source_key": "https://salisburymd.granicus.com/services/minutes/reports/4095083e-2db4-4f94-bba5-87bb6deb57d0/attachment"
+        },
+        {
+          "title": "Salisbury City Council agenda packet, December 15, 2025 (procurement memo and quote Q-172463)",
+          "url": "https://d3n9y02raazwpg.cloudfront.net/salisburymd/f5417f02-4157-11f0-b7f5-005056a89546-319aa378-ef0b-4ffc-9cb8-d75f103a5777-1765469598.pdf",
+          "date": "2025-12-15",
+          "verified": false,
+          "source_key": "https://d3n9y02raazwpg.cloudfront.net/salisburymd/f5417f02-4157-11f0-b7f5-005056a89546-319aa378-ef0b-4ffc-9cb8-d75f103a5777-1765469598.pdf"
         }
       ],
       "state": "MD",
@@ -12601,7 +12703,7 @@
       "decision_date": null,
       "decision_summary": "Department operates Flock ALPR cameras; 2026 reporting identified Grand Island's Flock data, and the department's ALPR policy (effective January 2024) governs ALPR use and state reporting.",
       "id": "ne-grand-island-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "The department ALPR policy confirms ALPR operation but the retrieved excerpt does not name Flock as vendor; the vendor is established through news reporting. Flatwater Free Press and Nebraska Public Media are one reporting chain, not independent. Camera count and contract terms not found.",
       "renewal_date": null,
       "sources": [
@@ -12733,7 +12835,7 @@
       "decision_date": null,
       "decision_summary": "The county board gave the sheriff's office $15,000 in opioid settlement funds for a Flock camera contract. Sheriff Jesse Langley presented the contract to the board and said deputies have used the cameras to support cases where probable cause was developed.",
       "id": "ne-harlan-county-so",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "The $15,000 figure is the total contract amount paid entirely with opioid settlement funds; it is not established as an annual figure, so annual_cost_usd is null. Nebraska Public Media's version is a republication of the Flatwater Free Press original, not an independent source. Camera count not found.",
       "renewal_date": null,
       "sources": [
@@ -12754,6 +12856,13 @@
           "source_key": "https://nebraskapublicmedia.org/en/news/news-articles/nebraska-counties-got-money-meant-to-combat-the-opioid-crisis-some-are-spending-it-on-flock-cameras-and-other-police-tools",
           "publisher": "Nebraska Public Media",
           "content_hash": "19cd3888bb45c592d39c6529da6a791d18d15524c1e75c026519980716172253"
+        },
+        {
+          "title": "Harlan County Board of Supervisors minutes, January 7, 2025 (county 2025 minutes compilation)",
+          "url": "https://harlancounty.ne.gov/wp-content/uploads/sites/73/2026/03/bos-2025-minutes.pdf",
+          "date": "2025-01-07",
+          "verified": false,
+          "source_key": "https://harlancounty.ne.gov/wp-content/uploads/sites/73/2026/03/bos-2025-minutes.pdf"
         }
       ],
       "state": "NE",
@@ -12772,16 +12881,16 @@
       "decision_date": null,
       "decision_summary": "The sheriff's office operates Flock Safety ALPR cameras; its official ALPR policy names Flock Safety as the vendor that stores the data and purges it (hard delete) after 30 days.",
       "id": "ne-hall-county-so",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "Single primary-source citation (official county policy PDF). Camera count, contract dates, and cost not stated in retrieved sources. City set to Grand Island (county seat).",
       "renewal_date": null,
       "sources": [
         {
           "title": "Hall County Sheriff's Department ALPR policy (names Flock Safety as vendor, 30-day purge)",
-          "url": "https://www.hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf?t=202412021324290",
+          "url": "https://www.hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf",
           "date": "2024-12",
           "verified": true,
-          "source_key": "https://hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf?t=202412021324290",
+          "source_key": "https://hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf",
           "publisher": "Hall County, NE (hallcountyne.gov)"
         }
       ],
@@ -13237,8 +13346,8 @@
       "decision_date": null,
       "decision_summary": "Reno Gazette Journal reporting (2026-08-28) confirms Reno still uses Flock, with 29 Flock ALPR cameras deployed across the city; no contract cost or term disclosed in the reporting.",
       "id": "nv-reno-pd",
-      "last_verified": "2026-09-25",
-      "notes": "rgj.com is an established news outlet (Gannett/USA Today Network) but is currently unlisted in config classification domains, so its source is flagged verified=false for central triage. Contract end-of-2026 expiry and undecided renewal status reported only in a blog comment thread citing This Is Reno and KOLO TV reporting; both thisisreno.com and kolotv.com are policy-blocked for independent inspection, so contract_end/renewal_date left null. Nearly 200 mixed ALPR cameras (public plus private) reported across Reno and Sparks; the 29-camera figure is Flock-specific for Reno. City non-renewal notice (Oct 8, 2026): \"Customer does not wish for the Agreement to automatically renew following expiration of the current Term.\"",
+      "last_verified": "2026-10-19",
+      "notes": "rgj.com is an established news outlet (Gannett/USA Today Network) but is currently unlisted in config classification domains, so its source is flagged verified=false for central triage. Contract dates are as reported by RGJ (entered March 17, 2025; expires March 17, 2027); the non-renewal letter itself is not public and is quoted in RGJ's October 9, 2026 reporting. Nearly 200 mixed ALPR cameras (public plus private) reported across Reno and Sparks; the 29-camera figure is Flock-specific for Reno. City non-renewal notice (Oct 8, 2026): \"Customer does not wish for the Agreement to automatically renew following expiration of the current Term.\"",
       "renewal_date": null,
       "sources": [
         {
@@ -13494,7 +13603,7 @@
       "decision_date": null,
       "decision_summary": "Provo states it contracts with Flock Safety for ALPR cameras; the department began using them in 2023 and the system was still the subject of active public discussion in 2026 with no cancellation reported.",
       "id": "ut-provo-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "Core claim (active Flock contract) confirmed by the city's own official page, so status is high confidence. BYU Daily Universe (student paper, not in verified tier) reports implementation in April 2023 and 23 cameras; no exact day given, so contract_start stays null and cameras stays null. utahn.com (unverified) reports Provo paid Flock $75,406 in 2025; cost kept null per no-annualize rule.",
       "renewal_date": null,
       "sources": [

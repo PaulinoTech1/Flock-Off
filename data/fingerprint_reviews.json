@@ -181,8 +181,8 @@
   },
   "https://krna.com/ixp/679/p/flock-camera-vandalism-iowa": {
     "decision": "accept",
-    "note": "Drift d=8 (threshold 8) reviewed; same article live, page measures d=8/15 across fetches. Dynamic page per Boss standing rule 2026-09-26: keep as long as relevant info remains, declared dynamic.",
-    "reviewed_at": "2026-09-26",
+    "note": "Drift d=13 reviewed; live-read 2026-10-19 by Constantine (full text): KRNA article intact. It reports four Flock cameras vandalized in Ankeny and that four of Ankeny's 16 cameras were destroyed or vandalized, as cited. Townsquare dynamic page; this review supersedes the 2026-09-26 accept, which predates the 2026-10-08 baseline. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
     "reviewed_by": "Alexander"
   },
   "https://lanthorn.com/129819/news/what-to-know-before-the-grand-rapids-city-commission-hosts-flock-hearing": {
@@ -560,6 +560,54 @@
   "https://radiofreehubcity.com/2026/09/23/boonsboro-town-council-found-to-violate-open-meetings-act-over-2025-flock-camera-purchase": {
     "decision": "accept",
     "note": "Drift d=20 reviewed; live-read 2026-10-19 by Constantine: Radio Free Hub City headline and lede intact (Boonsboro Town Council violated the Open Meetings Act by not including the Flock camera discussion on the agenda). The article body is now subscriber-gated, but the claim the citation carries is stated on the public page. Citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://highlandscurrent.org/2026/09/25/beacon-police-chief-explains-camera-system": {
+    "decision": "accept",
+    "note": "Drift d=9 reviewed; live-read 2026-10-19 by Constantine (full text): Highlands Current article intact. Chief Figlia's Sept 21, 2026 council presentation on Beacon's Flock system; the article states the agreement was approved in January 2023, initially a two-year contract for $21,400, extended and running through 2028, as cited. Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://kjluradio.com/newsroom/governor-mike-kehoe-becomes-first-in-nation-to-issue-executive-order-on-flock-cameras/article_1ae3e0ea-edfe-4aec-af09-218e7b049262.html": {
+    "decision": "accept",
+    "note": "Drift d=19 reviewed; live-read 2026-10-19 by Constantine (full text): KJLU article intact. It reports Governor Kehoe's executive order on ALPR safeguards and closes by stating the Jefferson City Council recently renewed its contract with Flock, the claim this record cites. Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://delmarvanow.com/story/news/local/maryland/2026/08/07/salisbury-police-chief-naacp-sound-off-on-use-of-flock-safety-cameras/91202133007": {
+    "decision": "accept",
+    "note": "Drift d=25 reviewed; live-read 2026-10-19 by Constantine via live browser: Delmarva Now article intact. Headline and lede are public: Salisbury Police Chief Meienschein's open letter on the department's Flock Safety camera use and Wicomico County NAACP concerns (Aug 7, 2026); the article body is metered. Citation claim stands on the public portion. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://desmoinesregister.com/story/news/crime-and-courts/2026/09/25/altoona-car-burglaries-suspects-charged-flock-cameras/91925680007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Des Moines Register article intact; the public lede states two men were arrested in Altoona in connection with 27 burglaries after Flock cameras helped police locate their vehicle, the claim this record cites; the article body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://desmoinesregister.com/story/news/iowa/2026/08/12/flock-cameras-iowa-backlash-vandalism/91216179007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Des Moines Register article intact; the public lede reports Flock cameras vandalized across Iowa, including four damaged in Ankeny, as cited; the article body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Holland Sentinel article intact; headline and lede are public: Sheriff DeBoer presented to the Ottawa County Board on Sept 18, 2026 on the sheriff's office's Flock Safety camera use, as cited; figures in the body are metered and the record's figures rest on the registered county contracts. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Indianapolis Star opinion column intact; headline and dek are public (IMPD officers' abuse of Flock cameras and the guardrails debate), the column's cited subject; the body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Reno Gazette Journal article intact; headline, dek and lede are public (Reno is ending its Flock contract and seeking a new camera vendor), the claim this record cites; the body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
     "reviewed_at": "2026-10-19",
     "reviewed_by": "Alexander"
   }
