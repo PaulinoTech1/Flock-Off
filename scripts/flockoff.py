@@ -324,10 +324,56 @@ def cmd_release(args, cfg) -> None:
 
     # 4. Push. The helper runs release_gate() again (fail-closed) first.
     #    (Existence was verified in pre-flight step 0.)
+    # Capture the pre-push HEAD first: the manifest stamp (step 5) only
+    # makes sense when this push actually creates a new commit.
+    pre_push_head = None
+    try:
+        sys.path.insert(0, os.path.dirname(helper))
+        import github_push as _gp
+        pre_push_head = _gp.api(
+            f"/repos/{_gp.OWNER}/{_gp.REPO}/commits?per_page=1")[0]["sha"]
+    except Exception:
+        _gp = None
     r = subprocess.run([sys.executable, helper, args.message])
     if r.returncode != 0:
         sys.exit(f"release: push failed (exit {r.returncode})")
     print("release: pushed")
+
+    # 5. Stamp the manifest with the release commit (F5). The manifest is
+    #    part of the tree it describes, so it cannot name its own commit;
+    #    once the release push lands, record THAT commit in the manifest,
+    #    re-sign, and push the manifest alone. The agencies hash is
+    #    unaffected (it covers agencies.json only). A stamp failure never
+    #    fails the release: it is metadata, warned about loudly, and the
+    #    next release re-stamps.
+    if _gp is None or pre_push_head is None:
+        print("release: WARNING: remote HEAD unreadable; manifest commit "
+              "stamp skipped")
+        return
+    try:
+        head = _gp.api(
+            f"/repos/{_gp.OWNER}/{_gp.REPO}/commits?per_page=1")[0]["sha"]
+        if head == pre_push_head:
+            print("release: nothing new pushed; manifest stamp skipped")
+            return
+        sign_argv = ["--sign", "--commit", head]
+        if args.key:
+            sign_argv += ["--key", args.key]
+        sign_manifest.main(sign_argv)
+        try:
+            sign_manifest.main(["--verify", "--pubkey", pubkey])
+        except SystemExit as e:
+            if e.code not in (0, None):
+                raise RuntimeError(f"stamp signature verify exit {e.code}")
+        r2 = subprocess.run(
+            [sys.executable, helper,
+             f"Stamp manifest with release commit {head[:8]}"])
+        if r2.returncode != 0:
+            raise RuntimeError(f"stamp push exit {r2.returncode}")
+        print(f"release: manifest stamped with commit {head[:12]}")
+    except Exception as e:
+        print(f"release: WARNING: manifest commit stamp failed ({e}); "
+              f"the release itself is pushed and valid")
 
 
 def build_parser() -> argparse.ArgumentParser:
