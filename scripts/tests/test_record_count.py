@@ -31,7 +31,8 @@ def _load_build_module():
 def _copy_repo():
     tmp = tempfile.mkdtemp(prefix="flockoff-count-")
     for name in ("index.html", "api", "data", "scripts", "js", "css",
-                 "config", "vendor"):
+                 "config", "vendor", "og-image.png", "robots.txt",
+                 "sitemap.xml", "lessons-learned.pdf"):
         src = os.path.join(REPO_ROOT, name)
         dst = os.path.join(tmp, name)
         if os.path.isdir(src):

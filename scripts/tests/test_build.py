@@ -20,7 +20,8 @@ BUILD_SCRIPT = os.path.join(REPO_ROOT, "scripts", "vercel_build.py")
 def _copy_repo():
     tmp = tempfile.mkdtemp(prefix="flockoff-build-")
     for name in ("index.html", "api", "data", "scripts", "js", "css",
-                 "config", "vendor"):
+                 "config", "vendor", "og-image.png", "robots.txt",
+                 "sitemap.xml", "lessons-learned.pdf"):
         src = os.path.join(REPO_ROOT, name)
         dst = os.path.join(tmp, name)
         if os.path.isdir(src):
@@ -77,6 +78,35 @@ class TestVercelBuild(unittest.TestCase):
             self.assertFalse(os.path.exists(os.path.join(tmp, "public", "api")))
             self.assertTrue(os.path.isfile(os.path.join(tmp, "public", "data", "agencies.json")))
             self.assertTrue(os.path.isfile(os.path.join(tmp, "public", "js", "app.js")))
+        finally:
+            shutil.rmtree(tmp, ignore_errors=True)
+
+    def test_staging_allowlist_excludes_stray_root_files(self):
+        # Regression test for the Oct 2026 diagnostic-snapshot exposure:
+        # staging is an allowlist, so files that land at the repo root
+        # (working snapshots, notes, new directories) must never reach
+        # public/, even ones nobody has seen before.
+        tmp = _copy_repo()
+        try:
+            for stray in ("_home_hatch_flock-ci-check_remote-index.html",
+                          "_home_hatch_flock-ci-check_remote-api_report.js",
+                          "NOTES.md", "scratch.txt"):
+                open(os.path.join(tmp, stray), "w", encoding="utf-8").write("stray")
+            os.makedirs(os.path.join(tmp, "straydir"))
+            open(os.path.join(tmp, "straydir", "x.txt"), "w",
+                 encoding="utf-8").write("stray")
+            proc = _run_build(tmp)
+            self.assertEqual(proc.returncode, 0, proc.stderr)
+            public = os.path.join(tmp, "public")
+            for stray in ("_home_hatch_flock-ci-check_remote-index.html",
+                          "_home_hatch_flock-ci-check_remote-api_report.js",
+                          "NOTES.md", "scratch.txt", "straydir"):
+                self.assertFalse(os.path.exists(os.path.join(public, stray)),
+                                 f"stray path staged into public/: {stray}")
+            allowed = {"index.html", "lessons-learned.pdf", "og-image.png",
+                       "robots.txt", "sitemap.xml",
+                       "css", "data", "js", "vendor"}
+            self.assertEqual(set(os.listdir(public)), allowed)
         finally:
             shutil.rmtree(tmp, ignore_errors=True)
 

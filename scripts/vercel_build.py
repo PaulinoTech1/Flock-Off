@@ -32,6 +32,25 @@ import contracts as contracts_mod  # noqa: E402
 import petitions as petitions_mod  # noqa: E402
 import evidence as evidence_mod  # noqa: E402
 
+# The public/ staging allowlist. Only these repo-root entries are copied
+# into the servable site; anything else at the root (docs, tests, stray
+# working files) is never published. This replaces a denylist copy that
+# shipped two local diagnostic snapshots to the live site in Oct 2026:
+# with a denylist, every new stray file is public by default.
+PUBLIC_FILES = (
+    "index.html",
+    "lessons-learned.pdf",
+    "og-image.png",
+    "robots.txt",
+    "sitemap.xml",
+)
+PUBLIC_DIRS = (
+    "css",
+    "data",
+    "js",
+    "vendor",
+)
+
 # Display labels come from the canonical taxonomy in scripts/evidence.py;
 # do not redefine the status set here.
 STATUS_LABEL = evidence_mod.STATUS_LABELS
@@ -304,19 +323,25 @@ def main() -> None:
         sys.exit("build failed: agency record missing id")
     report_path.write_text(src.replace(ids_marker, json.dumps(ids)), encoding="utf-8")
 
-    # Stage the servable site into public/: everything except dev-only
-    # paths. Vercel serves static files from outputDirectory (public/);
-    # api/ functions are collected from the repo-root api/ dir, so the
+    # Stage the servable site into public/ from the allowlist above.
+    # Vercel serves static files from outputDirectory (public/); api/
+    # functions are collected from the repo-root api/ dir, so the
     # transformed api/report.js above is what gets bundled.
     public = ROOT / "public"
     if public.exists():
         shutil.rmtree(public)
-    ignore = shutil.ignore_patterns(
-        ".git", ".github", "__pycache__", ".venv", "node_modules",
-        "research", "scripts", "docs", "config", "api", "public",
-        "vercel.json",
-    )
-    shutil.copytree(ROOT, public, ignore=ignore)
+    public.mkdir()
+    for name in PUBLIC_FILES:
+        src = ROOT / name
+        if not src.is_file():
+            sys.exit(f"build failed: allowlisted site file missing: {name}")
+        shutil.copy2(src, public / name)
+    for name in PUBLIC_DIRS:
+        src = ROOT / name
+        if not src.is_dir():
+            sys.exit(f"build failed: allowlisted site directory missing: {name}")
+        shutil.copytree(src, public / name,
+                        ignore=shutil.ignore_patterns("__pycache__"))
 
     # Public derived evidence file: per-agency tier + counts, so the client
     # and the pre-render share the build's computation instead of
