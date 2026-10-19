@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17",
+  "generated": "2026-10-19",
   "criteria": "docs/METHODOLOGY.md#evidence-tiers",
   "classifier": "scripts/flockoff.py classify",
   "verified_news": [
@@ -459,11 +459,13 @@
     "pr.murrayjournal.com",
     "prinevillereview.com",
     "prismnews.com",
+    "public.destinyhosted.com",
     "published.pdf.pagesuite.com",
     "ransonfinancial.com",
     "redeyebr.com",
     "rentonsignal.com",
     "reportwire.org",
+    "ridgelandms.api.civicclerk.com",
     "riorancho.news",
     "rockymountainvoice.com",
     "salina311.com",
@@ -488,6 +490,7 @@
     "threeriverspublishing.com",
     "triarkradio.com",
     "tricityrecordnm.com",
+    "troyny.gov",
     "tulsaflyer.org",
     "tygartmedia.com",
     "tztnews.com",

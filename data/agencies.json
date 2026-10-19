@@ -51,7 +51,7 @@
     ],
     "methodology": "docs/METHODOLOGY.md",
     "generated_by": "scripts/generate_meta.py",
-    "last_updated": "2026-10-17",
+    "last_updated": "2026-10-18",
     "record_count": 344,
     "jurisdiction_count": 47,
     "jurisdictions": [
@@ -104,10 +104,10 @@
       "WV"
     ],
     "status_counts": {
-      "active": 173,
+      "active": 174,
       "cancelled": 133,
       "expired": 3,
-      "pending": 25,
+      "pending": 24,
       "rejected": 10
     },
     "terminal_verified": 9,
@@ -1264,8 +1264,8 @@
           "title": "City Council support packet, March 12, 2025 (draft minutes of February 26, 2025: license plate reader project award)",
           "url": "https://cms3.revize.com/revize/niagarafallsny/Documents/Government/City Council/2025/0312/1 - Corrected DRAFT Support Packet for Regular Council Meeting on 3.12.25. (18 pgs).pdf",
           "date": "2025-02-26",
-          "source_key": "https://cms3.revize.com/revize/niagarafallsny/Documents/Government/City Council/2025/0312/1 - Corrected DRAFT Support Packet for Regular Council Meeting on 3.12.25. (18 pgs).pdf",
-          "verified": false
+          "verified": false,
+          "source_key": "https://cms3.revize.com/revize/niagarafallsny/Documents/Government/City Council/2025/0312/1 - Corrected DRAFT Support Packet for Regular Council Meeting on 3.12.25. (18 pgs).pdf"
         }
       ],
       "state": "NY",
@@ -1377,11 +1377,11 @@
       "city": "Troy",
       "confidence": "medium",
       "contract_end": null,
-      "contract_start": "2023-04-17",
+      "contract_start": "2021-08-16",
       "decision_date": null,
       "decision_summary": null,
       "id": "ny-troy-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-18",
       "notes": "Pilot began 2021, expanded to 26 cameras on a two-year $156,000 contract; $78,000 is the reported annual payment the mayor declared a public emergency to keep paying after the council tabled the April 1, 2026 renewal vote. Council passed Local Law 3 regulating LPR data (72-hour retention) and a law limiting mayoral emergency powers (7-0, Sept 2026). Council is suing the mayor. Cameras operational as of Sept 2026.",
       "renewal_date": null,
       "sources": [
@@ -1416,6 +1416,13 @@
           "verified": false,
           "source_key": "https://civiccapacity.com/p/flock-cameras-helping-solve-crimes",
           "publisher": "Civic Capacity"
+        },
+        {
+          "title": "City Council Finance Meeting packet: Flock Group Inc. order form and Government Agency Customer Agreement (executed July 22, 2021)",
+          "url": "https://www.troyny.gov/AgendaCenter/ViewFile/ArchivedAgenda/_03192026-1474?packet=true",
+          "date": "2026-03-19",
+          "verified": false,
+          "source_key": "https://troyny.gov/AgendaCenter/ViewFile/ArchivedAgenda/_03192026-1474?packet=true"
         }
       ],
       "state": "NY",
@@ -2877,11 +2884,19 @@
           "verified": true,
           "source_key": "https://police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes",
           "content_hash": "d77fb2ad77c6218340ee3d29752f13ddc8da041660b76ee13f841c8400382c01"
+        },
+        {
+          "title": "Board of Control agenda packet with Flock Group Inc. order form and Government Agency Agreement (Ordinance 24-23)",
+          "url": "https://public.destinyhosted.com/loraidocs/2023/BOC/20230215_916/AGENDApacket__02-15-23_0308_915.pdf",
+          "date": "2023-02-15",
+          "verified": false,
+          "source_key": "https://public.destinyhosted.com/loraidocs/2023/BOC/20230215_916/AGENDApacket__02-15-23_0308_915.pdf"
         }
       ],
       "state": "OH",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-18"
     },
     {
       "agency": "Strongsville Police Department",
@@ -3207,8 +3222,8 @@
           "title": "Board of Trustees meeting packet, December 7, 2021 (Flock Safety agreement approval)",
           "url": "https://cms9files.revize.com/vanburentwp/Document_Center/Agendas%20&%20Minutes/Board%20Of%20Trustees/2021/Packets/BRD%2012-7-21%20Packet.pdf",
           "date": "2021-12-07",
-          "source_key": "https://cms9files.revize.com/vanburentwp/Document_Center/Agendas%20&%20Minutes/Board%20Of%20Trustees/2021/Packets/BRD%2012-7-21%20Packet.pdf",
-          "verified": false
+          "verified": false,
+          "source_key": "https://cms9files.revize.com/vanburentwp/Document_Center/Agendas%20&%20Minutes/Board%20Of%20Trustees/2021/Packets/BRD%2012-7-21%20Packet.pdf"
         }
       ],
       "state": "MI",
@@ -3373,8 +3388,8 @@
           "title": "City Manager Administrative Order 2026-01: Use of Automated License Plate Readers and Related Surveillance Technology",
           "url": "https://www.grandrapidsmi.gov/media/3cemd5zb/ao-2026-01-automated-license-plate-readers.pdf",
           "date": "2026-09-03",
-          "source_key": "https://grandrapidsmi.gov/media/3cemd5zb/ao-2026-01-automated-license-plate-readers.pdf",
-          "verified": false
+          "verified": false,
+          "source_key": "https://grandrapidsmi.gov/media/3cemd5zb/ao-2026-01-automated-license-plate-readers.pdf"
         }
       ],
       "state": "MI",
@@ -3915,11 +3930,19 @@
           "verified": true,
           "source_key": "https://docs.southbendin.gov/WebLink/0/edoc/383268/05-30-2024%20Health%20%20Public%20Safety%20and%20Information%20%20Technology%20Meeting%20Minutes%20(Signed).pdf",
           "publisher": "City of South Bend (City Clerk)"
+        },
+        {
+          "title": "Board of Public Works approval letter and revocable encroachment permit: Flock Safety ALPR cameras (W. LaSalle Ave. & N. Lafayette Blvd.; Bonfield Pl. & S. Sheridan St.)",
+          "url": "http://docs.southbendin.gov/weblink/0/edoc/386260/Encroachment%20%20Revocable%20Permit%20-%20Flock%20Safety.pdf",
+          "date": "2024-10-10",
+          "verified": true,
+          "source_key": "https://docs.southbendin.gov/weblink/0/edoc/386260/Encroachment%20%20Revocable%20Permit%20-%20Flock%20Safety.pdf"
         }
       ],
       "state": "IN",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-18"
     },
     {
       "agency": "Lafayette Police Department",
@@ -4465,8 +4488,8 @@
           "title": "Village Board agenda packet, June 20, 2023 (Ordinance 2023-065, Flock Safety payment authorization)",
           "url": "https://www.vernonhills.org/AgendaCenter/ViewFile/Agenda/_06202023-1054",
           "date": "2023-06-20",
-          "source_key": "https://vernonhills.org/AgendaCenter/ViewFile/Agenda/_06202023-1054",
-          "verified": true
+          "verified": true,
+          "source_key": "https://vernonhills.org/AgendaCenter/ViewFile/Agenda/_06202023-1054"
         }
       ],
       "state": "IL",
@@ -5402,7 +5425,8 @@
       ],
       "state": "KY",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-18"
     },
     {
       "agency": "Oldham County Police Department",
@@ -5748,11 +5772,19 @@
           "date": "2026-09-01",
           "verified": true,
           "source_key": "https://clarionledger.com/story/news/2026/09/01/where-flock-cameras-are-located-in-jackson-ms-can-license-plate-readers-issue-tickets/91338937007"
+        },
+        {
+          "title": "Minutes, Mayor and Board of Aldermen (consent item 2(i): Flock Safety Additional Services Agreement, Exhibit J)",
+          "url": "https://ridgelandms.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=4124,plainText=false)",
+          "date": "2021-10-19",
+          "verified": false,
+          "source_key": "https://ridgelandms.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=4124,plainText=false)"
         }
       ],
       "state": "MS",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-18"
     },
     {
       "agency": "Scottsdale Police Department",
@@ -6680,7 +6712,7 @@
       "decision_date": "2026-03-24",
       "decision_summary": "On March 24, 2026, the Berkeley City Council delayed a vote on a roughly $2 million Flock Safety expansion (cameras, investigative software, drones) after hundreds of residents spoke against it past 1:30 a.m.; the item was continued to June 2. The city's existing 52-ALPR Flock network remains active under an interim extension while the city runs a competitive RFP for surveillance technology.",
       "id": "ca-berkeley-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-18",
       "notes": "Mayor Adena Ishii reversed course to oppose any Flock renewal; the Police Accountability Board recommended against the contract. The interim-extension-during-RFP detail comes from meeting summaries; the June 2 outcome was not confirmed as of 2026-09-25.",
       "renewal_date": null,
       "sources": [
@@ -6706,10 +6738,17 @@
           "date": "2026-03-24",
           "verified": true,
           "source_key": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-03-24%20Annotated%20Agenda%20-%20Council.pdf"
+        },
+        {
+          "title": "Annotated Agenda, Berkeley City Council Special Meeting (Flock Safety ALPR item; Resolution No. 72,254-N.S.)",
+          "url": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-05-07%20Annotated%20Agenda%20-%20Council.pdf",
+          "date": "2026-05-07",
+          "verified": true,
+          "source_key": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-05-07%20Annotated%20Agenda%20-%20Council.pdf"
         }
       ],
       "state": "CA",
-      "status": "pending",
+      "status": "active",
       "transparency_portal": null
     },
     {
