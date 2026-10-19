@@ -11075,5 +11075,61 @@
     "text_len": 0,
     "title": null,
     "url": "https://www.youtube.com/watch?v=vTZA2DP1MNI"
+  },
+  "https://azcentral.com/story/news/metro-phoenix/2026/10/08/scottsdale-to-make-flock-camera-abuse-a-crime/92137855007": {
+    "url": "https://www.azcentral.com/story/news/metro-phoenix/2026/10/08/scottsdale-to-make-flock-camera-abuse-a-crime/92137855007/",
+    "final_url": null,
+    "title": null,
+    "simhash": null,
+    "content_hash": null,
+    "text_len": 0,
+    "fetched_at": "2026-10-19",
+    "fetch_status": "error",
+    "blocked_reason": null,
+    "archive": null,
+    "snapshot_path": null,
+    "retry_after": "2026-10-26"
+  },
+  "https://azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting": {
+    "url": "https://www.azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting/",
+    "final_url": "https://www.azfamily.com/2026/10/07/scottsdale-city-council-vote-flock-cameras-december-meeting/",
+    "title": "Scottsdale City Council to vote on Flock cameras in December meeting",
+    "simhash": "d04c4f2e5cc32aab",
+    "content_hash": "61c40557ced541dec0188cb3d4b4300a9bd5d38dd09eed3cfbc75b7db0e4fb71",
+    "text_len": 3303,
+    "fetched_at": "2026-10-19",
+    "fetch_status": "ok",
+    "blocked_reason": null,
+    "archive": "5659fd99e2edd4325d81b5c14997a7d35c074c0b2ff2a9e179559afefe2d19f0.txt",
+    "snapshot_path": null,
+    "snapshot_status": "failed"
+  },
+  "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which": {
+    "url": "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which",
+    "final_url": "https://disputeindex.com/events/5256-councilwoman-solange-whitehead-made-the-motion-on-which",
+    "title": "Whitehead moves for a Scottsdale license-plate reader ordinance, vendor review and a possible end to Flock funding | The Dispute Index",
+    "simhash": "ff84335c6198099e",
+    "content_hash": "bdae6d3eda5e46085ce2102829353ec78b094e722e4eede94c980adc4acde5b1",
+    "text_len": 5557,
+    "fetched_at": "2026-10-19",
+    "fetch_status": "ok",
+    "blocked_reason": null,
+    "archive": "cf5fb9374cf4a00e10938b66cf30dd2e91f80f7506364b6528bd69d1fa158fb2.txt",
+    "snapshot_path": null,
+    "snapshot_status": "failed"
+  },
+  "https://axios.com/local/scottsdale/2026/10/08/scottsdale-flock-cameras-contract-": {
+    "url": "https://www.axios.com/local/scottsdale/2026/10/08/scottsdale-flock-cameras-contract-",
+    "final_url": "https://www.axios.com/local/scottsdale/2026/10/08/scottsdale-flock-cameras-contract-",
+    "title": "Scottsdale's latest anti-Flock moves - Axios Scottsdale",
+    "simhash": "077eec4d79956599",
+    "content_hash": "5d48d8bbb0ef5e7c56eb49988be62944281806c17c5056452a282f36fbaeee22",
+    "text_len": 3110,
+    "fetched_at": "2026-10-19",
+    "fetch_status": "ok",
+    "blocked_reason": null,
+    "archive": "1a5d2e47ded3fb7349955b15c12c42f3f2052016b04086b1ff0d78d5cb61a9da.txt",
+    "snapshot_path": null,
+    "snapshot_status": "failed"
   }
 }
