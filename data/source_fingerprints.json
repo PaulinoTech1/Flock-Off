@@ -7399,17 +7399,17 @@
     "url": "https://www.rgj.com/story/news/crime/2026/08/28/license-plate-reader-camera-crime-privacy-concerns/91392809007/"
   },
   "https://rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007": {
-    "archive": null,
+    "archive": "08dd81662acae98e246116745d898a939b79efc8e4117adb6ebc8f8dca327df4.txt",
     "blocked_reason": null,
-    "content_hash": null,
-    "fetch_status": "error",
-    "fetched_at": "2026-10-12",
-    "final_url": null,
-    "retry_after": "2026-10-19",
-    "simhash": null,
-    "snapshot_path": null,
-    "text_len": 0,
-    "title": null,
+    "content_hash": "6e58ec75ed8e1a36ab1be1fe46771ded2bf157d45140383567dddd3c8c853e12",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007/",
+    "simhash": "863356b0b5df7e3a",
+    "snapshot_path": "snapshots/2026-10-19/e2caf539329c15b1ad586c9b9488b618a3a4a1b35862d7d7a5cfa2e740a6a1c8.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4937,
+    "title": "City of Reno ends contract with Flock, seeks new vendor for cameras",
     "url": "https://www.rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007/"
   },
   "https://riaclu.org/app/uploads/2026/02/Bristol-Police-Dept-Flock-Safety-RISP-Presentation.pdf": {
