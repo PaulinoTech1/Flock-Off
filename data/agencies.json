@@ -52,7 +52,7 @@
     "methodology": "docs/METHODOLOGY.md",
     "generated_by": "scripts/generate_meta.py",
     "last_updated": "2026-10-19",
-    "record_count": 344,
+    "record_count": 350,
     "jurisdiction_count": 47,
     "jurisdictions": [
       "AL",
@@ -104,17 +104,17 @@
       "WV"
     ],
     "status_counts": {
-      "active": 172,
-      "cancelled": 134,
+      "active": 173,
+      "cancelled": 139,
       "expired": 4,
       "pending": 24,
       "rejected": 10
     },
     "terminal_verified": 9,
-    "terminal_pending_validation": 139,
+    "terminal_pending_validation": 144,
     "records_with_renewal_date": 4,
-    "records_with_contract_end": 29,
-    "coverage_note": "344 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 9 terminal claims verified, 139 pending validation*. 4 records carry a renewal date and 29 a contract end date; exact renewal dates remain thin and are the top research priority."
+    "records_with_contract_end": 31,
+    "coverage_note": "350 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 9 terminal claims verified, 144 pending validation*. 4 records carry a renewal date and 31 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {
@@ -9104,8 +9104,8 @@
       "state": "OR",
       "status": "cancelled",
       "cameras": 57,
-      "annual_cost_usd": null,
-      "contract_start": null,
+      "annual_cost_usd": 171000,
+      "contract_start": "2025-03-24",
       "contract_end": null,
       "renewal_date": null,
       "decision_date": "2025-12-05",
@@ -9138,11 +9138,18 @@
           "source_key": "https://dailyemerald.com/189945/community-news/city-council-looks-to-develop-surveillance-technology-policy-by-end-of-2026",
           "publisher": "Daily Emerald",
           "content_hash": "75e253623bb3aedcdec16894f74fa472faec734cfd2e082b6f999bbdb6d9b2c7"
+        },
+        {
+          "title": "City of Eugene Software Services Contract No. 2025-03244 with Flock Group Inc. (executed; copy published by Eyes Off Eugene)",
+          "url": "https://eyesoffeugene.org/wp-content/uploads/2025/07/Flock-Contract-with-City-of-Eugene-2025.pdf",
+          "date": "2025-03-24",
+          "source_key": "https://eyesoffeugene.org/wp-content/uploads/2025/07/Flock-Contract-with-City-of-Eugene-2025.pdf",
+          "verified": false
         }
       ],
       "confidence": "high",
-      "last_verified": "2026-09-25",
-      "notes": "One of Oregon's highest-profile Flock exits. 57 cameras confirmed. Termination date firm across sources. Contract value and start date left null (conflicting reports on signing year). Cost detail: Two-year contract value reported around $342,000 in earlier research but the exact figure could not be re-verified against a live citation in this session, left null.",
+      "last_verified": "2026-10-19",
+      "notes": "One of Oregon's highest-profile Flock exits. 57 cameras confirmed. Termination date firm across sources. Executed Software Services Contract No. 2025-03244 with Flock Group Inc. is registered in the contract documents: signed March 2025 (effective 2025-03-24 per Sec 26), Contract Total $342,000, annual recurring $171,000, 57 cameras; no calendar end date is printed.",
       "validation": "pending"
     },
     {
@@ -9890,8 +9897,8 @@
       "decision_date": "2026-08-25",
       "decision_summary": "City Council unanimously declined to renew the Flock contract and directed staff to shut down and cover the 28 cameras. Police had used Flock since 2020, but exact contract start and end dates are unconfirmed.",
       "id": "tx-pflugerville-pd",
-      "last_verified": "2026-09-25",
-      "notes": "Only one established outlet confirms the non-renewal; the GitHub records archive is a lead. A city document or second independent outlet would raise confidence.",
+      "last_verified": "2026-10-19",
+      "notes": "The city's Final minutes (registered in the contract documents) corroborate the non-renewal: on August 25, 2026 the council adopted the motion to defund and disable Flock cameras and notify Flock the contract will not be renewed. The 28-camera figure is news-sourced; the minutes print no camera count. Per the minutes, cameras operated by school districts, private businesses, and HOAs are outside the city's action.",
       "renewal_date": null,
       "sources": [
         {
@@ -9909,6 +9916,13 @@
           "verified": false,
           "source_key": "https://github.com/todb/pflock-docs/blob/HEAD/README.md",
           "content_hash": "3ec52e64f547f9fa1d005a326840c8d3ff2acf9da03b5492a5f7eba92860d5b9"
+        },
+        {
+          "title": "Pflugerville City Council Final minutes, August 25, 2026 (Legistar matter 2026-0776)",
+          "url": "https://legistar1.granicus.com/Pflugerville/meetings/2026/8/3764_M_City_Council_26-08-25_Minutes_-_Final.pdf",
+          "date": "2026-08-25",
+          "source_key": "https://legistar1.granicus.com/Pflugerville/meetings/2026/8/3764_M_City_Council_26-08-25_Minutes_-_Final.pdf",
+          "verified": true
         }
       ],
       "state": "TX",
@@ -12370,11 +12384,11 @@
       "confidence": "medium",
       "contract_end": null,
       "contract_start": null,
-      "decision_date": null,
-      "decision_summary": "The mayor paused installation in mid-August 2026, covering the three installed cameras, after public pushback. FOX 9 later listed North Branch among Minnesota agencies announcing removal of Flock cameras; a statewide blog reports the council then voted unanimously on Aug. 26 to cancel the agreement and take the three cameras down while four more were never installed.",
+      "decision_date": "2026-09-09",
+      "decision_summary": "City Council voted 5-0 on August 26, 2026 to halt Flock installation indefinitely and remove the three installed cameras (never activated), and 5-0 on September 9, 2026 to send Flock Safety formal written notice terminating and cancelling the contract and not renewing it. The underlying agreement (approved 3-2 in May 2026) was a three-year, seven-camera, $63,000 contract.",
       "id": "mn-north-branch-pd",
-      "last_verified": "2026-09-25",
-      "notes": "The Aug. 26, 2026 unanimous council vote and the three-year contract liability claim come only from an unverified blog, so decision_date is null. The removal itself is confirmed by FOX 9. Camera count 3 reflects the installed cameras only; four more were reportedly never installed.",
+      "last_verified": "2026-10-19",
+      "notes": "Both votes are documented in the city's council packets, registered in the contract documents: the August 26, 2026 halt-and-remove motion and the September 9, 2026 termination-notice motion, each 5-0. decision_date is the September 9 termination-notice vote. Counsel advised the agreement has no termination-for-convenience provision and the city remains liable for the three-year term's financial obligations. Camera count 3 is the installed count; four of the seven contracted cameras were never installed. The blog citation previously relied on for the vote was removed as superseded by the packets.",
       "renewal_date": null,
       "sources": [
         {
@@ -12396,13 +12410,18 @@
           "content_hash": "989a1960867ddffa74b4439d2343f27d09928e592e4d592cf7c10d5460abfe87"
         },
         {
-          "title": "Minnesota Cities Now Ending or Pausing Flock Camera Use",
-          "url": "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras/",
-          "date": null,
-          "verified": false,
-          "source_key": "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras",
-          "publisher": "Squatch Rocks (blog)",
-          "content_hash": "d2ee26617b144afe01ed9348559282ab07141609332ee9e6f3b16b05d4e268b7"
+          "title": "North Branch City Council meeting packet, August 26, 2026 (CivicClerk)",
+          "url": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1379,plainText=false)",
+          "date": "2026-08-26",
+          "source_key": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1379,plainText=false)",
+          "verified": false
+        },
+        {
+          "title": "North Branch City Council meeting packet, September 9, 2026 (CivicClerk)",
+          "url": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1397,plainText=false)",
+          "date": "2026-09-09",
+          "source_key": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1397,plainText=false)",
+          "verified": false
         }
       ],
       "state": "MN",
@@ -14560,6 +14579,202 @@
       "confidence": "medium",
       "last_verified": "2026-10-04",
       "notes": "Exact commission vote date unpinned; using report date. Non-renewal/expiration rather than mid-contract termination.",
+      "validation": "pending"
+    },
+    {
+      "id": "tn-cookeville-pd",
+      "agency": "Cookeville Police Department",
+      "agency_type": "municipal_police",
+      "city": "Cookeville",
+      "state": "TN",
+      "status": "active",
+      "cameras": 10,
+      "annual_cost_usd": 30000,
+      "contract_start": "2026-06-08",
+      "contract_end": "2028-06-08",
+      "renewal_date": null,
+      "decision_date": "2026-09-17",
+      "decision_summary": "City Council voted 4-0 on September 17, 2026 to consolidate two existing 5-camera Flock contracts into one two-year contract for 10 ALPRs at $30,000 per year; no new cameras added. The consolidated contract's printed term runs June 8, 2026 to June 8, 2028.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Cookeville City Council adopted minutes, September 17, 2026",
+          "url": "https://www.cookeville-tn.gov/AgendaCenter/ViewFile/Minutes/_09172026-808",
+          "date": "2026-09-17",
+          "source_key": "https://cookeville-tn.gov/AgendaCenter/ViewFile/Minutes/_09172026-808",
+          "verified": false
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-19",
+      "notes": "Consolidation of two pre-existing 5-ALPR contracts; the June 8, 2026 term start is the consolidated contract's printed start and postdates the contracts it merges. The packet order form is unsigned by both parties in the packet copy; the adopted minutes are the authorizing instrument."
+    },
+    {
+      "id": "tx-liberty-hill-pd",
+      "agency": "Liberty Hill Police Department",
+      "agency_type": "municipal_police",
+      "city": "Liberty Hill",
+      "state": "TX",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-09",
+      "decision_summary": "City Council voted 7-0 on September 9, 2026 to terminate the Flock Safety agreement, block its October renewal, and immediately remove all city-controlled cameras.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Liberty Hill City Council minutes, September 9, 2026 (published in the September 23, 2026 council packet)",
+          "url": "https://swagit-attachments.granicus.com/uploads/video/agenda_file/402104/_09232026-1479.pdf",
+          "date": "2026-09-09",
+          "source_key": "https://swagit-attachments.granicus.com/uploads/video/agenda_file/402104/_09232026-1479.pdf",
+          "verified": false
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-19",
+      "notes": "The motion's clause about not using technology for mass surveillance is aspirational council language, not an ordinance. The minutes print no camera count, term, or dollars.",
+      "validation": "pending"
+    },
+    {
+      "id": "va-arlington-county-pd",
+      "agency": "Arlington County Police Department",
+      "agency_type": "county_police",
+      "city": "Arlington",
+      "state": "VA",
+      "county": "Arlington County",
+      "status": "cancelled",
+      "cameras": 41,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-15",
+      "decision_summary": "County Board directed the County Manager on September 15, 2026 to discontinue county-leased Flock technology (41 cameras: 26 Falcon LPR, 15 Condor PTZ) and begin removing all related equipment from public property.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Arlington County Board news release: County Board directs Manager to Discontinue use of Flock Technology",
+          "url": "https://www.arlingtonva.us/About-Arlington/Newsroom/Articles/2026/County-Board-directs-Manager-to-Discontinue-use-of-Flock-Technology",
+          "date": "2026-09-15",
+          "source_key": "https://arlingtonva.us/About-Arlington/Newsroom/Articles/2026/County-Board-directs-Manager-to-Discontinue-use-of-Flock-Technology",
+          "verified": false
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-19",
+      "notes": "41 is the pre-removal count. Removal from public property was requested within 14 business days of the announcement, qualified in the release: the process may extend beyond that timeframe as logistics require. Private-property cameras are not subject to County oversight and are unaffected.",
+      "validation": "pending"
+    },
+    {
+      "id": "va-henrico-county-pd",
+      "agency": "Henrico County Police Division",
+      "agency_type": "county_police",
+      "city": "Henrico",
+      "state": "VA",
+      "county": "Henrico County",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-10-06",
+      "decision_summary": "County Police Division announced October 6, 2026 that it is terminating its Flock Safety contract over privacy concerns, intending to cut ties within seven days.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Henrico County news release: Henrico Police to eliminate Flock cameras",
+          "url": "https://henrico.gov/news/2026/10/henrico-police-to-eliminate-flock-cameras/",
+          "date": "2026-10-06",
+          "source_key": "https://henrico.gov/news/2026/10/henrico-police-to-eliminate-flock-cameras",
+          "verified": false
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-19",
+      "notes": "Termination stated as in progress in the release, not completed; no effective date, vote, camera count, dollars, or contract dates are printed. A 122-camera figure in news coverage was not verified against the release and is not carried.",
+      "validation": "pending"
+    },
+    {
+      "id": "wi-neenah-pd",
+      "agency": "Neenah Police Department",
+      "agency_type": "municipal_police",
+      "city": "Neenah",
+      "state": "WI",
+      "status": "cancelled",
+      "cameras": 12,
+      "annual_cost_usd": 30000,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-09-16",
+      "decision_summary": "Common Council voted unanimously on September 16, 2026 to defund and end the Flock contract; the chief reported the cameras already deactivated. News-sourced; no official document located.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Neenah police chief favors early cancellation of Flock Safety contract (Post-Crescent)",
+          "url": "https://www.postcrescent.com/story/news/local/2026/09/01/neenah-police-chief-favors-early-cancellation-of-flock-safety-contract/91544715007/",
+          "date": "2026-09-01",
+          "source_key": "https://postcrescent.com/story/news/local/2026/09/01/neenah-police-chief-favors-early-cancellation-of-flock-safety-contract/91544715007",
+          "verified": true
+        },
+        {
+          "title": "Neenah Common Council unanimously ends use of license plate reading Flock cameras (WNcy)",
+          "url": "https://wncy.com/2026/09/17/neenah-common-council-unanimously-ends-use-of-license-plate-reading-flock-cameras/",
+          "date": "2026-09-17",
+          "source_key": "https://wncy.com/2026/09/17/neenah-common-council-unanimously-ends-use-of-license-plate-reading-flock-cameras",
+          "verified": true
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-19",
+      "notes": "News-sourced (no official document located): Neenah Common Council voted unanimously on Sept 16, 2026 to defund and end the Flock contract; the chief reported cameras 'already deactivated' (no deactivation date verified; the unconfirmed Sept 4 date is not carried). Post-Crescent: 12 cameras at $30,000/year; 'Neenah's contract with Flock runs through September 2028' (partial date; contract_end null). Remaining obligation about $8,500 of the annual agreement.",
+      "validation": "pending"
+    },
+    {
+      "id": "wi-de-pere-pd",
+      "agency": "De Pere Police Department",
+      "agency_type": "municipal_police",
+      "city": "De Pere",
+      "state": "WI",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": "2026-11-15",
+      "renewal_date": null,
+      "decision_date": "2026-09-14",
+      "decision_summary": "Police Chief Jeremy Muraski announced September 14, 2026 that the department is ending Flock ALPR use; access ended immediately and cameras were bagged that week. The contract expires November 15, 2026 without renewal.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "De Pere to end use of ALPRs (GoPressTimes)",
+          "url": "https://www.gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891",
+          "date": "2026-09-20",
+          "source_key": "https://gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891",
+          "verified": true
+        },
+        {
+          "title": "De Pere Police Department ends Flock camera use over trust concerns (Green Bay Press Gazette)",
+          "url": "https://www.greenbaypressgazette.com/story/news/local/2026/09/14/de-pere-police-department-ends-flock-camera-use-over-trust-concerns/91763168007/",
+          "date": "2026-09-14",
+          "source_key": "https://greenbaypressgazette.com/story/news/local/2026/09/14/de-pere-police-department-ends-flock-camera-use-over-trust-concerns/91763168007",
+          "verified": true
+        },
+        {
+          "title": "De Pere police ends use of Flock cameras (995pkr)",
+          "url": "https://www.995pkr.com/2026/09/14/de-pere-police-ends-use-of-flock-cameras-will-place-bags-over-the-cameras-by-end-of-the-week/",
+          "date": "2026-09-14",
+          "source_key": "https://995pkr.com/2026/09/14/de-pere-police-ends-use-of-flock-cameras-will-place-bags-over-the-cameras-by-end-of-the-week",
+          "verified": false
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-19",
+      "notes": "News-sourced (chief's original statement not located on city channels; three outlets quote it): De Pere Police Chief Jeremy Muraski announced Sept 14, 2026 that the department is ending Flock ALPR use over data-integrity, transparency, and public-trust concerns; system access ended immediately and cameras were bagged that week. The contract expires Nov 15, 2026 without renewal; no camera count or dollars are stated anywhere.",
       "validation": "pending"
     }
   ]

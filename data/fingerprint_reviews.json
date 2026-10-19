@@ -610,5 +610,11 @@
     "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Reno Gazette Journal article intact; headline, dek and lede are public (Reno is ending its Flock contract and seeking a new camera vendor), the claim this record cites; the body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
     "reviewed_at": "2026-10-19",
     "reviewed_by": "Alexander"
+  },
+  "https://dailyemerald.com/189945/community-news/city-council-looks-to-develop-surveillance-technology-policy-by-end-of-2026": {
+    "decision": "accept",
+    "note": "Registrar live-read 2026-10-19 (full text): the article still supports the Eugene record (months of resident pushback over Flock cameras; December 2025 EPD termination announcement). Drift distance fluctuated between fetches (7 then 10), consistent with page-furniture rotation; the citation claim is intact.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
   }
 }
