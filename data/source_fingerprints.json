@@ -181,6 +181,20 @@
     "title": "Narragansett To Stop Using Flock Cameras | 94HJY",
     "url": "https://94hjy.iheart.com/content/2026-08-04-narragansett-to-stop-using-flock-cameras/"
   },
+  "https://995pkr.com/2026/09/14/de-pere-police-ends-use-of-flock-cameras-will-place-bags-over-the-cameras-by-end-of-the-week": {
+    "archive": "14f7b49f549fc1be3d619d9778b3c742a3fd4e7ac01432d1ace471b2f9861d0a.txt",
+    "blocked_reason": null,
+    "content_hash": "851ffbe64f2c07587f76f34dcc8906de78c677b417240fcd95d3a27d20a4c14b",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.995pkr.com/2026/09/14/de-pere-police-ends-use-of-flock-cameras-will-place-bags-over-the-cameras-by-end-of-the-week/",
+    "simhash": "a70d1a3462506690",
+    "snapshot_path": "snapshots/2026-10-19/543947434965731daf8ff7c72febb59ca84d730f185eeb9d3a5b7dd47ef3b200.json",
+    "snapshot_status": "uploaded",
+    "text_len": 633,
+    "title": "De Pere Police ends use of Flock cameras, will place bags over the cameras by end of the week | 99.5 PKR (WPKR-FM)",
+    "url": "https://www.995pkr.com/2026/09/14/de-pere-police-ends-use-of-flock-cameras-will-place-bags-over-the-cameras-by-end-of-the-week/"
+  },
   "https://9news.com/article/news/local/coloradan-stopped-by-police-data-errors-flock-alerts/73-593a3772-f43d-46b1-8744-af888b9bd7f2": {
     "archive": "7538107c2fd826c46195cde1faf989bf4fb66891958e13654b33e708108b1846.txt",
     "content_hash": "fa6a3c706355b257e13f5af414251bb7b61f24e38d99fac9ccea8e67bae61c27",
@@ -507,6 +521,20 @@
     "text_len": 3827,
     "title": "STATE NEWS SPOTLIGHT: Privacy Concerns Fuel Fight Against Flock in Arkansas – The Arka Tech",
     "url": "https://www.arkatechnews.com/state-news-spotlight-privacy-concerns-fuel-fight-against-flock-in-arkansas/"
+  },
+  "https://arlingtonva.us/About-Arlington/Newsroom/Articles/2026/County-Board-directs-Manager-to-Discontinue-use-of-Flock-Technology": {
+    "archive": "2a4686b2e0ef357ada0eb0d2028575f11fbfab223dd5e40b0411aa387f1780de.txt",
+    "blocked_reason": null,
+    "content_hash": "edead2c6e9d5ea353132681159eb2ffaa571edb8809653993a267912afb533d4",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.arlingtonva.us/About-Arlington/Newsroom/Articles/2026/County-Board-directs-Manager-to-Discontinue-use-of-Flock-Technology",
+    "simhash": "bddc04090b530035",
+    "snapshot_path": "snapshots/2026-10-19/e26d0fe643f21329f3fce17802569fa85b5ed7a8b304b3096e4c70bbeafa6c74.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1989,
+    "title": "County Board directs Manager to Discontinue use of Flock Technology – Official Website of Arlington County Virginia Government",
+    "url": "https://www.arlingtonva.us/About-Arlington/Newsroom/Articles/2026/County-Board-directs-Manager-to-Discontinue-use-of-Flock-Technology"
   },
   "https://atlasofsurveillance.org/download.csv?vendor=Flock+Safety": {
     "content_hash": "c3da55cbdb973ff2ab7d91ac0cb3ceae058156ee312db192cd65e7c35709c5a9",
@@ -1365,6 +1393,20 @@
     "text_len": 203,
     "title": null,
     "url": "https://cedarcity.openutah.org/meetings/2026-07-08-cedar-city-council-to-discuss-speed-bumps-rap-tax-funding-and-flock-safety-camer-749a1132-f09e-46ad-a92c-298e0dc63126"
+  },
+  "https://cedarcityut.gov/AgendaCenter/ViewFile/Agenda/_08122026-3160": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.cedarcityut.gov/AgendaCenter/ViewFile/Agenda/_08122026-3160",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.cedarcityut.gov/AgendaCenter/ViewFile/Agenda/_08122026-3160"
   },
   "https://cedarrapidsgazette-ia.newsmemory.com/?publink=0eeb16b1a_134f8f1": {
     "archive": "0c604e5e705d9ffb8e011c9affe33524862c45d36a44f91fa999b8a526716b96.txt",
@@ -2378,6 +2420,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://contracts.ocp.dc.gov/contracts/attachments/Q1cxMjMwMDXCpkJhc2UgUGVyaW9kwqZ7OEE2QzkwNzMtNjU4Ni00Njc2LUE5RTktRTUzNjMwNzk3MTM4fQ=="
+  },
+  "https://cookeville-tn.gov/AgendaCenter/ViewFile/Minutes/_09172026-808": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.cookeville-tn.gov/AgendaCenter/ViewFile/Minutes/_09172026-808",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.cookeville-tn.gov/AgendaCenter/ViewFile/Minutes/_09172026-808"
   },
   "https://coralspringsflnews.com/news/article317364116.html": {
     "archive": "5d86dfefc50de45d0289dd17678652ba2a01eb6ee6102ad0ceff756808ebbcdb.txt",
@@ -4616,6 +4672,20 @@
     "title": "Noble County drops Flock cameras amid ongoing debate across Indiana",
     "url": "https://gray-wpta-prod.gtv-cdn.com/2026/09/10/noble-county-sheriff-asks-flock-remove-cameras-says-he-still-backs-system/"
   },
+  "https://greenbaypressgazette.com/story/news/local/2026/09/14/de-pere-police-department-ends-flock-camera-use-over-trust-concerns/91763168007": {
+    "archive": "044c8fb365b806070856fdf926d6d729df0e2d5e68b66b7e97b3dc9f621c7bed.txt",
+    "blocked_reason": null,
+    "content_hash": "89dbf6e5746fa8361fe4fa8cd73a11142de8a6997a2978b92bc844591507b4fe",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.greenbaypressgazette.com/story/news/local/2026/09/14/de-pere-police-department-ends-flock-camera-use-over-trust-concerns/91763168007/",
+    "simhash": "e3930842b6f2a1ac",
+    "snapshot_path": "snapshots/2026-10-19/500b7b6892ba1bc63ac06241cc2517f87dbca34b40a4e368b8acfe6307420a4a.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4851,
+    "title": "De Pere Police Department ends Flock camera use over trust concerns",
+    "url": "https://www.greenbaypressgazette.com/story/news/local/2026/09/14/de-pere-police-department-ends-flock-camera-use-over-trust-concerns/91763168007/"
+  },
   "https://greenbaypressgazette.com/story/news/local/2026/09/14/green-bay-police-will-keep-flock-cameras-revise-camera-policies/91657879007": {
     "archive": "5f1280aa676290257da7e983f6992f30ea490aa81edf033a79310f635c9fb3a4.txt",
     "content_hash": "10eed106d2f44622ea3697fa01860798100ea7a346c4e8eb4ab445561b8e3fc2",
@@ -4654,6 +4724,20 @@
     "text_len": 4056,
     "title": "Flock Camera Helps Troopers Locate Teen and Stolen Car, But Some are Still Skeptical About Their Use Flipboard",
     "url": "https://guessingheadlights.com/flock-camera-helps-troopers-locate-teen-and-stolen-car-most-effective-tool-ive-used-in-my-career/"
+  },
+  "https://hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "http://files.hallcountyne.gov/Documents/Government/Sheriff/Flock%20Safety%20System/ALPR_Policy.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf"
   },
   "https://hallcountyne.gov/Documents/Government/Sheriff/Flock Safety System/ALPR_Policy.pdf?t=202412021324290": {
     "archive": null,
@@ -4734,6 +4818,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://hendersonvillenc.gov/sites/default/files/uploads/departments/police/flock-2024.pdf"
+  },
+  "https://henrico.gov/news/2026/10/henrico-police-to-eliminate-flock-cameras": {
+    "archive": "ebc3fb7e8ae4b115ec0d0fe2b21c09efd483cbe365529f57ca21ef1e836d5f25.txt",
+    "blocked_reason": null,
+    "content_hash": "e2f445d183b84ab13458651e5011962afd56b0304752fd85fed4d1a64b3c3568",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://henrico.gov/news/2026/10/henrico-police-to-eliminate-flock-cameras/",
+    "simhash": "849915d4cc4f2213",
+    "snapshot_path": "snapshots/2026-10-19/71bd3262454d0abe1ff0a4756a9e83e34dee87099f4ddd7a4389c1cb03ca95b3.json",
+    "snapshot_status": "uploaded",
+    "text_len": 1136,
+    "title": "Henrico County News : Henrico Police to eliminate Flock cameras",
+    "url": "https://henrico.gov/news/2026/10/henrico-police-to-eliminate-flock-cameras/"
   },
   "https://heraldnews.com/story/news/2026/07/29/tiverton-town-council-oks-purchase-of-more-flock-surveillance-cameras/91081209007": {
     "archive": "7ac99e4347e0ff46902128cfd21ac02fb70e15b4a5e6f90c4552d70e0e442db9.txt",
@@ -7345,6 +7443,20 @@
     "title": "Appleton asks Flock Safety to disable surveillance cameras by June 30",
     "url": "https://www.postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007/"
   },
+  "https://postcrescent.com/story/news/local/2026/09/01/neenah-police-chief-favors-early-cancellation-of-flock-safety-contract/91544715007": {
+    "archive": "0e001ba969de4525663ff5b95ba6ae35cbdf962b92ce62428b9d41f73455267d.txt",
+    "blocked_reason": null,
+    "content_hash": "b5290e37e381af21a9cb4cb69e1491e6058c060567084736e856bfeac03b6514",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.postcrescent.com/story/news/local/2026/09/01/neenah-police-chief-favors-early-cancellation-of-flock-safety-contract/91544715007/?gca-cat=p&gnt-cfr=1&gnt-djm=1",
+    "simhash": "9f3495cdd68c1681",
+    "snapshot_path": "snapshots/2026-10-19/cafdda0858a97448ee7f4f23b953754db7e711103fce32d8c40a971d347f8be4.json",
+    "snapshot_status": "uploaded",
+    "text_len": 393,
+    "title": "Neenah police chief favors early cancellation of Flock Safety contract",
+    "url": "https://www.postcrescent.com/story/news/local/2026/09/01/neenah-police-chief-favors-early-cancellation-of-flock-safety-contract/91544715007/"
+  },
   "https://postgoo.com/posts/6a9f6abcb5221344e09c9d3c?type=article": {
     "archive": "4dfaff8276f4504183bb75022ac6fb12f6af59adce001fe8fe56a5350c2980ca.txt",
     "content_hash": "5aa5327372dc42709e30aabd0a2d9de7a72503af7dd22129403d9b5722b392c7",
@@ -8720,6 +8832,20 @@
     "title": null,
     "url": "https://summed.news/article/idaho-jerome-county-sheriff-cancels-flock-camera-contract-redirects-funds-to-deputy-1f496b27"
   },
+  "https://swagit-attachments.granicus.com/uploads/video/agenda_file/402104/_09232026-1479.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://swagit-attachments.granicus.com/uploads/video/agenda_file/402104/_09232026-1479.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://swagit-attachments.granicus.com/uploads/video/agenda_file/402104/_09232026-1479.pdf"
+  },
   "https://swoknews.com/ap/national/missouri-governor-issues-executive-order-for-flock-other-cameras-see-new-rules/article_797d10d1-2515-550a-adc4-8f14a79c958e.html": {
     "archive": null,
     "content_hash": null,
@@ -9883,6 +10009,20 @@
     "title": "Vanderburgh County Sheriff’s Office to install three Flock Safety cameras on USI campus - University of Southern Indiana",
     "url": "https://www.usi.edu/news/releases/2024/01/vanderburgh-county-sheriff-s-office-to-install-three-flock-safety-cameras-on-usi-campus"
   },
+  "https://utah.gov/pmn/files/1499759.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "error",
+    "fetched_at": "2026-10-19",
+    "final_url": null,
+    "retry_after": "2026-10-26",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.utah.gov/pmn/files/1499759.pdf"
+  },
   "https://utahn.com/your-license-plate-logged-where-flock-safety-stands-in-utah": {
     "archive": "a34266a3c8816733bcf79c97c1bb3be0419291c784cae4ff21bef86544ba0a35.txt",
     "content_hash": "195af11f7190a84cf0faea4484a5921c015f9aac0b9ba09d4b10edc797160a1f",
@@ -10367,6 +10507,20 @@
     "text_len": 2718,
     "title": "Kaukauna ends Flock Safety camera contract | Y100 WNCY | Your Home For Country & Fun | Green Bay, WI",
     "url": "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract/"
+  },
+  "https://wncy.com/2026/09/17/neenah-common-council-unanimously-ends-use-of-license-plate-reading-flock-cameras": {
+    "archive": "f1679fa2def237e4d3c903579af98c838c94d824812daf6f708150e2f85405cb.txt",
+    "blocked_reason": null,
+    "content_hash": "c5cb822713f4139b19132c95a6cda3f6838cb546dfd493bf5f4b92edb591dc54",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://wncy.com/2026/09/17/neenah-common-council-unanimously-ends-use-of-license-plate-reading-flock-cameras/",
+    "simhash": "d19d1a493c0a1b46",
+    "snapshot_path": "snapshots/2026-10-19/7f7fc7e698e86a4be435a366d6bd9a81e5828b3429e152074ca0445495a68db5.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4028,
+    "title": "Neenah Common Council unanimously ends use of license plate reading Flock cameras | Y100 WNCY | Your Home For Country & Fun | Green Bay, WI",
+    "url": "https://wncy.com/2026/09/17/neenah-common-council-unanimously-ends-use-of-license-plate-reading-flock-cameras/"
   },
   "https://woodburn-or.gov/DocumentCenter/View/3299/Flock-Public-Q-and-A-FINAL-2-3-26": {
     "archive": null,
