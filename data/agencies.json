@@ -52,7 +52,7 @@
     "methodology": "docs/METHODOLOGY.md",
     "generated_by": "scripts/generate_meta.py",
     "last_updated": "2026-10-19",
-    "record_count": 350,
+    "record_count": 351,
     "jurisdiction_count": 47,
     "jurisdictions": [
       "AL",
@@ -105,16 +105,16 @@
     ],
     "status_counts": {
       "active": 173,
-      "cancelled": 139,
+      "cancelled": 140,
       "expired": 4,
       "pending": 24,
       "rejected": 10
     },
     "terminal_verified": 9,
-    "terminal_pending_validation": 144,
+    "terminal_pending_validation": 145,
     "records_with_renewal_date": 4,
-    "records_with_contract_end": 31,
-    "coverage_note": "350 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 9 terminal claims verified, 144 pending validation*. 4 records carry a renewal date and 31 a contract end date; exact renewal dates remain thin and are the top research priority."
+    "records_with_contract_end": 32,
+    "coverage_note": "351 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 9 terminal claims verified, 145 pending validation*. 4 records carry a renewal date and 32 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {
@@ -1348,7 +1348,7 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "Cities Ditch Flock Cameras for Axon ALPRs \u2014 Who Owns Axon?",
+          "title": "Cities Ditch Flock Cameras for Axon ALPRs — Who Owns Axon?",
           "url": "https://nexfinitynews.com/cities-drop-flock-cameras-replace-axon-alpr-who-owns-axon/",
           "date": "2026-07-27",
           "verified": false,
@@ -1628,7 +1628,7 @@
       "contract_end": null,
       "contract_start": null,
       "decision_date": "2026-08-05",
-      "decision_summary": "City decommissioned its four Flock cameras (decommissioning began March 2026, complete by week of July 27) because the city could not control the collected data; the city never held a contract with Flock \u2014 the cameras had been donated in 2023.",
+      "decision_summary": "City decommissioned its four Flock cameras (decommissioning began March 2026, complete by week of July 27) because the city could not control the collected data; the city never held a contract with Flock — the cameras had been donated in 2023.",
       "id": "de-wilmington-pd",
       "last_verified": "2026-09-25",
       "notes": "No contract ever existed (donation), so cost fields are null; status 'cancelled' here means the deployment was discontinued. Council member Yolanda McCoy announced discontinuance Aug 5, 2026. WHYY reported 20 Delaware police agencies use ALPRs; Wilmington used to be one.",
@@ -3173,7 +3173,7 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "Ordinance No. 1401 \u2014 An ordinance to prohibit the installation or use of electronic license plate scanning devices in the City of Ypsilanti (adopted 2022-09-13)",
+          "title": "Ordinance No. 1401 — An ordinance to prohibit the installation or use of electronic license plate scanning devices in the City of Ypsilanti (adopted 2022-09-13)",
           "url": "https://cityofypsilanti.com/Archive/ViewFile/Item/743",
           "date": "2022-09-13",
           "verified": true,
@@ -3286,7 +3286,7 @@
       "renewal_date": null,
       "sources": [
         {
-          "title": "City Council Agenda Item \u2014 Flock Safety Cameras, Troy Police Department (2023-03-08, with Insight/Flock quote)",
+          "title": "City Council Agenda Item — Flock Safety Cameras, Troy Police Department (2023-03-08, with Insight/Flock quote)",
           "url": "https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5697116",
           "date": "2023-03-08",
           "verified": true,
@@ -3448,7 +3448,7 @@
       "decision_date": null,
       "decision_summary": "The Kent County Sheriff's Office has used Flock cameras since 2022. In September 2026 it launched a Flock transparency portal reporting 62 cameras, 1,011,594 unique plates detected in 30 days, and 1,257 searches; Undersheriff Bryan Muir confirmed the figures to media.",
       "id": "mi-kent-county-so",
-      "notes": "Camera count grew from the original 25 announced in February 2022 (MLive, blocked for fetch) to 62 per the September 2026 agency transparency portal. Not merged with Grand Rapids PD (separate agency, separate portal).",
+      "notes": "Per the Sheriff's Office Flock Transparency page (kentcountymi.gov, read October 19, 2026): KCSO began using Flock in 2022 through a 20-camera pilot and now manages 62 cameras. contract_start 2022 is that pilot (program inception) year, not a printed contract term start; no cost or term dates are stated. (Supersedes an earlier note citing 25 cameras announced in February 2022 from an MLive article that is blocked for fetch.) Not merged with Grand Rapids PD (separate agency, separate portal).",
       "renewal_date": null,
       "sources": [
         {
@@ -3474,11 +3474,19 @@
           "verified": true,
           "source_key": "https://content.govdelivery.com/accounts/KENTCOMI/bulletins/42908b2",
           "publisher": "Kent County Sheriff's Office (GovDelivery)"
+        },
+        {
+          "title": "Flock Transparency (Kent County Sheriff's Office, kentcountymi.gov)",
+          "url": "https://www.kentcountymi.gov/2043/Flock-Transparency",
+          "date": null,
+          "verified": false,
+          "source_key": "https://kentcountymi.gov/2043/Flock-Transparency"
         }
       ],
       "state": "MI",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-19"
     },
     {
       "agency": "Ottawa County Sheriff's Office",
@@ -7686,10 +7694,10 @@
       "sources": [
         {
           "title": "'A Great Crime-Fighting Tool': Flock cameras boost sheriff's office",
-          "url": "https://kspress.com/news/2026/02/09/\u2018a-great-crime-fighting-tool\u2019-flock-cameras-boost-sheriff\u2019s-office",
+          "url": "https://kspress.com/news/2026/02/09/‘a-great-crime-fighting-tool’-flock-cameras-boost-sheriff’s-office",
           "date": "2026-02-09",
           "verified": false,
-          "source_key": "https://kspress.com/news/2026/02/09/\u2018a-great-crime-fighting-tool\u2019-flock-cameras-boost-sheriff\u2019s-office",
+          "source_key": "https://kspress.com/news/2026/02/09/‘a-great-crime-fighting-tool’-flock-cameras-boost-sheriff’s-office",
           "publisher": "Kansas Press Association (Newton Kansan)"
         },
         {
@@ -9143,8 +9151,8 @@
           "title": "City of Eugene Software Services Contract No. 2025-03244 with Flock Group Inc. (executed; copy published by Eyes Off Eugene)",
           "url": "https://eyesoffeugene.org/wp-content/uploads/2025/07/Flock-Contract-with-City-of-Eugene-2025.pdf",
           "date": "2025-03-24",
-          "source_key": "https://eyesoffeugene.org/wp-content/uploads/2025/07/Flock-Contract-with-City-of-Eugene-2025.pdf",
-          "verified": false
+          "verified": false,
+          "source_key": "https://eyesoffeugene.org/wp-content/uploads/2025/07/Flock-Contract-with-City-of-Eugene-2025.pdf"
         }
       ],
       "confidence": "high",
@@ -9585,7 +9593,7 @@
       "decision_date": null,
       "decision_summary": "An official 2024 City of Fort Worth council presentation lists approximately 250 Flock cameras deployed; a 2021 deployment report cited $2,000 per camera per year. No current exact contract dates or total cost established.",
       "id": "tx-fort-worth-pd",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "The $2,000/camera/year figure is from a 2021 report and was not combined with the current 250-camera count; annual_cost_usd left null. A newer contract record would raise confidence.",
       "renewal_date": null,
       "sources": [
@@ -9603,14 +9611,6 @@
           "verified": true,
           "source_key": "https://securitytoday.com/articles/2021/03/16/high-tech-cameras-agree-with-fort-worth.aspx?admgarea=ht.government",
           "content_hash": "574f726dc5af1785213dd1b2943ad02e552956bc57b0c6a66b39ffe3a78afd29"
-        },
-        {
-          "title": "Texas police surveillance: cell trackers, license plate readers | CUN News",
-          "url": "https://cun.news/texas-police-surveillance-cell-trackers-license-plate-readers/",
-          "date": null,
-          "verified": false,
-          "source_key": "https://cun.news/texas-police-surveillance-cell-trackers-license-plate-readers",
-          "content_hash": "f6c043c9f71ea598e2b0ffe6ee7520b0d5b619f51f0cac19a86e6eac98ba6fd8"
         }
       ],
       "state": "TX",
@@ -9921,8 +9921,8 @@
           "title": "Pflugerville City Council Final minutes, August 25, 2026 (Legistar matter 2026-0776)",
           "url": "https://legistar1.granicus.com/Pflugerville/meetings/2026/8/3764_M_City_Council_26-08-25_Minutes_-_Final.pdf",
           "date": "2026-08-25",
-          "source_key": "https://legistar1.granicus.com/Pflugerville/meetings/2026/8/3764_M_City_Council_26-08-25_Minutes_-_Final.pdf",
-          "verified": true
+          "verified": true,
+          "source_key": "https://legistar1.granicus.com/Pflugerville/meetings/2026/8/3764_M_City_Council_26-08-25_Minutes_-_Final.pdf"
         }
       ],
       "state": "TX",
@@ -12413,15 +12413,15 @@
           "title": "North Branch City Council meeting packet, August 26, 2026 (CivicClerk)",
           "url": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1379,plainText=false)",
           "date": "2026-08-26",
-          "source_key": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1379,plainText=false)",
-          "verified": false
+          "verified": false,
+          "source_key": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1379,plainText=false)"
         },
         {
           "title": "North Branch City Council meeting packet, September 9, 2026 (CivicClerk)",
           "url": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1397,plainText=false)",
           "date": "2026-09-09",
-          "source_key": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1397,plainText=false)",
-          "verified": false
+          "verified": false,
+          "source_key": "https://northbranchmn.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=1397,plainText=false)"
         }
       ],
       "state": "MN",
@@ -13362,11 +13362,11 @@
       "confidence": "medium",
       "contract_end": "2027-03-17",
       "contract_start": "2025-03-17",
-      "decision_date": null,
-      "decision_summary": "Reno Gazette Journal reporting (2026-08-28) confirms Reno still uses Flock, with 29 Flock ALPR cameras deployed across the city; no contract cost or term disclosed in the reporting.",
+      "decision_date": "2026-10-08",
+      "decision_summary": "City Manager Jackie Bryant sent Flock Safety written notice on October 8, 2026 that Reno will not renew its Flock agreement; the contract (entered March 17, 2025) runs through March 17, 2027, so the 29 Flock cameras remain in service until expiry. The notice letter is not public; it is quoted in Reno Gazette Journal reporting (October 9, 2026).",
       "id": "nv-reno-pd",
       "last_verified": "2026-10-19",
-      "notes": "rgj.com is an established news outlet (Gannett/USA Today Network) but is currently unlisted in config classification domains, so its source is flagged verified=false for central triage. Contract dates are as reported by RGJ (entered March 17, 2025; expires March 17, 2027); the non-renewal letter itself is not public and is quoted in RGJ's October 9, 2026 reporting. Nearly 200 mixed ALPR cameras (public plus private) reported across Reno and Sparks; the 29-camera figure is Flock-specific for Reno. City non-renewal notice (Oct 8, 2026): \"Customer does not wish for the Agreement to automatically renew following expiration of the current Term.\"",
+      "notes": "Contract dates are as reported by RGJ (entered March 17, 2025; expires March 17, 2027); the non-renewal letter itself is not public and is quoted in RGJ's October 9, 2026 reporting. Nearly 200 mixed ALPR cameras (public plus private) reported across Reno and Sparks; the 29-camera figure is Flock-specific for Reno. City non-renewal notice (Oct 8, 2026): \"Customer does not wish for the Agreement to automatically renew following expiration of the current Term.\" Status is cancelled under the tracker's definition (a signed contract ended early or not renewed); the agreement remains in force through 2027-03-17 and the cameras are not asserted to be off before then.",
       "renewal_date": null,
       "sources": [
         {
@@ -13387,8 +13387,9 @@
         }
       ],
       "state": "NV",
-      "status": "active",
-      "transparency_portal": null
+      "status": "cancelled",
+      "transparency_portal": null,
+      "validation": "pending"
     },
     {
       "agency": "Sparks Police Department",
@@ -14601,8 +14602,8 @@
           "title": "Cookeville City Council adopted minutes, September 17, 2026",
           "url": "https://www.cookeville-tn.gov/AgendaCenter/ViewFile/Minutes/_09172026-808",
           "date": "2026-09-17",
-          "source_key": "https://cookeville-tn.gov/AgendaCenter/ViewFile/Minutes/_09172026-808",
-          "verified": false
+          "verified": false,
+          "source_key": "https://cookeville-tn.gov/AgendaCenter/ViewFile/Minutes/_09172026-808"
         }
       ],
       "confidence": "medium",
@@ -14629,8 +14630,8 @@
           "title": "Liberty Hill City Council minutes, September 9, 2026 (published in the September 23, 2026 council packet)",
           "url": "https://swagit-attachments.granicus.com/uploads/video/agenda_file/402104/_09232026-1479.pdf",
           "date": "2026-09-09",
-          "source_key": "https://swagit-attachments.granicus.com/uploads/video/agenda_file/402104/_09232026-1479.pdf",
-          "verified": false
+          "verified": false,
+          "source_key": "https://swagit-attachments.granicus.com/uploads/video/agenda_file/402104/_09232026-1479.pdf"
         }
       ],
       "confidence": "medium",
@@ -14659,8 +14660,8 @@
           "title": "Arlington County Board news release: County Board directs Manager to Discontinue use of Flock Technology",
           "url": "https://www.arlingtonva.us/About-Arlington/Newsroom/Articles/2026/County-Board-directs-Manager-to-Discontinue-use-of-Flock-Technology",
           "date": "2026-09-15",
-          "source_key": "https://arlingtonva.us/About-Arlington/Newsroom/Articles/2026/County-Board-directs-Manager-to-Discontinue-use-of-Flock-Technology",
-          "verified": false
+          "verified": false,
+          "source_key": "https://arlingtonva.us/About-Arlington/Newsroom/Articles/2026/County-Board-directs-Manager-to-Discontinue-use-of-Flock-Technology"
         }
       ],
       "confidence": "medium",
@@ -14689,8 +14690,8 @@
           "title": "Henrico County news release: Henrico Police to eliminate Flock cameras",
           "url": "https://henrico.gov/news/2026/10/henrico-police-to-eliminate-flock-cameras/",
           "date": "2026-10-06",
-          "source_key": "https://henrico.gov/news/2026/10/henrico-police-to-eliminate-flock-cameras",
-          "verified": false
+          "verified": false,
+          "source_key": "https://henrico.gov/news/2026/10/henrico-police-to-eliminate-flock-cameras"
         }
       ],
       "confidence": "medium",
@@ -14718,15 +14719,15 @@
           "title": "Neenah police chief favors early cancellation of Flock Safety contract (Post-Crescent)",
           "url": "https://www.postcrescent.com/story/news/local/2026/09/01/neenah-police-chief-favors-early-cancellation-of-flock-safety-contract/91544715007/",
           "date": "2026-09-01",
-          "source_key": "https://postcrescent.com/story/news/local/2026/09/01/neenah-police-chief-favors-early-cancellation-of-flock-safety-contract/91544715007",
-          "verified": true
+          "verified": true,
+          "source_key": "https://postcrescent.com/story/news/local/2026/09/01/neenah-police-chief-favors-early-cancellation-of-flock-safety-contract/91544715007"
         },
         {
           "title": "Neenah Common Council unanimously ends use of license plate reading Flock cameras (WNcy)",
           "url": "https://wncy.com/2026/09/17/neenah-common-council-unanimously-ends-use-of-license-plate-reading-flock-cameras/",
           "date": "2026-09-17",
-          "source_key": "https://wncy.com/2026/09/17/neenah-common-council-unanimously-ends-use-of-license-plate-reading-flock-cameras",
-          "verified": true
+          "verified": true,
+          "source_key": "https://wncy.com/2026/09/17/neenah-common-council-unanimously-ends-use-of-license-plate-reading-flock-cameras"
         }
       ],
       "confidence": "medium",
@@ -14754,28 +14755,63 @@
           "title": "De Pere to end use of ALPRs (GoPressTimes)",
           "url": "https://www.gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891",
           "date": "2026-09-20",
-          "source_key": "https://gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891",
-          "verified": true
+          "verified": true,
+          "source_key": "https://gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891"
         },
         {
           "title": "De Pere Police Department ends Flock camera use over trust concerns (Green Bay Press Gazette)",
           "url": "https://www.greenbaypressgazette.com/story/news/local/2026/09/14/de-pere-police-department-ends-flock-camera-use-over-trust-concerns/91763168007/",
           "date": "2026-09-14",
-          "source_key": "https://greenbaypressgazette.com/story/news/local/2026/09/14/de-pere-police-department-ends-flock-camera-use-over-trust-concerns/91763168007",
-          "verified": true
+          "verified": true,
+          "source_key": "https://greenbaypressgazette.com/story/news/local/2026/09/14/de-pere-police-department-ends-flock-camera-use-over-trust-concerns/91763168007"
         },
         {
           "title": "De Pere police ends use of Flock cameras (995pkr)",
           "url": "https://www.995pkr.com/2026/09/14/de-pere-police-ends-use-of-flock-cameras-will-place-bags-over-the-cameras-by-end-of-the-week/",
           "date": "2026-09-14",
-          "source_key": "https://995pkr.com/2026/09/14/de-pere-police-ends-use-of-flock-cameras-will-place-bags-over-the-cameras-by-end-of-the-week",
-          "verified": false
+          "verified": false,
+          "source_key": "https://995pkr.com/2026/09/14/de-pere-police-ends-use-of-flock-cameras-will-place-bags-over-the-cameras-by-end-of-the-week"
         }
       ],
       "confidence": "medium",
       "last_verified": "2026-10-19",
       "notes": "News-sourced (chief's original statement not located on city channels; three outlets quote it): De Pere Police Chief Jeremy Muraski announced Sept 14, 2026 that the department is ending Flock ALPR use over data-integrity, transparency, and public-trust concerns; system access ended immediately and cameras were bagged that week. The contract expires Nov 15, 2026 without renewal; no camera count or dollars are stated anywhere.",
       "validation": "pending"
+    },
+    {
+      "id": "va-richmond-pd",
+      "agency": "Richmond Police Department",
+      "agency_type": "municipal_police",
+      "city": "Richmond",
+      "state": "VA",
+      "status": "active",
+      "cameras": 99,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": "2027-06-30",
+      "renewal_date": null,
+      "decision_date": null,
+      "decision_summary": "Richmond operates 99 fixed Flock ALPRs (Richmond Police Department Flock page, rva.gov). On October 10, 2026 Mayor Danny Avula announced the city will not renew its Flock agreement; RVA Mag reports the agreement runs through June 30, 2027. No executed non-renewal notice has been documented, so the record remains active.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Richmond is dropping Flock, but the technology could remain (RVA Mag)",
+          "url": "https://rvamag.com/news-headlines/richmond-news/richmond-is-dropping-flock-but-the-technology-could-remain.html",
+          "date": "2026-10-15",
+          "verified": false,
+          "source_key": "https://rvamag.com/news-headlines/richmond-news/richmond-is-dropping-flock-but-the-technology-could-remain.html"
+        },
+        {
+          "title": "Flock Safety (Richmond Police Department, rva.gov)",
+          "url": "https://www.rva.gov/police/flock-safety",
+          "date": null,
+          "verified": false,
+          "source_key": "https://rva.gov/police/flock-safety"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-19",
+      "notes": "Mayor Avula's October 10, 2026 non-renewal announcement is reported by RVA Mag (October 15, 2026); the June 30, 2027 agreement end is carried on that reporting, not a printed term. No executed non-renewal notice, council vote, or termination has been documented as of October 19, 2026; the record flips to cancelled when one is. Cameras: 99 fixed ALPRs per the department's own Flock page; that page also reports mobile trailer units (2, soon 4) that are not counted in the 99. Cost: RVA Mag reports 'approximately $285,000' with the referent (annual vs total) unclear, so annual_cost_usd is left null. The mayor's decision covers ALPR only; Flock gunshot detection is unaffected per RVA Mag."
     }
   ]
 }

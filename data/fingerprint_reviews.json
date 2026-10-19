@@ -5,6 +5,12 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384255/alamogordo-city-commission-meeting-tuesday-630-pm-focuses-flock-public": {
+    "decision": "accept",
+    "note": "Drift d=11 reviewed 2026-10-17: 2nd Life Media Alamogordo article confirmed live; cited claims intact (the $500,000 two-year Flock contract equipped the city with 60 surveillance devices; system reached full installation in June 2026). Drift is page updates/furniture.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
   "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384346/alamogordo-city-commission-moves-forward-2-year-flock-camera-contract": {
     "decision": "accept",
     "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
@@ -35,6 +41,18 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://azcentral.com/story/news/local/phoenix/2026/08/16/these-metro-phoenix-cities-use-flock-safety-cameras/91275430007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Arizona Republic Valley roundup intact; lists Scottsdale at 85 Flock cameras, supporting the record. Recorded because the automated fetcher errors on this host.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://azcentral.com/story/news/local/scottsdale/2026/08/28/scottsdale-chooses-oversight-over-removal-of-flock-cameras/91512992007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Arizona Republic article intact; supports the record (Scottsdale contracted 85 cameras in 2023; current contract expires June 2028). Recorded because the automated fetcher errors on this host.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
   "https://azfreenews.com/2025/09/sedona-council-terminates-license-plate-reader-program": {
     "decision": "accept",
     "note": "Drift d=35 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
@@ -46,6 +64,24 @@
     "note": "Drift d=10 (threshold 8) reviewed; same story live, page measures d=15/6/10 across hours. Dynamic page per Boss standing rule 2026-09-26: keep as long as relevant info remains, declared dynamic.",
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
+  },
+  "https://bonnevillecountynews.com/idaho-falls-police-defend-license-plate-cameras-amid-privacy-lawsuit-threats-and-contract-dispute": {
+    "decision": "accept",
+    "note": "Blocked on direct fetch 2026-10-04; verified by another means: article 'Idaho Falls Police Defend License Plate Cameras Amid Privacy Lawsuit Threats and Contract Dispute' confirmed via indexed content (AI-training clause dispute, chief defending cameras). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://brightgram.com/wichita-ks/10511520/flock-cameras-vandalized-in-derby-police-investigating": {
+    "decision": "accept",
+    "note": "Drift d=20 reviewed 2026-10-17: KWCH story mirrored on Brightgram confirmed live; cited claim intact (two Flock cameras cut down in Derby, police investigating). Drift is aggregator page churn (ads/related modules), not the article body.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime": {
+    "decision": "accept",
+    "note": "Drift reviewed 2026-10-04: re-fetched live page; still the 'Washington cities spend millions on Flock cameras' article (Redmond/Flock/millions confirmed in text). Content drift is site churn, cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
   },
   "https://carscoops.com/2026/02/flock-safety-alpr-contract-termination": {
     "decision": "accept",
@@ -71,6 +107,12 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers": {
+    "decision": "accept",
+    "note": "Drift d=10 reviewed; live-read 2026-10-19 by Constantine: City of Champaign press release intact (May 2, 2022: Flock Group, Inc. began installation of 46 ALPR units for Champaign PD, authorized December 2021 for a two-year trial). Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
   "https://citizenportal.ai/articles/7086489/Tennessee/Council-approves-expanded-park-cameras-Axon-body-camera-amendment-and-pedestriantraffic-safety-grants": {
     "decision": "accept",
     "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
@@ -83,11 +125,29 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://cjonline.com/story/news/local/2026/08/27/can-i-find-out-if-ive-been-recorded-by-a-flock-camera-how-to-check-for-license-plate-in-database/91466124007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Topeka Capital-Journal article 'Were you flocked?' is live and intact; it supports the Wichita record's context (Kansas lawsuit over Wichita's Flock use; Wellsville ending its association). Recorded because the automated fetcher errors on this host.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
   "https://cmg-cmg-tv-10070-prod.cdn.arcpublishing.com/news/local/fdot-orders-license-plate-reading-cameras-removed-state-rights-of-way-halts-new-permits/XBT4JV2XJBCMVCPATCMBUWEU3A": {
     "decision": "accept",
     "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
+  },
+  "https://cnhinews.com/oklahoma/news/article_0e3e40ec-0e00-5fbe-bb5e-4c7a110680ec.html": {
+    "decision": "accept",
+    "note": "Error on direct fetch 2026-10-04; verified by another means: cnhinews.com Tahlequah Flock articles confirmed via indexed content (chief recommending non-renewal; Sept 8 council agenda). Cited claims hold.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://cnhinews.com/oklahoma/news/article_ce058b56-5212-5443-baf7-583231f60ce6.html": {
+    "decision": "accept",
+    "note": "Error on direct fetch 2026-10-04; verified by another means: cnhinews.com Tahlequah Flock articles confirmed via indexed content (chief recommending non-renewal; Sept 8 council agenda). Cited claims hold.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
   },
   "https://coastalabc.com/news/local/these-2-towns-rejected-rhode-island-state-police-request-install-flock-cameras-automatic-license-plate-readers-portsmouth-warren-july-31-2026": {
     "decision": "accept",
@@ -137,10 +197,64 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://dailyemerald.com/189945/community-news/city-council-looks-to-develop-surveillance-technology-policy-by-end-of-2026": {
+    "decision": "accept",
+    "note": "Registrar live-read 2026-10-19 (full text): the article still supports the Eugene record (months of resident pushback over Flock cameras; December 2025 EPD termination announcement). Drift distance fluctuated between fetches (7 then 10), consistent with page-furniture rotation; the citation claim is intact.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://deflocknewportnews.org/": {
+    "decision": "accept",
+    "note": "Drift d=11 reviewed 2026-10-17: DeFlock Newport News research page confirmed live; its purchase-order table supports the record exactly (PO 20251698-04: 74 Falcon units, $222,000). Drift is the page's living counters and dated portal statistics, not the cited facts.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://delmarvanow.com/story/news/local/maryland/2026/08/07/salisbury-police-chief-naacp-sound-off-on-use-of-flock-safety-cameras/91202133007": {
+    "decision": "accept",
+    "note": "Drift d=25 reviewed; live-read 2026-10-19 by Constantine via live browser: Delmarva Now article intact. Headline and lede are public: Salisbury Police Chief Meienschein's open letter on the department's Flock Safety camera use and Wicomico County NAACP concerns (Aug 7, 2026); the article body is metered. Citation claim stands on the public portion. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://desmoinesregister.com/story/news/2026/04/17/flock-cameras-des-moines-privacy-police/88960083007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Des Moines Register article intact; lists West Des Moines at 57 cameras and its department defending the program, supporting the record. Recorded because the automated fetcher errors on this host.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://desmoinesregister.com/story/news/crime-and-courts/2026/09/25/altoona-car-burglaries-suspects-charged-flock-cameras/91925680007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Des Moines Register article intact; the public lede states two men were arrested in Altoona in connection with 27 burglaries after Flock cameras helped police locate their vehicle, the claim this record cites; the article body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://desmoinesregister.com/story/news/iowa/2026/08/12/flock-cameras-iowa-backlash-vandalism/91216179007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Des Moines Register article intact; the public lede reports Flock cameras vandalized across Iowa, including four damaged in Ankeny, as cited; the article body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://desmoinesregister.com/story/news/iowa/2026/08/18/flock-cameras-near-me-removed-indianola-iowa/91351913007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Des Moines Register article intact; lists West Des Moines among the Des Moines suburbs holding Flock contracts, supporting the record. Recorded because the automated fetcher errors on this host.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://epcsheriffsoffice.com/flock-safety-cameras-assist-in-arrest-of-attempted-murder-suspect": {
+    "decision": "accept",
+    "note": "Drift reviewed 2026-10-04: re-fetched live page; still the El Paso County Sheriff's Office release on Flock cameras assisting an arrest (title and Flock/arrest confirmed). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
   "https://factinface.com/news/272625-two_arrested_in_springfield_after_city_council_stalls_public_review_of_flock_surveillance_cameras": {
     "decision": "accept",
     "note": "Drift d=16 reviewed; live-read 2026-10-19 by Constantine: FactInFace article intact (Springfield, Missouri council meeting: a public commenter was arrested while opposing Flock ALPRs after the council stalled public review of the cameras). Drift is page churn; citation claim stands. Supersedes the 2026-09-26 review after the baseline was re-fetched 2026-10-08. Recorded under Boss bulk approval 2026-10-19.",
     "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://fortworthtexas.gov/files/assets/public/v/1/communications/documents/city-council-presentations/2024/06-04-2024/briefing-on-police-technology.pdf": {
+    "decision": "accept",
+    "note": "Registrar live-read the full briefing PDF 2026-10-19 (script fetcher gets an Akamai 403; the document reads fine via browser): June 4, 2024 Fort Worth Police Technology Update to City Council, presented by EAC Robert Alldredge; the citation claim is intact verbatim ('We currently have approximately 250 FLOCK cameras in City of Fort Worth'; data 'stored by Flock Safety and is retained for 30 days unless evidentiary'). Content unchanged from what the record and the Push D registry row cite.",
+    "reviewed_at": "2026-10-19T18:09:47Z",
     "reviewed_by": "Alexander"
   },
   "https://fox11online.com/news/local/officials-vote-not-to-move-forward-with-contract-for-flock-cameras-in-menominee-michigan": {
@@ -149,10 +263,40 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://geekwire.com/2025/washington-state-cities-turn-off-license-plate-reader-cameras-amid-ruling-on-data-access": {
+    "decision": "accept",
+    "note": "Blocked on direct fetch 2026-10-04; verified by another means: GeekWire article 'Washington state cities turn off license plate reader cameras amid ruling on data access' (Nov 18, 2025, Kurt Schlosser) confirmed via indexed content matching the cited claim (Redmond et al. turned cameras off after the Skagit County ruling).",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
   "https://gmg-ksat-prod.cdn.arcpublishing.com/news/local/2026/08/11/flock-cameras-what-automated-license-plate-readers-are-and-why-theyre-controversial-in-south-texas": {
     "decision": "accept",
     "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
     "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://greenbaypressgazette.com/story/news/local/2026/09/14/green-bay-police-will-keep-flock-cameras-revise-camera-policies/91657879007": {
+    "decision": "accept",
+    "note": "Gate fetch error reviewed; live-read 2026-10-19 by Constantine: full Press Gazette article intact (Sept. 14, 2026: Green Bay will keep Flock cameras, revise policies; article also records the December 2025 five-year extension, 42 cameras plus four DFR drones, $1.3M). Earlier fetch error was transient; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://highlandscurrent.org/2026/09/25/beacon-police-chief-explains-camera-system": {
+    "decision": "accept",
+    "note": "Drift d=9 reviewed; live-read 2026-10-19 by Constantine (full text): Highlands Current article intact. Chief Figlia's Sept 21, 2026 council presentation on Beacon's Flock system; the article states the agreement was approved in January 2023, initially a two-year contract for $21,400, extended and running through 2028, as cited. Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Holland Sentinel article intact; headline and lede are public: Sheriff DeBoer presented to the Ottawa County Board on Sept 18, 2026 on the sheriff's office's Flock Safety camera use, as cited; figures in the body are metered and the record's figures rest on the registered county contracts. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Indianapolis Star opinion column intact; headline and dek are public (IMPD officers' abuse of Flock cameras and the guardrails debate), the column's cited subject; the body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
     "reviewed_by": "Alexander"
   },
   "https://internewscast.com/news/us/evanston-and-oak-park-terminate-agreements-with-flock-safety-a-license-plate-reader-firm-under-investigation-in-illinois": {
@@ -160,6 +304,12 @@
     "note": "Drift d=13 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
+  },
+  "https://iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change": {
+    "decision": "accept",
+    "note": "Drift d=37 reviewed 2026-10-04: article 'There is little state regulation of Flock cameras in Iowa. That could soon change.' confirmed live via indexed content. Cited claim (Iowa ALPR regulatory context) holds; drift is site churn.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
   },
   "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon": {
     "decision": "accept",
@@ -171,6 +321,18 @@
     "decision": "accept",
     "note": "Drift d=14 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
     "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://kjluradio.com/newsroom/city-of-columbia-to-hold-public-hearing-on-use-of-flock-safety-cameras/article_7c80b87a-a13b-47b4-993e-bdecd8be05f4.html": {
+    "decision": "accept",
+    "note": "Drift d=24 reviewed; live-read 2026-10-19 by Constantine: KJLU article intact (Columbia council voted to hold a separate public hearing on its Flock contract, which the article states runs through March 2027). Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://kjluradio.com/newsroom/governor-mike-kehoe-becomes-first-in-nation-to-issue-executive-order-on-flock-cameras/article_1ae3e0ea-edfe-4aec-af09-218e7b049262.html": {
+    "decision": "accept",
+    "note": "Drift d=19 reviewed; live-read 2026-10-19 by Constantine (full text): KJLU article intact. It reports Governor Kehoe's executive order on ALPR safeguards and closes by stating the Jefferson City Council recently renewed its contract with Flock, the claim this record cites. Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
     "reviewed_by": "Alexander"
   },
   "https://krna.com/ixp/675/p/indianola-police-flock-cameras": {
@@ -217,14 +379,38 @@
   },
   "https://minneapolimedia.town.news/g/coon-rapids-mn/n/379970/minneapolimedia-news-columbia-heights-ends-flock-safety-contract-after": {
     "decision": "accept",
+    "note": "Drift d=23 reviewed 2026-10-17: article confirmed live and supports the record; it independently corroborates the registered council item (June 8, 2026 unanimous termination vote, $151,000 three-year total, $49,000 final year, 12 cameras). Body intact; drift is page furniture.",
     "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Drift d=23 reviewed 2026-10-17: article confirmed live and supports the record; it independently corroborates the registered council item (June 8, 2026 unanimous termination vote, $151,000 three-year total, $49,000 final year, 12 cameras). Body intact; drift is page furniture."
+    "reviewed_by": "Alexander"
+  },
+  "https://muckrock.com/foi/everett-251/flock-safety-search-audits-network-sharing-and-general-order-197346": {
+    "decision": "accept",
+    "note": "Blocked (HTTP 403) reviewed 2026-10-17: source verified by another means (live browser read past the bot check). The MuckRock request 'Flock Safety search audits, network sharing, and general order' to the Everett Police Department (tracking D006653-111025) is live and Completed; the department's January 22, 2026 final response released the organization audits and shared-networks list. Recorded because the host blocks the automated fetcher.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://muckrock.com/foi/talent-6725/talent-police-department-flock-camera-policy-invoice-map-and-contracts-208246": {
+    "decision": "accept",
+    "note": "Blocked on direct fetch 2026-10-04; verified by another means: MuckRock FOIA request 'Talent Police Department Flock Camera policy, invoice, map, and contracts' confirmed via indexed records content, including the city clerk's 2026-04-20 response (cameras off Dec 2025, contract termination in process). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
   },
   "https://myedmondsnews.com/2026/05/edmonds-cancels-contract-with-flock-license-plate-reader-system": {
     "decision": "accept",
     "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
     "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://nbcpalmsprings.com/ca-us-and-world/2026/06/20/deflock-idaho-files-tort-claims-against-cities-over-flock-safety-camera-ai-data-use": {
+    "decision": "accept",
+    "note": "Error on direct fetch 2026-10-04; verified by another means: 'Deflock Idaho Files Tort Claims Against Cities Over Flock Safety Camera AI Data Use' confirmed via indexed content (tort claims served on Caldwell/Wilder, planned for Idaho Falls/Twin Falls). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
+  "https://newmexicoconservativenews.com/2026/09/16/eyes-on-the-road-dr-stephanie-hernandez-on-why-alamogordo-turned-to-flock-cameras": {
+    "decision": "accept",
+    "note": "Drift d=9 reviewed 2026-10-17: article confirmed live via browser read (host 403s the automated fetcher); the Hernandez interview is intact and contextual to the record; it states none of the record's figures, so nothing is contradicted.",
+    "reviewed_at": "2026-10-17",
     "reviewed_by": "Alexander"
   },
   "https://newslocker.com/en-us/region/fort-wayne/flock-dropped-by-noble-county-authorities-after-pushback-for-now": {
@@ -239,6 +425,24 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://officer.com/command-hq/technology/traffic/lpr-license-plate-recognition/news/55403871/grand-rapids-police-launch-flock-transparency-portal-showing-license-plate-reader-usage": {
+    "decision": "accept",
+    "note": "Registrar live-read the full article 2026-10-19 (MLive via Officer.com, published 2026-09-09). Minor drift (d=4) is page chrome only; every figure the mi-kent-county-so record cites from it is intact verbatim: 'KCSO has 62 Flock cameras, which have detected 1,011,594 unique license plates over the last 30 days' and 'searched 1,257 times in the last 30 days', with Undersheriff Bryan Muir quoted. Citation claim intact.",
+    "reviewed_at": "2026-10-19T18:13:08Z",
+    "reviewed_by": "Alexander"
+  },
+  "https://oklahoman.com/story/news/crime/2026/10/05/flock-camera-search-tulsa-ok-deputy-ruled-unconstitutional-oklahoma-federal-judge/92107612007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). The Oklahoman article intact; its Oklahoma City section supports the record (council renewed the Flock contract August 18 in a 5-3 vote, $270,000, 90 active cameras, renewal through June 30, 2027). Recorded because the automated fetcher errors on this host.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://omakchronicle.com/news/state/flock-cameras-cost-washington-taxpayers-millions-as-backlash-grows/article_88a9ba00-78ac-51be-8642-eed75a7e9f72.html": {
+    "decision": "accept",
+    "note": "Blocked on direct fetch 2026-10-04; verified by another means: 'Washington cities spend millions on Flock cameras. Do they solve crime?' confirmed as a Center Square syndicated copy via indexed content (same article as the brushwoodmedianetwork citation). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
+  },
   "https://parkerchronicle.net/news/article_01bdde33-6b4a-4c71-89f9-1ca64415be1c.html": {
     "decision": "accept",
     "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
@@ -251,11 +455,35 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes": {
+    "decision": "accept",
+    "note": "Drift d=15 reviewed; article live-read 2026-10-18 by Constantine: Sean McDonnell/cleveland.com syndication intact, Lorain PD crediting Flock for murder-suspect capture in under 30 minutes (published 2026-07-27, updated 2026-09-23); drift is syndication-page churn, citation claim stands. Accepted per Boss authorization 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
+  "https://postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007": {
+    "decision": "accept",
+    "note": "Drift d=36 reviewed 2026-10-17: Post-Crescent article confirmed live; cited claims intact (city asked Flock to verify 20 cameras disabled by June 30, 2026, removal by July 31; mayor's June 22, 2026 memo; contract was to run through 2028). Drift is article updates/page furniture.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://radiofreehubcity.com/2026/09/23/boonsboro-town-council-found-to-violate-open-meetings-act-over-2025-flock-camera-purchase": {
+    "decision": "accept",
+    "note": "Drift d=20 reviewed; live-read 2026-10-19 by Constantine: Radio Free Hub City headline and lede intact (Boonsboro Town Council violated the Open Meetings Act by not including the Flock camera discussion on the agenda). The article body is now subscriber-gated, but the claim the citation carries is stated on the public page. Citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
   "https://reason.com/2025/07/29/an-arkansas-town-agrees-to-remove-a-license-plate-camera-aimed-at-a-couples-home": {
     "decision": "accept",
     "note": "Drift d=8 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
+  },
+  "https://reclaimthenet.org/norman-oklahoma-flock-license-plate-readers-county-sheriff": {
+    "decision": "accept",
+    "note": "Drift reviewed 2026-10-04: re-fetched live page; still reports Norman council rejecting Flock (Norman/Flock/council confirmed). Cited claim holds.",
+    "reviewed_at": "2026-10-04",
+    "reviewed_by": "Constantine (agent)"
   },
   "https://reportwire.org/pushback-against-flock-cameras-comes-to-denver-suburb-the-latest-colorado-city-to-enter-debate": {
     "decision": "accept",
@@ -281,6 +509,12 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Reno Gazette Journal article intact; headline, dek and lede are public (Reno is ending its Flock contract and seeking a new camera vendor), the claim this record cites; the body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
   "https://rockymountainvoice.com/2026/07/16/douglas-county-replaces-flock-cameras-with-22-8-million-axon-public-safety-system": {
     "decision": "accept",
     "note": "Drift d=12 (threshold 8) reviewed; same article live, minor content churn accepted per Boss explicit authorization 2026-09-26.",
@@ -301,8 +535,8 @@
   },
   "https://securitytoday.com/articles/2021/03/16/high-tech-cameras-agree-with-fort-worth.aspx?admgarea=ht.government": {
     "decision": "accept",
-    "note": "Drift d=11 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
-    "reviewed_at": "2026-09-26",
+    "note": "Registrar live-read the full article 2026-10-19 after the gate flagged drift (d=25; the page's surrounding site chrome and rotating sidebars changed, not the article body). The citation claim for tx-fort-worth-pd is intact verbatim: FWPD 'leases the cameras from Flock Safety for $2,000 per camera, per year' and 'data is purged after 30 days'. The record's note correctly declines to combine the 2021 $2,000 figure with the current camera count.",
+    "reviewed_at": "2026-10-19T18:13:08Z",
     "reviewed_by": "Alexander"
   },
   "https://star64.tv/newsletter-daily/monroe-city-council-votes-end-flock-safety-contract-amid-privacy-concerns-license-plate-readers-tech-technology-surveillance-backlash-private-cost-price-recording-safety-government-cincinnati": {
@@ -315,6 +549,12 @@
     "decision": "accept",
     "note": "Drift d=8 (threshold 8) against the 2026-10-12 baseline re-reviewed 2026-10-17: archived and current bodies identical, all 15 diff blocks are Substack page chrome, supported claims intact (32.3% LAPD false-positive rate, $7.5B valuation, Illinois audits, California litigation, Massachusetts/Texas disputes, $275M round). Accepted per Boss explicit authorization 2026-10-17.",
     "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state": {
+    "decision": "accept",
+    "note": "Source returns 403 to automated fetcher; Boss manually downloaded and verified article content (PDF archived at docs/source_archives/midwesterner-2026-09-flock-privacy.pdf). Verified by another means per drift gate policy.",
+    "reviewed_at": "2026-10-09",
     "reviewed_by": "Alexander"
   },
   "https://thesiuslawnews.com/news/council-votes-3-2-to-keep-flock-cameras/article_524d684c-ecaa-483b-ad4f-a6da9794a7f3.html": {
@@ -343,9 +583,9 @@
   },
   "https://tygartmedia.com/everett-flock-cameras-sb-6002": {
     "decision": "accept",
+    "note": "Drift d=9 reviewed 2026-10-17: Tygart Media Everett article confirmed live; body intact (February 2026 pause after the public-records ruling, SB 6002 signed March 30, 2026, reactivation April 7, 2026). Its 68-camera deployment figure differs in measure from the record's order-form count; no cited claim is contradicted.",
     "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Drift d=9 reviewed 2026-10-17: Tygart Media Everett article confirmed live; body intact (February 2026 pause after the public-records ruling, SB 6002 signed March 30, 2026, reactivation April 7, 2026). Its 68-camera deployment figure differs in measure from the record's order-form count; no cited claim is contradicted."
+    "reviewed_by": "Alexander"
   },
   "https://universitystar.com/34089/news/city-council-decided-against-flock-safety-contract-renewal": {
     "decision": "accept",
@@ -357,6 +597,18 @@
     "decision": "accept",
     "note": "Drift d=18 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
     "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://washingtonretail.org/olympia-and-redmond-halt-flock-safety-camera-use-amid-privacy-and-data-access-concerns-2": {
+    "decision": "accept",
+    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Washington Retail Association article is live and intact; it supports the Olympia record (pilot suspended December 3, 2025; all 15 cameras hooded; pilot began August 2024). Recorded because the automated fetcher errors on this host.",
+    "reviewed_at": "2026-10-17",
+    "reviewed_by": "Alexander"
+  },
+  "https://washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal": {
+    "decision": "accept",
+    "note": "Drift d=8 reviewed 2026-10-17: Washtenaw Voice article confirmed live; body intact, including the cited fact that Ypsilanti City leadership signed an ordinance banning installation or use of license plate scanning devices in city limits (the Ordinance 1401 instrument registered on the Contracts page). Drift is page furniture.",
+    "reviewed_at": "2026-10-17",
     "reviewed_by": "Alexander"
   },
   "https://wncy.com/2026/07/08/kaukauna-ends-flock-safety-camera-contract": {
@@ -375,246 +627,6 @@
     "decision": "accept",
     "note": "Drift d=10 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
     "reviewed_at": "2026-09-26",
-    "reviewed_by": "Alexander"
-  },
-  "https://epcsheriffsoffice.com/flock-safety-cameras-assist-in-arrest-of-attempted-murder-suspect": {
-    "decision": "accept",
-    "note": "Drift reviewed 2026-10-04: re-fetched live page; still the El Paso County Sheriff's Office release on Flock cameras assisting an arrest (title and Flock/arrest confirmed). Cited claim holds.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://reclaimthenet.org/norman-oklahoma-flock-license-plate-readers-county-sheriff": {
-    "decision": "accept",
-    "note": "Drift reviewed 2026-10-04: re-fetched live page; still reports Norman council rejecting Flock (Norman/Flock/council confirmed). Cited claim holds.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime": {
-    "decision": "accept",
-    "note": "Drift reviewed 2026-10-04: re-fetched live page; still the 'Washington cities spend millions on Flock cameras' article (Redmond/Flock/millions confirmed in text). Content drift is site churn, cited claim holds.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://geekwire.com/2025/washington-state-cities-turn-off-license-plate-reader-cameras-amid-ruling-on-data-access": {
-    "decision": "accept",
-    "note": "Blocked on direct fetch 2026-10-04; verified by another means: GeekWire article 'Washington state cities turn off license plate reader cameras amid ruling on data access' (Nov 18, 2025, Kurt Schlosser) confirmed via indexed content matching the cited claim (Redmond et al. turned cameras off after the Skagit County ruling).",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://bonnevillecountynews.com/idaho-falls-police-defend-license-plate-cameras-amid-privacy-lawsuit-threats-and-contract-dispute": {
-    "decision": "accept",
-    "note": "Blocked on direct fetch 2026-10-04; verified by another means: article 'Idaho Falls Police Defend License Plate Cameras Amid Privacy Lawsuit Threats and Contract Dispute' confirmed via indexed content (AI-training clause dispute, chief defending cameras). Cited claim holds.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://nbcpalmsprings.com/ca-us-and-world/2026/06/20/deflock-idaho-files-tort-claims-against-cities-over-flock-safety-camera-ai-data-use": {
-    "decision": "accept",
-    "note": "Error on direct fetch 2026-10-04; verified by another means: 'Deflock Idaho Files Tort Claims Against Cities Over Flock Safety Camera AI Data Use' confirmed via indexed content (tort claims served on Caldwell/Wilder, planned for Idaho Falls/Twin Falls). Cited claim holds.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://muckrock.com/foi/talent-6725/talent-police-department-flock-camera-policy-invoice-map-and-contracts-208246": {
-    "decision": "accept",
-    "note": "Blocked on direct fetch 2026-10-04; verified by another means: MuckRock FOIA request 'Talent Police Department Flock Camera policy, invoice, map, and contracts' confirmed via indexed records content, including the city clerk's 2026-04-20 response (cameras off Dec 2025, contract termination in process). Cited claim holds.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://omakchronicle.com/news/state/flock-cameras-cost-washington-taxpayers-millions-as-backlash-grows/article_88a9ba00-78ac-51be-8642-eed75a7e9f72.html": {
-    "decision": "accept",
-    "note": "Blocked on direct fetch 2026-10-04; verified by another means: 'Washington cities spend millions on Flock cameras. Do they solve crime?' confirmed as a Center Square syndicated copy via indexed content (same article as the brushwoodmedianetwork citation). Cited claim holds.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://cnhinews.com/oklahoma/news/article_0e3e40ec-0e00-5fbe-bb5e-4c7a110680ec.html": {
-    "decision": "accept",
-    "note": "Error on direct fetch 2026-10-04; verified by another means: cnhinews.com Tahlequah Flock articles confirmed via indexed content (chief recommending non-renewal; Sept 8 council agenda). Cited claims hold.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://cnhinews.com/oklahoma/news/article_ce058b56-5212-5443-baf7-583231f60ce6.html": {
-    "decision": "accept",
-    "note": "Error on direct fetch 2026-10-04; verified by another means: cnhinews.com Tahlequah Flock articles confirmed via indexed content (chief recommending non-renewal; Sept 8 council agenda). Cited claims hold.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change": {
-    "decision": "accept",
-    "note": "Drift d=37 reviewed 2026-10-04: article 'There is little state regulation of Flock cameras in Iowa. That could soon change.' confirmed live via indexed content. Cited claim (Iowa ALPR regulatory context) holds; drift is site churn.",
-    "reviewed_at": "2026-10-04",
-    "reviewed_by": "Constantine (agent)"
-  },
-  "https://themidwesterner.news/2026/09/bipartisan-effort-to-protect-privacy-as-flock-cameras-spread-across-state": {
-    "decision": "accept",
-    "note": "Source returns 403 to automated fetcher; Boss manually downloaded and verified article content (PDF archived at docs/source_archives/midwesterner-2026-09-flock-privacy.pdf). Verified by another means per drift gate policy.",
-    "reviewed_at": "2026-10-09",
-    "reviewed_by": "Alexander"
-  },
-  "https://brightgram.com/wichita-ks/10511520/flock-cameras-vandalized-in-derby-police-investigating": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Drift d=20 reviewed 2026-10-17: KWCH story mirrored on Brightgram confirmed live; cited claim intact (two Flock cameras cut down in Derby, police investigating). Drift is aggregator page churn (ads/related modules), not the article body."
-  },
-  "https://postcrescent.com/story/news/local/2026/06/25/appleton-asks-flock-safety-to-disable-surveillance-cameras-by-june-30/90665736007": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Drift d=36 reviewed 2026-10-17: Post-Crescent article confirmed live; cited claims intact (city asked Flock to verify 20 cameras disabled by June 30, 2026, removal by July 31; mayor's June 22, 2026 memo; contract was to run through 2028). Drift is article updates/page furniture."
-  },
-  "https://washtenawvoice.com/2022/09/16/ypsilanti-township-residents-cry-for-halt-on-surveillance-proposal": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Drift d=8 reviewed 2026-10-17: Washtenaw Voice article confirmed live; body intact, including the cited fact that Ypsilanti City leadership signed an ordinance banning installation or use of license plate scanning devices in city limits (the Ordinance 1401 instrument registered on the Contracts page). Drift is page furniture."
-  },
-  "https://cjonline.com/story/news/local/2026/08/27/can-i-find-out-if-ive-been-recorded-by-a-flock-camera-how-to-check-for-license-plate-in-database/91466124007": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Topeka Capital-Journal article 'Were you flocked?' is live and intact; it supports the Wichita record's context (Kansas lawsuit over Wichita's Flock use; Wellsville ending its association). Recorded because the automated fetcher errors on this host."
-  },
-  "https://washingtonretail.org/olympia-and-redmond-halt-flock-safety-camera-use-amid-privacy-and-data-access-concerns-2": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Washington Retail Association article is live and intact; it supports the Olympia record (pilot suspended December 3, 2025; all 15 cameras hooded; pilot began August 2024). Recorded because the automated fetcher errors on this host."
-  },
-  "https://2ndlifemediaalamogordo.town.news/g/alamogordo-nm/n/384255/alamogordo-city-commission-meeting-tuesday-630-pm-focuses-flock-public": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Drift d=11 reviewed 2026-10-17: 2nd Life Media Alamogordo article confirmed live; cited claims intact (the $500,000 two-year Flock contract equipped the city with 60 surveillance devices; system reached full installation in June 2026). Drift is page updates/furniture."
-  },
-  "https://newmexicoconservativenews.com/2026/09/16/eyes-on-the-road-dr-stephanie-hernandez-on-why-alamogordo-turned-to-flock-cameras": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Drift d=9 reviewed 2026-10-17: article confirmed live via browser read (host 403s the automated fetcher); the Hernandez interview is intact and contextual to the record; it states none of the record's figures, so nothing is contradicted."
-  },
-  "https://azcentral.com/story/news/local/scottsdale/2026/08/28/scottsdale-chooses-oversight-over-removal-of-flock-cameras/91512992007": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Arizona Republic article intact; supports the record (Scottsdale contracted 85 cameras in 2023; current contract expires June 2028). Recorded because the automated fetcher errors on this host."
-  },
-  "https://azcentral.com/story/news/local/phoenix/2026/08/16/these-metro-phoenix-cities-use-flock-safety-cameras/91275430007": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Arizona Republic Valley roundup intact; lists Scottsdale at 85 Flock cameras, supporting the record. Recorded because the automated fetcher errors on this host."
-  },
-  "https://desmoinesregister.com/story/news/2026/04/17/flock-cameras-des-moines-privacy-police/88960083007": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Des Moines Register article intact; lists West Des Moines at 57 cameras and its department defending the program, supporting the record. Recorded because the automated fetcher errors on this host."
-  },
-  "https://desmoinesregister.com/story/news/iowa/2026/08/18/flock-cameras-near-me-removed-indianola-iowa/91351913007": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). Des Moines Register article intact; lists West Des Moines among the Des Moines suburbs holding Flock contracts, supporting the record. Recorded because the automated fetcher errors on this host."
-  },
-  "https://oklahoman.com/story/news/crime/2026/10/05/flock-camera-search-tulsa-ok-deputy-ruled-unconstitutional-oklahoma-federal-judge/92107612007": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Fetcher error reviewed 2026-10-17: source verified by another means (live browser read). The Oklahoman article intact; its Oklahoma City section supports the record (council renewed the Flock contract August 18 in a 5-3 vote, $270,000, 90 active cameras, renewal through June 30, 2027). Recorded because the automated fetcher errors on this host."
-  },
-  "https://muckrock.com/foi/everett-251/flock-safety-search-audits-network-sharing-and-general-order-197346": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Blocked (HTTP 403) reviewed 2026-10-17: source verified by another means (live browser read past the bot check). The MuckRock request 'Flock Safety search audits, network sharing, and general order' to the Everett Police Department (tracking D006653-111025) is live and Completed; the department's January 22, 2026 final response released the organization audits and shared-networks list. Recorded because the host blocks the automated fetcher."
-  },
-  "https://deflocknewportnews.org/": {
-    "decision": "accept",
-    "reviewed_at": "2026-10-17",
-    "reviewed_by": "Alexander",
-    "note": "Drift d=11 reviewed 2026-10-17: DeFlock Newport News research page confirmed live; its purchase-order table supports the record exactly (PO 20251698-04: 74 Falcon units, $222,000). Drift is the page's living counters and dated portal statistics, not the cited facts."
-  },
-  "https://police1.com/police-products/traffic-enforcement/license-plate-readers/ohio-police-credit-alpr-system-for-capture-of-murder-suspect-in-less-than-30-minutes": {
-    "decision": "accept",
-    "note": "Drift d=15 reviewed; article live-read 2026-10-18 by Constantine: Sean McDonnell/cleveland.com syndication intact, Lorain PD crediting Flock for murder-suspect capture in under 30 minutes (published 2026-07-27, updated 2026-09-23); drift is syndication-page churn, citation claim stands. Accepted per Boss authorization 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers": {
-    "decision": "accept",
-    "note": "Drift d=10 reviewed; live-read 2026-10-19 by Constantine: City of Champaign press release intact (May 2, 2022: Flock Group, Inc. began installation of 46 ALPR units for Champaign PD, authorized December 2021 for a two-year trial). Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://greenbaypressgazette.com/story/news/local/2026/09/14/green-bay-police-will-keep-flock-cameras-revise-camera-policies/91657879007": {
-    "decision": "accept",
-    "note": "Gate fetch error reviewed; live-read 2026-10-19 by Constantine: full Press Gazette article intact (Sept. 14, 2026: Green Bay will keep Flock cameras, revise policies; article also records the December 2025 five-year extension, 42 cameras plus four DFR drones, $1.3M). Earlier fetch error was transient; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://kjluradio.com/newsroom/city-of-columbia-to-hold-public-hearing-on-use-of-flock-safety-cameras/article_7c80b87a-a13b-47b4-993e-bdecd8be05f4.html": {
-    "decision": "accept",
-    "note": "Drift d=24 reviewed; live-read 2026-10-19 by Constantine: KJLU article intact (Columbia council voted to hold a separate public hearing on its Flock contract, which the article states runs through March 2027). Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://radiofreehubcity.com/2026/09/23/boonsboro-town-council-found-to-violate-open-meetings-act-over-2025-flock-camera-purchase": {
-    "decision": "accept",
-    "note": "Drift d=20 reviewed; live-read 2026-10-19 by Constantine: Radio Free Hub City headline and lede intact (Boonsboro Town Council violated the Open Meetings Act by not including the Flock camera discussion on the agenda). The article body is now subscriber-gated, but the claim the citation carries is stated on the public page. Citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://highlandscurrent.org/2026/09/25/beacon-police-chief-explains-camera-system": {
-    "decision": "accept",
-    "note": "Drift d=9 reviewed; live-read 2026-10-19 by Constantine (full text): Highlands Current article intact. Chief Figlia's Sept 21, 2026 council presentation on Beacon's Flock system; the article states the agreement was approved in January 2023, initially a two-year contract for $21,400, extended and running through 2028, as cited. Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://kjluradio.com/newsroom/governor-mike-kehoe-becomes-first-in-nation-to-issue-executive-order-on-flock-cameras/article_1ae3e0ea-edfe-4aec-af09-218e7b049262.html": {
-    "decision": "accept",
-    "note": "Drift d=19 reviewed; live-read 2026-10-19 by Constantine (full text): KJLU article intact. It reports Governor Kehoe's executive order on ALPR safeguards and closes by stating the Jefferson City Council recently renewed its contract with Flock, the claim this record cites. Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://delmarvanow.com/story/news/local/maryland/2026/08/07/salisbury-police-chief-naacp-sound-off-on-use-of-flock-safety-cameras/91202133007": {
-    "decision": "accept",
-    "note": "Drift d=25 reviewed; live-read 2026-10-19 by Constantine via live browser: Delmarva Now article intact. Headline and lede are public: Salisbury Police Chief Meienschein's open letter on the department's Flock Safety camera use and Wicomico County NAACP concerns (Aug 7, 2026); the article body is metered. Citation claim stands on the public portion. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://desmoinesregister.com/story/news/crime-and-courts/2026/09/25/altoona-car-burglaries-suspects-charged-flock-cameras/91925680007": {
-    "decision": "accept",
-    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Des Moines Register article intact; the public lede states two men were arrested in Altoona in connection with 27 burglaries after Flock cameras helped police locate their vehicle, the claim this record cites; the article body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://desmoinesregister.com/story/news/iowa/2026/08/12/flock-cameras-iowa-backlash-vandalism/91216179007": {
-    "decision": "accept",
-    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Des Moines Register article intact; the public lede reports Flock cameras vandalized across Iowa, including four damaged in Ankeny, as cited; the article body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://hollandsentinel.com/story/government/local/ottawa-county/2026/09/24/deboer-details-flock-camera-usage-for-ottawa-county-board/91887470007": {
-    "decision": "accept",
-    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Holland Sentinel article intact; headline and lede are public: Sheriff DeBoer presented to the Ottawa County Board on Sept 18, 2026 on the sheriff's office's Flock Safety camera use, as cited; figures in the body are metered and the record's figures rest on the registered county contracts. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://indystar.com/story/opinion/columnists/jacob-stewart/2026/09/24/indy-flock-camera-abuse-guardrails/91919882007": {
-    "decision": "accept",
-    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Indianapolis Star opinion column intact; headline and dek are public (IMPD officers' abuse of Flock cameras and the guardrails debate), the column's cited subject; the body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://rgj.com/story/news/government/2026/10/09/reno-ends-contract-flock-surveillance-cameras/92177137007": {
-    "decision": "accept",
-    "note": "Fetcher error reviewed 2026-10-19: source verified by another means (live browser read by Constantine). Reno Gazette Journal article intact; headline, dek and lede are public (Reno is ending its Flock contract and seeking a new camera vendor), the claim this record cites; the body is metered. Recorded because the automated fetcher errors on this host. Recorded under Boss bulk approval 2026-10-19.",
-    "reviewed_at": "2026-10-19",
-    "reviewed_by": "Alexander"
-  },
-  "https://dailyemerald.com/189945/community-news/city-council-looks-to-develop-surveillance-technology-policy-by-end-of-2026": {
-    "decision": "accept",
-    "note": "Registrar live-read 2026-10-19 (full text): the article still supports the Eugene record (months of resident pushback over Flock cameras; December 2025 EPD termination announcement). Drift distance fluctuated between fetches (7 then 10), consistent with page-furniture rotation; the citation claim is intact.",
-    "reviewed_at": "2026-10-19",
     "reviewed_by": "Alexander"
   }
 }

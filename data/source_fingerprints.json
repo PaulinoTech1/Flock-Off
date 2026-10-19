@@ -5523,6 +5523,20 @@
     "title": "Meet the New Boss, Same as the Old Boss: Kenosha Doubles Down on Big Brother, Replacing Flock With Axon - Kenosha County Eye",
     "url": "https://kenoshacountyeye.com/2026/09/05/meet-the-new-boss-same-as-the-old-boss-kenosha-doubles-down-on-big-brother-replacing-flock-with-axon/"
   },
+  "https://kentcountymi.gov/2043/Flock-Transparency": {
+    "archive": "84c7efbc466e15ba3f86bbdd5ac331d44a61f0c2bf1b1581d43007cac60389a2.txt",
+    "blocked_reason": null,
+    "content_hash": "4fe5df88fd0a425405a6403e0a5f3f1c169399a7c52833187c7c5b3b76f2ca94",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.kentcountymi.gov/2043/Flock-Transparency",
+    "simhash": "b9edb6f9d520a9d0",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 3528,
+    "title": "Flock Transparency | Kent County, MI Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
+    "url": "https://www.kentcountymi.gov/2043/Flock-Transparency"
+  },
   "https://kentuckylantern.com/2026/09/03/warrants-for-flock-searches-kentucky-lawmakers-may-add-more-rules-for-public-cameras": {
     "archive": "a3bb545462e6b22e41ad8e3651b5ad43fa8afa316784208e4e6a63940e91a9b9.txt",
     "content_hash": "9aaf055b534124e76cd97a4a09f96941f2e5efef1c97e3ad911b0573bdf9f650",
@@ -8213,6 +8227,34 @@
     "text_len": 19514,
     "title": "Flock cameras divide Tennessee governments, residents over privacy as some end their contracts - Route Fifty",
     "url": "https://www.route-fifty.com/public-safety/2026/09/flock-cameras-divide-tennessee-governments-residents-over-privacy-some-end-their-contracts/415832/"
+  },
+  "https://rva.gov/police/flock-safety": {
+    "archive": "bbacd58545122477fa29243b21f3077276122c9ba2f203cdd97c51c6158533fa.txt",
+    "blocked_reason": null,
+    "content_hash": "b2f2d6bbfad6d8ea2e93f00b715cb77da013c484a62682bb68801bd8e2926fc8",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.rva.gov/police/flock-safety",
+    "simhash": "f96bd9f7a380d802",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 461,
+    "title": "Flock Safety | Richmond",
+    "url": "https://www.rva.gov/police/flock-safety"
+  },
+  "https://rvamag.com/news-headlines/richmond-news/richmond-is-dropping-flock-but-the-technology-could-remain.html": {
+    "archive": "f662187debc4b141feb67c8eb3b397c8e6539dcb59029b5159c5c0fe7df0b947.txt",
+    "blocked_reason": null,
+    "content_hash": "119bc9b045a4b985767f6fe14d38223fc3a0cd3b1803167ed2a5abd27ceb89ff",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://rvamag.com/news-headlines/richmond-news/richmond-is-dropping-flock-but-the-technology-could-remain.html",
+    "simhash": "daf612e1bae9afb3",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 2629,
+    "title": "Richmond is Dropping Flock, But the Technology Could Remain - RVA Mag",
+    "url": "https://rvamag.com/news-headlines/richmond-news/richmond-is-dropping-flock-but-the-technology-could-remain.html"
   },
   "https://sacurrent.com/news/san-antonio-news/bexar-county-sheriff-tries-to-quell-fears-about-departments-use-of-flock-surveillance": {
     "archive": "7c100f2cf0d675b6bdcd38e61a61c9b1ed467192b392f5fce763f9a5118eb581.txt",
