@@ -29,6 +29,12 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://abridged.org/news/woodland-flock-contract": {
+    "decision": "accept",
+    "note": "Push E gate drift d=8 (threshold 8). Registrar read in full 2026-10-19: the citation's claims intact verbatim: 'The contract, which the City Council renewed in February, allocates $300,000 for the maintenance of about 40 Flock cameras operating throughout Woodland', and the February extension 'persuaded the council to vote unanimously approve the contract extension'. Drift is site chrome and update-line changes (story updated Aug 12, 2026).",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
   "https://alpolitics.com/": {
     "decision": "accept",
     "note": "Drift d=24 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
@@ -305,6 +311,12 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://investigatewest.org/federal-aid-is-supercharging-local-wa-police-surveillance-tech": {
+    "decision": "accept",
+    "note": "Push E gate drift d=8 (threshold 8). Registrar read the Spokane sections in full 2026-10-19: the citation's claims intact verbatim: 'a network of 46 Automated License Plate Reader (ALPR) cameras placed at high-traffic intersections throughout the county', plus ARPA funding context and the hotlist-policy passages. Drift is page-level churn outside the Spokane passages.",
+    "reviewed_at": "2026-10-19",
+    "reviewed_by": "Alexander"
+  },
   "https://iowapublicradio.org/political-news/2026-09-23/there-is-little-state-regulation-of-flock-cameras-in-iowa-that-could-soon-change": {
     "decision": "accept",
     "note": "Drift d=37 reviewed 2026-10-04: article 'There is little state regulation of Flock cameras in Iowa. That could soon change.' confirmed live via indexed content. Cited claim (Iowa ALPR regulatory context) holds; drift is site churn.",
@@ -367,8 +379,8 @@
   },
   "https://medium.com/@IamRonBurgandy/spokane-countys-806k-deal-for-flock-license-plate-cameras-what-public-records-reveal-249a6c31fc5d": {
     "decision": "accept",
-    "note": "Source bot-walled and unverifiable at 2026-09-26 check; accepted per Boss blanket authorization 2026-09-26 without other-means verification.",
-    "reviewed_at": "2026-09-26",
+    "note": "Push E gate: script fetcher blocked (Medium http_403 to non-browser clients) against the 2026-10-09 baseline. Verified by live-browser read 2026-10-19 under Constantine's standing drift-review authorization: the post is live and its surviving claims intact: 'Total value: $806,200 over five years'; 'In late 2023, Spokane County quietly entered a five-year, $806,000 agreement with Flock Group Inc. to deploy 46 Falcon ALPR cameras'; 'Sole-source approval granted December 2023'. Supersedes the 2026-09-26 entry, which recorded acceptance without other-means verification. This review attests only that the page still says what the record attributes to it; Push E keeps the citation demoted and contradicted by the county documents.",
+    "reviewed_at": "2026-10-19",
     "reviewed_by": "Alexander"
   },
   "https://medium.com/@iwan.steinmann/week-3-cna-4cb0e2f95099": {
@@ -531,6 +543,12 @@
     "decision": "accept",
     "note": "Drift d=9 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",
     "reviewed_at": "2026-09-26",
+    "reviewed_by": "Alexander"
+  },
+  "https://seattlered.com/legislature/spokane-sheriff-shuts-down-flock-cameras-sb-6002/4117761": {
+    "decision": "accept",
+    "note": "Push E gate drift d=12 (threshold 8). Registrar read in full 2026-10-19: the citation's claims intact verbatim: 'Spokane County Sheriff John Nowels has shut down his department's Flock Safety camera network', the gross-misdemeanor risk under SB 6002, and 'His office is now working with vendors to find a path to redeployment'. Drift is site chrome and promo blocks.",
+    "reviewed_at": "2026-10-19",
     "reviewed_by": "Alexander"
   },
   "https://securitytoday.com/articles/2021/03/16/high-tech-cameras-agree-with-fort-worth.aspx?admgarea=ht.government": {

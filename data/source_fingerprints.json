@@ -2513,6 +2513,20 @@
     "title": "Flock Safety's contract with Evansville police expires in 2026",
     "url": "https://www.courierpress.com/story/news/local/2026/09/18/flock-safety-contract-evansville-police-cameras-2027-budget/91796223007/"
   },
+  "https://cp.spokanecounty.org/commissioners/commpub/DocSearch.aspx": {
+    "archive": "06c8cccfb4a3c3c219573a055fa3659dde7e4a60945b49db1f0788d5bc50be72.txt",
+    "blocked_reason": null,
+    "content_hash": "632e76bcc1e14a8d535e08471c4b0e7676b4da6db1dc1c444a6f4655554ba723",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://cp.spokanecounty.org/commissioners/commpub/DocSearch.aspx",
+    "simhash": "8a157207932dabc0",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 2182,
+    "title": "Search for Documents",
+    "url": "https://cp.spokanecounty.org/commissioners/commpub/DocSearch.aspx"
+  },
   "https://croftoncommunity.org/_files/ugd/c759a7_a277ea517b98421f9c2ad3185e831004.pdf": {
     "archive": null,
     "content_hash": null,
@@ -5483,6 +5497,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://kearney.granicus.com/MetaViewer.php?view_id=1&clip_id=526&meta_id=43147"
+  },
+  "https://kenner.la.us/AgendaCenter/ViewFile/Agenda/_12012022-168": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.kenner.la.us/AgendaCenter/ViewFile/Agenda/_12012022-168",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.kenner.la.us/AgendaCenter/ViewFile/Agenda/_12012022-168"
   },
   "https://kenner.la.us/DocumentCenter/View/1381/End-Of-Year-District-3-Newsletter---2023-PDF": {
     "archive": null,
@@ -8664,6 +8692,48 @@
     "title": "Update: Flock ALPR Cameras Removed • South Portland, ME Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
     "url": "https://www.southportland.gov/m/newsflash/Home/Detail/563"
   },
+  "https://spokanecowa.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=16887)": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://spokanecowa.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=16887)",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://spokanecowa.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=16887)"
+  },
+  "https://spokanecowa.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=6502)": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://spokanecowa.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=6502)",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://spokanecowa.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=6502)"
+  },
+  "https://spokanecowa.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=9190)": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://spokanecowa.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=9190)",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://spokanecowa.api.civicclerk.com/v1/Meetings/GetAttachmentFile(fileId=9190)"
+  },
   "https://squatchrocks.com/ixp/150/p/minnesota-cities-removing-flock-cameras": {
     "archive": "86f5982d5e3168262f0376bbf2a1cc49911667c72f80e5e4cfe9c5286e61a23e.txt",
     "content_hash": "d2ee26617b144afe01ed9348559282ab07141609332ee9e6f3b16b05d4e268b7",
@@ -10576,6 +10646,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://woodburn-or.gov/DocumentCenter/View/3299/Flock-Public-Q-and-A-FINAL-2-3-26"
+  },
+  "https://woodlandca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7410,plainText=false)": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://woodlandca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7410,plainText=false)",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://woodlandca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=7410,plainText=false)"
   },
   "https://wrn.com/wisconsin-pm-news-summary-91": {
     "archive": "2f72bb5e9ff9367fdac8322fffa0424b266866ef00b5555602abd81f62f8116f.txt",
