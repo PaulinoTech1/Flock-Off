@@ -956,6 +956,20 @@
     "title": null,
     "url": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-05-07%20Annotated%20Agenda%20-%20Council.pdf"
   },
+  "https://blainecountyid.gov/CivicAlerts.aspx?AID=733": {
+    "archive": "7fda674e76e02c4832becce068f70b44ca354141187a8eb8f41a05afd1da9308.txt",
+    "blocked_reason": null,
+    "content_hash": "c1de7f3f77dedfdf100e237a486acd4de839ca460279a2b51122526e2c994744",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.blainecountyid.gov/m/newsflash/home/detail/733",
+    "simhash": "7545681d99022393",
+    "snapshot_path": "snapshots/2026-10-19/bdf678843b0506319111e9843e6fc1f0ef953d831a510099f4d827fe6ef68a8c.json",
+    "snapshot_status": "uploaded",
+    "text_len": 4100,
+    "title": "Press Release: BCSO to Remove Flock ALPR inside Carey City Limits • Blaine County, ID Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
+    "url": "https://www.blainecountyid.gov/CivicAlerts.aspx?AID=733"
+  },
   "https://bleedingheartland.com/2025/07/17/surveillance-ai-alpr-flock-transparency": {
     "archive": "9db99d7fb070c854073a2a4e044237881c73cedce4005b547d4dd7ed1920b221.txt",
     "content_hash": "e89ed1b75e681a00a28778223484d0bbe18070aacbe0efd2fc09f420a2d8aea6",
@@ -1764,6 +1778,20 @@
     "title": null,
     "url": "https://cityofkearney.org/Archive/ViewFile/Item/8715"
   },
+  "https://cityofracine.legistar1.com/cityofracine/meetings/2026/9/11183_M_Common_Council_26-09-15_Meeting_Minutes.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://cityofracine.legistar1.com/cityofracine/meetings/2026/9/11183_M_Common_Council_26-09-15_Meeting_Minutes.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://cityofracine.legistar1.com/cityofracine/meetings/2026/9/11183_M_Common_Council_26-09-15_Meeting_Minutes.pdf"
+  },
   "https://cityofwoodland.gov/1704/Automated-License-Plate-Readers-ALPR": {
     "archive": "55c627894ed328f9650382a025ff5fe6c28dfa6a0223481d9293569407f9323a.txt",
     "content_hash": "bb3145abefd80df237c0e3c550ef37ec455952eb2e2328cad12fdd460f8e0b36",
@@ -1935,6 +1963,20 @@
     "title": "Stanwood reactivates Flock cameras as Spokane County joins Pierce County in shutting them down – KIRO 7 News Seattle",
     "url": "http://cmg-cmg-tv-10090-prod.cdn.arcpublishing.com/news/local/stanwood-reactivates-flock-cameras-spokane-county-joins-pierce-county-shutting-them-down/A7O7L5NXUNGYBJILWMIBGXOGSY/"
   },
+  "https://cms2.revize.com/revize/monongoliacountywv/document_center/Agenda/REGULAR MEETINGS/2025/AGENDA November 12, 2025.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://cms2.revize.com/revize/monongoliacountywv/document_center/Agenda/REGULAR%20MEETINGS/2025/AGENDA%20November%2012,%202025.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://cms2.revize.com/revize/monongoliacountywv/document_center/Agenda/REGULAR MEETINGS/2025/AGENDA November 12, 2025.pdf"
+  },
   "https://cms3.revize.com/revize/niagarafallsny/Documents/Government/City Council/2025/0312/1 - Corrected DRAFT Support Packet for Regular Council Meeting on 3.12.25. (18 pgs).pdf": {
     "archive": null,
     "blocked_reason": null,
@@ -1948,6 +1990,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://cms3.revize.com/revize/niagarafallsny/Documents/Government/City Council/2025/0312/1 - Corrected DRAFT Support Packet for Regular Council Meeting on 3.12.25. (18 pgs).pdf"
+  },
+  "https://cms6.revize.com/revize/huntley/document_center/Government/Board%20of%20Trustees/Agendas/Village%20Board/2023/04.13.23%20VB%20Minutes.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://cms6.revize.com/revize/huntley/document_center/Government/Board%20of%20Trustees/Agendas/Village%20Board/2023/04.13.23%20VB%20Minutes.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://cms6.revize.com/revize/huntley/document_center/Government/Board%20of%20Trustees/Agendas/Village%20Board/2023/04.13.23%20VB%20Minutes.pdf"
   },
   "https://cms6.revize.com/revize/scottsbluffne/POLICE%20DEPT/30.14%20Automated%20License%20Plate%20Readers%20ALPR-ks.pdf?t=202406271557520&t=202406271557520": {
     "archive": null,
@@ -2790,6 +2846,20 @@
     "title": null,
     "url": "https://www.documentcloud.org/documents/28546791"
   },
+  "https://documents.kentwa.gov/WebLink/DocView.aspx?dbid=0&id=233945&repo=CityofKent": {
+    "archive": "70a6cc714bb3fb42878c2676bd2492e5eb7c21a22698761e7cb8bd6f584aecbd.txt",
+    "blocked_reason": null,
+    "content_hash": "726d0378ec5460b3a0a9a460f0ebf04dda0be5f71c6c425c0eafa5a1f46b844b",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://documents.kentwa.gov/WebLink/DocView.aspx?id=233945&dbid=0&repo=CityofKent",
+    "simhash": "0650dde3d2907bbb",
+    "snapshot_path": "snapshots/2026-10-19/2f7125c2c372b8bbca63ff7a1e120eaf686c46abf9ea1cb096fcb927f02c08b2.json",
+    "snapshot_status": "uploaded",
+    "text_len": 149090,
+    "title": null,
+    "url": "https://documents.kentwa.gov/WebLink/DocView.aspx?id=233945&dbid=0&repo=CityofKent"
+  },
   "https://draperutah.gov/media/ya4nigvm/police-letterhead-flock-camera-chief-letter.pdf": {
     "archive": null,
     "content_hash": null,
@@ -2802,6 +2872,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://www.draperutah.gov/media/ya4nigvm/police-letterhead-flock-camera-chief-letter.pdf"
+  },
+  "https://drive.google.com/file/d/15DPNIPNc02k2suwrRBnQUfybw87M29SX/view": {
+    "archive": "d7579cb6cf5cfd0bedc5aa40d86202031b8d6ff5f97f993dc3db7a630004fd27.txt",
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://drive.google.com/file/d/15DPNIPNc02k2suwrRBnQUfybw87M29SX/view",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 8,
+    "title": "Contract_Flock_ClivePD.pdf - Google Drive",
+    "url": "https://drive.google.com/file/d/15DPNIPNc02k2suwrRBnQUfybw87M29SX/view"
   },
   "https://dropsitenews.com/p/nyclu-lawsuit-surveillance-camera-location-public-record-flock": {
     "archive": "64e8dcbc5e4ca9b34b7d352936ec3605afe1336eb53b0cfa15562ce5ad258a25.txt",
@@ -2841,6 +2925,20 @@
     "text_len": 2636,
     "title": "East Bridgewater Police Department to Terminate Contract with Flock Safety – East Bridgewater Police Department",
     "url": "https://ebpd.org/east-bridgewater-police-department-to-terminate-contract-with-flock-safety/"
+  },
+  "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeeting?doctype=2&id=2578": {
+    "archive": "1388263ee6a2b9604ff86636ae6daefb19e1f3c4dac3818debf2edbaca606397.txt",
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "thin",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeeting?id=2578&doctype=2",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 143,
+    "title": "View Meeting - OnBase Agenda Online",
+    "url": "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeeting?id=2578&doctype=2"
   },
   "https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?appcode=SNSFEE&guid=5667c99a-30a1-46fc-b1fd-8dd6285b4a8a&pbid=6553bde4-6f9f-4e22-9ccc-4f84dc38dcd6&share=true": {
     "archive": "b397865065505373b804c0d3bb11a932ab71dba245a80d9a42a63e271b5b02f4.txt",
@@ -3175,6 +3273,20 @@
     "text_len": 4397,
     "title": "Idaho Falls, Idaho: Partial win | Flockinghell",
     "url": "https://flockinghell.com/reports/idaho-falls-bans-flock-ai-training"
+  },
+  "https://flockoutsgf.com/wp-content/uploads/2026/02/EXECUTED_Contract_2025-0325_-_Insight_and_Flock-1.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://flockoutsgf.com/wp-content/uploads/2026/02/EXECUTED_Contract_2025-0325_-_Insight_and_Flock-1.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://flockoutsgf.com/wp-content/uploads/2026/02/EXECUTED_Contract_2025-0325_-_Insight_and_Flock-1.pdf"
   },
   "https://flocksafety.com/blog/flock-safety-identifies-suspects-behind-190-000-crime-ring": {
     "archive": "0c11d63d9bb50c16cf9d0acd42141f68db6054535c0ca5b6a33b93e7403015ac.txt",
@@ -3708,6 +3820,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://go.boarddocs.com/md/tofhmd/Board.nsf/files/DEWLR757C3C8/$file/Town Council Staff Report-GOCCP-Flock.pdf"
+  },
+  "https://gocolumbiamo.legistar1.com/gocolumbiamo/attachments/e305c0d1-8142-439a-b187-36cdecaebe54.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://gocolumbiamo.legistar1.com/gocolumbiamo/attachments/e305c0d1-8142-439a-b187-36cdecaebe54.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://gocolumbiamo.legistar1.com/gocolumbiamo/attachments/e305c0d1-8142-439a-b187-36cdecaebe54.pdf"
   },
   "https://gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891": {
     "archive": "fc7e6ed388ac45918258e1c3c84469f892765f971c94f2a8cee6cd668e6a16ed.txt",
@@ -4426,6 +4552,20 @@
     "title": "Former Puerto Rico Public Security Chief Has Exclusive Flock Distribution Contract, Court Records Say lock-1 lock-1",
     "url": "https://heavyweather.media/former-puerto-rico-public-safety-chief-has-exclusive-contract-with-flock-court-records-say/"
   },
+  "https://hendersonvillenc.gov/sites/default/files/uploads/departments/police/flock-2024.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.hendersonvillenc.gov/sites/default/files/uploads/departments/police/flock-2024.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://hendersonvillenc.gov/sites/default/files/uploads/departments/police/flock-2024.pdf"
+  },
   "https://heraldnews.com/story/news/2026/07/29/tiverton-town-council-oks-purchase-of-more-flock-surveillance-cameras/91081209007": {
     "archive": "7ac99e4347e0ff46902128cfd21ac02fb70e15b4a5e6f90c4552d70e0e442db9.txt",
     "content_hash": "e730c1e1f3ec639fdbb63903aa186217f3ec443262814d3cc4cae3ff6ab775e8",
@@ -4516,6 +4656,20 @@
     "text_len": 3479,
     "title": "Manitowoc drops Flock Safety camera contract",
     "url": "https://www.htrnews.com/story/news/local/2026/09/25/manitowoc-drops-flock-safety-camera-contract/91941211007/"
+  },
+  "https://idahofallsidaho.gov/AgendaCenter/ViewFile/Agenda/_09102026-2182": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.idahofallsidaho.gov/AgendaCenter/ViewFile/Agenda/_09102026-2182",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.idahofallsidaho.gov/AgendaCenter/ViewFile/Agenda/_09102026-2182"
   },
   "https://idahopolitics.org/flock-license-plate-readers-spread-across-idaho-cities-sparking-legal-challenges-and-privacy-debate": {
     "content_hash": "0f30191b9781a4379443e4c25671e429f4254df150c04aee06480c112cfd4e26",
@@ -5490,6 +5644,34 @@
     "title": "Ensuring privacy in ALRP use",
     "url": "https://www.lcsun-news.com/story/opinion/2026/03/29/ensuring-privacy-in-alrp-use/89303419007/"
   },
+  "https://legistar.granicus.com/huntsvilleal/attachments/ffde9529-c0f0-4214-91ff-59d5f3c153ce.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://legistar.granicus.com/huntsvilleal/attachments/ffde9529-c0f0-4214-91ff-59d5f3c153ce.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://legistar.granicus.com/huntsvilleal/attachments/ffde9529-c0f0-4214-91ff-59d5f3c153ce.pdf"
+  },
+  "https://legistar.granicus.com/sanjose/attachments/1e311deb-3542-4cd1-8212-d3452782c28f.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://legistar.granicus.com/sanjose/attachments/1e311deb-3542-4cd1-8212-d3452782c28f.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://legistar.granicus.com/sanjose/attachments/1e311deb-3542-4cd1-8212-d3452782c28f.pdf"
+  },
   "https://legistar1.granicus.com/cityofappleton/attachments/48bf57af-4efe-459e-82ce-2c6caba53f49.pdf": {
     "archive": null,
     "content_hash": null,
@@ -6014,6 +6196,20 @@
     "title": null,
     "url": "https://www.millingtontn.gov/AgendaCenter/ViewFile/Item/4271?fileID=5051"
   },
+  "https://milwaukee.legistar1.com/milwaukee/attachments/21d148ca-3d92-4993-94f1-2ff2da1cca58.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://milwaukee.legistar1.com/milwaukee/attachments/21d148ca-3d92-4993-94f1-2ff2da1cca58.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://milwaukee.legistar1.com/milwaukee/attachments/21d148ca-3d92-4993-94f1-2ff2da1cca58.pdf"
+  },
   "https://minneapolimedia.town.news/g/coon-rapids-mn/n/379970/minneapolimedia-news-columbia-heights-ends-flock-safety-contract-after": {
     "archive": "c942c013256a0282f2b5135e1094a09c446abdb793cd7d55f6e70f13b0f9d1a3.txt",
     "content_hash": "fbab52b401931dd830661cdfb4c660c30441921dee220c1858a92609355948a6",
@@ -6098,6 +6294,20 @@
     "text_len": 6526,
     "title": "Talent Police Department Flock Camera policy, invoice, map, and contracts • MuckRock MuckRock Logotype MuckRock Logo Sections Facebook Icon Search Icon Create Request Create Request Download View Embed Download View Embed Download Download Download View Embed Download Download View Embed Download Email MuckRock Logotype Facebook Icon",
     "url": "https://www.muckrock.com/foi/talent-6725/talent-police-department-flock-camera-policy-invoice-map-and-contracts-208246/"
+  },
+  "https://murfreesborotn.gov/AgendaCenter/ViewFile/Agenda/2322?html=true": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.murfreesborotn.gov/AgendaCenter/ViewFile/Agenda/2322?html=true",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.murfreesborotn.gov/AgendaCenter/ViewFile/Agenda/2322?html=true"
   },
   "https://myedmondsnews.com/2026/05/edmonds-cancels-contract-with-flock-license-plate-reader-system": {
     "archive": "e191a49779ca7df3b30e83f90b38a19c0902b185028f7d5ac96f351bcff1d47e.txt",
@@ -7119,6 +7329,20 @@
     "text_len": 0,
     "title": null,
     "url": "https://published.pdf.pagesuite.com/fea9d757-caf1-44de-a806-73630a1ba0bf/d6868dc7-925a-49e9-863d-9f8135d68d78/6aff557d-37ed-424f-9ef0-a22eac0dd9ad/677371f9-cb5a-4ed8-90b4-3d06c1b91e5a/a399e7df-22cf-4e86-90d1-3e026e8385b5/lowres.pdf"
+  },
+  "https://purchasing.uky.edu/sites/default/files/2026-09/university-of-kentucky-price-contracts-by-vendor.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://purchasing.uky.edu/sites/default/files/2026-09/university-of-kentucky-price-contracts-by-vendor.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://purchasing.uky.edu/sites/default/files/2026-09/university-of-kentucky-price-contracts-by-vendor.pdf"
   },
   "https://purdueexponent.org/city_state/general_news/west-lafayette-flock-info-session-september/article_51bd2068-01d7-4f6c-975b-bbd1fc6a0b7b.html": {
     "archive": "7b225bfea377d3d6fc7ca3cd0acd9983403bb50580370cfdc06773c5cd39d1d7.txt",
@@ -8395,6 +8619,20 @@
     "title": "Automated License Plate Reader (ALPR) | Twin Falls, ID - Official Website Arrow Left Arrow Right Slideshow Left Arrow Slideshow Right Arrow",
     "url": "https://tfid.org/899/Automated-License-Plate-Reader-ALPR"
   },
+  "https://tfid.org/DocumentCenter/View/8221/Flock-2025-Agreement": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://tfid.org/DocumentCenter/View/8221/Flock-2025-Agreement",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://tfid.org/DocumentCenter/View/8221/Flock-2025-Agreement"
+  },
   "https://tfid.org/DocumentCenter/View/8284/TFPD-Automated-License-Plate-Reader-Policy-8192026?bidId=": {
     "archive": null,
     "content_hash": null,
@@ -8838,6 +9076,20 @@
     "title": null,
     "url": "https://www.thorntonpd.org/s/PowerPoint-ALPR.pdf"
   },
+  "https://thorntonpd.org/sites/41/files/2026-09/Cameras%2Band%2BTech_Follow%2BUp%2BInfo.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.thorntonpd.org/sites/41/files/2026-09/Cameras%2Band%2BTech_Follow%2BUp%2BInfo.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.thorntonpd.org/sites/41/files/2026-09/Cameras%2Band%2BTech_Follow%2BUp%2BInfo.pdf"
+  },
   "https://threeriverspublishing.com/stories/gov-kehoe-orders-privacy-protections-for-use-of-flock-police-cameras,294791": {
     "archive": "f3b852662e8a4894166634234b35d562b1f9e9a9d4f32320cba4faae5b6ba111.txt",
     "content_hash": "1c2eb6dcd04666d126de62feb4c5f67b49d8464b8af21fa9c9ec90b557322f08",
@@ -8863,6 +9115,20 @@
     "text_len": 0,
     "title": "TikTok - Make Your Day",
     "url": "https://www.tiktok.com/@wlukfox11/video/7631973302319320333"
+  },
+  "https://tippecanoe.in.gov/AgendaCenter/ViewFile/Item/13942?fileID=27984": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://www.tippecanoe.in.gov/AgendaCenter/ViewFile/Item/13942?fileID=27984",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.tippecanoe.in.gov/AgendaCenter/ViewFile/Item/13942?fileID=27984"
   },
   "https://tmj4.com/about-us/lighthouse/kenosha-says-farewell-to-flock-drops-license-plate-readers-citing-security-misuse-and-data-sharing-concerns": {
     "archive": "a97cb265f8f04d79f8f617f11f03fd08529f723ca2c18b2bf01e83060455e44e.txt",
@@ -8941,6 +9207,34 @@
     "text_len": 0,
     "title": null,
     "url": "https://www.tompkinscountyny.gov/files/assets/county/v/1/sheriffs-office/documents/community-statement-from-tcso-re-give-flock-safety-1.pdf"
+  },
+  "https://town.boonsboro.md.us/vertical/sites/%7B91336583-679F-49EC-8CDA-C0EAB540BE40%7D/uploads/August_10th_2026_Mayor__Council_Minutes_DRAFT.pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://town.boonsboro.md.us/vertical/sites/%7B91336583-679F-49EC-8CDA-C0EAB540BE40%7D/uploads/August_10th_2026_Mayor__Council_Minutes_DRAFT.pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://town.boonsboro.md.us/vertical/sites/%7B91336583-679F-49EC-8CDA-C0EAB540BE40%7D/uploads/August_10th_2026_Mayor__Council_Minutes_DRAFT.pdf"
+  },
+  "https://towncloud-core-prod.s3.us-west-2.amazonaws.com/uploads/wilder-id/meetings/item_attachment/attachment/2401/2026.06.30_Proposed_Addendum_No._1_to_Flock_Safety_Agreement_(DRAFT_Flock_Edits)_(1).pdf": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "non_html",
+    "fetched_at": "2026-10-19",
+    "final_url": "https://towncloud-core-prod.s3.us-west-2.amazonaws.com/uploads/wilder-id/meetings/item_attachment/attachment/2401/2026.06.30_Proposed_Addendum_No._1_to_Flock_Safety_Agreement_(DRAFT_Flock_Edits)_(1).pdf",
+    "retry_after": "2026-11-18",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://towncloud-core-prod.s3.us-west-2.amazonaws.com/uploads/wilder-id/meetings/item_attachment/attachment/2401/2026.06.30_Proposed_Addendum_No._1_to_Flock_Safety_Agreement_(DRAFT_Flock_Edits)_(1).pdf"
   },
   "https://transparency.flocksafety.com/-spokane-county-wa-so": {
     "archive": null,
