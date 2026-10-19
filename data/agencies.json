@@ -51,7 +51,7 @@
     ],
     "methodology": "docs/METHODOLOGY.md",
     "generated_by": "scripts/generate_meta.py",
-    "last_updated": "2026-10-18",
+    "last_updated": "2026-10-19",
     "record_count": 344,
     "jurisdiction_count": 47,
     "jurisdictions": [
@@ -662,7 +662,7 @@
         }
       ],
       "confidence": "medium",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "notes": "Five LPRs (Grove St, Kennedy Dr, Route 44, Woodstock Ave) plus two Flock security cameras under a three-year lease; installed since August 2025. Flock maintains a transparency portal for Putnam PD (URL not captured). Gov. Lamont urged a statewide pause on new Flock installations on 2026-09-25 pending POST Council guidance under Public Act 26-14."
     },
     {
@@ -2921,11 +2921,26 @@
           "verified": true,
           "source_key": "https://govtech.com/public-safety/3-ohio-cities-approve-automated-license-plate-reader-pacts",
           "content_hash": "302e05b4786a0c79dad8765b56d60cf3e6f988d4adb3b8cf39bfe0f6ba28c48c"
+        },
+        {
+          "title": "Ordinance 2024-008 (Master Services Agreement with Flock Group, Inc.)",
+          "url": "https://www.strongsville.org/CityOfStrongsville/media/StrongsvilleMedia/Documents/City%20Council/2024-008.pdf?ext=.pdf",
+          "date": "2024-01-16",
+          "source_key": "https://strongsville.org/CityOfStrongsville/media/StrongsvilleMedia/Documents/City%20Council/2024-008.pdf?ext=.pdf",
+          "verified": false
+        },
+        {
+          "title": "Ordinance 2025-127 (six additional Flock LPR cameras)",
+          "url": "https://www.strongsville.org/CityOfStrongsville/media/StrongsvilleMedia/Documents/City%20Council/2025-127.pdf?ext=.pdf",
+          "date": "2025-11-03",
+          "source_key": "https://strongsville.org/CityOfStrongsville/media/StrongsvilleMedia/Documents/City%20Council/2025-127.pdf?ext=.pdf",
+          "verified": false
         }
       ],
       "state": "OH",
       "status": "active",
-      "transparency_portal": null
+      "transparency_portal": null,
+      "last_verified": "2026-10-19"
     },
     {
       "agency": "Cleveland Police Department",
@@ -4447,11 +4462,19 @@
           "verified": true,
           "source_key": "https://dailyillini.com/news-stories/world-news/state-news/2026/07/28/illinois-police-double-down-on-license-plate-readers",
           "content_hash": "0db663d044c427e1bba2dc786b004a025ac07b257dd6d93e392b83434aed956e"
+        },
+        {
+          "title": "Contract for Products and Services, City of Champaign / Flock Group, Inc. (License Plate Reader and Gunshot Detection Installation; public-records copy)",
+          "url": "https://stopflock.org/foias/champaign_police_department/1/2022-03-15_contract.pdf",
+          "date": "2022-03-15",
+          "source_key": "https://stopflock.org/foias/champaign_police_department/1/2022-03-15_contract.pdf",
+          "verified": false
         }
       ],
       "state": "IL",
       "status": "active",
-      "transparency_portal": "https://transparency.flocksafety.com/champaign-il-pd"
+      "transparency_portal": "https://transparency.flocksafety.com/champaign-il-pd",
+      "last_verified": "2026-10-19"
     },
     {
       "agency": "Vernon Hills Police Department",
@@ -4958,11 +4981,19 @@
           "verified": true,
           "source_key": "https://gopresstimes.com/stories/de-pere-to-end-use-of-alprs-green-bay-to-continue-with-updated-policy,354891",
           "content_hash": "dd543c27360c5a7652f0e43c4bb80837162b88b4e089dd0d9450166c1932abd9"
+        },
+        {
+          "title": "Flock Safety Law Enforcement Agreement and order form, Green Bay PD (drone first responder; DocuSigned)",
+          "url": "https://deflockdane.org/reading-room/green-bay-pd-flock-dfr-law-enforcement-agreement-2025/file/?download=1",
+          "date": "2025-12-23",
+          "source_key": "https://deflockdane.org/reading-room/green-bay-pd-flock-dfr-law-enforcement-agreement-2025/file?download=1",
+          "verified": false
         }
       ],
       "state": "WI",
       "status": "active",
-      "transparency_portal": "https://transparency.flocksafety.com/green-bay-wi-pd"
+      "transparency_portal": "https://transparency.flocksafety.com/green-bay-wi-pd",
+      "last_verified": "2026-10-19"
     },
     {
       "agency": "Milwaukee Police Department",
@@ -7854,11 +7885,18 @@
           "verified": true,
           "source_key": "https://shreveporttimes.com/story/news/local/louisiana/2026/07/17/where-are-flock-cameras-in-louisiana-see-sheriff-police-that-have-them/90943464007",
           "publisher": "Shreveport Times (USA Today Network)"
+        },
+        {
+          "title": "City of Central council resolution authorizing a Flock Group agreement (copy hosted by Louisiana First News)",
+          "url": "https://digital-release.louisianafirstnews.com/wp-content/uploads/sites/80/2022/04/Central-City-Council-Camera-Resolution.pdf",
+          "date": "2022-04-12",
+          "source_key": "https://digital-release.louisianafirstnews.com/wp-content/uploads/sites/80/2022/04/Central-City-Council-Camera-Resolution.pdf",
+          "verified": false
         }
       ],
       "state": "LA",
       "status": "active",
-      "last_verified": "2026-09-25",
+      "last_verified": "2026-10-19",
       "contract_start": null,
       "contract_end": null,
       "transparency_portal": null

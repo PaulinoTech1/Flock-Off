@@ -538,5 +538,17 @@
   "note": "Drift d=15 reviewed; article live-read 2026-10-18 by Constantine: Sean McDonnell/cleveland.com syndication intact, Lorain PD crediting Flock for murder-suspect capture in under 30 minutes (published 2026-07-27, updated 2026-09-23); drift is syndication-page churn, citation claim stands. Accepted per Boss authorization 2026-10-19.",
   "reviewed_at": "2026-10-19",
   "reviewed_by": "Alexander"
+ },
+ "https://champaignil.gov/2022/05/02/champaign-police-installing-automated-license-plate-readers": {
+  "decision": "accept",
+  "note": "Drift d=10 reviewed; live-read 2026-10-19 by Constantine: City of Champaign press release intact (May 2, 2022: Flock Group, Inc. began installation of 46 ALPR units for Champaign PD, authorized December 2021 for a two-year trial). Drift is page churn; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+  "reviewed_at": "2026-10-19",
+  "reviewed_by": "Alexander"
+ },
+ "https://greenbaypressgazette.com/story/news/local/2026/09/14/green-bay-police-will-keep-flock-cameras-revise-camera-policies/91657879007": {
+  "decision": "accept",
+  "note": "Gate fetch error reviewed; live-read 2026-10-19 by Constantine: full Press Gazette article intact (Sept. 14, 2026: Green Bay will keep Flock cameras, revise policies; article also records the December 2025 five-year extension, 42 cameras plus four DFR drones, $1.3M). Earlier fetch error was transient; citation claim stands. Recorded under Boss bulk approval 2026-10-19.",
+  "reviewed_at": "2026-10-19",
+  "reviewed_by": "Alexander"
  }
 }
