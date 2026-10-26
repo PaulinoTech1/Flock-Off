@@ -51,8 +51,8 @@
     ],
     "methodology": "docs/METHODOLOGY.md",
     "generated_by": "scripts/generate_meta.py",
-    "last_updated": "2026-10-19",
-    "record_count": 351,
+    "last_updated": "2026-10-26",
+    "record_count": 353,
     "jurisdiction_count": 47,
     "jurisdictions": [
       "AL",
@@ -104,17 +104,17 @@
       "WV"
     ],
     "status_counts": {
-      "active": 173,
-      "cancelled": 140,
+      "active": 172,
+      "cancelled": 144,
       "expired": 4,
-      "pending": 24,
+      "pending": 23,
       "rejected": 10
     },
     "terminal_verified": 9,
-    "terminal_pending_validation": 145,
+    "terminal_pending_validation": 149,
     "records_with_renewal_date": 4,
-    "records_with_contract_end": 32,
-    "coverage_note": "351 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 9 terminal claims verified, 145 pending validation*. 4 records carry a renewal date and 32 a contract end date; exact renewal dates remain thin and are the top research priority."
+    "records_with_contract_end": 33,
+    "coverage_note": "353 sourced records across 47 jurisdictions. Coverage is USA-wide, expanding in 10-state waves. A missing agency means not yet researched, not confirmed absent. 9 terminal claims verified, 149 pending validation*. 4 records carry a renewal date and 33 a contract end date; exact renewal dates remain thin and are the top research priority."
   },
   "agencies": [
     {
@@ -480,28 +480,28 @@
       "agency_type": "municipal_police",
       "city": "New Bedford",
       "state": "MA",
-      "status": "pending",
+      "status": "cancelled",
       "cameras": null,
       "annual_cost_usd": null,
       "contract_start": null,
-      "contract_end": null,
+      "contract_end": "2026-11-12",
       "renewal_date": null,
-      "decision_date": null,
-      "decision_summary": "Police temporarily suspended use of Flock after public opposition and allegations that an officer used the readers to stalk her ex-girlfriend; city councilors planned a Sept 24 vote on an ordinance restricting ALPR use.",
+      "decision_date": "2026-10-23",
+      "decision_summary": "The New Bedford Police Department will not renew its Flock Safety agreement; the agreement ends when it expires November 12, 2026. Deputy Derek Belong sent the company written notice on October 8, 2026 confirming non-renewal (South Coast 360, October 23, 2026).",
       "transparency_portal": null,
       "sources": [
         {
-          "title": "Wins | Eyes Off MA - Flock Cameras in Massachusetts",
-          "url": "https://eyesoffma.com/wins/",
-          "date": "2026-09",
+          "title": "New Bedford police won't renew Flock contract (South Coast 360)",
+          "url": "https://southcoast360.com/new-bedford-police-wont-renew-flock-license-plate-camera-contract-oct-23-2026.html",
+          "date": "2026-10-23",
           "verified": false,
-          "source_key": "https://eyesoffma.com/wins",
-          "content_hash": "df6609718e6646b008cc0cff17307bb423f00decbc4b8a9825744685d62887b0"
+          "source_key": "https://southcoast360.com/new-bedford-police-wont-renew-flock-license-plate-camera-contract-oct-23-2026.html"
         }
       ],
-      "confidence": "low",
-      "last_verified": "2026-09-25",
-      "notes": "Whether cameras remain suspended and whether the ordinance passed are unconfirmed. Single advocacy source citing newbedfordlight.org."
+      "confidence": "medium",
+      "last_verified": "2026-10-26",
+      "notes": "Police Department confirmed non-renewal (South Coast 360, October 23, 2026): written notice sent October 8, 2026 by Deputy Derek Belong; the agreement ends November 12, 2026. The City Council gave final passage on October 22, 2026 to an ordinance barring city use of license plate readers; the ordinance goes to Mayor Jon Mitchell, who can sign or veto it, so the ban is not law yet and the non-renewal stands on its own. Earlier: police temporarily suspended use of Flock after public opposition and allegations that an officer used the readers to stalk her ex-girlfriend; city councilors had planned a Sept 24 vote on an ordinance restricting ALPR use. The earlier Eyes Off MA citation was removed on October 26, 2026 after its page became unreachable to the fetcher; the South Coast 360 reporting now carries the non-renewal claim.",
+      "validation": "pending"
     },
     {
       "id": "ma-stoughton-pd",
@@ -14854,14 +14854,14 @@
       "agency_type": "municipal_police",
       "city": "Richmond",
       "state": "VA",
-      "status": "active",
+      "status": "cancelled",
       "cameras": 99,
       "annual_cost_usd": null,
       "contract_start": null,
       "contract_end": "2027-06-30",
       "renewal_date": null,
-      "decision_date": null,
-      "decision_summary": "Richmond operates 99 fixed Flock ALPRs (Richmond Police Department Flock page, rva.gov). On October 10, 2026 Mayor Danny Avula announced the city will not renew its Flock agreement; RVA Mag reports the agreement runs through June 30, 2027. No executed non-renewal notice has been documented, so the record remains active.",
+      "decision_date": "2026-10-10",
+      "decision_summary": "Richmond operates 99 fixed Flock ALPRs (Richmond Police Department Flock page, rva.gov). On October 10, 2026 Mayor Danny Avula announced the city will not renew its Flock agreement; RVA Mag reports the agreement runs through June 30, 2027. Status is cancelled under the tracker's definition (a signed contract not renewed); the agreement remains in force through June 30, 2027. No executed non-renewal notice has been documented; the announcement is reported by RVA Mag (October 15, 2026), quoting VPM.",
       "transparency_portal": null,
       "sources": [
         {
@@ -14880,8 +14880,67 @@
         }
       ],
       "confidence": "medium",
-      "last_verified": "2026-10-19",
-      "notes": "Mayor Avula's October 10, 2026 non-renewal announcement is reported by RVA Mag (October 15, 2026); the June 30, 2027 agreement end is carried on that reporting, not a printed term. No executed non-renewal notice, council vote, or termination has been documented as of October 19, 2026; the record flips to cancelled when one is. Cameras: 99 fixed ALPRs per the department's own Flock page; that page also reports mobile trailer units (2, soon 4) that are not counted in the 99. Cost: RVA Mag reports 'approximately $285,000' with the referent (annual vs total) unclear, so annual_cost_usd is left null. The mayor's decision covers ALPR only; Flock gunshot detection is unaffected per RVA Mag."
+      "last_verified": "2026-10-26",
+      "notes": "Mayor Avula's October 10, 2026 non-renewal announcement is reported by RVA Mag (October 15, 2026), quoting VPM; the June 30, 2027 agreement end is carried on that reporting, not a printed term. No executed non-renewal notice, council vote, or termination has been documented. Status is cancelled under the tracker's definition (a signed contract not renewed); the agreement remains in force through June 30, 2027. Cameras: 99 fixed ALPRs per the department's own Flock page; that page also reports mobile trailer units (2, soon 4) that are not counted in the 99. Cost: RVA Mag reports 'approximately $285,000' with the referent (annual vs total) unclear, so annual_cost_usd is left null. The mayor's decision covers ALPR only; Flock gunshot detection is unaffected per RVA Mag. One source dates a statement October 13, 2026; that is the October 13 chief's briefing, not the announcement.",
+      "validation": "pending"
+    },
+    {
+      "id": "ma-milton-pd",
+      "agency": "Milton Police Department",
+      "agency_type": "municipal_police",
+      "city": "Milton",
+      "state": "MA",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-10-06",
+      "decision_summary": "On October 6, 2026 the Milton Select Board voted to end the town's Flock license plate reader camera contract (Patriot Ledger, October 7, 2026). The article reports about a dozen cameras.",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "Milton Select Board votes to end contract for Flock cameras in town (Patriot Ledger)",
+          "url": "https://www.patriotledger.com/story/news/politics/government/2026/10/07/milton-ma-license-plate-reader-cameras/92132182007/",
+          "date": "2026-10-07",
+          "verified": false,
+          "source_key": "https://patriotledger.com/story/news/politics/government/2026/10/07/milton-ma-license-plate-reader-cameras/92132182007"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-26",
+      "notes": "Select Board voted October 6, 2026 to end the Flock contract. The Patriot Ledger reports about a dozen cameras; no vote count and no precise camera count appear in the article, so neither is recorded. No contract end date or cost is stated.",
+      "validation": "pending"
+    },
+    {
+      "id": "ct-south-windsor-pd",
+      "agency": "South Windsor Police Department",
+      "agency_type": "municipal_police",
+      "city": "South Windsor",
+      "state": "CT",
+      "status": "cancelled",
+      "cameras": null,
+      "annual_cost_usd": null,
+      "contract_start": null,
+      "contract_end": null,
+      "renewal_date": null,
+      "decision_date": "2026-10-05",
+      "decision_summary": "On October 5, 2026 the South Windsor Town Council passed a resolution directing the police chief to cease use of Flock cameras immediately and arrange their removal within 60 days (CT Mirror via Bristol Edition, October 9, 2026).",
+      "transparency_portal": null,
+      "sources": [
+        {
+          "title": "How opposition to Flock cameras took flight in CT (CT Mirror via Bristol Edition)",
+          "url": "https://bristoledition.org/2026/10/11/how-opposition-to-flock-cameras-took-flight-in-ct/",
+          "date": "2026-10-09",
+          "verified": false,
+          "source_key": "https://bristoledition.org/2026/10/11/how-opposition-to-flock-cameras-took-flight-in-ct"
+        }
+      ],
+      "confidence": "medium",
+      "last_verified": "2026-10-26",
+      "notes": "Town Council passed a resolution October 5, 2026 directing the police chief to cease Flock use immediately and arrange removal within 60 days. The official October 5 council agenda PDF was not readable by the fetcher, so the CT Mirror/Bristol Edition reporting carries the claim. No camera count, cost, or contract end date is stated.",
+      "validation": "pending"
     }
   ]
 }

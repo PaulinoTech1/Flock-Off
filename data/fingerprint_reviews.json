@@ -539,6 +539,12 @@
     "reviewed_at": "2026-09-26",
     "reviewed_by": "Alexander"
   },
+  "https://rvamag.com/news-headlines/richmond-news/richmond-is-dropping-flock-but-the-technology-could-remain.html": {
+    "decision": "accept",
+    "note": "Drift d=10 (threshold 8) reviewed 2026-10-26: RVA Mag article confirmed live; cited claims intact (Oct 10 Avula non-renewal announcement; agreement runs through June 30, 2027; 99 fixed readers; approximately $285,000; Oct 13 chief's briefing). The simhash drift is in the extracted related-stories fragment (the extractor does not capture the article body); the article body itself is unchanged in its claims. Accepted; baseline refreshed.",
+    "reviewed_at": "2026-10-26",
+    "reviewed_by": "Alexander"
+  },
   "https://sacurrent.com/news/there-are-more-than-10000-flock-cameras-in-texas-gina-hinojosa-blames-gov-greg-abbott": {
     "decision": "accept",
     "note": "Drift d=9 (threshold 8) reviewed; accepted per Boss blanket authorization 2026-09-26.",

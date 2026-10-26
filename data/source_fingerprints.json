@@ -1243,6 +1243,20 @@
     "title": "Flock cameras vandalized in Derby, police investigating - Brightgram",
     "url": "https://brightgram.com/wichita-ks/10511520/flock-cameras-vandalized-in-derby-police-investigating/"
   },
+  "https://bristoledition.org/2026/10/11/how-opposition-to-flock-cameras-took-flight-in-ct": {
+    "archive": "cc9104192c6c750aea1af4c336dae9afc0d04b643c3993b82620bcb38fbc8ee6.txt",
+    "blocked_reason": null,
+    "content_hash": "9acf06d3cedaf5159274e60afbf7e406cef4ba8979a2c853980cb174c874a7b5",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-26",
+    "final_url": "https://bristoledition.org/2026/10/11/how-opposition-to-flock-cameras-took-flight-in-ct/",
+    "simhash": "f6b48e108f49d28e",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 18849,
+    "title": "How opposition to Flock cameras took flight in CT – The Bristol Edition",
+    "url": "https://bristoledition.org/2026/10/11/how-opposition-to-flock-cameras-took-flight-in-ct/"
+  },
   "https://brushwoodmedianetwork.com/washington/news-washington/washington-cities-spend-millions-on-flock-cameras-do-they-solve-crime": {
     "archive": "11c37c000127089a0322d051c599fc2370528e7584c2bbd4af3f15bd9977b8da.txt",
     "content_hash": "61933860c8af0495421c8b52c24b0d0549d9d23f664657c39a4334f4a0073e0d",
@@ -7372,6 +7386,20 @@
     "title": null,
     "url": "https://www.patreon.com/SamWalkerOBXNews/posts/nags-head-leaves-168428390"
   },
+  "https://patriotledger.com/story/news/politics/government/2026/10/07/milton-ma-license-plate-reader-cameras/92132182007": {
+    "archive": null,
+    "blocked_reason": null,
+    "content_hash": null,
+    "fetch_status": "error",
+    "fetched_at": "2026-10-26",
+    "final_url": null,
+    "retry_after": "2026-11-02",
+    "simhash": null,
+    "snapshot_path": null,
+    "text_len": 0,
+    "title": null,
+    "url": "https://www.patriotledger.com/story/news/politics/government/2026/10/07/milton-ma-license-plate-reader-cameras/92132182007/"
+  },
   "https://pbn.com/tag/flock-safety": {
     "archive": "a8e4742d1c6dac766a09a4feab116ec48be2c03bd7f8ed8d5b4d145d9d0d17f8.txt",
     "content_hash": "d7925a3ec37cc81a86ffd6516e41fbf5dacd9708e53b91cc7d79e8ea8779c3f1",
@@ -8329,14 +8357,14 @@
   "https://rvamag.com/news-headlines/richmond-news/richmond-is-dropping-flock-but-the-technology-could-remain.html": {
     "archive": "f662187debc4b141feb67c8eb3b397c8e6539dcb59029b5159c5c0fe7df0b947.txt",
     "blocked_reason": null,
-    "content_hash": "119bc9b045a4b985767f6fe14d38223fc3a0cd3b1803167ed2a5abd27ceb89ff",
+    "content_hash": "9f01d31ca6fec55eb234ac440be2b4f9def781f0a14a395018151bc53d6de5e0",
     "fetch_status": "ok",
-    "fetched_at": "2026-10-19",
+    "fetched_at": "2026-10-26",
     "final_url": "https://rvamag.com/news-headlines/richmond-news/richmond-is-dropping-flock-but-the-technology-could-remain.html",
-    "simhash": "daf612e1bae9afb3",
+    "simhash": "b26690e1bac1afb1",
     "snapshot_path": null,
     "snapshot_status": "failed",
-    "text_len": 2629,
+    "text_len": 2641,
     "title": "Richmond is Dropping Flock, But the Technology Could Remain - RVA Mag",
     "url": "https://rvamag.com/news-headlines/richmond-news/richmond-is-dropping-flock-but-the-technology-could-remain.html"
   },
@@ -8719,6 +8747,20 @@
     "text_len": 22052,
     "title": "THE GOVERNMENT IS WATCHING - The Sooner Sentinel",
     "url": "https://soonersentinel.substack.com/p/the-government-is-watching"
+  },
+  "https://southcoast360.com/new-bedford-police-wont-renew-flock-license-plate-camera-contract-oct-23-2026.html": {
+    "archive": "963de5ad98b119fd8dc79f90a437ef7597d5916675f1a0d536b54ec19efc46a9.txt",
+    "blocked_reason": null,
+    "content_hash": "d41243689ab3e6d41beb11575c91a43bf1265b23da6b910124362b2ca9d5453f",
+    "fetch_status": "ok",
+    "fetched_at": "2026-10-26",
+    "final_url": "https://southcoast360.com/new-bedford-police-wont-renew-flock-license-plate-camera-contract-oct-23-2026.html",
+    "simhash": "a000b85c283b56dd",
+    "snapshot_path": null,
+    "snapshot_status": "failed",
+    "text_len": 6917,
+    "title": "New Bedford police won't renew Flock contract | South Coast 360",
+    "url": "https://southcoast360.com/new-bedford-police-wont-renew-flock-license-plate-camera-contract-oct-23-2026.html"
   },
   "https://southportland-gov.community.diligentoneplatform.com/document/9d70cca1-180d-4a47-a702-52af619d2310": {
     "archive": null,
