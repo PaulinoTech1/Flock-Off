@@ -20,6 +20,16 @@ name: Source snapshot archiver
 #     0 uploads). Partial success (some uploaded) still passes with a warning.
 #   - Job summary carries attempted/uploaded/failed for the backfill cron,
 #     which reads it via the GitHub API (no blob calls).
+# 2026-11-23 (v5): Run 664 persist fix. Root cause: the batch writes
+#   snapshot text files under data/source_archive/, but the persist step
+#   only staged the two fingerprint JSONs, so the tree was dirty at rebase
+#   time ("cannot rebase: You have unstaged changes") and the abort then
+#   failed with "fatal: no rebase in progress" (exit 128, killing the step
+#   under set -e). The 18 uploaded snapshots were in the store; only the
+#   fingerprint record was missing. Changes:
+#   - Persist step now stages data/source_archive alongside the fingerprints.
+#   - `git rebase --abort` is now `git rebase --abort || true` so a
+#     no-rebase-in-progress fatal cannot fail the step.
 # 2026-10-06 (v4 pre-push fixes): commit-before-rebase ordering in the
 #   persist step (rebase refuses a dirty index), explicit
 #   permissions: contents: write, and removal of the snapshot_exists()
@@ -266,7 +276,7 @@ jobs:
           git config user.name "flock-off-archiver"
           git config user.email "flock-off-archiver@users.noreply.github.com"
           git fetch origin main
-          git add data/source_fingerprints.json data/fingerprint_reviews.json
+          git add data/source_fingerprints.json data/fingerprint_reviews.json data/source_archive
           if git diff --cached --quiet; then
             echo "No fingerprint changes to persist."
             exit 0
@@ -275,7 +285,7 @@ jobs:
           # changes, so the old add-then-rebase order always failed here.
           git commit -m "Archive snapshots: fingerprint updates (pre-rebase)"
           if ! git rebase origin/main; then
-            git rebase --abort
+            git rebase --abort || true
             echo "WARNING: rebase onto origin/main failed, skipping persist (next run will retry)."
             exit 0
           fi
